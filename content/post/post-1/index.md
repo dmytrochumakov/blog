@@ -4,8 +4,6 @@ date = 2024-04-01T08:01:22+03:00
 draft = false
 +++
 
-## The Visitor Pattern
-
 ### In this article:
 
 - What is a Visitor Pattern?
@@ -14,6 +12,12 @@ draft = false
 
 ### What is a Visitor Pattern?
 > The Visitor Pattern helps add new capabilities to a composite of objects.
+
+{{< image
+src="images/1.jpg"
+alt="This is sample image" >}}
+**[Source](https://en.wikipedia.org/wiki/Visitor_pattern#/media/File:Visitor_design_pattern.svg)** 
+
 
 ### What problems does it solve?
 
