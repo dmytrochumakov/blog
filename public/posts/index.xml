@@ -6,7 +6,14 @@
     <description>Recent content in Posts on Dmytro Chumakov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2024 08:01:22 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Visitor Pattern</title>
+      <link>http://localhost:1313/posts/the-visitor-pattern/</link>
+      <pubDate>Mon, 01 Apr 2024 08:01:22 +0300</pubDate>
+      <guid>http://localhost:1313/posts/the-visitor-pattern/</guid>
+      <description>The Visitor Pattern In this article: What is a Visitor Pattern? What problems does it solve? Real-world code example What is a Visitor Pattern? The Visitor Pattern helps add new capabilities to a composite of objects.&#xA;What problems does it solve? The Visitor Pattern helps solve following problems:&#xA;Separation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on.</description>
+    </item>
   </channel>
 </rss>
