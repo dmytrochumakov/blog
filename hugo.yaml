@@ -1,0 +1,79 @@
+baseURL: https://dmytros.blog/
+languageCode: en-us
+title: Dmytro's Blog
+paginate: 5
+theme: ["PaperMod"]
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["posts", "papermod"]
+
+minify:
+  disableXML: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Archive
+          url: archives
+          weight: 5        
+        - name: Tags
+          url: tags/
+          weight: 10        
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.  
+  author: Dmytro Chumakov
+  homeInfoParams:
+    Title: Hi there 👋
+    Content: This blog is intended to share my knowledge about software architecture, system design, tools, and techniques for producing high-quality products.
+
+  defaultTheme: auto
+  ShowShareButtons: false
+  ShowReadingTime: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: false
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  comments: true
+  images: ["images/papermod-cover.png"]
+
+  socialIcons:
+    - name: github
+      title: View Source on Github
+      url: "https://github.com/dmytrochumakov"
+    - name: X
+      title: X/Twitter
+      url: "https://twitter.com/_dmytrochumakov"    
+
+  assets:
+    disableHLJS: true
+  
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true

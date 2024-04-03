@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Dmytro Chumakov</title>
+    <title>Dmytro&#39;s Blog</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Dmytro Chumakov</description>
+    <description>Recent content on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Mon, 01 Apr 2024 08:01:22 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Visitor Pattern</title>
-      <link>http://localhost:1313/post/post-1/</link>
+      <link>http://localhost:1313/posts/post-1/</link>
       <pubDate>Mon, 01 Apr 2024 08:01:22 +0300</pubDate>
-      <guid>http://localhost:1313/post/post-1/</guid>
-      <description>In this article: What is a Visitor Pattern? What problems does it solve? Real-world code example What is a Visitor Pattern? The Visitor Pattern helps add new capabilities to a composite of objects.&#xA;Source&#xA;What problems does it solve? The Visitor Pattern helps solve following problems:&#xA;Separation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on.</description>
+      <guid>http://localhost:1313/posts/post-1/</guid>
+      <description>In this article: What is a Visitor Pattern? What problems does it solve? Real-world code example What is a Visitor Pattern? The Visitor Pattern helps add new capabilities to a composite of objects.
+Source
+What problems does it solve? The Visitor Pattern helps solve following problems:
+Separation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on.</description>
     </item>
   </channel>
 </rss>
