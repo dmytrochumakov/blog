@@ -26,7 +26,7 @@ The Visitor Pattern helps solve following problems:
 - **Traversal of Object Structures**: It provides a way to traverse complex object structures while performing some action on each element of the structure. This is particularly useful in scenarios where you need to process every element of a data structure in a specific order or with a specific algorithm.
 
 ### Real-world code example
-```
+```swift
 // Element protocol representing the items on the menu
 protocol MenuItem {
     func accept(visitor: OrderVisitor)

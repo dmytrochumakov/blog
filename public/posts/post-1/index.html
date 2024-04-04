@@ -240,110 +240,110 @@ Separation of Concerns: The Visitor Pattern separates algorithms from the object
 <li><strong>Traversal of Object Structures</strong>: It provides a way to traverse complex object structures while performing some action on each element of the structure. This is particularly useful in scenarios where you need to process every element of a data structure in a specific order or with a specific algorithm.</li>
 </ul>
 <h3 id="real-world-code-example">Real-world code example<a hidden class="anchor" aria-hidden="true" href="#real-world-code-example">#</a></h3>
-<pre tabindex="0"><code>// Element protocol representing the items on the menu
-protocol MenuItem {
-    func accept(visitor: OrderVisitor)
-}
-
-// Concrete item types
-class Coffee: MenuItem {
-    let name: String
-    let price: Double
-    
-    init(name: String, price: Double) {
-        self.name = name
-        self.price = price
-    }
-    
-    func accept(visitor: OrderVisitor) {
-        visitor.visit(self)
-    }
-}
-
-class Tea: MenuItem {
-    let name: String
-    let price: Double
-    
-    init(name: String, price: Double) {
-        self.name = name
-        self.price = price
-    }
-    
-    func accept(visitor: OrderVisitor) {
-        visitor.visit(self)
-    }
-}
-
-class Pastry: MenuItem {
-    let name: String
-    let price: Double
-    
-    init(name: String, price: Double) {
-        self.name = name
-        self.price = price
-    }
-    
-    func accept(visitor: OrderVisitor) {
-        visitor.visit(self)
-    }
-}
-
-// Visitor protocol defining the operations to be performed on menu items
-protocol OrderVisitor {
-    func visit(_ item: Coffee)
-    func visit(_ item: Tea)
-    func visit(_ item: Pastry)
-}
-
-// Concrete visitor implementing operations on menu items
-class TotalCostVisitor: OrderVisitor {
-    var totalCost = 0.0
-    
-    func visit(_ item: Coffee) {
-        totalCost += item.price
-    }
-    
-    func visit(_ item: Tea) {
-        totalCost += item.price
-    }
-    
-    func visit(_ item: Pastry) {
-        totalCost += item.price
-    }
-}
-
-class ItemDetailsVisitor: OrderVisitor {
-    var details = &#34;&#34;
-    
-    func visit(_ item: Coffee) {
-        details += &#34;Coffee: \(item.name), Price: $\(item.price)\n&#34;
-    }
-    
-    func visit(_ item: Tea) {
-        details += &#34;Tea: \(item.name), Price: $\(item.price)\n&#34;
-    }
-    
-    func visit(_ item: Pastry) {
-        details += &#34;Pastry: \(item.name), Price: $\(item.price)\n&#34;
-    }
-}
-
-// Example usage
-let items: [MenuItem] = [Coffee(name: &#34;Espresso&#34;, price: 2.5), Tea(name: &#34;Green Tea&#34;, price: 2.0), Pastry(name: &#34;Croissant&#34;, price: 3.0)]
-
-let totalCostVisitor = TotalCostVisitor()
-for item in items {
-    item.accept(visitor: totalCostVisitor)
-}
-print(&#34;Total cost of the order: $\(totalCostVisitor.totalCost)&#34;)
-
-let itemDetailsVisitor = ItemDetailsVisitor()
-for item in items {
-    item.accept(visitor: itemDetailsVisitor)
-}
-print(&#34;Order details:&#34;)
-print(itemDetailsVisitor.details)
-</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="c1">// Element protocol representing the items on the menu</span>
+</span></span><span class="line"><span class="cl"><span class="kd">protocol</span> <span class="nc">MenuItem</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">accept</span><span class="p">(</span><span class="n">visitor</span><span class="p">:</span> <span class="n">OrderVisitor</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Concrete item types</span>
+</span></span><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Coffee</span><span class="p">:</span> <span class="n">MenuItem</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nv">name</span><span class="p">:</span> <span class="nb">String</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nv">price</span><span class="p">:</span> <span class="nb">Double</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">init</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span> <span class="n">price</span><span class="p">:</span> <span class="nb">Double</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="n">name</span> <span class="p">=</span> <span class="n">name</span>
+</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="n">price</span> <span class="p">=</span> <span class="n">price</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">accept</span><span class="p">(</span><span class="n">visitor</span><span class="p">:</span> <span class="n">OrderVisitor</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">visitor</span><span class="p">.</span><span class="n">visit</span><span class="p">(</span><span class="kc">self</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Tea</span><span class="p">:</span> <span class="n">MenuItem</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nv">name</span><span class="p">:</span> <span class="nb">String</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nv">price</span><span class="p">:</span> <span class="nb">Double</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">init</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span> <span class="n">price</span><span class="p">:</span> <span class="nb">Double</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="n">name</span> <span class="p">=</span> <span class="n">name</span>
+</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="n">price</span> <span class="p">=</span> <span class="n">price</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">accept</span><span class="p">(</span><span class="n">visitor</span><span class="p">:</span> <span class="n">OrderVisitor</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">visitor</span><span class="p">.</span><span class="n">visit</span><span class="p">(</span><span class="kc">self</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Pastry</span><span class="p">:</span> <span class="n">MenuItem</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nv">name</span><span class="p">:</span> <span class="nb">String</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nv">price</span><span class="p">:</span> <span class="nb">Double</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">init</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span> <span class="n">price</span><span class="p">:</span> <span class="nb">Double</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="n">name</span> <span class="p">=</span> <span class="n">name</span>
+</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="n">price</span> <span class="p">=</span> <span class="n">price</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">accept</span><span class="p">(</span><span class="n">visitor</span><span class="p">:</span> <span class="n">OrderVisitor</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">visitor</span><span class="p">.</span><span class="n">visit</span><span class="p">(</span><span class="kc">self</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Visitor protocol defining the operations to be performed on menu items</span>
+</span></span><span class="line"><span class="cl"><span class="kd">protocol</span> <span class="nc">OrderVisitor</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">visit</span><span class="p">(</span><span class="kc">_</span> <span class="n">item</span><span class="p">:</span> <span class="n">Coffee</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">visit</span><span class="p">(</span><span class="kc">_</span> <span class="n">item</span><span class="p">:</span> <span class="n">Tea</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">visit</span><span class="p">(</span><span class="kc">_</span> <span class="n">item</span><span class="p">:</span> <span class="n">Pastry</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Concrete visitor implementing operations on menu items</span>
+</span></span><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">TotalCostVisitor</span><span class="p">:</span> <span class="n">OrderVisitor</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">totalCost</span> <span class="p">=</span> <span class="mf">0.0</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">visit</span><span class="p">(</span><span class="kc">_</span> <span class="n">item</span><span class="p">:</span> <span class="n">Coffee</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">totalCost</span> <span class="o">+=</span> <span class="n">item</span><span class="p">.</span><span class="n">price</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">visit</span><span class="p">(</span><span class="kc">_</span> <span class="n">item</span><span class="p">:</span> <span class="n">Tea</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">totalCost</span> <span class="o">+=</span> <span class="n">item</span><span class="p">.</span><span class="n">price</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">visit</span><span class="p">(</span><span class="kc">_</span> <span class="n">item</span><span class="p">:</span> <span class="n">Pastry</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">totalCost</span> <span class="o">+=</span> <span class="n">item</span><span class="p">.</span><span class="n">price</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">ItemDetailsVisitor</span><span class="p">:</span> <span class="n">OrderVisitor</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">details</span> <span class="p">=</span> <span class="s">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">visit</span><span class="p">(</span><span class="kc">_</span> <span class="n">item</span><span class="p">:</span> <span class="n">Coffee</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">details</span> <span class="o">+=</span> <span class="s">&#34;Coffee: </span><span class="si">\(</span><span class="n">item</span><span class="p">.</span><span class="n">name</span><span class="si">)</span><span class="s">, Price: $</span><span class="si">\(</span><span class="n">item</span><span class="p">.</span><span class="n">price</span><span class="si">)</span><span class="se">\n</span><span class="s">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">visit</span><span class="p">(</span><span class="kc">_</span> <span class="n">item</span><span class="p">:</span> <span class="n">Tea</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">details</span> <span class="o">+=</span> <span class="s">&#34;Tea: </span><span class="si">\(</span><span class="n">item</span><span class="p">.</span><span class="n">name</span><span class="si">)</span><span class="s">, Price: $</span><span class="si">\(</span><span class="n">item</span><span class="p">.</span><span class="n">price</span><span class="si">)</span><span class="se">\n</span><span class="s">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">visit</span><span class="p">(</span><span class="kc">_</span> <span class="n">item</span><span class="p">:</span> <span class="n">Pastry</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">details</span> <span class="o">+=</span> <span class="s">&#34;Pastry: </span><span class="si">\(</span><span class="n">item</span><span class="p">.</span><span class="n">name</span><span class="si">)</span><span class="s">, Price: $</span><span class="si">\(</span><span class="n">item</span><span class="p">.</span><span class="n">price</span><span class="si">)</span><span class="se">\n</span><span class="s">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Example usage</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">items</span><span class="p">:</span> <span class="p">[</span><span class="n">MenuItem</span><span class="p">]</span> <span class="p">=</span> <span class="p">[</span><span class="n">Coffee</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="s">&#34;Espresso&#34;</span><span class="p">,</span> <span class="n">price</span><span class="p">:</span> <span class="mf">2.5</span><span class="p">),</span> <span class="n">Tea</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="s">&#34;Green Tea&#34;</span><span class="p">,</span> <span class="n">price</span><span class="p">:</span> <span class="mf">2.0</span><span class="p">),</span> <span class="n">Pastry</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="s">&#34;Croissant&#34;</span><span class="p">,</span> <span class="n">price</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">totalCostVisitor</span> <span class="p">=</span> <span class="n">TotalCostVisitor</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">item</span> <span class="k">in</span> <span class="n">items</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">item</span><span class="p">.</span><span class="n">accept</span><span class="p">(</span><span class="n">visitor</span><span class="p">:</span> <span class="n">totalCostVisitor</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="s">&#34;Total cost of the order: $</span><span class="si">\(</span><span class="n">totalCostVisitor</span><span class="p">.</span><span class="n">totalCost</span><span class="si">)</span><span class="s">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">itemDetailsVisitor</span> <span class="p">=</span> <span class="n">ItemDetailsVisitor</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">item</span> <span class="k">in</span> <span class="n">items</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">item</span><span class="p">.</span><span class="n">accept</span><span class="p">(</span><span class="n">visitor</span><span class="p">:</span> <span class="n">itemDetailsVisitor</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="s">&#34;Order details:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">itemDetailsVisitor</span><span class="p">.</span><span class="n">details</span><span class="p">)</span>
+</span></span></code></pre></div>
 
   </div>
 
