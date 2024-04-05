@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Apr 2024 08:01:22 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 05 Apr 2024 04:59:38 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tools</title>
+      <link>http://localhost:1313/tags/tools/</link>
+      <pubDate>Fri, 05 Apr 2024 04:59:38 +0300</pubDate>
+      <guid>http://localhost:1313/tags/tools/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Design Patterns</title>
       <link>http://localhost:1313/tags/design-patterns/</link>
