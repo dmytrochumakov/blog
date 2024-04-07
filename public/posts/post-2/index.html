@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>How to build an Xcode project from CLI? | Dmytro&#39;s Blog</title>
-<meta name="keywords" content="tools">
+<title>How to build an Xcode project using the CLI? | Dmytro&#39;s Blog</title>
+<meta name="keywords" content="tools, CLI">
 <meta name="description" content="Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to build a project in the fastest way.
 One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you&rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project.">
 <meta name="author" content="Dmytro Chumakov">
@@ -56,7 +56,7 @@ One of such ways is by using the xcodebuild command Basic outline of the process
         }
 
     </style>
-</noscript><meta property="og:title" content="How to build an Xcode project from CLI?" />
+</noscript><meta property="og:title" content="How to build an Xcode project using the CLI?" />
 <meta property="og:description" content="Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to build a project in the fastest way.
 One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you&rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project." />
 <meta property="og:type" content="article" />
@@ -68,7 +68,7 @@ One of such ways is by using the xcodebuild command Basic outline of the process
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
-<meta name="twitter:title" content="How to build an Xcode project from CLI?"/>
+<meta name="twitter:title" content="How to build an Xcode project using the CLI?"/>
 <meta name="twitter:description" content="Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to build a project in the fastest way.
 One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you&rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project."/>
 
@@ -87,7 +87,7 @@ One of such ways is by using the xcodebuild command Basic outline of the process
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "How to build an Xcode project from CLI?",
+      "name": "How to build an Xcode project using the CLI?",
       "item": "http://localhost:1313/posts/post-2/"
     }
   ]
@@ -97,11 +97,11 @@ One of such ways is by using the xcodebuild command Basic outline of the process
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "How to build an Xcode project from CLI?",
-  "name": "How to build an Xcode project from CLI?",
+  "headline": "How to build an Xcode project using the CLI?",
+  "name": "How to build an Xcode project using the CLI?",
   "description": "Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to build a project in the fastest way.\nOne of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you\u0026rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project.",
   "keywords": [
-    "tools"
+    "tools", "CLI"
   ],
   "articleBody": "Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to build a project in the fastest way.\nOne of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you’re in the project directory, you can run xcodebuild with the appropriate parameters to build your project. Example: xcodebuild -project YourProjectName.xcodeproj -scheme YourSchemeName Another way is by integrating fastlane into your workflow: Outline of the process Install Fastlane: If you haven’t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:\nbrew install fastlane Navigate to Project Directory: Open Terminal and navigate to the directory containing your Xcode project. Initialize Fastlane (Optional): If you haven’t initialized Fastlane in your project yet, you can do so by running:\nfastlane init Build with Fastlane: Once Fastlane is set up, you can use it to build your Xcode project. Fastlane provides a lane named build_app for building your app. You can run this lane with the following command:\nfastlane build_app Building a project through a project generation tools If you are building a project through a project generation tool like tuist you do not need anything that was mentioned above because it already has build-in commands tuist build.\n",
   "wordCount" : "243",
@@ -174,6 +174,11 @@ One of such ways is by using the xcodebuild command Basic outline of the process
                 </a>
             </li>
             <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
                 <a href="http://localhost:1313/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
@@ -187,7 +192,7 @@ One of such ways is by using the xcodebuild command Basic outline of the process
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
-      How to build an Xcode project from CLI?
+      How to build an Xcode project using the CLI?
     </h1>
     <div class="post-meta"><span title='2024-04-05 04:59:38 +0300 EEST'>April 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov
 
@@ -252,6 +257,7 @@ Initialize Fastlane (Optional): If you haven&rsquo;t initialized Fastlane in you
   <footer class="post-footer">
     <ul class="post-tags">
       <li><a href="http://localhost:1313/tags/tools/">Tools</a></li>
+      <li><a href="http://localhost:1313/tags/cli/">CLI</a></li>
     </ul>
 <nav class="paginav">
   <a class="next" href="http://localhost:1313/posts/post-1/">
