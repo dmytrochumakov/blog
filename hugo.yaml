@@ -53,6 +53,10 @@ params:
     - name: X
       title: X/Twitter
       url: "https://twitter.com/_dmytrochumakov"    
+    - name: linkedin
+      url: "https://www.linkedin.com/in/dmytro-chumakov/"
+    - name: email
+      url: "mailto:dmytro.v.chumakov.work@gmail.com"
 
   assets:
     disableHLJS: true
@@ -77,18 +81,22 @@ outputs:
 
 menu:
   main:
+          - identifier: service
+            name: Services
+            url: /ios-app-maintenance-service/
+            weight: 1
           - identifier: archive
             name: Archive
             url: /archives/
-            weight: 1
+            weight: 2
           - identifier: search
             name: Search
             url: /search/
-            weight: 2
+            weight: 3
           - identifier: tags
             name: Tags
             url: /tags/
-            weight: 3 
+            weight: 4 
 
 markup:
   goldmark:

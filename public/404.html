@@ -10,7 +10,7 @@
 <meta name="description" content="">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/404.html">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.9627b28e2155a36e2dcf23c7df8bf86a3abb1a1df15c0e4d5a688256801e5204.css" integrity="sha256-lieyjiFVo24tzyPH34v4ajq7Gh3xXA5NWmiCVoAeUgQ=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.ef6b0a8cc044c81f8564fffb013558fc5d5c2910023a80374f705ae86b059bed.css" integrity="sha256-72sKjMBEyB&#43;FZP/7ATVY/F1cKRACOoA3T3Ba6GsFm&#43;0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -121,6 +121,11 @@
         </button>
         <ul class="menu hidden">
             <li>
+                <a href="http://localhost:1313/ios-app-maintenance-service/" title="Services">
+                    <span>Services</span>
+                </a>
+            </li>
+            <li>
                 <a href="http://localhost:1313/archives/" title="Archive">
                     <span>Archive</span>
                 </a>
@@ -154,7 +159,22 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>
-</a>
+</a><script>
+    
+    
+    let b = document.querySelector("#menu-trigger")
+    let m = document.querySelector(".menu")
+    b.addEventListener("click", function () {
+        m.classList.toggle("hidden")
+    });
+    
+    document.body.addEventListener('click', function (event) {
+        if (!b.contains(event.target)) {
+            m.classList.add("hidden")
+        }
+    });
+    
+</script>
 
 <script>
     let menu = document.getElementById('menu')
