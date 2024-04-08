@@ -38,4 +38,8 @@ All packages come with a 30-day 110% Money-Back Guarantee.
 # Ready to Boost Your App’s Success?
 Ready to unlock your app’s true potential? Or do you have questions?
 
-Send me an [email](mailto:dmytro.v.chumakov.work@gmail.com) or [schedule a call](https://calendly.com/dmytro-v-chumakov-work/30min) with me, and let’s make it happen together. I’m here to assist you every step of the way.
+Send me an [email](mailto:dmytro.v.chumakov.work@gmail.com) or [schedule a call](https://calendly.com/dmytro-v-chumakov-work/60min) with me, and let’s make it happen together. I’m here to assist you every step of the way.
+
+<div style="display: flex; justify-content: center; align-items: center;">
+    <a href="https://calendly.com/dmytro-v-chumakov-work/60min" class="button" style="font-weight: 600; font-size: 22px; background-color: rgba(188, 33, 33, 1); text-decoration: none; line-height: 135%; letter-spacing: 0px; color: white; width: auto; padding: 16px 46px">Get in Touch Now!</a>
+</div>
