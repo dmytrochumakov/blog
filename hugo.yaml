@@ -23,18 +23,7 @@ languages:
     taxonomies:
       category: categories
       tag: tags
-      series: series
-    menu:
-      main:
-        - name: Archive
-          url: archives
-          weight: 5        
-        - name: Search
-          url: search/
-          weight: 10
-        - name: Tags
-          url: tags/
-          weight: 10        
+      series: series      
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.  
@@ -84,8 +73,23 @@ outputs:
   home:
     - HTML
     - RSS
-    - JSON
-    
+    - JSON   
+
+menu:
+  main:
+          - identifier: archive
+            name: Archive
+            url: /archives/
+            weight: 1
+          - identifier: search
+            name: Search
+            url: /search/
+            weight: 2
+          - identifier: tags
+            name: Tags
+            url: /tags/
+            weight: 3 
+
 markup:
   goldmark:
     renderer:

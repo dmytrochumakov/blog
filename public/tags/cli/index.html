@@ -10,7 +10,7 @@
 <meta name="description" content="">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/cli/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.ef6b0a8cc044c81f8564fffb013558fc5d5c2910023a80374f705ae86b059bed.css" integrity="sha256-72sKjMBEyB&#43;FZP/7ATVY/F1cKRACOoA3T3Ba6GsFm&#43;0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -107,11 +107,22 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
             </div>
         </div>
-        <ul id="menu">
+
+        
+        <button id="menu-trigger" aria-haspopup="menu" aria-label="Menu Button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+        <ul class="menu hidden">
             <li>
-                <a href="http://localhost:1313/archives" title="Archive">
+                <a href="http://localhost:1313/archives/" title="Archive">
                     <span>Archive</span>
                 </a>
             </li>
@@ -161,7 +172,22 @@ One of such ways is by using the xcodebuild command Basic outline of the process
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>
-</a>
+</a><script>
+    
+    
+    let b = document.querySelector("#menu-trigger")
+    let m = document.querySelector(".menu")
+    b.addEventListener("click", function () {
+        m.classList.toggle("hidden")
+    });
+    
+    document.body.addEventListener('click', function (event) {
+        if (!b.contains(event.target)) {
+            m.classList.add("hidden")
+        }
+    });
+    
+</script>
 
 <script>
     let menu = document.getElementById('menu')
