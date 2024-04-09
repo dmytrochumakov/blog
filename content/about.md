@@ -3,10 +3,11 @@ title: "About Me"
 draft: false
 showToc: false
 summary: "Information about me."
+comments: false
 ---
 
 {{< rawhtml >}}
-<img style="border-radius:40%;margin-left:auto;margin-right:auto;" width="156px" height="192px" src="/me.jpeg" alt="Picture of me">
+<img style="margin-left:auto;margin-right:auto;" width="30%" src="/me.png" alt="Picture of me">
 <p align="center">Hi! I'm Dmytro Chumakov.</p>
 {{< /rawhtml >}}
 
