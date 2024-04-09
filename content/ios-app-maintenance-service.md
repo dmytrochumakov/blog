@@ -63,7 +63,7 @@ All packages come with a 30-day 110% Money-Back Guarantee.
         <h2 class="price-name">Pro</h2>
         <p class="description">For constantly evolving apps</p>
         <div class="price-container">
-            <p class="price">$2499<span class="per-month"> per month</span></p>
+            <p class="price">$2400<span class="per-month"> per month</span></p>
         </div>
         <ul class="features">
             <li>All services in Plus +</li>
@@ -78,7 +78,7 @@ All packages come with a 30-day 110% Money-Back Guarantee.
 <style>
 .pricing-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Allow columns to wrap */
 }
 
 .pricing-column {
@@ -91,7 +91,7 @@ All packages come with a 30-day 110% Money-Back Guarantee.
     flex-direction: column;
     align-items: center; /* Center align content */
     text-align: center; /* Center align text */
-    height: 100%; /* Ensure all columns have equal height */
+    margin-bottom: 20px; /* Add margin between columns */
 }
 
 .with-border {
@@ -153,6 +153,18 @@ All packages come with a 30-day 110% Money-Back Guarantee.
     border-radius: 20px;
     font-size: 12px;
     margin-bottom: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+    }
+
+    .pricing-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 </style>
 
