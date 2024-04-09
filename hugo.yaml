@@ -114,3 +114,5 @@ services:
     disableInlineCSS: true
   twitter:
     disableInlineCSS: true
+  disqus:
+    shortname: dmytros-blog
