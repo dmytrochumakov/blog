@@ -13,6 +13,8 @@ enableEmoji: true
 pygmentsUseClasses: true
 mainsections: ["posts", "papermod"]
 
+googleAnalytics: G-HZZ4JTFGDP
+
 minify:
   disableXML: true
 
