@@ -60,6 +60,10 @@ params:
     - name: email
       url: "mailto:dmytro.v.chumakov.work@gmail.com"
 
+  analytics:
+      google:
+        SiteVerificationTag: "G-HZZ4JTFGDP"
+
   assets:
     disableHLJS: true
 
