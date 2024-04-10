@@ -20,24 +20,21 @@ disableShare: true
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            transition: background-color 0.3s, color 0.3s;
         }
         .container {
             max-width: 600px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #fff;
             border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box-shadow */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         h1 {
             text-align: center;
-            color: #333;
         }
         p {
             font-size: 18px;
             line-height: 1.6;
-            color: #555;
         }
         .email {
             text-align: center;
@@ -46,5 +43,15 @@ disableShare: true
         .email a {
             color: #007bff;
             text-decoration: none;
+        }
+        /* Light mode */
+        body.light-mode {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        /* Dark mode */
+        body.dark-mode {
+            background-color: #333;
+            color: #f4f4f4;
         }
 </style>
