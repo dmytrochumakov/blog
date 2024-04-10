@@ -35,7 +35,7 @@ params:
     Content: This blog is intended to share my knowledge about software architecture, system design, tools, and techniques for producing high-quality products.
 
   defaultTheme: auto
-  ShowShareButtons: false
+  ShowShareButtons: true
   ShowReadingTime: true
   displayFullLangName: true
   ShowPostNavLinks: true

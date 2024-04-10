@@ -3,6 +3,7 @@ title: "Portfolio"
 comments: false
 ShowToc: false
 ShowReadingTime: false
+disableShare: true
 ---
 
 <div class="portfolio">

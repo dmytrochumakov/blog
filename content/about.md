@@ -4,6 +4,7 @@ draft: false
 showToc: false
 summary: "Information about me."
 comments: false
+disableShare: true
 ---
 
 {{< rawhtml >}}
