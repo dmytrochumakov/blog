@@ -5,6 +5,7 @@ showToc: false
 summary: "Information about me."
 comments: false
 disableShare: true
+hideMeta: true
 ---
 
 {{< rawhtml >}}

@@ -2,6 +2,8 @@
 title: "Services"
 comments: false
 disableShare: true
+ShowToc: false
+hideMeta: true
 ---
 
 # iOS App Maintenance Service
@@ -65,7 +67,7 @@ All packages come with a 30-day 110% Money-Back Guarantee.
         <h2 class="price-name">Pro</h2>
         <p class="description">For constantly evolving apps</p>
         <div class="price-container">
-            <p class="price">$2400<span class="per-month"> per month</span></p>
+            <p class="price">$2499<span class="per-month"> per month</span></p>
         </div>
         <ul class="features">
             <li>All services in Plus +</li>

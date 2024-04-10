@@ -32,6 +32,8 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/courses/</loc>
+  </url><url>
     <loc>http://localhost:1313/portfolio/</loc>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
