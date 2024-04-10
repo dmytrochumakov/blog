@@ -57,6 +57,7 @@ disableShare: true
     flex: 0 0 calc(50% - 30px);
     margin: 15px;
     padding: 15px;    
+    border: 1px solid #ddd;
     border-radius: 20px;
     transition: transform 0.3s ease-in-out;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
