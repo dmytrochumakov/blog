@@ -41,5 +41,7 @@
     <loc>http://localhost:1313/series/</loc>
   </url><url>
     <loc>http://localhost:1313/ios-app-maintenance-service/</loc>
+  </url><url>
+    <loc>http://localhost:1313/thank-you/</loc>
   </url>
 </urlset>

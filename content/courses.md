@@ -11,9 +11,17 @@ disableShare: true
 <div class="course-column">
         <h2>iOS Development Course: SwiftUI and TCA</h2>
         <p>Unlock the full potential of iOS development with comprehensive course on SwiftUI and TCA, designed to equip you with the knowledge and skills needed to create seamless and intuitive user experiences.</p>
-        <button class="buy-now-btn">Buy Now</button>
+        <button class="buy-now-btn" onclick="redirectToThankYouPage()">Buy Now</button>
     </div>    
 </div>
+
+<script>
+function redirectToThankYouPage() {
+    var currentUrl = window.location.href;    
+    var updatedUrl = currentUrl.replace("/courses", ""); 
+    window.location.href = updatedUrl + "thank-you";
+}
+</script>
 
 <style>
 .course-container {
