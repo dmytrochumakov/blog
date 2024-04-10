@@ -56,8 +56,7 @@ disableShare: true
   .portfolio-item {
     flex: 0 0 calc(50% - 30px);
     margin: 15px;
-    padding: 15px;
-    background-color: #f9f9f9;
+    padding: 15px;    
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -71,6 +70,17 @@ disableShare: true
     font-size: 14px;
     line-height: 1.5;
   }
+
+  /* Light mode */
+        body.light-mode {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        /* Dark mode */
+        body.dark-mode {
+            background-color: #333;
+            color: #f4f4f4;
+        }
 
   /* Media Query for mobile adaptation */
   @media (max-width: 768px) {
