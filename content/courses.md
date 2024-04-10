@@ -59,6 +59,6 @@ p {
 }
 
 .buy-now-btn:hover {
-    background-color: #45a049;
+    background-color: #0056b3;
 }
 </style>
