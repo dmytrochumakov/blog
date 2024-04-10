@@ -58,6 +58,7 @@ disableShare: true
     margin: 15px;
     padding: 15px;    
     border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
@@ -69,6 +70,11 @@ disableShare: true
   .portfolio-item p {
     font-size: 14px;
     line-height: 1.5;
+  }
+
+  .portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box-shadow */
   }
 
   /* Light mode */
