@@ -31,12 +31,12 @@ function redirectToThankYouPage() {
 }
 
 .course-column {
-    width: 100%;
-    background-color: #f9f9f9;
+    width: 100%;        
     border-radius: 20px;
     padding: 20px;
     transition: transform 0.3s ease-in-out;
     margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box-shadow */
 }
 
 .course-column:hover {
@@ -69,4 +69,16 @@ p {
 .buy-now-btn:hover {
     background-color: #0056b3;
 }
+
+ /* Light mode */
+        body.light-mode {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        /* Dark mode */
+        body.dark-mode {
+            background-color: #333;
+            color: #f4f4f4;
+        }
+
 </style>
