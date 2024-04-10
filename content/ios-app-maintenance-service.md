@@ -96,6 +96,7 @@ All packages come with a 30-day 110% Money-Back Guarantee.
     align-items: center; /* Center align content */
     text-align: center; /* Center align text */
     margin-bottom: 20px; /* Add margin between columns */
+    transition: transform 0.3s ease-in-out;
 }
 
 .with-border {
@@ -157,6 +158,11 @@ All packages come with a 30-day 110% Money-Back Guarantee.
     border-radius: 20px;
     font-size: 12px;
     margin-bottom: 10px;
+}
+
+.pricing-column:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box-shadow */
 }
 
 /* Mobile Responsive */
