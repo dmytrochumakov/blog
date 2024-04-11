@@ -51,10 +51,7 @@ params:
   socialIcons:
     - name: github
       title: View Source on Github
-      url: "https://github.com/dmytrochumakov"
-    - name: X
-      title: X/Twitter
-      url: "https://twitter.com/_dmytrochumakov"    
+      url: "https://github.com/dmytrochumakov"    
     - name: linkedin
       url: "https://www.linkedin.com/in/dmytro-chumakov/"
     - name: email
