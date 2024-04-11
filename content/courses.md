@@ -12,7 +12,7 @@ disableShare: true
         <h2>iOS Development Course: SwiftUI and TCA</h2>
         <p>Unlock the full potential of iOS development with comprehensive course on SwiftUI and TCA, designed to equip you with the knowledge and skills needed to create seamless and intuitive user experiences.</p>
         <div class="price">
-        <p>Price: $9.99</p>
+        <p><del>$29.99</del> $9.99</p>
         </div>
         <button class="buy-now-btn" onclick="redirectToThankYouPage()">Buy Now</button>
         <h3>Features:</h3>
