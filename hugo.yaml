@@ -83,35 +83,31 @@ outputs:
     - JSON   
 
 menu:
-  main:
-          - identifier: courses
-            name: Courses
-            url: /courses/
-            weight: 1
+  main:          
           - identifier: service
             name: Services
             url: /ios-app-maintenance-service/
-            weight: 2
+            weight: 1
           - identifier: portfolio
             name: Portfolio
             url: /portfolio/
-            weight: 3 
+            weight: 2 
           - identifier: archive
             name: Archive
             url: /archives/
-            weight: 4
+            weight: 3
           - identifier: tags                                  
             name: Tags
             url: /tags/
-            weight: 5
+            weight: 4
           - identifier: about     
             name: About
             url: /about/
-            weight: 6           
+            weight: 5           
           - identifier: search
             name: Search
             url: /search/
-            weight: 7     
+            weight: 6     
 
 markup:
   goldmark:
