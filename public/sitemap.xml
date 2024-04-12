@@ -3,21 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/cli/</loc>
-    <lastmod>2024-04-05T04:59:38+03:00</lastmod>
+    <lastmod>2024-04-12T03:20:34+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-04-05T04:59:38+03:00</lastmod>
+    <lastmod>2024-04-12T03:20:34+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-2/</loc>
-    <lastmod>2024-04-05T04:59:38+03:00</lastmod>
+    <loc>http://localhost:1313/posts/post-3/</loc>
+    <lastmod>2024-04-12T03:20:34+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-04-05T04:59:38+03:00</lastmod>
+    <lastmod>2024-04-12T03:20:34+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-04-05T04:59:38+03:00</lastmod>
+    <lastmod>2024-04-12T03:20:34+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/tools/</loc>
+    <lastmod>2024-04-12T03:20:34+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/post-2/</loc>
     <lastmod>2024-04-05T04:59:38+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/design-patterns/</loc>
