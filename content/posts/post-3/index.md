@@ -1,5 +1,5 @@
 +++
-title = 'How to test an Xcode project using the CLI?'
+title = 'Testing an Xcode project using the CLI'
 date = 2024-04-12T03:20:34+03:00
 tags = ["tools", "CLI"]
 draft = false

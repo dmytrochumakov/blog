@@ -14,7 +14,7 @@
     <lastBuildDate>Fri, 12 Apr 2024 03:20:34 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to test an Xcode project using the CLI?</title>
+      <title>Testing an Xcode project using the CLI</title>
       <link>http://localhost:1313/posts/post-3/</link>
       <pubDate>Fri, 12 Apr 2024 03:20:34 +0300</pubDate>
       <guid>http://localhost:1313/posts/post-3/</guid>
@@ -22,7 +22,7 @@
 One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you&amp;rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project.</description>
     </item>
     <item>
-      <title>How to build an Xcode project using the CLI?</title>
+      <title>Building Xcode project using the CLI</title>
       <link>http://localhost:1313/posts/post-2/</link>
       <pubDate>Fri, 05 Apr 2024 04:59:38 +0300</pubDate>
       <guid>http://localhost:1313/posts/post-2/</guid>
