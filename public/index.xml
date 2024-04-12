@@ -40,6 +40,17 @@ What problems does it solve? The Visitor Pattern helps solve following problems:
 Separation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on.</description>
     </item>
     <item>
+      <title>What is “reference type” in Swift?</title>
+      <link>http://localhost:1313/posts/post-5/</link>
+      <pubDate>Sun, 03 Dec 2023 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/post-5/</guid>
+      <description>Introduction In Swift, classes, closures, and actors all reference types.
+&amp;lsquo;Reference type’ is instance that shares a single copy of data.
+Assigning a reference type to a constant or variable, or passing it into a function or method, it is always a reference to a shared instance that is assigned or passed in.
+Example You can pass your property value by sharing the same address in memory.
+// Reference type example class Storage { var data = “data-example” } var storage = Storage() print(&amp;#34;\(storage.</description>
+    </item>
+    <item>
       <title>Let’s talk about Composable Architecture</title>
       <link>http://localhost:1313/posts/post-4/</link>
       <pubDate>Fri, 11 Aug 2023 00:00:00 +0300</pubDate>
