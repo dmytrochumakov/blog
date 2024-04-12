@@ -14,7 +14,7 @@ draft = false
 ### What is a Visitor Pattern?
 > The Visitor Pattern helps add new capabilities to a composite of objects.
 
-![alt image](images/1.jpg)
+![alt image](images/1.jpg#center)
 **[Source](https://en.wikipedia.org/wiki/Visitor_pattern#/media/File:Visitor_design_pattern.svg)** 
 
 ### What problems does it solve?
