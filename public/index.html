@@ -59,7 +59,24 @@
         }
 
     </style>
-</noscript>
+</noscript><style>
+    @media screen and (min-width: 769px) {
+         
+        .post-content input[type="checkbox"]:checked ~ label > img {
+            transform: scale(1.6);
+            cursor: zoom-out;
+            position: relative;
+            z-index: 999;
+        }
+    
+        .post-content img.zoomCheck {
+            transition: transform 0.15s ease;
+            z-index: 999;
+            cursor: zoom-in;
+        }
+    }
+    </style>
+    
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
 <script>
 var doNotTrack = false;

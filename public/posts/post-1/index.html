@@ -59,7 +59,24 @@ Separation of Concerns: The Visitor Pattern separates algorithms from the object
         }
 
     </style>
-</noscript>
+</noscript><style>
+    @media screen and (min-width: 769px) {
+         
+        .post-content input[type="checkbox"]:checked ~ label > img {
+            transform: scale(1.6);
+            cursor: zoom-out;
+            position: relative;
+            z-index: 999;
+        }
+    
+        .post-content img.zoomCheck {
+            transition: transform 0.15s ease;
+            z-index: 999;
+            cursor: zoom-in;
+        }
+    }
+    </style>
+    
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
 <script>
 var doNotTrack = false;
@@ -277,7 +294,14 @@ Separation of Concerns: The Visitor Pattern separates algorithms from the object
 <blockquote>
 <p>The Visitor Pattern helps add new capabilities to a composite of objects.</p>
 </blockquote>
-<p><img loading="lazy" src="images/1.jpg" alt="alt image"  />
+<p>
+    
+    <input type="checkbox" id="zoomCheck-0d7d3" hidden>
+    <label for="zoomCheck-0d7d3">
+        <img class="zoomCheck" loading="lazy" decoding="async" 
+            src="images/1.jpg" alt="alt image" 
+             />
+    </label>
 
 <strong><a href="https://en.wikipedia.org/wiki/Visitor_pattern#/media/File:Visitor_design_pattern.svg">Source</a></strong></p>
 <h3 id="what-problems-does-it-solve">What problems does it solve?<a hidden class="anchor" aria-hidden="true" href="#what-problems-does-it-solve">#</a></h3>

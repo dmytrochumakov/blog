@@ -58,7 +58,24 @@ UDF can reduce data inconsistencies because of the single source of truth for th
         }
 
     </style>
-</noscript>
+</noscript><style>
+    @media screen and (min-width: 769px) {
+         
+        .post-content input[type="checkbox"]:checked ~ label > img {
+            transform: scale(1.6);
+            cursor: zoom-out;
+            position: relative;
+            z-index: 999;
+        }
+    
+        .post-content img.zoomCheck {
+            transition: transform 0.15s ease;
+            z-index: 999;
+            cursor: zoom-in;
+        }
+    }
+    </style>
+    
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
 <script>
 var doNotTrack = false;
@@ -269,7 +286,14 @@ UDF can reduce data inconsistencies because of the single source of truth for th
 UDF is a design pattern where data and events move consistently and predictably. In UDF, data can only be transferred to other application parts in one way.</p>
 <p>In TCA, the only way to mutate the state is by sending actions to a runtime store. The runtime store holds the entire app’s business logic and mutates the state inside.</p>
 <p>UDF can reduce data inconsistencies because of the single source of truth for the application.</p>
-<p><img loading="lazy" src="images/4.jpg" alt="alt image"  />
+<p>
+    
+    <input type="checkbox" id="zoomCheck-0ad92" hidden>
+    <label for="zoomCheck-0ad92">
+        <img class="zoomCheck" loading="lazy" decoding="async" 
+            src="images/4.jpg" alt="alt image" 
+             />
+    </label>
 </p>
 <h3 id="tca-is-built-around-key-components">TCA is built around key components:<a hidden class="anchor" aria-hidden="true" href="#tca-is-built-around-key-components">#</a></h3>
 <ul>
