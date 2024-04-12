@@ -1,0 +1,14 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content">
+        {{ .Content | markdownify }}
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+    </footer>
+    <iframe src="https://dmytrosblog.substack.com/embed" width="480" height="150" style="border:1px solid #EEE; background:white; border-radius: 10px;" frameborder="0" scrolling="no"></iframe>
+</article>
+{{- end -}}
