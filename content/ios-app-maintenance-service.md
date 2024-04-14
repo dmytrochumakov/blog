@@ -54,7 +54,7 @@ All packages come with a 30-day 110% Money-Back Guarantee.
             <p class="price">$799<span class="per-month"> per month</span></p>
         </div>
         <ul class="features">
-            <li>All services in Lite +</li>
+            <li>All services in <b>Lite +</b></li>
             <li>Performance monitoring</li>
             <li>App reviews support</li>
             <li>Minor UI/UX improvement</li>
@@ -70,7 +70,7 @@ All packages come with a 30-day 110% Money-Back Guarantee.
             <p class="price">$2499<span class="per-month"> per month</span></p>
         </div>
         <ul class="features">
-            <li>All services in Plus +</li>
+            <li>All services in <b>Plus +</b></li>
             <li>Feature implementation</li>
             <li>Major UI/UX improvement</li>
             <li>Major feature updates</li>
