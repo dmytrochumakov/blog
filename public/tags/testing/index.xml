@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Testing on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/testing/</link>
+    <description>Recent content in Testing on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 12 Apr 2024 03:20:34 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing Xcode project using the CLI</title>
+      <link>http://localhost:1313/posts/post-3/</link>
+      <pubDate>Fri, 12 Apr 2024 03:20:34 +0300</pubDate>
+      <guid>http://localhost:1313/posts/post-3/</guid>
+      <description>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to test a project in the fastest way.
+One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you&amp;rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project.</description>
+    </item>
+  </channel>
+</rss>

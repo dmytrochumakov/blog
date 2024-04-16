@@ -1,7 +1,7 @@
 +++
-title = 'Testing an Xcode project using the CLI'
+title = 'Testing Xcode project using the CLI'
 date = 2024-04-12T03:20:34+03:00
-tags = ["tools", "CLI"]
+tags = ["tools", "CLI", "testing"]
 draft = false
 +++
 
@@ -49,8 +49,8 @@ fastlane run_tests
 ```
 
 
-### Building a project through a project generation tools
-If you are building a project through a project generation tool like [tuist](https://github.com/tuist/tuist) you do not need anything that was mentioned above because it already has build-in commands: 
+### Testing a project through a project generation tools
+If you are testing a project through a project generation tool like [tuist](https://github.com/tuist/tuist) you do not need anything that was mentioned above because it already has build-in commands: 
 ```
 tuist test YourSchemeName
 ```
