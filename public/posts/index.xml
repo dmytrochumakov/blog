@@ -48,6 +48,17 @@ What problems does it solve? The Visitor Pattern helps solve following problems:
 Separation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on.</description>
     </item>
     <item>
+      <title>What is closure in Swift language?</title>
+      <link>http://localhost:1313/posts/post-7/</link>
+      <pubDate>Sun, 10 Dec 2023 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/post-7/</guid>
+      <description>Introduction In this article, I’m going to briefly explain what closure is.
+Closures is self-conitained blocks of funcionality that can be passed around and used in your code. — Apple
+Expression:
+{ (params) -&amp;gt; return value in statements } @escaping When closure is marked as escaping, it will outlive or leave the scope you passed.
+func response(_ completionHandler: @escaping(Result) -&amp;gt; Void) { completionHandler(.success) } @nonescaping By default, closures are nonescaping, meaning closure will no longer exist in memory after complete execution in the scope you have passed it to.</description>
+    </item>
+    <item>
       <title>What is “reference type” in Swift?</title>
       <link>http://localhost:1313/posts/post-5/</link>
       <pubDate>Sun, 03 Dec 2023 00:00:00 +0300</pubDate>

@@ -41,10 +41,16 @@
     <loc>http://localhost:1313/posts/post-1/</loc>
     <lastmod>2024-04-01T08:01:22+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/reference-type/</loc>
-    <lastmod>2023-12-03T00:00:00+03:00</lastmod>
+    <loc>http://localhost:1313/tags/closure/</loc>
+    <lastmod>2023-12-10T00:00:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/swift/</loc>
+    <lastmod>2023-12-10T00:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/post-7/</loc>
+    <lastmod>2023-12-10T00:00:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/reference-type/</loc>
     <lastmod>2023-12-03T00:00:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/post-5/</loc>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Swift on Dmytro&#39;s Blog</title>
-    <link>http://localhost:1313/tags/swift/</link>
-    <description>Recent content in Swift on Dmytro&#39;s Blog</description>
+    <title>Closure on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/closure/</link>
+    <description>Recent content in Closure on Dmytro&#39;s Blog</description>
     <image>
       <title>Dmytro&#39;s Blog</title>
       <url>http://localhost:1313/images/papermod-cover.png</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 10 Dec 2023 00:00:00 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/closure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is closure in Swift language?</title>
       <link>http://localhost:1313/posts/post-7/</link>
@@ -23,17 +23,6 @@ Closures is self-conitained blocks of funcionality that can be passed around and
 Expression:
 { (params) -&amp;gt; return value in statements } @escaping When closure is marked as escaping, it will outlive or leave the scope you passed.
 func response(_ completionHandler: @escaping(Result) -&amp;gt; Void) { completionHandler(.success) } @nonescaping By default, closures are nonescaping, meaning closure will no longer exist in memory after complete execution in the scope you have passed it to.</description>
-    </item>
-    <item>
-      <title>What is “reference type” in Swift?</title>
-      <link>http://localhost:1313/posts/post-5/</link>
-      <pubDate>Sun, 03 Dec 2023 00:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-5/</guid>
-      <description>Introduction In Swift, classes, closures, and actors all reference types.
-&amp;lsquo;Reference type’ is instance that shares a single copy of data.
-Assigning a reference type to a constant or variable, or passing it into a function or method, it is always a reference to a shared instance that is assigned or passed in.
-Example You can pass your property value by sharing the same address in memory.
-// Reference type example class Storage { var data = “data-example” } var storage = Storage() print(&amp;#34;\(storage.</description>
     </item>
   </channel>
 </rss>
