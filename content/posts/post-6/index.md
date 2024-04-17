@@ -3,8 +3,6 @@ title: 'Archiving Xcode project using the CLI'
 date: 2024-04-16T13:46:03+03:00
 tags: ["tools", "CLI", "archiving"]
 draft: false
-cover:
-  image: "images/c_6.png"
 ---
 
 ### Introduction
