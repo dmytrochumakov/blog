@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Automatic Reference Count on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/automatic-reference-count/</link>
+    <description>Recent content in Automatic Reference Count on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 17 Dec 2023 00:00:00 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/automatic-reference-count/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ARC in Swift</title>
+      <link>http://localhost:1313/posts/post-11/</link>
+      <pubDate>Sun, 17 Dec 2023 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/post-11/</guid>
+      <description>What is ARC? Swift uses Automatic Reference Counting (ARC) to track and manage your app’s memory usage. In most cases, this means that memory management “just works” in Swift, and you don’t need to think about memory management yourself. ARC automatically frees up the memory used by class instances when those instances are no longer needed. - Apple
+ARC In Action In this example, we assign an instance to the reference1 property.</description>
+    </item>
+  </channel>
+</rss>

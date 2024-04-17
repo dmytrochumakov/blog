@@ -78,6 +78,14 @@ Choose Leaks option Select Simulator where you are going to test your applicatio
 After you spend some time trying different scenarios, you can see that Instruments found Leaked Objects.</description>
     </item>
     <item>
+      <title>ARC in Swift</title>
+      <link>http://localhost:1313/posts/post-11/</link>
+      <pubDate>Sun, 17 Dec 2023 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/post-11/</guid>
+      <description>What is ARC? Swift uses Automatic Reference Counting (ARC) to track and manage your app’s memory usage. In most cases, this means that memory management “just works” in Swift, and you don’t need to think about memory management yourself. ARC automatically frees up the memory used by class instances when those instances are no longer needed. - Apple
+ARC In Action In this example, we assign an instance to the reference1 property.</description>
+    </item>
+    <item>
       <title>What is closure in Swift language?</title>
       <link>http://localhost:1313/posts/post-7/</link>
       <pubDate>Sun, 10 Dec 2023 00:00:00 +0300</pubDate>
