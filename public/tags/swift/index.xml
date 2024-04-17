@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Dec 2023 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 28 Dec 2023 00:00:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What are value types in Swift?</title>
+      <link>http://localhost:1313/posts/post-8/</link>
+      <pubDate>Thu, 28 Dec 2023 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/post-8/</guid>
+      <description>What are value types? Value types play a central role in programming languages by grouping data values.
+`Value type” is a type of data copied when assigned to a new variable.
+struct Storage { var data: String = &amp;#34;some data&amp;#34; } let originalStorage = Storage() var copiedStorage = originalStorage // `originalStorage` is copied to `copiedStorage` How can you pass value types? You can pass value type by copying value.
+struct Storage { var data: String = &amp;#34;some data&amp;#34; } let originalStorage = Storage() var copiedStorage = originalStorage // `originalStorage` is copied to `copiedStorage` copiedStorage.</description>
+    </item>
     <item>
       <title>What is closure in Swift language?</title>
       <link>http://localhost:1313/posts/post-7/</link>
