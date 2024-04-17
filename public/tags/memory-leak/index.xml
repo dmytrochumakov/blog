@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Memory Leak on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/memory-leak/</link>
+    <description>Recent content in Memory Leak on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 24 Dec 2023 00:00:00 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/memory-leak/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to prevent memory leaks?</title>
+      <link>http://localhost:1313/posts/post-9/</link>
+      <pubDate>Sun, 24 Dec 2023 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/post-9/</guid>
+      <description>I was searching for tools that could help me find memory leaks faster and would be simple in implementation without affecting performance and memory size of application.
+I found a fantastic fit for this task LifetimeTracker developed by Krzysztof Zabłocki.
+All you need is to add LifetimeTracker package to the project, inherit from LifetimeTrackable protocol, and add two lines of code.
+class Department: LifetimeTrackable {} trackLifetime method to init of instance that you are going to verify, and lifetimeConfiguration property where you set max number of valid instances.</description>
+    </item>
+  </channel>
+</rss>
