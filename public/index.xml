@@ -48,6 +48,14 @@ What problems does it solve? The Visitor Pattern helps solve following problems:
 Separation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on.</description>
     </item>
     <item>
+      <title>Concurrency in Swift</title>
+      <link>http://localhost:1313/posts/post-12/</link>
+      <pubDate>Sun, 07 Jan 2024 00:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/post-12/</guid>
+      <description>What is concurrency? The system can perform multiple tasks simultaneously. By tasks, I mean code or instructions. Modern computer chips have multiple cores that allow developers to create and run various tasks on multiple cores. Even if your chip has one core operating system it will provide context switching mechanism by enabling it to execute multiple tasks concurrently.
+Material about processes, threads I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it.</description>
+    </item>
+    <item>
       <title>What are value types in Swift?</title>
       <link>http://localhost:1313/posts/post-8/</link>
       <pubDate>Thu, 28 Dec 2023 00:00:00 +0300</pubDate>
