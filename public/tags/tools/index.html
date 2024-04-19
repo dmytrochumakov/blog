@@ -192,6 +192,21 @@ if (!doNotTrack) {
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Delivering iOS app using Fastlane
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction You can easily deliver an iOS app in two ways: through beta and release lanes.
+The First Way - TestFlight By creating a beta lane inside the Fastfile. It utilizes:
+build_app: To easily build and sign your app (via gym). pilot: Makes it easier to manage your app on Apple’s TestFlight. lane :beta do build_app(scheme: &#34;YourScheme&#34;) pilot end To run Fastlane:
+fastlane beta Attention Before proceeding, you need to have the ipa or pkg file generated....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-19 06:49:13 +0300 EEST'>April 19, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Delivering iOS app using Fastlane" href="http://localhost:1313/posts/post-14/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Archiving Xcode project using the CLI
     </h2>
   </header>
