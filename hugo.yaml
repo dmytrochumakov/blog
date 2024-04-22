@@ -88,9 +88,9 @@ menu:
             name: Services
             url: /ios-app-maintenance-service/
             weight: 1
-          - identifier: portfolio
-            name: Portfolio
-            url: /portfolio/
+          - identifier: cases
+            name: Cases
+            url: /cases/
             weight: 2 
           - identifier: archive
             name: Archive

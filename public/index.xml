@@ -151,10 +151,10 @@ UDF can reduce data inconsistencies because of the single source of truth for th
       <description>Information about me.</description>
     </item>
     <item>
-      <title>Portfolio</title>
-      <link>http://localhost:1313/portfolio/</link>
+      <title>Cases</title>
+      <link>http://localhost:1313/cases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/portfolio/</guid>
+      <guid>http://localhost:1313/cases/</guid>
       <description>E-commerce Proficient in developing marketplace and utility management apps, capable of creating e-commerce platforms with features like product catalogs, user authentication, payment gateways, and order management systems.
 Healthcare Skilled in healthcare app development, with experience in building Glucose Tracker and COVID-19 tracking applications. Capable of developing apps for health metric monitoring, telemedicine, medication management, and wellness tracking.
 Finance Experienced in utility management and currency-related projects, able to create personal finance management apps, budgeting tools, and investment trackers.</description>
