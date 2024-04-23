@@ -11,8 +11,29 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 19 Apr 2024 06:49:13 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 23 Apr 2024 08:29:30 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building</title>
+      <link>http://localhost:1313/tags/building/</link>
+      <pubDate>Tue, 23 Apr 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/tags/building/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CI</title>
+      <link>http://localhost:1313/tags/ci/</link>
+      <pubDate>Tue, 23 Apr 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/tags/ci/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Project</title>
+      <link>http://localhost:1313/tags/project/</link>
+      <pubDate>Tue, 23 Apr 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/tags/project/</guid>
+      <description></description>
+    </item>
     <item>
       <title>CLI</title>
       <link>http://localhost:1313/tags/cli/</link>
@@ -46,13 +67,6 @@
       <link>http://localhost:1313/tags/testing/</link>
       <pubDate>Fri, 12 Apr 2024 03:20:34 +0300</pubDate>
       <guid>http://localhost:1313/tags/testing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Building</title>
-      <link>http://localhost:1313/tags/building/</link>
-      <pubDate>Fri, 05 Apr 2024 04:59:38 +0300</pubDate>
-      <guid>http://localhost:1313/tags/building/</guid>
       <description></description>
     </item>
     <item>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Building on Dmytro&#39;s Blog</title>
-    <link>http://localhost:1313/tags/building/</link>
-    <description>Recent content in Building on Dmytro&#39;s Blog</description>
+    <title>Project on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/project/</link>
+    <description>Recent content in Project on Dmytro&#39;s Blog</description>
     <image>
       <title>Dmytro&#39;s Blog</title>
       <url>http://localhost:1313/images/papermod-cover.png</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 23 Apr 2024 08:29:30 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/building/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building Xcode project using Github Actions</title>
       <link>http://localhost:1313/posts/post-15/</link>
@@ -20,14 +20,6 @@
       <guid>http://localhost:1313/posts/post-15/</guid>
       <description>Introduction If you&amp;rsquo;re wondering how to build an Xcode project using GitHub Actions, here are a few steps:
 First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15.</description>
-    </item>
-    <item>
-      <title>Building Xcode project using the CLI</title>
-      <link>http://localhost:1313/posts/post-2/</link>
-      <pubDate>Fri, 05 Apr 2024 04:59:38 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-2/</guid>
-      <description>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to build a project in the fastest way.
-One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you&amp;rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project.</description>
     </item>
   </channel>
 </rss>

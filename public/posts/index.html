@@ -207,6 +207,19 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Building Xcode project using Github Actions
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction If you’re wondering how to build an Xcode project using GitHub Actions, here are a few steps:
+First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-23 08:29:30 +0300 EEST'>April 23, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Building Xcode project using Github Actions" href="http://localhost:1313/posts/post-15/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Delivering iOS app using Fastlane
     </h2>
   </header>
@@ -257,21 +270,6 @@ One of such ways is by using the xcodebuild command Basic outline of the process
   </div>
   <footer class="entry-footer"><span title='2024-04-05 04:59:38 +0300 EEST'>April 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Building Xcode project using the CLI" href="http://localhost:1313/posts/post-2/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">The Visitor Pattern
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>In this article: What is a Visitor Pattern? What problems does it solve? Real-world code example What is a Visitor Pattern? The Visitor Pattern helps add new capabilities to a composite of objects.
-Source
-What problems does it solve? The Visitor Pattern helps solve following problems:
-Separation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-04-01 08:01:22 +0300 EEST'>April 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to The Visitor Pattern" href="http://localhost:1313/posts/post-1/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
