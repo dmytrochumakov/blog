@@ -5,8 +5,6 @@ tags = ["Swift", "Threads", "Programming", "Concurrency"]
 draft = false
 +++
 
-### Introduction
-
 ### What is the Thread?
 A [Thread](https://developer.apple.com/documentation/foundation/thread) is a small set of instructions that can be executed independently from the main program.
 Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time.

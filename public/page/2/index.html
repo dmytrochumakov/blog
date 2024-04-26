@@ -230,11 +230,25 @@ Separation of Concerns: The Visitor Pattern separates algorithms from the object
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Big O notation
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is a Big O notation? The Big O notation helps identify algorithm efficiency. It can measure computation and memory growth with respect to input. Real-world code example O(n) — Linear Time
+func containsValue(array: [Int], value: Int) -&gt; Bool { for element in array { if element == value { return true } } return false } O(1) — Constant Time
+func findFirstElement(array: [Int]) -&gt; Int? { return array.first } Thank you for reading!...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-21 08:29:30 +0300 +0300'>February 21, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Big O notation" href="http://localhost:1313/posts/big-o-notation/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Combine — Basics
     </h2>
   </header>
   <div class="entry-content">
-    <p>Introduction What is Combine? Combine Framework provides an API for processing async events over time such as user-input, network response, and other dynamic data.
+    <p>What is Combine? Combine Framework provides an API for processing async events over time such as user-input, network response, and other dynamic data.
 What is the purpose of Combine? The purpose of Combine is to simplify the management of async events and data streams.
 Publishers Publisher declares that a type can transit a sequence of values over time. A publisher delivers elements to one or more Subscriber instances.
 class PostService { func fetchPosts() -&gt; AnyPublisher&lt;[Post], Error&gt; { guard let url = URL(string: &#34;https://jsonplaceholder....</p>
@@ -249,26 +263,13 @@ class PostService { func fetchPosts() -&gt; AnyPublisher&lt;[Post], Error&gt; { 
     </h2>
   </header>
   <div class="entry-content">
-    <p>Introduction When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
+    <p>When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
 You can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.
 What are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
 actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&gt; String?...</p>
   </div>
   <footer class="entry-footer"><span title='2024-02-04 08:29:30 +0300 +0300'>February 4, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Modern Concurrency" href="http://localhost:1313/posts/modern-concurrency/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">What are Threads in Swift?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction What is the Thread? A Thread is a small set of instructions that can be executed independently from the main program. Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time. The Thread has its own stack, registers, and program counters.
-Threads share memory address space, and it is possible to communicate between Threads using shared memory space. How to use it?...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-20 08:29:30 +0300 +0300'>January 20, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to What are Threads in Swift?" href="http://localhost:1313/posts/what-are-threads-in-swift/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

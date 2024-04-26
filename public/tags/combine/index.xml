@@ -18,7 +18,7 @@
       <link>http://localhost:1313/posts/combine-basics/</link>
       <pubDate>Wed, 07 Feb 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/posts/combine-basics/</guid>
-      <description>Introduction What is Combine? Combine Framework provides an API for processing async events over time such as user-input, network response, and other dynamic data.
+      <description>What is Combine? Combine Framework provides an API for processing async events over time such as user-input, network response, and other dynamic data.
 What is the purpose of Combine? The purpose of Combine is to simplify the management of async events and data streams.
 Publishers Publisher declares that a type can transit a sequence of values over time. A publisher delivers elements to one or more Subscriber instances.
 class PostService { func fetchPosts() -&amp;gt; AnyPublisher&amp;lt;[Post], Error&amp;gt; { guard let url = URL(string: &amp;#34;https://jsonplaceholder.</description>

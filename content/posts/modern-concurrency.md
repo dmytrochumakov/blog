@@ -5,8 +5,6 @@ tags = ["Modern Concurrency", "Concurrency", "Swift"]
 draft = false
 +++
 
-### Introduction
-
 ### When was it introduced?
 It was introduced in [Swift 5.5](https://github.com/apple/swift/tree/swift-5.5-RELEASE) at [WWDC 2021](https://developer.apple.com/videos/wwdc2021/).
 

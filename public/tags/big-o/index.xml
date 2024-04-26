@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Big O on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/big-o/</link>
+    <description>Recent content in Big O on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 21 Feb 2024 08:29:30 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/big-o/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Big O notation</title>
+      <link>http://localhost:1313/posts/big-o-notation/</link>
+      <pubDate>Wed, 21 Feb 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/posts/big-o-notation/</guid>
+      <description>What is a Big O notation? The Big O notation helps identify algorithm efficiency. It can measure computation and memory growth with respect to input. Real-world code example O(n) — Linear Time
+func containsValue(array: [Int], value: Int) -&amp;gt; Bool { for element in array { if element == value { return true } } return false } O(1) — Constant Time
+func findFirstElement(array: [Int]) -&amp;gt; Int? { return array.first } Thank you for reading!</description>
+    </item>
+  </channel>
+</rss>

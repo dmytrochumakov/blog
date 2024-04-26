@@ -74,11 +74,20 @@ What problems does it solve? The Visitor Pattern helps solve following problems:
 Separation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on.</description>
     </item>
     <item>
+      <title>Big O notation</title>
+      <link>http://localhost:1313/posts/big-o-notation/</link>
+      <pubDate>Wed, 21 Feb 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/posts/big-o-notation/</guid>
+      <description>What is a Big O notation? The Big O notation helps identify algorithm efficiency. It can measure computation and memory growth with respect to input. Real-world code example O(n) — Linear Time
+func containsValue(array: [Int], value: Int) -&amp;gt; Bool { for element in array { if element == value { return true } } return false } O(1) — Constant Time
+func findFirstElement(array: [Int]) -&amp;gt; Int? { return array.first } Thank you for reading!</description>
+    </item>
+    <item>
       <title>Combine — Basics</title>
       <link>http://localhost:1313/posts/combine-basics/</link>
       <pubDate>Wed, 07 Feb 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/posts/combine-basics/</guid>
-      <description>Introduction What is Combine? Combine Framework provides an API for processing async events over time such as user-input, network response, and other dynamic data.
+      <description>What is Combine? Combine Framework provides an API for processing async events over time such as user-input, network response, and other dynamic data.
 What is the purpose of Combine? The purpose of Combine is to simplify the management of async events and data streams.
 Publishers Publisher declares that a type can transit a sequence of values over time. A publisher delivers elements to one or more Subscriber instances.
 class PostService { func fetchPosts() -&amp;gt; AnyPublisher&amp;lt;[Post], Error&amp;gt; { guard let url = URL(string: &amp;#34;https://jsonplaceholder.</description>
@@ -88,7 +97,7 @@ class PostService { func fetchPosts() -&amp;gt; AnyPublisher&amp;lt;[Post], Erro
       <link>http://localhost:1313/posts/modern-concurrency/</link>
       <pubDate>Sun, 04 Feb 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/posts/modern-concurrency/</guid>
-      <description>Introduction When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
+      <description>When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
 You can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.
 What are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
 actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&amp;gt; String?</description>
@@ -98,7 +107,7 @@ actor DatabaseManager { private var data: [String: String] = [:] func readData(k
       <link>http://localhost:1313/posts/what-are-threads-in-swift/</link>
       <pubDate>Sat, 20 Jan 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/posts/what-are-threads-in-swift/</guid>
-      <description>Introduction What is the Thread? A Thread is a small set of instructions that can be executed independently from the main program. Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time. The Thread has its own stack, registers, and program counters.
+      <description>What is the Thread? A Thread is a small set of instructions that can be executed independently from the main program. Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time. The Thread has its own stack, registers, and program counters.
 Threads share memory address space, and it is possible to communicate between Threads using shared memory space. How to use it?</description>
     </item>
     <item>

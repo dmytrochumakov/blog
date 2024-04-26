@@ -18,7 +18,7 @@
       <link>http://localhost:1313/posts/modern-concurrency/</link>
       <pubDate>Sun, 04 Feb 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/posts/modern-concurrency/</guid>
-      <description>Introduction When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
+      <description>When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
 You can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.
 What are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
 actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&amp;gt; String?</description>

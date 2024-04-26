@@ -18,7 +18,7 @@
       <link>http://localhost:1313/posts/what-are-threads-in-swift/</link>
       <pubDate>Sat, 20 Jan 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/posts/what-are-threads-in-swift/</guid>
-      <description>Introduction What is the Thread? A Thread is a small set of instructions that can be executed independently from the main program. Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time. The Thread has its own stack, registers, and program counters.
+      <description>What is the Thread? A Thread is a small set of instructions that can be executed independently from the main program. Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time. The Thread has its own stack, registers, and program counters.
 Threads share memory address space, and it is possible to communicate between Threads using shared memory space. How to use it?</description>
     </item>
   </channel>

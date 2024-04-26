@@ -5,8 +5,6 @@ tags = ["Combine"]
 draft = false
 +++
 
-### Introduction
-
 ###  What is Combine?
 Combine Framework provides an API for processing async events over time such as user-input, network response, and other dynamic data.
 
