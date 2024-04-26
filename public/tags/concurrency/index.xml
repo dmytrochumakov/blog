@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jan 2024 08:29:30 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What are Threads in Swift?</title>
+      <link>http://localhost:1313/posts/what-are-threads-in-swift/</link>
+      <pubDate>Sat, 20 Jan 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/posts/what-are-threads-in-swift/</guid>
+      <description>Introduction What is the Thread? A Thread is a small set of instructions that can be executed independently from the main program. Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time. The Thread has its own stack, registers, and program counters.
+Threads share memory address space, and it is possible to communicate between Threads using shared memory space. How to use it?</description>
+    </item>
     <item>
       <title>DispatchGroup in Swift</title>
       <link>http://localhost:1313/posts/post-13/</link>

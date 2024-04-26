@@ -100,8 +100,29 @@
     <item>
       <title>Concurrency</title>
       <link>http://localhost:1313/tags/concurrency/</link>
-      <pubDate>Wed, 10 Jan 2024 00:00:00 +0300</pubDate>
+      <pubDate>Sat, 20 Jan 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/concurrency/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>http://localhost:1313/tags/programming/</link>
+      <pubDate>Sat, 20 Jan 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/tags/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Swift</title>
+      <link>http://localhost:1313/tags/swift/</link>
+      <pubDate>Sat, 20 Jan 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/tags/swift/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Threads</title>
+      <link>http://localhost:1313/tags/threads/</link>
+      <pubDate>Sat, 20 Jan 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/tags/threads/</guid>
       <description></description>
     </item>
     <item>
@@ -109,13 +130,6 @@
       <link>http://localhost:1313/tags/dispatchgroup/</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0300</pubDate>
       <guid>http://localhost:1313/tags/dispatchgroup/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Swift</title>
-      <link>http://localhost:1313/tags/swift/</link>
-      <pubDate>Wed, 10 Jan 2024 00:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>

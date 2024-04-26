@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Programming on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/programming/</link>
+    <description>Recent content in Programming on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Jan 2024 08:29:30 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What are Threads in Swift?</title>
+      <link>http://localhost:1313/posts/what-are-threads-in-swift/</link>
+      <pubDate>Sat, 20 Jan 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/posts/what-are-threads-in-swift/</guid>
+      <description>Introduction What is the Thread? A Thread is a small set of instructions that can be executed independently from the main program. Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time. The Thread has its own stack, registers, and program counters.
+Threads share memory address space, and it is possible to communicate between Threads using shared memory space. How to use it?</description>
+    </item>
+  </channel>
+</rss>
