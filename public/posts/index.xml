@@ -74,6 +74,16 @@ What problems does it solve? The Visitor Pattern helps solve following problems:
 Separation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on. Extensibility: It allows you to add new operations to existing object structures without modifying those structures.</description>
     </item>
     <item>
+      <title>The Chain Of Responsibility Pattern</title>
+      <link>http://localhost:1313/posts/the-chain-of-responsibility-pattern/</link>
+      <pubDate>Fri, 15 Mar 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/posts/the-chain-of-responsibility-pattern/</guid>
+      <description>What is a Chain Of Responsibility Pattern? The Chain Of Responsibility Pattern helps create a chain of objects to examine requests. Each object in turn examines a request and either handles it or passes onto the next object in the chain.
+Source
+What problems does it solve? The Chain Of Responsibility Pattern (CoR) helps solve following problems:
+Dynamic Request Handling: It enables dynamic assignment of responsibilities at runtime. Handlers can be added, removed, or reordered without affecting the client’s code.</description>
+    </item>
+    <item>
       <title>The State Pattern</title>
       <link>http://localhost:1313/posts/the-state-pattern/</link>
       <pubDate>Sun, 10 Mar 2024 08:29:30 +0300</pubDate>
