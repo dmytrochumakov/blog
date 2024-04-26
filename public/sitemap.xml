@@ -68,6 +68,12 @@
     <loc>http://localhost:1313/posts/post-1/</loc>
     <lastmod>2024-04-01T08:01:22+03:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/combine/</loc>
+    <lastmod>2024-02-07T08:29:30+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/combine-basics/</loc>
+    <lastmod>2024-02-07T08:29:30+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/concurrency/</loc>
     <lastmod>2024-01-20T08:29:30+03:00</lastmod>
   </url><url>
