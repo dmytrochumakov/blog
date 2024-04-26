@@ -84,6 +84,16 @@ Publishers Publisher declares that a type can transit a sequence of values over 
 class PostService { func fetchPosts() -&amp;gt; AnyPublisher&amp;lt;[Post], Error&amp;gt; { guard let url = URL(string: &amp;#34;https://jsonplaceholder.</description>
     </item>
     <item>
+      <title>Modern Concurrency</title>
+      <link>http://localhost:1313/posts/modern-concurrency/</link>
+      <pubDate>Sun, 04 Feb 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/posts/modern-concurrency/</guid>
+      <description>Introduction When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
+You can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.
+What are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
+actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&amp;gt; String?</description>
+    </item>
+    <item>
       <title>What are Threads in Swift?</title>
       <link>http://localhost:1313/posts/what-are-threads-in-swift/</link>
       <pubDate>Sat, 20 Jan 2024 08:29:30 +0300</pubDate>

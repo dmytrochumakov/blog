@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Modern Concurrency on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/modern-concurrency/</link>
+    <description>Recent content in Modern Concurrency on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 04 Feb 2024 08:29:30 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/modern-concurrency/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Modern Concurrency</title>
+      <link>http://localhost:1313/posts/modern-concurrency/</link>
+      <pubDate>Sun, 04 Feb 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/posts/modern-concurrency/</guid>
+      <description>Introduction When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
+You can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.
+What are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
+actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&amp;gt; String?</description>
+    </item>
+  </channel>
+</rss>

@@ -75,12 +75,18 @@
     <lastmod>2024-02-07T08:29:30+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/concurrency/</loc>
-    <lastmod>2024-01-20T08:29:30+03:00</lastmod>
+    <lastmod>2024-02-04T08:29:30+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/programming/</loc>
-    <lastmod>2024-01-20T08:29:30+03:00</lastmod>
+    <loc>http://localhost:1313/tags/modern-concurrency/</loc>
+    <lastmod>2024-02-04T08:29:30+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/modern-concurrency/</loc>
+    <lastmod>2024-02-04T08:29:30+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/swift/</loc>
+    <lastmod>2024-02-04T08:29:30+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/programming/</loc>
     <lastmod>2024-01-20T08:29:30+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/threads/</loc>

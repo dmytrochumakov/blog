@@ -107,8 +107,22 @@
     <item>
       <title>Concurrency</title>
       <link>http://localhost:1313/tags/concurrency/</link>
-      <pubDate>Sat, 20 Jan 2024 08:29:30 +0300</pubDate>
+      <pubDate>Sun, 04 Feb 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/concurrency/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Modern Concurrency</title>
+      <link>http://localhost:1313/tags/modern-concurrency/</link>
+      <pubDate>Sun, 04 Feb 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/tags/modern-concurrency/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Swift</title>
+      <link>http://localhost:1313/tags/swift/</link>
+      <pubDate>Sun, 04 Feb 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>
@@ -116,13 +130,6 @@
       <link>http://localhost:1313/tags/programming/</link>
       <pubDate>Sat, 20 Jan 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/programming/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Swift</title>
-      <link>http://localhost:1313/tags/swift/</link>
-      <pubDate>Sat, 20 Jan 2024 08:29:30 +0300</pubDate>
-      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>
