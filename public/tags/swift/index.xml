@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 15 Mar 2024 08:29:30 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 22 Mar 2024 08:29:30 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Memento Pattern</title>
+      <link>http://localhost:1313/posts/the-memento-pattern/</link>
+      <pubDate>Fri, 22 Mar 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/posts/the-memento-pattern/</guid>
+      <description>What is a Memento Pattern? The Memento Pattern helps return an object to one of its previous states; for instance, if the user requests an “undo” operation.
+Source
+What problems does it solve? The Memento Pattern helps solve following problems:
+Undo/Redo Functionality: Memento allows you to capture an object’s state at a specific point in time and store it externally. This enables you to implement undo/redo functionality by restoring the object to its previous state.</description>
+    </item>
     <item>
       <title>The Chain Of Responsibility Pattern</title>
       <link>http://localhost:1313/posts/the-chain-of-responsibility-pattern/</link>
