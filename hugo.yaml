@@ -54,6 +54,8 @@ params:
       url: "https://github.com/dmytrochumakov"    
     - name: linkedin
       url: "https://www.linkedin.com/in/dmytro-chumakov/"
+    - name: youtube
+      url: "https://www.youtube.com/@dmytro_chumakov"
     - name: email
       url: "mailto:dmytro.v.chumakov.work@gmail.com"
 
