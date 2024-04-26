@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 23 Apr 2024 08:29:30 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 26 Apr 2024 06:51:21 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing Xcode project using Github Actions</title>
+      <link>http://localhost:1313/posts/testing-xcode-project-using-github-actions/</link>
+      <pubDate>Fri, 26 Apr 2024 06:51:21 +0300</pubDate>
+      <guid>http://localhost:1313/posts/testing-xcode-project-using-github-actions/</guid>
+      <description>Introduction If you&amp;rsquo;re wondering how to test an Xcode project using GitHub Actions, here are a few steps:
+First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15.</description>
+    </item>
     <item>
       <title>Building Xcode project using Github Actions</title>
       <link>http://localhost:1313/posts/post-15/</link>

@@ -1,7 +1,7 @@
 +++
 title = 'Delivering iOS app using Fastlane'
 date = 2024-04-19T06:49:13+03:00
-tags = ["CLI", "Tools", "Delivering"]
+tags = ["CLI", "Tools", "Delivering", "Fastlane"]
 draft = false
 +++
 

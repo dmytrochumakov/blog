@@ -2,25 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/ci/</loc>
+    <lastmod>2024-04-26T06:51:21+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-04-26T06:51:21+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/github-actions/</loc>
+    <lastmod>2024-04-26T06:51:21+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-04-26T06:51:21+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/project/</loc>
+    <lastmod>2024-04-26T06:51:21+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-04-26T06:51:21+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/testing/</loc>
+    <lastmod>2024-04-26T06:51:21+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/testing-xcode-project-using-github-actions/</loc>
+    <lastmod>2024-04-26T06:51:21+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/xcode/</loc>
+    <lastmod>2024-04-26T06:51:21+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/building/</loc>
     <lastmod>2024-04-23T08:29:30+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/post-15/</loc>
-    <lastmod>2024-04-23T08:29:30+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ci/</loc>
-    <lastmod>2024-04-23T08:29:30+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-04-23T08:29:30+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-04-23T08:29:30+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/project/</loc>
-    <lastmod>2024-04-23T08:29:30+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-04-23T08:29:30+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/cli/</loc>
@@ -32,6 +44,9 @@
     <loc>http://localhost:1313/posts/post-14/</loc>
     <lastmod>2024-04-19T06:49:13+03:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/fastlane/</loc>
+    <lastmod>2024-04-19T06:49:13+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/tools/</loc>
     <lastmod>2024-04-19T06:49:13+03:00</lastmod>
   </url><url>
@@ -40,9 +55,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/post-6/</loc>
     <lastmod>2024-04-16T13:46:03+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/testing/</loc>
-    <lastmod>2024-04-12T03:20:34+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/post-3/</loc>
     <lastmod>2024-04-12T03:20:34+03:00</lastmod>

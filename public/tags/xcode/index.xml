@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Project on Dmytro&#39;s Blog</title>
-    <link>http://localhost:1313/tags/project/</link>
-    <description>Recent content in Project on Dmytro&#39;s Blog</description>
+    <title>Xcode on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/xcode/</link>
+    <description>Recent content in Xcode on Dmytro&#39;s Blog</description>
     <image>
       <title>Dmytro&#39;s Blog</title>
       <url>http://localhost:1313/images/papermod-cover.png</url>
@@ -12,21 +12,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 26 Apr 2024 06:51:21 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/xcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Testing Xcode project using Github Actions</title>
       <link>http://localhost:1313/posts/testing-xcode-project-using-github-actions/</link>
       <pubDate>Fri, 26 Apr 2024 06:51:21 +0300</pubDate>
       <guid>http://localhost:1313/posts/testing-xcode-project-using-github-actions/</guid>
       <description>Introduction If you&amp;rsquo;re wondering how to test an Xcode project using GitHub Actions, here are a few steps:
-First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15.</description>
-    </item>
-    <item>
-      <title>Building Xcode project using Github Actions</title>
-      <link>http://localhost:1313/posts/post-15/</link>
-      <pubDate>Tue, 23 Apr 2024 08:29:30 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-15/</guid>
-      <description>Introduction If you&amp;rsquo;re wondering how to build an Xcode project using GitHub Actions, here are a few steps:
 First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15.</description>
     </item>
   </channel>
