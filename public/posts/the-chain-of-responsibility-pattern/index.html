@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>The Chain Of Responsibility Pattern | Dmytro&#39;s Blog</title>
-<meta name="keywords" content="patternt">
+<meta name="keywords" content="chain of responsibility pattern, design patterns, swift, oop">
 <meta name="description" content="What is a Chain Of Responsibility Pattern? The Chain Of Responsibility Pattern helps create a chain of objects to examine requests. Each object in turn examines a request and either handles it or passes onto the next object in the chain.
 Source
 What problems does it solve? The Chain Of Responsibility Pattern (CoR) helps solve following problems:
@@ -136,7 +136,7 @@ Dynamic Request Handling: It enables dynamic assignment of responsibilities at r
   "name": "The Chain Of Responsibility Pattern",
   "description": "What is a Chain Of Responsibility Pattern? The Chain Of Responsibility Pattern helps create a chain of objects to examine requests. Each object in turn examines a request and either handles it or passes onto the next object in the chain.\nSource\nWhat problems does it solve? The Chain Of Responsibility Pattern (CoR) helps solve following problems:\nDynamic Request Handling: It enables dynamic assignment of responsibilities at runtime. Handlers can be added, removed, or reordered without affecting the client’s code.",
   "keywords": [
-    "patternt"
+    "chain of responsibility pattern", "design patterns", "swift", "oop"
   ],
   "articleBody": "What is a Chain Of Responsibility Pattern? The Chain Of Responsibility Pattern helps create a chain of objects to examine requests. Each object in turn examines a request and either handles it or passes onto the next object in the chain.\nSource\nWhat problems does it solve? The Chain Of Responsibility Pattern (CoR) helps solve following problems:\nDynamic Request Handling: It enables dynamic assignment of responsibilities at runtime. Handlers can be added, removed, or reordered without affecting the client’s code. This flexibility allows for easier maintenance and extension of the system. Decoupling Sender and Receiver: In traditional systems, a sender often needs to know the exact receiver of a request, leading to tight coupling between them. The CoR pattern decouples senders from receivers by allowing multiple objects to handle a request without the sender knowing the specific handler. Real-world code example // Protocol defining the handler interface protocol PurchaseHandler { var next: PurchaseHandler? { get set } func handleRequest(amount: Double) } // Concrete handlers class SmallPurchaseHandler: PurchaseHandler { var next: PurchaseHandler? let maxAmount: Double = 100.0 func handleRequest(amount: Double) { if amount \u003c= maxAmount { print(\"SmallPurchaseHandler: Purchase approved for $\\(amount)\") } else if let nextHandler = next { print(\"SmallPurchaseHandler: Passing request to next handler\") nextHandler.handleRequest(amount: amount) } else { print(\"SmallPurchaseHandler: No handler available, purchase rejected\") } } } class MediumPurchaseHandler: PurchaseHandler { var next: PurchaseHandler? let maxAmount: Double = 500.0 func handleRequest(amount: Double) { if amount \u003c= maxAmount { print(\"MediumPurchaseHandler: Purchase approved for $\\(amount)\") } else if let nextHandler = next { print(\"MediumPurchaseHandler: Passing request to next handler\") nextHandler.handleRequest(amount: amount) } else { print(\"MediumPurchaseHandler: No handler available, purchase rejected\") } } } class LargePurchaseHandler: PurchaseHandler { var next: PurchaseHandler? func handleRequest(amount: Double) { print(\"LargePurchaseHandler: Purchase approved for $\\(amount)\") } } // Usage func main() { let smallHandler = SmallPurchaseHandler() let mediumHandler = MediumPurchaseHandler() let largeHandler = LargePurchaseHandler() // Connecting handlers into a chain smallHandler.next = mediumHandler mediumHandler.next = largeHandler smallHandler.handleRequest(amount: 50.0) smallHandler.handleRequest(amount: 200.0) smallHandler.handleRequest(amount: 1000.0) } Thank you for reading! 😊 ",
   "wordCount" : "331",
@@ -371,7 +371,10 @@ Dynamic Request Handling: It enables dynamic assignment of responsibilities at r
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/patternt/">Patternt</a></li>
+      <li><a href="http://localhost:1313/tags/chain-of-responsibility-pattern/">Chain of Responsibility Pattern</a></li>
+      <li><a href="http://localhost:1313/tags/design-patterns/">Design Patterns</a></li>
+      <li><a href="http://localhost:1313/tags/swift/">Swift</a></li>
+      <li><a href="http://localhost:1313/tags/oop/">Oop</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="http://localhost:1313/posts/post-1/">
@@ -390,7 +393,7 @@ Dynamic Request Handling: It enables dynamic assignment of responsibilities at r
 <ul class="share-buttons">
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share The Chain Of Responsibility Pattern on x"
-            href="https://x.com/intent/tweet/?text=The%20Chain%20Of%20Responsibility%20Pattern&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fthe-chain-of-responsibility-pattern%2f&amp;hashtags=patternt">
+            href="https://x.com/intent/tweet/?text=The%20Chain%20Of%20Responsibility%20Pattern&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fthe-chain-of-responsibility-pattern%2f&amp;hashtags=chainofresponsibilitypattern%2cdesignpatterns%2cswift%2coop">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />

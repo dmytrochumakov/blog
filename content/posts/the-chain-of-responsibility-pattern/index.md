@@ -1,7 +1,7 @@
 +++
 title = 'The Chain Of Responsibility Pattern'
 date = 2024-03-15T08:29:30+03:00
-tags = ["patternt"]
+tags = ["chain of responsibility pattern", "design patterns", "swift", "oop"]
 draft = false
 +++
 

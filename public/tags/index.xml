@@ -98,17 +98,24 @@
       <description></description>
     </item>
     <item>
-      <title>Patternt</title>
-      <link>http://localhost:1313/tags/patternt/</link>
+      <title>Chain of Responsibility Pattern</title>
+      <link>http://localhost:1313/tags/chain-of-responsibility-pattern/</link>
       <pubDate>Fri, 15 Mar 2024 08:29:30 +0300</pubDate>
-      <guid>http://localhost:1313/tags/patternt/</guid>
+      <guid>http://localhost:1313/tags/chain-of-responsibility-pattern/</guid>
       <description></description>
     </item>
     <item>
       <title>Oop</title>
       <link>http://localhost:1313/tags/oop/</link>
-      <pubDate>Sun, 10 Mar 2024 08:29:30 +0300</pubDate>
+      <pubDate>Fri, 15 Mar 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/oop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Swift</title>
+      <link>http://localhost:1313/tags/swift/</link>
+      <pubDate>Fri, 15 Mar 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>
@@ -116,13 +123,6 @@
       <link>http://localhost:1313/tags/state-pattern/</link>
       <pubDate>Sun, 10 Mar 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/state-pattern/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Swift</title>
-      <link>http://localhost:1313/tags/swift/</link>
-      <pubDate>Sun, 10 Mar 2024 08:29:30 +0300</pubDate>
-      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>
