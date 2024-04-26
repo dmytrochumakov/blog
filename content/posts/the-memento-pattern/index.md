@@ -1,7 +1,7 @@
 +++
 title = 'The Memento Pattern'
 date = 2024-03-22T08:29:30+03:00
-tags = ["chain memento pattern", "design patterns", "swift", "oop"]
+tags = ["memento pattern", "design patterns", "swift", "oop"]
 draft = false
 +++
 

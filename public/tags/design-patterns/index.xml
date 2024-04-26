@@ -34,6 +34,16 @@ What problems does it solve? The Memento Pattern helps solve following problems:
 Undo/Redo Functionality: Memento allows you to capture an object’s state at a specific point in time and store it externally. This enables you to implement undo/redo functionality by restoring the object to its previous state.</description>
     </item>
     <item>
+      <title>The Flyweight Pattern</title>
+      <link>http://localhost:1313/posts/the-flyweight-pattern/</link>
+      <pubDate>Sun, 17 Mar 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/posts/the-flyweight-pattern/</guid>
+      <description>What is a Flyweight Pattern? The Flyweight Pattern refers to an object that minimizes memory usage by sharing some of its data with other similar objects.
+Source
+What problems does it solve? The Flyweight Pattern helps solve following problems:
+Large Memory Footprint: When dealing with a large number of objects, especially if these objects share a significant amount of common state, traditional object creation can lead to excessive memory consumption. The Flyweight Pattern reduces memory usage by sharing this common state among multiple objects.</description>
+    </item>
+    <item>
       <title>The Chain Of Responsibility Pattern</title>
       <link>http://localhost:1313/posts/the-chain-of-responsibility-pattern/</link>
       <pubDate>Fri, 15 Mar 2024 08:29:30 +0300</pubDate>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Flyweight Pattern on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/flyweight-pattern/</link>
+    <description>Recent content in Flyweight Pattern on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 17 Mar 2024 08:29:30 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/flyweight-pattern/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Flyweight Pattern</title>
+      <link>http://localhost:1313/posts/the-flyweight-pattern/</link>
+      <pubDate>Sun, 17 Mar 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/posts/the-flyweight-pattern/</guid>
+      <description>What is a Flyweight Pattern? The Flyweight Pattern refers to an object that minimizes memory usage by sharing some of its data with other similar objects.
+Source
+What problems does it solve? The Flyweight Pattern helps solve following problems:
+Large Memory Footprint: When dealing with a large number of objects, especially if these objects share a significant amount of common state, traditional object creation can lead to excessive memory consumption. The Flyweight Pattern reduces memory usage by sharing this common state among multiple objects.</description>
+    </item>
+  </channel>
+</rss>

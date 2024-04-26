@@ -98,10 +98,10 @@
       <description></description>
     </item>
     <item>
-      <title>Chain Memento Pattern</title>
-      <link>http://localhost:1313/tags/chain-memento-pattern/</link>
+      <title>Memento Pattern</title>
+      <link>http://localhost:1313/tags/memento-pattern/</link>
       <pubDate>Fri, 22 Mar 2024 08:29:30 +0300</pubDate>
-      <guid>http://localhost:1313/tags/chain-memento-pattern/</guid>
+      <guid>http://localhost:1313/tags/memento-pattern/</guid>
       <description></description>
     </item>
     <item>
@@ -116,6 +116,13 @@
       <link>http://localhost:1313/tags/swift/</link>
       <pubDate>Fri, 22 Mar 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/swift/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flyweight Pattern</title>
+      <link>http://localhost:1313/tags/flyweight-pattern/</link>
+      <pubDate>Sun, 17 Mar 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/tags/flyweight-pattern/</guid>
       <description></description>
     </item>
     <item>

@@ -68,7 +68,7 @@
     <loc>http://localhost:1313/posts/post-1/</loc>
     <lastmod>2024-04-01T08:01:22+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/chain-memento-pattern/</loc>
+    <loc>http://localhost:1313/tags/memento-pattern/</loc>
     <lastmod>2024-03-22T08:29:30+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/oop/</loc>
@@ -79,6 +79,12 @@
   </url><url>
     <loc>http://localhost:1313/posts/the-memento-pattern/</loc>
     <lastmod>2024-03-22T08:29:30+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/flyweight-pattern/</loc>
+    <lastmod>2024-03-17T08:29:30+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/the-flyweight-pattern/</loc>
+    <lastmod>2024-03-17T08:29:30+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/chain-of-responsibility-pattern/</loc>
     <lastmod>2024-03-15T08:29:30+03:00</lastmod>
