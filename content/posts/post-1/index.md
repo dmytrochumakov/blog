@@ -5,12 +5,6 @@ tags = ["design patterns"]
 draft = false
 +++
 
-### In this article:
-
-- What is a Visitor Pattern?
-- What problems does it solve?
-- Real-world code example
-
 ### What is a Visitor Pattern?
 > The Visitor Pattern helps add new capabilities to a composite of objects.
 

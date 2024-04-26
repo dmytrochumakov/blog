@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Feb 2024 08:29:30 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 10 Mar 2024 08:29:30 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The State Pattern</title>
+      <link>http://localhost:1313/posts/the-state-pattern/</link>
+      <pubDate>Sun, 10 Mar 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/posts/the-state-pattern/</guid>
+      <description>What is a State Pattern? The State Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+Source
+What problems does it solve? Complex conditional logic: When an object’s behavior depends on its internal state, it often leads to complex conditional statements. The State pattern simplifies this by encapsulating each state and its behavior in separate classes, making the code more readable and maintainable.</description>
+    </item>
     <item>
       <title>Modern Concurrency</title>
       <link>http://localhost:1313/posts/modern-concurrency/</link>

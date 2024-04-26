@@ -98,6 +98,27 @@
       <description></description>
     </item>
     <item>
+      <title>Oop</title>
+      <link>http://localhost:1313/tags/oop/</link>
+      <pubDate>Sun, 10 Mar 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/tags/oop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>State Pattern</title>
+      <link>http://localhost:1313/tags/state-pattern/</link>
+      <pubDate>Sun, 10 Mar 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/tags/state-pattern/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Swift</title>
+      <link>http://localhost:1313/tags/swift/</link>
+      <pubDate>Sun, 10 Mar 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/tags/swift/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Algorithm Complexity</title>
       <link>http://localhost:1313/tags/algorithm-complexity/</link>
       <pubDate>Wed, 21 Feb 2024 08:29:30 +0300</pubDate>
@@ -130,13 +151,6 @@
       <link>http://localhost:1313/tags/modern-concurrency/</link>
       <pubDate>Sun, 04 Feb 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/modern-concurrency/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Swift</title>
-      <link>http://localhost:1313/tags/swift/</link>
-      <pubDate>Sun, 04 Feb 2024 08:29:30 +0300</pubDate>
-      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>

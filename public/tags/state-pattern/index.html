@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Posts | Dmytro&#39;s Blog</title>
+<title>State Pattern | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="">
-<meta name="description" content="Posts - Dmytro&#39;s Blog">
+<meta name="description" content="">
 <meta name="author" content="Dmytro Chumakov">
-<link rel="canonical" href="http://localhost:1313/posts/">
+<link rel="canonical" href="http://localhost:1313/tags/state-pattern/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.ef6b0a8cc044c81f8564fffb013558fc5d5c2910023a80374f705ae86b059bed.css" integrity="sha256-72sKjMBEyB&#43;FZP/7ATVY/F1cKRACOoA3T3Ba6GsFm&#43;0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -19,8 +19,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/state-pattern/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/state-pattern/">
 <noscript>
     <style>
         #theme-toggle,
@@ -85,33 +85,18 @@ if (!doNotTrack) {
 	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="Posts" />
+<meta property="og:title" content="State Pattern" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/posts/" />
+<meta property="og:url" content="http://localhost:1313/tags/state-pattern/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
 
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
-<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:title" content="State Pattern"/>
 <meta name="twitter:description" content=""/>
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "http://localhost:1313/posts/"
-    }
-  ]
-}
-</script>
 </head>
 
 <body class="list" id="top">
@@ -199,84 +184,25 @@ if (!doNotTrack) {
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
   <h1>
-    Posts
+    State Pattern
   </h1>
 </header>
 
-<article class="post-entry"> 
+<article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Testing Xcode project using Github Actions
+    <h2 class="entry-hint-parent">The State Pattern
     </h2>
   </header>
   <div class="entry-content">
-    <p>Introduction If you’re wondering how to test an Xcode project using GitHub Actions, here are a few steps:
-First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15....</p>
+    <p>What is a State Pattern? The State Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+Source
+What problems does it solve? Complex conditional logic: When an object’s behavior depends on its internal state, it often leads to complex conditional statements. The State pattern simplifies this by encapsulating each state and its behavior in separate classes, making the code more readable and maintainable....</p>
   </div>
-  <footer class="entry-footer"><span title='2024-04-26 06:51:21 +0300 EEST'>April 26, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Testing Xcode project using Github Actions" href="http://localhost:1313/posts/testing-xcode-project-using-github-actions/"></a>
+  <footer class="entry-footer"><span title='2024-03-10 08:29:30 +0300 +0300'>March 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to The State Pattern" href="http://localhost:1313/posts/the-state-pattern/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Building Xcode project using Github Actions
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction If you’re wondering how to build an Xcode project using GitHub Actions, here are a few steps:
-First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-04-23 08:29:30 +0300 EEST'>April 23, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Building Xcode project using Github Actions" href="http://localhost:1313/posts/post-15/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Delivering iOS app using Fastlane
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction You can easily deliver an iOS app in two ways: through beta and release lanes.
-The First Way - TestFlight By creating a beta lane inside the Fastfile. It utilizes:
-build_app: To easily build and sign your app (via gym). pilot: Makes it easier to manage your app on Apple’s TestFlight. lane :beta do build_app(scheme: &#34;YourScheme&#34;) pilot end To run Fastlane:
-fastlane beta Attention Before proceeding, you need to have the ipa or pkg file generated....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-04-19 06:49:13 +0300 EEST'>April 19, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Delivering iOS app using Fastlane" href="http://localhost:1313/posts/post-14/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Archiving Xcode project using the CLI
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to archive a project in the fastest way.
-One of such ways is by using the xcodebuild archive command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-04-16 13:46:03 +0300 EEST'>April 16, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Archiving Xcode project using the CLI" href="http://localhost:1313/posts/post-6/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Testing Xcode project using the CLI
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to test a project in the fastest way.
-One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you’re in the project directory, you can run xcodebuild with the appropriate parameters to build your project....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-04-12 03:20:34 +0300 EEST'>April 12, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Testing Xcode project using the CLI" href="http://localhost:1313/posts/post-3/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="next" href="http://localhost:1313/posts/page/2/">Next&nbsp;2/5&nbsp;»
-    </a>
-  </nav>
-</footer>
     </main>
     
 <footer class="footer">
