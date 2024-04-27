@@ -104,6 +104,15 @@
     <loc>http://localhost:1313/posts/the-state-pattern/</loc>
     <lastmod>2024-03-10T08:29:30+03:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/dependency-inversion-principle/</loc>
+    <lastmod>2024-03-05T08:29:30+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/design-principles/</loc>
+    <lastmod>2024-03-05T08:29:30+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/the-dependency-inversion-principle/</loc>
+    <lastmod>2024-03-05T08:29:30+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/algorithm-complexity/</loc>
     <lastmod>2024-02-21T08:29:30+03:00</lastmod>
   </url><url>

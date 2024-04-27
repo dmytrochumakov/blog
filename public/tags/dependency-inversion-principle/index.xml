@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Dependency Inversion Principle on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/dependency-inversion-principle/</link>
+    <description>Recent content in Dependency Inversion Principle on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 05 Mar 2024 08:29:30 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/dependency-inversion-principle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Dependency Inversion Principle</title>
+      <link>http://localhost:1313/posts/the-dependency-inversion-principle/</link>
+      <pubDate>Tue, 05 Mar 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/posts/the-dependency-inversion-principle/</guid>
+      <description>What is a Dependency Inversion Principle? The Dependency Inversion Principle means that high-level modules should not depend on low-level modules.
+Source
+Source
+What problems does it solve? The Dependency Inversion Principle (DIP) helps solve:
+Rigidity Fragility Immobility problems Real-world code example Violation of DIP // High-level module directly depending on low-level modules class MessageService { func sendMessageViaEmail(message: String) { let emailSender = EmailSender() emailSender.sendMessage(message: message) } func sendMessageViaSMS(message: String) { let smsSender = SMSSender() smsSender.</description>
+    </item>
+  </channel>
+</rss>
