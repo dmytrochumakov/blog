@@ -80,6 +80,12 @@
     <loc>http://localhost:1313/posts/the-memento-pattern/</loc>
     <lastmod>2024-03-22T08:29:30+03:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/interpreter-pattern/</loc>
+    <lastmod>2024-03-18T08:29:30+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/the-interpreter-pattern/</loc>
+    <lastmod>2024-03-18T08:29:30+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/flyweight-pattern/</loc>
     <lastmod>2024-03-17T08:29:30+03:00</lastmod>
   </url><url>

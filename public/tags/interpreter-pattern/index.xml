@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Interpreter Pattern on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/interpreter-pattern/</link>
+    <description>Recent content in Interpreter Pattern on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 18 Mar 2024 08:29:30 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/interpreter-pattern/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Interpreter Pattern</title>
+      <link>http://localhost:1313/posts/the-interpreter-pattern/</link>
+      <pubDate>Mon, 18 Mar 2024 08:29:30 +0300</pubDate>
+      <guid>http://localhost:1313/posts/the-interpreter-pattern/</guid>
+      <description>What is an Interpreter Pattern? The Interpreter Pattern helps implement a simple language and defines a class based representation for its grammar along with an interpreter to interpret its sentences.
+Source
+What problems does it solve? The Interpreter Pattern helps solve following problems:
+Language Interpretation: When you have a language or syntax that needs to be interpreted, such as mathematical expressions, regular expressions, or domain-specific languages (DSLs), the Interpreter Pattern helps in implementing the logic to interpret and execute these expressions.</description>
+    </item>
+  </channel>
+</rss>
