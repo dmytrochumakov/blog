@@ -2,22 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/ci/</loc>
-    <lastmod>2024-04-26T06:51:21+03:00</lastmod>
+    <loc>http://localhost:1313/tags/building/</loc>
+    <lastmod>2024-05-01T10:29:44+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/building-movie-recommendations-using-ml/</loc>
+    <lastmod>2024-05-01T10:29:44+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2024-05-01T10:29:44+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ml/</loc>
+    <lastmod>2024-05-01T10:29:44+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/movie/</loc>
+    <lastmod>2024-05-01T10:29:44+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-05-01T10:29:44+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/recommendations/</loc>
+    <lastmod>2024-05-01T10:29:44+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-05-01T10:29:44+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ci/</loc>
     <lastmod>2024-04-26T06:51:21+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/github-actions/</loc>
     <lastmod>2024-04-26T06:51:21+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-04-26T06:51:21+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/project/</loc>
-    <lastmod>2024-04-26T06:51:21+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-04-26T06:51:21+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/testing/</loc>
@@ -28,9 +43,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/xcode/</loc>
     <lastmod>2024-04-26T06:51:21+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/building/</loc>
-    <lastmod>2024-04-23T08:29:30+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/post-15/</loc>
     <lastmod>2024-04-23T08:29:30+03:00</lastmod>

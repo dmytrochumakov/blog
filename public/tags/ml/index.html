@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Posts | Dmytro&#39;s Blog</title>
+<title>ML | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="">
-<meta name="description" content="Posts - Dmytro&#39;s Blog">
+<meta name="description" content="">
 <meta name="author" content="Dmytro Chumakov">
-<link rel="canonical" href="http://localhost:1313/posts/">
+<link rel="canonical" href="http://localhost:1313/tags/ml/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.ef6b0a8cc044c81f8564fffb013558fc5d5c2910023a80374f705ae86b059bed.css" integrity="sha256-72sKjMBEyB&#43;FZP/7ATVY/F1cKRACOoA3T3Ba6GsFm&#43;0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -19,8 +19,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/ml/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/ml/">
 <noscript>
     <style>
         #theme-toggle,
@@ -85,33 +85,18 @@ if (!doNotTrack) {
 	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="Posts" />
+<meta property="og:title" content="ML" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/posts/" />
+<meta property="og:url" content="http://localhost:1313/tags/ml/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
 
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
-<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:title" content="ML"/>
 <meta name="twitter:description" content=""/>
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "http://localhost:1313/posts/"
-    }
-  ]
-}
-</script>
 </head>
 
 <body class="list" id="top">
@@ -199,90 +184,25 @@ if (!doNotTrack) {
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
   <h1>
-    Posts
+    ML
   </h1>
 </header>
 
-<article class="post-entry"> 
+<article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Combine — Basics
+    <h2 class="entry-hint-parent">Building movie recommendations using ML
     </h2>
   </header>
   <div class="entry-content">
-    <p>What is Combine? Combine Framework provides an API for processing async events over time such as user-input, network response, and other dynamic data.
-What is the purpose of Combine? The purpose of Combine is to simplify the management of async events and data streams.
-Publishers Publisher declares that a type can transit a sequence of values over time. A publisher delivers elements to one or more Subscriber instances.
-class PostService { func fetchPosts() -&gt; AnyPublisher&lt;[Post], Error&gt; { guard let url = URL(string: &#34;https://jsonplaceholder....</p>
+    <p>Introduction I was wondering about how to create movie recommendations, so I decided to take a closer look and find out more about this topic. This is what I found:
+First step: You need to create a JSON file with the data that you will use to train the model and define the parameters for training the model.
+[ { &#34;title&#34;: &#34;Avatar&#34;, &#34;year&#34;: &#34;2009&#34;, &#34;rated&#34;: &#34;PG-13&#34;, &#34;released&#34;: &#34;18 Dec 2009&#34;, &#34;runtime&#34;: &#34;162 min&#34;, &#34;genre&#34;: &#34;Action, Adventure, Fantasy&#34;, &#34;director&#34;: &#34;James Cameron&#34;, &#34;writer&#34;: &#34;James Cameron&#34;, &#34;actors&#34;: &#34;Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang&#34;, &#34;plot&#34;: &#34;A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home....</p>
   </div>
-  <footer class="entry-footer"><span title='2024-02-07 08:29:30 +0300 +0300'>February 7, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Combine — Basics" href="http://localhost:1313/posts/combine-basics/"></a>
+  <footer class="entry-footer"><span title='2024-05-01 10:29:44 +0300 EEST'>May 1, 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Building movie recommendations using ML" href="http://localhost:1313/posts/building-movie-recommendations-using-ml/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Modern Concurrency
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
-You can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.
-What are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
-actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&gt; String?...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-02-04 08:29:30 +0300 +0300'>February 4, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Modern Concurrency" href="http://localhost:1313/posts/modern-concurrency/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">What are Threads in Swift?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is the Thread? A Thread is a small set of instructions that can be executed independently from the main program. Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time. The Thread has its own stack, registers, and program counters.
-Threads share memory address space, and it is possible to communicate between Threads using shared memory space. How to use it?...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-20 08:29:30 +0300 +0300'>January 20, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to What are Threads in Swift?" href="http://localhost:1313/posts/what-are-threads-in-swift/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DispatchGroup in Swift
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is DispatchGroup? DispatchGroup provides a mechanism to track the completion group of tasks.
-How DispatchGroup works? DispatchGroup has three main methods, enter, leave and notify, that allow you to control the completion of a specific task.
-let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() dispatchGroup.notify(queue: .main) {} Let`s talk about each of these methods. enter — manually indicate a block has entered group. leave — manually indicate a block in the group has been completed....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-10 00:00:00 +0300 +0300'>January 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DispatchGroup in Swift" href="http://localhost:1313/posts/post-13/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Concurrency in Swift
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is concurrency? The system can perform multiple tasks simultaneously. By tasks, I mean code or instructions. Modern computer chips have multiple cores that allow developers to create and run various tasks on multiple cores. Even if your chip has one core operating system it will provide context switching mechanism by enabling it to execute multiple tasks concurrently.
-Material about processes, threads I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-07 00:00:00 +0300 +0300'>January 7, 2024</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Concurrency in Swift" href="http://localhost:1313/posts/post-12/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/posts/page/3/">
-      «&nbsp;Prev&nbsp;3/6
-    </a>
-    <a class="next" href="http://localhost:1313/posts/page/5/">Next&nbsp;5/6&nbsp;»
-    </a>
-  </nav>
-</footer>
     </main>
     
 <footer class="footer">
