@@ -2,13 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/3d/</loc>
+    <lastmod>2024-05-01T15:57:54+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/app/</loc>
+    <lastmod>2024-05-01T15:57:54+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ar/</loc>
+    <lastmod>2024-05-01T15:57:54+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-05-01T15:57:54+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ios/</loc>
+    <lastmod>2024-05-01T15:57:54+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/ios-ar-app-experience-3d-guitar/</loc>
+    <lastmod>2024-05-01T15:57:54+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-05-01T15:57:54+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-05-01T15:57:54+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/building/</loc>
     <lastmod>2024-05-01T10:29:44+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/building-movie-recommendations-using-ml/</loc>
-    <lastmod>2024-05-01T10:29:44+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2024-05-01T10:29:44+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ml/</loc>
@@ -17,13 +38,7 @@
     <loc>http://localhost:1313/tags/movie/</loc>
     <lastmod>2024-05-01T10:29:44+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-05-01T10:29:44+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/recommendations/</loc>
-    <lastmod>2024-05-01T10:29:44+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-05-01T10:29:44+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ci/</loc>

@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 May 2024 10:29:44 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 01 May 2024 15:57:54 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iOS AR App: Experience 3D Guitar</title>
+      <link>http://localhost:1313/posts/ios-ar-app-experience-3d-guitar/</link>
+      <pubDate>Wed, 01 May 2024 15:57:54 +0300</pubDate>
+      <guid>http://localhost:1313/posts/ios-ar-app-experience-3d-guitar/</guid>
+      <description>Introduction I was searching for an AR implementation of a 3D guitar inside an iOS app. Here&amp;rsquo;s what I discovered:
+First Step The first step is not related to building the app. Before that you need to create a project using the Reality Composer Pro app (you can find it through Spotlight search).
+Second Step After that, you need to visit https://developer.apple.com/augmented-reality/quick-look/ and download one of the USDZ files. In my case, I chose the 3D guitar.</description>
+    </item>
     <item>
       <title>Building movie recommendations using ML</title>
       <link>http://localhost:1313/posts/building-movie-recommendations-using-ml/</link>
