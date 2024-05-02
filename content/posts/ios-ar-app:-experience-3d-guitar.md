@@ -1,7 +1,7 @@
 +++
 title = 'iOS AR App: Experience 3D Guitar'
 date = 2024-05-01T15:57:54+03:00
-tags = ["ios", "ar", "app", "3d"]
+tags = ["ios", "ar", "app", "3d", "SwiftUI", "RealityKit", "Reality Composer Pro"]
 draft = false
 +++
 

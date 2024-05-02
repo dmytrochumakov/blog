@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 May 2024 15:57:54 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 02 May 2024 08:45:39 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploring visionOS</title>
+      <link>http://localhost:1313/posts/exploring-visionos/</link>
+      <pubDate>Thu, 02 May 2024 08:45:39 +0300</pubDate>
+      <guid>http://localhost:1313/posts/exploring-visionos/</guid>
+      <description>Introduction I find myself fascinated by the idea of creating an app for visionOS where I could possibly display 3D AirPods that I like. Here are a few steps on how you can do the same:
+First step The first step that you need to do is to create a visionOS project.
+Second step The next step would be adding a 3D object to Reality Composer Pro and exporting it as a .</description>
+    </item>
     <item>
       <title>iOS AR App: Experience 3D Guitar</title>
       <link>http://localhost:1313/posts/ios-ar-app-experience-3d-guitar/</link>

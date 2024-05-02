@@ -202,6 +202,21 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Delivering iOS app using Fastlane
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction You can easily deliver an iOS app in two ways: through beta and release lanes.
+The First Way - TestFlight By creating a beta lane inside the Fastfile. It utilizes:
+build_app: To easily build and sign your app (via gym). pilot: Makes it easier to manage your app on Apple’s TestFlight. lane :beta do build_app(scheme: &#34;YourScheme&#34;) pilot end To run Fastlane:
+fastlane beta Attention Before proceeding, you need to have the ipa or pkg file generated....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-19 06:49:13 +0300 EEST'>April 19, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Delivering iOS app using Fastlane" href="http://localhost:1313/posts/post-14/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Archiving Xcode project using the CLI
     </h2>
   </header>
@@ -252,21 +267,6 @@ Separation of Concerns: The Visitor Pattern separates algorithms from the object
   </div>
   <footer class="entry-footer"><span title='2024-04-01 08:01:22 +0300 EEST'>April 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to The Visitor Pattern" href="http://localhost:1313/posts/post-1/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">The Memento Pattern
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is a Memento Pattern? The Memento Pattern helps return an object to one of its previous states; for instance, if the user requests an “undo” operation.
-Source
-What problems does it solve? The Memento Pattern helps solve following problems:
-Undo/Redo Functionality: Memento allows you to capture an object’s state at a specific point in time and store it externally. This enables you to implement undo/redo functionality by restoring the object to its previous state....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-03-22 08:29:30 +0300 +0300'>March 22, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to The Memento Pattern" href="http://localhost:1313/posts/the-memento-pattern/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

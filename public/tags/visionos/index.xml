@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>App on Dmytro&#39;s Blog</title>
-    <link>http://localhost:1313/tags/app/</link>
-    <description>Recent content in App on Dmytro&#39;s Blog</description>
+    <title>VisionOS on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/visionos/</link>
+    <description>Recent content in VisionOS on Dmytro&#39;s Blog</description>
     <image>
       <title>Dmytro&#39;s Blog</title>
       <url>http://localhost:1313/images/papermod-cover.png</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 02 May 2024 08:45:39 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/app/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/visionos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exploring visionOS</title>
       <link>http://localhost:1313/posts/exploring-visionos/</link>
@@ -21,15 +21,6 @@
       <description>Introduction I find myself fascinated by the idea of creating an app for visionOS where I could possibly display 3D AirPods that I like. Here are a few steps on how you can do the same:
 First step The first step that you need to do is to create a visionOS project.
 Second step The next step would be adding a 3D object to Reality Composer Pro and exporting it as a .</description>
-    </item>
-    <item>
-      <title>iOS AR App: Experience 3D Guitar</title>
-      <link>http://localhost:1313/posts/ios-ar-app-experience-3d-guitar/</link>
-      <pubDate>Wed, 01 May 2024 15:57:54 +0300</pubDate>
-      <guid>http://localhost:1313/posts/ios-ar-app-experience-3d-guitar/</guid>
-      <description>Introduction I was searching for an AR implementation of a 3D guitar inside an iOS app. Here&amp;rsquo;s what I discovered:
-First Step The first step is not related to building the app. Before that you need to create a project using the Reality Composer Pro app (you can find it through Spotlight search).
-Second Step After that, you need to visit https://developer.apple.com/augmented-reality/quick-look/ and download one of the USDZ files. In my case, I chose the 3D guitar.</description>
     </item>
   </channel>
 </rss>
