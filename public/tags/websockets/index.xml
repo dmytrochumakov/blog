@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Ios on Dmytro&#39;s Blog</title>
-    <link>http://localhost:1313/tags/ios/</link>
-    <description>Recent content in Ios on Dmytro&#39;s Blog</description>
+    <title>WebSockets on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/websockets/</link>
+    <description>Recent content in WebSockets on Dmytro&#39;s Blog</description>
     <image>
       <title>Dmytro&#39;s Blog</title>
       <url>http://localhost:1313/images/papermod-cover.png</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 02 May 2024 15:15:14 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/websockets/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building Group Chat using WebSockets</title>
       <link>http://localhost:1313/posts/building-group-chat-using-websockets/</link>
@@ -20,15 +20,6 @@
       <guid>http://localhost:1313/posts/building-group-chat-using-websockets/</guid>
       <description>Introduction I never had a chance to work with WebSockets, so I decided to take a look and create a group chat. Here&amp;rsquo;s what I discovered:
 To be able to send and receive messages, you need to create an interface for communication between a server and your application. In my case, I chose sendMessage and receiveMessage methods. For the server-side, I chose Node.js. For the iOS application, I chose the Socket.</description>
-    </item>
-    <item>
-      <title>iOS AR App: Experience 3D Guitar</title>
-      <link>http://localhost:1313/posts/ios-ar-app-experience-3d-guitar/</link>
-      <pubDate>Wed, 01 May 2024 15:57:54 +0300</pubDate>
-      <guid>http://localhost:1313/posts/ios-ar-app-experience-3d-guitar/</guid>
-      <description>Introduction I was searching for an AR implementation of a 3D guitar inside an iOS app. Here&amp;rsquo;s what I discovered:
-First Step The first step is not related to building the app. Before that you need to create a project using the Reality Composer Pro app (you can find it through Spotlight search).
-Second Step After that, you need to visit https://developer.apple.com/augmented-reality/quick-look/ and download one of the USDZ files. In my case, I chose the 3D guitar.</description>
     </item>
   </channel>
 </rss>

@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 02 May 2024 08:45:39 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 02 May 2024 15:15:14 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building Group Chat using WebSockets</title>
+      <link>http://localhost:1313/posts/building-group-chat-using-websockets/</link>
+      <pubDate>Thu, 02 May 2024 15:15:14 +0300</pubDate>
+      <guid>http://localhost:1313/posts/building-group-chat-using-websockets/</guid>
+      <description>Introduction I never had a chance to work with WebSockets, so I decided to take a look and create a group chat. Here&amp;rsquo;s what I discovered:
+To be able to send and receive messages, you need to create an interface for communication between a server and your application. In my case, I chose sendMessage and receiveMessage methods. For the server-side, I chose Node.js. For the iOS application, I chose the Socket.</description>
+    </item>
     <item>
       <title>Exploring visionOS</title>
       <link>http://localhost:1313/posts/exploring-visionos/</link>
