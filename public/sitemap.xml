@@ -3,7 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/app/</loc>
-    <lastmod>2024-05-02T15:15:14+03:00</lastmod>
+    <lastmod>2024-05-03T07:34:56+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/building/</loc>
+    <lastmod>2024-05-03T07:34:56+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/building-video-streaming-ios-app/</loc>
+    <lastmod>2024-05-03T07:34:56+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-05-03T07:34:56+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ios/</loc>
+    <lastmod>2024-05-03T07:34:56+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-05-03T07:34:56+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/streaming/</loc>
+    <lastmod>2024-05-03T07:34:56+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-05-03T07:34:56+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/video/</loc>
+    <lastmod>2024-05-03T07:34:56+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/building-group-chat-using-websockets/</loc>
     <lastmod>2024-05-02T15:15:14+03:00</lastmod>
@@ -11,19 +35,7 @@
     <loc>http://localhost:1313/tags/chat/</loc>
     <lastmod>2024-05-02T15:15:14+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-05-02T15:15:14+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ios/</loc>
-    <lastmod>2024-05-02T15:15:14+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-05-02T15:15:14+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/swiftui/</loc>
-    <lastmod>2024-05-02T15:15:14+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-05-02T15:15:14+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/websockets/</loc>
@@ -49,9 +61,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/ios-ar-app-experience-3d-guitar/</loc>
     <lastmod>2024-05-01T15:57:54+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/building/</loc>
-    <lastmod>2024-05-01T10:29:44+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/building-movie-recommendations-using-ml/</loc>
     <lastmod>2024-05-01T10:29:44+03:00</lastmod>

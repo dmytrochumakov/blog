@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Video on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/video/</link>
+    <description>Recent content in Video on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 03 May 2024 07:34:56 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building Video Streaming iOS App</title>
+      <link>http://localhost:1313/posts/building-video-streaming-ios-app/</link>
+      <pubDate>Fri, 03 May 2024 07:34:56 +0300</pubDate>
+      <guid>http://localhost:1313/posts/building-video-streaming-ios-app/</guid>
+      <description>Introduction I was looking for a way to add a video player to my iOS app that could be able to play remote videos.
+Caveats Problem I found that you can&amp;rsquo;t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 &amp;quot;Operation Stopped&amp;quot; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error. I don’t know exactly what this means, but I&amp;rsquo;m speculating it&amp;rsquo;s related to some protection.
+Solution My solution was to find another video that is not related to those platforms.</description>
+    </item>
+  </channel>
+</rss>

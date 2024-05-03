@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 May 2024 10:29:44 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 03 May 2024 07:34:56 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/building/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building Video Streaming iOS App</title>
+      <link>http://localhost:1313/posts/building-video-streaming-ios-app/</link>
+      <pubDate>Fri, 03 May 2024 07:34:56 +0300</pubDate>
+      <guid>http://localhost:1313/posts/building-video-streaming-ios-app/</guid>
+      <description>Introduction I was looking for a way to add a video player to my iOS app that could be able to play remote videos.
+Caveats Problem I found that you can&amp;rsquo;t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 &amp;quot;Operation Stopped&amp;quot; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error. I don’t know exactly what this means, but I&amp;rsquo;m speculating it&amp;rsquo;s related to some protection.
+Solution My solution was to find another video that is not related to those platforms.</description>
+    </item>
     <item>
       <title>Building movie recommendations using ML</title>
       <link>http://localhost:1313/posts/building-movie-recommendations-using-ml/</link>
