@@ -15,9 +15,9 @@
     <atom:link href="http://localhost:1313/tags/reference-type/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is “reference type” in Swift?</title>
-      <link>http://localhost:1313/posts/post-5/</link>
+      <link>http://localhost:1313/posts/what-is-reference-type-in-swift/</link>
       <pubDate>Sun, 03 Dec 2023 00:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-5/</guid>
+      <guid>http://localhost:1313/posts/what-is-reference-type-in-swift/</guid>
       <description>Introduction In Swift, classes, closures, and actors all reference types.
 &amp;lsquo;Reference type’ is instance that shares a single copy of data.
 Assigning a reference type to a constant or variable, or passing it into a function or method, it is always a reference to a shared instance that is assigned or passed in.

@@ -92,7 +92,7 @@
     <loc>http://localhost:1313/tags/xcode/</loc>
     <lastmod>2024-04-26T06:51:21+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-15/</loc>
+    <loc>http://localhost:1313/posts/building-xcode-project-using-github-actions/</loc>
     <lastmod>2024-04-23T08:29:30+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/cli/</loc>
@@ -101,7 +101,7 @@
     <loc>http://localhost:1313/tags/delivering/</loc>
     <lastmod>2024-04-19T06:49:13+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-14/</loc>
+    <loc>http://localhost:1313/posts/delivering-ios-app-using-fastlane/</loc>
     <lastmod>2024-04-19T06:49:13+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/fastlane/</loc>
@@ -113,19 +113,19 @@
     <loc>http://localhost:1313/tags/archiving/</loc>
     <lastmod>2024-04-16T13:46:03+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-6/</loc>
+    <loc>http://localhost:1313/posts/archiving-xcode-project-using-the-cli/</loc>
     <lastmod>2024-04-16T13:46:03+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-3/</loc>
+    <loc>http://localhost:1313/posts/testing-xcode-project-using-the-cli/</loc>
     <lastmod>2024-04-12T03:20:34+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-2/</loc>
+    <loc>http://localhost:1313/posts/building-xcode-project-using-the-cli/</loc>
     <lastmod>2024-04-05T04:59:38+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/design-patterns/</loc>
     <lastmod>2024-04-01T08:01:22+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-1/</loc>
+    <loc>http://localhost:1313/posts/the-visitor-pattern/</loc>
     <lastmod>2024-04-01T08:01:22+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/memento-pattern/</loc>
@@ -209,28 +209,28 @@
     <loc>http://localhost:1313/tags/dispatchgroup/</loc>
     <lastmod>2024-01-10T00:00:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-13/</loc>
+    <loc>http://localhost:1313/posts/dispatchgroup-in-swift/</loc>
     <lastmod>2024-01-10T00:00:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-12/</loc>
+    <loc>http://localhost:1313/posts/concurrency-in-swift/</loc>
     <lastmod>2024-01-07T00:00:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/value-type/</loc>
     <lastmod>2023-12-28T00:00:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-8/</loc>
+    <loc>http://localhost:1313/posts/what-are-value-types-in-swift/</loc>
     <lastmod>2023-12-28T00:00:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-9/</loc>
+    <loc>http://localhost:1313/posts/how-to-prevent-memory-leaks/</loc>
     <lastmod>2023-12-24T00:00:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/memory-leak/</loc>
     <lastmod>2023-12-24T00:00:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-10/</loc>
+    <loc>http://localhost:1313/posts/how-to-find-memory-leaks/</loc>
     <lastmod>2023-12-20T00:00:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-11/</loc>
+    <loc>http://localhost:1313/posts/arc-in-swift/</loc>
     <lastmod>2023-12-17T00:00:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/automatic-reference-count/</loc>
@@ -239,16 +239,16 @@
     <loc>http://localhost:1313/tags/closure/</loc>
     <lastmod>2023-12-10T00:00:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-7/</loc>
+    <loc>http://localhost:1313/posts/what-is-closure-in-swift-language/</loc>
     <lastmod>2023-12-10T00:00:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/reference-type/</loc>
     <lastmod>2023-12-03T00:00:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-5/</loc>
+    <loc>http://localhost:1313/posts/what-is-reference-type-in-swift/</loc>
     <lastmod>2023-12-03T00:00:00+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/post-4/</loc>
+    <loc>http://localhost:1313/posts/lets-talk-about-composable-architecture/</loc>
     <lastmod>2023-08-11T00:00:00+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/software-architecture/</loc>

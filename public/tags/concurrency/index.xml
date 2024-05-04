@@ -33,18 +33,18 @@ Threads share memory address space, and it is possible to communicate between Th
     </item>
     <item>
       <title>DispatchGroup in Swift</title>
-      <link>http://localhost:1313/posts/post-13/</link>
+      <link>http://localhost:1313/posts/dispatchgroup-in-swift/</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-13/</guid>
+      <guid>http://localhost:1313/posts/dispatchgroup-in-swift/</guid>
       <description>What is DispatchGroup? DispatchGroup provides a mechanism to track the completion group of tasks.
 How DispatchGroup works? DispatchGroup has three main methods, enter, leave and notify, that allow you to control the completion of a specific task.
 let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() dispatchGroup.notify(queue: .main) {} Let`s talk about each of these methods. enter — manually indicate a block has entered group. leave — manually indicate a block in the group has been completed.</description>
     </item>
     <item>
       <title>Concurrency in Swift</title>
-      <link>http://localhost:1313/posts/post-12/</link>
+      <link>http://localhost:1313/posts/concurrency-in-swift/</link>
       <pubDate>Sun, 07 Jan 2024 00:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-12/</guid>
+      <guid>http://localhost:1313/posts/concurrency-in-swift/</guid>
       <description>What is concurrency? The system can perform multiple tasks simultaneously. By tasks, I mean code or instructions. Modern computer chips have multiple cores that allow developers to create and run various tasks on multiple cores. Even if your chip has one core operating system it will provide context switching mechanism by enabling it to execute multiple tasks concurrently.
 Material about processes, threads I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it.</description>
     </item>

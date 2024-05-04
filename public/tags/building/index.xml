@@ -33,17 +33,17 @@ First step: You need to create a JSON file with the data that you will use to tr
     </item>
     <item>
       <title>Building Xcode project using Github Actions</title>
-      <link>http://localhost:1313/posts/post-15/</link>
+      <link>http://localhost:1313/posts/building-xcode-project-using-github-actions/</link>
       <pubDate>Tue, 23 Apr 2024 08:29:30 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-15/</guid>
+      <guid>http://localhost:1313/posts/building-xcode-project-using-github-actions/</guid>
       <description>Introduction If you&amp;rsquo;re wondering how to build an Xcode project using GitHub Actions, here are a few steps:
 First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15.</description>
     </item>
     <item>
       <title>Building Xcode project using the CLI</title>
-      <link>http://localhost:1313/posts/post-2/</link>
+      <link>http://localhost:1313/posts/building-xcode-project-using-the-cli/</link>
       <pubDate>Fri, 05 Apr 2024 04:59:38 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-2/</guid>
+      <guid>http://localhost:1313/posts/building-xcode-project-using-the-cli/</guid>
       <description>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to build a project in the fastest way.
 One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you&amp;rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project.</description>
     </item>

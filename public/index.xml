@@ -67,17 +67,17 @@ First, you need to create a .github/workflows folder with a CI.yml file inside y
     </item>
     <item>
       <title>Building Xcode project using Github Actions</title>
-      <link>http://localhost:1313/posts/post-15/</link>
+      <link>http://localhost:1313/posts/building-xcode-project-using-github-actions/</link>
       <pubDate>Tue, 23 Apr 2024 08:29:30 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-15/</guid>
+      <guid>http://localhost:1313/posts/building-xcode-project-using-github-actions/</guid>
       <description>Introduction If you&amp;rsquo;re wondering how to build an Xcode project using GitHub Actions, here are a few steps:
 First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15.</description>
     </item>
     <item>
       <title>Delivering iOS app using Fastlane</title>
-      <link>http://localhost:1313/posts/post-14/</link>
+      <link>http://localhost:1313/posts/delivering-ios-app-using-fastlane/</link>
       <pubDate>Fri, 19 Apr 2024 06:49:13 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-14/</guid>
+      <guid>http://localhost:1313/posts/delivering-ios-app-using-fastlane/</guid>
       <description>Introduction You can easily deliver an iOS app in two ways: through beta and release lanes.
 The First Way - TestFlight By creating a beta lane inside the Fastfile. It utilizes:
 build_app: To easily build and sign your app (via gym). pilot: Makes it easier to manage your app on Apple’s TestFlight. lane :beta do build_app(scheme: &amp;#34;YourScheme&amp;#34;) pilot end To run Fastlane:
@@ -85,33 +85,33 @@ fastlane beta Attention Before proceeding, you need to have the ipa or pkg file 
     </item>
     <item>
       <title>Archiving Xcode project using the CLI</title>
-      <link>http://localhost:1313/posts/post-6/</link>
+      <link>http://localhost:1313/posts/archiving-xcode-project-using-the-cli/</link>
       <pubDate>Tue, 16 Apr 2024 13:46:03 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-6/</guid>
+      <guid>http://localhost:1313/posts/archiving-xcode-project-using-the-cli/</guid>
       <description>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to archive a project in the fastest way.
 One of such ways is by using the xcodebuild archive command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project.</description>
     </item>
     <item>
       <title>Testing Xcode project using the CLI</title>
-      <link>http://localhost:1313/posts/post-3/</link>
+      <link>http://localhost:1313/posts/testing-xcode-project-using-the-cli/</link>
       <pubDate>Fri, 12 Apr 2024 03:20:34 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-3/</guid>
+      <guid>http://localhost:1313/posts/testing-xcode-project-using-the-cli/</guid>
       <description>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to test a project in the fastest way.
 One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you&amp;rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project.</description>
     </item>
     <item>
       <title>Building Xcode project using the CLI</title>
-      <link>http://localhost:1313/posts/post-2/</link>
+      <link>http://localhost:1313/posts/building-xcode-project-using-the-cli/</link>
       <pubDate>Fri, 05 Apr 2024 04:59:38 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-2/</guid>
+      <guid>http://localhost:1313/posts/building-xcode-project-using-the-cli/</guid>
       <description>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to build a project in the fastest way.
 One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you&amp;rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project.</description>
     </item>
     <item>
       <title>The Visitor Pattern</title>
-      <link>http://localhost:1313/posts/post-1/</link>
+      <link>http://localhost:1313/posts/the-visitor-pattern/</link>
       <pubDate>Mon, 01 Apr 2024 08:01:22 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-1/</guid>
+      <guid>http://localhost:1313/posts/the-visitor-pattern/</guid>
       <description>What is a Visitor Pattern? The Visitor Pattern helps add new capabilities to a composite of objects.
 Source
 What problems does it solve? The Visitor Pattern helps solve following problems:
@@ -216,26 +216,26 @@ Threads share memory address space, and it is possible to communicate between Th
     </item>
     <item>
       <title>DispatchGroup in Swift</title>
-      <link>http://localhost:1313/posts/post-13/</link>
+      <link>http://localhost:1313/posts/dispatchgroup-in-swift/</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-13/</guid>
+      <guid>http://localhost:1313/posts/dispatchgroup-in-swift/</guid>
       <description>What is DispatchGroup? DispatchGroup provides a mechanism to track the completion group of tasks.
 How DispatchGroup works? DispatchGroup has three main methods, enter, leave and notify, that allow you to control the completion of a specific task.
 let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() dispatchGroup.notify(queue: .main) {} Let`s talk about each of these methods. enter — manually indicate a block has entered group. leave — manually indicate a block in the group has been completed.</description>
     </item>
     <item>
       <title>Concurrency in Swift</title>
-      <link>http://localhost:1313/posts/post-12/</link>
+      <link>http://localhost:1313/posts/concurrency-in-swift/</link>
       <pubDate>Sun, 07 Jan 2024 00:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-12/</guid>
+      <guid>http://localhost:1313/posts/concurrency-in-swift/</guid>
       <description>What is concurrency? The system can perform multiple tasks simultaneously. By tasks, I mean code or instructions. Modern computer chips have multiple cores that allow developers to create and run various tasks on multiple cores. Even if your chip has one core operating system it will provide context switching mechanism by enabling it to execute multiple tasks concurrently.
 Material about processes, threads I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it.</description>
     </item>
     <item>
       <title>What are value types in Swift?</title>
-      <link>http://localhost:1313/posts/post-8/</link>
+      <link>http://localhost:1313/posts/what-are-value-types-in-swift/</link>
       <pubDate>Thu, 28 Dec 2023 00:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-8/</guid>
+      <guid>http://localhost:1313/posts/what-are-value-types-in-swift/</guid>
       <description>What are value types? Value types play a central role in programming languages by grouping data values.
 `Value type” is a type of data copied when assigned to a new variable.
 struct Storage { var data: String = &amp;#34;some data&amp;#34; } let originalStorage = Storage() var copiedStorage = originalStorage // `originalStorage` is copied to `copiedStorage` How can you pass value types? You can pass value type by copying value.
@@ -243,9 +243,9 @@ struct Storage { var data: String = &amp;#34;some data&amp;#34; } let originalSt
     </item>
     <item>
       <title>How to prevent memory leaks?</title>
-      <link>http://localhost:1313/posts/post-9/</link>
+      <link>http://localhost:1313/posts/how-to-prevent-memory-leaks/</link>
       <pubDate>Sun, 24 Dec 2023 00:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-9/</guid>
+      <guid>http://localhost:1313/posts/how-to-prevent-memory-leaks/</guid>
       <description>I was searching for tools that could help me find memory leaks faster and would be simple in implementation without affecting performance and memory size of application.
 I found a fantastic fit for this task LifetimeTracker developed by Krzysztof Zabłocki.
 All you need is to add LifetimeTracker package to the project, inherit from LifetimeTrackable protocol, and add two lines of code.
@@ -253,9 +253,9 @@ class Department: LifetimeTrackable {} trackLifetime method to init of instance 
     </item>
     <item>
       <title>How to find memory leaks?</title>
-      <link>http://localhost:1313/posts/post-10/</link>
+      <link>http://localhost:1313/posts/how-to-find-memory-leaks/</link>
       <pubDate>Wed, 20 Dec 2023 00:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-10/</guid>
+      <guid>http://localhost:1313/posts/how-to-find-memory-leaks/</guid>
       <description>The common way to find memory leaks is by using Xcode Instruments. All you need is the following:
 Open Xcode Instruments
 Choose Leaks option Select Simulator where you are going to test your application Select your installed application When you finish preparation, you can start immediate recoding and check application for leaks. To do that, you need to open Simulator and try some cases that could cause memory leaks.
@@ -263,17 +263,17 @@ After you spend some time trying different scenarios, you can see that Instrumen
     </item>
     <item>
       <title>ARC in Swift</title>
-      <link>http://localhost:1313/posts/post-11/</link>
+      <link>http://localhost:1313/posts/arc-in-swift/</link>
       <pubDate>Sun, 17 Dec 2023 00:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-11/</guid>
+      <guid>http://localhost:1313/posts/arc-in-swift/</guid>
       <description>What is ARC? Swift uses Automatic Reference Counting (ARC) to track and manage your app’s memory usage. In most cases, this means that memory management “just works” in Swift, and you don’t need to think about memory management yourself. ARC automatically frees up the memory used by class instances when those instances are no longer needed. - Apple
 ARC In Action In this example, we assign an instance to the reference1 property.</description>
     </item>
     <item>
       <title>What is closure in Swift language?</title>
-      <link>http://localhost:1313/posts/post-7/</link>
+      <link>http://localhost:1313/posts/what-is-closure-in-swift-language/</link>
       <pubDate>Sun, 10 Dec 2023 00:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-7/</guid>
+      <guid>http://localhost:1313/posts/what-is-closure-in-swift-language/</guid>
       <description>Introduction In this article, I’m going to briefly explain what closure is.
 Closures is self-conitained blocks of funcionality that can be passed around and used in your code. — Apple
 Expression:
@@ -282,9 +282,9 @@ func response(_ completionHandler: @escaping(Result) -&amp;gt; Void) { completio
     </item>
     <item>
       <title>What is “reference type” in Swift?</title>
-      <link>http://localhost:1313/posts/post-5/</link>
+      <link>http://localhost:1313/posts/what-is-reference-type-in-swift/</link>
       <pubDate>Sun, 03 Dec 2023 00:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-5/</guid>
+      <guid>http://localhost:1313/posts/what-is-reference-type-in-swift/</guid>
       <description>Introduction In Swift, classes, closures, and actors all reference types.
 &amp;lsquo;Reference type’ is instance that shares a single copy of data.
 Assigning a reference type to a constant or variable, or passing it into a function or method, it is always a reference to a shared instance that is assigned or passed in.
@@ -293,9 +293,9 @@ Example You can pass your property value by sharing the same address in memory.
     </item>
     <item>
       <title>Let’s talk about Composable Architecture</title>
-      <link>http://localhost:1313/posts/post-4/</link>
+      <link>http://localhost:1313/posts/lets-talk-about-composable-architecture/</link>
       <pubDate>Fri, 11 Aug 2023 00:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-4/</guid>
+      <guid>http://localhost:1313/posts/lets-talk-about-composable-architecture/</guid>
       <description>Introduction The Composable Architecture (TCA) uses a unidirectional data flow (UDF). UDF is a design pattern where data and events move consistently and predictably. In UDF, data can only be transferred to other application parts in one way.
 In TCA, the only way to mutate the state is by sending actions to a runtime store. The runtime store holds the entire app’s business logic and mutates the state inside.
 UDF can reduce data inconsistencies because of the single source of truth for the application.</description>

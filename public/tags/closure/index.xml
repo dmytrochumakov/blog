@@ -15,9 +15,9 @@
     <atom:link href="http://localhost:1313/tags/closure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is closure in Swift language?</title>
-      <link>http://localhost:1313/posts/post-7/</link>
+      <link>http://localhost:1313/posts/what-is-closure-in-swift-language/</link>
       <pubDate>Sun, 10 Dec 2023 00:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-7/</guid>
+      <guid>http://localhost:1313/posts/what-is-closure-in-swift-language/</guid>
       <description>Introduction In this article, I’m going to briefly explain what closure is.
 Closures is self-conitained blocks of funcionality that can be passed around and used in your code. — Apple
 Expression:

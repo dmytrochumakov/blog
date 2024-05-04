@@ -15,9 +15,9 @@
     <atom:link href="http://localhost:1313/tags/value-type/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What are value types in Swift?</title>
-      <link>http://localhost:1313/posts/post-8/</link>
+      <link>http://localhost:1313/posts/what-are-value-types-in-swift/</link>
       <pubDate>Thu, 28 Dec 2023 00:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-8/</guid>
+      <guid>http://localhost:1313/posts/what-are-value-types-in-swift/</guid>
       <description>What are value types? Value types play a central role in programming languages by grouping data values.
 `Value type” is a type of data copied when assigned to a new variable.
 struct Storage { var data: String = &amp;#34;some data&amp;#34; } let originalStorage = Storage() var copiedStorage = originalStorage // `originalStorage` is copied to `copiedStorage` How can you pass value types? You can pass value type by copying value.

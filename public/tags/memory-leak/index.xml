@@ -15,9 +15,9 @@
     <atom:link href="http://localhost:1313/tags/memory-leak/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to prevent memory leaks?</title>
-      <link>http://localhost:1313/posts/post-9/</link>
+      <link>http://localhost:1313/posts/how-to-prevent-memory-leaks/</link>
       <pubDate>Sun, 24 Dec 2023 00:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-9/</guid>
+      <guid>http://localhost:1313/posts/how-to-prevent-memory-leaks/</guid>
       <description>I was searching for tools that could help me find memory leaks faster and would be simple in implementation without affecting performance and memory size of application.
 I found a fantastic fit for this task LifetimeTracker developed by Krzysztof Zabłocki.
 All you need is to add LifetimeTracker package to the project, inherit from LifetimeTrackable protocol, and add two lines of code.
@@ -25,9 +25,9 @@ class Department: LifetimeTrackable {} trackLifetime method to init of instance 
     </item>
     <item>
       <title>How to find memory leaks?</title>
-      <link>http://localhost:1313/posts/post-10/</link>
+      <link>http://localhost:1313/posts/how-to-find-memory-leaks/</link>
       <pubDate>Wed, 20 Dec 2023 00:00:00 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-10/</guid>
+      <guid>http://localhost:1313/posts/how-to-find-memory-leaks/</guid>
       <description>The common way to find memory leaks is by using Xcode Instruments. All you need is the following:
 Open Xcode Instruments
 Choose Leaks option Select Simulator where you are going to test your application Select your installed application When you finish preparation, you can start immediate recoding and check application for leaks. To do that, you need to open Simulator and try some cases that could cause memory leaks.

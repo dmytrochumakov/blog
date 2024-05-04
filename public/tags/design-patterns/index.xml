@@ -15,9 +15,9 @@
     <atom:link href="http://localhost:1313/tags/design-patterns/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Visitor Pattern</title>
-      <link>http://localhost:1313/posts/post-1/</link>
+      <link>http://localhost:1313/posts/the-visitor-pattern/</link>
       <pubDate>Mon, 01 Apr 2024 08:01:22 +0300</pubDate>
-      <guid>http://localhost:1313/posts/post-1/</guid>
+      <guid>http://localhost:1313/posts/the-visitor-pattern/</guid>
       <description>What is a Visitor Pattern? The Visitor Pattern helps add new capabilities to a composite of objects.
 Source
 What problems does it solve? The Visitor Pattern helps solve following problems:
