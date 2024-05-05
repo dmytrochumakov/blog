@@ -11,41 +11,48 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 03 May 2024 07:34:56 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 05 May 2024 07:20:29 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>App</title>
       <link>http://localhost:1313/tags/app/</link>
-      <pubDate>Fri, 03 May 2024 07:34:56 +0300</pubDate>
+      <pubDate>Sun, 05 May 2024 07:20:29 +0300</pubDate>
       <guid>http://localhost:1313/tags/app/</guid>
       <description></description>
     </item>
     <item>
       <title>Building</title>
       <link>http://localhost:1313/tags/building/</link>
-      <pubDate>Fri, 03 May 2024 07:34:56 +0300</pubDate>
+      <pubDate>Sun, 05 May 2024 07:20:29 +0300</pubDate>
       <guid>http://localhost:1313/tags/building/</guid>
       <description></description>
     </item>
     <item>
       <title>Ios</title>
       <link>http://localhost:1313/tags/ios/</link>
-      <pubDate>Fri, 03 May 2024 07:34:56 +0300</pubDate>
+      <pubDate>Sun, 05 May 2024 07:20:29 +0300</pubDate>
       <guid>http://localhost:1313/tags/ios/</guid>
       <description></description>
     </item>
     <item>
       <title>Streaming</title>
       <link>http://localhost:1313/tags/streaming/</link>
-      <pubDate>Fri, 03 May 2024 07:34:56 +0300</pubDate>
+      <pubDate>Sun, 05 May 2024 07:20:29 +0300</pubDate>
       <guid>http://localhost:1313/tags/streaming/</guid>
       <description></description>
     </item>
     <item>
       <title>Video</title>
       <link>http://localhost:1313/tags/video/</link>
-      <pubDate>Fri, 03 May 2024 07:34:56 +0300</pubDate>
+      <pubDate>Sun, 05 May 2024 07:20:29 +0300</pubDate>
       <guid>http://localhost:1313/tags/video/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Widget</title>
+      <link>http://localhost:1313/tags/widget/</link>
+      <pubDate>Sun, 05 May 2024 07:20:29 +0300</pubDate>
+      <guid>http://localhost:1313/tags/widget/</guid>
       <description></description>
     </item>
     <item>

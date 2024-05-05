@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Video on Dmytro&#39;s Blog</title>
-    <link>http://localhost:1313/tags/video/</link>
-    <description>Recent content in Video on Dmytro&#39;s Blog</description>
+    <title>Widget on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/widget/</link>
+    <description>Recent content in Widget on Dmytro&#39;s Blog</description>
     <image>
       <title>Dmytro&#39;s Blog</title>
       <url>http://localhost:1313/images/papermod-cover.png</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 05 May 2024 07:20:29 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/widget/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building Video Streaming Widget for iOS App</title>
       <link>http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/</link>
@@ -20,15 +20,6 @@
       <guid>http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/</guid>
       <description>Introduction I was exploring the idea of creating a YouTube-like widget for the lock screen on iOS devices. It wasn&amp;rsquo;t easy because most articles on the Internet discussed general implementations, such as for a coffee shop or a to-do list. Even when I found some similar versions, the project wouldn&amp;rsquo;t compile. I made the decision to approach it my way, so here&amp;rsquo;s what I found out:
 Caveats After being stuck for two or more hours without understanding why, after tapping on a button, I wasn&#39;t able to receive a callback from it and the widget always opened the main iOS app, I realized that I forgot to add AppIntent - without it, you can&amp;rsquo;t handle actions for iOS 17.</description>
-    </item>
-    <item>
-      <title>Building Video Streaming iOS App</title>
-      <link>http://localhost:1313/posts/building-video-streaming-ios-app/</link>
-      <pubDate>Fri, 03 May 2024 07:34:56 +0300</pubDate>
-      <guid>http://localhost:1313/posts/building-video-streaming-ios-app/</guid>
-      <description>Introduction I was looking for a way to add a video player to my iOS app that could be able to play remote videos.
-Caveats Problem I found that you can&amp;rsquo;t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 &amp;quot;Operation Stopped&amp;quot; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error. I don’t know exactly what this means, but I&amp;rsquo;m speculating it&amp;rsquo;s related to some protection.
-Solution My solution was to find another video that is not related to those platforms.</description>
     </item>
   </channel>
 </rss>

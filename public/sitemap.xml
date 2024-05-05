@@ -3,30 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/app/</loc>
-    <lastmod>2024-05-03T07:34:56+03:00</lastmod>
+    <lastmod>2024-05-05T07:20:29+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/building/</loc>
-    <lastmod>2024-05-03T07:34:56+03:00</lastmod>
+    <lastmod>2024-05-05T07:20:29+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/building-video-streaming-ios-app/</loc>
-    <lastmod>2024-05-03T07:34:56+03:00</lastmod>
+    <loc>http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/</loc>
+    <lastmod>2024-05-05T07:20:29+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-05-03T07:34:56+03:00</lastmod>
+    <lastmod>2024-05-05T07:20:29+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ios/</loc>
-    <lastmod>2024-05-03T07:34:56+03:00</lastmod>
+    <lastmod>2024-05-05T07:20:29+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-05-03T07:34:56+03:00</lastmod>
+    <lastmod>2024-05-05T07:20:29+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/streaming/</loc>
-    <lastmod>2024-05-03T07:34:56+03:00</lastmod>
+    <lastmod>2024-05-05T07:20:29+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-05-03T07:34:56+03:00</lastmod>
+    <lastmod>2024-05-05T07:20:29+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/video/</loc>
+    <lastmod>2024-05-05T07:20:29+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/widget/</loc>
+    <lastmod>2024-05-05T07:20:29+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/building-video-streaming-ios-app/</loc>
     <lastmod>2024-05-03T07:34:56+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/building-group-chat-using-websockets/</loc>
