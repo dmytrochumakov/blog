@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Building Video Streaming iOS App | Dmytro&#39;s Blog</title>
-<meta name="keywords" content="Building, Video, Streaming, iOS, app">
+<meta name="keywords" content="Building, Video, Streaming, iOS, app, SwiftUI">
 <meta name="description" content="Introduction I was looking for a way to add a video player to my iOS app that could be able to play remote videos.
 Caveats Problem I found that you can&rsquo;t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 &quot;Operation Stopped&quot; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error. I don’t know exactly what this means, but I&rsquo;m speculating it&rsquo;s related to some protection.
 Solution My solution was to find another video that is not related to those platforms.">
@@ -133,7 +133,7 @@ Solution My solution was to find another video that is not related to those plat
   "name": "Building Video Streaming iOS App",
   "description": "Introduction I was looking for a way to add a video player to my iOS app that could be able to play remote videos.\nCaveats Problem I found that you can\u0026rsquo;t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 \u0026quot;Operation Stopped\u0026quot; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error. I don’t know exactly what this means, but I\u0026rsquo;m speculating it\u0026rsquo;s related to some protection.\nSolution My solution was to find another video that is not related to those platforms.",
   "keywords": [
-    "Building", "Video", "Streaming", "iOS", "app"
+    "Building", "Video", "Streaming", "iOS", "app", "SwiftUI"
   ],
   "articleBody": "Introduction I was looking for a way to add a video player to my iOS app that could be able to play remote videos.\nCaveats Problem I found that you can’t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 \"Operation Stopped\" UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error. I don’t know exactly what this means, but I’m speculating it’s related to some protection.\nSolution My solution was to find another video that is not related to those platforms.\nImplementation AVKit has a built-in video player called VideoPlayer. All you need to play a video is to pass AVPlayer with videoURL.\n@ViewBuilder var fullScreenVideoPlayer: some View { let avPlayer = AVPlayer(url: videoURL) VideoPlayer(player: avPlayer) .edgesIgnoringSafeArea(.all) .onAppear { avPlayer.play() } } I will dive a little deeper with widgets in the next chapters.\nThank you for reading! 😊 ",
   "wordCount" : "139",
@@ -318,6 +318,7 @@ All you need to play a video is to pass <a href="https://developer.apple.com/doc
       <li><a href="http://localhost:1313/tags/streaming/">Streaming</a></li>
       <li><a href="http://localhost:1313/tags/ios/">Ios</a></li>
       <li><a href="http://localhost:1313/tags/app/">App</a></li>
+      <li><a href="http://localhost:1313/tags/swiftui/">SwiftUI</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/">
@@ -336,7 +337,7 @@ All you need to play a video is to pass <a href="https://developer.apple.com/doc
 <ul class="share-buttons">
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share Building Video Streaming iOS App on x"
-            href="https://x.com/intent/tweet/?text=Building%20Video%20Streaming%20iOS%20App&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fbuilding-video-streaming-ios-app%2f&amp;hashtags=Building%2cVideo%2cStreaming%2ciOS%2capp">
+            href="https://x.com/intent/tweet/?text=Building%20Video%20Streaming%20iOS%20App&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fbuilding-video-streaming-ios-app%2f&amp;hashtags=Building%2cVideo%2cStreaming%2ciOS%2capp%2cSwiftUI">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />

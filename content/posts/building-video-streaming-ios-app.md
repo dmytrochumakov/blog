@@ -1,7 +1,7 @@
 +++
 title = 'Building Video Streaming iOS App'
 date = 2024-05-03T07:34:56+03:00
-tags = ["Building", "Video", "Streaming", "iOS", "app"]
+tags = ["Building", "Video", "Streaming", "iOS", "app", "SwiftUI"]
 draft = false
 +++
 

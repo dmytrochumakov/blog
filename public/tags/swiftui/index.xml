@@ -11,8 +11,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 02 May 2024 15:15:14 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 05 May 2024 07:20:29 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swiftui/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building Video Streaming Widget for iOS App</title>
+      <link>http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/</link>
+      <pubDate>Sun, 05 May 2024 07:20:29 +0300</pubDate>
+      <guid>http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/</guid>
+      <description>Introduction I was exploring the idea of creating a YouTube-like widget for the lock screen on iOS devices. It wasn&amp;rsquo;t easy because most articles on the Internet discussed general implementations, such as for a coffee shop or a to-do list. Even when I found some similar versions, the project wouldn&amp;rsquo;t compile. I made the decision to approach it my way, so here&amp;rsquo;s what I found out:
+Caveats After being stuck for two or more hours without understanding why, after tapping on a button, I wasn&#39;t able to receive a callback from it and the widget always opened the main iOS app, I realized that I forgot to add AppIntent - without it, you can&amp;rsquo;t handle actions for iOS 17.</description>
+    </item>
+    <item>
+      <title>Building Video Streaming iOS App</title>
+      <link>http://localhost:1313/posts/building-video-streaming-ios-app/</link>
+      <pubDate>Fri, 03 May 2024 07:34:56 +0300</pubDate>
+      <guid>http://localhost:1313/posts/building-video-streaming-ios-app/</guid>
+      <description>Introduction I was looking for a way to add a video player to my iOS app that could be able to play remote videos.
+Caveats Problem I found that you can&amp;rsquo;t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 &amp;quot;Operation Stopped&amp;quot; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error. I don’t know exactly what this means, but I&amp;rsquo;m speculating it&amp;rsquo;s related to some protection.
+Solution My solution was to find another video that is not related to those platforms.</description>
+    </item>
     <item>
       <title>Building Group Chat using WebSockets</title>
       <link>http://localhost:1313/posts/building-group-chat-using-websockets/</link>
@@ -38,6 +55,15 @@ Second step The next step would be adding a 3D object to Reality Composer Pro an
       <description>Introduction I was searching for an AR implementation of a 3D guitar inside an iOS app. Here&amp;rsquo;s what I discovered:
 First Step The first step is not related to building the app. Before that you need to create a project using the Reality Composer Pro app (you can find it through Spotlight search).
 Second Step After that, you need to visit https://developer.apple.com/augmented-reality/quick-look/ and download one of the USDZ files. In my case, I chose the 3D guitar.</description>
+    </item>
+    <item>
+      <title>Building movie recommendations using ML</title>
+      <link>http://localhost:1313/posts/building-movie-recommendations-using-ml/</link>
+      <pubDate>Wed, 01 May 2024 10:29:44 +0300</pubDate>
+      <guid>http://localhost:1313/posts/building-movie-recommendations-using-ml/</guid>
+      <description>Introduction I was wondering about how to create movie recommendations, so I decided to take a closer look and find out more about this topic. This is what I found:
+First step: You need to create a JSON file with the data that you will use to train the model and define the parameters for training the model.
+[ { &amp;#34;title&amp;#34;: &amp;#34;Avatar&amp;#34;, &amp;#34;year&amp;#34;: &amp;#34;2009&amp;#34;, &amp;#34;rated&amp;#34;: &amp;#34;PG-13&amp;#34;, &amp;#34;released&amp;#34;: &amp;#34;18 Dec 2009&amp;#34;, &amp;#34;runtime&amp;#34;: &amp;#34;162 min&amp;#34;, &amp;#34;genre&amp;#34;: &amp;#34;Action, Adventure, Fantasy&amp;#34;, &amp;#34;director&amp;#34;: &amp;#34;James Cameron&amp;#34;, &amp;#34;writer&amp;#34;: &amp;#34;James Cameron&amp;#34;, &amp;#34;actors&amp;#34;: &amp;#34;Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang&amp;#34;, &amp;#34;plot&amp;#34;: &amp;#34;A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.</description>
     </item>
   </channel>
 </rss>

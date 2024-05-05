@@ -1,7 +1,7 @@
 +++
 title = 'Building movie recommendations using ML'
 date = 2024-05-01T10:29:44+03:00
-tags = ["building", "movie", "recommendations", "ML"]
+tags = ["building", "movie", "recommendations", "ML", "SwiftUI"]
 draft = false
 +++
 
