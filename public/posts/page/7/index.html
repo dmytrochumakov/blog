@@ -207,6 +207,22 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">What is closure in Swift language?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction In this article, I’m going to briefly explain what closure is.
+Closures is self-conitained blocks of funcionality that can be passed around and used in your code. — Apple
+Expression:
+{ (params) -&gt; return value in statements } @escaping When closure is marked as escaping, it will outlive or leave the scope you passed.
+func response(_ completionHandler: @escaping(Result) -&gt; Void) { completionHandler(.success) } @nonescaping By default, closures are nonescaping, meaning closure will no longer exist in memory after complete execution in the scope you have passed it to....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-12-10 00:00:00 +0300 +0300'>December 10, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to What is closure in Swift language?" href="http://localhost:1313/posts/what-is-closure-in-swift-language/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">What is “reference type” in Swift?
     </h2>
   </header>

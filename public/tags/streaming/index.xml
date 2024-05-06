@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 05 May 2024 07:20:29 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 06 May 2024 07:35:52 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/streaming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building Dynamic Island for Video Streaming App</title>
+      <link>http://localhost:1313/posts/building-dynamic-island-for-video-streaming-app/</link>
+      <pubDate>Mon, 06 May 2024 07:35:52 +0300</pubDate>
+      <guid>http://localhost:1313/posts/building-dynamic-island-for-video-streaming-app/</guid>
+      <description>Introduction I was curious about how to add Dynamic Island and implement it into a Video Streaming App. Here are a few steps on how you can achieve this.
+Caveats Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 &amp;quot;Failed to show Widget&amp;quot;. The solution is to configure live activities and run them through the main app.</description>
+    </item>
     <item>
       <title>Building Video Streaming Widget for iOS App</title>
       <link>http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/</link>
