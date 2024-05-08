@@ -3,15 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/app/</loc>
-    <lastmod>2024-05-06T07:35:52+03:00</lastmod>
+    <lastmod>2024-05-08T06:34:32+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-05-08T06:34:32+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-05-08T06:34:32+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swiftui/</loc>
+    <lastmod>2024-05-08T06:34:32+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-05-08T06:34:32+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/to-do/</loc>
+    <lastmod>2024-05-08T06:34:32+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ui-testing/</loc>
+    <lastmod>2024-05-08T06:34:32+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/ui-testing-swiftui-views-using-xctest-framework/</loc>
+    <lastmod>2024-05-08T06:34:32+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/xctest/</loc>
+    <lastmod>2024-05-08T06:34:32+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/building/</loc>
     <lastmod>2024-05-06T07:35:52+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/building-dynamic-island-for-video-streaming-app/</loc>
-    <lastmod>2024-05-06T07:35:52+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2024-05-06T07:35:52+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/dynamic-island/</loc>
@@ -20,16 +41,7 @@
     <loc>http://localhost:1313/tags/ios/</loc>
     <lastmod>2024-05-06T07:35:52+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-05-06T07:35:52+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/streaming/</loc>
-    <lastmod>2024-05-06T07:35:52+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swiftui/</loc>
-    <lastmod>2024-05-06T07:35:52+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-05-06T07:35:52+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/video/</loc>
