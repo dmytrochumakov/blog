@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 08 May 2024 06:34:32 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 10 May 2024 06:20:50 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Integration testing for SwiftUI views</title>
+      <link>http://localhost:1313/posts/integration-testing-for-swiftui-views/</link>
+      <pubDate>Fri, 10 May 2024 06:20:50 +0300</pubDate>
+      <guid>http://localhost:1313/posts/integration-testing-for-swiftui-views/</guid>
+      <description>Introduction I have been looking for information about implementation details of integration testing. I found a lot of information, but it was theoretical and all information looked the same. I did not find a meaningful example, so I tried to come up with my own definition and sample.
+Integration testing means testing the behavior between modules or views to ensure they work as expected after user actions.
+There are two ways of conducting integration testing: The first is by unit tests, where you try to test the flowing data between view models.</description>
+    </item>
     <item>
       <title>UI testing SwiftUI views using XCTest Framework</title>
       <link>http://localhost:1313/posts/ui-testing-swiftui-views-using-xctest-framework/</link>

@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/app/</loc>
-    <lastmod>2024-05-08T06:34:32+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-05-08T06:34:32+03:00</lastmod>
+    <lastmod>2024-05-10T06:20:50+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/integration-testing/</loc>
+    <lastmod>2024-05-10T06:20:50+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/integration-testing-for-swiftui-views/</loc>
+    <lastmod>2024-05-10T06:20:50+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-05-08T06:34:32+03:00</lastmod>
+    <lastmod>2024-05-10T06:20:50+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/swiftui/</loc>
-    <lastmod>2024-05-08T06:34:32+03:00</lastmod>
+    <lastmod>2024-05-10T06:20:50+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-05-10T06:20:50+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/app/</loc>
     <lastmod>2024-05-08T06:34:32+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/to-do/</loc>
