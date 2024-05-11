@@ -202,6 +202,21 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">The Chain Of Responsibility Pattern
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is a Chain Of Responsibility Pattern? The Chain Of Responsibility Pattern helps create a chain of objects to examine requests. Each object in turn examines a request and either handles it or passes onto the next object in the chain.
+Source
+What problems does it solve? The Chain Of Responsibility Pattern (CoR) helps solve following problems:
+Dynamic Request Handling: It enables dynamic assignment of responsibilities at runtime. Handlers can be added, removed, or reordered without affecting the client’s code....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-15 08:29:30 +0300 +0300'>March 15, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to The Chain Of Responsibility Pattern" href="http://localhost:1313/posts/the-chain-of-responsibility-pattern/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">The State Pattern
     </h2>
   </header>
@@ -258,27 +273,12 @@ class PostService { func fetchPosts() -&gt; AnyPublisher&lt;[Post], Error&gt; { 
   <footer class="entry-footer"><span title='2024-02-07 08:29:30 +0300 +0300'>February 7, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Combine — Basics" href="http://localhost:1313/posts/combine-basics/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Modern Concurrency
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
-You can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.
-What are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
-actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&gt; String?...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-02-04 08:29:30 +0300 +0300'>February 4, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Modern Concurrency" href="http://localhost:1313/posts/modern-concurrency/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/page/4/">
-      «&nbsp;Prev&nbsp;4/7
+      «&nbsp;Prev&nbsp;4/8
     </a>
-    <a class="next" href="http://localhost:1313/page/6/">Next&nbsp;6/7&nbsp;»
+    <a class="next" href="http://localhost:1313/page/6/">Next&nbsp;6/8&nbsp;»
     </a>
   </nav>
 </footer>

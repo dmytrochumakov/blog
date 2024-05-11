@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 10 May 2024 06:20:50 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 11 May 2024 07:25:24 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swiftui/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementing Apple Pay in a SwiftUI app</title>
+      <link>http://localhost:1313/posts/implementing-apple-pay-in-a-swiftui-app/</link>
+      <pubDate>Sat, 11 May 2024 07:25:24 +0300</pubDate>
+      <guid>http://localhost:1313/posts/implementing-apple-pay-in-a-swiftui-app/</guid>
+      <description>Introduction Sometime ago, I was working on a marketplace app, and I needed to add Apple Pay to make purchases more easily. Here are a few steps on how I did it: First Step You need to add Apple Pay capability to your project. You will need to Register a Merchant ID. I will skip this step; you can find info by following this link Setting up Apple Pay. Second Step You will need to import PassKit and create PKPaymentRequest to interact with PKPaymentAuthorizationController and PKPaymentAuthorizationControllerDelegate.</description>
+    </item>
     <item>
       <title>Integration testing for SwiftUI views</title>
       <link>http://localhost:1313/posts/integration-testing-for-swiftui-views/</link>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Apple Pay on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/apple-pay/</link>
+    <description>Recent content in Apple Pay on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 11 May 2024 07:25:24 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/apple-pay/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementing Apple Pay in a SwiftUI app</title>
+      <link>http://localhost:1313/posts/implementing-apple-pay-in-a-swiftui-app/</link>
+      <pubDate>Sat, 11 May 2024 07:25:24 +0300</pubDate>
+      <guid>http://localhost:1313/posts/implementing-apple-pay-in-a-swiftui-app/</guid>
+      <description>Introduction Sometime ago, I was working on a marketplace app, and I needed to add Apple Pay to make purchases more easily. Here are a few steps on how I did it: First Step You need to add Apple Pay capability to your project. You will need to Register a Merchant ID. I will skip this step; you can find info by following this link Setting up Apple Pay. Second Step You will need to import PassKit and create PKPaymentRequest to interact with PKPaymentAuthorizationController and PKPaymentAuthorizationControllerDelegate.</description>
+    </item>
+  </channel>
+</rss>
