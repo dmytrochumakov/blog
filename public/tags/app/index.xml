@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 11 May 2024 07:25:24 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 12 May 2024 07:57:51 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementing In-App Purchases to SwiftUI app using StoreKit 2</title>
+      <link>http://localhost:1313/posts/implementing-in-app-purchases-to-swiftui-app-using-storekit-2/</link>
+      <pubDate>Sun, 12 May 2024 07:57:51 +0300</pubDate>
+      <guid>http://localhost:1313/posts/implementing-in-app-purchases-to-swiftui-app-using-storekit-2/</guid>
+      <description>Introduction I was wondering how to add in-app purchases to my app. I chose non-consumable in-app purchase because you can pay one time for this item. Here are a few steps on how I did it.
+First Step Set up In-App Purchases for your app in App Store Connect account or add a .storekit configuration file and start from there. If you&amp;rsquo;ve already set up In-App Purchases in your account, you can sync the StoreKit config with that data.</description>
+    </item>
     <item>
       <title>Implementing Apple Pay in a SwiftUI app</title>
       <link>http://localhost:1313/posts/implementing-apple-pay-in-a-swiftui-app/</link>

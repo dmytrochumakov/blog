@@ -11,13 +11,55 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 11 May 2024 07:25:24 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 12 May 2024 07:57:51 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>App</title>
       <link>http://localhost:1313/tags/app/</link>
-      <pubDate>Sat, 11 May 2024 07:25:24 +0300</pubDate>
+      <pubDate>Sun, 12 May 2024 07:57:51 +0300</pubDate>
       <guid>http://localhost:1313/tags/app/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Implementing</title>
+      <link>http://localhost:1313/tags/implementing/</link>
+      <pubDate>Sun, 12 May 2024 07:57:51 +0300</pubDate>
+      <guid>http://localhost:1313/tags/implementing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>In-App Purchases</title>
+      <link>http://localhost:1313/tags/in-app-purchases/</link>
+      <pubDate>Sun, 12 May 2024 07:57:51 +0300</pubDate>
+      <guid>http://localhost:1313/tags/in-app-purchases/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Non-Consumable</title>
+      <link>http://localhost:1313/tags/non-consumable/</link>
+      <pubDate>Sun, 12 May 2024 07:57:51 +0300</pubDate>
+      <guid>http://localhost:1313/tags/non-consumable/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>StoreKit</title>
+      <link>http://localhost:1313/tags/storekit/</link>
+      <pubDate>Sun, 12 May 2024 07:57:51 +0300</pubDate>
+      <guid>http://localhost:1313/tags/storekit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>StoreKit 2</title>
+      <link>http://localhost:1313/tags/storekit-2/</link>
+      <pubDate>Sun, 12 May 2024 07:57:51 +0300</pubDate>
+      <guid>http://localhost:1313/tags/storekit-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SwiftUI</title>
+      <link>http://localhost:1313/tags/swiftui/</link>
+      <pubDate>Sun, 12 May 2024 07:57:51 +0300</pubDate>
+      <guid>http://localhost:1313/tags/swiftui/</guid>
       <description></description>
     </item>
     <item>
@@ -28,24 +70,10 @@
       <description></description>
     </item>
     <item>
-      <title>Implementing</title>
-      <link>http://localhost:1313/tags/implementing/</link>
-      <pubDate>Sat, 11 May 2024 07:25:24 +0300</pubDate>
-      <guid>http://localhost:1313/tags/implementing/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>MVVM</title>
       <link>http://localhost:1313/tags/mvvm/</link>
       <pubDate>Sat, 11 May 2024 07:25:24 +0300</pubDate>
       <guid>http://localhost:1313/tags/mvvm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SwiftUI</title>
-      <link>http://localhost:1313/tags/swiftui/</link>
-      <pubDate>Sat, 11 May 2024 07:25:24 +0300</pubDate>
-      <guid>http://localhost:1313/tags/swiftui/</guid>
       <description></description>
     </item>
     <item>

@@ -3,30 +3,45 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/app/</loc>
-    <lastmod>2024-05-11T07:25:24+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/apple-pay/</loc>
-    <lastmod>2024-05-11T07:25:24+03:00</lastmod>
+    <lastmod>2024-05-12T07:57:51+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-05-11T07:25:24+03:00</lastmod>
+    <lastmod>2024-05-12T07:57:51+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/implementing/</loc>
+    <lastmod>2024-05-12T07:57:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/implementing-in-app-purchases-to-swiftui-app-using-storekit-2/</loc>
+    <lastmod>2024-05-12T07:57:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/in-app-purchases/</loc>
+    <lastmod>2024-05-12T07:57:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/non-consumable/</loc>
+    <lastmod>2024-05-12T07:57:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-05-12T07:57:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/storekit/</loc>
+    <lastmod>2024-05-12T07:57:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/storekit-2/</loc>
+    <lastmod>2024-05-12T07:57:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swiftui/</loc>
+    <lastmod>2024-05-12T07:57:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-05-12T07:57:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/apple-pay/</loc>
     <lastmod>2024-05-11T07:25:24+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/implementing-apple-pay-in-a-swiftui-app/</loc>
     <lastmod>2024-05-11T07:25:24+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/mvvm/</loc>
-    <lastmod>2024-05-11T07:25:24+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-05-11T07:25:24+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swiftui/</loc>
-    <lastmod>2024-05-11T07:25:24+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-05-11T07:25:24+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/integration-testing/</loc>

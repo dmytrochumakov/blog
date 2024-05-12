@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>StoreKit on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/storekit/</link>
+    <description>Recent content in StoreKit on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 12 May 2024 07:57:51 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/storekit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementing In-App Purchases to SwiftUI app using StoreKit 2</title>
+      <link>http://localhost:1313/posts/implementing-in-app-purchases-to-swiftui-app-using-storekit-2/</link>
+      <pubDate>Sun, 12 May 2024 07:57:51 +0300</pubDate>
+      <guid>http://localhost:1313/posts/implementing-in-app-purchases-to-swiftui-app-using-storekit-2/</guid>
+      <description>Introduction I was wondering how to add in-app purchases to my app. I chose non-consumable in-app purchase because you can pay one time for this item. Here are a few steps on how I did it.
+First Step Set up In-App Purchases for your app in App Store Connect account or add a .storekit configuration file and start from there. If you&amp;rsquo;ve already set up In-App Purchases in your account, you can sync the StoreKit config with that data.</description>
+    </item>
+  </channel>
+</rss>
