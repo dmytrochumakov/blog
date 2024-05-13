@@ -2,10 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/app/</loc>
-    <lastmod>2024-05-12T07:57:51+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2024-05-13T07:31:49+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/face-id/</loc>
+    <lastmod>2024-05-13T07:31:49+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/keychain/</loc>
+    <lastmod>2024-05-13T07:31:49+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-05-13T07:31:49+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/securing/</loc>
+    <lastmod>2024-05-13T07:31:49+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/securing-user-data-with-keychain-touch-id-and-face-id/</loc>
+    <lastmod>2024-05-13T07:31:49+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/security/</loc>
+    <lastmod>2024-05-13T07:31:49+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-05-13T07:31:49+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/touch-id/</loc>
+    <lastmod>2024-05-13T07:31:49+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/user-data/</loc>
+    <lastmod>2024-05-13T07:31:49+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/app/</loc>
     <lastmod>2024-05-12T07:57:51+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/implementing/</loc>
@@ -20,9 +47,6 @@
     <loc>http://localhost:1313/tags/non-consumable/</loc>
     <lastmod>2024-05-12T07:57:51+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-05-12T07:57:51+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/storekit/</loc>
     <lastmod>2024-05-12T07:57:51+03:00</lastmod>
   </url><url>
@@ -30,9 +54,6 @@
     <lastmod>2024-05-12T07:57:51+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/swiftui/</loc>
-    <lastmod>2024-05-12T07:57:51+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-05-12T07:57:51+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/apple-pay/</loc>

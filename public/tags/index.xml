@@ -11,8 +11,50 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 12 May 2024 07:57:51 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 13 May 2024 07:31:49 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Face ID</title>
+      <link>http://localhost:1313/tags/face-id/</link>
+      <pubDate>Mon, 13 May 2024 07:31:49 +0300</pubDate>
+      <guid>http://localhost:1313/tags/face-id/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Keychain</title>
+      <link>http://localhost:1313/tags/keychain/</link>
+      <pubDate>Mon, 13 May 2024 07:31:49 +0300</pubDate>
+      <guid>http://localhost:1313/tags/keychain/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Securing</title>
+      <link>http://localhost:1313/tags/securing/</link>
+      <pubDate>Mon, 13 May 2024 07:31:49 +0300</pubDate>
+      <guid>http://localhost:1313/tags/securing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>http://localhost:1313/tags/security/</link>
+      <pubDate>Mon, 13 May 2024 07:31:49 +0300</pubDate>
+      <guid>http://localhost:1313/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Touch ID</title>
+      <link>http://localhost:1313/tags/touch-id/</link>
+      <pubDate>Mon, 13 May 2024 07:31:49 +0300</pubDate>
+      <guid>http://localhost:1313/tags/touch-id/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>User Data</title>
+      <link>http://localhost:1313/tags/user-data/</link>
+      <pubDate>Mon, 13 May 2024 07:31:49 +0300</pubDate>
+      <guid>http://localhost:1313/tags/user-data/</guid>
+      <description></description>
+    </item>
     <item>
       <title>App</title>
       <link>http://localhost:1313/tags/app/</link>

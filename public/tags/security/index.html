@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Posts | Dmytro&#39;s Blog</title>
+<title>Security | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="">
-<meta name="description" content="Posts - Dmytro&#39;s Blog">
+<meta name="description" content="">
 <meta name="author" content="Dmytro Chumakov">
-<link rel="canonical" href="http://localhost:1313/posts/">
+<link rel="canonical" href="http://localhost:1313/tags/security/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.ef6b0a8cc044c81f8564fffb013558fc5d5c2910023a80374f705ae86b059bed.css" integrity="sha256-72sKjMBEyB&#43;FZP/7ATVY/F1cKRACOoA3T3Ba6GsFm&#43;0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -19,8 +19,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/security/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/security/">
 <noscript>
     <style>
         #theme-toggle,
@@ -85,33 +85,18 @@ if (!doNotTrack) {
 	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="Posts" />
+<meta property="og:title" content="Security" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/posts/" />
+<meta property="og:url" content="http://localhost:1313/tags/security/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
 
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
-<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:title" content="Security"/>
 <meta name="twitter:description" content=""/>
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "http://localhost:1313/posts/"
-    }
-  ]
-}
-</script>
 </head>
 
 <body class="list" id="top">
@@ -199,87 +184,25 @@ if (!doNotTrack) {
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
   <h1>
-    Posts
+    Security
   </h1>
 </header>
 
-<article class="post-entry"> 
+<article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Building Dynamic Island for Video Streaming App
+    <h2 class="entry-hint-parent">Securing user data with Keychain, Touch ID, and Face ID
     </h2>
   </header>
   <div class="entry-content">
-    <p>Introduction I was curious about how to add Dynamic Island and implement it into a Video Streaming App. Here are a few steps on how you can achieve this.
-Caveats Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 &#34;Failed to show Widget&#34;. The solution is to configure live activities and run them through the main app....</p>
+    <p>Introduction I was eager to learn about securing user data using Keychain and biometric authentication. Here are a few steps I found:
+Caveats You can test accessing Keychain data using Touch ID and Face ID only on a real device.
+First Step The first step is to add the Privacy - Face ID Usage Description key to your Info.plist. Without it, you would not be able to retrieve data from Keychain using Face ID....</p>
   </div>
-  <footer class="entry-footer"><span title='2024-05-06 07:35:52 +0300 EEST'>May 6, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Building Dynamic Island for Video Streaming App" href="http://localhost:1313/posts/building-dynamic-island-for-video-streaming-app/"></a>
+  <footer class="entry-footer"><span title='2024-05-13 07:31:49 +0300 EEST'>May 13, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Securing user data with Keychain, Touch ID, and Face ID" href="http://localhost:1313/posts/securing-user-data-with-keychain-touch-id-and-face-id/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Building Video Streaming Widget for iOS App
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was exploring the idea of creating a YouTube-like widget for the lock screen on iOS devices. It wasn’t easy because most articles on the Internet discussed general implementations, such as for a coffee shop or a to-do list. Even when I found some similar versions, the project wouldn’t compile. I made the decision to approach it my way, so here’s what I found out:
-Caveats After being stuck for two or more hours without understanding why, after tapping on a button, I wasn&#39;t able to receive a callback from it and the widget always opened the main iOS app, I realized that I forgot to add AppIntent - without it, you can’t handle actions for iOS 17....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-05 07:20:29 +0300 EEST'>May 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Building Video Streaming Widget for iOS App" href="http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Building Video Streaming iOS App
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was looking for a way to add a video player to my iOS app that could be able to play remote videos.
-Caveats Problem I found that you can’t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 &#34;Operation Stopped&#34; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error. I don’t know exactly what this means, but I’m speculating it’s related to some protection.
-Solution My solution was to find another video that is not related to those platforms....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-03 07:34:56 +0300 EEST'>May 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Building Video Streaming iOS App" href="http://localhost:1313/posts/building-video-streaming-ios-app/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Building Group Chat using WebSockets
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I never had a chance to work with WebSockets, so I decided to take a look and create a group chat. Here’s what I discovered:
-To be able to send and receive messages, you need to create an interface for communication between a server and your application. In my case, I chose sendMessage and receiveMessage methods. For the server-side, I chose Node.js. For the iOS application, I chose the Socket....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-02 15:15:14 +0300 EEST'>May 2, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Building Group Chat using WebSockets" href="http://localhost:1313/posts/building-group-chat-using-websockets/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Exploring visionOS
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I find myself fascinated by the idea of creating an app for visionOS where I could possibly display 3D AirPods that I like. Here are a few steps on how you can do the same:
-First step The first step that you need to do is to create a visionOS project.
-Second step The next step would be adding a 3D object to Reality Composer Pro and exporting it as a ....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-02 08:45:39 +0300 EEST'>May 2, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Exploring visionOS" href="http://localhost:1313/posts/exploring-visionos/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/posts/">
-      «&nbsp;Prev&nbsp;1/8
-    </a>
-    <a class="next" href="http://localhost:1313/posts/page/3/">Next&nbsp;3/8&nbsp;»
-    </a>
-  </nav>
-</footer>
     </main>
     
 <footer class="footer">
