@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 13 May 2024 07:31:49 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2024 07:13:39 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementing GraphQL in an iOS application</title>
+      <link>http://localhost:1313/posts/implementing-graphql-in-an-ios-application/</link>
+      <pubDate>Wed, 15 May 2024 07:13:39 +0300</pubDate>
+      <guid>http://localhost:1313/posts/implementing-graphql-in-an-ios-application/</guid>
+      <description>Introduction I previously never had a chance to work with GraphQL. I was excited to learn when to apply this technology, what tools I can use, and how I can implement it. Here’s what I found:
+For testing, I used the Star Wars GraphQL API with AllFilmsQuery:
+query AllFilmsQuery { allFilms { films { title director created producers releaseDate } } } I requested allFilms with title, director, created, producers, and releaseDate information.</description>
+    </item>
     <item>
       <title>Securing user data with Keychain, Touch ID, and Face ID</title>
       <link>http://localhost:1313/posts/securing-user-data-with-keychain-touch-id-and-face-id/</link>

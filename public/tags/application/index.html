@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head>
-	<meta name="generator" content="Hugo 0.123.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Dmytro&#39;s Blog</title>
-
+<title>Application | Dmytro&#39;s Blog</title>
+<meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="Dmytro Chumakov">
-<link rel="canonical" href="http://localhost:1313/">
+<link rel="canonical" href="http://localhost:1313/tags/application/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.ef6b0a8cc044c81f8564fffb013558fc5d5c2910023a80374f705ae86b059bed.css" integrity="sha256-72sKjMBEyB&#43;FZP/7ATVY/F1cKRACOoA3T3Ba6GsFm&#43;0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -20,9 +19,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
-<link rel="alternate" type="application/json" href="http://localhost:1313/index.json">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/application/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/application/">
 <noscript>
     <style>
         #theme-toggle,
@@ -87,31 +85,18 @@ if (!doNotTrack) {
 	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="Dmytro&#39;s Blog" />
+<meta property="og:title" content="Application" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" />
+<meta property="og:url" content="http://localhost:1313/tags/application/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
 
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
-<meta name="twitter:title" content="Dmytro&#39;s Blog"/>
+<meta name="twitter:title" content="Application"/>
 <meta name="twitter:description" content=""/>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Dmytro's Blog",
-  "url": "http://localhost:1313/",
-  "description": "",
-  "thumbnailUrl": "http://localhost:1313/favicon.ico",
-  "sameAs": [
-      "https://github.com/dmytrochumakov", "https://www.linkedin.com/in/dmytro-chumakov/", "https://www.youtube.com/@dmytro_chumakov", "mailto:dmytro.v.chumakov.work@gmail.com"
-  ]
-}
-</script>
 </head>
 
 <body class="list" id="top">
@@ -199,87 +184,25 @@ if (!doNotTrack) {
     </nav>
 </header>
 <main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
+  <h1>
+    Application
+  </h1>
+</header>
 
-<article class="post-entry"> 
+<article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">DispatchGroup in Swift
+    <h2 class="entry-hint-parent">Implementing GraphQL in an iOS application
     </h2>
   </header>
   <div class="entry-content">
-    <p>What is DispatchGroup? DispatchGroup provides a mechanism to track the completion group of tasks.
-How DispatchGroup works? DispatchGroup has three main methods, enter, leave and notify, that allow you to control the completion of a specific task.
-let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() dispatchGroup.notify(queue: .main) {} Let`s talk about each of these methods. enter — manually indicate a block has entered group. leave — manually indicate a block in the group has been completed....</p>
+    <p>Introduction I previously never had a chance to work with GraphQL. I was excited to learn when to apply this technology, what tools I can use, and how I can implement it. Here’s what I found:
+For testing, I used the Star Wars GraphQL API with AllFilmsQuery:
+query AllFilmsQuery { allFilms { films { title director created producers releaseDate } } } I requested allFilms with title, director, created, producers, and releaseDate information....</p>
   </div>
-  <footer class="entry-footer"><span title='2024-01-10 00:00:00 +0300 +0300'>January 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DispatchGroup in Swift" href="http://localhost:1313/posts/dispatchgroup-in-swift/"></a>
+  <footer class="entry-footer"><span title='2024-05-15 07:13:39 +0300 EEST'>May 15, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Implementing GraphQL in an iOS application" href="http://localhost:1313/posts/implementing-graphql-in-an-ios-application/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Concurrency in Swift
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is concurrency? The system can perform multiple tasks simultaneously. By tasks, I mean code or instructions. Modern computer chips have multiple cores that allow developers to create and run various tasks on multiple cores. Even if your chip has one core operating system it will provide context switching mechanism by enabling it to execute multiple tasks concurrently.
-Material about processes, threads I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-07 00:00:00 +0300 +0300'>January 7, 2024</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Concurrency in Swift" href="http://localhost:1313/posts/concurrency-in-swift/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">What are value types in Swift?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What are value types? Value types play a central role in programming languages by grouping data values.
-`Value type” is a type of data copied when assigned to a new variable.
-struct Storage { var data: String = &#34;some data&#34; } let originalStorage = Storage() var copiedStorage = originalStorage // `originalStorage` is copied to `copiedStorage` How can you pass value types? You can pass value type by copying value.
-struct Storage { var data: String = &#34;some data&#34; } let originalStorage = Storage() var copiedStorage = originalStorage // `originalStorage` is copied to `copiedStorage` copiedStorage....</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-12-28 00:00:00 +0300 +0300'>December 28, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to What are value types in Swift?" href="http://localhost:1313/posts/what-are-value-types-in-swift/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">How to prevent memory leaks?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>I was searching for tools that could help me find memory leaks faster and would be simple in implementation without affecting performance and memory size of application.
-I found a fantastic fit for this task LifetimeTracker developed by Krzysztof Zabłocki.
-All you need is to add LifetimeTracker package to the project, inherit from LifetimeTrackable protocol, and add two lines of code.
-class Department: LifetimeTrackable {} trackLifetime method to init of instance that you are going to verify, and lifetimeConfiguration property where you set max number of valid instances....</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-12-24 00:00:00 +0300 +0300'>December 24, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to How to prevent memory leaks?" href="http://localhost:1313/posts/how-to-prevent-memory-leaks/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">How to find memory leaks?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The common way to find memory leaks is by using Xcode Instruments. All you need is the following:
-Open Xcode Instruments
-Choose Leaks option Select Simulator where you are going to test your application Select your installed application When you finish preparation, you can start immediate recoding and check application for leaks. To do that, you need to open Simulator and try some cases that could cause memory leaks.
-After you spend some time trying different scenarios, you can see that Instruments found Leaked Objects....</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-12-20 00:00:00 +0300 +0300'>December 20, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to How to find memory leaks?" href="http://localhost:1313/posts/how-to-find-memory-leaks/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/page/6/">
-      «&nbsp;Prev&nbsp;6/8
-    </a>
-    <a class="next" href="http://localhost:1313/page/8/">Next&nbsp;8/8&nbsp;»
-    </a>
-  </nav>
-</footer>
     </main>
     
 <footer class="footer">
