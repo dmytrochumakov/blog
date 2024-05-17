@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 May 2024 07:13:39 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 17 May 2024 07:23:46 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Animation - SwiftUI</title>
+      <link>http://localhost:1313/posts/animation-swiftui/</link>
+      <pubDate>Fri, 17 May 2024 07:23:46 +0300</pubDate>
+      <guid>http://localhost:1313/posts/animation-swiftui/</guid>
+      <description>Introduction I was eager to learn about creating complex animations in SwiftUI. The few questions that were on my mind included what types of animations exist and what I can animate. Here is what I found:
+Types of Animation SwiftUI has explicit and implicit animation types.
+Implicit Animation: This is specified with the .animation() modifier. SwiftUI will animate changes in old and new values.
+struct ImplicitAnimation: View { @State private var half = false @State private var dim = false var body: some View { Image(&amp;#34;tower&amp;#34;) .</description>
+    </item>
     <item>
       <title>Implementing GraphQL in an iOS application</title>
       <link>http://localhost:1313/posts/implementing-graphql-in-an-ios-application/</link>

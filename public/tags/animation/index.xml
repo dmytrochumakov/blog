@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Animation on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/animation/</link>
+    <description>Recent content in Animation on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.123.3</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 17 May 2024 07:23:46 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/animation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Animation - SwiftUI</title>
+      <link>http://localhost:1313/posts/animation-swiftui/</link>
+      <pubDate>Fri, 17 May 2024 07:23:46 +0300</pubDate>
+      <guid>http://localhost:1313/posts/animation-swiftui/</guid>
+      <description>Introduction I was eager to learn about creating complex animations in SwiftUI. The few questions that were on my mind included what types of animations exist and what I can animate. Here is what I found:
+Types of Animation SwiftUI has explicit and implicit animation types.
+Implicit Animation: This is specified with the .animation() modifier. SwiftUI will animate changes in old and new values.
+struct ImplicitAnimation: View { @State private var half = false @State private var dim = false var body: some View { Image(&amp;#34;tower&amp;#34;) .</description>
+    </item>
+  </channel>
+</rss>
