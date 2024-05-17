@@ -1,7 +1,7 @@
 +++
 title = 'Animation - SwiftUI'
 date = 2024-05-17T07:23:46+03:00
-tags = ["Animation", "Swiftui"]
+tags = ["Animation", "SwiftUI"]
 draft = false
 +++
 

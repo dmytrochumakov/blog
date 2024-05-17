@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Animation - SwiftUI | Dmytro&#39;s Blog</title>
-<meta name="keywords" content="Animation, Swiftui">
+<meta name="keywords" content="Animation, SwiftUI">
 <meta name="description" content="Introduction I was eager to learn about creating complex animations in SwiftUI. The few questions that were on my mind included what types of animations exist and what I can animate. Here is what I found:
 Types of Animation SwiftUI has explicit and implicit animation types.
 Implicit Animation: This is specified with the .animation() modifier. SwiftUI will animate changes in old and new values.
@@ -136,7 +136,7 @@ struct ImplicitAnimation: View { @State private var half = false @State private 
   "name": "Animation - SwiftUI",
   "description": "Introduction I was eager to learn about creating complex animations in SwiftUI. The few questions that were on my mind included what types of animations exist and what I can animate. Here is what I found:\nTypes of Animation SwiftUI has explicit and implicit animation types.\nImplicit Animation: This is specified with the .animation() modifier. SwiftUI will animate changes in old and new values.\nstruct ImplicitAnimation: View { @State private var half = false @State private var dim = false var body: some View { Image(\u0026#34;tower\u0026#34;) .",
   "keywords": [
-    "Animation", "Swiftui"
+    "Animation", "SwiftUI"
   ],
   "articleBody": "Introduction I was eager to learn about creating complex animations in SwiftUI. The few questions that were on my mind included what types of animations exist and what I can animate. Here is what I found:\nTypes of Animation SwiftUI has explicit and implicit animation types.\nImplicit Animation: This is specified with the .animation() modifier. SwiftUI will animate changes in old and new values.\nstruct ImplicitAnimation: View { @State private var half = false @State private var dim = false var body: some View { Image(\"tower\") .scaleEffect(half ? 0.5 : 1.0) .opacity(dim ? 0.2 : 1.0) .animation(.easeInOut(duration: 1.0)) .onTapGesture { self.dim.toggle() self.half.toggle() } } } Explicit Animation: This is specified with the withAnimation closure. Only those parameters that depend on a value changed inside the withAnimation closure will be animated.\nstruct ExplicitAnimation: View { @State private var half = false @State private var dim = false var body: some View { Image(\"tower\") .scaleEffect(half ? 0.5 : 1.0) .opacity(dim ? 0.5 : 1.0) .onTapGesture { self.half.toggle() withAnimation(.easeInOut(duration: 1.0)) { self.dim.toggle() } } } } What is Possible to Animate You can animate single parameters such as size, offset, color, scale, etc. You can conform to the Animatable protocol and describe how to animate a property of a view. You can also animate multiple parameters with AnimatablePair. Resources An invaluable resource is The SwiftUI Lab, which has more than 5 posts only about animation in SwiftUI.\nThank you for reading! 😊 ",
   "wordCount" : "239",
@@ -375,7 +375,7 @@ struct ImplicitAnimation: View { @State private var half = false @State private 
 <ul class="share-buttons">
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share Animation - SwiftUI on x"
-            href="https://x.com/intent/tweet/?text=Animation%20-%20SwiftUI&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fanimation-swiftui%2f&amp;hashtags=Animation%2cSwiftui">
+            href="https://x.com/intent/tweet/?text=Animation%20-%20SwiftUI&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fanimation-swiftui%2f&amp;hashtags=Animation%2cSwiftUI">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
