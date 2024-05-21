@@ -202,6 +202,21 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">How to prevent memory leaks?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I was searching for tools that could help me find memory leaks faster and would be simple in implementation without affecting performance and memory size of application.
+I found a fantastic fit for this task LifetimeTracker developed by Krzysztof Zabłocki.
+All you need is to add LifetimeTracker package to the project, inherit from LifetimeTrackable protocol, and add two lines of code.
+class Department: LifetimeTrackable {} trackLifetime method to init of instance that you are going to verify, and lifetimeConfiguration property where you set max number of valid instances....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-12-24 00:00:00 +0300 +0300'>December 24, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to How to prevent memory leaks?" href="http://localhost:1313/posts/how-to-prevent-memory-leaks/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">How to find memory leaks?
     </h2>
   </header>
@@ -259,24 +274,12 @@ Example You can pass your property value by sharing the same address in memory.
   <footer class="entry-footer"><span title='2023-12-03 00:00:00 +0300 +0300'>December 3, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to What is “reference type” in Swift?" href="http://localhost:1313/posts/what-is-reference-type-in-swift/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Let’s talk about Composable Architecture
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction The Composable Architecture (TCA) uses a unidirectional data flow (UDF). UDF is a design pattern where data and events move consistently and predictably. In UDF, data can only be transferred to other application parts in one way.
-In TCA, the only way to mutate the state is by sending actions to a runtime store. The runtime store holds the entire app’s business logic and mutates the state inside.
-UDF can reduce data inconsistencies because of the single source of truth for the application....</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-08-11 00:00:00 +0300 EEST'>August 11, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Let’s talk about Composable Architecture" href="http://localhost:1313/posts/lets-talk-about-composable-architecture/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/page/7/">
-      «&nbsp;Prev&nbsp;7/8
+      «&nbsp;Prev&nbsp;7/9
+    </a>
+    <a class="next" href="http://localhost:1313/page/9/">Next&nbsp;9/9&nbsp;»
     </a>
   </nav>
 </footer>

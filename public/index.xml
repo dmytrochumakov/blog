@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 17 May 2024 07:23:46 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 21 May 2024 06:31:02 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Animation - UIKit</title>
+      <link>http://localhost:1313/posts/animation-uikit/</link>
+      <pubDate>Tue, 21 May 2024 06:31:02 +0300</pubDate>
+      <guid>http://localhost:1313/posts/animation-uikit/</guid>
+      <description>Introduction I was curious about creating animations in UIKit. I wanted to animate different properties such as color and path. Here is what I found:
+It’s impossible to create complex animations only by using the block-based animation API. To do that, you need the Core Animation API and CAPropertyAnimation with its various subclasses.
+Complex animation in UIKit is based on a few key components:
+CAShapeLayer - provides extensive customization options: path, stroke, fill, shadow CABasicAnimation - helps animate color or change the path Implementation First Step The first step is to create a shape layer that will draw an arrow using CAShapeLayer.</description>
+    </item>
     <item>
       <title>Animation - SwiftUI</title>
       <link>http://localhost:1313/posts/animation-swiftui/</link>

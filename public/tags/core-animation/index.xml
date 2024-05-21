@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Core Animation on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/core-animation/</link>
+    <description>Recent content in Core Animation on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.123.3</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 21 May 2024 06:31:02 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/core-animation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Animation - UIKit</title>
+      <link>http://localhost:1313/posts/animation-uikit/</link>
+      <pubDate>Tue, 21 May 2024 06:31:02 +0300</pubDate>
+      <guid>http://localhost:1313/posts/animation-uikit/</guid>
+      <description>Introduction I was curious about creating animations in UIKit. I wanted to animate different properties such as color and path. Here is what I found:
+It’s impossible to create complex animations only by using the block-based animation API. To do that, you need the Core Animation API and CAPropertyAnimation with its various subclasses.
+Complex animation in UIKit is based on a few key components:
+CAShapeLayer - provides extensive customization options: path, stroke, fill, shadow CABasicAnimation - helps animate color or change the path Implementation First Step The first step is to create a shape layer that will draw an arrow using CAShapeLayer.</description>
+    </item>
+  </channel>
+</rss>
