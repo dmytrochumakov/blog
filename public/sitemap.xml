@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-05-23T08:37:45+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ios/</loc>
+    <lastmod>2024-05-23T08:37:45+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-05-23T08:37:45+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/speech-to-text/</loc>
+    <lastmod>2024-05-23T08:37:45+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/speech-to-text-ios/</loc>
+    <lastmod>2024-05-23T08:37:45+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-05-23T08:37:45+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/animation/</loc>
     <lastmod>2024-05-21T06:31:02+03:00</lastmod>
   </url><url>
@@ -18,15 +36,6 @@
     <lastmod>2024-05-21T06:31:02+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/core-animation/</loc>
-    <lastmod>2024-05-21T06:31:02+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-05-21T06:31:02+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-05-21T06:31:02+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-05-21T06:31:02+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/uikit/</loc>
@@ -48,9 +57,6 @@
     <lastmod>2024-05-15T07:13:39+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/implementing-graphql-in-an-ios-application/</loc>
-    <lastmod>2024-05-15T07:13:39+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ios/</loc>
     <lastmod>2024-05-15T07:13:39+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/face-id/</loc>

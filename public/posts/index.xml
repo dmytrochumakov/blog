@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 21 May 2024 06:31:02 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 23 May 2024 08:37:45 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Speech To Text iOS</title>
+      <link>http://localhost:1313/posts/speech-to-text-ios/</link>
+      <pubDate>Thu, 23 May 2024 08:37:45 +0300</pubDate>
+      <guid>http://localhost:1313/posts/speech-to-text-ios/</guid>
+      <description>Introduction I always wanted an iOS app that would allow me to economize my time by converting speech to text. I know this option is built into the keyboard, but you first need to click the text field, then tap on the microphone, and finally speak. I wanted a one-click option with the possibility to integrate it into all my daily routines. Here is what I discovered:
+First Step The first step is to request authorization to access the device&amp;rsquo;s microphone using the Privacy - Speech Recognition Usage Description key and the Privacy - Microphone Usage Description key.</description>
+    </item>
     <item>
       <title>Animation - UIKit</title>
       <link>http://localhost:1313/posts/animation-uikit/</link>

@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 21 May 2024 06:31:02 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 23 May 2024 08:37:45 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IOS</title>
+      <link>http://localhost:1313/tags/ios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ios/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Speech to Text</title>
+      <link>http://localhost:1313/tags/speech-to-text/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/speech-to-text/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Animation</title>
       <link>http://localhost:1313/tags/animation/</link>
@@ -81,13 +95,6 @@
       <link>http://localhost:1313/tags/implementing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/implementing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ios</title>
-      <link>http://localhost:1313/tags/ios/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ios/</guid>
       <description></description>
     </item>
     <item>

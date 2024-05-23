@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Speech to Text on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/speech-to-text/</link>
+    <description>Recent content in Speech to Text on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.123.3</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 23 May 2024 08:37:45 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/speech-to-text/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Speech To Text iOS</title>
+      <link>http://localhost:1313/posts/speech-to-text-ios/</link>
+      <pubDate>Thu, 23 May 2024 08:37:45 +0300</pubDate>
+      <guid>http://localhost:1313/posts/speech-to-text-ios/</guid>
+      <description>Introduction I always wanted an iOS app that would allow me to economize my time by converting speech to text. I know this option is built into the keyboard, but you first need to click the text field, then tap on the microphone, and finally speak. I wanted a one-click option with the possibility to integrate it into all my daily routines. Here is what I discovered:
+First Step The first step is to request authorization to access the device&amp;rsquo;s microphone using the Privacy - Speech Recognition Usage Description key and the Privacy - Microphone Usage Description key.</description>
+    </item>
+  </channel>
+</rss>
