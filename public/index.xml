@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 23 May 2024 08:37:45 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 24 May 2024 07:52:07 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Text To Speech iOS</title>
+      <link>http://localhost:1313/posts/text-to-speech-ios/</link>
+      <pubDate>Fri, 24 May 2024 07:52:07 +0300</pubDate>
+      <guid>http://localhost:1313/posts/text-to-speech-ios/</guid>
+      <description>Introduction I was eager to learn how converting Text To Speech works in iOS. Here is what I discovered:
+First Step The first step is to add AVSpeechSynthesizer, an object that produces synthesized speech from text utterances.
+@State private var speechSynthesizer = AVSpeechSynthesizer() Second Step The second step is to add AVSpeechUtterance, an object that encapsulates the text for speech synthesis.
+private var utterance: AVSpeechUtterance { let inputMessage = &amp;#34;Hello world!</description>
+    </item>
     <item>
       <title>Speech To Text iOS</title>
       <link>http://localhost:1313/posts/speech-to-text-ios/</link>

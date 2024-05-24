@@ -3,21 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-05-23T08:37:45+03:00</lastmod>
+    <lastmod>2024-05-24T07:52:07+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ios/</loc>
-    <lastmod>2024-05-23T08:37:45+03:00</lastmod>
+    <lastmod>2024-05-24T07:52:07+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-05-23T08:37:45+03:00</lastmod>
+    <lastmod>2024-05-24T07:52:07+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-05-24T07:52:07+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/text-to-speech/</loc>
+    <lastmod>2024-05-24T07:52:07+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/text-to-speech-ios/</loc>
+    <lastmod>2024-05-24T07:52:07+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/speech-to-text/</loc>
     <lastmod>2024-05-23T08:37:45+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/speech-to-text-ios/</loc>
-    <lastmod>2024-05-23T08:37:45+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-05-23T08:37:45+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/animation/</loc>
