@@ -52,6 +52,8 @@ params:
     - name: github
       title: View Source on Github
       url: "https://github.com/dmytrochumakov"    
+    - name: leetcode
+      url: "https://leetcode.com/u/dmytrochumakov/"    
     - name: linkedin
       url: "https://www.linkedin.com/in/dmytro-chumakov/"
     - name: youtube
