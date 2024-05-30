@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 24 May 2024 07:52:07 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 30 May 2024 07:04:49 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Accessibility iOS UIKit</title>
+      <link>http://localhost:1313/posts/accessibility-ios-uikit/</link>
+      <pubDate>Thu, 30 May 2024 07:04:49 +0300</pubDate>
+      <guid>http://localhost:1313/posts/accessibility-ios-uikit/</guid>
+      <description>Introduction I was curious to find out how to make an application more accessible. You can look at popular applications like YouTube or Netflix; they all have accessibility features like VoiceOver and dynamic fonts. I decided to create this example for a fruit calorie counter. It contains a list of fruits with the fruit name, fruit calories, and a favorite button.
+Where to Start Before diving into implementation details, I want to highlight some information about the existing accessibility features and what I will be focusing on.</description>
+    </item>
     <item>
       <title>Text To Speech iOS</title>
       <link>http://localhost:1313/posts/text-to-speech-ios/</link>

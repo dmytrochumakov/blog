@@ -11,13 +11,27 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 24 May 2024 07:52:07 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 30 May 2024 07:04:49 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Accessibility</title>
+      <link>http://localhost:1313/tags/accessibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/accessibility/</guid>
+      <description></description>
+    </item>
     <item>
       <title>IOS</title>
       <link>http://localhost:1313/tags/ios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/ios/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>UIKit</title>
+      <link>http://localhost:1313/tags/uikit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/uikit/</guid>
       <description></description>
     </item>
     <item>
@@ -67,13 +81,6 @@
       <link>http://localhost:1313/tags/core-animation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/core-animation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>UIKit</title>
-      <link>http://localhost:1313/tags/uikit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/uikit/</guid>
       <description></description>
     </item>
     <item>
