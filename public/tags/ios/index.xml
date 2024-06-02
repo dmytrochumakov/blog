@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 30 May 2024 07:04:49 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 02 Jun 2024 09:04:06 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Accessibility iOS SwiftUI</title>
+      <link>http://localhost:1313/posts/accessibility-ios-swiftui/</link>
+      <pubDate>Sun, 02 Jun 2024 09:04:06 +0300</pubDate>
+      <guid>http://localhost:1313/posts/accessibility-ios-swiftui/</guid>
+      <description>Introduction Previously, I posted about Accessibility for UIKit. The idea behind this post is to find differences between UIKit Accessibility and SwiftUI features.
+Similarities: Both UIKit and SwiftUI have accessibilityLabel and accessibilityHints APIs.
+Differences: To use dynamic type for fonts, you need additional modifiers in SwiftUI. struct ScaledFont: ViewModifier { @Environment(\.sizeCategory) var sizeCategory var name: String var size: Double func body(content: Content) -&amp;gt; some View { let scaledSize = UIFontMetrics.default.scaledValue(for: size) return content.</description>
+    </item>
     <item>
       <title>Accessibility iOS UIKit</title>
       <link>http://localhost:1313/posts/accessibility-ios-uikit/</link>
