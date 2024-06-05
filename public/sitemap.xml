@@ -2,25 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/caching/</loc>
+    <lastmod>2024-06-05T07:13:58+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/caching-data/</loc>
+    <lastmod>2024-06-05T07:13:58+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/caching-data-using-nscache-in-ios/</loc>
+    <lastmod>2024-06-05T07:13:58+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-06-05T07:13:58+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ios/</loc>
+    <lastmod>2024-06-05T07:13:58+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/nscache/</loc>
+    <lastmod>2024-06-05T07:13:58+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-06-05T07:13:58+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-06-05T07:13:58+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/accessibility/</loc>
     <lastmod>2024-06-02T09:04:06+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/accessibility-ios-swiftui/</loc>
     <lastmod>2024-06-02T09:04:06+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-06-02T09:04:06+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ios/</loc>
-    <lastmod>2024-06-02T09:04:06+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-06-02T09:04:06+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/swiftui/</loc>
-    <lastmod>2024-06-02T09:04:06+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-06-02T09:04:06+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/accessibility-ios-uikit/</loc>

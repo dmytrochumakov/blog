@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 02 Jun 2024 09:04:06 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 05 Jun 2024 07:13:58 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Caching data using NSCache in iOS</title>
+      <link>http://localhost:1313/posts/caching-data-using-nscache-in-ios/</link>
+      <pubDate>Wed, 05 Jun 2024 07:13:58 +0300</pubDate>
+      <guid>http://localhost:1313/posts/caching-data-using-nscache-in-ios/</guid>
+      <description>Introduction I was curious about caching data using NSCache for an iOS app. So, I did some digging. Here is what I found:
+Quick Overview NSCache helps store data in memory. When the application gets killed, it frees memory; it’s not persisted on disk. Storing data is carried out using a key-value pair mechanism like Dictionary. You can set automatic eviction to delete objects automatically. NSCache has multi-platform support: iOS, iPadOS, watchOS, macOS, and tvOS.</description>
+    </item>
     <item>
       <title>Accessibility iOS SwiftUI</title>
       <link>http://localhost:1313/posts/accessibility-ios-swiftui/</link>

@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head>
-	<meta name="generator" content="Hugo 0.123.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Dmytro&#39;s Blog</title>
-
+<title>IOS | Dmytro&#39;s Blog</title>
+<meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="Dmytro Chumakov">
-<link rel="canonical" href="http://localhost:1313/">
+<link rel="canonical" href="http://localhost:1313/tags/ios/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.ef6b0a8cc044c81f8564fffb013558fc5d5c2910023a80374f705ae86b059bed.css" integrity="sha256-72sKjMBEyB&#43;FZP/7ATVY/F1cKRACOoA3T3Ba6GsFm&#43;0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -20,9 +19,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
-<link rel="alternate" type="application/json" href="http://localhost:1313/index.json">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/ios/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/ios/">
 <noscript>
     <style>
         #theme-toggle,
@@ -87,31 +85,18 @@ if (!doNotTrack) {
 	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="Dmytro&#39;s Blog" />
+<meta property="og:title" content="IOS" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" />
+<meta property="og:url" content="http://localhost:1313/tags/ios/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
 
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
-<meta name="twitter:title" content="Dmytro&#39;s Blog"/>
+<meta name="twitter:title" content="IOS"/>
 <meta name="twitter:description" content=""/>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Dmytro's Blog",
-  "url": "http://localhost:1313/",
-  "description": "",
-  "thumbnailUrl": "http://localhost:1313/favicon.ico",
-  "sameAs": [
-      "https://github.com/dmytrochumakov", "https://leetcode.com/u/dmytrochumakov/", "https://www.linkedin.com/in/dmytro-chumakov/", "https://www.youtube.com/@dmytro_chumakov", "mailto:dmytro.v.chumakov.work@gmail.com"
-  ]
-}
-</script>
 </head>
 
 <body class="list" id="top">
@@ -199,83 +184,29 @@ if (!doNotTrack) {
     </nav>
 </header>
 <main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
+  <h1>
+    IOS
+  </h1>
+</header>
 
-<article class="post-entry"> 
+<article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Animation - UIKit
+    <h2 class="entry-hint-parent">iOS AR App: Experience 3D Guitar
     </h2>
   </header>
   <div class="entry-content">
-    <p>Introduction I was curious about creating animations in UIKit. I wanted to animate different properties such as color and path. Here is what I found:
-It’s impossible to create complex animations only by using the block-based animation API. To do that, you need the Core Animation API and CAPropertyAnimation with its various subclasses.
-Complex animation in UIKit is based on a few key components:
-CAShapeLayer - provides extensive customization options: path, stroke, fill, shadow CABasicAnimation - helps animate color or change the path Implementation First Step The first step is to create a shape layer that will draw an arrow using CAShapeLayer....</p>
+    <p>Introduction I was searching for an AR implementation of a 3D guitar inside an iOS app. Here’s what I discovered:
+First Step The first step is not related to building the app. Before that you need to create a project using the Reality Composer Pro app (you can find it through Spotlight search).
+Second Step After that, you need to visit https://developer.apple.com/augmented-reality/quick-look/ and download one of the USDZ files. In my case, I chose the 3D guitar....</p>
   </div>
-  <footer class="entry-footer"><span title='2024-05-21 06:31:02 +0300 EEST'>May 21, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Animation - UIKit" href="http://localhost:1313/posts/animation-uikit/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Animation - SwiftUI
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was eager to learn about creating complex animations in SwiftUI. The few questions that were on my mind included what types of animations exist and what I can animate. Here is what I found:
-Types of Animation SwiftUI has explicit and implicit animation types.
-Implicit Animation: This is specified with the .animation() modifier. SwiftUI will animate changes in old and new values.
-struct ImplicitAnimation: View { @State private var half = false @State private var dim = false var body: some View { Image(&#34;tower&#34;) ....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-17 07:23:46 +0300 EEST'>May 17, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Animation - SwiftUI" href="http://localhost:1313/posts/animation-swiftui/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Implementing GraphQL in an iOS application
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I previously never had a chance to work with GraphQL. I was excited to learn when to apply this technology, what tools I can use, and how I can implement it. Here’s what I found:
-For testing, I used the Star Wars GraphQL API with AllFilmsQuery:
-query AllFilmsQuery { allFilms { films { title director created producers releaseDate } } } I requested allFilms with title, director, created, producers, and releaseDate information....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-15 07:13:39 +0300 EEST'>May 15, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Implementing GraphQL in an iOS application" href="http://localhost:1313/posts/implementing-graphql-in-an-ios-application/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Securing user data with Keychain, Touch ID, and Face ID
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was eager to learn about securing user data using Keychain and biometric authentication. Here are a few steps I found:
-Caveats You can test accessing Keychain data using Touch ID and Face ID only on a real device.
-First Step The first step is to add the Privacy - Face ID Usage Description key to your Info.plist. Without it, you would not be able to retrieve data from Keychain using Face ID....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-13 07:31:49 +0300 EEST'>May 13, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Securing user data with Keychain, Touch ID, and Face ID" href="http://localhost:1313/posts/securing-user-data-with-keychain-touch-id-and-face-id/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Implementing In-App Purchases to SwiftUI app using StoreKit 2
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was wondering how to add in-app purchases to my app. I chose non-consumable in-app purchase because you can pay one time for this item. Here are a few steps on how I did it.
-First Step Set up In-App Purchases for your app in App Store Connect account or add a .storekit configuration file and start from there. If you’ve already set up In-App Purchases in your account, you can sync the StoreKit config with that data....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-12 07:57:51 +0300 EEST'>May 12, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Implementing In-App Purchases to SwiftUI app using StoreKit 2" href="http://localhost:1313/posts/implementing-in-app-purchases-to-swiftui-app-using-storekit-2/"></a>
+  <footer class="entry-footer"><span title='2024-05-01 15:57:54 +0300 EEST'>May 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to iOS AR App: Experience 3D Guitar" href="http://localhost:1313/posts/ios-ar-app-experience-3d-guitar/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/">
-      «&nbsp;Prev&nbsp;1/10
-    </a>
-    <a class="next" href="http://localhost:1313/page/3/">Next&nbsp;3/10&nbsp;»
+    <a class="prev" href="http://localhost:1313/tags/ios/page/2/">
+      «&nbsp;Prev&nbsp;2/3
     </a>
   </nav>
 </footer>
