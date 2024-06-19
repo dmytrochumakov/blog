@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Locally on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/locally/</link>
+    <description>Recent content in Locally on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.123.3</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 19 Jun 2024 07:13:19 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/locally/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing push notifications locally in an iOS app</title>
+      <link>http://localhost:1313/posts/testing-push-notifications-locally-in-an-ios-app/</link>
+      <pubDate>Wed, 19 Jun 2024 07:13:19 +0300</pubDate>
+      <guid>http://localhost:1313/posts/testing-push-notifications-locally-in-an-ios-app/</guid>
+      <description>Introduction I always wondered how I could automate testing the push notification process. Even when Apple introduced the possibility of dragging a configured file to the simulator to display a notification, it is still a manual process. I&amp;rsquo;ll skip testing via the terminal because I think it takes more time than using an APNS file or the RocketSim app.
+Before I was first introduced to the RocketSim app, I used an APNS file for testing push notifications.</description>
+    </item>
+  </channel>
+</rss>

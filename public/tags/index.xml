@@ -11,13 +11,13 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Jun 2024 07:29:01 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 19 Jun 2024 07:13:19 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Adding</title>
-      <link>http://localhost:1313/tags/adding/</link>
+      <title>APNS</title>
+      <link>http://localhost:1313/tags/apns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/adding/</guid>
+      <guid>http://localhost:1313/tags/apns/</guid>
       <description></description>
     </item>
     <item>
@@ -35,10 +35,38 @@
       <description></description>
     </item>
     <item>
+      <title>Locally</title>
+      <link>http://localhost:1313/tags/locally/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/locally/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Push Notifications</title>
       <link>http://localhost:1313/tags/push-notifications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/push-notifications/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RocketSim</title>
+      <link>http://localhost:1313/tags/rocketsim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/rocketsim/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Testing</title>
+      <link>http://localhost:1313/tags/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/testing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Adding</title>
+      <link>http://localhost:1313/tags/adding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/adding/</guid>
       <description></description>
     </item>
     <item>
@@ -389,13 +417,6 @@
       <link>http://localhost:1313/tags/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/project/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Testing</title>
-      <link>http://localhost:1313/tags/testing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/testing/</guid>
       <description></description>
     </item>
     <item>

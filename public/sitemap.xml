@@ -2,28 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/apns/</loc>
+    <lastmod>2024-06-19T07:13:19+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/app/</loc>
+    <lastmod>2024-06-19T07:13:19+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-06-19T07:13:19+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ios/</loc>
+    <lastmod>2024-06-19T07:13:19+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/locally/</loc>
+    <lastmod>2024-06-19T07:13:19+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-06-19T07:13:19+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/push-notifications/</loc>
+    <lastmod>2024-06-19T07:13:19+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/rocketsim/</loc>
+    <lastmod>2024-06-19T07:13:19+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-06-19T07:13:19+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/testing/</loc>
+    <lastmod>2024-06-19T07:13:19+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/testing-push-notifications-locally-in-an-ios-app/</loc>
+    <lastmod>2024-06-19T07:13:19+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/adding/</loc>
     <lastmod>2024-06-14T07:29:01+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/adding-push-notifications-to-an-ios-app/</loc>
-    <lastmod>2024-06-14T07:29:01+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/app/</loc>
-    <lastmod>2024-06-14T07:29:01+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-06-14T07:29:01+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ios/</loc>
-    <lastmod>2024-06-14T07:29:01+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-06-14T07:29:01+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/push-notifications/</loc>
-    <lastmod>2024-06-14T07:29:01+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-06-14T07:29:01+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/caching/</loc>
@@ -234,9 +249,6 @@
     <lastmod>2024-04-26T06:51:21+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/project/</loc>
-    <lastmod>2024-04-26T06:51:21+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/testing/</loc>
     <lastmod>2024-04-26T06:51:21+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/testing-xcode-project-using-github-actions/</loc>
