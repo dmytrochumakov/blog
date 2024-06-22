@@ -2,13 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/combine/</loc>
+    <lastmod>2024-06-22T07:13:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/combine-practical-usage-examples/</loc>
+    <lastmod>2024-06-22T07:13:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-06-22T07:13:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-06-22T07:13:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swift/</loc>
+    <lastmod>2024-06-22T07:13:00+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-06-22T07:13:00+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/apns/</loc>
     <lastmod>2024-06-19T07:13:19+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/app/</loc>
-    <lastmod>2024-06-19T07:13:19+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2024-06-19T07:13:19+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ios/</loc>
@@ -17,16 +32,10 @@
     <loc>http://localhost:1313/tags/locally/</loc>
     <lastmod>2024-06-19T07:13:19+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-06-19T07:13:19+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/push-notifications/</loc>
     <lastmod>2024-06-19T07:13:19+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/rocketsim/</loc>
-    <lastmod>2024-06-19T07:13:19+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-06-19T07:13:19+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/testing/</loc>
@@ -299,9 +308,6 @@
     <loc>http://localhost:1313/tags/oop/</loc>
     <lastmod>2024-03-22T08:29:30+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2024-03-22T08:29:30+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/the-memento-pattern/</loc>
     <lastmod>2024-03-22T08:29:30+03:00</lastmod>
   </url><url>
@@ -346,9 +352,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/big-o-notation/</loc>
     <lastmod>2024-02-21T08:29:30+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/combine/</loc>
-    <lastmod>2024-02-07T08:29:30+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/combine-basics/</loc>
     <lastmod>2024-02-07T08:29:30+03:00</lastmod>

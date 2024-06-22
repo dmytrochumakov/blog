@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 19 Jun 2024 07:13:19 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 22 Jun 2024 07:13:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Combine</title>
+      <link>http://localhost:1313/tags/combine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/combine/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Swift</title>
+      <link>http://localhost:1313/tags/swift/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/swift/</guid>
+      <description></description>
+    </item>
     <item>
       <title>APNS</title>
       <link>http://localhost:1313/tags/apns/</link>
@@ -483,13 +497,6 @@
       <description></description>
     </item>
     <item>
-      <title>Swift</title>
-      <link>http://localhost:1313/tags/swift/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/swift/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Interpreter Pattern</title>
       <link>http://localhost:1313/tags/interpreter-pattern/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -543,13 +550,6 @@
       <link>http://localhost:1313/tags/big-o/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/big-o/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Combine</title>
-      <link>http://localhost:1313/tags/combine/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/combine/</guid>
       <description></description>
     </item>
     <item>
