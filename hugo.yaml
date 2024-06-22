@@ -87,31 +87,23 @@ outputs:
     - JSON   
 
 menu:
-  main:          
-          - identifier: service
-            name: Services
-            url: /ios-app-maintenance-service/
-            weight: 1
-          - identifier: cases
-            name: Cases
-            url: /cases/
-            weight: 2 
+  main:                    
           - identifier: archive
             name: Archive
             url: /archives/
-            weight: 3
+            weight: 1
           - identifier: tags                                  
             name: Tags
             url: /tags/
-            weight: 4
+            weight: 2
           - identifier: about     
             name: About
             url: /about/
-            weight: 5           
+            weight: 3           
           - identifier: search
             name: Search
             url: /search/
-            weight: 6     
+            weight: 4     
 
 markup:
   goldmark:
