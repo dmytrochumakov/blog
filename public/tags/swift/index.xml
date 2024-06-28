@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Jun 2024 07:13:00 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 28 Jun 2024 07:18:59 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a 2D Space Game for iOS Using SpriteKit - Part 1</title>
+      <link>http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-1/</link>
+      <pubDate>Fri, 28 Jun 2024 07:18:59 +0300</pubDate>
+      <guid>http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-1/</guid>
+      <description>Introduction I have never tried creating a game before; it feels like magic to me. I know that games have an enormous amount of underlying layers of abstractions and tools such as game engines, rendering, and so on. I have always been eager to learn at least 1% of the game creation process. In this article, I&amp;rsquo;m going to explore step-by-step instructions for creating a game for the iOS platform using SpriteKit.</description>
+    </item>
     <item>
       <title>Combine practical usage examples</title>
       <link>http://localhost:1313/posts/combine-practical-usage-examples/</link>
