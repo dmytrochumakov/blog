@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 Jun 2024 07:18:59 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jul 2024 06:39:04 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/spritekit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a 2D Space Game for iOS Using SpriteKit - Part 2</title>
+      <link>http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-2/</link>
+      <pubDate>Wed, 03 Jul 2024 06:39:04 +0300</pubDate>
+      <guid>http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-2/</guid>
+      <description>Introduction In the previous chapter, I started talking about the video game creation process, from project setup to adding the background. Now, I&amp;rsquo;m going to add the player and physics to it.
+You can download the project here.
+First Step The first step is to initialize player using SKSpriteNode, set up player.position, and add player as a child node.
+SKSpriteNode - is an onscreen graphical element that can be initialized from an image or a solid color.</description>
+    </item>
     <item>
       <title>Creating a 2D Space Game for iOS Using SpriteKit - Part 1</title>
       <link>http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-1/</link>
