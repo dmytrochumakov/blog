@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/app/</loc>
+    <lastmod>2024-07-07T07:25:40+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/battery/</loc>
+    <lastmod>2024-07-07T07:25:40+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/battery-performance-testing-for-ios-app/</loc>
+    <lastmod>2024-07-07T07:25:40+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-07-07T07:25:40+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ios/</loc>
+    <lastmod>2024-07-07T07:25:40+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/performance/</loc>
+    <lastmod>2024-07-07T07:25:40+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-07-07T07:25:40+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-07-07T07:25:40+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/testing/</loc>
+    <lastmod>2024-07-07T07:25:40+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/2d/</loc>
     <lastmod>2024-07-03T06:39:04+03:00</lastmod>
   </url><url>
@@ -11,25 +38,13 @@
     <loc>http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-2/</loc>
     <lastmod>2024-07-03T06:39:04+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-07-03T06:39:04+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/game/</loc>
-    <lastmod>2024-07-03T06:39:04+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ios/</loc>
-    <lastmod>2024-07-03T06:39:04+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2024-07-03T06:39:04+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/spritekit/</loc>
     <lastmod>2024-07-03T06:39:04+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2024-07-03T06:39:04+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-07-03T06:39:04+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-1/</loc>
@@ -44,9 +59,6 @@
     <loc>http://localhost:1313/tags/apns/</loc>
     <lastmod>2024-06-19T07:13:19+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/app/</loc>
-    <lastmod>2024-06-19T07:13:19+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/locally/</loc>
     <lastmod>2024-06-19T07:13:19+03:00</lastmod>
   </url><url>
@@ -54,9 +66,6 @@
     <lastmod>2024-06-19T07:13:19+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/rocketsim/</loc>
-    <lastmod>2024-06-19T07:13:19+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/testing/</loc>
     <lastmod>2024-06-19T07:13:19+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/testing-push-notifications-locally-in-an-ios-app/</loc>

@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 03 Jul 2024 06:39:04 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jul 2024 07:25:40 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Battery Performance Testing for iOS App</title>
+      <link>http://localhost:1313/posts/battery-performance-testing-for-ios-app/</link>
+      <pubDate>Sun, 07 Jul 2024 07:25:40 +0300</pubDate>
+      <guid>http://localhost:1313/posts/battery-performance-testing-for-ios-app/</guid>
+      <description>Introduction Working with batteries on iOS devices for large applications has always been tricky. The amount of energy consumed by the screen, location services, network calls, processing, background tasks, etc., is significant. From a developer&amp;rsquo;s perspective, it seems complicated, but Xcode provides tools to address this problem.
+To find the issue, you need to open Xcode and go to the Debug Navigator.
+In the Debug Navigator, you will see the Energy Impact gauge.</description>
+    </item>
     <item>
       <title>Creating a 2D Space Game for iOS Using SpriteKit - Part 2</title>
       <link>http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-2/</link>

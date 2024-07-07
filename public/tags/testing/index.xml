@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 19 Jun 2024 07:13:19 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jul 2024 07:25:40 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Battery Performance Testing for iOS App</title>
+      <link>http://localhost:1313/posts/battery-performance-testing-for-ios-app/</link>
+      <pubDate>Sun, 07 Jul 2024 07:25:40 +0300</pubDate>
+      <guid>http://localhost:1313/posts/battery-performance-testing-for-ios-app/</guid>
+      <description>Introduction Working with batteries on iOS devices for large applications has always been tricky. The amount of energy consumed by the screen, location services, network calls, processing, background tasks, etc., is significant. From a developer&amp;rsquo;s perspective, it seems complicated, but Xcode provides tools to address this problem.
+To find the issue, you need to open Xcode and go to the Debug Navigator.
+In the Debug Navigator, you will see the Energy Impact gauge.</description>
+    </item>
     <item>
       <title>Testing push notifications locally in an iOS app</title>
       <link>http://localhost:1313/posts/testing-push-notifications-locally-in-an-ios-app/</link>
