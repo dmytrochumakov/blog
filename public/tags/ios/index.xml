@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 07 Jul 2024 07:25:40 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jul 2024 07:27:14 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scanning for peripheral devices using BLE in an iOS app</title>
+      <link>http://localhost:1313/posts/scanning-for-peripheral-devices-using-ble-in-an-ios-app/</link>
+      <pubDate>Wed, 10 Jul 2024 07:27:14 +0300</pubDate>
+      <guid>http://localhost:1313/posts/scanning-for-peripheral-devices-using-ble-in-an-ios-app/</guid>
+      <description>Introduction I had the chance to work on a project where communication via BLE was at the heart of the project.
+Before adding any code to application, I always asked myself about two scenarios:
+The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices. The second scenario is when the device acts as a peripheral device by using CBCharacteristic and changes its value.</description>
+    </item>
     <item>
       <title>Battery Performance Testing for iOS App</title>
       <link>http://localhost:1313/posts/battery-performance-testing-for-ios-app/</link>

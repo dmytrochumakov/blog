@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 07 Jul 2024 07:25:40 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jul 2024 07:27:14 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>App</title>
@@ -21,10 +21,17 @@
       <description></description>
     </item>
     <item>
-      <title>Battery</title>
-      <link>http://localhost:1313/tags/battery/</link>
+      <title>BLE</title>
+      <link>http://localhost:1313/tags/ble/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/battery/</guid>
+      <guid>http://localhost:1313/tags/ble/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Devices</title>
+      <link>http://localhost:1313/tags/devices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/devices/</guid>
       <description></description>
     </item>
     <item>
@@ -32,6 +39,34 @@
       <link>http://localhost:1313/tags/ios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/ios/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Peripheral</title>
+      <link>http://localhost:1313/tags/peripheral/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/peripheral/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scanning</title>
+      <link>http://localhost:1313/tags/scanning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/scanning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Swift</title>
+      <link>http://localhost:1313/tags/swift/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/swift/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Battery</title>
+      <link>http://localhost:1313/tags/battery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/battery/</guid>
       <description></description>
     </item>
     <item>
@@ -74,13 +109,6 @@
       <link>http://localhost:1313/tags/spritekit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/spritekit/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Swift</title>
-      <link>http://localhost:1313/tags/swift/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>

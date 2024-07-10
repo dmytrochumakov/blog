@@ -192,6 +192,21 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Text To Speech iOS
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction I was eager to learn how converting Text To Speech works in iOS. Here is what I discovered:
+First Step The first step is to add AVSpeechSynthesizer, an object that produces synthesized speech from text utterances.
+@State private var speechSynthesizer = AVSpeechSynthesizer() Second Step The second step is to add AVSpeechUtterance, an object that encapsulates the text for speech synthesis.
+private var utterance: AVSpeechUtterance { let inputMessage = &#34;Hello world!...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-24 07:52:07 +0300 EEST'>May 24, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Text To Speech iOS" href="http://localhost:1313/posts/text-to-speech-ios/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Speech To Text iOS
     </h2>
   </header>
@@ -245,20 +260,6 @@ query AllFilmsQuery { allFilms { films { title director created producers releas
   </div>
   <footer class="entry-footer"><span title='2024-05-15 07:13:39 +0300 EEST'>May 15, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Implementing GraphQL in an iOS application" href="http://localhost:1313/posts/implementing-graphql-in-an-ios-application/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Securing user data with Keychain, Touch ID, and Face ID
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was eager to learn about securing user data using Keychain and biometric authentication. Here are a few steps I found:
-Caveats You can test accessing Keychain data using Touch ID and Face ID only on a real device.
-First Step The first step is to add the Privacy - Face ID Usage Description key to your Info.plist. Without it, you would not be able to retrieve data from Keychain using Face ID....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-13 07:31:49 +0300 EEST'>May 13, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Securing user data with Keychain, Touch ID, and Face ID" href="http://localhost:1313/posts/securing-user-data-with-keychain-touch-id-and-face-id/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
