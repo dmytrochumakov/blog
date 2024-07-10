@@ -82,6 +82,69 @@ func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPerip
 
 The sample implementation of this method uses the RSSI (Received Signal Strength Indicator) parameter to determine whether the signal is strong enough. RSSI values are provided as negative numbers, with a theoretical maximum of 0.
 
+### Complete Example
+
+```swift
+import Foundation
+import CoreBluetooth
+
+final class CentralManager: NSObject {
+
+    private var centralManager: CBCentralManager!
+    
+    override init() {
+        super.init()
+        centralManager = CBCentralManager(delegate: self, queue: nil, options: [CBCentralManagerOptionShowPowerAlertKey: true])
+    }
+
+}
+
+// MARK: - CBCentralManagerDelegate
+extension CentralManager: CBCentralManagerDelegate {
+
+    func centralManagerDidUpdateState(_ central: CBCentralManager) {
+        switch central.state {
+        case .poweredOn:
+            print("CBManager is powered on")
+            centralManager.scanForPeripherals(withServices: nil)
+        case .poweredOff:
+            print("CBManager is not powered on")
+            return
+        case .resetting:
+            print("CBManager is resetting")
+            return
+        case .unauthorized:
+            print("CBManager is unauthorized")
+            return
+        case .unknown:
+            print("CBManager state is unknown")
+            return
+        case .unsupported:
+            print("Bluetooth is not supported on this device")
+            return
+        @unknown default:
+            print("A previously unknown central manager state occurred")
+            return
+        }
+    }
+
+    func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+        // Reject if the signal strength is too low.
+        // Change the minimum RSSI value depending on your app’s use case.
+        guard RSSI.intValue >= -50
+        else {
+            print("Discovered perhiperal not in expected range, at %d", RSSI.intValue)
+            print("Discovered %s at %d", String(describing: peripheral.name), RSSI.intValue)
+            return
+        }
+
+        print("Discovered %s at %d", String(describing: peripheral.name), RSSI.intValue)
+    }
+
+}
+
+```
+
 ### Resources
 https://developer.apple.com/documentation/corebluetooth/transferring-data-between-bluetooth-low-energy-devices
 
