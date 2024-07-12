@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 10 Jul 2024 07:27:14 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jul 2024 07:27:51 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scanning NFC tags using CoreNFC in an iOS app</title>
+      <link>http://localhost:1313/posts/scanning-nfc-tags-using-corenfc-in-an-ios-app/</link>
+      <pubDate>Fri, 12 Jul 2024 07:27:51 +0300</pubDate>
+      <guid>http://localhost:1313/posts/scanning-nfc-tags-using-corenfc-in-an-ios-app/</guid>
+      <description>Introduction I never had a chance to work with NFC (Near Field Communication), but I have always been curious to find out how it works. In this article, I will focus on scanning NFC tags using CoreNFC with NFCNDEFReaderSession.
+Preparation Before we begin, let&amp;rsquo;s add the necessary objects:
+Near Field Communication Tag Reading capability to the project. Privacy - NFC Scan Usage Description key to Info.plist. Near Field Communication Tag Reader Session Formats to the entitlements file.</description>
+    </item>
     <item>
       <title>Scanning for peripheral devices using BLE in an iOS app</title>
       <link>http://localhost:1313/posts/scanning-for-peripheral-devices-using-ble-in-an-ios-app/</link>

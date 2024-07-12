@@ -3,7 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/app/</loc>
-    <lastmod>2024-07-10T07:27:14+03:00</lastmod>
+    <lastmod>2024-07-12T07:27:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/corenfc/</loc>
+    <lastmod>2024-07-12T07:27:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-07-12T07:27:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ios/</loc>
+    <lastmod>2024-07-12T07:27:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/nfc/</loc>
+    <lastmod>2024-07-12T07:27:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-07-12T07:27:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/scanning/</loc>
+    <lastmod>2024-07-12T07:27:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/scanning-nfc-tags-using-corenfc-in-an-ios-app/</loc>
+    <lastmod>2024-07-12T07:27:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swift/</loc>
+    <lastmod>2024-07-12T07:27:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tags/</loc>
+    <lastmod>2024-07-12T07:27:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-07-12T07:27:51+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ble/</loc>
     <lastmod>2024-07-10T07:27:14+03:00</lastmod>
@@ -11,28 +41,10 @@
     <loc>http://localhost:1313/tags/devices/</loc>
     <lastmod>2024-07-10T07:27:14+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-07-10T07:27:14+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ios/</loc>
-    <lastmod>2024-07-10T07:27:14+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/peripheral/</loc>
     <lastmod>2024-07-10T07:27:14+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-07-10T07:27:14+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/scanning/</loc>
-    <lastmod>2024-07-10T07:27:14+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/scanning-for-peripheral-devices-using-ble-in-an-ios-app/</loc>
-    <lastmod>2024-07-10T07:27:14+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2024-07-10T07:27:14+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-07-10T07:27:14+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/battery/</loc>
