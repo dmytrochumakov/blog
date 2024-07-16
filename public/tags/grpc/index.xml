@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>GRPC on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/grpc/</link>
+    <description>Recent content in GRPC on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.123.3</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 16 Jul 2024 07:16:41 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/grpc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementing gRPC Swift</title>
+      <link>http://localhost:1313/posts/implementing-grpc-swift/</link>
+      <pubDate>Tue, 16 Jul 2024 07:16:41 +0300</pubDate>
+      <guid>http://localhost:1313/posts/implementing-grpc-swift/</guid>
+      <description>Introduction I&amp;rsquo;ve never had the chance to use this technology before. I&amp;rsquo;ve always wondered how gRPC operates. In this article, I will explore what gRPC is, how to install and use it, and when to use gRPC.
+What is gRPC? gRPC is an open-source, high-performance framework that facilitates efficient communication in distributed systems. gRPC is an implementation of the RPC (Remote Procedure Call) protocol, which enables services to call functions on other machines as if they were local software methods.</description>
+    </item>
+  </channel>
+</rss>

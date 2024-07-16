@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 May 2024 07:13:39 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jul 2024 07:16:41 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/implementing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementing gRPC Swift</title>
+      <link>http://localhost:1313/posts/implementing-grpc-swift/</link>
+      <pubDate>Tue, 16 Jul 2024 07:16:41 +0300</pubDate>
+      <guid>http://localhost:1313/posts/implementing-grpc-swift/</guid>
+      <description>Introduction I&amp;rsquo;ve never had the chance to use this technology before. I&amp;rsquo;ve always wondered how gRPC operates. In this article, I will explore what gRPC is, how to install and use it, and when to use gRPC.
+What is gRPC? gRPC is an open-source, high-performance framework that facilitates efficient communication in distributed systems. gRPC is an implementation of the RPC (Remote Procedure Call) protocol, which enables services to call functions on other machines as if they were local software methods.</description>
+    </item>
     <item>
       <title>Implementing GraphQL in an iOS application</title>
       <link>http://localhost:1313/posts/implementing-graphql-in-an-ios-application/</link>
