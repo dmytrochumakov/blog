@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 18 Jul 2024 07:26:13 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jul 2024 07:25:28 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/implementing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementing ChatGPT in an iOS App</title>
+      <link>http://localhost:1313/posts/implementing-chatgpt-in-an-ios-app/</link>
+      <pubDate>Sun, 21 Jul 2024 07:25:28 +0300</pubDate>
+      <guid>http://localhost:1313/posts/implementing-chatgpt-in-an-ios-app/</guid>
+      <description>Implementing ChatGPT in an iOS App Introduction I haven&amp;rsquo;t had the opportunity to build a chatbot before. This topic was trending some time ago, and I always wanted to implement it myself. In this article, I will focus on the steps you need to know to successfully build and run a chatbot application.
+First Step The first step is to add the OpenAI dependency to your project:
+.package(url: &amp;#34;https://github.com/MacPaw/OpenAI.git&amp;#34;, branch: &amp;#34;main&amp;#34;) dependencies: [ .</description>
+    </item>
     <item>
       <title>Implementing Apple Sign-In to an iOS App</title>
       <link>http://localhost:1313/posts/implementing-apple-sign-in-to-an-ios-app/</link>

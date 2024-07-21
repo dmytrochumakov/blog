@@ -3,7 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/app/</loc>
-    <lastmod>2024-07-18T07:26:13+03:00</lastmod>
+    <lastmod>2024-07-21T07:25:28+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/chatgpt/</loc>
+    <lastmod>2024-07-21T07:25:28+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/combine/</loc>
+    <lastmod>2024-07-21T07:25:28+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-07-21T07:25:28+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/implementing/</loc>
+    <lastmod>2024-07-21T07:25:28+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/implementing-chatgpt-in-an-ios-app/</loc>
+    <lastmod>2024-07-21T07:25:28+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ios/</loc>
+    <lastmod>2024-07-21T07:25:28+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-07-21T07:25:28+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swift/</loc>
+    <lastmod>2024-07-21T07:25:28+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swiftui/</loc>
+    <lastmod>2024-07-21T07:25:28+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-07-21T07:25:28+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/apple-sign-in/</loc>
     <lastmod>2024-07-18T07:26:13+03:00</lastmod>
@@ -11,25 +41,7 @@
     <loc>http://localhost:1313/tags/authentication-services/</loc>
     <lastmod>2024-07-18T07:26:13+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-07-18T07:26:13+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/implementing/</loc>
-    <lastmod>2024-07-18T07:26:13+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/implementing-apple-sign-in-to-an-ios-app/</loc>
-    <lastmod>2024-07-18T07:26:13+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ios/</loc>
-    <lastmod>2024-07-18T07:26:13+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-07-18T07:26:13+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2024-07-18T07:26:13+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-07-18T07:26:13+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/grpc/</loc>
@@ -95,9 +107,6 @@
     <loc>http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-1/</loc>
     <lastmod>2024-06-28T07:18:59+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/combine/</loc>
-    <lastmod>2024-06-22T07:13:00+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/combine-practical-usage-examples/</loc>
     <lastmod>2024-06-22T07:13:00+03:00</lastmod>
   </url><url>
@@ -138,9 +147,6 @@
     <lastmod>2024-06-02T09:04:06+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/accessibility-ios-swiftui/</loc>
-    <lastmod>2024-06-02T09:04:06+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swiftui/</loc>
     <lastmod>2024-06-02T09:04:06+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/accessibility-ios-uikit/</loc>

@@ -197,6 +197,21 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Combine — Basics
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is Combine? Combine Framework provides an API for processing async events over time such as user-input, network response, and other dynamic data.
+What is the purpose of Combine? The purpose of Combine is to simplify the management of async events and data streams.
+Publishers Publisher declares that a type can transit a sequence of values over time. A publisher delivers elements to one or more Subscriber instances.
+class PostService { func fetchPosts() -&gt; AnyPublisher&lt;[Post], Error&gt; { guard let url = URL(string: &#34;https://jsonplaceholder....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-07 08:29:30 +0300 +0300'>February 7, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Combine — Basics" href="http://localhost:1313/posts/combine-basics/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Modern Concurrency
     </h2>
   </header>
@@ -248,21 +263,6 @@ Material about processes, threads I will skip explaining concepts about processe
   </div>
   <footer class="entry-footer"><span title='2024-01-07 00:00:00 +0300 +0300'>January 7, 2024</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Concurrency in Swift" href="http://localhost:1313/posts/concurrency-in-swift/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">What are value types in Swift?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What are value types? Value types play a central role in programming languages by grouping data values.
-`Value type” is a type of data copied when assigned to a new variable.
-struct Storage { var data: String = &#34;some data&#34; } let originalStorage = Storage() var copiedStorage = originalStorage // `originalStorage` is copied to `copiedStorage` How can you pass value types? You can pass value type by copying value.
-struct Storage { var data: String = &#34;some data&#34; } let originalStorage = Storage() var copiedStorage = originalStorage // `originalStorage` is copied to `copiedStorage` copiedStorage....</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-12-28 00:00:00 +0300 +0300'>December 28, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to What are value types in Swift?" href="http://localhost:1313/posts/what-are-value-types-in-swift/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
