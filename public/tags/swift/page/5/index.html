@@ -182,6 +182,21 @@ if (!doNotTrack) {
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">How to prevent memory leaks?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I was searching for tools that could help me find memory leaks faster and would be simple in implementation without affecting performance and memory size of application.
+I found a fantastic fit for this task LifetimeTracker developed by Krzysztof Zabłocki.
+All you need is to add LifetimeTracker package to the project, inherit from LifetimeTrackable protocol, and add two lines of code.
+class Department: LifetimeTrackable {} trackLifetime method to init of instance that you are going to verify, and lifetimeConfiguration property where you set max number of valid instances....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-12-24 00:00:00 +0300 +0300'>December 24, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to How to prevent memory leaks?" href="http://localhost:1313/posts/how-to-prevent-memory-leaks/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">How to find memory leaks?
     </h2>
   </header>

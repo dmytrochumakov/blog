@@ -182,13 +182,27 @@ if (!doNotTrack) {
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Implementing Location Service
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction Nowadays, location is an essential feature in almost every application. It’s very important to know the best ways to implement it without affecting performance and user experience. In this article, I will focus on how to implement general methods in location service.
+Preparation Before we begin, let’s add location permission keys to Info.plist:
+Privacy - Location When In Use Usage Description Privacy - Location Always and When In Use Usage Description First Step The first step is to create LocationService with the requestPermissions method to be able to receive location events....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-07-23 07:04:25 +0300 EEST'>July 23, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Implementing Location Service" href="http://localhost:1313/posts/implementing-location-service/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Implementing ChatGPT in an iOS App
     </h2>
   </header>
   <div class="entry-content">
-    <p>Implementing ChatGPT in an iOS App Introduction I haven’t had the opportunity to build a chatbot before. This topic was trending some time ago, and I always wanted to implement it myself. In this article, I will focus on the steps you need to know to successfully build and run a chatbot application.
+    <p>Introduction I haven’t had the opportunity to build a chatbot before. This topic was trending some time ago, and I always wanted to implement it myself. In this article, I will focus on the steps you need to know to successfully build and run a chatbot application.
 First Step The first step is to add the OpenAI dependency to your project:
-.package(url: &#34;https://github.com/MacPaw/OpenAI.git&#34;, branch: &#34;main&#34;) dependencies: [ ....</p>
+.package(url: &#34;https://github.com/MacPaw/OpenAI.git&#34;, branch: &#34;main&#34;) dependencies: [ .byNameItem( name: &#34;OpenAI&#34;, condition: ....</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-21 07:25:28 +0300 EEST'>July 21, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Implementing ChatGPT in an iOS App" href="http://localhost:1313/posts/implementing-chatgpt-in-an-ios-app/"></a>
@@ -233,19 +247,6 @@ query AllFilmsQuery { allFilms { films { title director created producers releas
   </div>
   <footer class="entry-footer"><span title='2024-05-15 07:13:39 +0300 EEST'>May 15, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Implementing GraphQL in an iOS application" href="http://localhost:1313/posts/implementing-graphql-in-an-ios-application/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Implementing In-App Purchases to SwiftUI app using StoreKit 2
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was wondering how to add in-app purchases to my app. I chose non-consumable in-app purchase because you can pay one time for this item. Here are a few steps on how I did it.
-First Step Set up In-App Purchases for your app in App Store Connect account or add a .storekit configuration file and start from there. If you’ve already set up In-App Purchases in your account, you can sync the StoreKit config with that data....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-12 07:57:51 +0300 EEST'>May 12, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Implementing In-App Purchases to SwiftUI app using StoreKit 2" href="http://localhost:1313/posts/implementing-in-app-purchases-to-swiftui-app-using-storekit-2/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

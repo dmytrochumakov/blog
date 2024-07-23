@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Location Service on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/location-service/</link>
+    <description>Recent content in Location Service on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.123.3</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 23 Jul 2024 07:04:25 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/location-service/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementing Location Service</title>
+      <link>http://localhost:1313/posts/implementing-location-service/</link>
+      <pubDate>Tue, 23 Jul 2024 07:04:25 +0300</pubDate>
+      <guid>http://localhost:1313/posts/implementing-location-service/</guid>
+      <description>Introduction Nowadays, location is an essential feature in almost every application. It&amp;rsquo;s very important to know the best ways to implement it without affecting performance and user experience. In this article, I will focus on how to implement general methods in location service.
+Preparation Before we begin, let&amp;rsquo;s add location permission keys to Info.plist:
+Privacy - Location When In Use Usage Description Privacy - Location Always and When In Use Usage Description First Step The first step is to create LocationService with the requestPermissions method to be able to receive location events.</description>
+    </item>
+  </channel>
+</rss>

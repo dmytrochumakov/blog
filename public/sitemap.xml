@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/corelocation/</loc>
+    <lastmod>2024-07-23T07:04:25+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-07-23T07:04:25+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/implementing/</loc>
+    <lastmod>2024-07-23T07:04:25+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/implementing-location-service/</loc>
+    <lastmod>2024-07-23T07:04:25+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/location-service/</loc>
+    <lastmod>2024-07-23T07:04:25+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-07-23T07:04:25+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swift/</loc>
+    <lastmod>2024-07-23T07:04:25+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-07-23T07:04:25+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/app/</loc>
     <lastmod>2024-07-21T07:25:28+03:00</lastmod>
   </url><url>
@@ -11,28 +35,13 @@
     <loc>http://localhost:1313/tags/combine/</loc>
     <lastmod>2024-07-21T07:25:28+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-07-21T07:25:28+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/implementing/</loc>
-    <lastmod>2024-07-21T07:25:28+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/implementing-chatgpt-in-an-ios-app/</loc>
     <lastmod>2024-07-21T07:25:28+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ios/</loc>
     <lastmod>2024-07-21T07:25:28+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-07-21T07:25:28+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2024-07-21T07:25:28+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/swiftui/</loc>
-    <lastmod>2024-07-21T07:25:28+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-07-21T07:25:28+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/apple-sign-in/</loc>
