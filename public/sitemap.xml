@@ -2,13 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/corelocation/</loc>
-    <lastmod>2024-07-23T07:04:25+03:00</lastmod>
+    <loc>http://localhost:1313/tags/app/</loc>
+    <lastmod>2024-07-26T07:18:58+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-07-23T07:04:25+03:00</lastmod>
+    <lastmod>2024-07-26T07:18:58+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/healthkit/</loc>
+    <lastmod>2024-07-26T07:18:58+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/implementing/</loc>
+    <lastmod>2024-07-26T07:18:58+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/</loc>
+    <lastmod>2024-07-26T07:18:58+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ios/</loc>
+    <lastmod>2024-07-26T07:18:58+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/modern-concurrency/</loc>
+    <lastmod>2024-07-26T07:18:58+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-07-26T07:18:58+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swift/</loc>
+    <lastmod>2024-07-26T07:18:58+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swiftui/</loc>
+    <lastmod>2024-07-26T07:18:58+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-07-26T07:18:58+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/corelocation/</loc>
     <lastmod>2024-07-23T07:04:25+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/implementing-location-service/</loc>
@@ -17,18 +44,6 @@
     <loc>http://localhost:1313/tags/location-service/</loc>
     <lastmod>2024-07-23T07:04:25+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-07-23T07:04:25+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2024-07-23T07:04:25+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-07-23T07:04:25+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/app/</loc>
-    <lastmod>2024-07-21T07:25:28+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/chatgpt/</loc>
     <lastmod>2024-07-21T07:25:28+03:00</lastmod>
   </url><url>
@@ -36,12 +51,6 @@
     <lastmod>2024-07-21T07:25:28+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/implementing-chatgpt-in-an-ios-app/</loc>
-    <lastmod>2024-07-21T07:25:28+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ios/</loc>
-    <lastmod>2024-07-21T07:25:28+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swiftui/</loc>
     <lastmod>2024-07-21T07:25:28+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/apple-sign-in/</loc>
@@ -441,9 +450,6 @@
     <lastmod>2024-02-07T08:29:30+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/concurrency/</loc>
-    <lastmod>2024-02-04T08:29:30+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/modern-concurrency/</loc>
     <lastmod>2024-02-04T08:29:30+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/modern-concurrency/</loc>

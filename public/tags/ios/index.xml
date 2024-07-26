@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 21 Jul 2024 07:25:28 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jul 2024 07:18:58 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementing HealthKit in an iOS App</title>
+      <link>http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/</link>
+      <pubDate>Fri, 26 Jul 2024 07:18:58 +0300</pubDate>
+      <guid>http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/</guid>
+      <description>Introduction Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.
+Preparation Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store.</description>
+    </item>
     <item>
       <title>Implementing ChatGPT in an iOS App</title>
       <link>http://localhost:1313/posts/implementing-chatgpt-in-an-ios-app/</link>

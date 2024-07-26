@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Modern Concurrency on Dmytro&#39;s Blog</title>
-    <link>http://localhost:1313/tags/modern-concurrency/</link>
-    <description>Recent content in Modern Concurrency on Dmytro&#39;s Blog</description>
+    <title>HealthKit on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/healthkit/</link>
+    <description>Recent content in HealthKit on Dmytro&#39;s Blog</description>
     <image>
       <title>Dmytro&#39;s Blog</title>
       <url>http://localhost:1313/images/papermod-cover.png</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
     <lastBuildDate>Fri, 26 Jul 2024 07:18:58 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/modern-concurrency/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/healthkit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Implementing HealthKit in an iOS App</title>
       <link>http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/</link>
@@ -20,16 +20,6 @@
       <guid>http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/</guid>
       <description>Introduction Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.
 Preparation Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store.</description>
-    </item>
-    <item>
-      <title>Modern Concurrency</title>
-      <link>http://localhost:1313/posts/modern-concurrency/</link>
-      <pubDate>Sun, 04 Feb 2024 08:29:30 +0300</pubDate>
-      <guid>http://localhost:1313/posts/modern-concurrency/</guid>
-      <description>When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
-You can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.
-What are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
-actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&amp;gt; String?</description>
     </item>
   </channel>
 </rss>

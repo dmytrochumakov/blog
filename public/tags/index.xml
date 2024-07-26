@@ -11,13 +11,20 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 23 Jul 2024 07:04:25 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jul 2024 07:18:58 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>CoreLocation</title>
-      <link>http://localhost:1313/tags/corelocation/</link>
+      <title>App</title>
+      <link>http://localhost:1313/tags/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/corelocation/</guid>
+      <guid>http://localhost:1313/tags/app/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HealthKit</title>
+      <link>http://localhost:1313/tags/healthkit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/healthkit/</guid>
       <description></description>
     </item>
     <item>
@@ -28,10 +35,17 @@
       <description></description>
     </item>
     <item>
-      <title>Location Service</title>
-      <link>http://localhost:1313/tags/location-service/</link>
+      <title>IOS</title>
+      <link>http://localhost:1313/tags/ios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/location-service/</guid>
+      <guid>http://localhost:1313/tags/ios/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Modern Concurrency</title>
+      <link>http://localhost:1313/tags/modern-concurrency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/modern-concurrency/</guid>
       <description></description>
     </item>
     <item>
@@ -42,10 +56,24 @@
       <description></description>
     </item>
     <item>
-      <title>App</title>
-      <link>http://localhost:1313/tags/app/</link>
+      <title>SwiftUI</title>
+      <link>http://localhost:1313/tags/swiftui/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/app/</guid>
+      <guid>http://localhost:1313/tags/swiftui/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CoreLocation</title>
+      <link>http://localhost:1313/tags/corelocation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/corelocation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Location Service</title>
+      <link>http://localhost:1313/tags/location-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/location-service/</guid>
       <description></description>
     </item>
     <item>
@@ -60,20 +88,6 @@
       <link>http://localhost:1313/tags/combine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/combine/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>IOS</title>
-      <link>http://localhost:1313/tags/ios/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ios/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SwiftUI</title>
-      <link>http://localhost:1313/tags/swiftui/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/swiftui/</guid>
       <description></description>
     </item>
     <item>
@@ -690,13 +704,6 @@
       <link>http://localhost:1313/tags/concurrency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/concurrency/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Modern Concurrency</title>
-      <link>http://localhost:1313/tags/modern-concurrency/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/modern-concurrency/</guid>
       <description></description>
     </item>
     <item>
