@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Performance on Dmytro&#39;s Blog</title>
-    <link>http://localhost:1313/tags/performance/</link>
-    <description>Recent content in Performance on Dmytro&#39;s Blog</description>
+    <title>Optimizing on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/optimizing/</link>
+    <description>Recent content in Optimizing on Dmytro&#39;s Blog</description>
     <image>
       <title>Dmytro&#39;s Blog</title>
       <url>http://localhost:1313/images/papermod-cover.png</url>
@@ -12,22 +12,13 @@
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
     <lastBuildDate>Wed, 31 Jul 2024 07:26:30 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/optimizing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Optimizing iOS App Performance - Common Techniques</title>
       <link>http://localhost:1313/posts/optimizing-ios-app-performance-common-techniques/</link>
       <pubDate>Wed, 31 Jul 2024 07:26:30 +0300</pubDate>
       <guid>http://localhost:1313/posts/optimizing-ios-app-performance-common-techniques/</guid>
       <description>Introduction A well-performing application is the heart of a good user experience. If an application responds well, it helps attract more users and grow the business around it. On the other hand, if it performs poorly, it frustrates users and leads them to uninstall the app. To solve these issues, we need tools to monitor app behavior. Luckily for us, Xcode provides a list of tools that will help us resolve these problems.</description>
-    </item>
-    <item>
-      <title>Battery Performance Testing for iOS App</title>
-      <link>http://localhost:1313/posts/battery-performance-testing-for-ios-app/</link>
-      <pubDate>Sun, 07 Jul 2024 07:25:40 +0300</pubDate>
-      <guid>http://localhost:1313/posts/battery-performance-testing-for-ios-app/</guid>
-      <description>Introduction Working with batteries on iOS devices for large applications has always been tricky. The amount of energy consumed by the screen, location services, network calls, processing, background tasks, etc., is significant. From a developer&amp;rsquo;s perspective, it seems complicated, but Xcode provides tools to address this problem.
-To find the issue, you need to open Xcode and go to the Debug Navigator.
-In the Debug Navigator, you will see the Energy Impact gauge.</description>
     </item>
   </channel>
 </rss>

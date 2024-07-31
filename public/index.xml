@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 26 Jul 2024 07:18:58 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 31 Jul 2024 07:26:30 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Optimizing iOS App Performance - Common Techniques</title>
+      <link>http://localhost:1313/posts/optimizing-ios-app-performance-common-techniques/</link>
+      <pubDate>Wed, 31 Jul 2024 07:26:30 +0300</pubDate>
+      <guid>http://localhost:1313/posts/optimizing-ios-app-performance-common-techniques/</guid>
+      <description>Introduction A well-performing application is the heart of a good user experience. If an application responds well, it helps attract more users and grow the business around it. On the other hand, if it performs poorly, it frustrates users and leads them to uninstall the app. To solve these issues, we need tools to monitor app behavior. Luckily for us, Xcode provides a list of tools that will help us resolve these problems.</description>
+    </item>
     <item>
       <title>Implementing HealthKit in an iOS App</title>
       <link>http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/</link>
