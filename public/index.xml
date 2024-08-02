@@ -554,5 +554,12 @@ UDF can reduce data inconsistencies because of the single source of truth for th
       <guid>http://localhost:1313/about/</guid>
       <description>Information about me.</description>
     </item>
+    <item>
+      <title>Newsletter</title>
+      <link>http://localhost:1313/newsletter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/newsletter/</guid>
+      <description>newsletter</description>
+    </item>
   </channel>
 </rss>
