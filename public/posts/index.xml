@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 31 Jul 2024 07:26:30 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 12 Aug 2024 07:01:34 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Structures and Algorithms Arrays Swift</title>
+      <link>http://localhost:1313/posts/data-structures-and-algorithms-arrays-swift/</link>
+      <pubDate>Mon, 12 Aug 2024 07:01:34 +0300</pubDate>
+      <guid>http://localhost:1313/posts/data-structures-and-algorithms-arrays-swift/</guid>
+      <description>Introduction I’ve always been curious about data structures and algorithms, and how they can improve user experiences while saving money for businesses through optimized computations.
+In this series of articles, I’m going to solve LeetCode problems and share my approach with you.
+I’ve just started my journey in solving LeetCode problems, so my solutions might not be as efficient as they could be, but I’m always looking for improvement.
+Before each topic, I’ll provide a brief introduction to the data structure, algorithm, or technique I’ll be using to solve a specific problem.</description>
+    </item>
     <item>
       <title>Optimizing iOS App Performance - Common Techniques</title>
       <link>http://localhost:1313/posts/optimizing-ios-app-performance-common-techniques/</link>
