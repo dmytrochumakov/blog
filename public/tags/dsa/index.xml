@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 12 Aug 2024 07:01:34 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 15 Aug 2024 07:04:16 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/dsa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSA - Merge Sorted Array Problem</title>
+      <link>http://localhost:1313/posts/dsa-merge-sorted-array-problem/</link>
+      <pubDate>Thu, 15 Aug 2024 07:04:16 +0300</pubDate>
+      <guid>http://localhost:1313/posts/dsa-merge-sorted-array-problem/</guid>
+      <description>Introduction In the previous chapter, we discussed Data Structures and Algorithms, delved into an overview of Dynamic Arrays, and solved the &amp;ldquo;Remove Element&amp;rdquo; problem.
+In this article, I&amp;rsquo;m going to show one of the ways to solve the 88. Merge Sorted Array problem.
+Problem You are given two integer arrays, nums1 and nums2, sorted in non-decreasing order, and two integers, m and n, representing the number of elements in nums1 and nums2, respectively.</description>
+    </item>
     <item>
       <title>Data Structures and Algorithms Arrays Swift</title>
       <link>http://localhost:1313/posts/data-structures-and-algorithms-arrays-swift/</link>
