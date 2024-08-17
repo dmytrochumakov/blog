@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Data Structures on Dmytro&#39;s Blog</title>
-    <link>http://localhost:1313/tags/data-structures/</link>
-    <description>Recent content in Data Structures on Dmytro&#39;s Blog</description>
+    <title>Two Pointers on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/two-pointers/</link>
+    <description>Recent content in Two Pointers on Dmytro&#39;s Blog</description>
     <image>
       <title>Dmytro&#39;s Blog</title>
       <url>http://localhost:1313/images/papermod-cover.png</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
     <lastBuildDate>Sat, 17 Aug 2024 07:00:23 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/data-structures/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/two-pointers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DSA - Two Pointers Technique</title>
       <link>http://localhost:1313/posts/dsa-two-pointers-technique/</link>
@@ -20,15 +20,6 @@
       <guid>http://localhost:1313/posts/dsa-two-pointers-technique/</guid>
       <description>What is the Two Pointers Technique? The two pointers technique helps track indices in a collection of elements to access objects in memory by index with O(1) space. This technique is very handy when you need to optimize the time and space of a solution.
 What Problems Does It Solve? The two pointers technique solves problems involving collections. For example, it is useful when you need to compare each element to other elements in that collection.</description>
-    </item>
-    <item>
-      <title>DSA - Merge Sorted Array Problem</title>
-      <link>http://localhost:1313/posts/dsa-merge-sorted-array-problem/</link>
-      <pubDate>Thu, 15 Aug 2024 07:04:16 +0300</pubDate>
-      <guid>http://localhost:1313/posts/dsa-merge-sorted-array-problem/</guid>
-      <description>Introduction In the previous chapter, we discussed Data Structures and Algorithms, delved into an overview of Dynamic Arrays, and solved the &amp;ldquo;Remove Element&amp;rdquo; problem.
-In this article, I&amp;rsquo;m going to show one of the ways to solve the 88. Merge Sorted Array problem.
-Problem You are given two integer arrays, nums1 and nums2, sorted in non-decreasing order, and two integers, m and n, representing the number of elements in nums1 and nums2, respectively.</description>
     </item>
   </channel>
 </rss>
