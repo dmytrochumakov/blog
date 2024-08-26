@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Aug 2024 07:17:01 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 26 Aug 2024 07:09:48 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/dsa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSA - Binary Search</title>
+      <link>http://localhost:1313/posts/dsa-binary-search/</link>
+      <pubDate>Mon, 26 Aug 2024 07:09:48 +0300</pubDate>
+      <guid>http://localhost:1313/posts/dsa-binary-search/</guid>
+      <description>What is binary search? Binary search is an algorithm that helps find an element in a sorted array in O(log n) time.
+Why should the input be sorted before performing binary search? The input array for binary search needs to be sorted because the algorithm eliminates half of the choices at each step. If the guessed value is greater than the target value, it knows that the right part can’t contain the target value.</description>
+    </item>
     <item>
       <title>DSA - Stack</title>
       <link>http://localhost:1313/posts/dsa-stack/</link>

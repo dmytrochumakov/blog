@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Binary Search on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/binary-search/</link>
+    <description>Recent content in Binary Search on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.123.3</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 26 Aug 2024 07:09:48 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/binary-search/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSA - Binary Search</title>
+      <link>http://localhost:1313/posts/dsa-binary-search/</link>
+      <pubDate>Mon, 26 Aug 2024 07:09:48 +0300</pubDate>
+      <guid>http://localhost:1313/posts/dsa-binary-search/</guid>
+      <description>What is binary search? Binary search is an algorithm that helps find an element in a sorted array in O(log n) time.
+Why should the input be sorted before performing binary search? The input array for binary search needs to be sorted because the algorithm eliminates half of the choices at each step. If the guessed value is greater than the target value, it knows that the right part can’t contain the target value.</description>
+    </item>
+  </channel>
+</rss>
