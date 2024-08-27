@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 26 Aug 2024 07:09:48 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 27 Aug 2024 07:13:19 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/data-structures/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSA - Linked List</title>
+      <link>http://localhost:1313/posts/dsa-linked-list/</link>
+      <pubDate>Tue, 27 Aug 2024 07:13:19 +0300</pubDate>
+      <guid>http://localhost:1313/posts/dsa-linked-list/</guid>
+      <description>What is a Linked List? A linked list is a common data structure that is similar to an array, but its order is based on pointers to the next element in memory instead of using physical placement (indices).
+A linked list has two main components:
+ListNode class: This class has a val property that represents the value and a next property that represents a pointer to the next element in memory.</description>
+    </item>
     <item>
       <title>DSA - Binary Search</title>
       <link>http://localhost:1313/posts/dsa-binary-search/</link>

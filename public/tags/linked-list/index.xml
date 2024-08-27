@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Linked List on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/linked-list/</link>
+    <description>Recent content in Linked List on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.123.3</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 27 Aug 2024 07:13:19 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/linked-list/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSA - Linked List</title>
+      <link>http://localhost:1313/posts/dsa-linked-list/</link>
+      <pubDate>Tue, 27 Aug 2024 07:13:19 +0300</pubDate>
+      <guid>http://localhost:1313/posts/dsa-linked-list/</guid>
+      <description>What is a Linked List? A linked list is a common data structure that is similar to an array, but its order is based on pointers to the next element in memory instead of using physical placement (indices).
+A linked list has two main components:
+ListNode class: This class has a val property that represents the value and a next property that represents a pointer to the next element in memory.</description>
+    </item>
+  </channel>
+</rss>
