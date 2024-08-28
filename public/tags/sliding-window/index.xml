@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sliding Window on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/sliding-window/</link>
+    <description>Recent content in Sliding Window on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.123.3</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 28 Aug 2024 07:20:26 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/sliding-window/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSA - Sliding Window</title>
+      <link>http://localhost:1313/posts/dsa-sliding-window/</link>
+      <pubDate>Wed, 28 Aug 2024 07:20:26 +0300</pubDate>
+      <guid>http://localhost:1313/posts/dsa-sliding-window/</guid>
+      <description>What is the sliding window technique? The sliding window technique is a common algorithmic approach used to create a fixed-sized window that moves through the data one step at a time, typically from left to right, to perform specific operations or computations on the elements within the window.
+What is the sliding window algorithm? The sliding window algorithm is a method for finding a subset of elements that satisfy certain conditions in a given problem.</description>
+    </item>
+  </channel>
+</rss>

@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Aug 2024 07:13:19 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2024 07:20:26 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSA - Sliding Window</title>
+      <link>http://localhost:1313/posts/dsa-sliding-window/</link>
+      <pubDate>Wed, 28 Aug 2024 07:20:26 +0300</pubDate>
+      <guid>http://localhost:1313/posts/dsa-sliding-window/</guid>
+      <description>What is the sliding window technique? The sliding window technique is a common algorithmic approach used to create a fixed-sized window that moves through the data one step at a time, typically from left to right, to perform specific operations or computations on the elements within the window.
+What is the sliding window algorithm? The sliding window algorithm is a method for finding a subset of elements that satisfy certain conditions in a given problem.</description>
+    </item>
     <item>
       <title>DSA - Linked List</title>
       <link>http://localhost:1313/posts/dsa-linked-list/</link>
