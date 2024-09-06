@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Sep 2024 07:12:55 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 06 Sep 2024 06:56:18 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/dsa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSA - Trie</title>
+      <link>http://localhost:1313/posts/dsa-trie/</link>
+      <pubDate>Fri, 06 Sep 2024 06:56:18 +0300</pubDate>
+      <guid>http://localhost:1313/posts/dsa-trie/</guid>
+      <description>What is a Trie? A Trie is a data structure usually called a &amp;ldquo;prefix tree,&amp;rdquo; often represented as a nested tree of dictionaries where each key is a character that maps to the next character in a word.
+Let&amp;rsquo;s look at some examples of a Trie. The Trie consists of two main classes: the TrieNode class and the Trie class.
+TrieNode The TrieNode class has two properties:
+children - a property that represents all characters in a given word and points to the next character.</description>
+    </item>
     <item>
       <title>DSA - Binary Search Tree</title>
       <link>http://localhost:1313/posts/dsa-binary-search-tree/</link>
