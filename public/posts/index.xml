@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 06 Sep 2024 06:56:18 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 09 Sep 2024 07:19:46 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSA - Backtracking</title>
+      <link>http://localhost:1313/posts/dsa-backtracking/</link>
+      <pubDate>Mon, 09 Sep 2024 07:19:46 +0300</pubDate>
+      <guid>http://localhost:1313/posts/dsa-backtracking/</guid>
+      <description>What is Backtracking? Backtracking is a class of algorithms for finding solutions to complex problems. A backtracking algorithm uses recursion and is based on depth-first search (DFS).
+Depth First Search (DFS) Depth First Search (DFS) is an essential part of backtracking. DFS is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (or an arbitrary node in the case of a graph) and explores as far as possible along each branch before backtracking.</description>
+    </item>
     <item>
       <title>DSA - Trie</title>
       <link>http://localhost:1313/posts/dsa-trie/</link>
