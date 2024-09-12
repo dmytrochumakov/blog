@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 09 Sep 2024 07:19:46 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 12 Sep 2024 07:14:47 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algorithms</title>
@@ -21,10 +21,17 @@
       <description></description>
     </item>
     <item>
-      <title>Backtracking</title>
-      <link>http://localhost:1313/tags/backtracking/</link>
+      <title>BFS</title>
+      <link>http://localhost:1313/tags/bfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/backtracking/</guid>
+      <guid>http://localhost:1313/tags/bfs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Breadth First Search</title>
+      <link>http://localhost:1313/tags/breadth-first-search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/breadth-first-search/</guid>
       <description></description>
     </item>
     <item>
@@ -32,13 +39,6 @@
       <link>http://localhost:1313/tags/data-structures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/data-structures/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>DFS</title>
-      <link>http://localhost:1313/tags/dfs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/dfs/</guid>
       <description></description>
     </item>
     <item>
@@ -53,6 +53,20 @@
       <link>http://localhost:1313/tags/swift/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/swift/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Backtracking</title>
+      <link>http://localhost:1313/tags/backtracking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/backtracking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DFS</title>
+      <link>http://localhost:1313/tags/dfs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/dfs/</guid>
       <description></description>
     </item>
     <item>
