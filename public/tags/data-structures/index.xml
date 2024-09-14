@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Sep 2024 07:14:47 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 14 Sep 2024 06:57:03 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/data-structures/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSA - Graph</title>
+      <link>http://localhost:1313/posts/dsa-graph/</link>
+      <pubDate>Sat, 14 Sep 2024 06:57:03 +0300</pubDate>
+      <guid>http://localhost:1313/posts/dsa-graph/</guid>
+      <description>What is a graph? A graph is an abstract data type that represents vertices and edges that connect those vertices.
+Source
+Implementation A graph can be represented as a matrix with edges connecting each pair of vertices. For example, a graph with vertices 0, 1, 2, 3, 4 and edges between them can be represented as a matrix:
+0 1 2 3 4 0 false true false false true 1 true false true true true 2 false true false true false 3 false true true false true 4 true true false true false In Swift, you can use a list of lists (2D array) to represent the matrix:</description>
+    </item>
     <item>
       <title>DSA - Breadth First Search</title>
       <link>http://localhost:1313/posts/dsa-breadth-first-search/</link>
