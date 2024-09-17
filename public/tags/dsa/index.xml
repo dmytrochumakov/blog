@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Sep 2024 06:57:03 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 17 Sep 2024 07:06:52 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/dsa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSA - Adjacency List</title>
+      <link>http://localhost:1313/posts/dsa-adjacency-list/</link>
+      <pubDate>Tue, 17 Sep 2024 07:06:52 +0300</pubDate>
+      <guid>http://localhost:1313/posts/dsa-adjacency-list/</guid>
+      <description>What is an Adjacency List? An Adjacency List helps store a list of connections between each vertex in a finite graph.
+Vertex Connects with 0 1 1 0, 2, 3 2 1, 3 3 1, 2 Implementation The addEdge method takes vertices as input and adds an edge to the adjacency list. In this example, the adjacency list is represented as a dictionary that maps vertices to a set of all connected vertices.</description>
+    </item>
     <item>
       <title>DSA - Graph</title>
       <link>http://localhost:1313/posts/dsa-graph/</link>
