@@ -11,8 +11,19 @@
     </image>
     <generator>Hugo -- 0.123.3</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Sep 2024 07:06:52 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 20 Sep 2024 07:15:17 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSA - Queue</title>
+      <link>http://localhost:1313/posts/dsa-queue/</link>
+      <pubDate>Fri, 20 Sep 2024 07:15:17 +0300</pubDate>
+      <guid>http://localhost:1313/posts/dsa-queue/</guid>
+      <description>What is a Queue? A Queue is an abstract data type that serves as an ordered collection of elements.
+A simple queue typically has several operations:
+push(item) - adds an item to the tail pop() - removes and returns an item from the head These operations make a queue a FIFO (First In, First Out) data structure.
+Implementation There are two ways to implement a queue.
+The first and simplest (but less efficient) way is by using an array and basic operations:</description>
+    </item>
     <item>
       <title>DSA - Adjacency List</title>
       <link>http://localhost:1313/posts/dsa-adjacency-list/</link>
