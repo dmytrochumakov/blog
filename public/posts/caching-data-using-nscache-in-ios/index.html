@@ -7,8 +7,17 @@
 <meta name="robots" content="index, follow">
 <title>Caching data using NSCache in iOS | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Caching, Caching data, NSCache, iOS">
-<meta name="description" content="Introduction I was curious about caching data using NSCache for an iOS app. So, I did some digging. Here is what I found:
-Quick Overview NSCache helps store data in memory. When the application gets killed, it frees memory; it’s not persisted on disk. Storing data is carried out using a key-value pair mechanism like Dictionary. You can set automatic eviction to delete objects automatically. NSCache has multi-platform support: iOS, iPadOS, watchOS, macOS, and tvOS.">
+<meta name="description" content="Introduction
+I was curious about caching data using NSCache for an iOS app. So, I did some digging. Here is what I found:
+Quick Overview
+
+NSCache helps store data in memory. When the application gets killed, it frees memory; it’s not persisted on disk.
+Storing data is carried out using a key-value pair mechanism like Dictionary.
+You can set automatic eviction to delete objects automatically.
+NSCache has multi-platform support: iOS, iPadOS, watchOS, macOS, and tvOS.
+
+Caveats
+NSCache has Objective-C roots. It can’t use struct because it is constrained to conform to AnyObject, meaning you must use class and NSString instead of String.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/caching-data-using-nscache-in-ios/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -75,19 +84,31 @@ Quick Overview NSCache helps store data in memory. When the application gets kil
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Caching data using NSCache in iOS" />
-<meta property="og:description" content="Introduction I was curious about caching data using NSCache for an iOS app. So, I did some digging. Here is what I found:
-Quick Overview NSCache helps store data in memory. When the application gets killed, it frees memory; it’s not persisted on disk. Storing data is carried out using a key-value pair mechanism like Dictionary. You can set automatic eviction to delete objects automatically. NSCache has multi-platform support: iOS, iPadOS, watchOS, macOS, and tvOS." />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Caching data using NSCache in iOS" />
+<meta property="og:description" content="Introduction
+I was curious about caching data using NSCache for an iOS app. So, I did some digging. Here is what I found:
+Quick Overview
+
+NSCache helps store data in memory. When the application gets killed, it frees memory; it’s not persisted on disk.
+Storing data is carried out using a key-value pair mechanism like Dictionary.
+You can set automatic eviction to delete objects automatically.
+NSCache has multi-platform support: iOS, iPadOS, watchOS, macOS, and tvOS.
+
+Caveats
+NSCache has Objective-C roots. It can’t use struct because it is constrained to conform to AnyObject, meaning you must use class and NSString instead of String." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/caching-data-using-nscache-in-ios/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -98,8 +119,17 @@ Quick Overview NSCache helps store data in memory. When the application gets kil
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Caching data using NSCache in iOS"/>
-<meta name="twitter:description" content="Introduction I was curious about caching data using NSCache for an iOS app. So, I did some digging. Here is what I found:
-Quick Overview NSCache helps store data in memory. When the application gets killed, it frees memory; it’s not persisted on disk. Storing data is carried out using a key-value pair mechanism like Dictionary. You can set automatic eviction to delete objects automatically. NSCache has multi-platform support: iOS, iPadOS, watchOS, macOS, and tvOS."/>
+<meta name="twitter:description" content="Introduction
+I was curious about caching data using NSCache for an iOS app. So, I did some digging. Here is what I found:
+Quick Overview
+
+NSCache helps store data in memory. When the application gets killed, it frees memory; it’s not persisted on disk.
+Storing data is carried out using a key-value pair mechanism like Dictionary.
+You can set automatic eviction to delete objects automatically.
+NSCache has multi-platform support: iOS, iPadOS, watchOS, macOS, and tvOS.
+
+Caveats
+NSCache has Objective-C roots. It can’t use struct because it is constrained to conform to AnyObject, meaning you must use class and NSString instead of String."/>
 
 
 <script type="application/ld+json">
@@ -128,7 +158,7 @@ Quick Overview NSCache helps store data in memory. When the application gets kil
   "@type": "BlogPosting",
   "headline": "Caching data using NSCache in iOS",
   "name": "Caching data using NSCache in iOS",
-  "description": "Introduction I was curious about caching data using NSCache for an iOS app. So, I did some digging. Here is what I found:\nQuick Overview NSCache helps store data in memory. When the application gets killed, it frees memory; it’s not persisted on disk. Storing data is carried out using a key-value pair mechanism like Dictionary. You can set automatic eviction to delete objects automatically. NSCache has multi-platform support: iOS, iPadOS, watchOS, macOS, and tvOS.",
+  "description": "Introduction I was curious about caching data using NSCache for an iOS app. So, I did some digging. Here is what I found:\nQuick Overview NSCache helps store data in memory. When the application gets killed, it frees memory; it’s not persisted on disk. Storing data is carried out using a key-value pair mechanism like Dictionary. You can set automatic eviction to delete objects automatically. NSCache has multi-platform support: iOS, iPadOS, watchOS, macOS, and tvOS. Caveats NSCache has Objective-C roots. It can’t use struct because it is constrained to conform to AnyObject, meaning you must use class and NSString instead of String.\n",
   "keywords": [
     "Caching", "Caching data", "NSCache", "iOS"
   ],

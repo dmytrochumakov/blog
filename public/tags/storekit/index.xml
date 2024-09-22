@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Sun, 12 May 2024 07:57:51 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/storekit/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,19 @@
       <link>http://localhost:1313/posts/implementing-in-app-purchases-to-swiftui-app-using-storekit-2/</link>
       <pubDate>Sun, 12 May 2024 07:57:51 +0300</pubDate>
       <guid>http://localhost:1313/posts/implementing-in-app-purchases-to-swiftui-app-using-storekit-2/</guid>
-      <description>Introduction I was wondering how to add in-app purchases to my app. I chose non-consumable in-app purchase because you can pay one time for this item. Here are a few steps on how I did it.
-First Step Set up In-App Purchases for your app in App Store Connect account or add a .storekit configuration file and start from there. If you&amp;rsquo;ve already set up In-App Purchases in your account, you can sync the StoreKit config with that data.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I was wondering how to add in-app purchases to my app. I chose &lt;a href=&#34;https://support.apple.com/en-us/108813#:~:text=What%20is%20a%20non%2Dconsumable%20in%2Dapp%20purchase%3F&#34;&gt;non-consumable in-app purchase&lt;/a&gt; because you can pay one time for this item. Here are a few steps on how I did it.&lt;/p&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-3215a&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-3215a&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/0.gif#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;first-step&#34;&gt;First Step&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://learn.buildfire.com/en/articles/2534672-how-to-create-a-single-in-app-purchase-for-ios&#34;&gt;Set up In-App Purchases&lt;/a&gt; for your app in &lt;a href=&#34;https://appstoreconnect.apple.com/login&#34;&gt;App Store Connect&lt;/a&gt; account or add a &lt;code&gt;.storekit&lt;/code&gt; configuration file and start from there. If you&amp;rsquo;ve already set up In-App Purchases in your account, you can sync the &lt;code&gt;StoreKit config&lt;/code&gt; with that data.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

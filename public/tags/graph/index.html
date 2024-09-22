@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Graph" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Graph" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/graph/" />
@@ -192,7 +195,8 @@ if (!doNotTrack) {
   </header>
   <div class="entry-content">
     <p>What is an Adjacency List? An Adjacency List helps store a list of connections between each vertex in a finite graph.
-Vertex Connects with 0 1 1 0, 2, 3 2 1, 3 3 1, 2 Implementation The addEdge method takes vertices as input and adds an edge to the adjacency list. In this example, the adjacency list is represented as a dictionary that maps vertices to a set of all connected vertices....</p>
+Vertex Connects with 0 1 1 0, 2, 3 2 1, 3 3 1, 2 Implementation The addEdge method takes vertices as input and adds an edge to the adjacency list. In this example, the adjacency list is represented as a dictionary that maps vertices to a set of all connected vertices.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-09-17 07:06:52 +0300 EEST'>September 17, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Adjacency List" href="http://localhost:1313/posts/dsa-adjacency-list/"></a>
@@ -207,7 +211,8 @@ Vertex Connects with 0 1 1 0, 2, 3 2 1, 3 3 1, 2 Implementation The addEdge meth
     <p>What is a graph? A graph is an abstract data type that represents vertices and edges that connect those vertices.
 Source
 Implementation A graph can be represented as a matrix with edges connecting each pair of vertices. For example, a graph with vertices 0, 1, 2, 3, 4 and edges between them can be represented as a matrix:
-0 1 2 3 4 0 false true false false true 1 true false true true true 2 false true false true false 3 false true true false true 4 true true false true false In Swift, you can use a list of lists (2D array) to represent the matrix:...</p>
+0 1 2 3 4 0 false true false false true 1 true false true true true 2 false true false true false 3 false true true false true 4 true true false true false In Swift, you can use a list of lists (2D array) to represent the matrix:
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-09-14 06:57:03 +0300 EEST'>September 14, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Graph" href="http://localhost:1313/posts/dsa-graph/"></a>

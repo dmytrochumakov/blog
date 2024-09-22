@@ -7,9 +7,18 @@
 <meta name="robots" content="index, follow">
 <title>DispatchGroup in Swift | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Swift, Concurrency, Dispatchgroup">
-<meta name="description" content="What is DispatchGroup? DispatchGroup provides a mechanism to track the completion group of tasks.
-How DispatchGroup works? DispatchGroup has three main methods, enter, leave and notify, that allow you to control the completion of a specific task.
-let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() dispatchGroup.notify(queue: .main) {} Let`s talk about each of these methods. enter — manually indicate a block has entered group. leave — manually indicate a block in the group has been completed.">
+<meta name="description" content="What is DispatchGroup?
+DispatchGroup provides a mechanism to track the completion group of tasks.
+How DispatchGroup works?
+DispatchGroup has three main methods, enter, leave and notify, that allow you to control the completion of a specific task.
+let dispatchGroup = DispatchGroup()
+dispatchGroup.enter()
+dispatchGroup.leave()
+dispatchGroup.notify(queue: .main) {}
+Let`s talk about each of these methods.
+enter — manually indicate a block has entered group.
+leave — manually indicate a block in the group has been completed.
+notify(queue: ) — schedule a block to be submitted to a queue when all the blocks associated with a group have been completed. The queue parameter is the queue to which the supplied block will be submitted when the group is complete.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/dispatchgroup-in-swift/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -76,20 +85,32 @@ let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() 
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="DispatchGroup in Swift" />
-<meta property="og:description" content="What is DispatchGroup? DispatchGroup provides a mechanism to track the completion group of tasks.
-How DispatchGroup works? DispatchGroup has three main methods, enter, leave and notify, that allow you to control the completion of a specific task.
-let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() dispatchGroup.notify(queue: .main) {} Let`s talk about each of these methods. enter — manually indicate a block has entered group. leave — manually indicate a block in the group has been completed." />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="DispatchGroup in Swift" />
+<meta property="og:description" content="What is DispatchGroup?
+DispatchGroup provides a mechanism to track the completion group of tasks.
+How DispatchGroup works?
+DispatchGroup has three main methods, enter, leave and notify, that allow you to control the completion of a specific task.
+let dispatchGroup = DispatchGroup()
+dispatchGroup.enter()
+dispatchGroup.leave()
+dispatchGroup.notify(queue: .main) {}
+Let`s talk about each of these methods.
+enter — manually indicate a block has entered group.
+leave — manually indicate a block in the group has been completed.
+notify(queue: ) — schedule a block to be submitted to a queue when all the blocks associated with a group have been completed. The queue parameter is the queue to which the supplied block will be submitted when the group is complete." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/dispatchgroup-in-swift/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -100,9 +121,18 @@ let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="DispatchGroup in Swift"/>
-<meta name="twitter:description" content="What is DispatchGroup? DispatchGroup provides a mechanism to track the completion group of tasks.
-How DispatchGroup works? DispatchGroup has three main methods, enter, leave and notify, that allow you to control the completion of a specific task.
-let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() dispatchGroup.notify(queue: .main) {} Let`s talk about each of these methods. enter — manually indicate a block has entered group. leave — manually indicate a block in the group has been completed."/>
+<meta name="twitter:description" content="What is DispatchGroup?
+DispatchGroup provides a mechanism to track the completion group of tasks.
+How DispatchGroup works?
+DispatchGroup has three main methods, enter, leave and notify, that allow you to control the completion of a specific task.
+let dispatchGroup = DispatchGroup()
+dispatchGroup.enter()
+dispatchGroup.leave()
+dispatchGroup.notify(queue: .main) {}
+Let`s talk about each of these methods.
+enter — manually indicate a block has entered group.
+leave — manually indicate a block in the group has been completed.
+notify(queue: ) — schedule a block to be submitted to a queue when all the blocks associated with a group have been completed. The queue parameter is the queue to which the supplied block will be submitted when the group is complete."/>
 
 
 <script type="application/ld+json">
@@ -131,7 +161,7 @@ let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() 
   "@type": "BlogPosting",
   "headline": "DispatchGroup in Swift",
   "name": "DispatchGroup in Swift",
-  "description": "What is DispatchGroup? DispatchGroup provides a mechanism to track the completion group of tasks.\nHow DispatchGroup works? DispatchGroup has three main methods, enter, leave and notify, that allow you to control the completion of a specific task.\nlet dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() dispatchGroup.notify(queue: .main) {} Let`s talk about each of these methods. enter — manually indicate a block has entered group. leave — manually indicate a block in the group has been completed.",
+  "description": "What is DispatchGroup? DispatchGroup provides a mechanism to track the completion group of tasks.\nHow DispatchGroup works? DispatchGroup has three main methods, enter, leave and notify, that allow you to control the completion of a specific task.\nlet dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() dispatchGroup.notify(queue: .main) {} Let`s talk about each of these methods. enter — manually indicate a block has entered group. leave — manually indicate a block in the group has been completed. notify(queue: ) — schedule a block to be submitted to a queue when all the blocks associated with a group have been completed. The queue parameter is the queue to which the supplied block will be submitted when the group is complete.\n",
   "keywords": [
     "Swift", "Concurrency", "Dispatchgroup"
   ],

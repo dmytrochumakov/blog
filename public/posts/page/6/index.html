@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Posts" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Posts" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/posts/" />
@@ -202,13 +205,27 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Creating a 2D Space Game for iOS Using SpriteKit - Part 1
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction I have never tried creating a game before; it feels like magic to me. I know that games have an enormous amount of underlying layers of abstractions and tools such as game engines, rendering, and so on. I have always been eager to learn at least 1% of the game creation process. In this article, I’m going to explore step-by-step instructions for creating a game for the iOS platform using SpriteKit.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-06-28 07:18:59 +0300 EEST'>June 28, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Creating a 2D Space Game for iOS Using SpriteKit - Part 1" href="http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-1/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Combine practical usage examples
     </h2>
   </header>
   <div class="entry-content">
     <p>Introduction When working in a large codebase with a significant number of async events, I often found myself in situations where I couldn’t combine events effectively. This resulted in optimization problems and inefficient consumption of OS resources.
 The codebase contained closures and async/await, so it wasn’t possible to use operators like merge or combineLatest. After discovering this limitation, I decided to add new methods using Combine.
-I will be demonstrating this with a simple NetworkService responsible only for executing and validating requests using Combine....</p>
+I will be demonstrating this with a simple NetworkService responsible only for executing and validating requests using Combine. Let’s dive into the implementation.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-06-22 07:13:00 +0300 EEST'>June 22, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Combine practical usage examples" href="http://localhost:1313/posts/combine-practical-usage-examples/"></a>
@@ -221,7 +238,8 @@ I will be demonstrating this with a simple NetworkService responsible only for e
   </header>
   <div class="entry-content">
     <p>Introduction I always wondered how I could automate testing the push notification process. Even when Apple introduced the possibility of dragging a configured file to the simulator to display a notification, it is still a manual process. I’ll skip testing via the terminal because I think it takes more time than using an APNS file or the RocketSim app.
-Before I was first introduced to the RocketSim app, I used an APNS file for testing push notifications....</p>
+Before I was first introduced to the RocketSim app, I used an APNS file for testing push notifications. It worked for me and my teammates, but I knew it could be better. It looks something like this:
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-06-19 07:13:19 +0300 EEST'>June 19, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Testing push notifications locally in an iOS app" href="http://localhost:1313/posts/testing-push-notifications-locally-in-an-ios-app/"></a>
@@ -234,7 +252,8 @@ Before I was first introduced to the RocketSim app, I used an APNS file for test
   </header>
   <div class="entry-content">
     <p>Introduction If you start a project from scratch, you need to always create some kind of service like PushNotificationService that will be responsible for handling push notification events. In this article, I want to explore a simple implementation of PushNotificationService to be able to reuse and customize it in future projects.
-First Step The first step is to add the Push Notifications capability to your project. Go to your project -&gt; Signing &amp; Capabilities -&gt; Tap &#43; Capability -&gt; Search for Push Notifications....</p>
+First Step The first step is to add the Push Notifications capability to your project. Go to your project -&gt; Signing &amp; Capabilities -&gt; Tap &#43; Capability -&gt; Search for Push Notifications.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-06-14 07:29:01 +0300 EEST'>June 14, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Adding Push Notifications to an iOS App" href="http://localhost:1313/posts/adding-push-notifications-to-an-ios-app/"></a>
@@ -247,24 +266,11 @@ First Step The first step is to add the Push Notifications capability to your pr
   </header>
   <div class="entry-content">
     <p>Introduction I was curious about caching data using NSCache for an iOS app. So, I did some digging. Here is what I found:
-Quick Overview NSCache helps store data in memory. When the application gets killed, it frees memory; it’s not persisted on disk. Storing data is carried out using a key-value pair mechanism like Dictionary. You can set automatic eviction to delete objects automatically. NSCache has multi-platform support: iOS, iPadOS, watchOS, macOS, and tvOS....</p>
+Quick Overview NSCache helps store data in memory. When the application gets killed, it frees memory; it’s not persisted on disk. Storing data is carried out using a key-value pair mechanism like Dictionary. You can set automatic eviction to delete objects automatically. NSCache has multi-platform support: iOS, iPadOS, watchOS, macOS, and tvOS. Caveats NSCache has Objective-C roots. It can’t use struct because it is constrained to conform to AnyObject, meaning you must use class and NSString instead of String.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-06-05 07:13:58 +0300 EEST'>June 5, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Caching data using NSCache in iOS" href="http://localhost:1313/posts/caching-data-using-nscache-in-ios/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Accessibility iOS SwiftUI
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction Previously, I posted about Accessibility for UIKit. The idea behind this post is to find differences between UIKit Accessibility and SwiftUI features.
-Similarities: Both UIKit and SwiftUI have accessibilityLabel and accessibilityHints APIs.
-Differences: To use dynamic type for fonts, you need additional modifiers in SwiftUI. struct ScaledFont: ViewModifier { @Environment(\.sizeCategory) var sizeCategory var name: String var size: Double func body(content: Content) -&gt; some View { let scaledSize = UIFontMetrics.default.scaledValue(for: size) return content....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-06-02 09:04:06 +0300 EEST'>June 2, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Accessibility iOS SwiftUI" href="http://localhost:1313/posts/accessibility-ios-swiftui/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

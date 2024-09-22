@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Project" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Project" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/project/" />
@@ -192,7 +195,8 @@ if (!doNotTrack) {
   </header>
   <div class="entry-content">
     <p>Introduction If you’re wondering how to test an Xcode project using GitHub Actions, here are a few steps:
-First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15....</p>
+First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15.3.app/Contents/Developer - name: Install xcpretty run: gem install xcpretty - name: Test project run: xcodebuild -project /Users/runner/work/YourProjectName/YourProjectName/YourProjectName/YourProjectName.xcodeproj -scheme YourSchemeName -destination &#39;platform=iOS Simulator,OS=17.4,name=iPhone 15 Pro&#39; clean build test | xcpretty Caveats If you don’t specify the path to the Xcode project, you will receive an error like this: xcodebuild: error: ‘YourProjectName.xcodeproj&#39; does not exist.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-04-26 06:51:21 +0300 EEST'>April 26, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Testing Xcode project using Github Actions" href="http://localhost:1313/posts/testing-xcode-project-using-github-actions/"></a>
@@ -205,7 +209,8 @@ First, you need to create a .github/workflows folder with a CI.yml file inside y
   </header>
   <div class="entry-content">
     <p>Introduction If you’re wondering how to build an Xcode project using GitHub Actions, here are a few steps:
-First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15....</p>
+First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15.3.app/Contents/Developer - name: Install xcpretty run: gem install xcpretty - name: Build project run: xcodebuild -project /Users/runner/work/YourProjectName/YourProjectName/YourProjectName/YourProjectName.xcodeproj -scheme YourSchemeName -sdk iphonesimulator -destination &#39;platform=iOS Simulator,name=iPhone 15 Pro&#39; clean build | xcpretty Caveats If you don’t specify the path to the Xcode project, you will receive an error like this: xcodebuild: error: ‘YourProjectName.xcodeproj&#39; does not exist.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-04-23 08:29:30 +0300 EEST'>April 23, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Building Xcode project using Github Actions" href="http://localhost:1313/posts/building-xcode-project-using-github-actions/"></a>

@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Building" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Building" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/building/" />
@@ -192,7 +195,8 @@ if (!doNotTrack) {
   </header>
   <div class="entry-content">
     <p>Introduction I was curious about how to add Dynamic Island and implement it into a Video Streaming App. Here are a few steps on how you can achieve this.
-Caveats Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 &#34;Failed to show Widget&#34;. The solution is to configure live activities and run them through the main app....</p>
+Caveats Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 &#34;Failed to show Widget&#34;. The solution is to configure live activities and run them through the main app. Be aware that when you add a widget to the project, in some cases, it adds all main target files to Compile Sources. Implementation Dynamic Islands are divided into different sizes: minimal, compactTrailing, compactLeading, and expanded. Before proceeding, you need to add LiveActivityManager to be able to display Dynamic Islands.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-06 07:35:52 +0300 EEST'>May 6, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Building Dynamic Island for Video Streaming App" href="http://localhost:1313/posts/building-dynamic-island-for-video-streaming-app/"></a>
@@ -205,7 +209,8 @@ Caveats Debugging Dynamic Island can be a bit tricky; it only works when the mai
   </header>
   <div class="entry-content">
     <p>Introduction I was exploring the idea of creating a YouTube-like widget for the lock screen on iOS devices. It wasn’t easy because most articles on the Internet discussed general implementations, such as for a coffee shop or a to-do list. Even when I found some similar versions, the project wouldn’t compile. I made the decision to approach it my way, so here’s what I found out:
-Caveats After being stuck for two or more hours without understanding why, after tapping on a button, I wasn&#39;t able to receive a callback from it and the widget always opened the main iOS app, I realized that I forgot to add AppIntent - without it, you can’t handle actions for iOS 17....</p>
+Caveats After being stuck for two or more hours without understanding why, after tapping on a button, I wasn&#39;t able to receive a callback from it and the widget always opened the main iOS app, I realized that I forgot to add AppIntent - without it, you can’t handle actions for iOS 17. import AppIntents struct ButtonIntent: AppIntent { static let title: LocalizedStringResource = &#34;ButtonIntent&#34; @Parameter(title: &#34;id&#34;) var id: String func perform() async throws -&gt; some IntentResult { if id == Command.playPause.rawValue { DataModel.shared.isPlaying.toggle() } return .result() } } Another crucial point is not to forget to add an explicit init. If you don’t implement it explicitly, it will not work. import AppIntents struct ButtonIntent: AppIntent { static let title: LocalizedStringResource = &#34;ButtonIntent&#34; @Parameter(title: &#34;id&#34;) var id: String init(id: String) { self.id = id } init() {} func perform() async throws -&gt; some IntentResult { if id == Command.playPause.rawValue { DataModel.shared.isPlaying.toggle() } return .result() } } Lastly, I attempted to add a Slider, but I found that it’s not supported by the widget. My solution was to choose a ProgressView instead. Implementation struct YouTubeLockScreenWidget: View { var body: some View { VStack { Spacer() ProgressView(value: DataModel.shared.currentTime, total: DataModel.shared.totalTime) .progressViewStyle(.linear) Spacer() HStack { ForEach(Command.allCases) { command in Button(intent: ButtonIntent(id: command.id)) { Image(systemName: imageSystemName(isPlaying: DataModel.shared.isPlaying, command: command)) } } } } } } final class DataModel { static let shared = DataModel() var isPlaying: Bool = false var currentTime: TimeInterval = 34 var totalTime: TimeInterval = 304 } enum Command: String, CaseIterable { case previous case playPause case next } extension Command: Identifiable { var id: String { rawValue } } func imageSystemName(isPlaying: Bool, command: Command) -&gt; String { switch command { case .playPause: if isPlaying { return &#34;pause.fill&#34; } else { return &#34;play.fill&#34; } case .next: return &#34;forward.fill&#34; case .previous: return &#34;backward.fill&#34; } } I had not replaced default generated code when I was adding widget to the project. I just added YouTubeLockScreenWidget to generated VideoStreamingWidgetEntryView.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-05 07:20:29 +0300 EEST'>May 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Building Video Streaming Widget for iOS App" href="http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/"></a>
@@ -219,7 +224,8 @@ Caveats After being stuck for two or more hours without understanding why, after
   <div class="entry-content">
     <p>Introduction I was looking for a way to add a video player to my iOS app that could be able to play remote videos.
 Caveats Problem I found that you can’t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 &#34;Operation Stopped&#34; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error. I don’t know exactly what this means, but I’m speculating it’s related to some protection.
-Solution My solution was to find another video that is not related to those platforms....</p>
+Solution My solution was to find another video that is not related to those platforms.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-03 07:34:56 +0300 EEST'>May 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Building Video Streaming iOS App" href="http://localhost:1313/posts/building-video-streaming-ios-app/"></a>
@@ -233,7 +239,8 @@ Solution My solution was to find another video that is not related to those plat
   <div class="entry-content">
     <p>Introduction I was wondering about how to create movie recommendations, so I decided to take a closer look and find out more about this topic. This is what I found:
 First step: You need to create a JSON file with the data that you will use to train the model and define the parameters for training the model.
-[ { &#34;title&#34;: &#34;Avatar&#34;, &#34;year&#34;: &#34;2009&#34;, &#34;rated&#34;: &#34;PG-13&#34;, &#34;released&#34;: &#34;18 Dec 2009&#34;, &#34;runtime&#34;: &#34;162 min&#34;, &#34;genre&#34;: &#34;Action, Adventure, Fantasy&#34;, &#34;director&#34;: &#34;James Cameron&#34;, &#34;writer&#34;: &#34;James Cameron&#34;, &#34;actors&#34;: &#34;Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang&#34;, &#34;plot&#34;: &#34;A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home....</p>
+[ { &#34;title&#34;: &#34;Avatar&#34;, &#34;year&#34;: &#34;2009&#34;, &#34;rated&#34;: &#34;PG-13&#34;, &#34;released&#34;: &#34;18 Dec 2009&#34;, &#34;runtime&#34;: &#34;162 min&#34;, &#34;genre&#34;: &#34;Action, Adventure, Fantasy&#34;, &#34;director&#34;: &#34;James Cameron&#34;, &#34;writer&#34;: &#34;James Cameron&#34;, &#34;actors&#34;: &#34;Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang&#34;, &#34;plot&#34;: &#34;A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.&#34;, &#34;language&#34;: &#34;English, Spanish&#34;, &#34;country&#34;: &#34;USA, UK&#34;, &#34;awards&#34;: &#34;Won 3 Oscars. Another 80 wins &amp; 121 nominations.&#34;, &#34;poster&#34;: &#34;https://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg&#34;, &#34;metascore&#34;: &#34;83&#34;, &#34;imdbrating&#34;: &#34;7.9&#34;, &#34;imdbvotes&#34;: &#34;890,617&#34;, &#34;imdbid&#34;: &#34;tt0499549&#34;, &#34;type&#34;: &#34;movie&#34;, &#34;response&#34;: &#34;True&#34;, &#34;keywords&#34;: [&#34;alien&#34;, &#34;avatar&#34;, &#34;fantasy world&#34;, &#34;soldier&#34;, &#34;battle&#34;] }, ] When you have created the data, you can proceed to the next step.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-01 10:29:44 +0300 EEST'>May 1, 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Building movie recommendations using ML" href="http://localhost:1313/posts/building-movie-recommendations-using-ml/"></a>
@@ -246,7 +253,8 @@ First step: You need to create a JSON file with the data that you will use to tr
   </header>
   <div class="entry-content">
     <p>Introduction If you’re wondering how to build an Xcode project using GitHub Actions, here are a few steps:
-First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15....</p>
+First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15.3.app/Contents/Developer - name: Install xcpretty run: gem install xcpretty - name: Build project run: xcodebuild -project /Users/runner/work/YourProjectName/YourProjectName/YourProjectName/YourProjectName.xcodeproj -scheme YourSchemeName -sdk iphonesimulator -destination &#39;platform=iOS Simulator,name=iPhone 15 Pro&#39; clean build | xcpretty Caveats If you don’t specify the path to the Xcode project, you will receive an error like this: xcodebuild: error: ‘YourProjectName.xcodeproj&#39; does not exist.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-04-23 08:29:30 +0300 EEST'>April 23, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Building Xcode project using Github Actions" href="http://localhost:1313/posts/building-xcode-project-using-github-actions/"></a>

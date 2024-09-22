@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Caching" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Caching" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/caching/" />
@@ -192,7 +195,8 @@ if (!doNotTrack) {
   </header>
   <div class="entry-content">
     <p>Introduction I was curious about caching data using NSCache for an iOS app. So, I did some digging. Here is what I found:
-Quick Overview NSCache helps store data in memory. When the application gets killed, it frees memory; it’s not persisted on disk. Storing data is carried out using a key-value pair mechanism like Dictionary. You can set automatic eviction to delete objects automatically. NSCache has multi-platform support: iOS, iPadOS, watchOS, macOS, and tvOS....</p>
+Quick Overview NSCache helps store data in memory. When the application gets killed, it frees memory; it’s not persisted on disk. Storing data is carried out using a key-value pair mechanism like Dictionary. You can set automatic eviction to delete objects automatically. NSCache has multi-platform support: iOS, iPadOS, watchOS, macOS, and tvOS. Caveats NSCache has Objective-C roots. It can’t use struct because it is constrained to conform to AnyObject, meaning you must use class and NSString instead of String.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-06-05 07:13:58 +0300 EEST'>June 5, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Caching data using NSCache in iOS" href="http://localhost:1313/posts/caching-data-using-nscache-in-ios/"></a>

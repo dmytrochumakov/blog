@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Keychain" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Keychain" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/keychain/" />
@@ -193,7 +196,8 @@ if (!doNotTrack) {
   <div class="entry-content">
     <p>Introduction I was eager to learn about securing user data using Keychain and biometric authentication. Here are a few steps I found:
 Caveats You can test accessing Keychain data using Touch ID and Face ID only on a real device.
-First Step The first step is to add the Privacy - Face ID Usage Description key to your Info.plist. Without it, you would not be able to retrieve data from Keychain using Face ID....</p>
+First Step The first step is to add the Privacy - Face ID Usage Description key to your Info.plist. Without it, you would not be able to retrieve data from Keychain using Face ID.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-13 07:31:49 +0300 EEST'>May 13, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Securing user data with Keychain, Touch ID, and Face ID" href="http://localhost:1313/posts/securing-user-data-with-keychain-touch-id-and-face-id/"></a>

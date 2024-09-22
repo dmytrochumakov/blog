@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Concurrency" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Concurrency" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/concurrency/" />
@@ -194,7 +197,8 @@ if (!doNotTrack) {
     <p>When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
 You can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.
 What are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
-actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&gt; String?...</p>
+actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&gt; String? { data[key] } func writeData(key: String, value: String) { data[key] = value } } What is an asynchronous function? The asynchronous function or asynchronous method can be suspended while it is partway through execution. It can pause in the middle when it’s waiting for something.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-02-04 08:29:30 +0300 +0300'>February 4, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Modern Concurrency" href="http://localhost:1313/posts/modern-concurrency/"></a>
@@ -207,7 +211,7 @@ actor DatabaseManager { private var data: [String: String] = [:] func readData(k
   </header>
   <div class="entry-content">
     <p>What is the Thread? A Thread is a small set of instructions that can be executed independently from the main program. Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time. The Thread has its own stack, registers, and program counters.
-Threads share memory address space, and it is possible to communicate between Threads using shared memory space. How to use it?...</p>
+Threads share memory address space, and it is possible to communicate between Threads using shared memory space. ...</p>
   </div>
   <footer class="entry-footer"><span title='2024-01-20 08:29:30 +0300 +0300'>January 20, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to What are Threads in Swift?" href="http://localhost:1313/posts/what-are-threads-in-swift/"></a>
@@ -221,7 +225,8 @@ Threads share memory address space, and it is possible to communicate between Th
   <div class="entry-content">
     <p>What is DispatchGroup? DispatchGroup provides a mechanism to track the completion group of tasks.
 How DispatchGroup works? DispatchGroup has three main methods, enter, leave and notify, that allow you to control the completion of a specific task.
-let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() dispatchGroup.notify(queue: .main) {} Let`s talk about each of these methods. enter — manually indicate a block has entered group. leave — manually indicate a block in the group has been completed....</p>
+let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() dispatchGroup.notify(queue: .main) {} Let`s talk about each of these methods. enter — manually indicate a block has entered group. leave — manually indicate a block in the group has been completed. notify(queue: ) — schedule a block to be submitted to a queue when all the blocks associated with a group have been completed. The queue parameter is the queue to which the supplied block will be submitted when the group is complete.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-01-10 00:00:00 +0300 +0300'>January 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DispatchGroup in Swift" href="http://localhost:1313/posts/dispatchgroup-in-swift/"></a>
@@ -234,7 +239,8 @@ let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() 
   </header>
   <div class="entry-content">
     <p>What is concurrency? The system can perform multiple tasks simultaneously. By tasks, I mean code or instructions. Modern computer chips have multiple cores that allow developers to create and run various tasks on multiple cores. Even if your chip has one core operating system it will provide context switching mechanism by enabling it to execute multiple tasks concurrently.
-Material about processes, threads I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it....</p>
+Material about processes, threads I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it. I attached links to the material to help you understand it more deeply. https://youtu.be/4rLW7zg21gI?si=49hq8Wrbpmeev41k https://youtu.be/r2__Rw8vu1M?si=b7b257Qu4Bty7OxA I will focus on implementation.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-01-07 00:00:00 +0300 +0300'>January 7, 2024</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Concurrency in Swift" href="http://localhost:1313/posts/concurrency-in-swift/"></a>

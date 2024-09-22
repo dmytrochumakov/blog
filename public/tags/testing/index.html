@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Testing" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Testing" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/testing/" />
@@ -193,7 +196,7 @@ if (!doNotTrack) {
   <div class="entry-content">
     <p>Introduction Working with batteries on iOS devices for large applications has always been tricky. The amount of energy consumed by the screen, location services, network calls, processing, background tasks, etc., is significant. From a developer’s perspective, it seems complicated, but Xcode provides tools to address this problem.
 To find the issue, you need to open Xcode and go to the Debug Navigator.
-In the Debug Navigator, you will see the Energy Impact gauge....</p>
+In the Debug Navigator, you will see the Energy Impact gauge. In the histogram, blue indicates good performance, while red indicates overhead. Based on this information, you can analyze the overhead and resolve potential issues by utilizing Instruments such as Network, Location, CPU Profile, etc. For each case, Xcode provides instruments that allow you to dive deeper and understand what is happening in detail. ...</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-07 07:25:40 +0300 EEST'>July 7, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Battery Performance Testing for iOS App" href="http://localhost:1313/posts/battery-performance-testing-for-ios-app/"></a>
@@ -206,7 +209,8 @@ In the Debug Navigator, you will see the Energy Impact gauge....</p>
   </header>
   <div class="entry-content">
     <p>Introduction I always wondered how I could automate testing the push notification process. Even when Apple introduced the possibility of dragging a configured file to the simulator to display a notification, it is still a manual process. I’ll skip testing via the terminal because I think it takes more time than using an APNS file or the RocketSim app.
-Before I was first introduced to the RocketSim app, I used an APNS file for testing push notifications....</p>
+Before I was first introduced to the RocketSim app, I used an APNS file for testing push notifications. It worked for me and my teammates, but I knew it could be better. It looks something like this:
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-06-19 07:13:19 +0300 EEST'>June 19, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Testing push notifications locally in an iOS app" href="http://localhost:1313/posts/testing-push-notifications-locally-in-an-ios-app/"></a>
@@ -219,7 +223,8 @@ Before I was first introduced to the RocketSim app, I used an APNS file for test
   </header>
   <div class="entry-content">
     <p>Introduction If you’re wondering how to test an Xcode project using GitHub Actions, here are a few steps:
-First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15....</p>
+First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15.3.app/Contents/Developer - name: Install xcpretty run: gem install xcpretty - name: Test project run: xcodebuild -project /Users/runner/work/YourProjectName/YourProjectName/YourProjectName/YourProjectName.xcodeproj -scheme YourSchemeName -destination &#39;platform=iOS Simulator,OS=17.4,name=iPhone 15 Pro&#39; clean build test | xcpretty Caveats If you don’t specify the path to the Xcode project, you will receive an error like this: xcodebuild: error: ‘YourProjectName.xcodeproj&#39; does not exist.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-04-26 06:51:21 +0300 EEST'>April 26, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Testing Xcode project using Github Actions" href="http://localhost:1313/posts/testing-xcode-project-using-github-actions/"></a>
@@ -232,7 +237,8 @@ First, you need to create a .github/workflows folder with a CI.yml file inside y
   </header>
   <div class="entry-content">
     <p>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to test a project in the fastest way.
-One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you’re in the project directory, you can run xcodebuild with the appropriate parameters to build your project....</p>
+One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you’re in the project directory, you can run xcodebuild with the appropriate parameters to build your project. Example: xcodebuild -project YourProject.xcodeproj -scheme YourSchemeName test Another way is by integrating fastlane into your workflow: Outline of the process Install Fastlane: If you haven’t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-04-12 03:20:34 +0300 EEST'>April 12, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Testing Xcode project using the CLI" href="http://localhost:1313/posts/testing-xcode-project-using-the-cli/"></a>

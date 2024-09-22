@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Text to Speech" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Text to Speech" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/text-to-speech/" />
@@ -194,7 +197,8 @@ if (!doNotTrack) {
     <p>Introduction I was eager to learn how converting Text To Speech works in iOS. Here is what I discovered:
 First Step The first step is to add AVSpeechSynthesizer, an object that produces synthesized speech from text utterances.
 @State private var speechSynthesizer = AVSpeechSynthesizer() Second Step The second step is to add AVSpeechUtterance, an object that encapsulates the text for speech synthesis.
-private var utterance: AVSpeechUtterance { let inputMessage = &#34;Hello world!...</p>
+private var utterance: AVSpeechUtterance { let inputMessage = &#34;Hello world!&#34; let utterance = AVSpeechUtterance(string: inputMessage) utterance.voice = AVSpeechSynthesisVoice(language: &#34;en-US&#34;) return utterance } Optional You can configure pitch, rate, and voice parameters.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-24 07:52:07 +0300 EEST'>May 24, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Text To Speech iOS" href="http://localhost:1313/posts/text-to-speech-ios/"></a>

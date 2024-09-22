@@ -2,7 +2,7 @@
 <html lang="en" dir="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.123.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.134.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -77,17 +77,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Dmytro&#39;s Blog" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Dmytro&#39;s Blog" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/" />
@@ -197,13 +200,28 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Implementing gRPC Swift
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction I’ve never had the chance to use this technology before. I’ve always wondered how gRPC operates. In this article, I will explore what gRPC is, how to install and use it, and when to use gRPC.
+What is gRPC? gRPC is an open-source, high-performance framework that facilitates efficient communication in distributed systems. gRPC is an implementation of the RPC (Remote Procedure Call) protocol, which enables services to call functions on other machines as if they were local software methods. gRPC was developed by Google in 2015, and it includes several features that enhance the way remote procedure calls are made. For instance, its use of Protocol Buffers (Protobuf) supports strongly typed service contracts, data serialization, and code generation in a variety of programming languages. It also uses HTTP/2 as its transport protocol, which facilitates bi-directional streaming and reduces latency.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-07-16 07:16:41 +0300 EEST'>July 16, 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Implementing gRPC Swift" href="http://localhost:1313/posts/implementing-grpc-swift/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Scanning NFC tags using CoreNFC in an iOS app
     </h2>
   </header>
   <div class="entry-content">
     <p>Introduction I never had a chance to work with NFC (Near Field Communication), but I have always been curious to find out how it works. In this article, I will focus on scanning NFC tags using CoreNFC with NFCNDEFReaderSession.
 Preparation Before we begin, let’s add the necessary objects:
-Near Field Communication Tag Reading capability to the project. Privacy - NFC Scan Usage Description key to Info.plist. Near Field Communication Tag Reader Session Formats to the entitlements file....</p>
+Near Field Communication Tag Reading capability to the project. Privacy - NFC Scan Usage Description key to Info.plist. Near Field Communication Tag Reader Session Formats to the entitlements file. First Step The first step before starting scanning is to check if the device supports NFC reading by using the NFCNDEFReaderSession.readingAvailable property.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-12 07:27:51 +0300 EEST'>July 12, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Scanning NFC tags using CoreNFC in an iOS app" href="http://localhost:1313/posts/scanning-nfc-tags-using-corenfc-in-an-ios-app/"></a>
@@ -217,7 +235,8 @@ Near Field Communication Tag Reading capability to the project. Privacy - NFC Sc
   <div class="entry-content">
     <p>Introduction I had the chance to work on a project where communication via BLE was at the heart of the project.
 Before adding any code to application, I always asked myself about two scenarios:
-The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices. The second scenario is when the device acts as a peripheral device by using CBCharacteristic and changes its value....</p>
+The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices. The second scenario is when the device acts as a peripheral device by using CBCharacteristic and changes its value. In this article, I will focus on the first scenario and will show how to scan for peripheral devices.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-10 07:27:14 +0300 EEST'>July 10, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Scanning for peripheral devices using BLE in an iOS app" href="http://localhost:1313/posts/scanning-for-peripheral-devices-using-ble-in-an-ios-app/"></a>
@@ -231,7 +250,7 @@ The first scenario is when the device acts as a central device while searching f
   <div class="entry-content">
     <p>Introduction Working with batteries on iOS devices for large applications has always been tricky. The amount of energy consumed by the screen, location services, network calls, processing, background tasks, etc., is significant. From a developer’s perspective, it seems complicated, but Xcode provides tools to address this problem.
 To find the issue, you need to open Xcode and go to the Debug Navigator.
-In the Debug Navigator, you will see the Energy Impact gauge....</p>
+In the Debug Navigator, you will see the Energy Impact gauge. In the histogram, blue indicates good performance, while red indicates overhead. Based on this information, you can analyze the overhead and resolve potential issues by utilizing Instruments such as Network, Location, CPU Profile, etc. For each case, Xcode provides instruments that allow you to dive deeper and understand what is happening in detail. ...</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-07 07:25:40 +0300 EEST'>July 7, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Battery Performance Testing for iOS App" href="http://localhost:1313/posts/battery-performance-testing-for-ios-app/"></a>
@@ -246,22 +265,11 @@ In the Debug Navigator, you will see the Energy Impact gauge....</p>
     <p>Introduction In the previous chapter, I started talking about the video game creation process, from project setup to adding the background. Now, I’m going to add the player and physics to it.
 You can download the project here.
 First Step The first step is to initialize player using SKSpriteNode, set up player.position, and add player as a child node.
-SKSpriteNode - is an onscreen graphical element that can be initialized from an image or a solid color....</p>
+SKSpriteNode - is an onscreen graphical element that can be initialized from an image or a solid color.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-03 06:39:04 +0300 EEST'>July 3, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Creating a 2D Space Game for iOS Using SpriteKit - Part 2" href="http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-2/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Creating a 2D Space Game for iOS Using SpriteKit - Part 1
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I have never tried creating a game before; it feels like magic to me. I know that games have an enormous amount of underlying layers of abstractions and tools such as game engines, rendering, and so on. I have always been eager to learn at least 1% of the game creation process. In this article, I’m going to explore step-by-step instructions for creating a game for the iOS platform using SpriteKit....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-06-28 07:18:59 +0300 EEST'>June 28, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Creating a 2D Space Game for iOS Using SpriteKit - Part 1" href="http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-1/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Fri, 20 Sep 2024 07:15:17 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/queue/index.xml" rel="self" type="application/rss+xml" />
@@ -18,11 +18,17 @@
       <link>http://localhost:1313/posts/dsa-queue/</link>
       <pubDate>Fri, 20 Sep 2024 07:15:17 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-queue/</guid>
-      <description>What is a Queue? A Queue is an abstract data type that serves as an ordered collection of elements.
-A simple queue typically has several operations:
-push(item) - adds an item to the tail pop() - removes and returns an item from the head These operations make a queue a FIFO (First In, First Out) data structure.
-Implementation There are two ways to implement a queue.
-The first and simplest (but less efficient) way is by using an array and basic operations:</description>
+      <description>&lt;h3 id=&#34;what-is-a-queue&#34;&gt;What is a Queue?&lt;/h3&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Queue_(abstract_data_type)&#34;&gt;Queue&lt;/a&gt; is an abstract data type that serves as an ordered collection of elements.&lt;/p&gt;
+&lt;p&gt;A simple queue typically has several operations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;push(item)&lt;/code&gt; - adds an item to the &lt;code&gt;tail&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pop()&lt;/code&gt; - removes and returns an item from the &lt;code&gt;head&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These operations make a queue a &lt;strong&gt;FIFO&lt;/strong&gt; (First In, First Out) data structure.&lt;/p&gt;
+&lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
+&lt;p&gt;There are two ways to implement a queue.&lt;/p&gt;
+&lt;p&gt;The first and simplest (but less efficient) way is by using an array and basic operations:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

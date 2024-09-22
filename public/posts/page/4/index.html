@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Posts" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Posts" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/posts/" />
@@ -202,12 +205,26 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Optimizing iOS App Performance - Common Techniques
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction A well-performing application is the heart of a good user experience. If an application responds well, it helps attract more users and grow the business around it. On the other hand, if it performs poorly, it frustrates users and leads them to uninstall the app. To solve these issues, we need tools to monitor app behavior. Luckily for us, Xcode provides a list of tools that will help us resolve these problems.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-07-31 07:26:30 +0300 EEST'>July 31, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Optimizing iOS App Performance - Common Techniques" href="http://localhost:1313/posts/optimizing-ios-app-performance-common-techniques/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Implementing HealthKit in an iOS App
     </h2>
   </header>
   <div class="entry-content">
     <p>Introduction Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.
-Preparation Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store....</p>
+Preparation Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store. Let’s add:
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-26 07:18:58 +0300 EEST'>July 26, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Implementing HealthKit in an iOS App" href="http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/"></a>
@@ -221,7 +238,8 @@ Preparation Before we dive into implementation, I assume that you have an active
   <div class="entry-content">
     <p>Introduction Nowadays, location is an essential feature in almost every application. It’s very important to know the best ways to implement it without affecting performance and user experience. In this article, I will focus on how to implement general methods in location service.
 Preparation Before we begin, let’s add location permission keys to Info.plist:
-Privacy - Location When In Use Usage Description Privacy - Location Always and When In Use Usage Description First Step The first step is to create LocationService with the requestPermissions method to be able to receive location events....</p>
+Privacy - Location When In Use Usage Description Privacy - Location Always and When In Use Usage Description First Step The first step is to create LocationService with the requestPermissions method to be able to receive location events.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-23 07:04:25 +0300 EEST'>July 23, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Implementing Location Service" href="http://localhost:1313/posts/implementing-location-service/"></a>
@@ -235,7 +253,8 @@ Privacy - Location When In Use Usage Description Privacy - Location Always and W
   <div class="entry-content">
     <p>Introduction I haven’t had the opportunity to build a chatbot before. This topic was trending some time ago, and I always wanted to implement it myself. In this article, I will focus on the steps you need to know to successfully build and run a chatbot application.
 First Step The first step is to add the OpenAI dependency to your project:
-.package(url: &#34;https://github.com/MacPaw/OpenAI.git&#34;, branch: &#34;main&#34;) dependencies: [ .byNameItem( name: &#34;OpenAI&#34;, condition: ....</p>
+.package(url: &#34;https://github.com/MacPaw/OpenAI.git&#34;, branch: &#34;main&#34;) dependencies: [ .byNameItem( name: &#34;OpenAI&#34;, condition: .when(platforms: [ .iOS, ]) ), ], Second Step The second step is to generate an OpenAI key and replace it inside your project.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-21 07:25:28 +0300 EEST'>July 21, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Implementing ChatGPT in an iOS App" href="http://localhost:1313/posts/implementing-chatgpt-in-an-ios-app/"></a>
@@ -249,23 +268,11 @@ First Step The first step is to add the OpenAI dependency to your project:
   <div class="entry-content">
     <p>Introduction The Apple Sign-In feature is very helpful and offers users login functionality with one click. It could be highly beneficial from a business perspective to attract more potential customers by providing easy and secure access to application functionality. In this article, I will focus on how to implement Apple Sign-In.
 Before implementation, let’s set up the necessary options to be able to run the app without errors.
-Add Sign in with Apple Capability to the project 📝 Before testing on the simulator, you need to be signed in to an account with enabled two-factor authentication....</p>
+Add Sign in with Apple Capability to the project 📝 Before testing on the simulator, you need to be signed in to an account with enabled two-factor authentication.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-18 07:26:13 +0300 EEST'>July 18, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Implementing Apple Sign-In to an iOS App" href="http://localhost:1313/posts/implementing-apple-sign-in-to-an-ios-app/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Implementing gRPC Swift
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I’ve never had the chance to use this technology before. I’ve always wondered how gRPC operates. In this article, I will explore what gRPC is, how to install and use it, and when to use gRPC.
-What is gRPC? gRPC is an open-source, high-performance framework that facilitates efficient communication in distributed systems. gRPC is an implementation of the RPC (Remote Procedure Call) protocol, which enables services to call functions on other machines as if they were local software methods....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-07-16 07:16:41 +0300 EEST'>July 16, 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Implementing gRPC Swift" href="http://localhost:1313/posts/implementing-grpc-swift/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

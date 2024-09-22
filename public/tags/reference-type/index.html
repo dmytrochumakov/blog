@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Reference Type" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Reference Type" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/reference-type/" />
@@ -195,7 +198,7 @@ if (!doNotTrack) {
 ‘Reference type’ is instance that shares a single copy of data.
 Assigning a reference type to a constant or variable, or passing it into a function or method, it is always a reference to a shared instance that is assigned or passed in.
 Example You can pass your property value by sharing the same address in memory.
-// Reference type example class Storage { var data = “data-example” } var storage = Storage() print(&#34;\(storage....</p>
+// Reference type example class Storage { var data = “data-example” } var storage = Storage() print(&#34;\(storage.data)&#34;) // prints &#34;data-example&#34; print(&#34;storage address:&#34;, Unmanaged.passUnretained(storage).toOpaque()) var copiedStorage = storage copiedStorage.data = “new-data” print(&#34;\(storage.data), \(copiedStorage.data)&#34;) // prints &#34;new-data, new-data&#34; print(&#34;copiedStorage address:&#34;, Unmanaged.passUnretained(copiedStorage).toOpaque()) ...</p>
   </div>
   <footer class="entry-footer"><span title='2023-12-03 00:00:00 +0300 +0300'>December 3, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to What is “reference type” in Swift?" href="http://localhost:1313/posts/what-is-reference-type-in-swift/"></a>

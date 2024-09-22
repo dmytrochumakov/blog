@@ -7,8 +7,11 @@
 <meta name="robots" content="index, follow">
 <title>Implementing HealthKit in an iOS App | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Implementing, HealthKit, iOS, App, Swift, SwiftUI, Modern Concurrency">
-<meta name="description" content="Introduction Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.
-Preparation Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store.">
+<meta name="description" content="Introduction
+Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.
+Preparation
+Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store.
+Let’s add:">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -75,19 +78,25 @@ Preparation Before we dive into implementation, I assume that you have an active
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Implementing HealthKit in an iOS App" />
-<meta property="og:description" content="Introduction Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.
-Preparation Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store." />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Implementing HealthKit in an iOS App" />
+<meta property="og:description" content="Introduction
+Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.
+Preparation
+Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store.
+Let’s add:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -98,8 +107,11 @@ Preparation Before we dive into implementation, I assume that you have an active
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Implementing HealthKit in an iOS App"/>
-<meta name="twitter:description" content="Introduction Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.
-Preparation Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store."/>
+<meta name="twitter:description" content="Introduction
+Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.
+Preparation
+Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store.
+Let’s add:"/>
 
 
 <script type="application/ld+json">
@@ -128,7 +140,7 @@ Preparation Before we dive into implementation, I assume that you have an active
   "@type": "BlogPosting",
   "headline": "Implementing HealthKit in an iOS App",
   "name": "Implementing HealthKit in an iOS App",
-  "description": "Introduction Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.\nPreparation Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store.",
+  "description": "Introduction Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.\nPreparation Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store. Let’s add:\n",
   "keywords": [
     "Implementing", "HealthKit", "iOS", "App", "Swift", "SwiftUI", "Modern Concurrency"
   ],

@@ -7,8 +7,9 @@
 <meta name="robots" content="index, follow">
 <title>Testing push notifications locally in an iOS app | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Testing, Push Notifications, locally, APNS, RocketSim, iOS, app">
-<meta name="description" content="Introduction I always wondered how I could automate testing the push notification process. Even when Apple introduced the possibility of dragging a configured file to the simulator to display a notification, it is still a manual process. I&rsquo;ll skip testing via the terminal because I think it takes more time than using an APNS file or the RocketSim app.
-Before I was first introduced to the RocketSim app, I used an APNS file for testing push notifications.">
+<meta name="description" content="Introduction
+I always wondered how I could automate testing the push notification process. Even when Apple introduced the possibility of dragging a configured file to the simulator to display a notification, it is still a manual process. I&rsquo;ll skip testing via the terminal because I think it takes more time than using an APNS file or the RocketSim app.
+Before I was first introduced to the RocketSim app, I used an APNS file for testing push notifications. It worked for me and my teammates, but I knew it could be better. It looks something like this:">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/testing-push-notifications-locally-in-an-ios-app/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -75,19 +76,23 @@ Before I was first introduced to the RocketSim app, I used an APNS file for test
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Testing push notifications locally in an iOS app" />
-<meta property="og:description" content="Introduction I always wondered how I could automate testing the push notification process. Even when Apple introduced the possibility of dragging a configured file to the simulator to display a notification, it is still a manual process. I&rsquo;ll skip testing via the terminal because I think it takes more time than using an APNS file or the RocketSim app.
-Before I was first introduced to the RocketSim app, I used an APNS file for testing push notifications." />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Testing push notifications locally in an iOS app" />
+<meta property="og:description" content="Introduction
+I always wondered how I could automate testing the push notification process. Even when Apple introduced the possibility of dragging a configured file to the simulator to display a notification, it is still a manual process. I&rsquo;ll skip testing via the terminal because I think it takes more time than using an APNS file or the RocketSim app.
+Before I was first introduced to the RocketSim app, I used an APNS file for testing push notifications. It worked for me and my teammates, but I knew it could be better. It looks something like this:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/testing-push-notifications-locally-in-an-ios-app/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -98,8 +103,9 @@ Before I was first introduced to the RocketSim app, I used an APNS file for test
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Testing push notifications locally in an iOS app"/>
-<meta name="twitter:description" content="Introduction I always wondered how I could automate testing the push notification process. Even when Apple introduced the possibility of dragging a configured file to the simulator to display a notification, it is still a manual process. I&rsquo;ll skip testing via the terminal because I think it takes more time than using an APNS file or the RocketSim app.
-Before I was first introduced to the RocketSim app, I used an APNS file for testing push notifications."/>
+<meta name="twitter:description" content="Introduction
+I always wondered how I could automate testing the push notification process. Even when Apple introduced the possibility of dragging a configured file to the simulator to display a notification, it is still a manual process. I&rsquo;ll skip testing via the terminal because I think it takes more time than using an APNS file or the RocketSim app.
+Before I was first introduced to the RocketSim app, I used an APNS file for testing push notifications. It worked for me and my teammates, but I knew it could be better. It looks something like this:"/>
 
 
 <script type="application/ld+json">
@@ -128,7 +134,7 @@ Before I was first introduced to the RocketSim app, I used an APNS file for test
   "@type": "BlogPosting",
   "headline": "Testing push notifications locally in an iOS app",
   "name": "Testing push notifications locally in an iOS app",
-  "description": "Introduction I always wondered how I could automate testing the push notification process. Even when Apple introduced the possibility of dragging a configured file to the simulator to display a notification, it is still a manual process. I\u0026rsquo;ll skip testing via the terminal because I think it takes more time than using an APNS file or the RocketSim app.\nBefore I was first introduced to the RocketSim app, I used an APNS file for testing push notifications.",
+  "description": "Introduction I always wondered how I could automate testing the push notification process. Even when Apple introduced the possibility of dragging a configured file to the simulator to display a notification, it is still a manual process. I\u0026rsquo;ll skip testing via the terminal because I think it takes more time than using an APNS file or the RocketSim app.\nBefore I was first introduced to the RocketSim app, I used an APNS file for testing push notifications. It worked for me and my teammates, but I knew it could be better. It looks something like this:\n",
   "keywords": [
     "Testing", "Push Notifications", "locally", "APNS", "RocketSim", "iOS", "app"
   ],

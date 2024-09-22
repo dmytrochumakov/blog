@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Modern Concurrency" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Modern Concurrency" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/modern-concurrency/" />
@@ -192,7 +195,8 @@ if (!doNotTrack) {
   </header>
   <div class="entry-content">
     <p>Introduction Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.
-Preparation Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store....</p>
+Preparation Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store. Let’s add:
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-26 07:18:58 +0300 EEST'>July 26, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Implementing HealthKit in an iOS App" href="http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/"></a>
@@ -207,7 +211,8 @@ Preparation Before we dive into implementation, I assume that you have an active
     <p>When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
 You can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.
 What are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
-actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&gt; String?...</p>
+actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&gt; String? { data[key] } func writeData(key: String, value: String) { data[key] = value } } What is an asynchronous function? The asynchronous function or asynchronous method can be suspended while it is partway through execution. It can pause in the middle when it’s waiting for something.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-02-04 08:29:30 +0300 +0300'>February 4, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Modern Concurrency" href="http://localhost:1313/posts/modern-concurrency/"></a>

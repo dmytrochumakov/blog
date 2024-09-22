@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Wed, 31 Jul 2024 07:26:30 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/app/index.xml" rel="self" type="application/rss+xml" />
@@ -18,149 +18,451 @@
       <link>http://localhost:1313/posts/optimizing-ios-app-performance-common-techniques/</link>
       <pubDate>Wed, 31 Jul 2024 07:26:30 +0300</pubDate>
       <guid>http://localhost:1313/posts/optimizing-ios-app-performance-common-techniques/</guid>
-      <description>Introduction A well-performing application is the heart of a good user experience. If an application responds well, it helps attract more users and grow the business around it. On the other hand, if it performs poorly, it frustrates users and leads them to uninstall the app. To solve these issues, we need tools to monitor app behavior. Luckily for us, Xcode provides a list of tools that will help us resolve these problems.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;A well-performing application is the heart of a good user experience. If an application responds well, it helps attract more users and grow the business around it. On the other hand, if it performs poorly, it frustrates users and leads them to uninstall the app. To solve these issues, we need tools to monitor app behavior. Luckily for us, Xcode provides a list of tools that will help us resolve these problems.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Implementing HealthKit in an iOS App</title>
       <link>http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/</link>
       <pubDate>Fri, 26 Jul 2024 07:18:58 +0300</pubDate>
       <guid>http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/</guid>
-      <description>Introduction Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.
-Preparation Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.&lt;/p&gt;
+&lt;h3 id=&#34;preparation&#34;&gt;Preparation&lt;/h3&gt;
+&lt;p&gt;Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store.
+Let’s add:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Implementing ChatGPT in an iOS App</title>
       <link>http://localhost:1313/posts/implementing-chatgpt-in-an-ios-app/</link>
       <pubDate>Sun, 21 Jul 2024 07:25:28 +0300</pubDate>
       <guid>http://localhost:1313/posts/implementing-chatgpt-in-an-ios-app/</guid>
-      <description>Introduction I haven&amp;rsquo;t had the opportunity to build a chatbot before. This topic was trending some time ago, and I always wanted to implement it myself. In this article, I will focus on the steps you need to know to successfully build and run a chatbot application.
-First Step The first step is to add the OpenAI dependency to your project:
-.package(url: &amp;#34;https://github.com/MacPaw/OpenAI.git&amp;#34;, branch: &amp;#34;main&amp;#34;) dependencies: [ .byNameItem( name: &amp;#34;OpenAI&amp;#34;, condition: .</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I haven&amp;rsquo;t had the opportunity to build a chatbot before. This topic was trending some time ago, and I always wanted to implement it myself. In this article, I will focus on the steps you need to know to successfully build and run a chatbot application.&lt;/p&gt;
+&lt;h3 id=&#34;first-step&#34;&gt;First Step&lt;/h3&gt;
+&lt;p&gt;The first step is to add the &lt;a href=&#34;https://github.com/MacPaw/OpenAI&#34;&gt;OpenAI&lt;/a&gt; dependency to your project:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;package&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;https://github.com/MacPaw/OpenAI.git&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;branch&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;main&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dependencies&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;byNameItem&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;OpenAI&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;condition&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;when&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;platforms&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;iOS&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;second-step&#34;&gt;Second Step&lt;/h3&gt;
+&lt;p&gt;The second step is to &lt;a href=&#34;https://platform.openai.com/api-keys&#34;&gt;generate an OpenAI key&lt;/a&gt; and replace it inside your project.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Implementing Apple Sign-In to an iOS App</title>
       <link>http://localhost:1313/posts/implementing-apple-sign-in-to-an-ios-app/</link>
       <pubDate>Thu, 18 Jul 2024 07:26:13 +0300</pubDate>
       <guid>http://localhost:1313/posts/implementing-apple-sign-in-to-an-ios-app/</guid>
-      <description>Introduction The Apple Sign-In feature is very helpful and offers users login functionality with one click. It could be highly beneficial from a business perspective to attract more potential customers by providing easy and secure access to application functionality. In this article, I will focus on how to implement Apple Sign-In.
-Before implementation, let’s set up the necessary options to be able to run the app without errors.
-Add Sign in with Apple Capability to the project &amp;#x1f4dd; Before testing on the simulator, you need to be signed in to an account with enabled two-factor authentication.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;The Apple Sign-In feature is very helpful and offers users login functionality with one click. It could be highly beneficial from a business perspective to attract more potential customers by providing easy and secure access to application functionality. In this article, I will focus on how to implement Apple Sign-In.&lt;/p&gt;
+&lt;p&gt;Before implementation, let’s set up the necessary options to be able to run the app without errors.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add &lt;code&gt;Sign in with Apple&lt;/code&gt; Capability to the project
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-f7bcf&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-f7bcf&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/0.png#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#x1f4dd; Before testing on the simulator, you need to be signed in to an account with enabled two-factor authentication.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Scanning NFC tags using CoreNFC in an iOS app</title>
       <link>http://localhost:1313/posts/scanning-nfc-tags-using-corenfc-in-an-ios-app/</link>
       <pubDate>Fri, 12 Jul 2024 07:27:51 +0300</pubDate>
       <guid>http://localhost:1313/posts/scanning-nfc-tags-using-corenfc-in-an-ios-app/</guid>
-      <description>Introduction I never had a chance to work with NFC (Near Field Communication), but I have always been curious to find out how it works. In this article, I will focus on scanning NFC tags using CoreNFC with NFCNDEFReaderSession.
-Preparation Before we begin, let&amp;rsquo;s add the necessary objects:
-Near Field Communication Tag Reading capability to the project. Privacy - NFC Scan Usage Description key to Info.plist. Near Field Communication Tag Reader Session Formats to the entitlements file.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I never had a chance to work with NFC (Near Field Communication), but I have always been curious to find out how it works. In this article, I will focus on scanning NFC tags using &lt;a href=&#34;https://developer.apple.com/documentation/corenfc&#34;&gt;&lt;code&gt;CoreNFC&lt;/code&gt;&lt;/a&gt; with &lt;a href=&#34;https://developer.apple.com/documentation/corenfc/nfcndefreadersession&#34;&gt;&lt;code&gt;NFCNDEFReaderSession&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;preparation&#34;&gt;Preparation&lt;/h3&gt;
+&lt;p&gt;Before we begin, let&amp;rsquo;s add the necessary objects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Near Field Communication Tag Reading&lt;/code&gt; capability to the project.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Privacy - NFC Scan Usage Description&lt;/code&gt; key to &lt;code&gt;Info.plist&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Near Field Communication Tag Reader Session Formats&lt;/code&gt; to the entitlements file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;first-step&#34;&gt;First Step&lt;/h3&gt;
+&lt;p&gt;The first step before starting scanning is to check if the device supports NFC reading by using the &lt;code&gt;NFCNDEFReaderSession.readingAvailable&lt;/code&gt; property.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Scanning for peripheral devices using BLE in an iOS app</title>
       <link>http://localhost:1313/posts/scanning-for-peripheral-devices-using-ble-in-an-ios-app/</link>
       <pubDate>Wed, 10 Jul 2024 07:27:14 +0300</pubDate>
       <guid>http://localhost:1313/posts/scanning-for-peripheral-devices-using-ble-in-an-ios-app/</guid>
-      <description>Introduction I had the chance to work on a project where communication via BLE was at the heart of the project.
-Before adding any code to application, I always asked myself about two scenarios:
-The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices. The second scenario is when the device acts as a peripheral device by using CBCharacteristic and changes its value.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I had the chance to work on a project where communication via BLE was at the heart of the project.&lt;/p&gt;
+&lt;p&gt;Before adding any code to application, I always asked myself about two scenarios:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices.&lt;/li&gt;
+&lt;li&gt;The second scenario is when the device acts as a peripheral device by using &lt;code&gt;CBCharacteristic&lt;/code&gt; and changes its value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this article, I will focus on the first scenario and will show how to scan for peripheral devices.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Battery Performance Testing for iOS App</title>
       <link>http://localhost:1313/posts/battery-performance-testing-for-ios-app/</link>
       <pubDate>Sun, 07 Jul 2024 07:25:40 +0300</pubDate>
       <guid>http://localhost:1313/posts/battery-performance-testing-for-ios-app/</guid>
-      <description>Introduction Working with batteries on iOS devices for large applications has always been tricky. The amount of energy consumed by the screen, location services, network calls, processing, background tasks, etc., is significant. From a developer&amp;rsquo;s perspective, it seems complicated, but Xcode provides tools to address this problem.
-To find the issue, you need to open Xcode and go to the Debug Navigator.
-In the Debug Navigator, you will see the Energy Impact gauge.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;Working with batteries on iOS devices for large applications has always been tricky. The amount of energy consumed by the &lt;code&gt;screen&lt;/code&gt;, &lt;code&gt;location services&lt;/code&gt;, &lt;code&gt;network calls&lt;/code&gt;, &lt;code&gt;processing&lt;/code&gt;, &lt;code&gt;background tasks&lt;/code&gt;, etc., is significant. From a developer&amp;rsquo;s perspective, it seems complicated, but Xcode provides tools to address this problem.&lt;/p&gt;
+&lt;p&gt;To find the issue, you need to open Xcode and go to the &lt;code&gt;Debug Navigator&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In the &lt;code&gt;Debug Navigator&lt;/code&gt;, you will see the &lt;code&gt;Energy Impact&lt;/code&gt; gauge.
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-f7bcf&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-f7bcf&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/0.png#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+
+In the histogram, &lt;code&gt;blue&lt;/code&gt; indicates good performance, while &lt;code&gt;red&lt;/code&gt; indicates overhead.
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-793fa&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-793fa&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/1.png#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+
+Based on this information, you can analyze the overhead and resolve potential issues by utilizing &lt;code&gt;Instruments&lt;/code&gt; such as &lt;code&gt;Network&lt;/code&gt;, &lt;code&gt;Location&lt;/code&gt;, &lt;code&gt;CPU Profile&lt;/code&gt;, etc. For each case, Xcode provides instruments that allow you to dive deeper and understand what is happening in detail.
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-ebb98&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-ebb98&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/2.png#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;</description>
     </item>
     <item>
       <title>Testing push notifications locally in an iOS app</title>
       <link>http://localhost:1313/posts/testing-push-notifications-locally-in-an-ios-app/</link>
       <pubDate>Wed, 19 Jun 2024 07:13:19 +0300</pubDate>
       <guid>http://localhost:1313/posts/testing-push-notifications-locally-in-an-ios-app/</guid>
-      <description>Introduction I always wondered how I could automate testing the push notification process. Even when Apple introduced the possibility of dragging a configured file to the simulator to display a notification, it is still a manual process. I&amp;rsquo;ll skip testing via the terminal because I think it takes more time than using an APNS file or the RocketSim app.
-Before I was first introduced to the RocketSim app, I used an APNS file for testing push notifications.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I always wondered how I could automate testing the push notification process. Even when Apple introduced the possibility of dragging a configured file to the simulator to display a notification, it is still a manual process. I&amp;rsquo;ll skip testing via the terminal because I think it takes more time than using an APNS file or the &lt;a href=&#34;https://www.rocketsim.app/&#34;&gt;RocketSim app&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Before I was first introduced to the RocketSim app, I used an APNS file for testing push notifications. It worked for me and my teammates, but I knew it could be better. It looks something like this:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Adding Push Notifications to an iOS App</title>
       <link>http://localhost:1313/posts/adding-push-notifications-to-an-ios-app/</link>
       <pubDate>Fri, 14 Jun 2024 07:29:01 +0300</pubDate>
       <guid>http://localhost:1313/posts/adding-push-notifications-to-an-ios-app/</guid>
-      <description>Introduction If you start a project from scratch, you need to always create some kind of service like PushNotificationService that will be responsible for handling push notification events. In this article, I want to explore a simple implementation of PushNotificationService to be able to reuse and customize it in future projects.
-First Step The first step is to add the Push Notifications capability to your project. Go to your project -&amp;gt; Signing &amp;amp; Capabilities -&amp;gt; Tap + Capability -&amp;gt; Search for Push Notifications.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;If you start a project from scratch, you need to always create some kind of service like &lt;code&gt;PushNotificationService&lt;/code&gt; that will be responsible for handling push notification events. In this article, I want to explore a simple implementation of &lt;code&gt;PushNotificationService&lt;/code&gt; to be able to reuse and customize it in future projects.&lt;/p&gt;
+&lt;h3 id=&#34;first-step&#34;&gt;First Step&lt;/h3&gt;
+&lt;p&gt;The first step is to add the Push Notifications capability to your project. Go to your project -&amp;gt; Signing &amp;amp; Capabilities -&amp;gt; Tap &lt;code&gt;+ Capability&lt;/code&gt; -&amp;gt; Search for Push Notifications.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Implementing In-App Purchases to SwiftUI app using StoreKit 2</title>
       <link>http://localhost:1313/posts/implementing-in-app-purchases-to-swiftui-app-using-storekit-2/</link>
       <pubDate>Sun, 12 May 2024 07:57:51 +0300</pubDate>
       <guid>http://localhost:1313/posts/implementing-in-app-purchases-to-swiftui-app-using-storekit-2/</guid>
-      <description>Introduction I was wondering how to add in-app purchases to my app. I chose non-consumable in-app purchase because you can pay one time for this item. Here are a few steps on how I did it.
-First Step Set up In-App Purchases for your app in App Store Connect account or add a .storekit configuration file and start from there. If you&amp;rsquo;ve already set up In-App Purchases in your account, you can sync the StoreKit config with that data.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I was wondering how to add in-app purchases to my app. I chose &lt;a href=&#34;https://support.apple.com/en-us/108813#:~:text=What%20is%20a%20non%2Dconsumable%20in%2Dapp%20purchase%3F&#34;&gt;non-consumable in-app purchase&lt;/a&gt; because you can pay one time for this item. Here are a few steps on how I did it.&lt;/p&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-3215a&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-3215a&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/0.gif#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;first-step&#34;&gt;First Step&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://learn.buildfire.com/en/articles/2534672-how-to-create-a-single-in-app-purchase-for-ios&#34;&gt;Set up In-App Purchases&lt;/a&gt; for your app in &lt;a href=&#34;https://appstoreconnect.apple.com/login&#34;&gt;App Store Connect&lt;/a&gt; account or add a &lt;code&gt;.storekit&lt;/code&gt; configuration file and start from there. If you&amp;rsquo;ve already set up In-App Purchases in your account, you can sync the &lt;code&gt;StoreKit config&lt;/code&gt; with that data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Implementing Apple Pay in a SwiftUI app</title>
       <link>http://localhost:1313/posts/implementing-apple-pay-in-a-swiftui-app/</link>
       <pubDate>Sat, 11 May 2024 07:25:24 +0300</pubDate>
       <guid>http://localhost:1313/posts/implementing-apple-pay-in-a-swiftui-app/</guid>
-      <description>Introduction Sometime ago, I was working on a marketplace app, and I needed to add Apple Pay to make purchases more easily. Here are a few steps on how I did it: First Step You need to add Apple Pay capability to your project. You will need to Register a Merchant ID. I will skip this step; you can find info by following this link Setting up Apple Pay. Second Step You will need to import PassKit and create PKPaymentRequest to interact with PKPaymentAuthorizationController and PKPaymentAuthorizationControllerDelegate.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;Sometime ago, I was working on a marketplace app, and I needed to add Apple Pay to make purchases more easily. Here are a few steps on how I did it:
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-3215a&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-3215a&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/0.gif#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;first-step&#34;&gt;First Step&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;You need to add &lt;a href=&#34;https://developer.apple.com/documentation/passkit_apple_pay_and_wallet/apple_pay/offering_apple_pay_in_your_app&#34;&gt;Apple Pay&lt;/a&gt; capability to your project.&lt;/li&gt;
+&lt;li&gt;You will need to &lt;code&gt;Register a Merchant ID&lt;/code&gt;. I will skip this step; you can find info by following this link &lt;a href=&#34;https://developer.apple.com/documentation/passkit_apple_pay_and_wallet/apple_pay/setting_up_apple_pay&#34;&gt;Setting up Apple Pay&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;second-step&#34;&gt;Second Step&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;You will need to &lt;code&gt;import PassKit&lt;/code&gt; and create &lt;a href=&#34;https://developer.apple.com/documentation/passkit_apple_pay_and_wallet/pkpaymentrequest&#34;&gt;&lt;code&gt;PKPaymentRequest&lt;/code&gt;&lt;/a&gt; to interact with &lt;a href=&#34;https://developer.apple.com/documentation/passkit_apple_pay_and_wallet/pkpaymentauthorizationcontroller&#34;&gt;&lt;code&gt;PKPaymentAuthorizationController&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://developer.apple.com/documentation/passkit_apple_pay_and_wallet/pkpaymentauthorizationcontrollerdelegate&#34;&gt;&lt;code&gt;PKPaymentAuthorizationControllerDelegate&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;initiateApplePay&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;c1&#34;&gt;// Create payment request&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;paymentRequest&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;PKPaymentRequest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;paymentRequest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;merchantIdentifier&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;your_merchant_identifier&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;paymentRequest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;countryCode&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;US&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;paymentRequest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;currencyCode&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;USD&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;paymentRequest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;supportedNetworks&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;visa&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;masterCard&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;amex&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;paymentRequest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;merchantCapabilities&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;threeDSecure&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;c1&#34;&gt;// Add payment items from cart&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;item&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cartItems&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;paymentItem&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;PKPaymentSummaryItem&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;label&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;item&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;amount&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;item&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;price&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;paymentRequest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;paymentSummaryItems&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;append&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;paymentItem&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;c1&#34;&gt;// Add total amount&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;totalItem&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;PKPaymentSummaryItem&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;label&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;Total&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;amount&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;totalAmount&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;paymentRequest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;paymentSummaryItems&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;append&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;totalItem&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;c1&#34;&gt;// Present Apple Pay sheet&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;paymentController&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;PKPaymentAuthorizationController&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;paymentRequest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;paymentRequest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;paymentController&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;delegate&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;paymentController&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;present&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;completion&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;nil&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;third-step&#34;&gt;Third Step&lt;/h3&gt;
+&lt;p&gt;Add UI and connect it with the view model.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UI testing SwiftUI views using XCTest Framework</title>
       <link>http://localhost:1313/posts/ui-testing-swiftui-views-using-xctest-framework/</link>
       <pubDate>Wed, 08 May 2024 06:34:32 +0300</pubDate>
       <guid>http://localhost:1313/posts/ui-testing-swiftui-views-using-xctest-framework/</guid>
-      <description>Introduction After spending some time developing my personal iOS app, I found myself in a position where I needed to add UI tests to my application. The reason behind this decision was the necessity to change the architecture to make it more scalable. However, this task proved to be challenging due to certain parts of the code being tightly coupled. The situation was quite frustrating. To address this problem, I decided to incorporate UI tests that could help identify issues during the refactoring process.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;After spending some time developing my personal iOS app, I found myself in a position where I needed to add UI tests to my application.
+The reason behind this decision was the necessity to change the architecture to make it more scalable.
+However, this task proved to be challenging due to certain parts of the code being tightly coupled.
+The situation was quite frustrating.
+To address this problem, I decided to incorporate UI tests that could help identify issues during the refactoring process.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building Dynamic Island for Video Streaming App</title>
       <link>http://localhost:1313/posts/building-dynamic-island-for-video-streaming-app/</link>
       <pubDate>Mon, 06 May 2024 07:35:52 +0300</pubDate>
       <guid>http://localhost:1313/posts/building-dynamic-island-for-video-streaming-app/</guid>
-      <description>Introduction I was curious about how to add Dynamic Island and implement it into a Video Streaming App. Here are a few steps on how you can achieve this.
-Caveats Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 &amp;quot;Failed to show Widget&amp;quot;. The solution is to configure live activities and run them through the main app.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I was curious about how to add Dynamic Island and implement it into a Video Streaming App.
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-f7bcf&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-f7bcf&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/0.png#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+
+Here are a few steps on how you can achieve this.&lt;/p&gt;
+&lt;h3 id=&#34;caveats&#34;&gt;Caveats&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error &lt;code&gt;SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 &amp;quot;Failed to show Widget&amp;quot;.&lt;/code&gt; The solution is to configure live activities and run them through the main app.&lt;/li&gt;
+&lt;li&gt;Be aware that when you add a widget to the project, in some cases, it adds all main target files to &lt;code&gt;Compile Sources&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
+&lt;p&gt;Dynamic Islands are divided into different sizes: &lt;code&gt;minimal&lt;/code&gt;, &lt;code&gt;compactTrailing&lt;/code&gt;, &lt;code&gt;compactLeading&lt;/code&gt;, and &lt;code&gt;expanded&lt;/code&gt;.
+Before proceeding, you need to add &lt;code&gt;LiveActivityManager&lt;/code&gt; to be able to display Dynamic Islands.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building Video Streaming Widget for iOS App</title>
       <link>http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/</link>
       <pubDate>Sun, 05 May 2024 07:20:29 +0300</pubDate>
       <guid>http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/</guid>
-      <description>Introduction I was exploring the idea of creating a YouTube-like widget for the lock screen on iOS devices. It wasn&amp;rsquo;t easy because most articles on the Internet discussed general implementations, such as for a coffee shop or a to-do list. Even when I found some similar versions, the project wouldn&amp;rsquo;t compile. I made the decision to approach it my way, so here&amp;rsquo;s what I found out:
-Caveats After being stuck for two or more hours without understanding why, after tapping on a button, I wasn&#39;t able to receive a callback from it and the widget always opened the main iOS app, I realized that I forgot to add AppIntent - without it, you can&amp;rsquo;t handle actions for iOS 17.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I was exploring the idea of creating a YouTube-like widget for the lock screen on iOS devices.
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-f7bcf&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-f7bcf&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/0.png#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+
+It wasn&amp;rsquo;t easy because most articles on the Internet discussed general implementations, such as for a coffee shop or a to-do list.
+Even when I found some similar versions, the project wouldn&amp;rsquo;t compile.
+I made the decision to approach it my way, so here&amp;rsquo;s what I found out:&lt;/p&gt;
+&lt;h3 id=&#34;caveats&#34;&gt;Caveats&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;After being stuck for two or more hours without understanding &lt;code&gt;why, after tapping on a button, I wasn&#39;t able to receive a callback from it and the widget always opened the main iOS app&lt;/code&gt;, I realized that I forgot to add &lt;code&gt;AppIntent&lt;/code&gt; - without it, you can&amp;rsquo;t handle actions for iOS 17.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;AppIntents&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;ButtonIntent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;AppIntent&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;LocalizedStringResource&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;ButtonIntent&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Parameter&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;perform&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;async&lt;/span&gt; &lt;span class=&#34;kr&#34;&gt;throws&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;some&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;IntentResult&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;id&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;playPause&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rawValue&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;DataModel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;shared&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;isPlaying&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;toggle&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Another crucial point is not to forget to add an explicit &lt;code&gt;init&lt;/code&gt;. If you don&amp;rsquo;t implement it explicitly, it will not work.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;AppIntents&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;ButtonIntent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;AppIntent&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;LocalizedStringResource&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;ButtonIntent&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Parameter&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;init&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;id&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;id&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;init&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;perform&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;async&lt;/span&gt; &lt;span class=&#34;kr&#34;&gt;throws&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;some&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;IntentResult&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;id&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;playPause&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;rawValue&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;DataModel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;shared&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;isPlaying&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;toggle&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;result&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Lastly, I attempted to add a &lt;code&gt;Slider&lt;/code&gt;, but I found that it&amp;rsquo;s not supported by the widget. My solution was to choose a &lt;code&gt;ProgressView&lt;/code&gt; instead.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;YouTubeLockScreenWidget&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;View&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;some&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;View&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;VStack&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;Spacer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;ProgressView&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;DataModel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;shared&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;currentTime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;total&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;DataModel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;shared&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;totalTime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;progressViewStyle&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;linear&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;Spacer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;HStack&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;n&#34;&gt;ForEach&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;allCases&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;command&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                    &lt;span class=&#34;n&#34;&gt;Button&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;intent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ButtonIntent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                        &lt;span class=&#34;n&#34;&gt;Image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;systemName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;imageSystemName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;isPlaying&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;DataModel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;shared&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;isPlaying&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kr&#34;&gt;final&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;DataModel&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;shared&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;DataModel&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;isPlaying&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Bool&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;currentTime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;TimeInterval&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;34&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;totalTime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;TimeInterval&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;304&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;enum&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;CaseIterable&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;previous&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;playPause&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;next&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;extension&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Identifiable&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;rawValue&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;imageSystemName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;isPlaying&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Bool&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;switch&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;command&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;playPause&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;isPlaying&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;pause.fill&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;play.fill&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;next&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;forward.fill&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;previous&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;backward.fill&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I had not replaced default generated code when I was adding widget to the project.
+I just added &lt;code&gt;YouTubeLockScreenWidget&lt;/code&gt; to generated &lt;code&gt;VideoStreamingWidgetEntryView&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building Video Streaming iOS App</title>
       <link>http://localhost:1313/posts/building-video-streaming-ios-app/</link>
       <pubDate>Fri, 03 May 2024 07:34:56 +0300</pubDate>
       <guid>http://localhost:1313/posts/building-video-streaming-ios-app/</guid>
-      <description>Introduction I was looking for a way to add a video player to my iOS app that could be able to play remote videos.
-Caveats Problem I found that you can&amp;rsquo;t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 &amp;quot;Operation Stopped&amp;quot; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error. I don’t know exactly what this means, but I&amp;rsquo;m speculating it&amp;rsquo;s related to some protection.
-Solution My solution was to find another video that is not related to those platforms.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I was looking for a way to add a video player to my iOS app that could be able to play remote videos.&lt;/p&gt;
+&lt;h3 id=&#34;caveats&#34;&gt;Caveats&lt;/h3&gt;
+&lt;h4 id=&#34;problem&#34;&gt;Problem&lt;/h4&gt;
+&lt;p&gt;I found that you can&amp;rsquo;t open &lt;code&gt;Vimeo&lt;/code&gt; or &lt;code&gt;Youtube&lt;/code&gt; videos because of &lt;code&gt;AVFoundationErrorDomain Code=-11850 &amp;quot;Operation Stopped&amp;quot; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939&lt;/code&gt; error.
+I don’t know exactly what this means, but I&amp;rsquo;m speculating it&amp;rsquo;s related to some protection.&lt;/p&gt;
+&lt;h4 id=&#34;solution&#34;&gt;Solution&lt;/h4&gt;
+&lt;p&gt;My solution was to find another video that is not related to those platforms.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building Group Chat using WebSockets</title>
       <link>http://localhost:1313/posts/building-group-chat-using-websockets/</link>
       <pubDate>Thu, 02 May 2024 15:15:14 +0300</pubDate>
       <guid>http://localhost:1313/posts/building-group-chat-using-websockets/</guid>
-      <description>Introduction I never had a chance to work with WebSockets, so I decided to take a look and create a group chat. Here&amp;rsquo;s what I discovered:
-To be able to send and receive messages, you need to create an interface for communication between a server and your application. In my case, I chose sendMessage and receiveMessage methods. For the server-side, I chose Node.js. For the iOS application, I chose the Socket.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I never had a chance to work with WebSockets, so I decided to take a look and create a group chat. Here&amp;rsquo;s what I discovered:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To be able to send and receive messages, you need to create an interface for communication between a server and your application. In my case, I chose &lt;code&gt;sendMessage&lt;/code&gt; and &lt;code&gt;receiveMessage&lt;/code&gt; methods.&lt;/li&gt;
+&lt;li&gt;For the server-side, I chose &lt;code&gt;Node.js&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;For the iOS application, I chose the &lt;a href=&#34;https://github.com/socketio/socket.io-client-swift&#34;&gt;Socket.IO&lt;/a&gt; library.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
+&lt;p&gt;Let’s dive deeper into the implementation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Exploring visionOS</title>
       <link>http://localhost:1313/posts/exploring-visionos/</link>
       <pubDate>Thu, 02 May 2024 08:45:39 +0300</pubDate>
       <guid>http://localhost:1313/posts/exploring-visionos/</guid>
-      <description>Introduction I find myself fascinated by the idea of creating an app for visionOS where I could possibly display 3D AirPods that I like. Here are a few steps on how you can do the same:
-First step The first step that you need to do is to create a visionOS project.
-Second step The next step would be adding a 3D object to Reality Composer Pro and exporting it as a .</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I find myself fascinated by the idea of creating an app for &lt;code&gt;visionOS&lt;/code&gt; where I could possibly display 3D AirPods that I like.
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-3215a&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-3215a&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/0.gif#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+
+Here are a few steps on how you can do the same:&lt;/p&gt;
+&lt;h3 id=&#34;first-step&#34;&gt;First step&lt;/h3&gt;
+&lt;p&gt;The first step that you need to do is to create a &lt;code&gt;visionOS&lt;/code&gt; project.&lt;/p&gt;
+&lt;h3 id=&#34;second-step&#34;&gt;Second step&lt;/h3&gt;
+&lt;p&gt;The next step would be adding a 3D object to &lt;code&gt;Reality Composer Pro&lt;/code&gt; and exporting it as a &lt;code&gt;.usdz&lt;/code&gt; file. You can download free 3D objects &lt;a href=&#34;https://sketchfab.com/feed&#34;&gt;here&lt;/a&gt;. All you need to do to download content is to register on this site.&lt;/p&gt;</description>
     </item>
     <item>
       <title>iOS AR App: Experience 3D Guitar</title>
       <link>http://localhost:1313/posts/ios-ar-app-experience-3d-guitar/</link>
       <pubDate>Wed, 01 May 2024 15:57:54 +0300</pubDate>
       <guid>http://localhost:1313/posts/ios-ar-app-experience-3d-guitar/</guid>
-      <description>Introduction I was searching for an AR implementation of a 3D guitar inside an iOS app. Here&amp;rsquo;s what I discovered:
-First Step The first step is not related to building the app. Before that you need to create a project using the Reality Composer Pro app (you can find it through Spotlight search).
-Second Step After that, you need to visit https://developer.apple.com/augmented-reality/quick-look/ and download one of the USDZ files. In my case, I chose the 3D guitar.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I was searching for an AR implementation of a 3D guitar inside an iOS app. Here&amp;rsquo;s what I discovered:&lt;/p&gt;
+&lt;h3 id=&#34;first-step&#34;&gt;First Step&lt;/h3&gt;
+&lt;p&gt;The first step is not related to building the app.
+Before that you need to create a project using the &lt;code&gt;Reality Composer Pro&lt;/code&gt; app (you can find it through &lt;code&gt;Spotlight search&lt;/code&gt;).&lt;/p&gt;
+&lt;h3 id=&#34;second-step&#34;&gt;Second Step&lt;/h3&gt;
+&lt;p&gt;After that, you need to visit &lt;a href=&#34;https://developer.apple.com/augmented-reality/quick-look/&#34;&gt;https://developer.apple.com/augmented-reality/quick-look/&lt;/a&gt; and download one of the &lt;code&gt;USDZ&lt;/code&gt; files.
+In my case, I chose the &lt;a href=&#34;https://developer.apple.com/augmented-reality/quick-look/models/stratocaster/fender_stratocaster.usdz&#34;&gt;3D guitar&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Fri, 26 Jul 2024 07:18:58 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/modern-concurrency/index.xml" rel="self" type="application/rss+xml" />
@@ -18,18 +18,35 @@
       <link>http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/</link>
       <pubDate>Fri, 26 Jul 2024 07:18:58 +0300</pubDate>
       <guid>http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/</guid>
-      <description>Introduction Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.
-Preparation Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.&lt;/p&gt;
+&lt;h3 id=&#34;preparation&#34;&gt;Preparation&lt;/h3&gt;
+&lt;p&gt;Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store.
+Let’s add:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Modern Concurrency</title>
       <link>http://localhost:1313/posts/modern-concurrency/</link>
       <pubDate>Sun, 04 Feb 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/posts/modern-concurrency/</guid>
-      <description>When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
-You can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.
-What are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
-actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&amp;gt; String?</description>
+      <description>&lt;h3 id=&#34;when-was-it-introduced&#34;&gt;When was it introduced?&lt;/h3&gt;
+&lt;p&gt;It was introduced in &lt;a href=&#34;https://github.com/apple/swift/tree/swift-5.5-RELEASE&#34;&gt;Swift 5.5&lt;/a&gt; at &lt;a href=&#34;https://developer.apple.com/videos/wwdc2021/&#34;&gt;WWDC 2021&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can find the more comprehensive info about Modern Concurrency in &lt;a href=&#34;https://gist.github.com/lattner/31ed37682ef1576b16bca1432ea9f782#swift-concurrency-manifesto&#34;&gt;Swift Concurrency Manifesto&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;what-are-actors&#34;&gt;What are actors?&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/#Actors&#34;&gt;Actors&lt;/a&gt; eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are &lt;a href=&#34;https://www.swift.org/documentation/articles/value-and-reference-types.html#:~:text=changing%20the%20value.-,Reference%20Types,-In%20Swift%2C%20classes&#34;&gt;reference types&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;actor&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;DatabaseManager&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[:]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;readData&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;writeData&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;value&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;what-is-an-asynchronous-function&#34;&gt;What is an asynchronous function?&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/#Defining-and-Calling-Asynchronous-Functions&#34;&gt;The asynchronous function&lt;/a&gt; or asynchronous method can be suspended while it is partway through execution. It can pause in the middle when it’s waiting for something.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

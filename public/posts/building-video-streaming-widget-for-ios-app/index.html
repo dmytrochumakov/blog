@@ -7,8 +7,123 @@
 <meta name="robots" content="index, follow">
 <title>Building Video Streaming Widget for iOS App | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Building, Video, Streaming, Widget, iOS, app, SwiftUI">
-<meta name="description" content="Introduction I was exploring the idea of creating a YouTube-like widget for the lock screen on iOS devices. It wasn&rsquo;t easy because most articles on the Internet discussed general implementations, such as for a coffee shop or a to-do list. Even when I found some similar versions, the project wouldn&rsquo;t compile. I made the decision to approach it my way, so here&rsquo;s what I found out:
-Caveats After being stuck for two or more hours without understanding why, after tapping on a button, I wasn&#39;t able to receive a callback from it and the widget always opened the main iOS app, I realized that I forgot to add AppIntent - without it, you can&rsquo;t handle actions for iOS 17.">
+<meta name="description" content="Introduction
+I was exploring the idea of creating a YouTube-like widget for the lock screen on iOS devices.
+
+    
+    
+    
+        
+    
+
+It wasn&rsquo;t easy because most articles on the Internet discussed general implementations, such as for a coffee shop or a to-do list.
+Even when I found some similar versions, the project wouldn&rsquo;t compile.
+I made the decision to approach it my way, so here&rsquo;s what I found out:
+Caveats
+
+After being stuck for two or more hours without understanding why, after tapping on a button, I wasn&#39;t able to receive a callback from it and the widget always opened the main iOS app, I realized that I forgot to add AppIntent - without it, you can&rsquo;t handle actions for iOS 17.
+
+import AppIntents
+
+struct ButtonIntent: AppIntent {
+    
+    static let title: LocalizedStringResource = &#34;ButtonIntent&#34;
+
+    @Parameter(title: &#34;id&#34;)
+    var id: String
+
+    func perform() async throws -&gt; some IntentResult {
+        if id == Command.playPause.rawValue {
+            DataModel.shared.isPlaying.toggle()
+        }
+        return .result()
+    }
+
+}
+
+Another crucial point is not to forget to add an explicit init. If you don&rsquo;t implement it explicitly, it will not work.
+
+import AppIntents
+
+struct ButtonIntent: AppIntent {
+
+    static let title: LocalizedStringResource = &#34;ButtonIntent&#34;
+
+    @Parameter(title: &#34;id&#34;)
+    var id: String
+
+    init(id: String) {
+        self.id = id
+    }
+
+    init() {}
+
+    func perform() async throws -&gt; some IntentResult {
+        if id == Command.playPause.rawValue {
+            DataModel.shared.isPlaying.toggle()
+        }
+        return .result()
+    }
+
+}
+
+Lastly, I attempted to add a Slider, but I found that it&rsquo;s not supported by the widget. My solution was to choose a ProgressView instead.
+
+Implementation
+struct YouTubeLockScreenWidget: View {
+
+    var body: some View {
+        VStack {
+            Spacer()
+            ProgressView(value: DataModel.shared.currentTime, total: DataModel.shared.totalTime)
+                .progressViewStyle(.linear)
+            Spacer()
+            HStack {
+                ForEach(Command.allCases) { command in
+                    Button(intent: ButtonIntent(id: command.id)) {
+                        Image(systemName: imageSystemName(isPlaying: DataModel.shared.isPlaying, command: command))
+                    }
+                }
+            }
+        }
+    }
+
+}
+final class DataModel {
+    static let shared = DataModel()
+    var isPlaying: Bool = false
+    var currentTime: TimeInterval = 34
+    var totalTime: TimeInterval = 304
+}
+
+enum Command: String, CaseIterable {
+    case previous
+    case playPause
+    case next
+}
+
+extension Command: Identifiable {
+    var id: String {
+        rawValue
+    }
+}
+
+func imageSystemName(isPlaying: Bool, command: Command) -&gt; String {
+    switch command {
+    case .playPause:
+        if isPlaying {
+            return &#34;pause.fill&#34;
+        } else {
+            return &#34;play.fill&#34;
+        }
+    case .next:
+        return &#34;forward.fill&#34;
+    case .previous:
+        return &#34;backward.fill&#34;
+    }
+}
+I had not replaced default generated code when I was adding widget to the project.
+I just added YouTubeLockScreenWidget to generated VideoStreamingWidgetEntryView.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -75,19 +190,137 @@ Caveats After being stuck for two or more hours without understanding why, after
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Building Video Streaming Widget for iOS App" />
+<meta property="og:description" content="Introduction
+I was exploring the idea of creating a YouTube-like widget for the lock screen on iOS devices.
+
+    
+    
+    
+        
+    
+
+It wasn&rsquo;t easy because most articles on the Internet discussed general implementations, such as for a coffee shop or a to-do list.
+Even when I found some similar versions, the project wouldn&rsquo;t compile.
+I made the decision to approach it my way, so here&rsquo;s what I found out:
+Caveats
+
+After being stuck for two or more hours without understanding why, after tapping on a button, I wasn&#39;t able to receive a callback from it and the widget always opened the main iOS app, I realized that I forgot to add AppIntent - without it, you can&rsquo;t handle actions for iOS 17.
+
+import AppIntents
+
+struct ButtonIntent: AppIntent {
+    
+    static let title: LocalizedStringResource = &#34;ButtonIntent&#34;
+
+    @Parameter(title: &#34;id&#34;)
+    var id: String
+
+    func perform() async throws -&gt; some IntentResult {
+        if id == Command.playPause.rawValue {
+            DataModel.shared.isPlaying.toggle()
+        }
+        return .result()
+    }
+
 }
-</script>
-<meta property="og:title" content="Building Video Streaming Widget for iOS App" />
-<meta property="og:description" content="Introduction I was exploring the idea of creating a YouTube-like widget for the lock screen on iOS devices. It wasn&rsquo;t easy because most articles on the Internet discussed general implementations, such as for a coffee shop or a to-do list. Even when I found some similar versions, the project wouldn&rsquo;t compile. I made the decision to approach it my way, so here&rsquo;s what I found out:
-Caveats After being stuck for two or more hours without understanding why, after tapping on a button, I wasn&#39;t able to receive a callback from it and the widget always opened the main iOS app, I realized that I forgot to add AppIntent - without it, you can&rsquo;t handle actions for iOS 17." />
+
+Another crucial point is not to forget to add an explicit init. If you don&rsquo;t implement it explicitly, it will not work.
+
+import AppIntents
+
+struct ButtonIntent: AppIntent {
+
+    static let title: LocalizedStringResource = &#34;ButtonIntent&#34;
+
+    @Parameter(title: &#34;id&#34;)
+    var id: String
+
+    init(id: String) {
+        self.id = id
+    }
+
+    init() {}
+
+    func perform() async throws -&gt; some IntentResult {
+        if id == Command.playPause.rawValue {
+            DataModel.shared.isPlaying.toggle()
+        }
+        return .result()
+    }
+
+}
+
+Lastly, I attempted to add a Slider, but I found that it&rsquo;s not supported by the widget. My solution was to choose a ProgressView instead.
+
+Implementation
+struct YouTubeLockScreenWidget: View {
+
+    var body: some View {
+        VStack {
+            Spacer()
+            ProgressView(value: DataModel.shared.currentTime, total: DataModel.shared.totalTime)
+                .progressViewStyle(.linear)
+            Spacer()
+            HStack {
+                ForEach(Command.allCases) { command in
+                    Button(intent: ButtonIntent(id: command.id)) {
+                        Image(systemName: imageSystemName(isPlaying: DataModel.shared.isPlaying, command: command))
+                    }
+                }
+            }
+        }
+    }
+
+}
+final class DataModel {
+    static let shared = DataModel()
+    var isPlaying: Bool = false
+    var currentTime: TimeInterval = 34
+    var totalTime: TimeInterval = 304
+}
+
+enum Command: String, CaseIterable {
+    case previous
+    case playPause
+    case next
+}
+
+extension Command: Identifiable {
+    var id: String {
+        rawValue
+    }
+}
+
+func imageSystemName(isPlaying: Bool, command: Command) -&gt; String {
+    switch command {
+    case .playPause:
+        if isPlaying {
+            return &#34;pause.fill&#34;
+        } else {
+            return &#34;play.fill&#34;
+        }
+    case .next:
+        return &#34;forward.fill&#34;
+    case .previous:
+        return &#34;backward.fill&#34;
+    }
+}
+I had not replaced default generated code when I was adding widget to the project.
+I just added YouTubeLockScreenWidget to generated VideoStreamingWidgetEntryView." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -98,8 +331,123 @@ Caveats After being stuck for two or more hours without understanding why, after
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Building Video Streaming Widget for iOS App"/>
-<meta name="twitter:description" content="Introduction I was exploring the idea of creating a YouTube-like widget for the lock screen on iOS devices. It wasn&rsquo;t easy because most articles on the Internet discussed general implementations, such as for a coffee shop or a to-do list. Even when I found some similar versions, the project wouldn&rsquo;t compile. I made the decision to approach it my way, so here&rsquo;s what I found out:
-Caveats After being stuck for two or more hours without understanding why, after tapping on a button, I wasn&#39;t able to receive a callback from it and the widget always opened the main iOS app, I realized that I forgot to add AppIntent - without it, you can&rsquo;t handle actions for iOS 17."/>
+<meta name="twitter:description" content="Introduction
+I was exploring the idea of creating a YouTube-like widget for the lock screen on iOS devices.
+
+    
+    
+    
+        
+    
+
+It wasn&rsquo;t easy because most articles on the Internet discussed general implementations, such as for a coffee shop or a to-do list.
+Even when I found some similar versions, the project wouldn&rsquo;t compile.
+I made the decision to approach it my way, so here&rsquo;s what I found out:
+Caveats
+
+After being stuck for two or more hours without understanding why, after tapping on a button, I wasn&#39;t able to receive a callback from it and the widget always opened the main iOS app, I realized that I forgot to add AppIntent - without it, you can&rsquo;t handle actions for iOS 17.
+
+import AppIntents
+
+struct ButtonIntent: AppIntent {
+    
+    static let title: LocalizedStringResource = &#34;ButtonIntent&#34;
+
+    @Parameter(title: &#34;id&#34;)
+    var id: String
+
+    func perform() async throws -&gt; some IntentResult {
+        if id == Command.playPause.rawValue {
+            DataModel.shared.isPlaying.toggle()
+        }
+        return .result()
+    }
+
+}
+
+Another crucial point is not to forget to add an explicit init. If you don&rsquo;t implement it explicitly, it will not work.
+
+import AppIntents
+
+struct ButtonIntent: AppIntent {
+
+    static let title: LocalizedStringResource = &#34;ButtonIntent&#34;
+
+    @Parameter(title: &#34;id&#34;)
+    var id: String
+
+    init(id: String) {
+        self.id = id
+    }
+
+    init() {}
+
+    func perform() async throws -&gt; some IntentResult {
+        if id == Command.playPause.rawValue {
+            DataModel.shared.isPlaying.toggle()
+        }
+        return .result()
+    }
+
+}
+
+Lastly, I attempted to add a Slider, but I found that it&rsquo;s not supported by the widget. My solution was to choose a ProgressView instead.
+
+Implementation
+struct YouTubeLockScreenWidget: View {
+
+    var body: some View {
+        VStack {
+            Spacer()
+            ProgressView(value: DataModel.shared.currentTime, total: DataModel.shared.totalTime)
+                .progressViewStyle(.linear)
+            Spacer()
+            HStack {
+                ForEach(Command.allCases) { command in
+                    Button(intent: ButtonIntent(id: command.id)) {
+                        Image(systemName: imageSystemName(isPlaying: DataModel.shared.isPlaying, command: command))
+                    }
+                }
+            }
+        }
+    }
+
+}
+final class DataModel {
+    static let shared = DataModel()
+    var isPlaying: Bool = false
+    var currentTime: TimeInterval = 34
+    var totalTime: TimeInterval = 304
+}
+
+enum Command: String, CaseIterable {
+    case previous
+    case playPause
+    case next
+}
+
+extension Command: Identifiable {
+    var id: String {
+        rawValue
+    }
+}
+
+func imageSystemName(isPlaying: Bool, command: Command) -&gt; String {
+    switch command {
+    case .playPause:
+        if isPlaying {
+            return &#34;pause.fill&#34;
+        } else {
+            return &#34;play.fill&#34;
+        }
+    case .next:
+        return &#34;forward.fill&#34;
+    case .previous:
+        return &#34;backward.fill&#34;
+    }
+}
+I had not replaced default generated code when I was adding widget to the project.
+I just added YouTubeLockScreenWidget to generated VideoStreamingWidgetEntryView."/>
 
 
 <script type="application/ld+json">
@@ -128,7 +476,7 @@ Caveats After being stuck for two or more hours without understanding why, after
   "@type": "BlogPosting",
   "headline": "Building Video Streaming Widget for iOS App",
   "name": "Building Video Streaming Widget for iOS App",
-  "description": "Introduction I was exploring the idea of creating a YouTube-like widget for the lock screen on iOS devices. It wasn\u0026rsquo;t easy because most articles on the Internet discussed general implementations, such as for a coffee shop or a to-do list. Even when I found some similar versions, the project wouldn\u0026rsquo;t compile. I made the decision to approach it my way, so here\u0026rsquo;s what I found out:\nCaveats After being stuck for two or more hours without understanding why, after tapping on a button, I wasn't able to receive a callback from it and the widget always opened the main iOS app, I realized that I forgot to add AppIntent - without it, you can\u0026rsquo;t handle actions for iOS 17.",
+  "description": "Introduction I was exploring the idea of creating a YouTube-like widget for the lock screen on iOS devices. It wasn\u0026rsquo;t easy because most articles on the Internet discussed general implementations, such as for a coffee shop or a to-do list. Even when I found some similar versions, the project wouldn\u0026rsquo;t compile. I made the decision to approach it my way, so here\u0026rsquo;s what I found out:\nCaveats After being stuck for two or more hours without understanding why, after tapping on a button, I wasn't able to receive a callback from it and the widget always opened the main iOS app, I realized that I forgot to add AppIntent - without it, you can\u0026rsquo;t handle actions for iOS 17. import AppIntents struct ButtonIntent: AppIntent { static let title: LocalizedStringResource = \u0026#34;ButtonIntent\u0026#34; @Parameter(title: \u0026#34;id\u0026#34;) var id: String func perform() async throws -\u0026gt; some IntentResult { if id == Command.playPause.rawValue { DataModel.shared.isPlaying.toggle() } return .result() } } Another crucial point is not to forget to add an explicit init. If you don\u0026rsquo;t implement it explicitly, it will not work. import AppIntents struct ButtonIntent: AppIntent { static let title: LocalizedStringResource = \u0026#34;ButtonIntent\u0026#34; @Parameter(title: \u0026#34;id\u0026#34;) var id: String init(id: String) { self.id = id } init() {} func perform() async throws -\u0026gt; some IntentResult { if id == Command.playPause.rawValue { DataModel.shared.isPlaying.toggle() } return .result() } } Lastly, I attempted to add a Slider, but I found that it\u0026rsquo;s not supported by the widget. My solution was to choose a ProgressView instead. Implementation struct YouTubeLockScreenWidget: View { var body: some View { VStack { Spacer() ProgressView(value: DataModel.shared.currentTime, total: DataModel.shared.totalTime) .progressViewStyle(.linear) Spacer() HStack { ForEach(Command.allCases) { command in Button(intent: ButtonIntent(id: command.id)) { Image(systemName: imageSystemName(isPlaying: DataModel.shared.isPlaying, command: command)) } } } } } } final class DataModel { static let shared = DataModel() var isPlaying: Bool = false var currentTime: TimeInterval = 34 var totalTime: TimeInterval = 304 } enum Command: String, CaseIterable { case previous case playPause case next } extension Command: Identifiable { var id: String { rawValue } } func imageSystemName(isPlaying: Bool, command: Command) -\u0026gt; String { switch command { case .playPause: if isPlaying { return \u0026#34;pause.fill\u0026#34; } else { return \u0026#34;play.fill\u0026#34; } case .next: return \u0026#34;forward.fill\u0026#34; case .previous: return \u0026#34;backward.fill\u0026#34; } } I had not replaced default generated code when I was adding widget to the project. I just added YouTubeLockScreenWidget to generated VideoStreamingWidgetEntryView.\n",
   "keywords": [
     "Building", "Video", "Streaming", "Widget", "iOS", "app", "SwiftUI"
   ],

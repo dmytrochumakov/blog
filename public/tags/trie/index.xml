@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Fri, 06 Sep 2024 06:56:18 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/trie/index.xml" rel="self" type="application/rss+xml" />
@@ -18,10 +18,28 @@
       <link>http://localhost:1313/posts/dsa-trie/</link>
       <pubDate>Fri, 06 Sep 2024 06:56:18 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-trie/</guid>
-      <description>What is a Trie? A Trie is a data structure usually called a &amp;ldquo;prefix tree,&amp;rdquo; often represented as a nested tree of dictionaries where each key is a character that maps to the next character in a word.
-Let&amp;rsquo;s look at some examples of a Trie. The Trie consists of two main classes: the TrieNode class and the Trie class.
-TrieNode The TrieNode class has two properties:
-children - a property that represents all characters in a given word and points to the next character.</description>
+      <description>&lt;h3 id=&#34;what-is-a-trie&#34;&gt;What is a Trie?&lt;/h3&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Trie&#34;&gt;Trie&lt;/a&gt; is a data structure usually called a &amp;ldquo;prefix tree,&amp;rdquo; often represented as a nested tree of dictionaries where each key is a character that maps to the next character in a word.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s look at some examples of a Trie. The Trie consists of two main classes: the &lt;code&gt;TrieNode&lt;/code&gt; class and the &lt;code&gt;Trie&lt;/code&gt; class.&lt;/p&gt;
+&lt;h3 id=&#34;trienode&#34;&gt;TrieNode&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;TrieNode&lt;/code&gt; class has two properties:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;children&lt;/code&gt; - a property that represents all characters in a given word and points to the next character.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;isEndSymbol&lt;/code&gt; - a property that indicates the end of the word in a given sequence of characters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kr&#34;&gt;final&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;TrieNode&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;children&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;Character&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;TrieNode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;isEndSymbol&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Bool&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;init&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;children&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[:]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;isEndSymbol&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;trie&#34;&gt;Trie&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;Trie&lt;/code&gt; class has two main operations, &lt;code&gt;insert&lt;/code&gt; and &lt;code&gt;exists&lt;/code&gt;, and a &lt;code&gt;root&lt;/code&gt; property that stores all possible combinations of words.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

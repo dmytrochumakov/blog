@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="GRPC" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="GRPC" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/grpc/" />
@@ -192,7 +195,8 @@ if (!doNotTrack) {
   </header>
   <div class="entry-content">
     <p>Introduction I’ve never had the chance to use this technology before. I’ve always wondered how gRPC operates. In this article, I will explore what gRPC is, how to install and use it, and when to use gRPC.
-What is gRPC? gRPC is an open-source, high-performance framework that facilitates efficient communication in distributed systems. gRPC is an implementation of the RPC (Remote Procedure Call) protocol, which enables services to call functions on other machines as if they were local software methods....</p>
+What is gRPC? gRPC is an open-source, high-performance framework that facilitates efficient communication in distributed systems. gRPC is an implementation of the RPC (Remote Procedure Call) protocol, which enables services to call functions on other machines as if they were local software methods. gRPC was developed by Google in 2015, and it includes several features that enhance the way remote procedure calls are made. For instance, its use of Protocol Buffers (Protobuf) supports strongly typed service contracts, data serialization, and code generation in a variety of programming languages. It also uses HTTP/2 as its transport protocol, which facilitates bi-directional streaming and reduces latency.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-16 07:16:41 +0300 EEST'>July 16, 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Implementing gRPC Swift" href="http://localhost:1313/posts/implementing-grpc-swift/"></a>

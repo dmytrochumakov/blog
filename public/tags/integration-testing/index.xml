@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Fri, 10 May 2024 06:20:50 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/integration-testing/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,19 @@
       <link>http://localhost:1313/posts/integration-testing-for-swiftui-views/</link>
       <pubDate>Fri, 10 May 2024 06:20:50 +0300</pubDate>
       <guid>http://localhost:1313/posts/integration-testing-for-swiftui-views/</guid>
-      <description>Introduction I have been looking for information about implementation details of integration testing. I found a lot of information, but it was theoretical and all information looked the same. I did not find a meaningful example, so I tried to come up with my own definition and sample.
-Integration testing means testing the behavior between modules or views to ensure they work as expected after user actions.
-There are two ways of conducting integration testing: The first is by unit tests, where you try to test the flowing data between view models.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I have been looking for information about implementation details of integration testing.
+I found a lot of information, but it was theoretical and all information looked the same.
+I did not find a meaningful example, so I tried to come up with my own definition and sample.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Integration testing means testing the behavior between modules or views to ensure they work as expected after user actions.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;there-are-two-ways-of-conducting-integration-testing&#34;&gt;There are two ways of conducting integration testing:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The first is by unit tests, where you try to test the flowing data between view models.&lt;/li&gt;
+&lt;li&gt;The second is UI tests, where you try to test if the UI items exist and navigation works correctly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I will focus on testing the flowing data between view models.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

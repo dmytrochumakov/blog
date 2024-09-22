@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="SwiftUI" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="SwiftUI" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/swiftui/" />
@@ -193,7 +196,8 @@ if (!doNotTrack) {
   <div class="entry-content">
     <p>Introduction I was looking for a way to add a video player to my iOS app that could be able to play remote videos.
 Caveats Problem I found that you can’t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 &#34;Operation Stopped&#34; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error. I don’t know exactly what this means, but I’m speculating it’s related to some protection.
-Solution My solution was to find another video that is not related to those platforms....</p>
+Solution My solution was to find another video that is not related to those platforms.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-03 07:34:56 +0300 EEST'>May 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Building Video Streaming iOS App" href="http://localhost:1313/posts/building-video-streaming-ios-app/"></a>
@@ -206,7 +210,8 @@ Solution My solution was to find another video that is not related to those plat
   </header>
   <div class="entry-content">
     <p>Introduction I never had a chance to work with WebSockets, so I decided to take a look and create a group chat. Here’s what I discovered:
-To be able to send and receive messages, you need to create an interface for communication between a server and your application. In my case, I chose sendMessage and receiveMessage methods. For the server-side, I chose Node.js. For the iOS application, I chose the Socket....</p>
+To be able to send and receive messages, you need to create an interface for communication between a server and your application. In my case, I chose sendMessage and receiveMessage methods. For the server-side, I chose Node.js. For the iOS application, I chose the Socket.IO library. Implementation Let’s dive deeper into the implementation.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-02 15:15:14 +0300 EEST'>May 2, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Building Group Chat using WebSockets" href="http://localhost:1313/posts/building-group-chat-using-websockets/"></a>
@@ -220,7 +225,8 @@ To be able to send and receive messages, you need to create an interface for com
   <div class="entry-content">
     <p>Introduction I find myself fascinated by the idea of creating an app for visionOS where I could possibly display 3D AirPods that I like. Here are a few steps on how you can do the same:
 First step The first step that you need to do is to create a visionOS project.
-Second step The next step would be adding a 3D object to Reality Composer Pro and exporting it as a ....</p>
+Second step The next step would be adding a 3D object to Reality Composer Pro and exporting it as a .usdz file. You can download free 3D objects here. All you need to do to download content is to register on this site.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-02 08:45:39 +0300 EEST'>May 2, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Exploring visionOS" href="http://localhost:1313/posts/exploring-visionos/"></a>
@@ -234,7 +240,8 @@ Second step The next step would be adding a 3D object to Reality Composer Pro an
   <div class="entry-content">
     <p>Introduction I was searching for an AR implementation of a 3D guitar inside an iOS app. Here’s what I discovered:
 First Step The first step is not related to building the app. Before that you need to create a project using the Reality Composer Pro app (you can find it through Spotlight search).
-Second Step After that, you need to visit https://developer.apple.com/augmented-reality/quick-look/ and download one of the USDZ files. In my case, I chose the 3D guitar....</p>
+Second Step After that, you need to visit https://developer.apple.com/augmented-reality/quick-look/ and download one of the USDZ files. In my case, I chose the 3D guitar.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-01 15:57:54 +0300 EEST'>May 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to iOS AR App: Experience 3D Guitar" href="http://localhost:1313/posts/ios-ar-app-experience-3d-guitar/"></a>
@@ -248,7 +255,8 @@ Second Step After that, you need to visit https://developer.apple.com/augmented-
   <div class="entry-content">
     <p>Introduction I was wondering about how to create movie recommendations, so I decided to take a closer look and find out more about this topic. This is what I found:
 First step: You need to create a JSON file with the data that you will use to train the model and define the parameters for training the model.
-[ { &#34;title&#34;: &#34;Avatar&#34;, &#34;year&#34;: &#34;2009&#34;, &#34;rated&#34;: &#34;PG-13&#34;, &#34;released&#34;: &#34;18 Dec 2009&#34;, &#34;runtime&#34;: &#34;162 min&#34;, &#34;genre&#34;: &#34;Action, Adventure, Fantasy&#34;, &#34;director&#34;: &#34;James Cameron&#34;, &#34;writer&#34;: &#34;James Cameron&#34;, &#34;actors&#34;: &#34;Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang&#34;, &#34;plot&#34;: &#34;A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home....</p>
+[ { &#34;title&#34;: &#34;Avatar&#34;, &#34;year&#34;: &#34;2009&#34;, &#34;rated&#34;: &#34;PG-13&#34;, &#34;released&#34;: &#34;18 Dec 2009&#34;, &#34;runtime&#34;: &#34;162 min&#34;, &#34;genre&#34;: &#34;Action, Adventure, Fantasy&#34;, &#34;director&#34;: &#34;James Cameron&#34;, &#34;writer&#34;: &#34;James Cameron&#34;, &#34;actors&#34;: &#34;Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang&#34;, &#34;plot&#34;: &#34;A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.&#34;, &#34;language&#34;: &#34;English, Spanish&#34;, &#34;country&#34;: &#34;USA, UK&#34;, &#34;awards&#34;: &#34;Won 3 Oscars. Another 80 wins &amp; 121 nominations.&#34;, &#34;poster&#34;: &#34;https://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg&#34;, &#34;metascore&#34;: &#34;83&#34;, &#34;imdbrating&#34;: &#34;7.9&#34;, &#34;imdbvotes&#34;: &#34;890,617&#34;, &#34;imdbid&#34;: &#34;tt0499549&#34;, &#34;type&#34;: &#34;movie&#34;, &#34;response&#34;: &#34;True&#34;, &#34;keywords&#34;: [&#34;alien&#34;, &#34;avatar&#34;, &#34;fantasy world&#34;, &#34;soldier&#34;, &#34;battle&#34;] }, ] When you have created the data, you can proceed to the next step.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-01 10:29:44 +0300 EEST'>May 1, 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Building movie recommendations using ML" href="http://localhost:1313/posts/building-movie-recommendations-using-ml/"></a>

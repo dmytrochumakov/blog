@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Algorithms" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Algorithms" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/algorithms/" />
@@ -187,12 +190,27 @@ if (!doNotTrack) {
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - Binary Search
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is binary search? Binary search is an algorithm that helps find an element in a sorted array in O(log n) time.
+Why should the input be sorted before performing binary search? The input array for binary search needs to be sorted because the algorithm eliminates half of the choices at each step. If the guessed value is greater than the target value, it knows that the right part can’t contain the target value.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-08-26 07:09:48 +0300 EEST'>August 26, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to DSA - Binary Search" href="http://localhost:1313/posts/dsa-binary-search/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">DSA - Stack
     </h2>
   </header>
   <div class="entry-content">
     <p>What is a Stack? A stack is an abstract data type that serves as a collection of elements and implements operations like push, pop, and peek at the end in O(1) time. It uses the LIFO (last in, first out) order. For example, a stack can be a collection of items where adding or removing is practical at the top.
-Code Example struct Stack&lt;Element&gt; { private var array: [Element] init(array: [Element] = []) { self....</p>
+Code Example struct Stack&lt;Element&gt; { private var array: [Element] init(array: [Element] = []) { self.array = array } mutating func push(_ element: Element) { array.append(element) } mutating func pop() -&gt; Element? { if array.isEmpty { return nil } return array.popLast() } func peek() -&gt; Element? { if array.isEmpty { return nil } return array.last } } Practical Applications of Stacks You can observe stack-like behavior in many places, such as redo-undo features in text editors, Photoshop, and the forward and backward navigation features in web browsers.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-08-20 07:17:01 +0300 EEST'>August 20, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Stack" href="http://localhost:1313/posts/dsa-stack/"></a>
@@ -205,7 +223,8 @@ Code Example struct Stack&lt;Element&gt; { private var array: [Element] init(arr
   </header>
   <div class="entry-content">
     <p>What is the Two Pointers Technique? The two pointers technique helps track indices in a collection of elements to access objects in memory by index with O(1) space. This technique is very handy when you need to optimize the time and space of a solution.
-What Problems Does It Solve? The two pointers technique solves problems involving collections. For example, it is useful when you need to compare each element to other elements in that collection....</p>
+What Problems Does It Solve? The two pointers technique solves problems involving collections. For example, it is useful when you need to compare each element to other elements in that collection.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-08-17 07:00:23 +0300 EEST'>August 17, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Two Pointers Technique" href="http://localhost:1313/posts/dsa-two-pointers-technique/"></a>
@@ -219,7 +238,8 @@ What Problems Does It Solve? The two pointers technique solves problems involvin
   <div class="entry-content">
     <p>Introduction In the previous chapter, we discussed Data Structures and Algorithms, delved into an overview of Dynamic Arrays, and solved the “Remove Element” problem.
 In this article, I’m going to show one of the ways to solve the 88. Merge Sorted Array problem.
-Problem You are given two integer arrays, nums1 and nums2, sorted in non-decreasing order, and two integers, m and n, representing the number of elements in nums1 and nums2, respectively....</p>
+Problem You are given two integer arrays, nums1 and nums2, sorted in non-decreasing order, and two integers, m and n, representing the number of elements in nums1 and nums2, respectively. Merge nums1 and nums2 into a single array sorted in non-decreasing order. The final sorted array should not be returned by the function but should instead be stored inside the array nums1. To accommodate this, nums1 has a length of m &#43; n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-08-15 07:04:16 +0300 EEST'>August 15, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Merge Sorted Array Problem" href="http://localhost:1313/posts/dsa-merge-sorted-array-problem/"></a>

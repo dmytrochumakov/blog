@@ -9,917 +9,938 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Sep 2024 07:15:17 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 22 Sep 2024 07:26:23 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algorithms</title>
       <link>http://localhost:1313/tags/algorithms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 22 Sep 2024 07:26:23 +0300</pubDate>
       <guid>http://localhost:1313/tags/algorithms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Binary Search Tree</title>
+      <link>http://localhost:1313/tags/binary-search-tree/</link>
+      <pubDate>Sun, 22 Sep 2024 07:26:23 +0300</pubDate>
+      <guid>http://localhost:1313/tags/binary-search-tree/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BST</title>
+      <link>http://localhost:1313/tags/bst/</link>
+      <pubDate>Sun, 22 Sep 2024 07:26:23 +0300</pubDate>
+      <guid>http://localhost:1313/tags/bst/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Structures</title>
       <link>http://localhost:1313/tags/data-structures/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 22 Sep 2024 07:26:23 +0300</pubDate>
       <guid>http://localhost:1313/tags/data-structures/</guid>
       <description></description>
     </item>
     <item>
       <title>DSA</title>
       <link>http://localhost:1313/tags/dsa/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 22 Sep 2024 07:26:23 +0300</pubDate>
       <guid>http://localhost:1313/tags/dsa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Max</title>
+      <link>http://localhost:1313/tags/max/</link>
+      <pubDate>Sun, 22 Sep 2024 07:26:23 +0300</pubDate>
+      <guid>http://localhost:1313/tags/max/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Min</title>
+      <link>http://localhost:1313/tags/min/</link>
+      <pubDate>Sun, 22 Sep 2024 07:26:23 +0300</pubDate>
+      <guid>http://localhost:1313/tags/min/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Swift</title>
+      <link>http://localhost:1313/tags/swift/</link>
+      <pubDate>Sun, 22 Sep 2024 07:26:23 +0300</pubDate>
+      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>
       <title>Linked List Queue</title>
       <link>http://localhost:1313/tags/linked-list-queue/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 20 Sep 2024 07:15:17 +0300</pubDate>
       <guid>http://localhost:1313/tags/linked-list-queue/</guid>
       <description></description>
     </item>
     <item>
       <title>Queue</title>
       <link>http://localhost:1313/tags/queue/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 20 Sep 2024 07:15:17 +0300</pubDate>
       <guid>http://localhost:1313/tags/queue/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Swift</title>
-      <link>http://localhost:1313/tags/swift/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>
       <title>Adjacency List</title>
       <link>http://localhost:1313/tags/adjacency-list/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 17 Sep 2024 07:06:52 +0300</pubDate>
       <guid>http://localhost:1313/tags/adjacency-list/</guid>
       <description></description>
     </item>
     <item>
       <title>Graph</title>
       <link>http://localhost:1313/tags/graph/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 17 Sep 2024 07:06:52 +0300</pubDate>
       <guid>http://localhost:1313/tags/graph/</guid>
       <description></description>
     </item>
     <item>
       <title>BFS</title>
       <link>http://localhost:1313/tags/bfs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 12 Sep 2024 07:14:47 +0300</pubDate>
       <guid>http://localhost:1313/tags/bfs/</guid>
       <description></description>
     </item>
     <item>
       <title>Breadth First Search</title>
       <link>http://localhost:1313/tags/breadth-first-search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 12 Sep 2024 07:14:47 +0300</pubDate>
       <guid>http://localhost:1313/tags/breadth-first-search/</guid>
       <description></description>
     </item>
     <item>
       <title>Backtracking</title>
       <link>http://localhost:1313/tags/backtracking/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 09 Sep 2024 07:19:46 +0300</pubDate>
       <guid>http://localhost:1313/tags/backtracking/</guid>
       <description></description>
     </item>
     <item>
       <title>DFS</title>
       <link>http://localhost:1313/tags/dfs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 09 Sep 2024 07:19:46 +0300</pubDate>
       <guid>http://localhost:1313/tags/dfs/</guid>
       <description></description>
     </item>
     <item>
       <title>Trie</title>
       <link>http://localhost:1313/tags/trie/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 06 Sep 2024 06:56:18 +0300</pubDate>
       <guid>http://localhost:1313/tags/trie/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Binary Search Tree</title>
-      <link>http://localhost:1313/tags/binary-search-tree/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/binary-search-tree/</guid>
       <description></description>
     </item>
     <item>
       <title>Sliding Window</title>
       <link>http://localhost:1313/tags/sliding-window/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 28 Aug 2024 07:20:26 +0300</pubDate>
       <guid>http://localhost:1313/tags/sliding-window/</guid>
       <description></description>
     </item>
     <item>
       <title>Linked List</title>
       <link>http://localhost:1313/tags/linked-list/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 27 Aug 2024 07:13:19 +0300</pubDate>
       <guid>http://localhost:1313/tags/linked-list/</guid>
       <description></description>
     </item>
     <item>
       <title>Binary Search</title>
       <link>http://localhost:1313/tags/binary-search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 26 Aug 2024 07:09:48 +0300</pubDate>
       <guid>http://localhost:1313/tags/binary-search/</guid>
       <description></description>
     </item>
     <item>
       <title>Stack</title>
       <link>http://localhost:1313/tags/stack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Aug 2024 07:17:01 +0300</pubDate>
       <guid>http://localhost:1313/tags/stack/</guid>
       <description></description>
     </item>
     <item>
       <title>Two Pointers</title>
       <link>http://localhost:1313/tags/two-pointers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 17 Aug 2024 07:00:23 +0300</pubDate>
       <guid>http://localhost:1313/tags/two-pointers/</guid>
       <description></description>
     </item>
     <item>
       <title>LeetCode</title>
       <link>http://localhost:1313/tags/leetcode/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 15 Aug 2024 07:04:16 +0300</pubDate>
       <guid>http://localhost:1313/tags/leetcode/</guid>
       <description></description>
     </item>
     <item>
       <title>Array</title>
       <link>http://localhost:1313/tags/array/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 12 Aug 2024 07:01:34 +0300</pubDate>
       <guid>http://localhost:1313/tags/array/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Structures and Algorithms</title>
       <link>http://localhost:1313/tags/data-structures-and-algorithms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 12 Aug 2024 07:01:34 +0300</pubDate>
       <guid>http://localhost:1313/tags/data-structures-and-algorithms/</guid>
       <description></description>
     </item>
     <item>
       <title>App</title>
       <link>http://localhost:1313/tags/app/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 31 Jul 2024 07:26:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/app/</guid>
       <description></description>
     </item>
     <item>
       <title>IOS</title>
       <link>http://localhost:1313/tags/ios/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 31 Jul 2024 07:26:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/ios/</guid>
       <description></description>
     </item>
     <item>
       <title>Optimizing</title>
       <link>http://localhost:1313/tags/optimizing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 31 Jul 2024 07:26:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/optimizing/</guid>
       <description></description>
     </item>
     <item>
       <title>Performance</title>
       <link>http://localhost:1313/tags/performance/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 31 Jul 2024 07:26:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/performance/</guid>
       <description></description>
     </item>
     <item>
       <title>HealthKit</title>
       <link>http://localhost:1313/tags/healthkit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 26 Jul 2024 07:18:58 +0300</pubDate>
       <guid>http://localhost:1313/tags/healthkit/</guid>
       <description></description>
     </item>
     <item>
       <title>Implementing</title>
       <link>http://localhost:1313/tags/implementing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 26 Jul 2024 07:18:58 +0300</pubDate>
       <guid>http://localhost:1313/tags/implementing/</guid>
       <description></description>
     </item>
     <item>
       <title>Modern Concurrency</title>
       <link>http://localhost:1313/tags/modern-concurrency/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 26 Jul 2024 07:18:58 +0300</pubDate>
       <guid>http://localhost:1313/tags/modern-concurrency/</guid>
       <description></description>
     </item>
     <item>
       <title>SwiftUI</title>
       <link>http://localhost:1313/tags/swiftui/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 26 Jul 2024 07:18:58 +0300</pubDate>
       <guid>http://localhost:1313/tags/swiftui/</guid>
       <description></description>
     </item>
     <item>
       <title>CoreLocation</title>
       <link>http://localhost:1313/tags/corelocation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 23 Jul 2024 07:04:25 +0300</pubDate>
       <guid>http://localhost:1313/tags/corelocation/</guid>
       <description></description>
     </item>
     <item>
       <title>Location Service</title>
       <link>http://localhost:1313/tags/location-service/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 23 Jul 2024 07:04:25 +0300</pubDate>
       <guid>http://localhost:1313/tags/location-service/</guid>
       <description></description>
     </item>
     <item>
       <title>ChatGPT</title>
       <link>http://localhost:1313/tags/chatgpt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 21 Jul 2024 07:25:28 +0300</pubDate>
       <guid>http://localhost:1313/tags/chatgpt/</guid>
       <description></description>
     </item>
     <item>
       <title>Combine</title>
       <link>http://localhost:1313/tags/combine/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 21 Jul 2024 07:25:28 +0300</pubDate>
       <guid>http://localhost:1313/tags/combine/</guid>
       <description></description>
     </item>
     <item>
       <title>Apple Sign-In</title>
       <link>http://localhost:1313/tags/apple-sign-in/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 18 Jul 2024 07:26:13 +0300</pubDate>
       <guid>http://localhost:1313/tags/apple-sign-in/</guid>
       <description></description>
     </item>
     <item>
       <title>Authentication Services</title>
       <link>http://localhost:1313/tags/authentication-services/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 18 Jul 2024 07:26:13 +0300</pubDate>
       <guid>http://localhost:1313/tags/authentication-services/</guid>
       <description></description>
     </item>
     <item>
       <title>GRPC</title>
       <link>http://localhost:1313/tags/grpc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 16 Jul 2024 07:16:41 +0300</pubDate>
       <guid>http://localhost:1313/tags/grpc/</guid>
       <description></description>
     </item>
     <item>
       <title>CoreNFC</title>
       <link>http://localhost:1313/tags/corenfc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 12 Jul 2024 07:27:51 +0300</pubDate>
       <guid>http://localhost:1313/tags/corenfc/</guid>
       <description></description>
     </item>
     <item>
       <title>NFC</title>
       <link>http://localhost:1313/tags/nfc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 12 Jul 2024 07:27:51 +0300</pubDate>
       <guid>http://localhost:1313/tags/nfc/</guid>
       <description></description>
     </item>
     <item>
       <title>Scanning</title>
       <link>http://localhost:1313/tags/scanning/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 12 Jul 2024 07:27:51 +0300</pubDate>
       <guid>http://localhost:1313/tags/scanning/</guid>
       <description></description>
     </item>
     <item>
       <title>Tags</title>
       <link>http://localhost:1313/tags/tags/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 12 Jul 2024 07:27:51 +0300</pubDate>
       <guid>http://localhost:1313/tags/tags/</guid>
       <description></description>
     </item>
     <item>
       <title>BLE</title>
       <link>http://localhost:1313/tags/ble/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Jul 2024 07:27:14 +0300</pubDate>
       <guid>http://localhost:1313/tags/ble/</guid>
       <description></description>
     </item>
     <item>
       <title>Devices</title>
       <link>http://localhost:1313/tags/devices/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Jul 2024 07:27:14 +0300</pubDate>
       <guid>http://localhost:1313/tags/devices/</guid>
       <description></description>
     </item>
     <item>
       <title>Peripheral</title>
       <link>http://localhost:1313/tags/peripheral/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Jul 2024 07:27:14 +0300</pubDate>
       <guid>http://localhost:1313/tags/peripheral/</guid>
       <description></description>
     </item>
     <item>
       <title>Battery</title>
       <link>http://localhost:1313/tags/battery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 07 Jul 2024 07:25:40 +0300</pubDate>
       <guid>http://localhost:1313/tags/battery/</guid>
       <description></description>
     </item>
     <item>
       <title>Testing</title>
       <link>http://localhost:1313/tags/testing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 07 Jul 2024 07:25:40 +0300</pubDate>
       <guid>http://localhost:1313/tags/testing/</guid>
       <description></description>
     </item>
     <item>
       <title>2D</title>
       <link>http://localhost:1313/tags/2d/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jul 2024 06:39:04 +0300</pubDate>
       <guid>http://localhost:1313/tags/2d/</guid>
       <description></description>
     </item>
     <item>
       <title>Creating</title>
       <link>http://localhost:1313/tags/creating/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jul 2024 06:39:04 +0300</pubDate>
       <guid>http://localhost:1313/tags/creating/</guid>
       <description></description>
     </item>
     <item>
       <title>Game</title>
       <link>http://localhost:1313/tags/game/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jul 2024 06:39:04 +0300</pubDate>
       <guid>http://localhost:1313/tags/game/</guid>
       <description></description>
     </item>
     <item>
       <title>SpriteKit</title>
       <link>http://localhost:1313/tags/spritekit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 03 Jul 2024 06:39:04 +0300</pubDate>
       <guid>http://localhost:1313/tags/spritekit/</guid>
       <description></description>
     </item>
     <item>
       <title>APNS</title>
       <link>http://localhost:1313/tags/apns/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 19 Jun 2024 07:13:19 +0300</pubDate>
       <guid>http://localhost:1313/tags/apns/</guid>
       <description></description>
     </item>
     <item>
       <title>Locally</title>
       <link>http://localhost:1313/tags/locally/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 19 Jun 2024 07:13:19 +0300</pubDate>
       <guid>http://localhost:1313/tags/locally/</guid>
       <description></description>
     </item>
     <item>
       <title>Push Notifications</title>
       <link>http://localhost:1313/tags/push-notifications/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 19 Jun 2024 07:13:19 +0300</pubDate>
       <guid>http://localhost:1313/tags/push-notifications/</guid>
       <description></description>
     </item>
     <item>
       <title>RocketSim</title>
       <link>http://localhost:1313/tags/rocketsim/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 19 Jun 2024 07:13:19 +0300</pubDate>
       <guid>http://localhost:1313/tags/rocketsim/</guid>
       <description></description>
     </item>
     <item>
       <title>Adding</title>
       <link>http://localhost:1313/tags/adding/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 14 Jun 2024 07:29:01 +0300</pubDate>
       <guid>http://localhost:1313/tags/adding/</guid>
       <description></description>
     </item>
     <item>
       <title>Caching</title>
       <link>http://localhost:1313/tags/caching/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 05 Jun 2024 07:13:58 +0300</pubDate>
       <guid>http://localhost:1313/tags/caching/</guid>
       <description></description>
     </item>
     <item>
       <title>Caching Data</title>
       <link>http://localhost:1313/tags/caching-data/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 05 Jun 2024 07:13:58 +0300</pubDate>
       <guid>http://localhost:1313/tags/caching-data/</guid>
       <description></description>
     </item>
     <item>
       <title>NSCache</title>
       <link>http://localhost:1313/tags/nscache/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 05 Jun 2024 07:13:58 +0300</pubDate>
       <guid>http://localhost:1313/tags/nscache/</guid>
       <description></description>
     </item>
     <item>
       <title>Accessibility</title>
       <link>http://localhost:1313/tags/accessibility/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 02 Jun 2024 09:04:06 +0300</pubDate>
       <guid>http://localhost:1313/tags/accessibility/</guid>
       <description></description>
     </item>
     <item>
       <title>UIKit</title>
       <link>http://localhost:1313/tags/uikit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 30 May 2024 07:04:49 +0300</pubDate>
       <guid>http://localhost:1313/tags/uikit/</guid>
       <description></description>
     </item>
     <item>
       <title>Text to Speech</title>
       <link>http://localhost:1313/tags/text-to-speech/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 24 May 2024 07:52:07 +0300</pubDate>
       <guid>http://localhost:1313/tags/text-to-speech/</guid>
       <description></description>
     </item>
     <item>
       <title>Speech to Text</title>
       <link>http://localhost:1313/tags/speech-to-text/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 May 2024 08:37:45 +0300</pubDate>
       <guid>http://localhost:1313/tags/speech-to-text/</guid>
       <description></description>
     </item>
     <item>
       <title>Animation</title>
       <link>http://localhost:1313/tags/animation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 21 May 2024 06:31:02 +0300</pubDate>
       <guid>http://localhost:1313/tags/animation/</guid>
       <description></description>
     </item>
     <item>
       <title>CAAction</title>
       <link>http://localhost:1313/tags/caaction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 21 May 2024 06:31:02 +0300</pubDate>
       <guid>http://localhost:1313/tags/caaction/</guid>
       <description></description>
     </item>
     <item>
       <title>CABasicAnimation</title>
       <link>http://localhost:1313/tags/cabasicanimation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 21 May 2024 06:31:02 +0300</pubDate>
       <guid>http://localhost:1313/tags/cabasicanimation/</guid>
       <description></description>
     </item>
     <item>
       <title>CAShapeLayer</title>
       <link>http://localhost:1313/tags/cashapelayer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 21 May 2024 06:31:02 +0300</pubDate>
       <guid>http://localhost:1313/tags/cashapelayer/</guid>
       <description></description>
     </item>
     <item>
       <title>Core Animation</title>
       <link>http://localhost:1313/tags/core-animation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 21 May 2024 06:31:02 +0300</pubDate>
       <guid>http://localhost:1313/tags/core-animation/</guid>
       <description></description>
     </item>
     <item>
       <title>Application</title>
       <link>http://localhost:1313/tags/application/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 15 May 2024 07:13:39 +0300</pubDate>
       <guid>http://localhost:1313/tags/application/</guid>
       <description></description>
     </item>
     <item>
       <title>GraphQL</title>
       <link>http://localhost:1313/tags/graphql/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 15 May 2024 07:13:39 +0300</pubDate>
       <guid>http://localhost:1313/tags/graphql/</guid>
       <description></description>
     </item>
     <item>
       <title>Face ID</title>
       <link>http://localhost:1313/tags/face-id/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 May 2024 07:31:49 +0300</pubDate>
       <guid>http://localhost:1313/tags/face-id/</guid>
       <description></description>
     </item>
     <item>
       <title>Keychain</title>
       <link>http://localhost:1313/tags/keychain/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 May 2024 07:31:49 +0300</pubDate>
       <guid>http://localhost:1313/tags/keychain/</guid>
       <description></description>
     </item>
     <item>
       <title>Securing</title>
       <link>http://localhost:1313/tags/securing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 May 2024 07:31:49 +0300</pubDate>
       <guid>http://localhost:1313/tags/securing/</guid>
       <description></description>
     </item>
     <item>
       <title>Security</title>
       <link>http://localhost:1313/tags/security/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 May 2024 07:31:49 +0300</pubDate>
       <guid>http://localhost:1313/tags/security/</guid>
       <description></description>
     </item>
     <item>
       <title>Touch ID</title>
       <link>http://localhost:1313/tags/touch-id/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 May 2024 07:31:49 +0300</pubDate>
       <guid>http://localhost:1313/tags/touch-id/</guid>
       <description></description>
     </item>
     <item>
       <title>User Data</title>
       <link>http://localhost:1313/tags/user-data/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 May 2024 07:31:49 +0300</pubDate>
       <guid>http://localhost:1313/tags/user-data/</guid>
       <description></description>
     </item>
     <item>
       <title>In-App Purchases</title>
       <link>http://localhost:1313/tags/in-app-purchases/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 12 May 2024 07:57:51 +0300</pubDate>
       <guid>http://localhost:1313/tags/in-app-purchases/</guid>
       <description></description>
     </item>
     <item>
       <title>Non-Consumable</title>
       <link>http://localhost:1313/tags/non-consumable/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 12 May 2024 07:57:51 +0300</pubDate>
       <guid>http://localhost:1313/tags/non-consumable/</guid>
       <description></description>
     </item>
     <item>
       <title>StoreKit</title>
       <link>http://localhost:1313/tags/storekit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 12 May 2024 07:57:51 +0300</pubDate>
       <guid>http://localhost:1313/tags/storekit/</guid>
       <description></description>
     </item>
     <item>
       <title>StoreKit 2</title>
       <link>http://localhost:1313/tags/storekit-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 12 May 2024 07:57:51 +0300</pubDate>
       <guid>http://localhost:1313/tags/storekit-2/</guid>
       <description></description>
     </item>
     <item>
       <title>Apple Pay</title>
       <link>http://localhost:1313/tags/apple-pay/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 11 May 2024 07:25:24 +0300</pubDate>
       <guid>http://localhost:1313/tags/apple-pay/</guid>
       <description></description>
     </item>
     <item>
       <title>MVVM</title>
       <link>http://localhost:1313/tags/mvvm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 11 May 2024 07:25:24 +0300</pubDate>
       <guid>http://localhost:1313/tags/mvvm/</guid>
       <description></description>
     </item>
     <item>
       <title>Integration Testing</title>
       <link>http://localhost:1313/tags/integration-testing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 May 2024 06:20:50 +0300</pubDate>
       <guid>http://localhost:1313/tags/integration-testing/</guid>
       <description></description>
     </item>
     <item>
       <title>To-Do</title>
       <link>http://localhost:1313/tags/to-do/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 08 May 2024 06:34:32 +0300</pubDate>
       <guid>http://localhost:1313/tags/to-do/</guid>
       <description></description>
     </item>
     <item>
       <title>UI Testing</title>
       <link>http://localhost:1313/tags/ui-testing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 08 May 2024 06:34:32 +0300</pubDate>
       <guid>http://localhost:1313/tags/ui-testing/</guid>
       <description></description>
     </item>
     <item>
       <title>XCTest</title>
       <link>http://localhost:1313/tags/xctest/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 08 May 2024 06:34:32 +0300</pubDate>
       <guid>http://localhost:1313/tags/xctest/</guid>
       <description></description>
     </item>
     <item>
       <title>Building</title>
       <link>http://localhost:1313/tags/building/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 May 2024 07:35:52 +0300</pubDate>
       <guid>http://localhost:1313/tags/building/</guid>
       <description></description>
     </item>
     <item>
       <title>Dynamic Island</title>
       <link>http://localhost:1313/tags/dynamic-island/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 May 2024 07:35:52 +0300</pubDate>
       <guid>http://localhost:1313/tags/dynamic-island/</guid>
       <description></description>
     </item>
     <item>
       <title>Streaming</title>
       <link>http://localhost:1313/tags/streaming/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 May 2024 07:35:52 +0300</pubDate>
       <guid>http://localhost:1313/tags/streaming/</guid>
       <description></description>
     </item>
     <item>
       <title>Video</title>
       <link>http://localhost:1313/tags/video/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 May 2024 07:35:52 +0300</pubDate>
       <guid>http://localhost:1313/tags/video/</guid>
       <description></description>
     </item>
     <item>
       <title>Widget</title>
       <link>http://localhost:1313/tags/widget/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 05 May 2024 07:20:29 +0300</pubDate>
       <guid>http://localhost:1313/tags/widget/</guid>
       <description></description>
     </item>
     <item>
       <title>Chat</title>
       <link>http://localhost:1313/tags/chat/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 02 May 2024 15:15:14 +0300</pubDate>
       <guid>http://localhost:1313/tags/chat/</guid>
       <description></description>
     </item>
     <item>
       <title>WebSockets</title>
       <link>http://localhost:1313/tags/websockets/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 02 May 2024 15:15:14 +0300</pubDate>
       <guid>http://localhost:1313/tags/websockets/</guid>
       <description></description>
     </item>
     <item>
       <title>3d</title>
       <link>http://localhost:1313/tags/3d/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 02 May 2024 08:45:39 +0300</pubDate>
       <guid>http://localhost:1313/tags/3d/</guid>
       <description></description>
     </item>
     <item>
       <title>Reality Composer Pro</title>
       <link>http://localhost:1313/tags/reality-composer-pro/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 02 May 2024 08:45:39 +0300</pubDate>
       <guid>http://localhost:1313/tags/reality-composer-pro/</guid>
       <description></description>
     </item>
     <item>
       <title>RealityKit</title>
       <link>http://localhost:1313/tags/realitykit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 02 May 2024 08:45:39 +0300</pubDate>
       <guid>http://localhost:1313/tags/realitykit/</guid>
       <description></description>
     </item>
     <item>
       <title>VisionOS</title>
       <link>http://localhost:1313/tags/visionos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 02 May 2024 08:45:39 +0300</pubDate>
       <guid>http://localhost:1313/tags/visionos/</guid>
       <description></description>
     </item>
     <item>
       <title>Ar</title>
       <link>http://localhost:1313/tags/ar/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 May 2024 15:57:54 +0300</pubDate>
       <guid>http://localhost:1313/tags/ar/</guid>
       <description></description>
     </item>
     <item>
       <title>ML</title>
       <link>http://localhost:1313/tags/ml/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 May 2024 10:29:44 +0300</pubDate>
       <guid>http://localhost:1313/tags/ml/</guid>
       <description></description>
     </item>
     <item>
       <title>Movie</title>
       <link>http://localhost:1313/tags/movie/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 May 2024 10:29:44 +0300</pubDate>
       <guid>http://localhost:1313/tags/movie/</guid>
       <description></description>
     </item>
     <item>
       <title>Recommendations</title>
       <link>http://localhost:1313/tags/recommendations/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 May 2024 10:29:44 +0300</pubDate>
       <guid>http://localhost:1313/tags/recommendations/</guid>
       <description></description>
     </item>
     <item>
       <title>CI</title>
       <link>http://localhost:1313/tags/ci/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 26 Apr 2024 06:51:21 +0300</pubDate>
       <guid>http://localhost:1313/tags/ci/</guid>
       <description></description>
     </item>
     <item>
       <title>GitHub Actions</title>
       <link>http://localhost:1313/tags/github-actions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 26 Apr 2024 06:51:21 +0300</pubDate>
       <guid>http://localhost:1313/tags/github-actions/</guid>
       <description></description>
     </item>
     <item>
       <title>Project</title>
       <link>http://localhost:1313/tags/project/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 26 Apr 2024 06:51:21 +0300</pubDate>
       <guid>http://localhost:1313/tags/project/</guid>
       <description></description>
     </item>
     <item>
       <title>Xcode</title>
       <link>http://localhost:1313/tags/xcode/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 26 Apr 2024 06:51:21 +0300</pubDate>
       <guid>http://localhost:1313/tags/xcode/</guid>
       <description></description>
     </item>
     <item>
       <title>CLI</title>
       <link>http://localhost:1313/tags/cli/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 19 Apr 2024 06:49:13 +0300</pubDate>
       <guid>http://localhost:1313/tags/cli/</guid>
       <description></description>
     </item>
     <item>
       <title>Delivering</title>
       <link>http://localhost:1313/tags/delivering/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 19 Apr 2024 06:49:13 +0300</pubDate>
       <guid>http://localhost:1313/tags/delivering/</guid>
       <description></description>
     </item>
     <item>
       <title>Fastlane</title>
       <link>http://localhost:1313/tags/fastlane/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 19 Apr 2024 06:49:13 +0300</pubDate>
       <guid>http://localhost:1313/tags/fastlane/</guid>
       <description></description>
     </item>
     <item>
       <title>Tools</title>
       <link>http://localhost:1313/tags/tools/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 19 Apr 2024 06:49:13 +0300</pubDate>
       <guid>http://localhost:1313/tags/tools/</guid>
       <description></description>
     </item>
     <item>
       <title>Archiving</title>
       <link>http://localhost:1313/tags/archiving/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 16 Apr 2024 13:46:03 +0300</pubDate>
       <guid>http://localhost:1313/tags/archiving/</guid>
       <description></description>
     </item>
     <item>
       <title>Design Patterns</title>
       <link>http://localhost:1313/tags/design-patterns/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Apr 2024 08:01:22 +0300</pubDate>
       <guid>http://localhost:1313/tags/design-patterns/</guid>
       <description></description>
     </item>
     <item>
       <title>Memento Pattern</title>
       <link>http://localhost:1313/tags/memento-pattern/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 22 Mar 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/memento-pattern/</guid>
       <description></description>
     </item>
     <item>
       <title>Oop</title>
       <link>http://localhost:1313/tags/oop/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 22 Mar 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/oop/</guid>
       <description></description>
     </item>
     <item>
       <title>Interpreter Pattern</title>
       <link>http://localhost:1313/tags/interpreter-pattern/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 18 Mar 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/interpreter-pattern/</guid>
       <description></description>
     </item>
     <item>
       <title>Flyweight Pattern</title>
       <link>http://localhost:1313/tags/flyweight-pattern/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 17 Mar 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/flyweight-pattern/</guid>
       <description></description>
     </item>
     <item>
       <title>Chain of Responsibility Pattern</title>
       <link>http://localhost:1313/tags/chain-of-responsibility-pattern/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 15 Mar 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/chain-of-responsibility-pattern/</guid>
       <description></description>
     </item>
     <item>
       <title>State Pattern</title>
       <link>http://localhost:1313/tags/state-pattern/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 10 Mar 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/state-pattern/</guid>
       <description></description>
     </item>
     <item>
       <title>Dependency Inversion Principle</title>
       <link>http://localhost:1313/tags/dependency-inversion-principle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 Mar 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/dependency-inversion-principle/</guid>
       <description></description>
     </item>
     <item>
       <title>Design Principles</title>
       <link>http://localhost:1313/tags/design-principles/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 Mar 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/design-principles/</guid>
       <description></description>
     </item>
     <item>
       <title>Algorithm Complexity</title>
       <link>http://localhost:1313/tags/algorithm-complexity/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Feb 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/algorithm-complexity/</guid>
       <description></description>
     </item>
     <item>
       <title>Big O</title>
       <link>http://localhost:1313/tags/big-o/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Feb 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/big-o/</guid>
       <description></description>
     </item>
     <item>
       <title>Concurrency</title>
       <link>http://localhost:1313/tags/concurrency/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 04 Feb 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/concurrency/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
       <link>http://localhost:1313/tags/programming/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Jan 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Threads</title>
       <link>http://localhost:1313/tags/threads/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Jan 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/threads/</guid>
       <description></description>
     </item>
     <item>
       <title>Dispatchgroup</title>
       <link>http://localhost:1313/tags/dispatchgroup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0300</pubDate>
       <guid>http://localhost:1313/tags/dispatchgroup/</guid>
       <description></description>
     </item>
     <item>
       <title>Value Type</title>
       <link>http://localhost:1313/tags/value-type/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 28 Dec 2023 00:00:00 +0300</pubDate>
       <guid>http://localhost:1313/tags/value-type/</guid>
       <description></description>
     </item>
     <item>
       <title>Memory Leak</title>
       <link>http://localhost:1313/tags/memory-leak/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 24 Dec 2023 00:00:00 +0300</pubDate>
       <guid>http://localhost:1313/tags/memory-leak/</guid>
       <description></description>
     </item>
     <item>
       <title>Automatic Reference Count</title>
       <link>http://localhost:1313/tags/automatic-reference-count/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 17 Dec 2023 00:00:00 +0300</pubDate>
       <guid>http://localhost:1313/tags/automatic-reference-count/</guid>
       <description></description>
     </item>
     <item>
       <title>Closure</title>
       <link>http://localhost:1313/tags/closure/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 10 Dec 2023 00:00:00 +0300</pubDate>
       <guid>http://localhost:1313/tags/closure/</guid>
       <description></description>
     </item>
     <item>
       <title>Reference Type</title>
       <link>http://localhost:1313/tags/reference-type/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 03 Dec 2023 00:00:00 +0300</pubDate>
       <guid>http://localhost:1313/tags/reference-type/</guid>
       <description></description>
     </item>
     <item>
       <title>Software Architecture</title>
       <link>http://localhost:1313/tags/software-architecture/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 11 Aug 2023 00:00:00 +0300</pubDate>
       <guid>http://localhost:1313/tags/software-architecture/</guid>
       <description></description>
     </item>

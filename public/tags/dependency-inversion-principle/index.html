@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Dependency Inversion Principle" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Dependency Inversion Principle" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/dependency-inversion-principle/" />
@@ -195,7 +198,7 @@ if (!doNotTrack) {
 Source
 Source
 What problems does it solve? The Dependency Inversion Principle (DIP) helps solve:
-Rigidity Fragility Immobility problems Real-world code example Violation of DIP // High-level module directly depending on low-level modules class MessageService { func sendMessageViaEmail(message: String) { let emailSender = EmailSender() emailSender.sendMessage(message: message) } func sendMessageViaSMS(message: String) { let smsSender = SMSSender() smsSender....</p>
+Rigidity Fragility Immobility problems Real-world code example Violation of DIP // High-level module directly depending on low-level modules class MessageService { func sendMessageViaEmail(message: String) { let emailSender = EmailSender() emailSender.sendMessage(message: message) } func sendMessageViaSMS(message: String) { let smsSender = SMSSender() smsSender.sendMessage(message: message) } func sendMessageViaPushNotification(message: String) { let pushNotificationSender = PushNotificationSender() pushNotificationSender.sendMessage(message: message) } } Adhering to DIP // Protocol defining the interface for sending messages protocol MessageSender { func sendMessage(message: String) } // High-level module depending on abstraction (MessageSender protocol) class MessageService { private let messageSender: MessageSender init(messageSender: MessageSender) { self.messageSender = messageSender } func sendMessage(message: String) { messageSender.sendMessage(message: message) } } // Concrete implementations of MessageSender protocol for different channels class EmailSender: MessageSender { func sendMessage(message: String) { print(&#34;Sending email: \(message)&#34;) } } class SMSSender: MessageSender { func sendMessage(message: String) { print(&#34;Sending SMS: \(message)&#34;) } } class PushNotificationSender: MessageSender { func sendMessage(message: String) { print(&#34;Sending push notification: \(message)&#34;) } } // Example usage let emailSender = EmailSender() let smsSender = SMSSender() let pushNotificationSender = PushNotificationSender() let emailService = MessageService(messageSender: emailSender) let smsService = MessageService(messageSender: smsSender) let pushNotificationService = MessageService(messageSender: pushNotificationSender) emailService.sendMessage(message: &#34;Hello via email&#34;) smsService.sendMessage(message: &#34;Hello via SMS&#34;) pushNotificationService.sendMessage(message: &#34;Hello via push notification&#34;) Thank you for reading! 😊</p>
   </div>
   <footer class="entry-footer"><span title='2024-03-05 08:29:30 +0300 +0300'>March 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to The Dependency Inversion Principle" href="http://localhost:1313/posts/the-dependency-inversion-principle/"></a>

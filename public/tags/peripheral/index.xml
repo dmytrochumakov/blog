@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Wed, 10 Jul 2024 07:27:14 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/peripheral/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,14 @@
       <link>http://localhost:1313/posts/scanning-for-peripheral-devices-using-ble-in-an-ios-app/</link>
       <pubDate>Wed, 10 Jul 2024 07:27:14 +0300</pubDate>
       <guid>http://localhost:1313/posts/scanning-for-peripheral-devices-using-ble-in-an-ios-app/</guid>
-      <description>Introduction I had the chance to work on a project where communication via BLE was at the heart of the project.
-Before adding any code to application, I always asked myself about two scenarios:
-The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices. The second scenario is when the device acts as a peripheral device by using CBCharacteristic and changes its value.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I had the chance to work on a project where communication via BLE was at the heart of the project.&lt;/p&gt;
+&lt;p&gt;Before adding any code to application, I always asked myself about two scenarios:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices.&lt;/li&gt;
+&lt;li&gt;The second scenario is when the device acts as a peripheral device by using &lt;code&gt;CBCharacteristic&lt;/code&gt; and changes its value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this article, I will focus on the first scenario and will show how to scan for peripheral devices.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

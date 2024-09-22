@@ -9,124 +9,431 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Sep 2024 07:15:17 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 22 Sep 2024 07:26:23 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/data-structures/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSA - Binary Search Tree Min/Max</title>
+      <link>http://localhost:1313/posts/dsa-binary-search-tree-min-max/</link>
+      <pubDate>Sun, 22 Sep 2024 07:26:23 +0300</pubDate>
+      <guid>http://localhost:1313/posts/dsa-binary-search-tree-min-max/</guid>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;Finding the &lt;code&gt;min&lt;/code&gt; and &lt;code&gt;max&lt;/code&gt; elements is one of the simplest algorithms regarding &lt;code&gt;BST&lt;/code&gt; (Binary Search Tree). The &lt;code&gt;findMin&lt;/code&gt; method loops through the &lt;code&gt;left&lt;/code&gt; child nodes and returns the value from the last node. The &lt;code&gt;findMax&lt;/code&gt; method does the same but traverses the &lt;code&gt;right&lt;/code&gt; child nodes.&lt;/p&gt;
+&lt;h4 id=&#34;code-example---min&#34;&gt;Code Example - Min&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;findMin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;min&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;curr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BSTNode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;curr&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;nil&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;bp&#34;&gt;min&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;curr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;val&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;curr&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;curr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?.&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;left&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;bp&#34;&gt;min&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;code-example---max&#34;&gt;Code Example - Max&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;findMax&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;max&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;curr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BSTNode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;curr&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;nil&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;bp&#34;&gt;max&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;curr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;val&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;curr&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;curr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?.&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;right&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;bp&#34;&gt;max&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;complete-code-example&#34;&gt;Complete Code Example&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kr&#34;&gt;final&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;BSTNode&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;val&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;left&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BSTNode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;right&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BSTNode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;init&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;val&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;nil&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;val&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;val&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;insert&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;_&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;newVal&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;val&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;nil&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;val&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;newVal&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;val&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;newVal&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;newVal&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;val&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;!&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;left&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;nil&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;left&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BSTNode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;val&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;newVal&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;bp&#34;&gt;insert&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;left&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;!.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;val&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;!)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;right&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;nil&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;right&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BSTNode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;val&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;newVal&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;bp&#34;&gt;insert&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;right&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;!.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;val&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;!)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;findMin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;min&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;curr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BSTNode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;curr&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;nil&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;bp&#34;&gt;min&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;curr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;val&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;curr&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;curr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?.&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;left&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;bp&#34;&gt;min&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;findMax&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;max&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;curr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BSTNode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;curr&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;nil&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;bp&#34;&gt;max&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;curr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;val&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;curr&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;curr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?.&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;right&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;bp&#34;&gt;max&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;timespace-complexity&#34;&gt;Time/Space Complexity&lt;/h3&gt;
+&lt;p&gt;For both &lt;code&gt;findMin&lt;/code&gt; and &lt;code&gt;findMax&lt;/code&gt;:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>DSA - Queue</title>
       <link>http://localhost:1313/posts/dsa-queue/</link>
       <pubDate>Fri, 20 Sep 2024 07:15:17 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-queue/</guid>
-      <description>What is a Queue? A Queue is an abstract data type that serves as an ordered collection of elements.
-A simple queue typically has several operations:
-push(item) - adds an item to the tail pop() - removes and returns an item from the head These operations make a queue a FIFO (First In, First Out) data structure.
-Implementation There are two ways to implement a queue.
-The first and simplest (but less efficient) way is by using an array and basic operations:</description>
+      <description>&lt;h3 id=&#34;what-is-a-queue&#34;&gt;What is a Queue?&lt;/h3&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Queue_(abstract_data_type)&#34;&gt;Queue&lt;/a&gt; is an abstract data type that serves as an ordered collection of elements.&lt;/p&gt;
+&lt;p&gt;A simple queue typically has several operations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;push(item)&lt;/code&gt; - adds an item to the &lt;code&gt;tail&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pop()&lt;/code&gt; - removes and returns an item from the &lt;code&gt;head&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These operations make a queue a &lt;strong&gt;FIFO&lt;/strong&gt; (First In, First Out) data structure.&lt;/p&gt;
+&lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
+&lt;p&gt;There are two ways to implement a queue.&lt;/p&gt;
+&lt;p&gt;The first and simplest (but less efficient) way is by using an array and basic operations:&lt;/p&gt;</description>
     </item>
     <item>
       <title>DSA - Adjacency List</title>
       <link>http://localhost:1313/posts/dsa-adjacency-list/</link>
       <pubDate>Tue, 17 Sep 2024 07:06:52 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-adjacency-list/</guid>
-      <description>What is an Adjacency List? An Adjacency List helps store a list of connections between each vertex in a finite graph.
-Vertex Connects with 0 1 1 0, 2, 3 2 1, 3 3 1, 2 Implementation The addEdge method takes vertices as input and adds an edge to the adjacency list. In this example, the adjacency list is represented as a dictionary that maps vertices to a set of all connected vertices.</description>
+      <description>&lt;h3 id=&#34;what-is-an-adjacency-list&#34;&gt;What is an Adjacency List?&lt;/h3&gt;
+&lt;p&gt;An &lt;a href=&#34;https://en.wikipedia.org/wiki/Adjacency_list&#34;&gt;Adjacency List&lt;/a&gt; helps store a list of connections between each vertex in a finite &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-graph?r=2fepxg&amp;utm_campaign=post&amp;utm_medium=web&amp;showWelcomeOnShare=true&#34;&gt;graph&lt;/a&gt;.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Vertex&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Connects with&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;0&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;0, 2, 3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;2&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1, 3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;3&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1, 2&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;addEdge&lt;/code&gt; method takes vertices as input and adds an edge to the adjacency list. In this example, the adjacency list is represented as a dictionary that maps vertices to a &lt;code&gt;set&lt;/code&gt; of all connected vertices.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DSA - Graph</title>
       <link>http://localhost:1313/posts/dsa-graph/</link>
       <pubDate>Sat, 14 Sep 2024 06:57:03 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-graph/</guid>
-      <description>What is a graph? A graph is an abstract data type that represents vertices and edges that connect those vertices.
-Source
-Implementation A graph can be represented as a matrix with edges connecting each pair of vertices. For example, a graph with vertices 0, 1, 2, 3, 4 and edges between them can be represented as a matrix:
-0 1 2 3 4 0 false true false false true 1 true false true true true 2 false true false true false 3 false true true false true 4 true true false true false In Swift, you can use a list of lists (2D array) to represent the matrix:</description>
+      <description>&lt;h3 id=&#34;what-is-a-graph&#34;&gt;What is a graph?&lt;/h3&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Graph_(abstract_data_type)&#34;&gt;graph&lt;/a&gt; is an abstract data type that represents vertices and edges that connect those vertices.&lt;/p&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-cafc5&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-cafc5&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/ada_cs_struct_graph_components.svg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://adacomputerscience.org/images/content/computer_science/data_structures_and_algorithms/data_structures/figures/ada_cs_struct_graph_components.svg&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
+&lt;p&gt;A graph can be represented as a matrix with edges connecting each pair of vertices. For example, a graph with vertices 0, 1, 2, 3, 4 and edges between them can be represented as a matrix:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;0&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;1&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;2&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;3&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;4&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;0&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;2&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;3&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;4&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;In Swift, you can use a list of lists (2D array) to represent the matrix:&lt;/p&gt;</description>
     </item>
     <item>
       <title>DSA - Breadth First Search</title>
       <link>http://localhost:1313/posts/dsa-breadth-first-search/</link>
       <pubDate>Thu, 12 Sep 2024 07:14:47 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-breadth-first-search/</guid>
-      <description>What is Breadth First Search? Breadth-first search (BFS) is an algorithm for traversing tree or graph data structures. It starts at the root and explores all the neighboring nodes at the current depth before moving on to nodes at the next depth level.
-Source
-Implementation The implementation of BFS may vary depending on the problem. The main idea of BFS is:
-It has a visited array that collects all elements that have already been visited.</description>
+      <description>&lt;h3 id=&#34;what-is-breadth-first-search&#34;&gt;What is Breadth First Search?&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Breadth-first_search&#34;&gt;Breadth-first search (BFS)&lt;/a&gt; is an algorithm for traversing tree or graph data structures. It starts at the root and explores all the neighboring nodes at the current depth before moving on to nodes at the next depth level.&lt;/p&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-1b6ce&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-1b6ce&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/Breadth-first-tree.png#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;br&gt;
+&lt;a href=&#34;https://upload.wikimedia.org/wikipedia/commons/3/33/Breadth-first-tree.svg&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
+&lt;p&gt;The implementation of BFS may vary depending on the problem. The main idea of BFS is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It has a &lt;code&gt;visited&lt;/code&gt; array that collects all elements that have already been visited.&lt;/li&gt;
+&lt;li&gt;It has a &lt;code&gt;queue&lt;/code&gt; with all elements it&amp;rsquo;s going to visit.&lt;/li&gt;
+&lt;li&gt;It loops through the &lt;code&gt;queue&lt;/code&gt;, removes the first element, and appends it to the &lt;code&gt;visited&lt;/code&gt; list.&lt;/li&gt;
+&lt;li&gt;Finally, it loops through all the &lt;code&gt;neighbors&lt;/code&gt; and appends the neighbor to the &lt;code&gt;queue&lt;/code&gt; if it has not been visited and is not already in the queue.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;code-example&#34;&gt;Code Example&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;bfs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;_&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;graph&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;s&#34;&gt;&amp;#34;New York&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Buenos Aires&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;Cairo&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;Tokyo&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;London&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;visited&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;queue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;queue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;append&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;queue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;bp&#34;&gt;isEmpty&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;tmp&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;queue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;removeFirst&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;visited&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;append&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tmp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;neighbors&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;graph&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tmp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;neighbor&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;neighbors&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;bp&#34;&gt;sorted&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;visited&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;bp&#34;&gt;contains&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;neighbor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;queue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;bp&#34;&gt;contains&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;neighbor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                    &lt;span class=&#34;n&#34;&gt;queue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;append&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;neighbor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;visited&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;thank-you-for-reading-&#34;&gt;Thank you for reading! 😊&lt;/h4&gt;</description>
     </item>
     <item>
       <title>DSA - Backtracking</title>
       <link>http://localhost:1313/posts/dsa-backtracking/</link>
       <pubDate>Mon, 09 Sep 2024 07:19:46 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-backtracking/</guid>
-      <description>What is Backtracking? Backtracking is a class of algorithms for finding solutions to complex problems. A backtracking algorithm uses recursion and is based on depth-first search (DFS).
-Depth First Search (DFS) Depth First Search (DFS) is an essential part of backtracking. DFS is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (or an arbitrary node in the case of a graph) and explores as far as possible along each branch before backtracking.</description>
+      <description>&lt;h3 id=&#34;what-is-backtracking&#34;&gt;What is Backtracking?&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Backtracking&#34;&gt;Backtracking&lt;/a&gt; is a class of algorithms for finding solutions to complex problems. A backtracking algorithm uses &lt;a href=&#34;https://en.wikipedia.org/wiki/Recursion_(computer_science)&#34;&gt;recursion&lt;/a&gt; and is based on &lt;a href=&#34;https://en.wikipedia.org/wiki/Depth-first_search&#34;&gt;depth-first search&lt;/a&gt; (DFS).&lt;/p&gt;
+&lt;h3 id=&#34;depth-first-search-dfs&#34;&gt;Depth First Search (DFS)&lt;/h3&gt;
+&lt;p&gt;Depth First Search (DFS) is an essential part of backtracking. DFS is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (or an arbitrary node in the case of a graph) and explores as far as possible along each branch before backtracking.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DSA - Trie</title>
       <link>http://localhost:1313/posts/dsa-trie/</link>
       <pubDate>Fri, 06 Sep 2024 06:56:18 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-trie/</guid>
-      <description>What is a Trie? A Trie is a data structure usually called a &amp;ldquo;prefix tree,&amp;rdquo; often represented as a nested tree of dictionaries where each key is a character that maps to the next character in a word.
-Let&amp;rsquo;s look at some examples of a Trie. The Trie consists of two main classes: the TrieNode class and the Trie class.
-TrieNode The TrieNode class has two properties:
-children - a property that represents all characters in a given word and points to the next character.</description>
+      <description>&lt;h3 id=&#34;what-is-a-trie&#34;&gt;What is a Trie?&lt;/h3&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Trie&#34;&gt;Trie&lt;/a&gt; is a data structure usually called a &amp;ldquo;prefix tree,&amp;rdquo; often represented as a nested tree of dictionaries where each key is a character that maps to the next character in a word.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s look at some examples of a Trie. The Trie consists of two main classes: the &lt;code&gt;TrieNode&lt;/code&gt; class and the &lt;code&gt;Trie&lt;/code&gt; class.&lt;/p&gt;
+&lt;h3 id=&#34;trienode&#34;&gt;TrieNode&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;TrieNode&lt;/code&gt; class has two properties:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;children&lt;/code&gt; - a property that represents all characters in a given word and points to the next character.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;isEndSymbol&lt;/code&gt; - a property that indicates the end of the word in a given sequence of characters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kr&#34;&gt;final&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;TrieNode&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;children&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;Character&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;TrieNode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;isEndSymbol&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Bool&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;init&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;children&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[:]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;isEndSymbol&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;trie&#34;&gt;Trie&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;Trie&lt;/code&gt; class has two main operations, &lt;code&gt;insert&lt;/code&gt; and &lt;code&gt;exists&lt;/code&gt;, and a &lt;code&gt;root&lt;/code&gt; property that stores all possible combinations of words.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DSA - Binary Search Tree</title>
       <link>http://localhost:1313/posts/dsa-binary-search-tree/</link>
       <pubDate>Mon, 02 Sep 2024 07:12:55 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-binary-search-tree/</guid>
-      <description>What is a Tree? A Tree is a data structure that has a root and subtrees of children, representing a set of linked nodes. Trees behave similarly to a LinkedList in that they have a collection of nodes starting with a head (root). The main difference is that Trees can have multiple children, whereas a LinkedList, on the other hand, can have only one next child.
-I’m going to focus on a commonly used type of tree, the Binary Search Tree.</description>
+      <description>&lt;h3 id=&#34;what-is-a-tree&#34;&gt;What is a Tree?&lt;/h3&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Tree_(data_structure)&#34;&gt;&lt;code&gt;Tree&lt;/code&gt;&lt;/a&gt; is a data structure that has a root and subtrees of children, representing a set of linked nodes. &lt;code&gt;Trees&lt;/code&gt; behave similarly to a &lt;a href=&#34;https://dmytrosblog.substack.com/p/dsa-linked-list?r=2fepxg&#34;&gt;&lt;code&gt;LinkedList&lt;/code&gt;&lt;/a&gt; in that they have a collection of nodes starting with a &lt;code&gt;head (root)&lt;/code&gt;. The main difference is that &lt;code&gt;Trees&lt;/code&gt; can have multiple children, whereas a &lt;code&gt;LinkedList&lt;/code&gt;, on the other hand, can have only one &lt;code&gt;next&lt;/code&gt; child.&lt;/p&gt;
+&lt;p&gt;I’m going to focus on a commonly used type of tree, the Binary Search Tree.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DSA - Sliding Window</title>
       <link>http://localhost:1313/posts/dsa-sliding-window/</link>
       <pubDate>Wed, 28 Aug 2024 07:20:26 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-sliding-window/</guid>
-      <description>What is the sliding window technique? The sliding window technique is a common algorithmic approach used to create a fixed-sized window that moves through the data one step at a time, typically from left to right, to perform specific operations or computations on the elements within the window.
-What is the sliding window algorithm? The sliding window algorithm is a method for finding a subset of elements that satisfy certain conditions in a given problem.</description>
+      <description>&lt;h3 id=&#34;what-is-the-sliding-window-technique&#34;&gt;What is the sliding window technique?&lt;/h3&gt;
+&lt;p&gt;The sliding window technique is a common algorithmic approach used to create a fixed-sized window that moves through the data one step at a time, typically from left to right, to perform specific operations or computations on the elements within the window.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-the-sliding-window-algorithm&#34;&gt;What is the sliding window algorithm?&lt;/h3&gt;
+&lt;p&gt;The sliding window algorithm is a method for finding a subset of elements that satisfy certain conditions in a given problem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DSA - Linked List</title>
       <link>http://localhost:1313/posts/dsa-linked-list/</link>
       <pubDate>Tue, 27 Aug 2024 07:13:19 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-linked-list/</guid>
-      <description>What is a Linked List? A linked list is a common data structure that is similar to an array, but its order is based on pointers to the next element in memory instead of using physical placement (indices).
-A linked list has two main components:
-ListNode class: This class has a val property that represents the value and a next property that represents a pointer to the next element in memory.</description>
+      <description>&lt;h3 id=&#34;what-is-a-linked-list&#34;&gt;What is a Linked List?&lt;/h3&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Linked_list&#34;&gt;linked list&lt;/a&gt; is a common data structure that is similar to an array, but its order is based on pointers to the next element in memory instead of using physical placement (indices).&lt;/p&gt;
+&lt;p&gt;A linked list has two main components:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;ListNode&lt;/strong&gt; class: This class has a &lt;code&gt;val&lt;/code&gt; property that represents the value and a &lt;code&gt;next&lt;/code&gt; property that represents a pointer to the next element in memory.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LinkedList&lt;/strong&gt; class: This class stores a collection of &lt;code&gt;ListNode&lt;/code&gt; elements and provides operations like &lt;code&gt;add to tail&lt;/code&gt; and &lt;code&gt;add to head&lt;/code&gt;.
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;add to tail&lt;/code&gt; operation takes O(n) time because it needs to iterate through the list to find the last element.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;add to head&lt;/code&gt; operation takes O(1) time because it only needs to set the next pointer of the new node to the current head and update the head with the new node.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;where-can-it-be-used&#34;&gt;Where can it be used?&lt;/h3&gt;
+&lt;p&gt;A linked list can be used in stacks, queues, and lists.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DSA - Binary Search</title>
       <link>http://localhost:1313/posts/dsa-binary-search/</link>
       <pubDate>Mon, 26 Aug 2024 07:09:48 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-binary-search/</guid>
-      <description>What is binary search? Binary search is an algorithm that helps find an element in a sorted array in O(log n) time.
-Why should the input be sorted before performing binary search? The input array for binary search needs to be sorted because the algorithm eliminates half of the choices at each step. If the guessed value is greater than the target value, it knows that the right part can’t contain the target value.</description>
+      <description>&lt;h3 id=&#34;what-is-binary-search&#34;&gt;What is binary search?&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Binary_search&#34;&gt;Binary search&lt;/a&gt; is an algorithm that helps find an element in a sorted array in O(log n) time.&lt;/p&gt;
+&lt;h3 id=&#34;why-should-the-input-be-sorted-before-performing-binary-search&#34;&gt;Why should the input be sorted before performing binary search?&lt;/h3&gt;
+&lt;p&gt;The input array for binary search needs to be sorted because the algorithm eliminates half of the choices at each step. If the guessed value is greater than the target value, it knows that the right part can’t contain the target value.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DSA - Stack</title>
       <link>http://localhost:1313/posts/dsa-stack/</link>
       <pubDate>Tue, 20 Aug 2024 07:17:01 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-stack/</guid>
-      <description>What is a Stack? A stack is an abstract data type that serves as a collection of elements and implements operations like push, pop, and peek at the end in O(1) time. It uses the LIFO (last in, first out) order. For example, a stack can be a collection of items where adding or removing is practical at the top.
-Code Example struct Stack&amp;lt;Element&amp;gt; { private var array: [Element] init(array: [Element] = []) { self.</description>
+      <description>&lt;h3 id=&#34;what-is-a-stack&#34;&gt;What is a Stack?&lt;/h3&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Stack_(abstract_data_type)&#34;&gt;stack&lt;/a&gt; is an abstract data type that serves as a collection of elements and implements operations like &lt;code&gt;push&lt;/code&gt;, &lt;code&gt;pop&lt;/code&gt;, and &lt;code&gt;peek&lt;/code&gt; at the end in O(1) time. It uses the LIFO (&lt;strong&gt;last in&lt;/strong&gt;, &lt;strong&gt;first out&lt;/strong&gt;) order. For example, a stack can be a collection of items where adding or removing is practical at the top.&lt;/p&gt;
+&lt;h4 id=&#34;code-example&#34;&gt;Code Example&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Stack&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Element&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Element&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;init&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Element&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[])&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kr&#34;&gt;mutating&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;push&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;_&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;element&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Element&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;append&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;element&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kr&#34;&gt;mutating&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;pop&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Element&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;bp&#34;&gt;isEmpty&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;nil&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;popLast&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;peek&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Element&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;bp&#34;&gt;isEmpty&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;nil&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;bp&#34;&gt;last&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;practical-applications-of-stacks&#34;&gt;Practical Applications of Stacks&lt;/h3&gt;
+&lt;p&gt;You can observe stack-like behavior in many places, such as redo-undo features in text editors, Photoshop, and the forward and backward navigation features in web browsers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DSA - Two Pointers Technique</title>
       <link>http://localhost:1313/posts/dsa-two-pointers-technique/</link>
       <pubDate>Sat, 17 Aug 2024 07:00:23 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-two-pointers-technique/</guid>
-      <description>What is the Two Pointers Technique? The two pointers technique helps track indices in a collection of elements to access objects in memory by index with O(1) space. This technique is very handy when you need to optimize the time and space of a solution.
-What Problems Does It Solve? The two pointers technique solves problems involving collections. For example, it is useful when you need to compare each element to other elements in that collection.</description>
+      <description>&lt;h3 id=&#34;what-is-the-two-pointers-technique&#34;&gt;What is the Two Pointers Technique?&lt;/h3&gt;
+&lt;p&gt;The two pointers technique helps track indices in a collection of elements to access objects in memory by index with O(1) space. This technique is very handy when you need to optimize the time and space of a solution.&lt;/p&gt;
+&lt;h3 id=&#34;what-problems-does-it-solve&#34;&gt;What Problems Does It Solve?&lt;/h3&gt;
+&lt;p&gt;The two pointers technique solves problems involving collections. For example, it is useful when you need to compare each element to other elements in that collection.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DSA - Merge Sorted Array Problem</title>
       <link>http://localhost:1313/posts/dsa-merge-sorted-array-problem/</link>
       <pubDate>Thu, 15 Aug 2024 07:04:16 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-merge-sorted-array-problem/</guid>
-      <description>Introduction In the previous chapter, we discussed Data Structures and Algorithms, delved into an overview of Dynamic Arrays, and solved the &amp;ldquo;Remove Element&amp;rdquo; problem.
-In this article, I&amp;rsquo;m going to show one of the ways to solve the 88. Merge Sorted Array problem.
-Problem You are given two integer arrays, nums1 and nums2, sorted in non-decreasing order, and two integers, m and n, representing the number of elements in nums1 and nums2, respectively.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;In the &lt;a href=&#34;https://dmytros.blog/posts/data-structures-and-algorithms-arrays-swift/&#34;&gt;previous chapter&lt;/a&gt;, we discussed Data Structures and Algorithms, delved into an overview of Dynamic Arrays, and solved the &amp;ldquo;Remove Element&amp;rdquo; problem.&lt;/p&gt;
+&lt;p&gt;In this article, I&amp;rsquo;m going to show one of the ways to solve the &lt;a href=&#34;https://leetcode.com/problems/merge-sorted-array/description/?envType=study-plan-v2&amp;envId=top-interview-150&#34;&gt;88. Merge Sorted Array&lt;/a&gt; problem.&lt;/p&gt;
+&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;
+&lt;p&gt;You are given two integer arrays, &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt;, sorted in non-decreasing order, and two integers, &lt;code&gt;m&lt;/code&gt; and &lt;code&gt;n&lt;/code&gt;, representing the number of elements in &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt;, respectively. Merge &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt; into a single array sorted in non-decreasing order. The final sorted array should not be returned by the function but should instead be stored inside the array &lt;code&gt;nums1&lt;/code&gt;. To accommodate this, &lt;code&gt;nums1&lt;/code&gt; has a length of &lt;code&gt;m + n&lt;/code&gt;, where the first &lt;code&gt;m&lt;/code&gt; elements denote the elements that should be merged, and the last &lt;code&gt;n&lt;/code&gt; elements are set to &lt;code&gt;0&lt;/code&gt; and should be ignored. &lt;code&gt;nums2&lt;/code&gt; has a length of &lt;code&gt;n&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

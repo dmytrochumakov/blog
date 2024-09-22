@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Big O" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Big O" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/big-o/" />
@@ -193,7 +196,8 @@ if (!doNotTrack) {
   <div class="entry-content">
     <p>What is a Big O notation? The Big O notation helps identify algorithm efficiency. It can measure computation and memory growth with respect to input. Real-world code example O(n) — Linear Time
 func containsValue(array: [Int], value: Int) -&gt; Bool { for element in array { if element == value { return true } } return false } O(1) — Constant Time
-func findFirstElement(array: [Int]) -&gt; Int? { return array.first } Thank you for reading!...</p>
+func findFirstElement(array: [Int]) -&gt; Int? { return array.first } Thank you for reading!
+</p>
   </div>
   <footer class="entry-footer"><span title='2024-02-21 08:29:30 +0300 +0300'>February 21, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Big O notation" href="http://localhost:1313/posts/big-o-notation/"></a>

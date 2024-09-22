@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Non-Consumable" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Non-Consumable" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/non-consumable/" />
@@ -192,7 +195,8 @@ if (!doNotTrack) {
   </header>
   <div class="entry-content">
     <p>Introduction I was wondering how to add in-app purchases to my app. I chose non-consumable in-app purchase because you can pay one time for this item. Here are a few steps on how I did it.
-First Step Set up In-App Purchases for your app in App Store Connect account or add a .storekit configuration file and start from there. If you’ve already set up In-App Purchases in your account, you can sync the StoreKit config with that data....</p>
+First Step Set up In-App Purchases for your app in App Store Connect account or add a .storekit configuration file and start from there. If you’ve already set up In-App Purchases in your account, you can sync the StoreKit config with that data.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-12 07:57:51 +0300 EEST'>May 12, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Implementing In-App Purchases to SwiftUI app using StoreKit 2" href="http://localhost:1313/posts/implementing-in-app-purchases-to-swiftui-app-using-storekit-2/"></a>

@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Wed, 31 Jul 2024 07:26:30 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/optimizing/index.xml" rel="self" type="application/rss+xml" />
@@ -18,7 +18,8 @@
       <link>http://localhost:1313/posts/optimizing-ios-app-performance-common-techniques/</link>
       <pubDate>Wed, 31 Jul 2024 07:26:30 +0300</pubDate>
       <guid>http://localhost:1313/posts/optimizing-ios-app-performance-common-techniques/</guid>
-      <description>Introduction A well-performing application is the heart of a good user experience. If an application responds well, it helps attract more users and grow the business around it. On the other hand, if it performs poorly, it frustrates users and leads them to uninstall the app. To solve these issues, we need tools to monitor app behavior. Luckily for us, Xcode provides a list of tools that will help us resolve these problems.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;A well-performing application is the heart of a good user experience. If an application responds well, it helps attract more users and grow the business around it. On the other hand, if it performs poorly, it frustrates users and leads them to uninstall the app. To solve these issues, we need tools to monitor app behavior. Luckily for us, Xcode provides a list of tools that will help us resolve these problems.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

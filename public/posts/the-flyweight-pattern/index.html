@@ -7,10 +7,76 @@
 <meta name="robots" content="index, follow">
 <title>The Flyweight Pattern | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="flyweight pattern, design patterns, swift, oop">
-<meta name="description" content="What is a Flyweight Pattern? The Flyweight Pattern refers to an object that minimizes memory usage by sharing some of its data with other similar objects.
+<meta name="description" content="What is a Flyweight Pattern?
+
+The Flyweight Pattern refers to an object that minimizes memory usage by sharing some of its data with other similar objects.
+
+
+    
+    
+    
+        
+    
+
 Source
-What problems does it solve? The Flyweight Pattern helps solve following problems:
-Large Memory Footprint: When dealing with a large number of objects, especially if these objects share a significant amount of common state, traditional object creation can lead to excessive memory consumption. The Flyweight Pattern reduces memory usage by sharing this common state among multiple objects.">
+What problems does it solve?
+The Flyweight Pattern helps solve following problems:
+
+Large Memory Footprint: When dealing with a large number of objects, especially if these objects share a significant amount of common state, traditional object creation can lead to excessive memory consumption. The Flyweight Pattern reduces memory usage by sharing this common state among multiple objects.
+Performance Overhead: Creating and managing a large number of objects can also introduce performance overhead due to memory allocation, deallocation, and initialization. By reusing shared objects and minimizing the creation of new objects, the Flyweight Pattern can improve performance.
+Object Creation Cost: Creating new objects can be costly in terms of time and resources, especially if the objects require complex initialization. By reusing existing objects, the Flyweight Pattern reduces the need for creating new objects, thereby reducing object creation costs.
+
+Real-world code example
+// Flyweight protocol defining the interface for shapes
+protocol Shape {
+    func draw(at point: CGPoint)
+}
+
+// Concrete flyweight class representing a circle
+class Circle: Shape {
+    private let radius: CGFloat
+    private let fillColor: UIColor
+
+    init(radius: CGFloat, fillColor: UIColor) {
+        self.radius = radius
+        self.fillColor = fillColor
+    }
+
+    func draw(at point: CGPoint) {
+        print(&#34;Drawing Circle at (\(point.x), \(point.y)) with radius \(radius) and fill color \(fillColor)&#34;)
+        // Actual drawing logic would go here
+    }
+}
+
+// Flyweight factory class responsible for creating and managing flyweight objects
+class ShapeFactory {
+    private var flyweights = [String: Shape]()
+
+    func getCircle(radius: CGFloat, fillColor: UIColor) -&gt; Shape {
+        let key = &#34;Circle-\(radius)-\(fillColor)&#34;
+        if let existingShape = flyweights[key] {
+            return existingShape
+        } else {
+            let newShape = Circle(radius: radius, fillColor: fillColor)
+            flyweights[key] = newShape
+            return newShape
+        }
+    }
+}
+
+// Client code
+let shapeFactory = ShapeFactory()
+
+// Request for circles with different properties
+let circle1 = shapeFactory.getCircle(radius: 10, fillColor: .red)
+let circle2 = shapeFactory.getCircle(radius: 10, fillColor: .red) // Reusing the same circle object
+let circle3 = shapeFactory.getCircle(radius: 20, fillColor: .blue)
+
+// Drawing circles
+circle1.draw(at: CGPoint(x: 100, y: 100))
+circle2.draw(at: CGPoint(x: 200, y: 200))
+circle3.draw(at: CGPoint(x: 300, y: 300))
+Thank you for reading! 😊">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/the-flyweight-pattern/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -77,21 +143,90 @@ Large Memory Footprint: When dealing with a large number of objects, especially 
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="The Flyweight Pattern" />
-<meta property="og:description" content="What is a Flyweight Pattern? The Flyweight Pattern refers to an object that minimizes memory usage by sharing some of its data with other similar objects.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="The Flyweight Pattern" />
+<meta property="og:description" content="What is a Flyweight Pattern?
+
+The Flyweight Pattern refers to an object that minimizes memory usage by sharing some of its data with other similar objects.
+
+
+    
+    
+    
+        
+    
+
 Source
-What problems does it solve? The Flyweight Pattern helps solve following problems:
-Large Memory Footprint: When dealing with a large number of objects, especially if these objects share a significant amount of common state, traditional object creation can lead to excessive memory consumption. The Flyweight Pattern reduces memory usage by sharing this common state among multiple objects." />
+What problems does it solve?
+The Flyweight Pattern helps solve following problems:
+
+Large Memory Footprint: When dealing with a large number of objects, especially if these objects share a significant amount of common state, traditional object creation can lead to excessive memory consumption. The Flyweight Pattern reduces memory usage by sharing this common state among multiple objects.
+Performance Overhead: Creating and managing a large number of objects can also introduce performance overhead due to memory allocation, deallocation, and initialization. By reusing shared objects and minimizing the creation of new objects, the Flyweight Pattern can improve performance.
+Object Creation Cost: Creating new objects can be costly in terms of time and resources, especially if the objects require complex initialization. By reusing existing objects, the Flyweight Pattern reduces the need for creating new objects, thereby reducing object creation costs.
+
+Real-world code example
+// Flyweight protocol defining the interface for shapes
+protocol Shape {
+    func draw(at point: CGPoint)
+}
+
+// Concrete flyweight class representing a circle
+class Circle: Shape {
+    private let radius: CGFloat
+    private let fillColor: UIColor
+
+    init(radius: CGFloat, fillColor: UIColor) {
+        self.radius = radius
+        self.fillColor = fillColor
+    }
+
+    func draw(at point: CGPoint) {
+        print(&#34;Drawing Circle at (\(point.x), \(point.y)) with radius \(radius) and fill color \(fillColor)&#34;)
+        // Actual drawing logic would go here
+    }
+}
+
+// Flyweight factory class responsible for creating and managing flyweight objects
+class ShapeFactory {
+    private var flyweights = [String: Shape]()
+
+    func getCircle(radius: CGFloat, fillColor: UIColor) -&gt; Shape {
+        let key = &#34;Circle-\(radius)-\(fillColor)&#34;
+        if let existingShape = flyweights[key] {
+            return existingShape
+        } else {
+            let newShape = Circle(radius: radius, fillColor: fillColor)
+            flyweights[key] = newShape
+            return newShape
+        }
+    }
+}
+
+// Client code
+let shapeFactory = ShapeFactory()
+
+// Request for circles with different properties
+let circle1 = shapeFactory.getCircle(radius: 10, fillColor: .red)
+let circle2 = shapeFactory.getCircle(radius: 10, fillColor: .red) // Reusing the same circle object
+let circle3 = shapeFactory.getCircle(radius: 20, fillColor: .blue)
+
+// Drawing circles
+circle1.draw(at: CGPoint(x: 100, y: 100))
+circle2.draw(at: CGPoint(x: 200, y: 200))
+circle3.draw(at: CGPoint(x: 300, y: 300))
+Thank you for reading! 😊" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/the-flyweight-pattern/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -102,10 +237,76 @@ Large Memory Footprint: When dealing with a large number of objects, especially 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="The Flyweight Pattern"/>
-<meta name="twitter:description" content="What is a Flyweight Pattern? The Flyweight Pattern refers to an object that minimizes memory usage by sharing some of its data with other similar objects.
+<meta name="twitter:description" content="What is a Flyweight Pattern?
+
+The Flyweight Pattern refers to an object that minimizes memory usage by sharing some of its data with other similar objects.
+
+
+    
+    
+    
+        
+    
+
 Source
-What problems does it solve? The Flyweight Pattern helps solve following problems:
-Large Memory Footprint: When dealing with a large number of objects, especially if these objects share a significant amount of common state, traditional object creation can lead to excessive memory consumption. The Flyweight Pattern reduces memory usage by sharing this common state among multiple objects."/>
+What problems does it solve?
+The Flyweight Pattern helps solve following problems:
+
+Large Memory Footprint: When dealing with a large number of objects, especially if these objects share a significant amount of common state, traditional object creation can lead to excessive memory consumption. The Flyweight Pattern reduces memory usage by sharing this common state among multiple objects.
+Performance Overhead: Creating and managing a large number of objects can also introduce performance overhead due to memory allocation, deallocation, and initialization. By reusing shared objects and minimizing the creation of new objects, the Flyweight Pattern can improve performance.
+Object Creation Cost: Creating new objects can be costly in terms of time and resources, especially if the objects require complex initialization. By reusing existing objects, the Flyweight Pattern reduces the need for creating new objects, thereby reducing object creation costs.
+
+Real-world code example
+// Flyweight protocol defining the interface for shapes
+protocol Shape {
+    func draw(at point: CGPoint)
+}
+
+// Concrete flyweight class representing a circle
+class Circle: Shape {
+    private let radius: CGFloat
+    private let fillColor: UIColor
+
+    init(radius: CGFloat, fillColor: UIColor) {
+        self.radius = radius
+        self.fillColor = fillColor
+    }
+
+    func draw(at point: CGPoint) {
+        print(&#34;Drawing Circle at (\(point.x), \(point.y)) with radius \(radius) and fill color \(fillColor)&#34;)
+        // Actual drawing logic would go here
+    }
+}
+
+// Flyweight factory class responsible for creating and managing flyweight objects
+class ShapeFactory {
+    private var flyweights = [String: Shape]()
+
+    func getCircle(radius: CGFloat, fillColor: UIColor) -&gt; Shape {
+        let key = &#34;Circle-\(radius)-\(fillColor)&#34;
+        if let existingShape = flyweights[key] {
+            return existingShape
+        } else {
+            let newShape = Circle(radius: radius, fillColor: fillColor)
+            flyweights[key] = newShape
+            return newShape
+        }
+    }
+}
+
+// Client code
+let shapeFactory = ShapeFactory()
+
+// Request for circles with different properties
+let circle1 = shapeFactory.getCircle(radius: 10, fillColor: .red)
+let circle2 = shapeFactory.getCircle(radius: 10, fillColor: .red) // Reusing the same circle object
+let circle3 = shapeFactory.getCircle(radius: 20, fillColor: .blue)
+
+// Drawing circles
+circle1.draw(at: CGPoint(x: 100, y: 100))
+circle2.draw(at: CGPoint(x: 200, y: 200))
+circle3.draw(at: CGPoint(x: 300, y: 300))
+Thank you for reading! 😊"/>
 
 
 <script type="application/ld+json">
@@ -134,7 +335,7 @@ Large Memory Footprint: When dealing with a large number of objects, especially 
   "@type": "BlogPosting",
   "headline": "The Flyweight Pattern",
   "name": "The Flyweight Pattern",
-  "description": "What is a Flyweight Pattern? The Flyweight Pattern refers to an object that minimizes memory usage by sharing some of its data with other similar objects.\nSource\nWhat problems does it solve? The Flyweight Pattern helps solve following problems:\nLarge Memory Footprint: When dealing with a large number of objects, especially if these objects share a significant amount of common state, traditional object creation can lead to excessive memory consumption. The Flyweight Pattern reduces memory usage by sharing this common state among multiple objects.",
+  "description": "What is a Flyweight Pattern? The Flyweight Pattern refers to an object that minimizes memory usage by sharing some of its data with other similar objects.\nSource\nWhat problems does it solve? The Flyweight Pattern helps solve following problems:\nLarge Memory Footprint: When dealing with a large number of objects, especially if these objects share a significant amount of common state, traditional object creation can lead to excessive memory consumption. The Flyweight Pattern reduces memory usage by sharing this common state among multiple objects. Performance Overhead: Creating and managing a large number of objects can also introduce performance overhead due to memory allocation, deallocation, and initialization. By reusing shared objects and minimizing the creation of new objects, the Flyweight Pattern can improve performance. Object Creation Cost: Creating new objects can be costly in terms of time and resources, especially if the objects require complex initialization. By reusing existing objects, the Flyweight Pattern reduces the need for creating new objects, thereby reducing object creation costs. Real-world code example // Flyweight protocol defining the interface for shapes protocol Shape { func draw(at point: CGPoint) } // Concrete flyweight class representing a circle class Circle: Shape { private let radius: CGFloat private let fillColor: UIColor init(radius: CGFloat, fillColor: UIColor) { self.radius = radius self.fillColor = fillColor } func draw(at point: CGPoint) { print(\u0026#34;Drawing Circle at (\\(point.x), \\(point.y)) with radius \\(radius) and fill color \\(fillColor)\u0026#34;) // Actual drawing logic would go here } } // Flyweight factory class responsible for creating and managing flyweight objects class ShapeFactory { private var flyweights = [String: Shape]() func getCircle(radius: CGFloat, fillColor: UIColor) -\u0026gt; Shape { let key = \u0026#34;Circle-\\(radius)-\\(fillColor)\u0026#34; if let existingShape = flyweights[key] { return existingShape } else { let newShape = Circle(radius: radius, fillColor: fillColor) flyweights[key] = newShape return newShape } } } // Client code let shapeFactory = ShapeFactory() // Request for circles with different properties let circle1 = shapeFactory.getCircle(radius: 10, fillColor: .red) let circle2 = shapeFactory.getCircle(radius: 10, fillColor: .red) // Reusing the same circle object let circle3 = shapeFactory.getCircle(radius: 20, fillColor: .blue) // Drawing circles circle1.draw(at: CGPoint(x: 100, y: 100)) circle2.draw(at: CGPoint(x: 200, y: 200)) circle3.draw(at: CGPoint(x: 300, y: 300)) Thank you for reading! 😊",
   "keywords": [
     "flyweight pattern", "design patterns", "swift", "oop"
   ],

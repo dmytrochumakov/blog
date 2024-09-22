@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Swift" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Swift" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/swift/" />
@@ -187,6 +190,20 @@ if (!doNotTrack) {
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - Binary Search Tree Min/Max
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction Finding the min and max elements is one of the simplest algorithms regarding BST (Binary Search Tree). The findMin method loops through the left child nodes and returns the value from the last node. The findMax method does the same but traverses the right child nodes.
+Code Example - Min func findMin() -&gt; Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } Code Example - Max func findMax() -&gt; Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } Complete Code Example final class BSTNode { var val: Int? var left: BSTNode? var right: BSTNode? init(val: Int? = nil) { self.val = val } func insert(_ newVal: Int) { if self.val == nil { self.val = newVal return } if self.val == newVal { return } if newVal &lt; self.val! { if self.left == nil { self.left = BSTNode(val: newVal) return } self.insert(self.left!.val!) return } if self.right == nil { self.right = BSTNode(val: newVal) return } self.insert(self.right!.val!) } func findMin() -&gt; Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } func findMax() -&gt; Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } } Time/Space Complexity For both findMin and findMax:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-09-22 07:26:23 +0300 EEST'>September 22, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to DSA - Binary Search Tree Min/Max" href="http://localhost:1313/posts/dsa-binary-search-tree-min-max/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">DSA - Queue
     </h2>
   </header>
@@ -195,7 +212,8 @@ if (!doNotTrack) {
 A simple queue typically has several operations:
 push(item) - adds an item to the tail pop() - removes and returns an item from the head These operations make a queue a FIFO (First In, First Out) data structure.
 Implementation There are two ways to implement a queue.
-The first and simplest (but less efficient) way is by using an array and basic operations:...</p>
+The first and simplest (but less efficient) way is by using an array and basic operations:
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-09-20 07:15:17 +0300 EEST'>September 20, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Queue" href="http://localhost:1313/posts/dsa-queue/"></a>
@@ -208,7 +226,8 @@ The first and simplest (but less efficient) way is by using an array and basic o
   </header>
   <div class="entry-content">
     <p>What is an Adjacency List? An Adjacency List helps store a list of connections between each vertex in a finite graph.
-Vertex Connects with 0 1 1 0, 2, 3 2 1, 3 3 1, 2 Implementation The addEdge method takes vertices as input and adds an edge to the adjacency list. In this example, the adjacency list is represented as a dictionary that maps vertices to a set of all connected vertices....</p>
+Vertex Connects with 0 1 1 0, 2, 3 2 1, 3 3 1, 2 Implementation The addEdge method takes vertices as input and adds an edge to the adjacency list. In this example, the adjacency list is represented as a dictionary that maps vertices to a set of all connected vertices.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-09-17 07:06:52 +0300 EEST'>September 17, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Adjacency List" href="http://localhost:1313/posts/dsa-adjacency-list/"></a>
@@ -223,7 +242,8 @@ Vertex Connects with 0 1 1 0, 2, 3 2 1, 3 3 1, 2 Implementation The addEdge meth
     <p>What is a graph? A graph is an abstract data type that represents vertices and edges that connect those vertices.
 Source
 Implementation A graph can be represented as a matrix with edges connecting each pair of vertices. For example, a graph with vertices 0, 1, 2, 3, 4 and edges between them can be represented as a matrix:
-0 1 2 3 4 0 false true false false true 1 true false true true true 2 false true false true false 3 false true true false true 4 true true false true false In Swift, you can use a list of lists (2D array) to represent the matrix:...</p>
+0 1 2 3 4 0 false true false false true 1 true false true true true 2 false true false true false 3 false true true false true 4 true true false true false In Swift, you can use a list of lists (2D array) to represent the matrix:
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-09-14 06:57:03 +0300 EEST'>September 14, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Graph" href="http://localhost:1313/posts/dsa-graph/"></a>
@@ -238,27 +258,14 @@ Implementation A graph can be represented as a matrix with edges connecting each
     <p>What is Breadth First Search? Breadth-first search (BFS) is an algorithm for traversing tree or graph data structures. It starts at the root and explores all the neighboring nodes at the current depth before moving on to nodes at the next depth level.
 Source
 Implementation The implementation of BFS may vary depending on the problem. The main idea of BFS is:
-It has a visited array that collects all elements that have already been visited....</p>
+It has a visited array that collects all elements that have already been visited. It has a queue with all elements it’s going to visit. It loops through the queue, removes the first element, and appends it to the visited list. Finally, it loops through all the neighbors and appends the neighbor to the queue if it has not been visited and is not already in the queue. Code Example func bfs(_ value: String) -&gt; [String] { let graph: [String: [String]] = [ &#34;New York&#34;: [&#34;Buenos Aires&#34;, &#34;Cairo&#34;, &#34;Tokyo&#34;, &#34;London&#34;] ] var visited: [String] = [] var queue: [String] = [] queue.append(value) while !queue.isEmpty { let tmp = queue.removeFirst() visited.append(tmp) if let neighbors = graph[tmp] { for neighbor in neighbors.sorted() { if !visited.contains(neighbor) &amp;&amp; !queue.contains(neighbor) { queue.append(neighbor) } } } } return visited } Thank you for reading! 😊</p>
   </div>
   <footer class="entry-footer"><span title='2024-09-12 07:14:47 +0300 EEST'>September 12, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Breadth First Search" href="http://localhost:1313/posts/dsa-breadth-first-search/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Backtracking
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is Backtracking? Backtracking is a class of algorithms for finding solutions to complex problems. A backtracking algorithm uses recursion and is based on depth-first search (DFS).
-Depth First Search (DFS) Depth First Search (DFS) is an essential part of backtracking. DFS is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (or an arbitrary node in the case of a graph) and explores as far as possible along each branch before backtracking....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-09 07:19:46 +0300 EEST'>September 9, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Backtracking" href="http://localhost:1313/posts/dsa-backtracking/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="next" href="http://localhost:1313/tags/swift/page/2/">Next&nbsp;2/8&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/swift/page/2/">Next&nbsp;2/9&nbsp;»
     </a>
   </nav>
 </footer>

@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Fri, 26 Jul 2024 07:18:58 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/healthkit/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,11 @@
       <link>http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/</link>
       <pubDate>Fri, 26 Jul 2024 07:18:58 +0300</pubDate>
       <guid>http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/</guid>
-      <description>Introduction Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.
-Preparation Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.&lt;/p&gt;
+&lt;h3 id=&#34;preparation&#34;&gt;Preparation&lt;/h3&gt;
+&lt;p&gt;Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store.
+Let’s add:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

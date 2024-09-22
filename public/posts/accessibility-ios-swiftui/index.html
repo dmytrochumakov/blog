@@ -7,9 +7,156 @@
 <meta name="robots" content="index, follow">
 <title>Accessibility iOS SwiftUI | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Accessibility, iOS, SwiftUI">
-<meta name="description" content="Introduction Previously, I posted about Accessibility for UIKit. The idea behind this post is to find differences between UIKit Accessibility and SwiftUI features.
-Similarities: Both UIKit and SwiftUI have accessibilityLabel and accessibilityHints APIs.
-Differences: To use dynamic type for fonts, you need additional modifiers in SwiftUI. struct ScaledFont: ViewModifier { @Environment(\.sizeCategory) var sizeCategory var name: String var size: Double func body(content: Content) -&gt; some View { let scaledSize = UIFontMetrics.default.scaledValue(for: size) return content.">
+<meta name="description" content="Introduction
+Previously, I posted about Accessibility for UIKit. The idea behind this post is to find differences between UIKit Accessibility and SwiftUI features.
+Similarities:
+Both UIKit and SwiftUI have accessibilityLabel and accessibilityHints APIs.
+Differences:
+
+To use dynamic type for fonts, you need additional modifiers in SwiftUI.
+struct ScaledFont: ViewModifier {
+      @Environment(\.sizeCategory) var sizeCategory
+      var name: String
+      var size: Double
+
+      func body(content: Content) -&gt; some View {
+          let scaledSize = UIFontMetrics.default.scaledValue(for: size)
+          return content.font(.custom(name, size: scaledSize))
+      }
+  }
+
+  extension View {
+      func scaledFont(name: String, textSize size: Double) -&gt; some View {
+          return self.modifier(ScaledFont(name: name, size: size))
+      }
+  }
+
+To step over elements in a list, you need to add .accessibilityElement(children: .combine) to each row in SwiftUI.
+struct FruitCaloriesCounter: View {
+      var body: some View {
+          NavigationView {
+              List(fruits) { fruit in
+                  FruitRow(fruit: fruit)
+                      .accessibilityElement(children: .combine)
+              }
+              .navigationTitle(&#34;Fruits Calories Counter&#34;)
+              .accessibilityElement(children: .contain)
+              .navigationBarTitleDisplayMode(.inline)
+          }
+      }
+  }
+
+In UIKit, you can insert and remove accessibilityTraits depending on the button state:
+if button.isSelected {
+    button.accessibilityTraits.insert(.header)
+} else {
+    button.accessibilityTraits.remove(.header)
+}
+
+In SwiftUI, you need to pass .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton) to one modifier.
+Button(action: {
+  selected.toggle()
+}) {
+  Image(systemName: selected ? &#34;star.fill&#34; : &#34;star&#34;)
+      .frame(width: 44, height: 44)
+      .accessibilityLabel(&#34;favourite&#34;)
+      .accessibilityHint(selected ? &#34;removes favourite&#34; : &#34;makes favourite&#34;)
+      .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton)
+}
+.buttonStyle(.plain)
+
+
+Complete Sample
+import SwiftUI
+
+let fruits = [
+    Fruit(name: &#34;Apple&#34;, calories: 52),
+    Fruit(name: &#34;Banana&#34;, calories: 89),
+    Fruit(name: &#34;Orange&#34;, calories: 47),
+    Fruit(name: &#34;Pineapple&#34;, calories: 50),
+    Fruit(name: &#34;Strawberry&#34;, calories: 32)
+]
+
+struct Fruit: Identifiable {
+    var id: String { name }
+    let name: String
+    let calories: Int
+}
+
+struct FruitRow: View {
+
+    @State private var selected = false
+    let fruit: Fruit
+
+    var body: some View {
+        HStack(spacing: 8) {
+            VStack(alignment: .leading, spacing: 8) {
+                Text(fruit.name)
+                    .scaledFont(name: &#34;Helvetica&#34;, textSize: 20)
+                    .accessibilityLabel(fruit.name)
+                Text(&#34;\(fruit.calories) per 100g&#34;)
+                    .scaledFont(name: &#34;Helvetica&#34;, textSize: 15)
+                    .accessibilityLabel(&#34;\(fruit.calories) calories per 100 grams&#34;)
+            }
+            Spacer()
+            Button(action: {
+                selected.toggle()
+            }) {
+                Image(systemName: selected ? &#34;star.fill&#34; : &#34;star&#34;)
+                    .frame(width: 44, height: 44)
+                    .accessibilityLabel(&#34;favourite&#34;)
+                    .accessibilityHint(selected ? &#34;removes favourite&#34; : &#34;makes favourite&#34;)
+                    .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton)
+            }
+            .buttonStyle(.plain)
+        }
+    }
+
+}
+
+struct FruitCaloriesCounter: View {
+
+    var body: some View {
+        NavigationView {
+            List(fruits) { fruit in
+                FruitRow(fruit: fruit)
+                    .accessibilityElement(children: .combine)
+            }
+            .navigationTitle(&#34;Fruits Calories Counter&#34;)
+            .accessibilityElement(children: .contain)
+            .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+
+}
+
+struct ContentView: View {
+    var body: some View {
+        FruitCaloriesCounter()
+    }
+}
+
+#Preview {
+    ContentView()
+}
+
+struct ScaledFont: ViewModifier {
+    @Environment(\.sizeCategory) var sizeCategory
+    var name: String
+    var size: Double
+
+    func body(content: Content) -&gt; some View {
+        let scaledSize = UIFontMetrics.default.scaledValue(for: size)
+        return content.font(.custom(name, size: scaledSize))
+    }
+}
+
+extension View {
+    func scaledFont(name: String, textSize size: Double) -&gt; some View {
+        return self.modifier(ScaledFont(name: name, size: size))
+    }
+}
+Thank you for reading! 😊">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/accessibility-ios-swiftui/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -76,20 +223,170 @@ Differences: To use dynamic type for fonts, you need additional modifiers in Swi
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Accessibility iOS SwiftUI" />
+<meta property="og:description" content="Introduction
+Previously, I posted about Accessibility for UIKit. The idea behind this post is to find differences between UIKit Accessibility and SwiftUI features.
+Similarities:
+Both UIKit and SwiftUI have accessibilityLabel and accessibilityHints APIs.
+Differences:
+
+To use dynamic type for fonts, you need additional modifiers in SwiftUI.
+struct ScaledFont: ViewModifier {
+      @Environment(\.sizeCategory) var sizeCategory
+      var name: String
+      var size: Double
+
+      func body(content: Content) -&gt; some View {
+          let scaledSize = UIFontMetrics.default.scaledValue(for: size)
+          return content.font(.custom(name, size: scaledSize))
+      }
+  }
+
+  extension View {
+      func scaledFont(name: String, textSize size: Double) -&gt; some View {
+          return self.modifier(ScaledFont(name: name, size: size))
+      }
+  }
+
+To step over elements in a list, you need to add .accessibilityElement(children: .combine) to each row in SwiftUI.
+struct FruitCaloriesCounter: View {
+      var body: some View {
+          NavigationView {
+              List(fruits) { fruit in
+                  FruitRow(fruit: fruit)
+                      .accessibilityElement(children: .combine)
+              }
+              .navigationTitle(&#34;Fruits Calories Counter&#34;)
+              .accessibilityElement(children: .contain)
+              .navigationBarTitleDisplayMode(.inline)
+          }
+      }
+  }
+
+In UIKit, you can insert and remove accessibilityTraits depending on the button state:
+if button.isSelected {
+    button.accessibilityTraits.insert(.header)
+} else {
+    button.accessibilityTraits.remove(.header)
 }
-</script>
-<meta property="og:title" content="Accessibility iOS SwiftUI" />
-<meta property="og:description" content="Introduction Previously, I posted about Accessibility for UIKit. The idea behind this post is to find differences between UIKit Accessibility and SwiftUI features.
-Similarities: Both UIKit and SwiftUI have accessibilityLabel and accessibilityHints APIs.
-Differences: To use dynamic type for fonts, you need additional modifiers in SwiftUI. struct ScaledFont: ViewModifier { @Environment(\.sizeCategory) var sizeCategory var name: String var size: Double func body(content: Content) -&gt; some View { let scaledSize = UIFontMetrics.default.scaledValue(for: size) return content." />
+
+In SwiftUI, you need to pass .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton) to one modifier.
+Button(action: {
+  selected.toggle()
+}) {
+  Image(systemName: selected ? &#34;star.fill&#34; : &#34;star&#34;)
+      .frame(width: 44, height: 44)
+      .accessibilityLabel(&#34;favourite&#34;)
+      .accessibilityHint(selected ? &#34;removes favourite&#34; : &#34;makes favourite&#34;)
+      .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton)
+}
+.buttonStyle(.plain)
+
+
+Complete Sample
+import SwiftUI
+
+let fruits = [
+    Fruit(name: &#34;Apple&#34;, calories: 52),
+    Fruit(name: &#34;Banana&#34;, calories: 89),
+    Fruit(name: &#34;Orange&#34;, calories: 47),
+    Fruit(name: &#34;Pineapple&#34;, calories: 50),
+    Fruit(name: &#34;Strawberry&#34;, calories: 32)
+]
+
+struct Fruit: Identifiable {
+    var id: String { name }
+    let name: String
+    let calories: Int
+}
+
+struct FruitRow: View {
+
+    @State private var selected = false
+    let fruit: Fruit
+
+    var body: some View {
+        HStack(spacing: 8) {
+            VStack(alignment: .leading, spacing: 8) {
+                Text(fruit.name)
+                    .scaledFont(name: &#34;Helvetica&#34;, textSize: 20)
+                    .accessibilityLabel(fruit.name)
+                Text(&#34;\(fruit.calories) per 100g&#34;)
+                    .scaledFont(name: &#34;Helvetica&#34;, textSize: 15)
+                    .accessibilityLabel(&#34;\(fruit.calories) calories per 100 grams&#34;)
+            }
+            Spacer()
+            Button(action: {
+                selected.toggle()
+            }) {
+                Image(systemName: selected ? &#34;star.fill&#34; : &#34;star&#34;)
+                    .frame(width: 44, height: 44)
+                    .accessibilityLabel(&#34;favourite&#34;)
+                    .accessibilityHint(selected ? &#34;removes favourite&#34; : &#34;makes favourite&#34;)
+                    .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton)
+            }
+            .buttonStyle(.plain)
+        }
+    }
+
+}
+
+struct FruitCaloriesCounter: View {
+
+    var body: some View {
+        NavigationView {
+            List(fruits) { fruit in
+                FruitRow(fruit: fruit)
+                    .accessibilityElement(children: .combine)
+            }
+            .navigationTitle(&#34;Fruits Calories Counter&#34;)
+            .accessibilityElement(children: .contain)
+            .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+
+}
+
+struct ContentView: View {
+    var body: some View {
+        FruitCaloriesCounter()
+    }
+}
+
+#Preview {
+    ContentView()
+}
+
+struct ScaledFont: ViewModifier {
+    @Environment(\.sizeCategory) var sizeCategory
+    var name: String
+    var size: Double
+
+    func body(content: Content) -&gt; some View {
+        let scaledSize = UIFontMetrics.default.scaledValue(for: size)
+        return content.font(.custom(name, size: scaledSize))
+    }
+}
+
+extension View {
+    func scaledFont(name: String, textSize size: Double) -&gt; some View {
+        return self.modifier(ScaledFont(name: name, size: size))
+    }
+}
+Thank you for reading! 😊" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/accessibility-ios-swiftui/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -100,9 +397,156 @@ Differences: To use dynamic type for fonts, you need additional modifiers in Swi
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Accessibility iOS SwiftUI"/>
-<meta name="twitter:description" content="Introduction Previously, I posted about Accessibility for UIKit. The idea behind this post is to find differences between UIKit Accessibility and SwiftUI features.
-Similarities: Both UIKit and SwiftUI have accessibilityLabel and accessibilityHints APIs.
-Differences: To use dynamic type for fonts, you need additional modifiers in SwiftUI. struct ScaledFont: ViewModifier { @Environment(\.sizeCategory) var sizeCategory var name: String var size: Double func body(content: Content) -&gt; some View { let scaledSize = UIFontMetrics.default.scaledValue(for: size) return content."/>
+<meta name="twitter:description" content="Introduction
+Previously, I posted about Accessibility for UIKit. The idea behind this post is to find differences between UIKit Accessibility and SwiftUI features.
+Similarities:
+Both UIKit and SwiftUI have accessibilityLabel and accessibilityHints APIs.
+Differences:
+
+To use dynamic type for fonts, you need additional modifiers in SwiftUI.
+struct ScaledFont: ViewModifier {
+      @Environment(\.sizeCategory) var sizeCategory
+      var name: String
+      var size: Double
+
+      func body(content: Content) -&gt; some View {
+          let scaledSize = UIFontMetrics.default.scaledValue(for: size)
+          return content.font(.custom(name, size: scaledSize))
+      }
+  }
+
+  extension View {
+      func scaledFont(name: String, textSize size: Double) -&gt; some View {
+          return self.modifier(ScaledFont(name: name, size: size))
+      }
+  }
+
+To step over elements in a list, you need to add .accessibilityElement(children: .combine) to each row in SwiftUI.
+struct FruitCaloriesCounter: View {
+      var body: some View {
+          NavigationView {
+              List(fruits) { fruit in
+                  FruitRow(fruit: fruit)
+                      .accessibilityElement(children: .combine)
+              }
+              .navigationTitle(&#34;Fruits Calories Counter&#34;)
+              .accessibilityElement(children: .contain)
+              .navigationBarTitleDisplayMode(.inline)
+          }
+      }
+  }
+
+In UIKit, you can insert and remove accessibilityTraits depending on the button state:
+if button.isSelected {
+    button.accessibilityTraits.insert(.header)
+} else {
+    button.accessibilityTraits.remove(.header)
+}
+
+In SwiftUI, you need to pass .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton) to one modifier.
+Button(action: {
+  selected.toggle()
+}) {
+  Image(systemName: selected ? &#34;star.fill&#34; : &#34;star&#34;)
+      .frame(width: 44, height: 44)
+      .accessibilityLabel(&#34;favourite&#34;)
+      .accessibilityHint(selected ? &#34;removes favourite&#34; : &#34;makes favourite&#34;)
+      .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton)
+}
+.buttonStyle(.plain)
+
+
+Complete Sample
+import SwiftUI
+
+let fruits = [
+    Fruit(name: &#34;Apple&#34;, calories: 52),
+    Fruit(name: &#34;Banana&#34;, calories: 89),
+    Fruit(name: &#34;Orange&#34;, calories: 47),
+    Fruit(name: &#34;Pineapple&#34;, calories: 50),
+    Fruit(name: &#34;Strawberry&#34;, calories: 32)
+]
+
+struct Fruit: Identifiable {
+    var id: String { name }
+    let name: String
+    let calories: Int
+}
+
+struct FruitRow: View {
+
+    @State private var selected = false
+    let fruit: Fruit
+
+    var body: some View {
+        HStack(spacing: 8) {
+            VStack(alignment: .leading, spacing: 8) {
+                Text(fruit.name)
+                    .scaledFont(name: &#34;Helvetica&#34;, textSize: 20)
+                    .accessibilityLabel(fruit.name)
+                Text(&#34;\(fruit.calories) per 100g&#34;)
+                    .scaledFont(name: &#34;Helvetica&#34;, textSize: 15)
+                    .accessibilityLabel(&#34;\(fruit.calories) calories per 100 grams&#34;)
+            }
+            Spacer()
+            Button(action: {
+                selected.toggle()
+            }) {
+                Image(systemName: selected ? &#34;star.fill&#34; : &#34;star&#34;)
+                    .frame(width: 44, height: 44)
+                    .accessibilityLabel(&#34;favourite&#34;)
+                    .accessibilityHint(selected ? &#34;removes favourite&#34; : &#34;makes favourite&#34;)
+                    .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton)
+            }
+            .buttonStyle(.plain)
+        }
+    }
+
+}
+
+struct FruitCaloriesCounter: View {
+
+    var body: some View {
+        NavigationView {
+            List(fruits) { fruit in
+                FruitRow(fruit: fruit)
+                    .accessibilityElement(children: .combine)
+            }
+            .navigationTitle(&#34;Fruits Calories Counter&#34;)
+            .accessibilityElement(children: .contain)
+            .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+
+}
+
+struct ContentView: View {
+    var body: some View {
+        FruitCaloriesCounter()
+    }
+}
+
+#Preview {
+    ContentView()
+}
+
+struct ScaledFont: ViewModifier {
+    @Environment(\.sizeCategory) var sizeCategory
+    var name: String
+    var size: Double
+
+    func body(content: Content) -&gt; some View {
+        let scaledSize = UIFontMetrics.default.scaledValue(for: size)
+        return content.font(.custom(name, size: scaledSize))
+    }
+}
+
+extension View {
+    func scaledFont(name: String, textSize size: Double) -&gt; some View {
+        return self.modifier(ScaledFont(name: name, size: size))
+    }
+}
+Thank you for reading! 😊"/>
 
 
 <script type="application/ld+json">
@@ -131,7 +575,7 @@ Differences: To use dynamic type for fonts, you need additional modifiers in Swi
   "@type": "BlogPosting",
   "headline": "Accessibility iOS SwiftUI",
   "name": "Accessibility iOS SwiftUI",
-  "description": "Introduction Previously, I posted about Accessibility for UIKit. The idea behind this post is to find differences between UIKit Accessibility and SwiftUI features.\nSimilarities: Both UIKit and SwiftUI have accessibilityLabel and accessibilityHints APIs.\nDifferences: To use dynamic type for fonts, you need additional modifiers in SwiftUI. struct ScaledFont: ViewModifier { @Environment(\\.sizeCategory) var sizeCategory var name: String var size: Double func body(content: Content) -\u0026gt; some View { let scaledSize = UIFontMetrics.default.scaledValue(for: size) return content.",
+  "description": "Introduction Previously, I posted about Accessibility for UIKit. The idea behind this post is to find differences between UIKit Accessibility and SwiftUI features.\nSimilarities: Both UIKit and SwiftUI have accessibilityLabel and accessibilityHints APIs.\nDifferences: To use dynamic type for fonts, you need additional modifiers in SwiftUI. struct ScaledFont: ViewModifier { @Environment(\\.sizeCategory) var sizeCategory var name: String var size: Double func body(content: Content) -\u0026gt; some View { let scaledSize = UIFontMetrics.default.scaledValue(for: size) return content.font(.custom(name, size: scaledSize)) } } extension View { func scaledFont(name: String, textSize size: Double) -\u0026gt; some View { return self.modifier(ScaledFont(name: name, size: size)) } } To step over elements in a list, you need to add .accessibilityElement(children: .combine) to each row in SwiftUI. struct FruitCaloriesCounter: View { var body: some View { NavigationView { List(fruits) { fruit in FruitRow(fruit: fruit) .accessibilityElement(children: .combine) } .navigationTitle(\u0026#34;Fruits Calories Counter\u0026#34;) .accessibilityElement(children: .contain) .navigationBarTitleDisplayMode(.inline) } } } In UIKit, you can insert and remove accessibilityTraits depending on the button state: if button.isSelected { button.accessibilityTraits.insert(.header) } else { button.accessibilityTraits.remove(.header) } In SwiftUI, you need to pass .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton) to one modifier. Button(action: { selected.toggle() }) { Image(systemName: selected ? \u0026#34;star.fill\u0026#34; : \u0026#34;star\u0026#34;) .frame(width: 44, height: 44) .accessibilityLabel(\u0026#34;favourite\u0026#34;) .accessibilityHint(selected ? \u0026#34;removes favourite\u0026#34; : \u0026#34;makes favourite\u0026#34;) .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton) } .buttonStyle(.plain) Complete Sample import SwiftUI let fruits = [ Fruit(name: \u0026#34;Apple\u0026#34;, calories: 52), Fruit(name: \u0026#34;Banana\u0026#34;, calories: 89), Fruit(name: \u0026#34;Orange\u0026#34;, calories: 47), Fruit(name: \u0026#34;Pineapple\u0026#34;, calories: 50), Fruit(name: \u0026#34;Strawberry\u0026#34;, calories: 32) ] struct Fruit: Identifiable { var id: String { name } let name: String let calories: Int } struct FruitRow: View { @State private var selected = false let fruit: Fruit var body: some View { HStack(spacing: 8) { VStack(alignment: .leading, spacing: 8) { Text(fruit.name) .scaledFont(name: \u0026#34;Helvetica\u0026#34;, textSize: 20) .accessibilityLabel(fruit.name) Text(\u0026#34;\\(fruit.calories) per 100g\u0026#34;) .scaledFont(name: \u0026#34;Helvetica\u0026#34;, textSize: 15) .accessibilityLabel(\u0026#34;\\(fruit.calories) calories per 100 grams\u0026#34;) } Spacer() Button(action: { selected.toggle() }) { Image(systemName: selected ? \u0026#34;star.fill\u0026#34; : \u0026#34;star\u0026#34;) .frame(width: 44, height: 44) .accessibilityLabel(\u0026#34;favourite\u0026#34;) .accessibilityHint(selected ? \u0026#34;removes favourite\u0026#34; : \u0026#34;makes favourite\u0026#34;) .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton) } .buttonStyle(.plain) } } } struct FruitCaloriesCounter: View { var body: some View { NavigationView { List(fruits) { fruit in FruitRow(fruit: fruit) .accessibilityElement(children: .combine) } .navigationTitle(\u0026#34;Fruits Calories Counter\u0026#34;) .accessibilityElement(children: .contain) .navigationBarTitleDisplayMode(.inline) } } } struct ContentView: View { var body: some View { FruitCaloriesCounter() } } #Preview { ContentView() } struct ScaledFont: ViewModifier { @Environment(\\.sizeCategory) var sizeCategory var name: String var size: Double func body(content: Content) -\u0026gt; some View { let scaledSize = UIFontMetrics.default.scaledValue(for: size) return content.font(.custom(name, size: scaledSize)) } } extension View { func scaledFont(name: String, textSize size: Double) -\u0026gt; some View { return self.modifier(ScaledFont(name: name, size: size)) } } Thank you for reading! 😊",
   "keywords": [
     "Accessibility", "iOS", "SwiftUI"
   ],

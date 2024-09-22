@@ -7,9 +7,36 @@
 <meta name="robots" content="index, follow">
 <title>Building movie recommendations using ML | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="building, movie, recommendations, ML, SwiftUI">
-<meta name="description" content="Introduction I was wondering about how to create movie recommendations, so I decided to take a closer look and find out more about this topic. This is what I found:
-First step: You need to create a JSON file with the data that you will use to train the model and define the parameters for training the model.
-[ { &#34;title&#34;: &#34;Avatar&#34;, &#34;year&#34;: &#34;2009&#34;, &#34;rated&#34;: &#34;PG-13&#34;, &#34;released&#34;: &#34;18 Dec 2009&#34;, &#34;runtime&#34;: &#34;162 min&#34;, &#34;genre&#34;: &#34;Action, Adventure, Fantasy&#34;, &#34;director&#34;: &#34;James Cameron&#34;, &#34;writer&#34;: &#34;James Cameron&#34;, &#34;actors&#34;: &#34;Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang&#34;, &#34;plot&#34;: &#34;A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.">
+<meta name="description" content="Introduction
+I was wondering about how to create movie recommendations, so I decided to take a closer look and find out more about this topic. This is what I found:
+First step:
+You need to create a JSON file with the data that you will use to train the model and define the parameters for training the model.
+[
+  {
+    &#34;title&#34;: &#34;Avatar&#34;,
+    &#34;year&#34;: &#34;2009&#34;,
+    &#34;rated&#34;: &#34;PG-13&#34;,
+    &#34;released&#34;: &#34;18 Dec 2009&#34;,
+    &#34;runtime&#34;: &#34;162 min&#34;,
+    &#34;genre&#34;: &#34;Action, Adventure, Fantasy&#34;,
+    &#34;director&#34;: &#34;James Cameron&#34;,
+    &#34;writer&#34;: &#34;James Cameron&#34;,
+    &#34;actors&#34;: &#34;Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang&#34;,
+    &#34;plot&#34;: &#34;A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.&#34;,
+    &#34;language&#34;: &#34;English, Spanish&#34;,
+    &#34;country&#34;: &#34;USA, UK&#34;,
+    &#34;awards&#34;: &#34;Won 3 Oscars. Another 80 wins &amp; 121 nominations.&#34;,
+    &#34;poster&#34;: &#34;https://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg&#34;,
+    &#34;metascore&#34;: &#34;83&#34;,
+    &#34;imdbrating&#34;: &#34;7.9&#34;,
+    &#34;imdbvotes&#34;: &#34;890,617&#34;,
+    &#34;imdbid&#34;: &#34;tt0499549&#34;,
+    &#34;type&#34;: &#34;movie&#34;,
+    &#34;response&#34;: &#34;True&#34;,
+    &#34;keywords&#34;: [&#34;alien&#34;, &#34;avatar&#34;, &#34;fantasy world&#34;, &#34;soldier&#34;, &#34;battle&#34;]
+  },
+]
+When you have created the data, you can proceed to the next step.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/building-movie-recommendations-using-ml/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -76,20 +103,50 @@ First step: You need to create a JSON file with the data that you will use to tr
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Building movie recommendations using ML" />
-<meta property="og:description" content="Introduction I was wondering about how to create movie recommendations, so I decided to take a closer look and find out more about this topic. This is what I found:
-First step: You need to create a JSON file with the data that you will use to train the model and define the parameters for training the model.
-[ { &#34;title&#34;: &#34;Avatar&#34;, &#34;year&#34;: &#34;2009&#34;, &#34;rated&#34;: &#34;PG-13&#34;, &#34;released&#34;: &#34;18 Dec 2009&#34;, &#34;runtime&#34;: &#34;162 min&#34;, &#34;genre&#34;: &#34;Action, Adventure, Fantasy&#34;, &#34;director&#34;: &#34;James Cameron&#34;, &#34;writer&#34;: &#34;James Cameron&#34;, &#34;actors&#34;: &#34;Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang&#34;, &#34;plot&#34;: &#34;A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home." />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Building movie recommendations using ML" />
+<meta property="og:description" content="Introduction
+I was wondering about how to create movie recommendations, so I decided to take a closer look and find out more about this topic. This is what I found:
+First step:
+You need to create a JSON file with the data that you will use to train the model and define the parameters for training the model.
+[
+  {
+    &#34;title&#34;: &#34;Avatar&#34;,
+    &#34;year&#34;: &#34;2009&#34;,
+    &#34;rated&#34;: &#34;PG-13&#34;,
+    &#34;released&#34;: &#34;18 Dec 2009&#34;,
+    &#34;runtime&#34;: &#34;162 min&#34;,
+    &#34;genre&#34;: &#34;Action, Adventure, Fantasy&#34;,
+    &#34;director&#34;: &#34;James Cameron&#34;,
+    &#34;writer&#34;: &#34;James Cameron&#34;,
+    &#34;actors&#34;: &#34;Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang&#34;,
+    &#34;plot&#34;: &#34;A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.&#34;,
+    &#34;language&#34;: &#34;English, Spanish&#34;,
+    &#34;country&#34;: &#34;USA, UK&#34;,
+    &#34;awards&#34;: &#34;Won 3 Oscars. Another 80 wins &amp; 121 nominations.&#34;,
+    &#34;poster&#34;: &#34;https://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg&#34;,
+    &#34;metascore&#34;: &#34;83&#34;,
+    &#34;imdbrating&#34;: &#34;7.9&#34;,
+    &#34;imdbvotes&#34;: &#34;890,617&#34;,
+    &#34;imdbid&#34;: &#34;tt0499549&#34;,
+    &#34;type&#34;: &#34;movie&#34;,
+    &#34;response&#34;: &#34;True&#34;,
+    &#34;keywords&#34;: [&#34;alien&#34;, &#34;avatar&#34;, &#34;fantasy world&#34;, &#34;soldier&#34;, &#34;battle&#34;]
+  },
+]
+When you have created the data, you can proceed to the next step." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/building-movie-recommendations-using-ml/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -100,9 +157,36 @@ First step: You need to create a JSON file with the data that you will use to tr
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Building movie recommendations using ML"/>
-<meta name="twitter:description" content="Introduction I was wondering about how to create movie recommendations, so I decided to take a closer look and find out more about this topic. This is what I found:
-First step: You need to create a JSON file with the data that you will use to train the model and define the parameters for training the model.
-[ { &#34;title&#34;: &#34;Avatar&#34;, &#34;year&#34;: &#34;2009&#34;, &#34;rated&#34;: &#34;PG-13&#34;, &#34;released&#34;: &#34;18 Dec 2009&#34;, &#34;runtime&#34;: &#34;162 min&#34;, &#34;genre&#34;: &#34;Action, Adventure, Fantasy&#34;, &#34;director&#34;: &#34;James Cameron&#34;, &#34;writer&#34;: &#34;James Cameron&#34;, &#34;actors&#34;: &#34;Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang&#34;, &#34;plot&#34;: &#34;A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home."/>
+<meta name="twitter:description" content="Introduction
+I was wondering about how to create movie recommendations, so I decided to take a closer look and find out more about this topic. This is what I found:
+First step:
+You need to create a JSON file with the data that you will use to train the model and define the parameters for training the model.
+[
+  {
+    &#34;title&#34;: &#34;Avatar&#34;,
+    &#34;year&#34;: &#34;2009&#34;,
+    &#34;rated&#34;: &#34;PG-13&#34;,
+    &#34;released&#34;: &#34;18 Dec 2009&#34;,
+    &#34;runtime&#34;: &#34;162 min&#34;,
+    &#34;genre&#34;: &#34;Action, Adventure, Fantasy&#34;,
+    &#34;director&#34;: &#34;James Cameron&#34;,
+    &#34;writer&#34;: &#34;James Cameron&#34;,
+    &#34;actors&#34;: &#34;Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang&#34;,
+    &#34;plot&#34;: &#34;A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.&#34;,
+    &#34;language&#34;: &#34;English, Spanish&#34;,
+    &#34;country&#34;: &#34;USA, UK&#34;,
+    &#34;awards&#34;: &#34;Won 3 Oscars. Another 80 wins &amp; 121 nominations.&#34;,
+    &#34;poster&#34;: &#34;https://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg&#34;,
+    &#34;metascore&#34;: &#34;83&#34;,
+    &#34;imdbrating&#34;: &#34;7.9&#34;,
+    &#34;imdbvotes&#34;: &#34;890,617&#34;,
+    &#34;imdbid&#34;: &#34;tt0499549&#34;,
+    &#34;type&#34;: &#34;movie&#34;,
+    &#34;response&#34;: &#34;True&#34;,
+    &#34;keywords&#34;: [&#34;alien&#34;, &#34;avatar&#34;, &#34;fantasy world&#34;, &#34;soldier&#34;, &#34;battle&#34;]
+  },
+]
+When you have created the data, you can proceed to the next step."/>
 
 
 <script type="application/ld+json">
@@ -131,7 +215,7 @@ First step: You need to create a JSON file with the data that you will use to tr
   "@type": "BlogPosting",
   "headline": "Building movie recommendations using ML",
   "name": "Building movie recommendations using ML",
-  "description": "Introduction I was wondering about how to create movie recommendations, so I decided to take a closer look and find out more about this topic. This is what I found:\nFirst step: You need to create a JSON file with the data that you will use to train the model and define the parameters for training the model.\n[ { \u0026#34;title\u0026#34;: \u0026#34;Avatar\u0026#34;, \u0026#34;year\u0026#34;: \u0026#34;2009\u0026#34;, \u0026#34;rated\u0026#34;: \u0026#34;PG-13\u0026#34;, \u0026#34;released\u0026#34;: \u0026#34;18 Dec 2009\u0026#34;, \u0026#34;runtime\u0026#34;: \u0026#34;162 min\u0026#34;, \u0026#34;genre\u0026#34;: \u0026#34;Action, Adventure, Fantasy\u0026#34;, \u0026#34;director\u0026#34;: \u0026#34;James Cameron\u0026#34;, \u0026#34;writer\u0026#34;: \u0026#34;James Cameron\u0026#34;, \u0026#34;actors\u0026#34;: \u0026#34;Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang\u0026#34;, \u0026#34;plot\u0026#34;: \u0026#34;A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+  "description": "Introduction I was wondering about how to create movie recommendations, so I decided to take a closer look and find out more about this topic. This is what I found:\nFirst step: You need to create a JSON file with the data that you will use to train the model and define the parameters for training the model.\n[ { \u0026#34;title\u0026#34;: \u0026#34;Avatar\u0026#34;, \u0026#34;year\u0026#34;: \u0026#34;2009\u0026#34;, \u0026#34;rated\u0026#34;: \u0026#34;PG-13\u0026#34;, \u0026#34;released\u0026#34;: \u0026#34;18 Dec 2009\u0026#34;, \u0026#34;runtime\u0026#34;: \u0026#34;162 min\u0026#34;, \u0026#34;genre\u0026#34;: \u0026#34;Action, Adventure, Fantasy\u0026#34;, \u0026#34;director\u0026#34;: \u0026#34;James Cameron\u0026#34;, \u0026#34;writer\u0026#34;: \u0026#34;James Cameron\u0026#34;, \u0026#34;actors\u0026#34;: \u0026#34;Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang\u0026#34;, \u0026#34;plot\u0026#34;: \u0026#34;A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.\u0026#34;, \u0026#34;language\u0026#34;: \u0026#34;English, Spanish\u0026#34;, \u0026#34;country\u0026#34;: \u0026#34;USA, UK\u0026#34;, \u0026#34;awards\u0026#34;: \u0026#34;Won 3 Oscars. Another 80 wins \u0026amp; 121 nominations.\u0026#34;, \u0026#34;poster\u0026#34;: \u0026#34;https://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg\u0026#34;, \u0026#34;metascore\u0026#34;: \u0026#34;83\u0026#34;, \u0026#34;imdbrating\u0026#34;: \u0026#34;7.9\u0026#34;, \u0026#34;imdbvotes\u0026#34;: \u0026#34;890,617\u0026#34;, \u0026#34;imdbid\u0026#34;: \u0026#34;tt0499549\u0026#34;, \u0026#34;type\u0026#34;: \u0026#34;movie\u0026#34;, \u0026#34;response\u0026#34;: \u0026#34;True\u0026#34;, \u0026#34;keywords\u0026#34;: [\u0026#34;alien\u0026#34;, \u0026#34;avatar\u0026#34;, \u0026#34;fantasy world\u0026#34;, \u0026#34;soldier\u0026#34;, \u0026#34;battle\u0026#34;] }, ] When you have created the data, you can proceed to the next step.\n",
   "keywords": [
     "building", "movie", "recommendations", "ML", "SwiftUI"
   ],

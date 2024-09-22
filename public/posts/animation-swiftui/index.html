@@ -7,10 +7,35 @@
 <meta name="robots" content="index, follow">
 <title>Animation - SwiftUI | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Animation, SwiftUI">
-<meta name="description" content="Introduction I was eager to learn about creating complex animations in SwiftUI. The few questions that were on my mind included what types of animations exist and what I can animate. Here is what I found:
-Types of Animation SwiftUI has explicit and implicit animation types.
+<meta name="description" content="Introduction
+I was eager to learn about creating complex animations in SwiftUI. The few questions that were on my mind included what types of animations exist and what I can animate. Here is what I found:
+Types of Animation
+SwiftUI has explicit and implicit animation types.
+
+
 Implicit Animation: This is specified with the .animation() modifier. SwiftUI will animate changes in old and new values.
-struct ImplicitAnimation: View { @State private var half = false @State private var dim = false var body: some View { Image(&#34;tower&#34;) .">
+struct ImplicitAnimation: View {
+    @State private var half = false
+    @State private var dim = false
+
+    var body: some View {
+        Image(&#34;tower&#34;)
+            .scaleEffect(half ? 0.5 : 1.0)
+            .opacity(dim ? 0.2 : 1.0)
+            .animation(.easeInOut(duration: 1.0))
+            .onTapGesture {
+                self.dim.toggle()
+                self.half.toggle()
+            }
+    }
+}
+
+    
+    
+    
+        
+    
+">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/animation-swiftui/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -77,21 +102,49 @@ struct ImplicitAnimation: View { @State private var half = false @State private 
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Animation - SwiftUI" />
-<meta property="og:description" content="Introduction I was eager to learn about creating complex animations in SwiftUI. The few questions that were on my mind included what types of animations exist and what I can animate. Here is what I found:
-Types of Animation SwiftUI has explicit and implicit animation types.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Animation - SwiftUI" />
+<meta property="og:description" content="Introduction
+I was eager to learn about creating complex animations in SwiftUI. The few questions that were on my mind included what types of animations exist and what I can animate. Here is what I found:
+Types of Animation
+SwiftUI has explicit and implicit animation types.
+
+
 Implicit Animation: This is specified with the .animation() modifier. SwiftUI will animate changes in old and new values.
-struct ImplicitAnimation: View { @State private var half = false @State private var dim = false var body: some View { Image(&#34;tower&#34;) ." />
+struct ImplicitAnimation: View {
+    @State private var half = false
+    @State private var dim = false
+
+    var body: some View {
+        Image(&#34;tower&#34;)
+            .scaleEffect(half ? 0.5 : 1.0)
+            .opacity(dim ? 0.2 : 1.0)
+            .animation(.easeInOut(duration: 1.0))
+            .onTapGesture {
+                self.dim.toggle()
+                self.half.toggle()
+            }
+    }
+}
+
+    
+    
+    
+        
+    
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/animation-swiftui/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -102,10 +155,35 @@ struct ImplicitAnimation: View { @State private var half = false @State private 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Animation - SwiftUI"/>
-<meta name="twitter:description" content="Introduction I was eager to learn about creating complex animations in SwiftUI. The few questions that were on my mind included what types of animations exist and what I can animate. Here is what I found:
-Types of Animation SwiftUI has explicit and implicit animation types.
+<meta name="twitter:description" content="Introduction
+I was eager to learn about creating complex animations in SwiftUI. The few questions that were on my mind included what types of animations exist and what I can animate. Here is what I found:
+Types of Animation
+SwiftUI has explicit and implicit animation types.
+
+
 Implicit Animation: This is specified with the .animation() modifier. SwiftUI will animate changes in old and new values.
-struct ImplicitAnimation: View { @State private var half = false @State private var dim = false var body: some View { Image(&#34;tower&#34;) ."/>
+struct ImplicitAnimation: View {
+    @State private var half = false
+    @State private var dim = false
+
+    var body: some View {
+        Image(&#34;tower&#34;)
+            .scaleEffect(half ? 0.5 : 1.0)
+            .opacity(dim ? 0.2 : 1.0)
+            .animation(.easeInOut(duration: 1.0))
+            .onTapGesture {
+                self.dim.toggle()
+                self.half.toggle()
+            }
+    }
+}
+
+    
+    
+    
+        
+    
+"/>
 
 
 <script type="application/ld+json">
@@ -134,7 +212,7 @@ struct ImplicitAnimation: View { @State private var half = false @State private 
   "@type": "BlogPosting",
   "headline": "Animation - SwiftUI",
   "name": "Animation - SwiftUI",
-  "description": "Introduction I was eager to learn about creating complex animations in SwiftUI. The few questions that were on my mind included what types of animations exist and what I can animate. Here is what I found:\nTypes of Animation SwiftUI has explicit and implicit animation types.\nImplicit Animation: This is specified with the .animation() modifier. SwiftUI will animate changes in old and new values.\nstruct ImplicitAnimation: View { @State private var half = false @State private var dim = false var body: some View { Image(\u0026#34;tower\u0026#34;) .",
+  "description": "Introduction I was eager to learn about creating complex animations in SwiftUI. The few questions that were on my mind included what types of animations exist and what I can animate. Here is what I found:\nTypes of Animation SwiftUI has explicit and implicit animation types.\nImplicit Animation: This is specified with the .animation() modifier. SwiftUI will animate changes in old and new values.\nstruct ImplicitAnimation: View { @State private var half = false @State private var dim = false var body: some View { Image(\u0026#34;tower\u0026#34;) .scaleEffect(half ? 0.5 : 1.0) .opacity(dim ? 0.2 : 1.0) .animation(.easeInOut(duration: 1.0)) .onTapGesture { self.dim.toggle() self.half.toggle() } } } ",
   "keywords": [
     "Animation", "SwiftUI"
   ],

@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Sun, 17 Dec 2023 00:00:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/automatic-reference-count/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,12 @@
       <link>http://localhost:1313/posts/arc-in-swift/</link>
       <pubDate>Sun, 17 Dec 2023 00:00:00 +0300</pubDate>
       <guid>http://localhost:1313/posts/arc-in-swift/</guid>
-      <description>What is ARC? Swift uses Automatic Reference Counting (ARC) to track and manage your app’s memory usage. In most cases, this means that memory management “just works” in Swift, and you don’t need to think about memory management yourself. ARC automatically frees up the memory used by class instances when those instances are no longer needed. - Apple
-ARC In Action In this example, we assign an instance to the reference1 property.</description>
+      <description>&lt;h3 id=&#34;what-is-arc&#34;&gt;What is ARC?&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Swift uses Automatic Reference Counting (ARC) to track and manage your app’s memory usage. In most cases, this means that memory management “just works” in Swift, and you don’t need to think about memory management yourself. ARC automatically frees up the memory used by class instances when those instances are no longer needed. - Apple&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;arc-in-action&#34;&gt;ARC In Action&lt;/h3&gt;
+&lt;p&gt;In this example, we assign an instance to the &lt;code&gt;reference1&lt;/code&gt; property.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

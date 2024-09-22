@@ -7,10 +7,51 @@
 <meta name="robots" content="index, follow">
 <title>DSA - Breadth First Search | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="DSA, Data Structures, Algorithms, Breadth First Search, BFS, Swift">
-<meta name="description" content="What is Breadth First Search? Breadth-first search (BFS) is an algorithm for traversing tree or graph data structures. It starts at the root and explores all the neighboring nodes at the current depth before moving on to nodes at the next depth level.
+<meta name="description" content="What is Breadth First Search?
+Breadth-first search (BFS) is an algorithm for traversing tree or graph data structures. It starts at the root and explores all the neighboring nodes at the current depth before moving on to nodes at the next depth level.
+
+    
+    
+    
+        
+    
+
 Source
-Implementation The implementation of BFS may vary depending on the problem. The main idea of BFS is:
-It has a visited array that collects all elements that have already been visited.">
+Implementation
+The implementation of BFS may vary depending on the problem. The main idea of BFS is:
+
+It has a visited array that collects all elements that have already been visited.
+It has a queue with all elements it&rsquo;s going to visit.
+It loops through the queue, removes the first element, and appends it to the visited list.
+Finally, it loops through all the neighbors and appends the neighbor to the queue if it has not been visited and is not already in the queue.
+
+Code Example
+func bfs(_ value: String) -&gt; [String] {
+    let graph: [String: [String]] = [
+        &#34;New York&#34;: [&#34;Buenos Aires&#34;, &#34;Cairo&#34;, &#34;Tokyo&#34;, &#34;London&#34;]
+    ]
+
+    var visited: [String] = []
+    var queue: [String] = []
+
+    queue.append(value)
+
+    while !queue.isEmpty {
+        let tmp = queue.removeFirst()
+        visited.append(tmp)
+        
+        if let neighbors = graph[tmp] {
+            for neighbor in neighbors.sorted() {
+                if !visited.contains(neighbor) &amp;&amp; !queue.contains(neighbor) {
+                    queue.append(neighbor)
+                }
+            }
+        }
+    }
+
+    return visited
+}
+Thank you for reading! 😊">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/dsa-breadth-first-search/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -77,21 +118,65 @@ It has a visited array that collects all elements that have already been visited
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="DSA - Breadth First Search" />
-<meta property="og:description" content="What is Breadth First Search? Breadth-first search (BFS) is an algorithm for traversing tree or graph data structures. It starts at the root and explores all the neighboring nodes at the current depth before moving on to nodes at the next depth level.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="DSA - Breadth First Search" />
+<meta property="og:description" content="What is Breadth First Search?
+Breadth-first search (BFS) is an algorithm for traversing tree or graph data structures. It starts at the root and explores all the neighboring nodes at the current depth before moving on to nodes at the next depth level.
+
+    
+    
+    
+        
+    
+
 Source
-Implementation The implementation of BFS may vary depending on the problem. The main idea of BFS is:
-It has a visited array that collects all elements that have already been visited." />
+Implementation
+The implementation of BFS may vary depending on the problem. The main idea of BFS is:
+
+It has a visited array that collects all elements that have already been visited.
+It has a queue with all elements it&rsquo;s going to visit.
+It loops through the queue, removes the first element, and appends it to the visited list.
+Finally, it loops through all the neighbors and appends the neighbor to the queue if it has not been visited and is not already in the queue.
+
+Code Example
+func bfs(_ value: String) -&gt; [String] {
+    let graph: [String: [String]] = [
+        &#34;New York&#34;: [&#34;Buenos Aires&#34;, &#34;Cairo&#34;, &#34;Tokyo&#34;, &#34;London&#34;]
+    ]
+
+    var visited: [String] = []
+    var queue: [String] = []
+
+    queue.append(value)
+
+    while !queue.isEmpty {
+        let tmp = queue.removeFirst()
+        visited.append(tmp)
+        
+        if let neighbors = graph[tmp] {
+            for neighbor in neighbors.sorted() {
+                if !visited.contains(neighbor) &amp;&amp; !queue.contains(neighbor) {
+                    queue.append(neighbor)
+                }
+            }
+        }
+    }
+
+    return visited
+}
+Thank you for reading! 😊" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/dsa-breadth-first-search/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -102,10 +187,51 @@ It has a visited array that collects all elements that have already been visited
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="DSA - Breadth First Search"/>
-<meta name="twitter:description" content="What is Breadth First Search? Breadth-first search (BFS) is an algorithm for traversing tree or graph data structures. It starts at the root and explores all the neighboring nodes at the current depth before moving on to nodes at the next depth level.
+<meta name="twitter:description" content="What is Breadth First Search?
+Breadth-first search (BFS) is an algorithm for traversing tree or graph data structures. It starts at the root and explores all the neighboring nodes at the current depth before moving on to nodes at the next depth level.
+
+    
+    
+    
+        
+    
+
 Source
-Implementation The implementation of BFS may vary depending on the problem. The main idea of BFS is:
-It has a visited array that collects all elements that have already been visited."/>
+Implementation
+The implementation of BFS may vary depending on the problem. The main idea of BFS is:
+
+It has a visited array that collects all elements that have already been visited.
+It has a queue with all elements it&rsquo;s going to visit.
+It loops through the queue, removes the first element, and appends it to the visited list.
+Finally, it loops through all the neighbors and appends the neighbor to the queue if it has not been visited and is not already in the queue.
+
+Code Example
+func bfs(_ value: String) -&gt; [String] {
+    let graph: [String: [String]] = [
+        &#34;New York&#34;: [&#34;Buenos Aires&#34;, &#34;Cairo&#34;, &#34;Tokyo&#34;, &#34;London&#34;]
+    ]
+
+    var visited: [String] = []
+    var queue: [String] = []
+
+    queue.append(value)
+
+    while !queue.isEmpty {
+        let tmp = queue.removeFirst()
+        visited.append(tmp)
+        
+        if let neighbors = graph[tmp] {
+            for neighbor in neighbors.sorted() {
+                if !visited.contains(neighbor) &amp;&amp; !queue.contains(neighbor) {
+                    queue.append(neighbor)
+                }
+            }
+        }
+    }
+
+    return visited
+}
+Thank you for reading! 😊"/>
 
 
 <script type="application/ld+json">
@@ -134,7 +260,7 @@ It has a visited array that collects all elements that have already been visited
   "@type": "BlogPosting",
   "headline": "DSA - Breadth First Search",
   "name": "DSA - Breadth First Search",
-  "description": "What is Breadth First Search? Breadth-first search (BFS) is an algorithm for traversing tree or graph data structures. It starts at the root and explores all the neighboring nodes at the current depth before moving on to nodes at the next depth level.\nSource\nImplementation The implementation of BFS may vary depending on the problem. The main idea of BFS is:\nIt has a visited array that collects all elements that have already been visited.",
+  "description": "What is Breadth First Search? Breadth-first search (BFS) is an algorithm for traversing tree or graph data structures. It starts at the root and explores all the neighboring nodes at the current depth before moving on to nodes at the next depth level.\nSource\nImplementation The implementation of BFS may vary depending on the problem. The main idea of BFS is:\nIt has a visited array that collects all elements that have already been visited. It has a queue with all elements it\u0026rsquo;s going to visit. It loops through the queue, removes the first element, and appends it to the visited list. Finally, it loops through all the neighbors and appends the neighbor to the queue if it has not been visited and is not already in the queue. Code Example func bfs(_ value: String) -\u0026gt; [String] { let graph: [String: [String]] = [ \u0026#34;New York\u0026#34;: [\u0026#34;Buenos Aires\u0026#34;, \u0026#34;Cairo\u0026#34;, \u0026#34;Tokyo\u0026#34;, \u0026#34;London\u0026#34;] ] var visited: [String] = [] var queue: [String] = [] queue.append(value) while !queue.isEmpty { let tmp = queue.removeFirst() visited.append(tmp) if let neighbors = graph[tmp] { for neighbor in neighbors.sorted() { if !visited.contains(neighbor) \u0026amp;\u0026amp; !queue.contains(neighbor) { queue.append(neighbor) } } } } return visited } Thank you for reading! 😊",
   "keywords": [
     "DSA", "Data Structures", "Algorithms", "Breadth First Search", "BFS", "Swift"
   ],

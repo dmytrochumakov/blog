@@ -7,9 +7,10 @@
 <meta name="robots" content="index, follow">
 <title>Combine practical usage examples | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Combine, Swift">
-<meta name="description" content="Introduction When working in a large codebase with a significant number of async events, I often found myself in situations where I couldn&rsquo;t combine events effectively. This resulted in optimization problems and inefficient consumption of OS resources.
+<meta name="description" content="Introduction
+When working in a large codebase with a significant number of async events, I often found myself in situations where I couldn&rsquo;t combine events effectively. This resulted in optimization problems and inefficient consumption of OS resources.
 The codebase contained closures and async/await, so it wasn&rsquo;t possible to use operators like merge or combineLatest. After discovering this limitation, I decided to add new methods using Combine.
-I will be demonstrating this with a simple NetworkService responsible only for executing and validating requests using Combine.">
+I will be demonstrating this with a simple NetworkService responsible only for executing and validating requests using Combine. Let&rsquo;s dive into the implementation.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/combine-practical-usage-examples/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -76,20 +77,24 @@ I will be demonstrating this with a simple NetworkService responsible only for e
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Combine practical usage examples" />
-<meta property="og:description" content="Introduction When working in a large codebase with a significant number of async events, I often found myself in situations where I couldn&rsquo;t combine events effectively. This resulted in optimization problems and inefficient consumption of OS resources.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Combine practical usage examples" />
+<meta property="og:description" content="Introduction
+When working in a large codebase with a significant number of async events, I often found myself in situations where I couldn&rsquo;t combine events effectively. This resulted in optimization problems and inefficient consumption of OS resources.
 The codebase contained closures and async/await, so it wasn&rsquo;t possible to use operators like merge or combineLatest. After discovering this limitation, I decided to add new methods using Combine.
-I will be demonstrating this with a simple NetworkService responsible only for executing and validating requests using Combine." />
+I will be demonstrating this with a simple NetworkService responsible only for executing and validating requests using Combine. Let&rsquo;s dive into the implementation." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/combine-practical-usage-examples/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -100,9 +105,10 @@ I will be demonstrating this with a simple NetworkService responsible only for e
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Combine practical usage examples"/>
-<meta name="twitter:description" content="Introduction When working in a large codebase with a significant number of async events, I often found myself in situations where I couldn&rsquo;t combine events effectively. This resulted in optimization problems and inefficient consumption of OS resources.
+<meta name="twitter:description" content="Introduction
+When working in a large codebase with a significant number of async events, I often found myself in situations where I couldn&rsquo;t combine events effectively. This resulted in optimization problems and inefficient consumption of OS resources.
 The codebase contained closures and async/await, so it wasn&rsquo;t possible to use operators like merge or combineLatest. After discovering this limitation, I decided to add new methods using Combine.
-I will be demonstrating this with a simple NetworkService responsible only for executing and validating requests using Combine."/>
+I will be demonstrating this with a simple NetworkService responsible only for executing and validating requests using Combine. Let&rsquo;s dive into the implementation."/>
 
 
 <script type="application/ld+json">
@@ -131,7 +137,7 @@ I will be demonstrating this with a simple NetworkService responsible only for e
   "@type": "BlogPosting",
   "headline": "Combine practical usage examples",
   "name": "Combine practical usage examples",
-  "description": "Introduction When working in a large codebase with a significant number of async events, I often found myself in situations where I couldn\u0026rsquo;t combine events effectively. This resulted in optimization problems and inefficient consumption of OS resources.\nThe codebase contained closures and async/await, so it wasn\u0026rsquo;t possible to use operators like merge or combineLatest. After discovering this limitation, I decided to add new methods using Combine.\nI will be demonstrating this with a simple NetworkService responsible only for executing and validating requests using Combine.",
+  "description": "Introduction When working in a large codebase with a significant number of async events, I often found myself in situations where I couldn\u0026rsquo;t combine events effectively. This resulted in optimization problems and inefficient consumption of OS resources.\nThe codebase contained closures and async/await, so it wasn\u0026rsquo;t possible to use operators like merge or combineLatest. After discovering this limitation, I decided to add new methods using Combine.\nI will be demonstrating this with a simple NetworkService responsible only for executing and validating requests using Combine. Let\u0026rsquo;s dive into the implementation.\n",
   "keywords": [
     "Combine", "Swift"
   ],

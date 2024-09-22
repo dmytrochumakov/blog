@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Software Architecture" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Software Architecture" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/software-architecture/" />
@@ -193,7 +196,8 @@ if (!doNotTrack) {
   <div class="entry-content">
     <p>Introduction The Composable Architecture (TCA) uses a unidirectional data flow (UDF). UDF is a design pattern where data and events move consistently and predictably. In UDF, data can only be transferred to other application parts in one way.
 In TCA, the only way to mutate the state is by sending actions to a runtime store. The runtime store holds the entire app’s business logic and mutates the state inside.
-UDF can reduce data inconsistencies because of the single source of truth for the application....</p>
+UDF can reduce data inconsistencies because of the single source of truth for the application.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2023-08-11 00:00:00 +0300 EEST'>August 11, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Let’s talk about Composable Architecture" href="http://localhost:1313/posts/lets-talk-about-composable-architecture/"></a>

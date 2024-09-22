@@ -2,7 +2,7 @@
 <html lang="en" dir="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.123.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.134.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -77,17 +77,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Dmytro&#39;s Blog" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Dmytro&#39;s Blog" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/" />
@@ -197,6 +200,20 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Building Xcode project using Github Actions
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction If you’re wondering how to build an Xcode project using GitHub Actions, here are a few steps:
+First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15.3.app/Contents/Developer - name: Install xcpretty run: gem install xcpretty - name: Build project run: xcodebuild -project /Users/runner/work/YourProjectName/YourProjectName/YourProjectName/YourProjectName.xcodeproj -scheme YourSchemeName -sdk iphonesimulator -destination &#39;platform=iOS Simulator,name=iPhone 15 Pro&#39; clean build | xcpretty Caveats If you don’t specify the path to the Xcode project, you will receive an error like this: xcodebuild: error: ‘YourProjectName.xcodeproj&#39; does not exist.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-23 08:29:30 +0300 EEST'>April 23, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Building Xcode project using Github Actions" href="http://localhost:1313/posts/building-xcode-project-using-github-actions/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Delivering iOS app using Fastlane
     </h2>
   </header>
@@ -204,7 +221,8 @@ if (!doNotTrack) {
     <p>Introduction You can easily deliver an iOS app in two ways: through beta and release lanes.
 The First Way - TestFlight By creating a beta lane inside the Fastfile. It utilizes:
 build_app: To easily build and sign your app (via gym). pilot: Makes it easier to manage your app on Apple’s TestFlight. lane :beta do build_app(scheme: &#34;YourScheme&#34;) pilot end To run Fastlane:
-fastlane beta Attention Before proceeding, you need to have the ipa or pkg file generated....</p>
+fastlane beta Attention Before proceeding, you need to have the ipa or pkg file generated.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-04-19 06:49:13 +0300 EEST'>April 19, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Delivering iOS app using Fastlane" href="http://localhost:1313/posts/delivering-ios-app-using-fastlane/"></a>
@@ -217,7 +235,8 @@ fastlane beta Attention Before proceeding, you need to have the ipa or pkg file 
   </header>
   <div class="entry-content">
     <p>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to archive a project in the fastest way.
-One of such ways is by using the xcodebuild archive command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project....</p>
+One of such ways is by using the xcodebuild archive command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild archive: Once you’re in the project directory, you can run xcodebuild archive with the appropriate parameters to build your project. Example: xcodebuild archive -scheme YourSchemeName -archivePath ~/Desktop/YourAppName.xcarchive Another way is by integrating fastlane into your workflow: Outline of the process Install Fastlane: If you haven’t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-04-16 13:46:03 +0300 EEST'>April 16, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Archiving Xcode project using the CLI" href="http://localhost:1313/posts/archiving-xcode-project-using-the-cli/"></a>
@@ -230,7 +249,8 @@ One of such ways is by using the xcodebuild archive command Basic outline of the
   </header>
   <div class="entry-content">
     <p>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to test a project in the fastest way.
-One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you’re in the project directory, you can run xcodebuild with the appropriate parameters to build your project....</p>
+One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you’re in the project directory, you can run xcodebuild with the appropriate parameters to build your project. Example: xcodebuild -project YourProject.xcodeproj -scheme YourSchemeName test Another way is by integrating fastlane into your workflow: Outline of the process Install Fastlane: If you haven’t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-04-12 03:20:34 +0300 EEST'>April 12, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Testing Xcode project using the CLI" href="http://localhost:1313/posts/testing-xcode-project-using-the-cli/"></a>
@@ -243,25 +263,11 @@ One of such ways is by using the xcodebuild command Basic outline of the process
   </header>
   <div class="entry-content">
     <p>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to build a project in the fastest way.
-One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you’re in the project directory, you can run xcodebuild with the appropriate parameters to build your project....</p>
+One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you’re in the project directory, you can run xcodebuild with the appropriate parameters to build your project. Example: xcodebuild -project YourProjectName.xcodeproj -scheme YourSchemeName Another way is by integrating fastlane into your workflow: Outline of the process Install Fastlane: If you haven’t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-04-05 04:59:38 +0300 EEST'>April 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Building Xcode project using the CLI" href="http://localhost:1313/posts/building-xcode-project-using-the-cli/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">The Visitor Pattern
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is a Visitor Pattern? The Visitor Pattern helps add new capabilities to a composite of objects.
-Source
-What problems does it solve? The Visitor Pattern helps solve following problems:
-Separation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on. Extensibility: It allows you to add new operations to existing object structures without modifying those structures....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-04-01 08:01:22 +0300 EEST'>April 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to The Visitor Pattern" href="http://localhost:1313/posts/the-visitor-pattern/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

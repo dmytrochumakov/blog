@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Mon, 06 May 2024 07:35:52 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/dynamic-island/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,26 @@
       <link>http://localhost:1313/posts/building-dynamic-island-for-video-streaming-app/</link>
       <pubDate>Mon, 06 May 2024 07:35:52 +0300</pubDate>
       <guid>http://localhost:1313/posts/building-dynamic-island-for-video-streaming-app/</guid>
-      <description>Introduction I was curious about how to add Dynamic Island and implement it into a Video Streaming App. Here are a few steps on how you can achieve this.
-Caveats Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 &amp;quot;Failed to show Widget&amp;quot;. The solution is to configure live activities and run them through the main app.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I was curious about how to add Dynamic Island and implement it into a Video Streaming App.
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-f7bcf&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-f7bcf&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/0.png#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+
+Here are a few steps on how you can achieve this.&lt;/p&gt;
+&lt;h3 id=&#34;caveats&#34;&gt;Caveats&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error &lt;code&gt;SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 &amp;quot;Failed to show Widget&amp;quot;.&lt;/code&gt; The solution is to configure live activities and run them through the main app.&lt;/li&gt;
+&lt;li&gt;Be aware that when you add a widget to the project, in some cases, it adds all main target files to &lt;code&gt;Compile Sources&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
+&lt;p&gt;Dynamic Islands are divided into different sizes: &lt;code&gt;minimal&lt;/code&gt;, &lt;code&gt;compactTrailing&lt;/code&gt;, &lt;code&gt;compactLeading&lt;/code&gt;, and &lt;code&gt;expanded&lt;/code&gt;.
+Before proceeding, you need to add &lt;code&gt;LiveActivityManager&lt;/code&gt; to be able to display Dynamic Islands.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

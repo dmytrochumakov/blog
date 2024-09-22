@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Sun, 21 Jul 2024 07:25:28 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/combine/index.xml" rel="self" type="application/rss+xml" />
@@ -18,28 +18,58 @@
       <link>http://localhost:1313/posts/implementing-chatgpt-in-an-ios-app/</link>
       <pubDate>Sun, 21 Jul 2024 07:25:28 +0300</pubDate>
       <guid>http://localhost:1313/posts/implementing-chatgpt-in-an-ios-app/</guid>
-      <description>Introduction I haven&amp;rsquo;t had the opportunity to build a chatbot before. This topic was trending some time ago, and I always wanted to implement it myself. In this article, I will focus on the steps you need to know to successfully build and run a chatbot application.
-First Step The first step is to add the OpenAI dependency to your project:
-.package(url: &amp;#34;https://github.com/MacPaw/OpenAI.git&amp;#34;, branch: &amp;#34;main&amp;#34;) dependencies: [ .byNameItem( name: &amp;#34;OpenAI&amp;#34;, condition: .</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I haven&amp;rsquo;t had the opportunity to build a chatbot before. This topic was trending some time ago, and I always wanted to implement it myself. In this article, I will focus on the steps you need to know to successfully build and run a chatbot application.&lt;/p&gt;
+&lt;h3 id=&#34;first-step&#34;&gt;First Step&lt;/h3&gt;
+&lt;p&gt;The first step is to add the &lt;a href=&#34;https://github.com/MacPaw/OpenAI&#34;&gt;OpenAI&lt;/a&gt; dependency to your project:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;package&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;https://github.com/MacPaw/OpenAI.git&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;branch&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;main&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dependencies&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;byNameItem&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;OpenAI&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;condition&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;when&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;platforms&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;iOS&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;),&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;second-step&#34;&gt;Second Step&lt;/h3&gt;
+&lt;p&gt;The second step is to &lt;a href=&#34;https://platform.openai.com/api-keys&#34;&gt;generate an OpenAI key&lt;/a&gt; and replace it inside your project.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Combine practical usage examples</title>
       <link>http://localhost:1313/posts/combine-practical-usage-examples/</link>
       <pubDate>Sat, 22 Jun 2024 07:13:00 +0300</pubDate>
       <guid>http://localhost:1313/posts/combine-practical-usage-examples/</guid>
-      <description>Introduction When working in a large codebase with a significant number of async events, I often found myself in situations where I couldn&amp;rsquo;t combine events effectively. This resulted in optimization problems and inefficient consumption of OS resources.
-The codebase contained closures and async/await, so it wasn&amp;rsquo;t possible to use operators like merge or combineLatest. After discovering this limitation, I decided to add new methods using Combine.
-I will be demonstrating this with a simple NetworkService responsible only for executing and validating requests using Combine.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;When working in a large codebase with a significant number of async events, I often found myself in situations where I couldn&amp;rsquo;t combine events effectively. This resulted in optimization problems and inefficient consumption of OS resources.&lt;/p&gt;
+&lt;p&gt;The codebase contained &lt;code&gt;closures&lt;/code&gt; and &lt;code&gt;async/await&lt;/code&gt;, so it wasn&amp;rsquo;t possible to use operators like &lt;code&gt;merge&lt;/code&gt; or &lt;code&gt;combineLatest&lt;/code&gt;. After discovering this limitation, I decided to add new methods using &lt;a href=&#34;https://developer.apple.com/documentation/combine&#34;&gt;&lt;code&gt;Combine&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I will be demonstrating this with a simple &lt;code&gt;NetworkService&lt;/code&gt; responsible only for executing and validating requests using Combine. Let&amp;rsquo;s dive into the implementation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Combine — Basics</title>
       <link>http://localhost:1313/posts/combine-basics/</link>
       <pubDate>Wed, 07 Feb 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/posts/combine-basics/</guid>
-      <description>What is Combine? Combine Framework provides an API for processing async events over time such as user-input, network response, and other dynamic data.
-What is the purpose of Combine? The purpose of Combine is to simplify the management of async events and data streams.
-Publishers Publisher declares that a type can transit a sequence of values over time. A publisher delivers elements to one or more Subscriber instances.
-class PostService { func fetchPosts() -&amp;gt; AnyPublisher&amp;lt;[Post], Error&amp;gt; { guard let url = URL(string: &amp;#34;https://jsonplaceholder.</description>
+      <description>&lt;h3 id=&#34;what-is-combine&#34;&gt;What is Combine?&lt;/h3&gt;
+&lt;p&gt;Combine Framework provides an API for processing async events over time such as user-input, network response, and other dynamic data.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-the-purpose-of-combine&#34;&gt;What is the purpose of Combine?&lt;/h3&gt;
+&lt;p&gt;The purpose of Combine is to simplify the management of async events and data streams.&lt;/p&gt;
+&lt;h3 id=&#34;publishers&#34;&gt;Publishers&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://developer.apple.com/documentation/combine/publisher&#34;&gt;&lt;code&gt;Publisher&lt;/code&gt;&lt;/a&gt; declares that a type can transit a sequence of values over time. A publisher delivers elements to one or more &lt;a href=&#34;https://developer.apple.com/documentation/combine/subscriber&#34;&gt;&lt;code&gt;Subscriber&lt;/code&gt;&lt;/a&gt; instances.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;PostService&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;fetchPosts&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;AnyPublisher&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Post&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Error&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;guard&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;url&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;URL&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;string&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;https://jsonplaceholder.typicode.com/posts&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;bp&#34;&gt;fatalError&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Invalid URL&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;URLSession&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;shared&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dataTaskPublisher&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;bp&#34;&gt;map&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;decode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Post&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;].&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;decoder&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;JSONDecoder&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;receive&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;on&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;DispatchQueue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;eraseToAnyPublisher&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;subscribers&#34;&gt;Subscribers&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://developer.apple.com/documentation/combine/subscriber&#34;&gt;&lt;code&gt;Subscriber&lt;/code&gt;&lt;/a&gt; is a protocol that declares a type that can receive input from a publisher.
+A Subscriber instance receives a stream of elements from a Publisher.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

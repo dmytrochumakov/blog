@@ -7,9 +7,21 @@
 <meta name="robots" content="index, follow">
 <title>Implementing Apple Sign-In to an iOS App | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Implementing, Apple Sign-In, iOS, app, Swift, Authentication Services">
-<meta name="description" content="Introduction The Apple Sign-In feature is very helpful and offers users login functionality with one click. It could be highly beneficial from a business perspective to attract more potential customers by providing easy and secure access to application functionality. In this article, I will focus on how to implement Apple Sign-In.
+<meta name="description" content="Introduction
+The Apple Sign-In feature is very helpful and offers users login functionality with one click. It could be highly beneficial from a business perspective to attract more potential customers by providing easy and secure access to application functionality. In this article, I will focus on how to implement Apple Sign-In.
 Before implementation, let’s set up the necessary options to be able to run the app without errors.
-Add Sign in with Apple Capability to the project &#x1f4dd; Before testing on the simulator, you need to be signed in to an account with enabled two-factor authentication.">
+
+Add Sign in with Apple Capability to the project
+
+    
+    
+    
+        
+    
+
+
+
+&#x1f4dd; Before testing on the simulator, you need to be signed in to an account with enabled two-factor authentication.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/implementing-apple-sign-in-to-an-ios-app/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -76,20 +88,35 @@ Add Sign in with Apple Capability to the project &#x1f4dd; Before testing on the
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Implementing Apple Sign-In to an iOS App" />
-<meta property="og:description" content="Introduction The Apple Sign-In feature is very helpful and offers users login functionality with one click. It could be highly beneficial from a business perspective to attract more potential customers by providing easy and secure access to application functionality. In this article, I will focus on how to implement Apple Sign-In.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Implementing Apple Sign-In to an iOS App" />
+<meta property="og:description" content="Introduction
+The Apple Sign-In feature is very helpful and offers users login functionality with one click. It could be highly beneficial from a business perspective to attract more potential customers by providing easy and secure access to application functionality. In this article, I will focus on how to implement Apple Sign-In.
 Before implementation, let’s set up the necessary options to be able to run the app without errors.
-Add Sign in with Apple Capability to the project &#x1f4dd; Before testing on the simulator, you need to be signed in to an account with enabled two-factor authentication." />
+
+Add Sign in with Apple Capability to the project
+
+    
+    
+    
+        
+    
+
+
+
+&#x1f4dd; Before testing on the simulator, you need to be signed in to an account with enabled two-factor authentication." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/implementing-apple-sign-in-to-an-ios-app/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -100,9 +127,21 @@ Add Sign in with Apple Capability to the project &#x1f4dd; Before testing on the
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Implementing Apple Sign-In to an iOS App"/>
-<meta name="twitter:description" content="Introduction The Apple Sign-In feature is very helpful and offers users login functionality with one click. It could be highly beneficial from a business perspective to attract more potential customers by providing easy and secure access to application functionality. In this article, I will focus on how to implement Apple Sign-In.
+<meta name="twitter:description" content="Introduction
+The Apple Sign-In feature is very helpful and offers users login functionality with one click. It could be highly beneficial from a business perspective to attract more potential customers by providing easy and secure access to application functionality. In this article, I will focus on how to implement Apple Sign-In.
 Before implementation, let’s set up the necessary options to be able to run the app without errors.
-Add Sign in with Apple Capability to the project &#x1f4dd; Before testing on the simulator, you need to be signed in to an account with enabled two-factor authentication."/>
+
+Add Sign in with Apple Capability to the project
+
+    
+    
+    
+        
+    
+
+
+
+&#x1f4dd; Before testing on the simulator, you need to be signed in to an account with enabled two-factor authentication."/>
 
 
 <script type="application/ld+json">
@@ -131,7 +170,7 @@ Add Sign in with Apple Capability to the project &#x1f4dd; Before testing on the
   "@type": "BlogPosting",
   "headline": "Implementing Apple Sign-In to an iOS App",
   "name": "Implementing Apple Sign-In to an iOS App",
-  "description": "Introduction The Apple Sign-In feature is very helpful and offers users login functionality with one click. It could be highly beneficial from a business perspective to attract more potential customers by providing easy and secure access to application functionality. In this article, I will focus on how to implement Apple Sign-In.\nBefore implementation, let’s set up the necessary options to be able to run the app without errors.\nAdd Sign in with Apple Capability to the project \u0026#x1f4dd; Before testing on the simulator, you need to be signed in to an account with enabled two-factor authentication.",
+  "description": "Introduction The Apple Sign-In feature is very helpful and offers users login functionality with one click. It could be highly beneficial from a business perspective to attract more potential customers by providing easy and secure access to application functionality. In this article, I will focus on how to implement Apple Sign-In.\nBefore implementation, let’s set up the necessary options to be able to run the app without errors.\nAdd Sign in with Apple Capability to the project \u0026#x1f4dd; Before testing on the simulator, you need to be signed in to an account with enabled two-factor authentication.\n",
   "keywords": [
     "Implementing", "Apple Sign-In", "iOS", "app", "Swift", "Authentication Services"
   ],

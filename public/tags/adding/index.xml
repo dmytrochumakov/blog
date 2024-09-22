@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Fri, 14 Jun 2024 07:29:01 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/adding/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,10 @@
       <link>http://localhost:1313/posts/adding-push-notifications-to-an-ios-app/</link>
       <pubDate>Fri, 14 Jun 2024 07:29:01 +0300</pubDate>
       <guid>http://localhost:1313/posts/adding-push-notifications-to-an-ios-app/</guid>
-      <description>Introduction If you start a project from scratch, you need to always create some kind of service like PushNotificationService that will be responsible for handling push notification events. In this article, I want to explore a simple implementation of PushNotificationService to be able to reuse and customize it in future projects.
-First Step The first step is to add the Push Notifications capability to your project. Go to your project -&amp;gt; Signing &amp;amp; Capabilities -&amp;gt; Tap + Capability -&amp;gt; Search for Push Notifications.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;If you start a project from scratch, you need to always create some kind of service like &lt;code&gt;PushNotificationService&lt;/code&gt; that will be responsible for handling push notification events. In this article, I want to explore a simple implementation of &lt;code&gt;PushNotificationService&lt;/code&gt; to be able to reuse and customize it in future projects.&lt;/p&gt;
+&lt;h3 id=&#34;first-step&#34;&gt;First Step&lt;/h3&gt;
+&lt;p&gt;The first step is to add the Push Notifications capability to your project. Go to your project -&amp;gt; Signing &amp;amp; Capabilities -&amp;gt; Tap &lt;code&gt;+ Capability&lt;/code&gt; -&amp;gt; Search for Push Notifications.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

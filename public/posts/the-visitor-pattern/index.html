@@ -7,10 +7,130 @@
 <meta name="robots" content="index, follow">
 <title>The Visitor Pattern | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="design patterns">
-<meta name="description" content="What is a Visitor Pattern? The Visitor Pattern helps add new capabilities to a composite of objects.
+<meta name="description" content="What is a Visitor Pattern?
+
+The Visitor Pattern helps add new capabilities to a composite of objects.
+
+
+    
+    
+    
+        
+    
+
 Source
-What problems does it solve? The Visitor Pattern helps solve following problems:
-Separation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on. Extensibility: It allows you to add new operations to existing object structures without modifying those structures.">
+What problems does it solve?
+The Visitor Pattern helps solve following problems:
+
+Separation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on.
+Extensibility: It allows you to add new operations to existing object structures without modifying those structures. This is especially useful when dealing with complex object hierarchies where adding new functionality directly to the classes would lead to code bloat and tight coupling.
+Traversal of Object Structures: It provides a way to traverse complex object structures while performing some action on each element of the structure. This is particularly useful in scenarios where you need to process every element of a data structure in a specific order or with a specific algorithm.
+
+Real-world code example
+// Element protocol representing the items on the menu
+protocol MenuItem {
+    func accept(visitor: OrderVisitor)
+}
+
+// Concrete item types
+class Coffee: MenuItem {
+    let name: String
+    let price: Double
+    
+    init(name: String, price: Double) {
+        self.name = name
+        self.price = price
+    }
+    
+    func accept(visitor: OrderVisitor) {
+        visitor.visit(self)
+    }
+}
+
+class Tea: MenuItem {
+    let name: String
+    let price: Double
+    
+    init(name: String, price: Double) {
+        self.name = name
+        self.price = price
+    }
+    
+    func accept(visitor: OrderVisitor) {
+        visitor.visit(self)
+    }
+}
+
+class Pastry: MenuItem {
+    let name: String
+    let price: Double
+    
+    init(name: String, price: Double) {
+        self.name = name
+        self.price = price
+    }
+    
+    func accept(visitor: OrderVisitor) {
+        visitor.visit(self)
+    }
+}
+
+// Visitor protocol defining the operations to be performed on menu items
+protocol OrderVisitor {
+    func visit(_ item: Coffee)
+    func visit(_ item: Tea)
+    func visit(_ item: Pastry)
+}
+
+// Concrete visitor implementing operations on menu items
+class TotalCostVisitor: OrderVisitor {
+    var totalCost = 0.0
+    
+    func visit(_ item: Coffee) {
+        totalCost &#43;= item.price
+    }
+    
+    func visit(_ item: Tea) {
+        totalCost &#43;= item.price
+    }
+    
+    func visit(_ item: Pastry) {
+        totalCost &#43;= item.price
+    }
+}
+
+class ItemDetailsVisitor: OrderVisitor {
+    var details = &#34;&#34;
+    
+    func visit(_ item: Coffee) {
+        details &#43;= &#34;Coffee: \(item.name), Price: $\(item.price)\n&#34;
+    }
+    
+    func visit(_ item: Tea) {
+        details &#43;= &#34;Tea: \(item.name), Price: $\(item.price)\n&#34;
+    }
+    
+    func visit(_ item: Pastry) {
+        details &#43;= &#34;Pastry: \(item.name), Price: $\(item.price)\n&#34;
+    }
+}
+
+// Example usage
+let items: [MenuItem] = [Coffee(name: &#34;Espresso&#34;, price: 2.5), Tea(name: &#34;Green Tea&#34;, price: 2.0), Pastry(name: &#34;Croissant&#34;, price: 3.0)]
+
+let totalCostVisitor = TotalCostVisitor()
+for item in items {
+    item.accept(visitor: totalCostVisitor)
+}
+print(&#34;Total cost of the order: $\(totalCostVisitor.totalCost)&#34;)
+
+let itemDetailsVisitor = ItemDetailsVisitor()
+for item in items {
+    item.accept(visitor: itemDetailsVisitor)
+}
+print(&#34;Order details:&#34;)
+print(itemDetailsVisitor.details)
+">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/the-visitor-pattern/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -77,21 +197,144 @@ Separation of Concerns: The Visitor Pattern separates algorithms from the object
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="The Visitor Pattern" />
-<meta property="og:description" content="What is a Visitor Pattern? The Visitor Pattern helps add new capabilities to a composite of objects.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="The Visitor Pattern" />
+<meta property="og:description" content="What is a Visitor Pattern?
+
+The Visitor Pattern helps add new capabilities to a composite of objects.
+
+
+    
+    
+    
+        
+    
+
 Source
-What problems does it solve? The Visitor Pattern helps solve following problems:
-Separation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on. Extensibility: It allows you to add new operations to existing object structures without modifying those structures." />
+What problems does it solve?
+The Visitor Pattern helps solve following problems:
+
+Separation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on.
+Extensibility: It allows you to add new operations to existing object structures without modifying those structures. This is especially useful when dealing with complex object hierarchies where adding new functionality directly to the classes would lead to code bloat and tight coupling.
+Traversal of Object Structures: It provides a way to traverse complex object structures while performing some action on each element of the structure. This is particularly useful in scenarios where you need to process every element of a data structure in a specific order or with a specific algorithm.
+
+Real-world code example
+// Element protocol representing the items on the menu
+protocol MenuItem {
+    func accept(visitor: OrderVisitor)
+}
+
+// Concrete item types
+class Coffee: MenuItem {
+    let name: String
+    let price: Double
+    
+    init(name: String, price: Double) {
+        self.name = name
+        self.price = price
+    }
+    
+    func accept(visitor: OrderVisitor) {
+        visitor.visit(self)
+    }
+}
+
+class Tea: MenuItem {
+    let name: String
+    let price: Double
+    
+    init(name: String, price: Double) {
+        self.name = name
+        self.price = price
+    }
+    
+    func accept(visitor: OrderVisitor) {
+        visitor.visit(self)
+    }
+}
+
+class Pastry: MenuItem {
+    let name: String
+    let price: Double
+    
+    init(name: String, price: Double) {
+        self.name = name
+        self.price = price
+    }
+    
+    func accept(visitor: OrderVisitor) {
+        visitor.visit(self)
+    }
+}
+
+// Visitor protocol defining the operations to be performed on menu items
+protocol OrderVisitor {
+    func visit(_ item: Coffee)
+    func visit(_ item: Tea)
+    func visit(_ item: Pastry)
+}
+
+// Concrete visitor implementing operations on menu items
+class TotalCostVisitor: OrderVisitor {
+    var totalCost = 0.0
+    
+    func visit(_ item: Coffee) {
+        totalCost &#43;= item.price
+    }
+    
+    func visit(_ item: Tea) {
+        totalCost &#43;= item.price
+    }
+    
+    func visit(_ item: Pastry) {
+        totalCost &#43;= item.price
+    }
+}
+
+class ItemDetailsVisitor: OrderVisitor {
+    var details = &#34;&#34;
+    
+    func visit(_ item: Coffee) {
+        details &#43;= &#34;Coffee: \(item.name), Price: $\(item.price)\n&#34;
+    }
+    
+    func visit(_ item: Tea) {
+        details &#43;= &#34;Tea: \(item.name), Price: $\(item.price)\n&#34;
+    }
+    
+    func visit(_ item: Pastry) {
+        details &#43;= &#34;Pastry: \(item.name), Price: $\(item.price)\n&#34;
+    }
+}
+
+// Example usage
+let items: [MenuItem] = [Coffee(name: &#34;Espresso&#34;, price: 2.5), Tea(name: &#34;Green Tea&#34;, price: 2.0), Pastry(name: &#34;Croissant&#34;, price: 3.0)]
+
+let totalCostVisitor = TotalCostVisitor()
+for item in items {
+    item.accept(visitor: totalCostVisitor)
+}
+print(&#34;Total cost of the order: $\(totalCostVisitor.totalCost)&#34;)
+
+let itemDetailsVisitor = ItemDetailsVisitor()
+for item in items {
+    item.accept(visitor: itemDetailsVisitor)
+}
+print(&#34;Order details:&#34;)
+print(itemDetailsVisitor.details)
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/the-visitor-pattern/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -102,10 +345,130 @@ Separation of Concerns: The Visitor Pattern separates algorithms from the object
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="The Visitor Pattern"/>
-<meta name="twitter:description" content="What is a Visitor Pattern? The Visitor Pattern helps add new capabilities to a composite of objects.
+<meta name="twitter:description" content="What is a Visitor Pattern?
+
+The Visitor Pattern helps add new capabilities to a composite of objects.
+
+
+    
+    
+    
+        
+    
+
 Source
-What problems does it solve? The Visitor Pattern helps solve following problems:
-Separation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on. Extensibility: It allows you to add new operations to existing object structures without modifying those structures."/>
+What problems does it solve?
+The Visitor Pattern helps solve following problems:
+
+Separation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on.
+Extensibility: It allows you to add new operations to existing object structures without modifying those structures. This is especially useful when dealing with complex object hierarchies where adding new functionality directly to the classes would lead to code bloat and tight coupling.
+Traversal of Object Structures: It provides a way to traverse complex object structures while performing some action on each element of the structure. This is particularly useful in scenarios where you need to process every element of a data structure in a specific order or with a specific algorithm.
+
+Real-world code example
+// Element protocol representing the items on the menu
+protocol MenuItem {
+    func accept(visitor: OrderVisitor)
+}
+
+// Concrete item types
+class Coffee: MenuItem {
+    let name: String
+    let price: Double
+    
+    init(name: String, price: Double) {
+        self.name = name
+        self.price = price
+    }
+    
+    func accept(visitor: OrderVisitor) {
+        visitor.visit(self)
+    }
+}
+
+class Tea: MenuItem {
+    let name: String
+    let price: Double
+    
+    init(name: String, price: Double) {
+        self.name = name
+        self.price = price
+    }
+    
+    func accept(visitor: OrderVisitor) {
+        visitor.visit(self)
+    }
+}
+
+class Pastry: MenuItem {
+    let name: String
+    let price: Double
+    
+    init(name: String, price: Double) {
+        self.name = name
+        self.price = price
+    }
+    
+    func accept(visitor: OrderVisitor) {
+        visitor.visit(self)
+    }
+}
+
+// Visitor protocol defining the operations to be performed on menu items
+protocol OrderVisitor {
+    func visit(_ item: Coffee)
+    func visit(_ item: Tea)
+    func visit(_ item: Pastry)
+}
+
+// Concrete visitor implementing operations on menu items
+class TotalCostVisitor: OrderVisitor {
+    var totalCost = 0.0
+    
+    func visit(_ item: Coffee) {
+        totalCost &#43;= item.price
+    }
+    
+    func visit(_ item: Tea) {
+        totalCost &#43;= item.price
+    }
+    
+    func visit(_ item: Pastry) {
+        totalCost &#43;= item.price
+    }
+}
+
+class ItemDetailsVisitor: OrderVisitor {
+    var details = &#34;&#34;
+    
+    func visit(_ item: Coffee) {
+        details &#43;= &#34;Coffee: \(item.name), Price: $\(item.price)\n&#34;
+    }
+    
+    func visit(_ item: Tea) {
+        details &#43;= &#34;Tea: \(item.name), Price: $\(item.price)\n&#34;
+    }
+    
+    func visit(_ item: Pastry) {
+        details &#43;= &#34;Pastry: \(item.name), Price: $\(item.price)\n&#34;
+    }
+}
+
+// Example usage
+let items: [MenuItem] = [Coffee(name: &#34;Espresso&#34;, price: 2.5), Tea(name: &#34;Green Tea&#34;, price: 2.0), Pastry(name: &#34;Croissant&#34;, price: 3.0)]
+
+let totalCostVisitor = TotalCostVisitor()
+for item in items {
+    item.accept(visitor: totalCostVisitor)
+}
+print(&#34;Total cost of the order: $\(totalCostVisitor.totalCost)&#34;)
+
+let itemDetailsVisitor = ItemDetailsVisitor()
+for item in items {
+    item.accept(visitor: itemDetailsVisitor)
+}
+print(&#34;Order details:&#34;)
+print(itemDetailsVisitor.details)
+"/>
 
 
 <script type="application/ld+json">
@@ -134,7 +497,7 @@ Separation of Concerns: The Visitor Pattern separates algorithms from the object
   "@type": "BlogPosting",
   "headline": "The Visitor Pattern",
   "name": "The Visitor Pattern",
-  "description": "What is a Visitor Pattern? The Visitor Pattern helps add new capabilities to a composite of objects.\nSource\nWhat problems does it solve? The Visitor Pattern helps solve following problems:\nSeparation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on. Extensibility: It allows you to add new operations to existing object structures without modifying those structures.",
+  "description": "What is a Visitor Pattern? The Visitor Pattern helps add new capabilities to a composite of objects.\nSource\nWhat problems does it solve? The Visitor Pattern helps solve following problems:\nSeparation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on. Extensibility: It allows you to add new operations to existing object structures without modifying those structures. This is especially useful when dealing with complex object hierarchies where adding new functionality directly to the classes would lead to code bloat and tight coupling. Traversal of Object Structures: It provides a way to traverse complex object structures while performing some action on each element of the structure. This is particularly useful in scenarios where you need to process every element of a data structure in a specific order or with a specific algorithm. Real-world code example // Element protocol representing the items on the menu protocol MenuItem { func accept(visitor: OrderVisitor) } // Concrete item types class Coffee: MenuItem { let name: String let price: Double init(name: String, price: Double) { self.name = name self.price = price } func accept(visitor: OrderVisitor) { visitor.visit(self) } } class Tea: MenuItem { let name: String let price: Double init(name: String, price: Double) { self.name = name self.price = price } func accept(visitor: OrderVisitor) { visitor.visit(self) } } class Pastry: MenuItem { let name: String let price: Double init(name: String, price: Double) { self.name = name self.price = price } func accept(visitor: OrderVisitor) { visitor.visit(self) } } // Visitor protocol defining the operations to be performed on menu items protocol OrderVisitor { func visit(_ item: Coffee) func visit(_ item: Tea) func visit(_ item: Pastry) } // Concrete visitor implementing operations on menu items class TotalCostVisitor: OrderVisitor { var totalCost = 0.0 func visit(_ item: Coffee) { totalCost += item.price } func visit(_ item: Tea) { totalCost += item.price } func visit(_ item: Pastry) { totalCost += item.price } } class ItemDetailsVisitor: OrderVisitor { var details = \u0026#34;\u0026#34; func visit(_ item: Coffee) { details += \u0026#34;Coffee: \\(item.name), Price: $\\(item.price)\\n\u0026#34; } func visit(_ item: Tea) { details += \u0026#34;Tea: \\(item.name), Price: $\\(item.price)\\n\u0026#34; } func visit(_ item: Pastry) { details += \u0026#34;Pastry: \\(item.name), Price: $\\(item.price)\\n\u0026#34; } } // Example usage let items: [MenuItem] = [Coffee(name: \u0026#34;Espresso\u0026#34;, price: 2.5), Tea(name: \u0026#34;Green Tea\u0026#34;, price: 2.0), Pastry(name: \u0026#34;Croissant\u0026#34;, price: 3.0)] let totalCostVisitor = TotalCostVisitor() for item in items { item.accept(visitor: totalCostVisitor) } print(\u0026#34;Total cost of the order: $\\(totalCostVisitor.totalCost)\u0026#34;) let itemDetailsVisitor = ItemDetailsVisitor() for item in items { item.accept(visitor: itemDetailsVisitor) } print(\u0026#34;Order details:\u0026#34;) print(itemDetailsVisitor.details) ",
   "keywords": [
     "design patterns"
   ],

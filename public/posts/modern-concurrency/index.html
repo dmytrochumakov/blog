@@ -7,10 +7,24 @@
 <meta name="robots" content="index, follow">
 <title>Modern Concurrency | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Modern Concurrency, Concurrency, Swift">
-<meta name="description" content="When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
+<meta name="description" content="When was it introduced?
+It was introduced in Swift 5.5 at WWDC 2021.
 You can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.
-What are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
-actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&gt; String?">
+What are actors?
+Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
+actor DatabaseManager {
+    private var data: [String: String] = [:]
+
+    func readData(key: String) -&gt; String? {
+        data[key]
+    }
+
+    func writeData(key: String, value: String) {
+        data[key] = value
+    }
+}
+What is an asynchronous function?
+The asynchronous function or asynchronous method can be suspended while it is partway through execution. It can pause in the middle when it’s waiting for something.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/modern-concurrency/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -77,21 +91,38 @@ actor DatabaseManager { private var data: [String: String] = [:] func readData(k
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Modern Concurrency" />
-<meta property="og:description" content="When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Modern Concurrency" />
+<meta property="og:description" content="When was it introduced?
+It was introduced in Swift 5.5 at WWDC 2021.
 You can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.
-What are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
-actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&gt; String?" />
+What are actors?
+Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
+actor DatabaseManager {
+    private var data: [String: String] = [:]
+
+    func readData(key: String) -&gt; String? {
+        data[key]
+    }
+
+    func writeData(key: String, value: String) {
+        data[key] = value
+    }
+}
+What is an asynchronous function?
+The asynchronous function or asynchronous method can be suspended while it is partway through execution. It can pause in the middle when it’s waiting for something." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/modern-concurrency/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -102,10 +133,24 @@ actor DatabaseManager { private var data: [String: String] = [:] func readData(k
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Modern Concurrency"/>
-<meta name="twitter:description" content="When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
+<meta name="twitter:description" content="When was it introduced?
+It was introduced in Swift 5.5 at WWDC 2021.
 You can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.
-What are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
-actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&gt; String?"/>
+What are actors?
+Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
+actor DatabaseManager {
+    private var data: [String: String] = [:]
+
+    func readData(key: String) -&gt; String? {
+        data[key]
+    }
+
+    func writeData(key: String, value: String) {
+        data[key] = value
+    }
+}
+What is an asynchronous function?
+The asynchronous function or asynchronous method can be suspended while it is partway through execution. It can pause in the middle when it’s waiting for something."/>
 
 
 <script type="application/ld+json">
@@ -134,7 +179,7 @@ actor DatabaseManager { private var data: [String: String] = [:] func readData(k
   "@type": "BlogPosting",
   "headline": "Modern Concurrency",
   "name": "Modern Concurrency",
-  "description": "When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.\nYou can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.\nWhat are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.\nactor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -\u0026gt; String?",
+  "description": "When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.\nYou can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.\nWhat are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.\nactor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -\u0026gt; String? { data[key] } func writeData(key: String, value: String) { data[key] = value } } What is an asynchronous function? The asynchronous function or asynchronous method can be suspended while it is partway through execution. It can pause in the middle when it’s waiting for something.\n",
   "keywords": [
     "Modern Concurrency", "Concurrency", "Swift"
   ],

@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Adding" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Adding" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/adding/" />
@@ -192,7 +195,8 @@ if (!doNotTrack) {
   </header>
   <div class="entry-content">
     <p>Introduction If you start a project from scratch, you need to always create some kind of service like PushNotificationService that will be responsible for handling push notification events. In this article, I want to explore a simple implementation of PushNotificationService to be able to reuse and customize it in future projects.
-First Step The first step is to add the Push Notifications capability to your project. Go to your project -&gt; Signing &amp; Capabilities -&gt; Tap &#43; Capability -&gt; Search for Push Notifications....</p>
+First Step The first step is to add the Push Notifications capability to your project. Go to your project -&gt; Signing &amp; Capabilities -&gt; Tap &#43; Capability -&gt; Search for Push Notifications.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-06-14 07:29:01 +0300 EEST'>June 14, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Adding Push Notifications to an iOS App" href="http://localhost:1313/posts/adding-push-notifications-to-an-ios-app/"></a>

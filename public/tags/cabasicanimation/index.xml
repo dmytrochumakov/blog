@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Tue, 21 May 2024 06:31:02 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/cabasicanimation/index.xml" rel="self" type="application/rss+xml" />
@@ -18,10 +18,27 @@
       <link>http://localhost:1313/posts/animation-uikit/</link>
       <pubDate>Tue, 21 May 2024 06:31:02 +0300</pubDate>
       <guid>http://localhost:1313/posts/animation-uikit/</guid>
-      <description>Introduction I was curious about creating animations in UIKit. I wanted to animate different properties such as color and path. Here is what I found:
-It’s impossible to create complex animations only by using the block-based animation API. To do that, you need the Core Animation API and CAPropertyAnimation with its various subclasses.
-Complex animation in UIKit is based on a few key components:
-CAShapeLayer - provides extensive customization options: path, stroke, fill, shadow CABasicAnimation - helps animate color or change the path Implementation First Step The first step is to create a shape layer that will draw an arrow using CAShapeLayer.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I was curious about creating animations in UIKit. I wanted to animate different properties such as &lt;code&gt;color&lt;/code&gt; and &lt;code&gt;path&lt;/code&gt;.
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-3215a&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-3215a&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/0.gif#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;Here is what I found:&lt;/p&gt;
+&lt;p&gt;It’s impossible to create complex animations only by using the &lt;a href=&#34;https://developer.apple.com/documentation/uikit/uiview#1654491&#34;&gt;block-based animation API&lt;/a&gt;. To do that, you need the &lt;a href=&#34;https://developer.apple.com/documentation/quartzcore&#34;&gt;&lt;code&gt;Core Animation&lt;/code&gt;&lt;/a&gt; API and &lt;a href=&#34;https://developer.apple.com/documentation/quartzcore/capropertyanimation/&#34;&gt;&lt;code&gt;CAPropertyAnimation&lt;/code&gt;&lt;/a&gt; with its various subclasses.&lt;/p&gt;
+&lt;p&gt;Complex animation in UIKit is based on a few key components:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.apple.com/documentation/quartzcore/cashapelayer&#34;&gt;&lt;code&gt;CAShapeLayer&lt;/code&gt;&lt;/a&gt; - provides extensive customization options: &lt;code&gt;path&lt;/code&gt;, &lt;code&gt;stroke&lt;/code&gt;, &lt;code&gt;fill&lt;/code&gt;, &lt;code&gt;shadow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.apple.com/documentation/quartzcore/cabasicanimation&#34;&gt;&lt;code&gt;CABasicAnimation&lt;/code&gt;&lt;/a&gt; - helps animate &lt;code&gt;color&lt;/code&gt; or change the &lt;code&gt;path&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
+&lt;h4 id=&#34;first-step&#34;&gt;First Step&lt;/h4&gt;
+&lt;p&gt;The first step is to create a shape layer that will draw an arrow using &lt;a href=&#34;https://developer.apple.com/documentation/quartzcore/cashapelayer&#34;&gt;&lt;code&gt;CAShapeLayer&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

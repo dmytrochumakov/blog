@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Closure" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Closure" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/closure/" />
@@ -195,7 +198,8 @@ if (!doNotTrack) {
 Closures is self-conitained blocks of funcionality that can be passed around and used in your code. — Apple
 Expression:
 { (params) -&gt; return value in statements } @escaping When closure is marked as escaping, it will outlive or leave the scope you passed.
-func response(_ completionHandler: @escaping(Result) -&gt; Void) { completionHandler(.success) } @nonescaping By default, closures are nonescaping, meaning closure will no longer exist in memory after complete execution in the scope you have passed it to....</p>
+func response(_ completionHandler: @escaping(Result) -&gt; Void) { completionHandler(.success) } @nonescaping By default, closures are nonescaping, meaning closure will no longer exist in memory after complete execution in the scope you have passed it to.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2023-12-10 00:00:00 +0300 +0300'>December 10, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to What is closure in Swift language?" href="http://localhost:1313/posts/what-is-closure-in-swift-language/"></a>

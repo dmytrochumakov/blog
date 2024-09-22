@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Tue, 16 Apr 2024 13:46:03 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/archiving/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,20 @@
       <link>http://localhost:1313/posts/archiving-xcode-project-using-the-cli/</link>
       <pubDate>Tue, 16 Apr 2024 13:46:03 +0300</pubDate>
       <guid>http://localhost:1313/posts/archiving-xcode-project-using-the-cli/</guid>
-      <description>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to archive a project in the fastest way.
-One of such ways is by using the xcodebuild archive command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;When you are working on different projects  sometimes  you need to use different  IDE’s. You need to find a way to archive a project in the fastest way.&lt;/p&gt;
+&lt;h3 id=&#34;one-of-such-ways-is-by-using-the-xcodebuild-archive-command&#34;&gt;One of such ways is by using the &lt;code&gt;xcodebuild archive&lt;/code&gt; command&lt;/h3&gt;
+&lt;h4 id=&#34;basic-outline-of-the-process&#34;&gt;Basic outline of the process&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Open Terminal&lt;/strong&gt;: Open the Terminal application on your Mac.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Navigate to Project Directory&lt;/strong&gt;: Use the cd command to navigate to the directory containing your Xcode project.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Run&lt;/strong&gt; &lt;code&gt;xcodebuild archive&lt;/code&gt;: Once you&amp;rsquo;re in the project directory, you can run &lt;code&gt;xcodebuild archive&lt;/code&gt; with the appropriate parameters to build your project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;example&#34;&gt;Example:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;xcodebuild archive -scheme YourSchemeName -archivePath ~/Desktop/YourAppName.xcarchive
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;another-way-is-by-integrating-fastlanehttpsfastlanetools-into-your-workflow&#34;&gt;Another way is by integrating &lt;a href=&#34;https://fastlane.tools/&#34;&gt;fastlane&lt;/a&gt; into your workflow:&lt;/h3&gt;
+&lt;h4 id=&#34;outline-of-the-process&#34;&gt;Outline of the process&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Install Fastlane&lt;/strong&gt;: If you haven&amp;rsquo;t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -7,8 +7,24 @@
 <meta name="robots" content="index, follow">
 <title>Building Dynamic Island for Video Streaming App | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Building, Dynamic Island, Video, Streaming, iOS, app, SwiftUI">
-<meta name="description" content="Introduction I was curious about how to add Dynamic Island and implement it into a Video Streaming App. Here are a few steps on how you can achieve this.
-Caveats Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 &quot;Failed to show Widget&quot;. The solution is to configure live activities and run them through the main app.">
+<meta name="description" content="Introduction
+I was curious about how to add Dynamic Island and implement it into a Video Streaming App.
+
+    
+    
+    
+        
+    
+
+Here are a few steps on how you can achieve this.
+Caveats
+
+Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 &quot;Failed to show Widget&quot;. The solution is to configure live activities and run them through the main app.
+Be aware that when you add a widget to the project, in some cases, it adds all main target files to Compile Sources.
+
+Implementation
+Dynamic Islands are divided into different sizes: minimal, compactTrailing, compactLeading, and expanded.
+Before proceeding, you need to add LiveActivityManager to be able to display Dynamic Islands.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/building-dynamic-island-for-video-streaming-app/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -75,19 +91,38 @@ Caveats Debugging Dynamic Island can be a bit tricky; it only works when the mai
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Building Dynamic Island for Video Streaming App" />
-<meta property="og:description" content="Introduction I was curious about how to add Dynamic Island and implement it into a Video Streaming App. Here are a few steps on how you can achieve this.
-Caveats Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 &quot;Failed to show Widget&quot;. The solution is to configure live activities and run them through the main app." />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Building Dynamic Island for Video Streaming App" />
+<meta property="og:description" content="Introduction
+I was curious about how to add Dynamic Island and implement it into a Video Streaming App.
+
+    
+    
+    
+        
+    
+
+Here are a few steps on how you can achieve this.
+Caveats
+
+Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 &quot;Failed to show Widget&quot;. The solution is to configure live activities and run them through the main app.
+Be aware that when you add a widget to the project, in some cases, it adds all main target files to Compile Sources.
+
+Implementation
+Dynamic Islands are divided into different sizes: minimal, compactTrailing, compactLeading, and expanded.
+Before proceeding, you need to add LiveActivityManager to be able to display Dynamic Islands." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/building-dynamic-island-for-video-streaming-app/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -98,8 +133,24 @@ Caveats Debugging Dynamic Island can be a bit tricky; it only works when the mai
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Building Dynamic Island for Video Streaming App"/>
-<meta name="twitter:description" content="Introduction I was curious about how to add Dynamic Island and implement it into a Video Streaming App. Here are a few steps on how you can achieve this.
-Caveats Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 &quot;Failed to show Widget&quot;. The solution is to configure live activities and run them through the main app."/>
+<meta name="twitter:description" content="Introduction
+I was curious about how to add Dynamic Island and implement it into a Video Streaming App.
+
+    
+    
+    
+        
+    
+
+Here are a few steps on how you can achieve this.
+Caveats
+
+Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 &quot;Failed to show Widget&quot;. The solution is to configure live activities and run them through the main app.
+Be aware that when you add a widget to the project, in some cases, it adds all main target files to Compile Sources.
+
+Implementation
+Dynamic Islands are divided into different sizes: minimal, compactTrailing, compactLeading, and expanded.
+Before proceeding, you need to add LiveActivityManager to be able to display Dynamic Islands."/>
 
 
 <script type="application/ld+json">
@@ -128,7 +179,7 @@ Caveats Debugging Dynamic Island can be a bit tricky; it only works when the mai
   "@type": "BlogPosting",
   "headline": "Building Dynamic Island for Video Streaming App",
   "name": "Building Dynamic Island for Video Streaming App",
-  "description": "Introduction I was curious about how to add Dynamic Island and implement it into a Video Streaming App. Here are a few steps on how you can achieve this.\nCaveats Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 \u0026quot;Failed to show Widget\u0026quot;. The solution is to configure live activities and run them through the main app.",
+  "description": "Introduction I was curious about how to add Dynamic Island and implement it into a Video Streaming App. Here are a few steps on how you can achieve this.\nCaveats Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 \u0026quot;Failed to show Widget\u0026quot;. The solution is to configure live activities and run them through the main app. Be aware that when you add a widget to the project, in some cases, it adds all main target files to Compile Sources. Implementation Dynamic Islands are divided into different sizes: minimal, compactTrailing, compactLeading, and expanded. Before proceeding, you need to add LiveActivityManager to be able to display Dynamic Islands.\n",
   "keywords": [
     "Building", "Dynamic Island", "Video", "Streaming", "iOS", "app", "SwiftUI"
   ],

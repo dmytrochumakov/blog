@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Fri, 19 Apr 2024 06:49:13 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/cli/index.xml" rel="self" type="application/rss+xml" />
@@ -18,34 +18,82 @@
       <link>http://localhost:1313/posts/delivering-ios-app-using-fastlane/</link>
       <pubDate>Fri, 19 Apr 2024 06:49:13 +0300</pubDate>
       <guid>http://localhost:1313/posts/delivering-ios-app-using-fastlane/</guid>
-      <description>Introduction You can easily deliver an iOS app in two ways: through beta and release lanes.
-The First Way - TestFlight By creating a beta lane inside the Fastfile. It utilizes:
-build_app: To easily build and sign your app (via gym). pilot: Makes it easier to manage your app on Apple’s TestFlight. lane :beta do build_app(scheme: &amp;#34;YourScheme&amp;#34;) pilot end To run Fastlane:
-fastlane beta Attention Before proceeding, you need to have the ipa or pkg file generated.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;You can easily deliver an iOS app in two ways: through &lt;code&gt;beta&lt;/code&gt; and &lt;code&gt;release&lt;/code&gt; lanes.&lt;/p&gt;
+&lt;h3 id=&#34;the-first-way---testflight&#34;&gt;The First Way - TestFlight&lt;/h3&gt;
+&lt;p&gt;By creating a &lt;code&gt;beta&lt;/code&gt; &lt;code&gt;lane&lt;/code&gt; inside the &lt;code&gt;Fastfile&lt;/code&gt;. It utilizes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;build_app&lt;/code&gt;: To easily build and sign your app (via &lt;code&gt;gym&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pilot&lt;/code&gt;: Makes it easier to manage your app on Apple’s &lt;code&gt;TestFlight&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;lane&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;:beta&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;build_app&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;ss&#34;&gt;scheme&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;YourScheme&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;pilot&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To run Fastlane:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;fastlane beta
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;attention&#34;&gt;Attention&lt;/h3&gt;
+&lt;p&gt;Before proceeding, you need to have the &lt;code&gt;ipa&lt;/code&gt; or &lt;code&gt;pkg&lt;/code&gt; file generated.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Archiving Xcode project using the CLI</title>
       <link>http://localhost:1313/posts/archiving-xcode-project-using-the-cli/</link>
       <pubDate>Tue, 16 Apr 2024 13:46:03 +0300</pubDate>
       <guid>http://localhost:1313/posts/archiving-xcode-project-using-the-cli/</guid>
-      <description>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to archive a project in the fastest way.
-One of such ways is by using the xcodebuild archive command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;When you are working on different projects  sometimes  you need to use different  IDE’s. You need to find a way to archive a project in the fastest way.&lt;/p&gt;
+&lt;h3 id=&#34;one-of-such-ways-is-by-using-the-xcodebuild-archive-command&#34;&gt;One of such ways is by using the &lt;code&gt;xcodebuild archive&lt;/code&gt; command&lt;/h3&gt;
+&lt;h4 id=&#34;basic-outline-of-the-process&#34;&gt;Basic outline of the process&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Open Terminal&lt;/strong&gt;: Open the Terminal application on your Mac.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Navigate to Project Directory&lt;/strong&gt;: Use the cd command to navigate to the directory containing your Xcode project.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Run&lt;/strong&gt; &lt;code&gt;xcodebuild archive&lt;/code&gt;: Once you&amp;rsquo;re in the project directory, you can run &lt;code&gt;xcodebuild archive&lt;/code&gt; with the appropriate parameters to build your project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;example&#34;&gt;Example:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;xcodebuild archive -scheme YourSchemeName -archivePath ~/Desktop/YourAppName.xcarchive
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;another-way-is-by-integrating-fastlanehttpsfastlanetools-into-your-workflow&#34;&gt;Another way is by integrating &lt;a href=&#34;https://fastlane.tools/&#34;&gt;fastlane&lt;/a&gt; into your workflow:&lt;/h3&gt;
+&lt;h4 id=&#34;outline-of-the-process&#34;&gt;Outline of the process&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Install Fastlane&lt;/strong&gt;: If you haven&amp;rsquo;t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Testing Xcode project using the CLI</title>
       <link>http://localhost:1313/posts/testing-xcode-project-using-the-cli/</link>
       <pubDate>Fri, 12 Apr 2024 03:20:34 +0300</pubDate>
       <guid>http://localhost:1313/posts/testing-xcode-project-using-the-cli/</guid>
-      <description>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to test a project in the fastest way.
-One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you&amp;rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;When you are working on different projects  sometimes  you need to use different  IDE’s. You need to find a way to test a project in the fastest way.&lt;/p&gt;
+&lt;h3 id=&#34;one-of-such-ways-is-by-using-the-xcodebuild-command&#34;&gt;One of such ways is by using the &lt;code&gt;xcodebuild&lt;/code&gt; command&lt;/h3&gt;
+&lt;h4 id=&#34;basic-outline-of-the-process&#34;&gt;Basic outline of the process&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Open Terminal&lt;/strong&gt;: Open the Terminal application on your Mac.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Navigate to Project Directory&lt;/strong&gt;: Use the cd command to navigate to the directory containing your Xcode project.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Run&lt;/strong&gt; &lt;code&gt;xcodebuild&lt;/code&gt;: Once you&amp;rsquo;re in the project directory, you can run &lt;code&gt;xcodebuild&lt;/code&gt; with the appropriate parameters to build your project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;example&#34;&gt;Example:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;xcodebuild -project YourProject.xcodeproj -scheme YourSchemeName &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;another-way-is-by-integrating-fastlanehttpsfastlanetools-into-your-workflow&#34;&gt;Another way is by integrating &lt;a href=&#34;https://fastlane.tools/&#34;&gt;fastlane&lt;/a&gt; into your workflow:&lt;/h3&gt;
+&lt;h4 id=&#34;outline-of-the-process&#34;&gt;Outline of the process&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Install Fastlane&lt;/strong&gt;: If you haven&amp;rsquo;t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building Xcode project using the CLI</title>
       <link>http://localhost:1313/posts/building-xcode-project-using-the-cli/</link>
       <pubDate>Fri, 05 Apr 2024 04:59:38 +0300</pubDate>
       <guid>http://localhost:1313/posts/building-xcode-project-using-the-cli/</guid>
-      <description>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to build a project in the fastest way.
-One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you&amp;rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;When you are working on different projects  sometimes  you need to use different  IDE’s. You need to find a way to build a project in the fastest way.&lt;/p&gt;
+&lt;h3 id=&#34;one-of-such-ways-is-by-using-the-xcodebuild-command&#34;&gt;One of such ways is by using the &lt;code&gt;xcodebuild&lt;/code&gt; command&lt;/h3&gt;
+&lt;h4 id=&#34;basic-outline-of-the-process&#34;&gt;Basic outline of the process&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Open Terminal&lt;/strong&gt;: Open the Terminal application on your Mac.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Navigate to Project Directory&lt;/strong&gt;: Use the cd command to navigate to the directory containing your Xcode project.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Run&lt;/strong&gt; &lt;code&gt;xcodebuild&lt;/code&gt;: Once you&amp;rsquo;re in the project directory, you can run &lt;code&gt;xcodebuild&lt;/code&gt; with the appropriate parameters to build your project.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;example&#34;&gt;Example:&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;xcodebuild -project YourProjectName.xcodeproj -scheme YourSchemeName
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;another-way-is-by-integrating-fastlanehttpsfastlanetools-into-your-workflow&#34;&gt;Another way is by integrating &lt;a href=&#34;https://fastlane.tools/&#34;&gt;fastlane&lt;/a&gt; into your workflow:&lt;/h3&gt;
+&lt;h4 id=&#34;outline-of-the-process&#34;&gt;Outline of the process&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Install Fastlane&lt;/strong&gt;: If you haven&amp;rsquo;t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

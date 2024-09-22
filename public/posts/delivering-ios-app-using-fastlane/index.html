@@ -7,10 +7,22 @@
 <meta name="robots" content="index, follow">
 <title>Delivering iOS app using Fastlane | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="CLI, Tools, Delivering, Fastlane">
-<meta name="description" content="Introduction You can easily deliver an iOS app in two ways: through beta and release lanes.
-The First Way - TestFlight By creating a beta lane inside the Fastfile. It utilizes:
-build_app: To easily build and sign your app (via gym). pilot: Makes it easier to manage your app on Apple’s TestFlight. lane :beta do build_app(scheme: &#34;YourScheme&#34;) pilot end To run Fastlane:
-fastlane beta Attention Before proceeding, you need to have the ipa or pkg file generated.">
+<meta name="description" content="Introduction
+You can easily deliver an iOS app in two ways: through beta and release lanes.
+The First Way - TestFlight
+By creating a beta lane inside the Fastfile. It utilizes:
+
+build_app: To easily build and sign your app (via gym).
+pilot: Makes it easier to manage your app on Apple’s TestFlight.
+
+lane :beta do
+  build_app(scheme: &#34;YourScheme&#34;)
+  pilot
+end
+To run Fastlane:
+fastlane beta
+Attention
+Before proceeding, you need to have the ipa or pkg file generated.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/delivering-ios-app-using-fastlane/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -77,21 +89,36 @@ fastlane beta Attention Before proceeding, you need to have the ipa or pkg file 
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Delivering iOS app using Fastlane" />
-<meta property="og:description" content="Introduction You can easily deliver an iOS app in two ways: through beta and release lanes.
-The First Way - TestFlight By creating a beta lane inside the Fastfile. It utilizes:
-build_app: To easily build and sign your app (via gym). pilot: Makes it easier to manage your app on Apple’s TestFlight. lane :beta do build_app(scheme: &#34;YourScheme&#34;) pilot end To run Fastlane:
-fastlane beta Attention Before proceeding, you need to have the ipa or pkg file generated." />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Delivering iOS app using Fastlane" />
+<meta property="og:description" content="Introduction
+You can easily deliver an iOS app in two ways: through beta and release lanes.
+The First Way - TestFlight
+By creating a beta lane inside the Fastfile. It utilizes:
+
+build_app: To easily build and sign your app (via gym).
+pilot: Makes it easier to manage your app on Apple’s TestFlight.
+
+lane :beta do
+  build_app(scheme: &#34;YourScheme&#34;)
+  pilot
+end
+To run Fastlane:
+fastlane beta
+Attention
+Before proceeding, you need to have the ipa or pkg file generated." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/delivering-ios-app-using-fastlane/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -102,10 +129,22 @@ fastlane beta Attention Before proceeding, you need to have the ipa or pkg file 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Delivering iOS app using Fastlane"/>
-<meta name="twitter:description" content="Introduction You can easily deliver an iOS app in two ways: through beta and release lanes.
-The First Way - TestFlight By creating a beta lane inside the Fastfile. It utilizes:
-build_app: To easily build and sign your app (via gym). pilot: Makes it easier to manage your app on Apple’s TestFlight. lane :beta do build_app(scheme: &#34;YourScheme&#34;) pilot end To run Fastlane:
-fastlane beta Attention Before proceeding, you need to have the ipa or pkg file generated."/>
+<meta name="twitter:description" content="Introduction
+You can easily deliver an iOS app in two ways: through beta and release lanes.
+The First Way - TestFlight
+By creating a beta lane inside the Fastfile. It utilizes:
+
+build_app: To easily build and sign your app (via gym).
+pilot: Makes it easier to manage your app on Apple’s TestFlight.
+
+lane :beta do
+  build_app(scheme: &#34;YourScheme&#34;)
+  pilot
+end
+To run Fastlane:
+fastlane beta
+Attention
+Before proceeding, you need to have the ipa or pkg file generated."/>
 
 
 <script type="application/ld+json">
@@ -134,7 +173,7 @@ fastlane beta Attention Before proceeding, you need to have the ipa or pkg file 
   "@type": "BlogPosting",
   "headline": "Delivering iOS app using Fastlane",
   "name": "Delivering iOS app using Fastlane",
-  "description": "Introduction You can easily deliver an iOS app in two ways: through beta and release lanes.\nThe First Way - TestFlight By creating a beta lane inside the Fastfile. It utilizes:\nbuild_app: To easily build and sign your app (via gym). pilot: Makes it easier to manage your app on Apple’s TestFlight. lane :beta do build_app(scheme: \u0026#34;YourScheme\u0026#34;) pilot end To run Fastlane:\nfastlane beta Attention Before proceeding, you need to have the ipa or pkg file generated.",
+  "description": "Introduction You can easily deliver an iOS app in two ways: through beta and release lanes.\nThe First Way - TestFlight By creating a beta lane inside the Fastfile. It utilizes:\nbuild_app: To easily build and sign your app (via gym). pilot: Makes it easier to manage your app on Apple’s TestFlight. lane :beta do build_app(scheme: \u0026#34;YourScheme\u0026#34;) pilot end To run Fastlane:\nfastlane beta Attention Before proceeding, you need to have the ipa or pkg file generated.\n",
   "keywords": [
     "CLI", "Tools", "Delivering", "Fastlane"
   ],

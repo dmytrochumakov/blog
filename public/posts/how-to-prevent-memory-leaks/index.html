@@ -10,7 +10,8 @@
 <meta name="description" content="I was searching for tools that could help me find memory leaks faster and would be simple in implementation without affecting performance and memory size of application.
 I found a fantastic fit for this task LifetimeTracker developed by Krzysztof Zabłocki.
 All you need is to add LifetimeTracker package to the project, inherit from LifetimeTrackable protocol, and add two lines of code.
-class Department: LifetimeTrackable {} trackLifetime method to init of instance that you are going to verify, and lifetimeConfiguration property where you set max number of valid instances.">
+class Department: LifetimeTrackable {}
+trackLifetime method to init of instance that you are going to verify, and lifetimeConfiguration property where you set max number of valid instances.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/how-to-prevent-memory-leaks/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -77,21 +78,25 @@ class Department: LifetimeTrackable {} trackLifetime method to init of instance 
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="How to prevent memory leaks?" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="How to prevent memory leaks?" />
 <meta property="og:description" content="I was searching for tools that could help me find memory leaks faster and would be simple in implementation without affecting performance and memory size of application.
 I found a fantastic fit for this task LifetimeTracker developed by Krzysztof Zabłocki.
 All you need is to add LifetimeTracker package to the project, inherit from LifetimeTrackable protocol, and add two lines of code.
-class Department: LifetimeTrackable {} trackLifetime method to init of instance that you are going to verify, and lifetimeConfiguration property where you set max number of valid instances." />
+class Department: LifetimeTrackable {}
+trackLifetime method to init of instance that you are going to verify, and lifetimeConfiguration property where you set max number of valid instances." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/how-to-prevent-memory-leaks/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -105,7 +110,8 @@ class Department: LifetimeTrackable {} trackLifetime method to init of instance 
 <meta name="twitter:description" content="I was searching for tools that could help me find memory leaks faster and would be simple in implementation without affecting performance and memory size of application.
 I found a fantastic fit for this task LifetimeTracker developed by Krzysztof Zabłocki.
 All you need is to add LifetimeTracker package to the project, inherit from LifetimeTrackable protocol, and add two lines of code.
-class Department: LifetimeTrackable {} trackLifetime method to init of instance that you are going to verify, and lifetimeConfiguration property where you set max number of valid instances."/>
+class Department: LifetimeTrackable {}
+trackLifetime method to init of instance that you are going to verify, and lifetimeConfiguration property where you set max number of valid instances."/>
 
 
 <script type="application/ld+json">
@@ -134,7 +140,7 @@ class Department: LifetimeTrackable {} trackLifetime method to init of instance 
   "@type": "BlogPosting",
   "headline": "How to prevent memory leaks?",
   "name": "How to prevent memory leaks?",
-  "description": "I was searching for tools that could help me find memory leaks faster and would be simple in implementation without affecting performance and memory size of application.\nI found a fantastic fit for this task LifetimeTracker developed by Krzysztof Zabłocki.\nAll you need is to add LifetimeTracker package to the project, inherit from LifetimeTrackable protocol, and add two lines of code.\nclass Department: LifetimeTrackable {} trackLifetime method to init of instance that you are going to verify, and lifetimeConfiguration property where you set max number of valid instances.",
+  "description": "I was searching for tools that could help me find memory leaks faster and would be simple in implementation without affecting performance and memory size of application.\nI found a fantastic fit for this task LifetimeTracker developed by Krzysztof Zabłocki.\nAll you need is to add LifetimeTracker package to the project, inherit from LifetimeTrackable protocol, and add two lines of code.\nclass Department: LifetimeTrackable {} trackLifetime method to init of instance that you are going to verify, and lifetimeConfiguration property where you set max number of valid instances.\n",
   "keywords": [
     "Swift", "Memory Leak"
   ],

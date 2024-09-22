@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Tue, 17 Sep 2024 07:06:52 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/graph/index.xml" rel="self" type="application/rss+xml" />
@@ -18,18 +18,111 @@
       <link>http://localhost:1313/posts/dsa-adjacency-list/</link>
       <pubDate>Tue, 17 Sep 2024 07:06:52 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-adjacency-list/</guid>
-      <description>What is an Adjacency List? An Adjacency List helps store a list of connections between each vertex in a finite graph.
-Vertex Connects with 0 1 1 0, 2, 3 2 1, 3 3 1, 2 Implementation The addEdge method takes vertices as input and adds an edge to the adjacency list. In this example, the adjacency list is represented as a dictionary that maps vertices to a set of all connected vertices.</description>
+      <description>&lt;h3 id=&#34;what-is-an-adjacency-list&#34;&gt;What is an Adjacency List?&lt;/h3&gt;
+&lt;p&gt;An &lt;a href=&#34;https://en.wikipedia.org/wiki/Adjacency_list&#34;&gt;Adjacency List&lt;/a&gt; helps store a list of connections between each vertex in a finite &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-graph?r=2fepxg&amp;utm_campaign=post&amp;utm_medium=web&amp;showWelcomeOnShare=true&#34;&gt;graph&lt;/a&gt;.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Vertex&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Connects with&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;0&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;0, 2, 3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;2&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1, 3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;3&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1, 2&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;addEdge&lt;/code&gt; method takes vertices as input and adds an edge to the adjacency list. In this example, the adjacency list is represented as a dictionary that maps vertices to a &lt;code&gt;set&lt;/code&gt; of all connected vertices.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DSA - Graph</title>
       <link>http://localhost:1313/posts/dsa-graph/</link>
       <pubDate>Sat, 14 Sep 2024 06:57:03 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-graph/</guid>
-      <description>What is a graph? A graph is an abstract data type that represents vertices and edges that connect those vertices.
-Source
-Implementation A graph can be represented as a matrix with edges connecting each pair of vertices. For example, a graph with vertices 0, 1, 2, 3, 4 and edges between them can be represented as a matrix:
-0 1 2 3 4 0 false true false false true 1 true false true true true 2 false true false true false 3 false true true false true 4 true true false true false In Swift, you can use a list of lists (2D array) to represent the matrix:</description>
+      <description>&lt;h3 id=&#34;what-is-a-graph&#34;&gt;What is a graph?&lt;/h3&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Graph_(abstract_data_type)&#34;&gt;graph&lt;/a&gt; is an abstract data type that represents vertices and edges that connect those vertices.&lt;/p&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-cafc5&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-cafc5&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/ada_cs_struct_graph_components.svg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://adacomputerscience.org/images/content/computer_science/data_structures_and_algorithms/data_structures/figures/ada_cs_struct_graph_components.svg&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
+&lt;p&gt;A graph can be represented as a matrix with edges connecting each pair of vertices. For example, a graph with vertices 0, 1, 2, 3, 4 and edges between them can be represented as a matrix:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;0&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;1&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;2&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;3&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;4&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;0&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;2&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;3&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;4&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;In Swift, you can use a list of lists (2D array) to represent the matrix:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

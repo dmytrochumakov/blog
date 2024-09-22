@@ -7,10 +7,120 @@
 <meta name="robots" content="index, follow">
 <title>The Interpreter Pattern | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="interpreter pattern, design patterns, swift, oop">
-<meta name="description" content="What is an Interpreter Pattern? The Interpreter Pattern helps implement a simple language and defines a class based representation for its grammar along with an interpreter to interpret its sentences.
+<meta name="description" content="What is an Interpreter Pattern?
+
+The Interpreter Pattern helps implement a simple language and defines a class based representation for its grammar along with an interpreter to interpret its sentences.
+
+
+    
+    
+    
+        
+    
+
 Source
-What problems does it solve? The Interpreter Pattern helps solve following problems:
-Language Interpretation: When you have a language or syntax that needs to be interpreted, such as mathematical expressions, regular expressions, or domain-specific languages (DSLs), the Interpreter Pattern helps in implementing the logic to interpret and execute these expressions.">
+What problems does it solve?
+The Interpreter Pattern helps solve following problems:
+
+Language Interpretation: When you have a language or syntax that needs to be interpreted, such as mathematical expressions, regular expressions, or domain-specific languages (DSLs), the Interpreter Pattern helps in implementing the logic to interpret and execute these expressions.
+Extensibility: The Interpreter Pattern allows for easy addition of new grammar rules or language constructs without modifying the core interpreter logic. This promotes extensibility, enabling the interpreter to support new features or languages with minimal changes.
+Separation of Concerns: It separates the grammar definition from the interpretation logic. This separation of concerns makes the codebase modular and easier to maintain. Changes to the grammar or language rules do not affect the interpretation logic, and vice versa.
+
+Real-world code example
+// Define the protocol for the expression
+protocol Expression {
+    func interpret() -&gt; Int
+}
+
+// Concrete expression for a number
+class NumberExpression: Expression {
+    private var value: Int
+    
+    init(_ value: Int) {
+        self.value = value
+    }
+    
+    func interpret() -&gt; Int {
+        return value
+    }
+}
+
+// Concrete expression for addition
+class AdditionExpression: Expression {
+    private var left: Expression
+    private var right: Expression
+    
+    init(_ left: Expression, _ right: Expression) {
+        self.left = left
+        self.right = right
+    }
+    
+    func interpret() -&gt; Int {
+        return left.interpret() &#43; right.interpret()
+    }
+}
+
+// Concrete expression for subtraction
+class SubtractionExpression: Expression {
+    private var left: Expression
+    private var right: Expression
+    
+    init(_ left: Expression, _ right: Expression) {
+        self.left = left
+        self.right = right
+    }
+    
+    func interpret() -&gt; Int {
+        return left.interpret() - right.interpret()
+    }
+}
+
+// Concrete expression for multiplication
+class MultiplicationExpression: Expression {
+    private var left: Expression
+    private var right: Expression
+    
+    init(_ left: Expression, _ right: Expression) {
+        self.left = left
+        self.right = right
+    }
+    
+    func interpret() -&gt; Int {
+        return left.interpret() * right.interpret()
+    }
+}
+
+// Concrete expression for division
+class DivisionExpression: Expression {
+    private var left: Expression
+    private var right: Expression
+    
+    init(_ left: Expression, _ right: Expression) {
+        self.left = left
+        self.right = right
+    }
+    
+    func interpret() -&gt; Int {
+        let divisor = right.interpret()
+        if divisor != 0 {
+            return left.interpret() / divisor
+        } else {
+            // Handle division by zero error
+            fatalError(&#34;Division by zero&#34;)
+        }
+    }
+}
+
+// Usage
+let expression = AdditionExpression(
+    MultiplicationExpression(NumberExpression(2), NumberExpression(3)),
+    DivisionExpression(NumberExpression(10), NumberExpression(5))
+)
+
+// Interpret the expression
+let result = expression.interpret()
+print(&#34;Result: \(result)&#34;) 
+Thank you for reading! 😊">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/the-interpreter-pattern/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -77,21 +187,134 @@ Language Interpretation: When you have a language or syntax that needs to be int
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="The Interpreter Pattern" />
-<meta property="og:description" content="What is an Interpreter Pattern? The Interpreter Pattern helps implement a simple language and defines a class based representation for its grammar along with an interpreter to interpret its sentences.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="The Interpreter Pattern" />
+<meta property="og:description" content="What is an Interpreter Pattern?
+
+The Interpreter Pattern helps implement a simple language and defines a class based representation for its grammar along with an interpreter to interpret its sentences.
+
+
+    
+    
+    
+        
+    
+
 Source
-What problems does it solve? The Interpreter Pattern helps solve following problems:
-Language Interpretation: When you have a language or syntax that needs to be interpreted, such as mathematical expressions, regular expressions, or domain-specific languages (DSLs), the Interpreter Pattern helps in implementing the logic to interpret and execute these expressions." />
+What problems does it solve?
+The Interpreter Pattern helps solve following problems:
+
+Language Interpretation: When you have a language or syntax that needs to be interpreted, such as mathematical expressions, regular expressions, or domain-specific languages (DSLs), the Interpreter Pattern helps in implementing the logic to interpret and execute these expressions.
+Extensibility: The Interpreter Pattern allows for easy addition of new grammar rules or language constructs without modifying the core interpreter logic. This promotes extensibility, enabling the interpreter to support new features or languages with minimal changes.
+Separation of Concerns: It separates the grammar definition from the interpretation logic. This separation of concerns makes the codebase modular and easier to maintain. Changes to the grammar or language rules do not affect the interpretation logic, and vice versa.
+
+Real-world code example
+// Define the protocol for the expression
+protocol Expression {
+    func interpret() -&gt; Int
+}
+
+// Concrete expression for a number
+class NumberExpression: Expression {
+    private var value: Int
+    
+    init(_ value: Int) {
+        self.value = value
+    }
+    
+    func interpret() -&gt; Int {
+        return value
+    }
+}
+
+// Concrete expression for addition
+class AdditionExpression: Expression {
+    private var left: Expression
+    private var right: Expression
+    
+    init(_ left: Expression, _ right: Expression) {
+        self.left = left
+        self.right = right
+    }
+    
+    func interpret() -&gt; Int {
+        return left.interpret() &#43; right.interpret()
+    }
+}
+
+// Concrete expression for subtraction
+class SubtractionExpression: Expression {
+    private var left: Expression
+    private var right: Expression
+    
+    init(_ left: Expression, _ right: Expression) {
+        self.left = left
+        self.right = right
+    }
+    
+    func interpret() -&gt; Int {
+        return left.interpret() - right.interpret()
+    }
+}
+
+// Concrete expression for multiplication
+class MultiplicationExpression: Expression {
+    private var left: Expression
+    private var right: Expression
+    
+    init(_ left: Expression, _ right: Expression) {
+        self.left = left
+        self.right = right
+    }
+    
+    func interpret() -&gt; Int {
+        return left.interpret() * right.interpret()
+    }
+}
+
+// Concrete expression for division
+class DivisionExpression: Expression {
+    private var left: Expression
+    private var right: Expression
+    
+    init(_ left: Expression, _ right: Expression) {
+        self.left = left
+        self.right = right
+    }
+    
+    func interpret() -&gt; Int {
+        let divisor = right.interpret()
+        if divisor != 0 {
+            return left.interpret() / divisor
+        } else {
+            // Handle division by zero error
+            fatalError(&#34;Division by zero&#34;)
+        }
+    }
+}
+
+// Usage
+let expression = AdditionExpression(
+    MultiplicationExpression(NumberExpression(2), NumberExpression(3)),
+    DivisionExpression(NumberExpression(10), NumberExpression(5))
+)
+
+// Interpret the expression
+let result = expression.interpret()
+print(&#34;Result: \(result)&#34;) 
+Thank you for reading! 😊" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/the-interpreter-pattern/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -102,10 +325,120 @@ Language Interpretation: When you have a language or syntax that needs to be int
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="The Interpreter Pattern"/>
-<meta name="twitter:description" content="What is an Interpreter Pattern? The Interpreter Pattern helps implement a simple language and defines a class based representation for its grammar along with an interpreter to interpret its sentences.
+<meta name="twitter:description" content="What is an Interpreter Pattern?
+
+The Interpreter Pattern helps implement a simple language and defines a class based representation for its grammar along with an interpreter to interpret its sentences.
+
+
+    
+    
+    
+        
+    
+
 Source
-What problems does it solve? The Interpreter Pattern helps solve following problems:
-Language Interpretation: When you have a language or syntax that needs to be interpreted, such as mathematical expressions, regular expressions, or domain-specific languages (DSLs), the Interpreter Pattern helps in implementing the logic to interpret and execute these expressions."/>
+What problems does it solve?
+The Interpreter Pattern helps solve following problems:
+
+Language Interpretation: When you have a language or syntax that needs to be interpreted, such as mathematical expressions, regular expressions, or domain-specific languages (DSLs), the Interpreter Pattern helps in implementing the logic to interpret and execute these expressions.
+Extensibility: The Interpreter Pattern allows for easy addition of new grammar rules or language constructs without modifying the core interpreter logic. This promotes extensibility, enabling the interpreter to support new features or languages with minimal changes.
+Separation of Concerns: It separates the grammar definition from the interpretation logic. This separation of concerns makes the codebase modular and easier to maintain. Changes to the grammar or language rules do not affect the interpretation logic, and vice versa.
+
+Real-world code example
+// Define the protocol for the expression
+protocol Expression {
+    func interpret() -&gt; Int
+}
+
+// Concrete expression for a number
+class NumberExpression: Expression {
+    private var value: Int
+    
+    init(_ value: Int) {
+        self.value = value
+    }
+    
+    func interpret() -&gt; Int {
+        return value
+    }
+}
+
+// Concrete expression for addition
+class AdditionExpression: Expression {
+    private var left: Expression
+    private var right: Expression
+    
+    init(_ left: Expression, _ right: Expression) {
+        self.left = left
+        self.right = right
+    }
+    
+    func interpret() -&gt; Int {
+        return left.interpret() &#43; right.interpret()
+    }
+}
+
+// Concrete expression for subtraction
+class SubtractionExpression: Expression {
+    private var left: Expression
+    private var right: Expression
+    
+    init(_ left: Expression, _ right: Expression) {
+        self.left = left
+        self.right = right
+    }
+    
+    func interpret() -&gt; Int {
+        return left.interpret() - right.interpret()
+    }
+}
+
+// Concrete expression for multiplication
+class MultiplicationExpression: Expression {
+    private var left: Expression
+    private var right: Expression
+    
+    init(_ left: Expression, _ right: Expression) {
+        self.left = left
+        self.right = right
+    }
+    
+    func interpret() -&gt; Int {
+        return left.interpret() * right.interpret()
+    }
+}
+
+// Concrete expression for division
+class DivisionExpression: Expression {
+    private var left: Expression
+    private var right: Expression
+    
+    init(_ left: Expression, _ right: Expression) {
+        self.left = left
+        self.right = right
+    }
+    
+    func interpret() -&gt; Int {
+        let divisor = right.interpret()
+        if divisor != 0 {
+            return left.interpret() / divisor
+        } else {
+            // Handle division by zero error
+            fatalError(&#34;Division by zero&#34;)
+        }
+    }
+}
+
+// Usage
+let expression = AdditionExpression(
+    MultiplicationExpression(NumberExpression(2), NumberExpression(3)),
+    DivisionExpression(NumberExpression(10), NumberExpression(5))
+)
+
+// Interpret the expression
+let result = expression.interpret()
+print(&#34;Result: \(result)&#34;) 
+Thank you for reading! 😊"/>
 
 
 <script type="application/ld+json">
@@ -134,7 +467,7 @@ Language Interpretation: When you have a language or syntax that needs to be int
   "@type": "BlogPosting",
   "headline": "The Interpreter Pattern",
   "name": "The Interpreter Pattern",
-  "description": "What is an Interpreter Pattern? The Interpreter Pattern helps implement a simple language and defines a class based representation for its grammar along with an interpreter to interpret its sentences.\nSource\nWhat problems does it solve? The Interpreter Pattern helps solve following problems:\nLanguage Interpretation: When you have a language or syntax that needs to be interpreted, such as mathematical expressions, regular expressions, or domain-specific languages (DSLs), the Interpreter Pattern helps in implementing the logic to interpret and execute these expressions.",
+  "description": "What is an Interpreter Pattern? The Interpreter Pattern helps implement a simple language and defines a class based representation for its grammar along with an interpreter to interpret its sentences.\nSource\nWhat problems does it solve? The Interpreter Pattern helps solve following problems:\nLanguage Interpretation: When you have a language or syntax that needs to be interpreted, such as mathematical expressions, regular expressions, or domain-specific languages (DSLs), the Interpreter Pattern helps in implementing the logic to interpret and execute these expressions. Extensibility: The Interpreter Pattern allows for easy addition of new grammar rules or language constructs without modifying the core interpreter logic. This promotes extensibility, enabling the interpreter to support new features or languages with minimal changes. Separation of Concerns: It separates the grammar definition from the interpretation logic. This separation of concerns makes the codebase modular and easier to maintain. Changes to the grammar or language rules do not affect the interpretation logic, and vice versa. Real-world code example // Define the protocol for the expression protocol Expression { func interpret() -\u0026gt; Int } // Concrete expression for a number class NumberExpression: Expression { private var value: Int init(_ value: Int) { self.value = value } func interpret() -\u0026gt; Int { return value } } // Concrete expression for addition class AdditionExpression: Expression { private var left: Expression private var right: Expression init(_ left: Expression, _ right: Expression) { self.left = left self.right = right } func interpret() -\u0026gt; Int { return left.interpret() + right.interpret() } } // Concrete expression for subtraction class SubtractionExpression: Expression { private var left: Expression private var right: Expression init(_ left: Expression, _ right: Expression) { self.left = left self.right = right } func interpret() -\u0026gt; Int { return left.interpret() - right.interpret() } } // Concrete expression for multiplication class MultiplicationExpression: Expression { private var left: Expression private var right: Expression init(_ left: Expression, _ right: Expression) { self.left = left self.right = right } func interpret() -\u0026gt; Int { return left.interpret() * right.interpret() } } // Concrete expression for division class DivisionExpression: Expression { private var left: Expression private var right: Expression init(_ left: Expression, _ right: Expression) { self.left = left self.right = right } func interpret() -\u0026gt; Int { let divisor = right.interpret() if divisor != 0 { return left.interpret() / divisor } else { // Handle division by zero error fatalError(\u0026#34;Division by zero\u0026#34;) } } } // Usage let expression = AdditionExpression( MultiplicationExpression(NumberExpression(2), NumberExpression(3)), DivisionExpression(NumberExpression(10), NumberExpression(5)) ) // Interpret the expression let result = expression.interpret() print(\u0026#34;Result: \\(result)\u0026#34;) Thank you for reading! 😊",
   "keywords": [
     "interpreter pattern", "design patterns", "swift", "oop"
   ],

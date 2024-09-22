@@ -7,8 +7,14 @@
 <meta name="robots" content="index, follow">
 <title>Concurrency in Swift | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Swift, Concurrency">
-<meta name="description" content="What is concurrency? The system can perform multiple tasks simultaneously. By tasks, I mean code or instructions. Modern computer chips have multiple cores that allow developers to create and run various tasks on multiple cores. Even if your chip has one core operating system it will provide context switching mechanism by enabling it to execute multiple tasks concurrently.
-Material about processes, threads I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it.">
+<meta name="description" content="What is concurrency?
+The system can perform multiple tasks simultaneously. By tasks, I mean code or instructions.
+Modern computer chips have multiple cores that allow developers to create and run various tasks on multiple cores. Even if your chip has one core operating system it will provide context switching mechanism by enabling it to execute multiple tasks concurrently.
+Material about processes, threads
+I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it. I attached links to the material to help you understand it more deeply.
+https://youtu.be/4rLW7zg21gI?si=49hq8Wrbpmeev41k
+https://youtu.be/r2__Rw8vu1M?si=b7b257Qu4Bty7OxA
+I will focus on implementation.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/concurrency-in-swift/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -75,19 +81,28 @@ Material about processes, threads I will skip explaining concepts about processe
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Concurrency in Swift" />
-<meta property="og:description" content="What is concurrency? The system can perform multiple tasks simultaneously. By tasks, I mean code or instructions. Modern computer chips have multiple cores that allow developers to create and run various tasks on multiple cores. Even if your chip has one core operating system it will provide context switching mechanism by enabling it to execute multiple tasks concurrently.
-Material about processes, threads I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it." />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Concurrency in Swift" />
+<meta property="og:description" content="What is concurrency?
+The system can perform multiple tasks simultaneously. By tasks, I mean code or instructions.
+Modern computer chips have multiple cores that allow developers to create and run various tasks on multiple cores. Even if your chip has one core operating system it will provide context switching mechanism by enabling it to execute multiple tasks concurrently.
+Material about processes, threads
+I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it. I attached links to the material to help you understand it more deeply.
+https://youtu.be/4rLW7zg21gI?si=49hq8Wrbpmeev41k
+https://youtu.be/r2__Rw8vu1M?si=b7b257Qu4Bty7OxA
+I will focus on implementation." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/concurrency-in-swift/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -98,8 +113,14 @@ Material about processes, threads I will skip explaining concepts about processe
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Concurrency in Swift"/>
-<meta name="twitter:description" content="What is concurrency? The system can perform multiple tasks simultaneously. By tasks, I mean code or instructions. Modern computer chips have multiple cores that allow developers to create and run various tasks on multiple cores. Even if your chip has one core operating system it will provide context switching mechanism by enabling it to execute multiple tasks concurrently.
-Material about processes, threads I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it."/>
+<meta name="twitter:description" content="What is concurrency?
+The system can perform multiple tasks simultaneously. By tasks, I mean code or instructions.
+Modern computer chips have multiple cores that allow developers to create and run various tasks on multiple cores. Even if your chip has one core operating system it will provide context switching mechanism by enabling it to execute multiple tasks concurrently.
+Material about processes, threads
+I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it. I attached links to the material to help you understand it more deeply.
+https://youtu.be/4rLW7zg21gI?si=49hq8Wrbpmeev41k
+https://youtu.be/r2__Rw8vu1M?si=b7b257Qu4Bty7OxA
+I will focus on implementation."/>
 
 
 <script type="application/ld+json">
@@ -128,7 +149,7 @@ Material about processes, threads I will skip explaining concepts about processe
   "@type": "BlogPosting",
   "headline": "Concurrency in Swift",
   "name": "Concurrency in Swift",
-  "description": "What is concurrency? The system can perform multiple tasks simultaneously. By tasks, I mean code or instructions. Modern computer chips have multiple cores that allow developers to create and run various tasks on multiple cores. Even if your chip has one core operating system it will provide context switching mechanism by enabling it to execute multiple tasks concurrently.\nMaterial about processes, threads I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it.",
+  "description": "What is concurrency? The system can perform multiple tasks simultaneously. By tasks, I mean code or instructions. Modern computer chips have multiple cores that allow developers to create and run various tasks on multiple cores. Even if your chip has one core operating system it will provide context switching mechanism by enabling it to execute multiple tasks concurrently.\nMaterial about processes, threads I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it. I attached links to the material to help you understand it more deeply. https://youtu.be/4rLW7zg21gI?si=49hq8Wrbpmeev41k https://youtu.be/r2__Rw8vu1M?si=b7b257Qu4Bty7OxA I will focus on implementation.\n",
   "keywords": [
     "Swift", "Concurrency"
   ],

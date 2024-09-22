@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Swift" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Swift" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/swift/" />
@@ -187,13 +190,29 @@ if (!doNotTrack) {
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Scanning NFC tags using CoreNFC in an iOS app
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction I never had a chance to work with NFC (Near Field Communication), but I have always been curious to find out how it works. In this article, I will focus on scanning NFC tags using CoreNFC with NFCNDEFReaderSession.
+Preparation Before we begin, let’s add the necessary objects:
+Near Field Communication Tag Reading capability to the project. Privacy - NFC Scan Usage Description key to Info.plist. Near Field Communication Tag Reader Session Formats to the entitlements file. First Step The first step before starting scanning is to check if the device supports NFC reading by using the NFCNDEFReaderSession.readingAvailable property.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-07-12 07:27:51 +0300 EEST'>July 12, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Scanning NFC tags using CoreNFC in an iOS app" href="http://localhost:1313/posts/scanning-nfc-tags-using-corenfc-in-an-ios-app/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Scanning for peripheral devices using BLE in an iOS app
     </h2>
   </header>
   <div class="entry-content">
     <p>Introduction I had the chance to work on a project where communication via BLE was at the heart of the project.
 Before adding any code to application, I always asked myself about two scenarios:
-The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices. The second scenario is when the device acts as a peripheral device by using CBCharacteristic and changes its value....</p>
+The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices. The second scenario is when the device acts as a peripheral device by using CBCharacteristic and changes its value. In this article, I will focus on the first scenario and will show how to scan for peripheral devices.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-10 07:27:14 +0300 EEST'>July 10, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Scanning for peripheral devices using BLE in an iOS app" href="http://localhost:1313/posts/scanning-for-peripheral-devices-using-ble-in-an-ios-app/"></a>
@@ -208,7 +227,8 @@ The first scenario is when the device acts as a central device while searching f
     <p>Introduction In the previous chapter, I started talking about the video game creation process, from project setup to adding the background. Now, I’m going to add the player and physics to it.
 You can download the project here.
 First Step The first step is to initialize player using SKSpriteNode, set up player.position, and add player as a child node.
-SKSpriteNode - is an onscreen graphical element that can be initialized from an image or a solid color....</p>
+SKSpriteNode - is an onscreen graphical element that can be initialized from an image or a solid color.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-03 06:39:04 +0300 EEST'>July 3, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Creating a 2D Space Game for iOS Using SpriteKit - Part 2" href="http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-2/"></a>
@@ -220,7 +240,8 @@ SKSpriteNode - is an onscreen graphical element that can be initialized from an 
     </h2>
   </header>
   <div class="entry-content">
-    <p>Introduction I have never tried creating a game before; it feels like magic to me. I know that games have an enormous amount of underlying layers of abstractions and tools such as game engines, rendering, and so on. I have always been eager to learn at least 1% of the game creation process. In this article, I’m going to explore step-by-step instructions for creating a game for the iOS platform using SpriteKit....</p>
+    <p>Introduction I have never tried creating a game before; it feels like magic to me. I know that games have an enormous amount of underlying layers of abstractions and tools such as game engines, rendering, and so on. I have always been eager to learn at least 1% of the game creation process. In this article, I’m going to explore step-by-step instructions for creating a game for the iOS platform using SpriteKit.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-06-28 07:18:59 +0300 EEST'>June 28, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Creating a 2D Space Game for iOS Using SpriteKit - Part 1" href="http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-1/"></a>
@@ -234,32 +255,18 @@ SKSpriteNode - is an onscreen graphical element that can be initialized from an 
   <div class="entry-content">
     <p>Introduction When working in a large codebase with a significant number of async events, I often found myself in situations where I couldn’t combine events effectively. This resulted in optimization problems and inefficient consumption of OS resources.
 The codebase contained closures and async/await, so it wasn’t possible to use operators like merge or combineLatest. After discovering this limitation, I decided to add new methods using Combine.
-I will be demonstrating this with a simple NetworkService responsible only for executing and validating requests using Combine....</p>
+I will be demonstrating this with a simple NetworkService responsible only for executing and validating requests using Combine. Let’s dive into the implementation.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-06-22 07:13:00 +0300 EEST'>June 22, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Combine practical usage examples" href="http://localhost:1313/posts/combine-practical-usage-examples/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">The Memento Pattern
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is a Memento Pattern? The Memento Pattern helps return an object to one of its previous states; for instance, if the user requests an “undo” operation.
-Source
-What problems does it solve? The Memento Pattern helps solve following problems:
-Undo/Redo Functionality: Memento allows you to capture an object’s state at a specific point in time and store it externally. This enables you to implement undo/redo functionality by restoring the object to its previous state....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-03-22 08:29:30 +0300 +0300'>March 22, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to The Memento Pattern" href="http://localhost:1313/posts/the-memento-pattern/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/swift/page/4/">
-      «&nbsp;Prev&nbsp;4/8
+      «&nbsp;Prev&nbsp;4/9
     </a>
-    <a class="next" href="http://localhost:1313/tags/swift/page/6/">Next&nbsp;6/8&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/swift/page/6/">Next&nbsp;6/9&nbsp;»
     </a>
   </nav>
 </footer>

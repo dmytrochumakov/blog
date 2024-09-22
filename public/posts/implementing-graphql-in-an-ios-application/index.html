@@ -7,9 +7,21 @@
 <meta name="robots" content="index, follow">
 <title>Implementing GraphQL in an iOS application | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Implementing, GraphQL, iOS, application">
-<meta name="description" content="Introduction I previously never had a chance to work with GraphQL. I was excited to learn when to apply this technology, what tools I can use, and how I can implement it. Here’s what I found:
+<meta name="description" content="Introduction
+I previously never had a chance to work with GraphQL. I was excited to learn when to apply this technology, what tools I can use, and how I can implement it. Here’s what I found:
 For testing, I used the Star Wars GraphQL API with AllFilmsQuery:
-query AllFilmsQuery { allFilms { films { title director created producers releaseDate } } } I requested allFilms with title, director, created, producers, and releaseDate information.">
+query AllFilmsQuery {
+  allFilms {
+    films {
+      title
+      director
+      created
+      producers
+      releaseDate
+    }
+  }
+}
+I requested allFilms with title, director, created, producers, and releaseDate information.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/implementing-graphql-in-an-ios-application/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -76,20 +88,35 @@ query AllFilmsQuery { allFilms { films { title director created producers releas
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Implementing GraphQL in an iOS application" />
-<meta property="og:description" content="Introduction I previously never had a chance to work with GraphQL. I was excited to learn when to apply this technology, what tools I can use, and how I can implement it. Here’s what I found:
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Implementing GraphQL in an iOS application" />
+<meta property="og:description" content="Introduction
+I previously never had a chance to work with GraphQL. I was excited to learn when to apply this technology, what tools I can use, and how I can implement it. Here’s what I found:
 For testing, I used the Star Wars GraphQL API with AllFilmsQuery:
-query AllFilmsQuery { allFilms { films { title director created producers releaseDate } } } I requested allFilms with title, director, created, producers, and releaseDate information." />
+query AllFilmsQuery {
+  allFilms {
+    films {
+      title
+      director
+      created
+      producers
+      releaseDate
+    }
+  }
+}
+I requested allFilms with title, director, created, producers, and releaseDate information." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/implementing-graphql-in-an-ios-application/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -100,9 +127,21 @@ query AllFilmsQuery { allFilms { films { title director created producers releas
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Implementing GraphQL in an iOS application"/>
-<meta name="twitter:description" content="Introduction I previously never had a chance to work with GraphQL. I was excited to learn when to apply this technology, what tools I can use, and how I can implement it. Here’s what I found:
+<meta name="twitter:description" content="Introduction
+I previously never had a chance to work with GraphQL. I was excited to learn when to apply this technology, what tools I can use, and how I can implement it. Here’s what I found:
 For testing, I used the Star Wars GraphQL API with AllFilmsQuery:
-query AllFilmsQuery { allFilms { films { title director created producers releaseDate } } } I requested allFilms with title, director, created, producers, and releaseDate information."/>
+query AllFilmsQuery {
+  allFilms {
+    films {
+      title
+      director
+      created
+      producers
+      releaseDate
+    }
+  }
+}
+I requested allFilms with title, director, created, producers, and releaseDate information."/>
 
 
 <script type="application/ld+json">
@@ -131,7 +170,7 @@ query AllFilmsQuery { allFilms { films { title director created producers releas
   "@type": "BlogPosting",
   "headline": "Implementing GraphQL in an iOS application",
   "name": "Implementing GraphQL in an iOS application",
-  "description": "Introduction I previously never had a chance to work with GraphQL. I was excited to learn when to apply this technology, what tools I can use, and how I can implement it. Here’s what I found:\nFor testing, I used the Star Wars GraphQL API with AllFilmsQuery:\nquery AllFilmsQuery { allFilms { films { title director created producers releaseDate } } } I requested allFilms with title, director, created, producers, and releaseDate information.",
+  "description": "Introduction I previously never had a chance to work with GraphQL. I was excited to learn when to apply this technology, what tools I can use, and how I can implement it. Here’s what I found:\nFor testing, I used the Star Wars GraphQL API with AllFilmsQuery:\nquery AllFilmsQuery { allFilms { films { title director created producers releaseDate } } } I requested allFilms with title, director, created, producers, and releaseDate information.\n",
   "keywords": [
     "Implementing", "GraphQL", "iOS", "application"
   ],

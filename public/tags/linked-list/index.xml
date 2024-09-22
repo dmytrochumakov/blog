@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Tue, 27 Aug 2024 07:13:19 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/linked-list/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,20 @@
       <link>http://localhost:1313/posts/dsa-linked-list/</link>
       <pubDate>Tue, 27 Aug 2024 07:13:19 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-linked-list/</guid>
-      <description>What is a Linked List? A linked list is a common data structure that is similar to an array, but its order is based on pointers to the next element in memory instead of using physical placement (indices).
-A linked list has two main components:
-ListNode class: This class has a val property that represents the value and a next property that represents a pointer to the next element in memory.</description>
+      <description>&lt;h3 id=&#34;what-is-a-linked-list&#34;&gt;What is a Linked List?&lt;/h3&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Linked_list&#34;&gt;linked list&lt;/a&gt; is a common data structure that is similar to an array, but its order is based on pointers to the next element in memory instead of using physical placement (indices).&lt;/p&gt;
+&lt;p&gt;A linked list has two main components:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;ListNode&lt;/strong&gt; class: This class has a &lt;code&gt;val&lt;/code&gt; property that represents the value and a &lt;code&gt;next&lt;/code&gt; property that represents a pointer to the next element in memory.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LinkedList&lt;/strong&gt; class: This class stores a collection of &lt;code&gt;ListNode&lt;/code&gt; elements and provides operations like &lt;code&gt;add to tail&lt;/code&gt; and &lt;code&gt;add to head&lt;/code&gt;.
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;add to tail&lt;/code&gt; operation takes O(n) time because it needs to iterate through the list to find the last element.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;add to head&lt;/code&gt; operation takes O(1) time because it only needs to set the next pointer of the new node to the current head and update the head with the new node.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;where-can-it-be-used&#34;&gt;Where can it be used?&lt;/h3&gt;
+&lt;p&gt;A linked list can be used in stacks, queues, and lists.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

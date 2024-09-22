@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Dispatchgroup" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Dispatchgroup" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/dispatchgroup/" />
@@ -193,7 +196,8 @@ if (!doNotTrack) {
   <div class="entry-content">
     <p>What is DispatchGroup? DispatchGroup provides a mechanism to track the completion group of tasks.
 How DispatchGroup works? DispatchGroup has three main methods, enter, leave and notify, that allow you to control the completion of a specific task.
-let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() dispatchGroup.notify(queue: .main) {} Let`s talk about each of these methods. enter — manually indicate a block has entered group. leave — manually indicate a block in the group has been completed....</p>
+let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() dispatchGroup.notify(queue: .main) {} Let`s talk about each of these methods. enter — manually indicate a block has entered group. leave — manually indicate a block in the group has been completed. notify(queue: ) — schedule a block to be submitted to a queue when all the blocks associated with a group have been completed. The queue parameter is the queue to which the supplied block will be submitted when the group is complete.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-01-10 00:00:00 +0300 +0300'>January 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DispatchGroup in Swift" href="http://localhost:1313/posts/dispatchgroup-in-swift/"></a>

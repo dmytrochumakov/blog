@@ -7,9 +7,33 @@
 <meta name="robots" content="index, follow">
 <title>Battery Performance Testing for iOS App | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Battery, Performance, Testing, iOS, App">
-<meta name="description" content="Introduction Working with batteries on iOS devices for large applications has always been tricky. The amount of energy consumed by the screen, location services, network calls, processing, background tasks, etc., is significant. From a developer&rsquo;s perspective, it seems complicated, but Xcode provides tools to address this problem.
+<meta name="description" content="Introduction
+Working with batteries on iOS devices for large applications has always been tricky. The amount of energy consumed by the screen, location services, network calls, processing, background tasks, etc., is significant. From a developer&rsquo;s perspective, it seems complicated, but Xcode provides tools to address this problem.
 To find the issue, you need to open Xcode and go to the Debug Navigator.
-In the Debug Navigator, you will see the Energy Impact gauge.">
+In the Debug Navigator, you will see the Energy Impact gauge.
+
+    
+    
+    
+        
+    
+
+In the histogram, blue indicates good performance, while red indicates overhead.
+
+    
+    
+    
+        
+    
+
+Based on this information, you can analyze the overhead and resolve potential issues by utilizing Instruments such as Network, Location, CPU Profile, etc. For each case, Xcode provides instruments that allow you to dive deeper and understand what is happening in detail.
+
+    
+    
+    
+        
+    
+">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/battery-performance-testing-for-ios-app/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -76,20 +100,47 @@ In the Debug Navigator, you will see the Energy Impact gauge.">
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Battery Performance Testing for iOS App" />
-<meta property="og:description" content="Introduction Working with batteries on iOS devices for large applications has always been tricky. The amount of energy consumed by the screen, location services, network calls, processing, background tasks, etc., is significant. From a developer&rsquo;s perspective, it seems complicated, but Xcode provides tools to address this problem.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Battery Performance Testing for iOS App" />
+<meta property="og:description" content="Introduction
+Working with batteries on iOS devices for large applications has always been tricky. The amount of energy consumed by the screen, location services, network calls, processing, background tasks, etc., is significant. From a developer&rsquo;s perspective, it seems complicated, but Xcode provides tools to address this problem.
 To find the issue, you need to open Xcode and go to the Debug Navigator.
-In the Debug Navigator, you will see the Energy Impact gauge." />
+In the Debug Navigator, you will see the Energy Impact gauge.
+
+    
+    
+    
+        
+    
+
+In the histogram, blue indicates good performance, while red indicates overhead.
+
+    
+    
+    
+        
+    
+
+Based on this information, you can analyze the overhead and resolve potential issues by utilizing Instruments such as Network, Location, CPU Profile, etc. For each case, Xcode provides instruments that allow you to dive deeper and understand what is happening in detail.
+
+    
+    
+    
+        
+    
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/battery-performance-testing-for-ios-app/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -100,9 +151,33 @@ In the Debug Navigator, you will see the Energy Impact gauge." />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Battery Performance Testing for iOS App"/>
-<meta name="twitter:description" content="Introduction Working with batteries on iOS devices for large applications has always been tricky. The amount of energy consumed by the screen, location services, network calls, processing, background tasks, etc., is significant. From a developer&rsquo;s perspective, it seems complicated, but Xcode provides tools to address this problem.
+<meta name="twitter:description" content="Introduction
+Working with batteries on iOS devices for large applications has always been tricky. The amount of energy consumed by the screen, location services, network calls, processing, background tasks, etc., is significant. From a developer&rsquo;s perspective, it seems complicated, but Xcode provides tools to address this problem.
 To find the issue, you need to open Xcode and go to the Debug Navigator.
-In the Debug Navigator, you will see the Energy Impact gauge."/>
+In the Debug Navigator, you will see the Energy Impact gauge.
+
+    
+    
+    
+        
+    
+
+In the histogram, blue indicates good performance, while red indicates overhead.
+
+    
+    
+    
+        
+    
+
+Based on this information, you can analyze the overhead and resolve potential issues by utilizing Instruments such as Network, Location, CPU Profile, etc. For each case, Xcode provides instruments that allow you to dive deeper and understand what is happening in detail.
+
+    
+    
+    
+        
+    
+"/>
 
 
 <script type="application/ld+json">
@@ -131,7 +206,7 @@ In the Debug Navigator, you will see the Energy Impact gauge."/>
   "@type": "BlogPosting",
   "headline": "Battery Performance Testing for iOS App",
   "name": "Battery Performance Testing for iOS App",
-  "description": "Introduction Working with batteries on iOS devices for large applications has always been tricky. The amount of energy consumed by the screen, location services, network calls, processing, background tasks, etc., is significant. From a developer\u0026rsquo;s perspective, it seems complicated, but Xcode provides tools to address this problem.\nTo find the issue, you need to open Xcode and go to the Debug Navigator.\nIn the Debug Navigator, you will see the Energy Impact gauge.",
+  "description": "Introduction Working with batteries on iOS devices for large applications has always been tricky. The amount of energy consumed by the screen, location services, network calls, processing, background tasks, etc., is significant. From a developer\u0026rsquo;s perspective, it seems complicated, but Xcode provides tools to address this problem.\nTo find the issue, you need to open Xcode and go to the Debug Navigator.\nIn the Debug Navigator, you will see the Energy Impact gauge. In the histogram, blue indicates good performance, while red indicates overhead. Based on this information, you can analyze the overhead and resolve potential issues by utilizing Instruments such as Network, Location, CPU Profile, etc. For each case, Xcode provides instruments that allow you to dive deeper and understand what is happening in detail. ",
   "keywords": [
     "Battery", "Performance", "Testing", "iOS", "App"
   ],

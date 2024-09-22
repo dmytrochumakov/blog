@@ -7,8 +7,36 @@
 <meta name="robots" content="index, follow">
 <title>DSA - Adjacency List | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="DSA, Data Structures, Algorithms, Adjacency List, Graph, Swift">
-<meta name="description" content="What is an Adjacency List? An Adjacency List helps store a list of connections between each vertex in a finite graph.
-Vertex Connects with 0 1 1 0, 2, 3 2 1, 3 3 1, 2 Implementation The addEdge method takes vertices as input and adds an edge to the adjacency list. In this example, the adjacency list is represented as a dictionary that maps vertices to a set of all connected vertices.">
+<meta name="description" content="What is an Adjacency List?
+An Adjacency List helps store a list of connections between each vertex in a finite graph.
+
+  
+      
+          Vertex
+          Connects with
+      
+  
+  
+      
+          0
+          1
+      
+      
+          1
+          0, 2, 3
+      
+      
+          2
+          1, 3
+      
+      
+          3
+          1, 2
+      
+  
+
+Implementation
+The addEdge method takes vertices as input and adds an edge to the adjacency list. In this example, the adjacency list is represented as a dictionary that maps vertices to a set of all connected vertices.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/dsa-adjacency-list/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -75,19 +103,50 @@ Vertex Connects with 0 1 1 0, 2, 3 2 1, 3 3 1, 2 Implementation The addEdge meth
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="DSA - Adjacency List" />
-<meta property="og:description" content="What is an Adjacency List? An Adjacency List helps store a list of connections between each vertex in a finite graph.
-Vertex Connects with 0 1 1 0, 2, 3 2 1, 3 3 1, 2 Implementation The addEdge method takes vertices as input and adds an edge to the adjacency list. In this example, the adjacency list is represented as a dictionary that maps vertices to a set of all connected vertices." />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="DSA - Adjacency List" />
+<meta property="og:description" content="What is an Adjacency List?
+An Adjacency List helps store a list of connections between each vertex in a finite graph.
+
+  
+      
+          Vertex
+          Connects with
+      
+  
+  
+      
+          0
+          1
+      
+      
+          1
+          0, 2, 3
+      
+      
+          2
+          1, 3
+      
+      
+          3
+          1, 2
+      
+  
+
+Implementation
+The addEdge method takes vertices as input and adds an edge to the adjacency list. In this example, the adjacency list is represented as a dictionary that maps vertices to a set of all connected vertices." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/dsa-adjacency-list/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -98,8 +157,36 @@ Vertex Connects with 0 1 1 0, 2, 3 2 1, 3 3 1, 2 Implementation The addEdge meth
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="DSA - Adjacency List"/>
-<meta name="twitter:description" content="What is an Adjacency List? An Adjacency List helps store a list of connections between each vertex in a finite graph.
-Vertex Connects with 0 1 1 0, 2, 3 2 1, 3 3 1, 2 Implementation The addEdge method takes vertices as input and adds an edge to the adjacency list. In this example, the adjacency list is represented as a dictionary that maps vertices to a set of all connected vertices."/>
+<meta name="twitter:description" content="What is an Adjacency List?
+An Adjacency List helps store a list of connections between each vertex in a finite graph.
+
+  
+      
+          Vertex
+          Connects with
+      
+  
+  
+      
+          0
+          1
+      
+      
+          1
+          0, 2, 3
+      
+      
+          2
+          1, 3
+      
+      
+          3
+          1, 2
+      
+  
+
+Implementation
+The addEdge method takes vertices as input and adds an edge to the adjacency list. In this example, the adjacency list is represented as a dictionary that maps vertices to a set of all connected vertices."/>
 
 
 <script type="application/ld+json">
@@ -128,7 +215,7 @@ Vertex Connects with 0 1 1 0, 2, 3 2 1, 3 3 1, 2 Implementation The addEdge meth
   "@type": "BlogPosting",
   "headline": "DSA - Adjacency List",
   "name": "DSA - Adjacency List",
-  "description": "What is an Adjacency List? An Adjacency List helps store a list of connections between each vertex in a finite graph.\nVertex Connects with 0 1 1 0, 2, 3 2 1, 3 3 1, 2 Implementation The addEdge method takes vertices as input and adds an edge to the adjacency list. In this example, the adjacency list is represented as a dictionary that maps vertices to a set of all connected vertices.",
+  "description": "What is an Adjacency List? An Adjacency List helps store a list of connections between each vertex in a finite graph.\nVertex Connects with 0 1 1 0, 2, 3 2 1, 3 3 1, 2 Implementation The addEdge method takes vertices as input and adds an edge to the adjacency list. In this example, the adjacency list is represented as a dictionary that maps vertices to a set of all connected vertices.\n",
   "keywords": [
     "DSA", "Data Structures", "Algorithms", "Adjacency List", "Graph", "Swift"
   ],
@@ -274,30 +361,30 @@ Vertex Connects with 0 1 1 0, 2, 3 2 1, 3 3 1, 2 Implementation The addEdge meth
   <div class="post-content"><h3 id="what-is-an-adjacency-list">What is an Adjacency List?<a hidden class="anchor" aria-hidden="true" href="#what-is-an-adjacency-list">#</a></h3>
 <p>An <a href="https://en.wikipedia.org/wiki/Adjacency_list">Adjacency List</a> helps store a list of connections between each vertex in a finite <a href="https://open.substack.com/pub/dmytrosblog/p/dsa-graph?r=2fepxg&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true">graph</a>.</p>
 <table>
-<thead>
-<tr>
-<th>Vertex</th>
-<th>Connects with</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0, 2, 3</td>
-</tr>
-<tr>
-<td>2</td>
-<td>1, 3</td>
-</tr>
-<tr>
-<td>3</td>
-<td>1, 2</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Vertex</th>
+          <th style="text-align: left">Connects with</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">0</td>
+          <td style="text-align: left">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">0, 2, 3</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2</td>
+          <td style="text-align: left">1, 3</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">3</td>
+          <td style="text-align: left">1, 2</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="implementation">Implementation<a hidden class="anchor" aria-hidden="true" href="#implementation">#</a></h3>
 <p>The <code>addEdge</code> method takes vertices as input and adds an edge to the adjacency list. In this example, the adjacency list is represented as a dictionary that maps vertices to a <code>set</code> of all connected vertices.</p>

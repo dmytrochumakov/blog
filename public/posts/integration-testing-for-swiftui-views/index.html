@@ -7,9 +7,19 @@
 <meta name="robots" content="index, follow">
 <title>Integration testing for SwiftUI views | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Integration testing, SwiftUI">
-<meta name="description" content="Introduction I have been looking for information about implementation details of integration testing. I found a lot of information, but it was theoretical and all information looked the same. I did not find a meaningful example, so I tried to come up with my own definition and sample.
+<meta name="description" content="Introduction
+I have been looking for information about implementation details of integration testing.
+I found a lot of information, but it was theoretical and all information looked the same.
+I did not find a meaningful example, so I tried to come up with my own definition and sample.
+
 Integration testing means testing the behavior between modules or views to ensure they work as expected after user actions.
-There are two ways of conducting integration testing: The first is by unit tests, where you try to test the flowing data between view models.">
+
+There are two ways of conducting integration testing:
+
+The first is by unit tests, where you try to test the flowing data between view models.
+The second is UI tests, where you try to test if the UI items exist and navigation works correctly.
+
+I will focus on testing the flowing data between view models.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/integration-testing-for-swiftui-views/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -76,20 +86,33 @@ There are two ways of conducting integration testing: The first is by unit tests
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Integration testing for SwiftUI views" />
-<meta property="og:description" content="Introduction I have been looking for information about implementation details of integration testing. I found a lot of information, but it was theoretical and all information looked the same. I did not find a meaningful example, so I tried to come up with my own definition and sample.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Integration testing for SwiftUI views" />
+<meta property="og:description" content="Introduction
+I have been looking for information about implementation details of integration testing.
+I found a lot of information, but it was theoretical and all information looked the same.
+I did not find a meaningful example, so I tried to come up with my own definition and sample.
+
 Integration testing means testing the behavior between modules or views to ensure they work as expected after user actions.
-There are two ways of conducting integration testing: The first is by unit tests, where you try to test the flowing data between view models." />
+
+There are two ways of conducting integration testing:
+
+The first is by unit tests, where you try to test the flowing data between view models.
+The second is UI tests, where you try to test if the UI items exist and navigation works correctly.
+
+I will focus on testing the flowing data between view models." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/integration-testing-for-swiftui-views/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -100,9 +123,19 @@ There are two ways of conducting integration testing: The first is by unit tests
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Integration testing for SwiftUI views"/>
-<meta name="twitter:description" content="Introduction I have been looking for information about implementation details of integration testing. I found a lot of information, but it was theoretical and all information looked the same. I did not find a meaningful example, so I tried to come up with my own definition and sample.
+<meta name="twitter:description" content="Introduction
+I have been looking for information about implementation details of integration testing.
+I found a lot of information, but it was theoretical and all information looked the same.
+I did not find a meaningful example, so I tried to come up with my own definition and sample.
+
 Integration testing means testing the behavior between modules or views to ensure they work as expected after user actions.
-There are two ways of conducting integration testing: The first is by unit tests, where you try to test the flowing data between view models."/>
+
+There are two ways of conducting integration testing:
+
+The first is by unit tests, where you try to test the flowing data between view models.
+The second is UI tests, where you try to test if the UI items exist and navigation works correctly.
+
+I will focus on testing the flowing data between view models."/>
 
 
 <script type="application/ld+json">
@@ -131,7 +164,7 @@ There are two ways of conducting integration testing: The first is by unit tests
   "@type": "BlogPosting",
   "headline": "Integration testing for SwiftUI views",
   "name": "Integration testing for SwiftUI views",
-  "description": "Introduction I have been looking for information about implementation details of integration testing. I found a lot of information, but it was theoretical and all information looked the same. I did not find a meaningful example, so I tried to come up with my own definition and sample.\nIntegration testing means testing the behavior between modules or views to ensure they work as expected after user actions.\nThere are two ways of conducting integration testing: The first is by unit tests, where you try to test the flowing data between view models.",
+  "description": "Introduction I have been looking for information about implementation details of integration testing. I found a lot of information, but it was theoretical and all information looked the same. I did not find a meaningful example, so I tried to come up with my own definition and sample.\nIntegration testing means testing the behavior between modules or views to ensure they work as expected after user actions.\nThere are two ways of conducting integration testing: The first is by unit tests, where you try to test the flowing data between view models. The second is UI tests, where you try to test if the UI items exist and navigation works correctly. I will focus on testing the flowing data between view models.\n",
   "keywords": [
     "Integration testing", "SwiftUI"
   ],

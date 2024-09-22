@@ -7,9 +7,14 @@
 <meta name="robots" content="index, follow">
 <title>Scanning for peripheral devices using BLE in an iOS app | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Scanning, peripheral, devices, BLE, iOS, app, Swift">
-<meta name="description" content="Introduction I had the chance to work on a project where communication via BLE was at the heart of the project.
+<meta name="description" content="Introduction
+I had the chance to work on a project where communication via BLE was at the heart of the project.
 Before adding any code to application, I always asked myself about two scenarios:
-The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices. The second scenario is when the device acts as a peripheral device by using CBCharacteristic and changes its value.">
+
+The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices.
+The second scenario is when the device acts as a peripheral device by using CBCharacteristic and changes its value.
+
+In this article, I will focus on the first scenario and will show how to scan for peripheral devices.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/scanning-for-peripheral-devices-using-ble-in-an-ios-app/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -76,20 +81,28 @@ The first scenario is when the device acts as a central device while searching f
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Scanning for peripheral devices using BLE in an iOS app" />
-<meta property="og:description" content="Introduction I had the chance to work on a project where communication via BLE was at the heart of the project.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Scanning for peripheral devices using BLE in an iOS app" />
+<meta property="og:description" content="Introduction
+I had the chance to work on a project where communication via BLE was at the heart of the project.
 Before adding any code to application, I always asked myself about two scenarios:
-The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices. The second scenario is when the device acts as a peripheral device by using CBCharacteristic and changes its value." />
+
+The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices.
+The second scenario is when the device acts as a peripheral device by using CBCharacteristic and changes its value.
+
+In this article, I will focus on the first scenario and will show how to scan for peripheral devices." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/scanning-for-peripheral-devices-using-ble-in-an-ios-app/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -100,9 +113,14 @@ The first scenario is when the device acts as a central device while searching f
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Scanning for peripheral devices using BLE in an iOS app"/>
-<meta name="twitter:description" content="Introduction I had the chance to work on a project where communication via BLE was at the heart of the project.
+<meta name="twitter:description" content="Introduction
+I had the chance to work on a project where communication via BLE was at the heart of the project.
 Before adding any code to application, I always asked myself about two scenarios:
-The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices. The second scenario is when the device acts as a peripheral device by using CBCharacteristic and changes its value."/>
+
+The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices.
+The second scenario is when the device acts as a peripheral device by using CBCharacteristic and changes its value.
+
+In this article, I will focus on the first scenario and will show how to scan for peripheral devices."/>
 
 
 <script type="application/ld+json">
@@ -131,7 +149,7 @@ The first scenario is when the device acts as a central device while searching f
   "@type": "BlogPosting",
   "headline": "Scanning for peripheral devices using BLE in an iOS app",
   "name": "Scanning for peripheral devices using BLE in an iOS app",
-  "description": "Introduction I had the chance to work on a project where communication via BLE was at the heart of the project.\nBefore adding any code to application, I always asked myself about two scenarios:\nThe first scenario is when the device acts as a central device while searching for and connecting to peripheral devices. The second scenario is when the device acts as a peripheral device by using CBCharacteristic and changes its value.",
+  "description": "Introduction I had the chance to work on a project where communication via BLE was at the heart of the project.\nBefore adding any code to application, I always asked myself about two scenarios:\nThe first scenario is when the device acts as a central device while searching for and connecting to peripheral devices. The second scenario is when the device acts as a peripheral device by using CBCharacteristic and changes its value. In this article, I will focus on the first scenario and will show how to scan for peripheral devices.\n",
   "keywords": [
     "Scanning", "peripheral", "devices", "BLE", "iOS", "app", "Swift"
   ],

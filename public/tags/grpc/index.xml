@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Tue, 16 Jul 2024 07:16:41 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/grpc/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,10 @@
       <link>http://localhost:1313/posts/implementing-grpc-swift/</link>
       <pubDate>Tue, 16 Jul 2024 07:16:41 +0300</pubDate>
       <guid>http://localhost:1313/posts/implementing-grpc-swift/</guid>
-      <description>Introduction I&amp;rsquo;ve never had the chance to use this technology before. I&amp;rsquo;ve always wondered how gRPC operates. In this article, I will explore what gRPC is, how to install and use it, and when to use gRPC.
-What is gRPC? gRPC is an open-source, high-performance framework that facilitates efficient communication in distributed systems. gRPC is an implementation of the RPC (Remote Procedure Call) protocol, which enables services to call functions on other machines as if they were local software methods.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;ve never had the chance to use this technology before. I&amp;rsquo;ve always wondered how gRPC operates. In this article, I will explore what gRPC is, how to install and use it, and when to use gRPC.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-grpc&#34;&gt;What is gRPC?&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.postman.com/what-is-grpc/&#34;&gt;gRPC&lt;/a&gt; is an open-source, high-performance framework that facilitates efficient communication in distributed systems. gRPC is an implementation of the RPC (Remote Procedure Call) protocol, which enables services to call functions on other machines as if they were local software methods. gRPC was developed by Google in 2015, and it includes several features that enhance the way remote procedure calls are made. For instance, its use of Protocol Buffers (Protobuf) supports strongly typed service contracts, data serialization, and code generation in a variety of programming languages. It also uses HTTP/2 as its transport protocol, which facilitates bi-directional streaming and reduces latency.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

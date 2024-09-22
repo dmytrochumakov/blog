@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Chat" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Chat" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/chat/" />
@@ -192,7 +195,8 @@ if (!doNotTrack) {
   </header>
   <div class="entry-content">
     <p>Introduction I never had a chance to work with WebSockets, so I decided to take a look and create a group chat. Here’s what I discovered:
-To be able to send and receive messages, you need to create an interface for communication between a server and your application. In my case, I chose sendMessage and receiveMessage methods. For the server-side, I chose Node.js. For the iOS application, I chose the Socket....</p>
+To be able to send and receive messages, you need to create an interface for communication between a server and your application. In my case, I chose sendMessage and receiveMessage methods. For the server-side, I chose Node.js. For the iOS application, I chose the Socket.IO library. Implementation Let’s dive deeper into the implementation.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-02 15:15:14 +0300 EEST'>May 2, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Building Group Chat using WebSockets" href="http://localhost:1313/posts/building-group-chat-using-websockets/"></a>

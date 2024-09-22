@@ -7,9 +7,21 @@
 <meta name="robots" content="index, follow">
 <title>Implementing ChatGPT in an iOS App | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Implementing, ChatGPT, iOS, App, Combine, SwiftUI, Swift">
-<meta name="description" content="Introduction I haven&rsquo;t had the opportunity to build a chatbot before. This topic was trending some time ago, and I always wanted to implement it myself. In this article, I will focus on the steps you need to know to successfully build and run a chatbot application.
-First Step The first step is to add the OpenAI dependency to your project:
-.package(url: &#34;https://github.com/MacPaw/OpenAI.git&#34;, branch: &#34;main&#34;) dependencies: [ .byNameItem( name: &#34;OpenAI&#34;, condition: .">
+<meta name="description" content="Introduction
+I haven&rsquo;t had the opportunity to build a chatbot before. This topic was trending some time ago, and I always wanted to implement it myself. In this article, I will focus on the steps you need to know to successfully build and run a chatbot application.
+First Step
+The first step is to add the OpenAI dependency to your project:
+.package(url: &#34;https://github.com/MacPaw/OpenAI.git&#34;, branch: &#34;main&#34;)
+dependencies: [
+    .byNameItem(
+        name: &#34;OpenAI&#34;,
+        condition: .when(platforms: [
+            .iOS,
+        ])
+    ),
+],
+Second Step
+The second step is to generate an OpenAI key and replace it inside your project.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/implementing-chatgpt-in-an-ios-app/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -76,20 +88,35 @@ First Step The first step is to add the OpenAI dependency to your project:
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Implementing ChatGPT in an iOS App" />
-<meta property="og:description" content="Introduction I haven&rsquo;t had the opportunity to build a chatbot before. This topic was trending some time ago, and I always wanted to implement it myself. In this article, I will focus on the steps you need to know to successfully build and run a chatbot application.
-First Step The first step is to add the OpenAI dependency to your project:
-.package(url: &#34;https://github.com/MacPaw/OpenAI.git&#34;, branch: &#34;main&#34;) dependencies: [ .byNameItem( name: &#34;OpenAI&#34;, condition: ." />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Implementing ChatGPT in an iOS App" />
+<meta property="og:description" content="Introduction
+I haven&rsquo;t had the opportunity to build a chatbot before. This topic was trending some time ago, and I always wanted to implement it myself. In this article, I will focus on the steps you need to know to successfully build and run a chatbot application.
+First Step
+The first step is to add the OpenAI dependency to your project:
+.package(url: &#34;https://github.com/MacPaw/OpenAI.git&#34;, branch: &#34;main&#34;)
+dependencies: [
+    .byNameItem(
+        name: &#34;OpenAI&#34;,
+        condition: .when(platforms: [
+            .iOS,
+        ])
+    ),
+],
+Second Step
+The second step is to generate an OpenAI key and replace it inside your project." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/implementing-chatgpt-in-an-ios-app/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -100,9 +127,21 @@ First Step The first step is to add the OpenAI dependency to your project:
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Implementing ChatGPT in an iOS App"/>
-<meta name="twitter:description" content="Introduction I haven&rsquo;t had the opportunity to build a chatbot before. This topic was trending some time ago, and I always wanted to implement it myself. In this article, I will focus on the steps you need to know to successfully build and run a chatbot application.
-First Step The first step is to add the OpenAI dependency to your project:
-.package(url: &#34;https://github.com/MacPaw/OpenAI.git&#34;, branch: &#34;main&#34;) dependencies: [ .byNameItem( name: &#34;OpenAI&#34;, condition: ."/>
+<meta name="twitter:description" content="Introduction
+I haven&rsquo;t had the opportunity to build a chatbot before. This topic was trending some time ago, and I always wanted to implement it myself. In this article, I will focus on the steps you need to know to successfully build and run a chatbot application.
+First Step
+The first step is to add the OpenAI dependency to your project:
+.package(url: &#34;https://github.com/MacPaw/OpenAI.git&#34;, branch: &#34;main&#34;)
+dependencies: [
+    .byNameItem(
+        name: &#34;OpenAI&#34;,
+        condition: .when(platforms: [
+            .iOS,
+        ])
+    ),
+],
+Second Step
+The second step is to generate an OpenAI key and replace it inside your project."/>
 
 
 <script type="application/ld+json">
@@ -131,7 +170,7 @@ First Step The first step is to add the OpenAI dependency to your project:
   "@type": "BlogPosting",
   "headline": "Implementing ChatGPT in an iOS App",
   "name": "Implementing ChatGPT in an iOS App",
-  "description": "Introduction I haven\u0026rsquo;t had the opportunity to build a chatbot before. This topic was trending some time ago, and I always wanted to implement it myself. In this article, I will focus on the steps you need to know to successfully build and run a chatbot application.\nFirst Step The first step is to add the OpenAI dependency to your project:\n.package(url: \u0026#34;https://github.com/MacPaw/OpenAI.git\u0026#34;, branch: \u0026#34;main\u0026#34;) dependencies: [ .byNameItem( name: \u0026#34;OpenAI\u0026#34;, condition: .",
+  "description": "Introduction I haven\u0026rsquo;t had the opportunity to build a chatbot before. This topic was trending some time ago, and I always wanted to implement it myself. In this article, I will focus on the steps you need to know to successfully build and run a chatbot application.\nFirst Step The first step is to add the OpenAI dependency to your project:\n.package(url: \u0026#34;https://github.com/MacPaw/OpenAI.git\u0026#34;, branch: \u0026#34;main\u0026#34;) dependencies: [ .byNameItem( name: \u0026#34;OpenAI\u0026#34;, condition: .when(platforms: [ .iOS, ]) ), ], Second Step The second step is to generate an OpenAI key and replace it inside your project.\n",
   "keywords": [
     "Implementing", "ChatGPT", "iOS", "App", "Combine", "SwiftUI", "Swift"
   ],

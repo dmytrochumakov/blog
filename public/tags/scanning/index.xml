@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Fri, 12 Jul 2024 07:27:51 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/scanning/index.xml" rel="self" type="application/rss+xml" />
@@ -18,18 +18,31 @@
       <link>http://localhost:1313/posts/scanning-nfc-tags-using-corenfc-in-an-ios-app/</link>
       <pubDate>Fri, 12 Jul 2024 07:27:51 +0300</pubDate>
       <guid>http://localhost:1313/posts/scanning-nfc-tags-using-corenfc-in-an-ios-app/</guid>
-      <description>Introduction I never had a chance to work with NFC (Near Field Communication), but I have always been curious to find out how it works. In this article, I will focus on scanning NFC tags using CoreNFC with NFCNDEFReaderSession.
-Preparation Before we begin, let&amp;rsquo;s add the necessary objects:
-Near Field Communication Tag Reading capability to the project. Privacy - NFC Scan Usage Description key to Info.plist. Near Field Communication Tag Reader Session Formats to the entitlements file.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I never had a chance to work with NFC (Near Field Communication), but I have always been curious to find out how it works. In this article, I will focus on scanning NFC tags using &lt;a href=&#34;https://developer.apple.com/documentation/corenfc&#34;&gt;&lt;code&gt;CoreNFC&lt;/code&gt;&lt;/a&gt; with &lt;a href=&#34;https://developer.apple.com/documentation/corenfc/nfcndefreadersession&#34;&gt;&lt;code&gt;NFCNDEFReaderSession&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;preparation&#34;&gt;Preparation&lt;/h3&gt;
+&lt;p&gt;Before we begin, let&amp;rsquo;s add the necessary objects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Near Field Communication Tag Reading&lt;/code&gt; capability to the project.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Privacy - NFC Scan Usage Description&lt;/code&gt; key to &lt;code&gt;Info.plist&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Near Field Communication Tag Reader Session Formats&lt;/code&gt; to the entitlements file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;first-step&#34;&gt;First Step&lt;/h3&gt;
+&lt;p&gt;The first step before starting scanning is to check if the device supports NFC reading by using the &lt;code&gt;NFCNDEFReaderSession.readingAvailable&lt;/code&gt; property.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Scanning for peripheral devices using BLE in an iOS app</title>
       <link>http://localhost:1313/posts/scanning-for-peripheral-devices-using-ble-in-an-ios-app/</link>
       <pubDate>Wed, 10 Jul 2024 07:27:14 +0300</pubDate>
       <guid>http://localhost:1313/posts/scanning-for-peripheral-devices-using-ble-in-an-ios-app/</guid>
-      <description>Introduction I had the chance to work on a project where communication via BLE was at the heart of the project.
-Before adding any code to application, I always asked myself about two scenarios:
-The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices. The second scenario is when the device acts as a peripheral device by using CBCharacteristic and changes its value.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I had the chance to work on a project where communication via BLE was at the heart of the project.&lt;/p&gt;
+&lt;p&gt;Before adding any code to application, I always asked myself about two scenarios:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices.&lt;/li&gt;
+&lt;li&gt;The second scenario is when the device acts as a peripheral device by using &lt;code&gt;CBCharacteristic&lt;/code&gt; and changes its value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this article, I will focus on the first scenario and will show how to scan for peripheral devices.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

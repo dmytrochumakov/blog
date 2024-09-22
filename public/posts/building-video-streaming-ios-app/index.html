@@ -7,9 +7,14 @@
 <meta name="robots" content="index, follow">
 <title>Building Video Streaming iOS App | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Building, Video, Streaming, iOS, app, SwiftUI">
-<meta name="description" content="Introduction I was looking for a way to add a video player to my iOS app that could be able to play remote videos.
-Caveats Problem I found that you can&rsquo;t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 &quot;Operation Stopped&quot; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error. I don’t know exactly what this means, but I&rsquo;m speculating it&rsquo;s related to some protection.
-Solution My solution was to find another video that is not related to those platforms.">
+<meta name="description" content="Introduction
+I was looking for a way to add a video player to my iOS app that could be able to play remote videos.
+Caveats
+Problem
+I found that you can&rsquo;t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 &quot;Operation Stopped&quot; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error.
+I don’t know exactly what this means, but I&rsquo;m speculating it&rsquo;s related to some protection.
+Solution
+My solution was to find another video that is not related to those platforms.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/building-video-streaming-ios-app/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -76,20 +81,28 @@ Solution My solution was to find another video that is not related to those plat
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Building Video Streaming iOS App" />
-<meta property="og:description" content="Introduction I was looking for a way to add a video player to my iOS app that could be able to play remote videos.
-Caveats Problem I found that you can&rsquo;t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 &quot;Operation Stopped&quot; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error. I don’t know exactly what this means, but I&rsquo;m speculating it&rsquo;s related to some protection.
-Solution My solution was to find another video that is not related to those platforms." />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Building Video Streaming iOS App" />
+<meta property="og:description" content="Introduction
+I was looking for a way to add a video player to my iOS app that could be able to play remote videos.
+Caveats
+Problem
+I found that you can&rsquo;t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 &quot;Operation Stopped&quot; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error.
+I don’t know exactly what this means, but I&rsquo;m speculating it&rsquo;s related to some protection.
+Solution
+My solution was to find another video that is not related to those platforms." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/building-video-streaming-ios-app/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -100,9 +113,14 @@ Solution My solution was to find another video that is not related to those plat
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Building Video Streaming iOS App"/>
-<meta name="twitter:description" content="Introduction I was looking for a way to add a video player to my iOS app that could be able to play remote videos.
-Caveats Problem I found that you can&rsquo;t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 &quot;Operation Stopped&quot; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error. I don’t know exactly what this means, but I&rsquo;m speculating it&rsquo;s related to some protection.
-Solution My solution was to find another video that is not related to those platforms."/>
+<meta name="twitter:description" content="Introduction
+I was looking for a way to add a video player to my iOS app that could be able to play remote videos.
+Caveats
+Problem
+I found that you can&rsquo;t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 &quot;Operation Stopped&quot; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error.
+I don’t know exactly what this means, but I&rsquo;m speculating it&rsquo;s related to some protection.
+Solution
+My solution was to find another video that is not related to those platforms."/>
 
 
 <script type="application/ld+json">
@@ -131,7 +149,7 @@ Solution My solution was to find another video that is not related to those plat
   "@type": "BlogPosting",
   "headline": "Building Video Streaming iOS App",
   "name": "Building Video Streaming iOS App",
-  "description": "Introduction I was looking for a way to add a video player to my iOS app that could be able to play remote videos.\nCaveats Problem I found that you can\u0026rsquo;t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 \u0026quot;Operation Stopped\u0026quot; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error. I don’t know exactly what this means, but I\u0026rsquo;m speculating it\u0026rsquo;s related to some protection.\nSolution My solution was to find another video that is not related to those platforms.",
+  "description": "Introduction I was looking for a way to add a video player to my iOS app that could be able to play remote videos.\nCaveats Problem I found that you can\u0026rsquo;t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 \u0026quot;Operation Stopped\u0026quot; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error. I don’t know exactly what this means, but I\u0026rsquo;m speculating it\u0026rsquo;s related to some protection.\nSolution My solution was to find another video that is not related to those platforms.\n",
   "keywords": [
     "Building", "Video", "Streaming", "iOS", "app", "SwiftUI"
   ],

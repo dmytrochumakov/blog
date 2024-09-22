@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Sat, 17 Aug 2024 07:00:23 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/two-pointers/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,10 @@
       <link>http://localhost:1313/posts/dsa-two-pointers-technique/</link>
       <pubDate>Sat, 17 Aug 2024 07:00:23 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-two-pointers-technique/</guid>
-      <description>What is the Two Pointers Technique? The two pointers technique helps track indices in a collection of elements to access objects in memory by index with O(1) space. This technique is very handy when you need to optimize the time and space of a solution.
-What Problems Does It Solve? The two pointers technique solves problems involving collections. For example, it is useful when you need to compare each element to other elements in that collection.</description>
+      <description>&lt;h3 id=&#34;what-is-the-two-pointers-technique&#34;&gt;What is the Two Pointers Technique?&lt;/h3&gt;
+&lt;p&gt;The two pointers technique helps track indices in a collection of elements to access objects in memory by index with O(1) space. This technique is very handy when you need to optimize the time and space of a solution.&lt;/p&gt;
+&lt;h3 id=&#34;what-problems-does-it-solve&#34;&gt;What Problems Does It Solve?&lt;/h3&gt;
+&lt;p&gt;The two pointers technique solves problems involving collections. For example, it is useful when you need to compare each element to other elements in that collection.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

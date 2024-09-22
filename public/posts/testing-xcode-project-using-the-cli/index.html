@@ -7,8 +7,20 @@
 <meta name="robots" content="index, follow">
 <title>Testing Xcode project using the CLI | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="tools, CLI, testing">
-<meta name="description" content="Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to test a project in the fastest way.
-One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you&rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project.">
+<meta name="description" content="Introduction
+When you are working on different projects  sometimes  you need to use different  IDE’s. You need to find a way to test a project in the fastest way.
+One of such ways is by using the xcodebuild command
+Basic outline of the process
+
+Open Terminal: Open the Terminal application on your Mac.
+Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project.
+Run xcodebuild: Once you&rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project.
+
+Example:
+xcodebuild -project YourProject.xcodeproj -scheme YourSchemeName test
+Another way is by integrating fastlane into your workflow:
+Outline of the process
+Install Fastlane: If you haven&rsquo;t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/testing-xcode-project-using-the-cli/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -75,19 +87,34 @@ One of such ways is by using the xcodebuild command Basic outline of the process
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Testing Xcode project using the CLI" />
-<meta property="og:description" content="Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to test a project in the fastest way.
-One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you&rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project." />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Testing Xcode project using the CLI" />
+<meta property="og:description" content="Introduction
+When you are working on different projects  sometimes  you need to use different  IDE’s. You need to find a way to test a project in the fastest way.
+One of such ways is by using the xcodebuild command
+Basic outline of the process
+
+Open Terminal: Open the Terminal application on your Mac.
+Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project.
+Run xcodebuild: Once you&rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project.
+
+Example:
+xcodebuild -project YourProject.xcodeproj -scheme YourSchemeName test
+Another way is by integrating fastlane into your workflow:
+Outline of the process
+Install Fastlane: If you haven&rsquo;t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/testing-xcode-project-using-the-cli/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -98,8 +125,20 @@ One of such ways is by using the xcodebuild command Basic outline of the process
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Testing Xcode project using the CLI"/>
-<meta name="twitter:description" content="Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to test a project in the fastest way.
-One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you&rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project."/>
+<meta name="twitter:description" content="Introduction
+When you are working on different projects  sometimes  you need to use different  IDE’s. You need to find a way to test a project in the fastest way.
+One of such ways is by using the xcodebuild command
+Basic outline of the process
+
+Open Terminal: Open the Terminal application on your Mac.
+Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project.
+Run xcodebuild: Once you&rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project.
+
+Example:
+xcodebuild -project YourProject.xcodeproj -scheme YourSchemeName test
+Another way is by integrating fastlane into your workflow:
+Outline of the process
+Install Fastlane: If you haven&rsquo;t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:"/>
 
 
 <script type="application/ld+json">
@@ -128,7 +167,7 @@ One of such ways is by using the xcodebuild command Basic outline of the process
   "@type": "BlogPosting",
   "headline": "Testing Xcode project using the CLI",
   "name": "Testing Xcode project using the CLI",
-  "description": "Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to test a project in the fastest way.\nOne of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you\u0026rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project.",
+  "description": "Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to test a project in the fastest way.\nOne of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you\u0026rsquo;re in the project directory, you can run xcodebuild with the appropriate parameters to build your project. Example: xcodebuild -project YourProject.xcodeproj -scheme YourSchemeName test Another way is by integrating fastlane into your workflow: Outline of the process Install Fastlane: If you haven\u0026rsquo;t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:\n",
   "keywords": [
     "tools", "CLI", "testing"
   ],

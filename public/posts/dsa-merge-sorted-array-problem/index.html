@@ -7,9 +7,11 @@
 <meta name="robots" content="index, follow">
 <title>DSA - Merge Sorted Array Problem | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Data Structures, Algorithms, DSA, LeetCode, Swift">
-<meta name="description" content="Introduction In the previous chapter, we discussed Data Structures and Algorithms, delved into an overview of Dynamic Arrays, and solved the &ldquo;Remove Element&rdquo; problem.
+<meta name="description" content="Introduction
+In the previous chapter, we discussed Data Structures and Algorithms, delved into an overview of Dynamic Arrays, and solved the &ldquo;Remove Element&rdquo; problem.
 In this article, I&rsquo;m going to show one of the ways to solve the 88. Merge Sorted Array problem.
-Problem You are given two integer arrays, nums1 and nums2, sorted in non-decreasing order, and two integers, m and n, representing the number of elements in nums1 and nums2, respectively.">
+Problem
+You are given two integer arrays, nums1 and nums2, sorted in non-decreasing order, and two integers, m and n, representing the number of elements in nums1 and nums2, respectively. Merge nums1 and nums2 into a single array sorted in non-decreasing order. The final sorted array should not be returned by the function but should instead be stored inside the array nums1. To accommodate this, nums1 has a length of m &#43; n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/dsa-merge-sorted-array-problem/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -76,20 +78,25 @@ Problem You are given two integer arrays, nums1 and nums2, sorted in non-dec
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="DSA - Merge Sorted Array Problem" />
-<meta property="og:description" content="Introduction In the previous chapter, we discussed Data Structures and Algorithms, delved into an overview of Dynamic Arrays, and solved the &ldquo;Remove Element&rdquo; problem.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="DSA - Merge Sorted Array Problem" />
+<meta property="og:description" content="Introduction
+In the previous chapter, we discussed Data Structures and Algorithms, delved into an overview of Dynamic Arrays, and solved the &ldquo;Remove Element&rdquo; problem.
 In this article, I&rsquo;m going to show one of the ways to solve the 88. Merge Sorted Array problem.
-Problem You are given two integer arrays, nums1 and nums2, sorted in non-decreasing order, and two integers, m and n, representing the number of elements in nums1 and nums2, respectively." />
+Problem
+You are given two integer arrays, nums1 and nums2, sorted in non-decreasing order, and two integers, m and n, representing the number of elements in nums1 and nums2, respectively. Merge nums1 and nums2 into a single array sorted in non-decreasing order. The final sorted array should not be returned by the function but should instead be stored inside the array nums1. To accommodate this, nums1 has a length of m &#43; n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/dsa-merge-sorted-array-problem/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -100,9 +107,11 @@ Problem You are given two integer arrays, nums1 and nums2, sorted in non-dec
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="DSA - Merge Sorted Array Problem"/>
-<meta name="twitter:description" content="Introduction In the previous chapter, we discussed Data Structures and Algorithms, delved into an overview of Dynamic Arrays, and solved the &ldquo;Remove Element&rdquo; problem.
+<meta name="twitter:description" content="Introduction
+In the previous chapter, we discussed Data Structures and Algorithms, delved into an overview of Dynamic Arrays, and solved the &ldquo;Remove Element&rdquo; problem.
 In this article, I&rsquo;m going to show one of the ways to solve the 88. Merge Sorted Array problem.
-Problem You are given two integer arrays, nums1 and nums2, sorted in non-decreasing order, and two integers, m and n, representing the number of elements in nums1 and nums2, respectively."/>
+Problem
+You are given two integer arrays, nums1 and nums2, sorted in non-decreasing order, and two integers, m and n, representing the number of elements in nums1 and nums2, respectively. Merge nums1 and nums2 into a single array sorted in non-decreasing order. The final sorted array should not be returned by the function but should instead be stored inside the array nums1. To accommodate this, nums1 has a length of m &#43; n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n."/>
 
 
 <script type="application/ld+json">
@@ -131,7 +140,7 @@ Problem You are given two integer arrays, nums1 and nums2, sorted in non-dec
   "@type": "BlogPosting",
   "headline": "DSA - Merge Sorted Array Problem",
   "name": "DSA - Merge Sorted Array Problem",
-  "description": "Introduction In the previous chapter, we discussed Data Structures and Algorithms, delved into an overview of Dynamic Arrays, and solved the \u0026ldquo;Remove Element\u0026rdquo; problem.\nIn this article, I\u0026rsquo;m going to show one of the ways to solve the 88. Merge Sorted Array problem.\nProblem You are given two integer arrays, nums1 and nums2, sorted in non-decreasing order, and two integers, m and n, representing the number of elements in nums1 and nums2, respectively.",
+  "description": "Introduction In the previous chapter, we discussed Data Structures and Algorithms, delved into an overview of Dynamic Arrays, and solved the \u0026ldquo;Remove Element\u0026rdquo; problem.\nIn this article, I\u0026rsquo;m going to show one of the ways to solve the 88. Merge Sorted Array problem.\nProblem You are given two integer arrays, nums1 and nums2, sorted in non-decreasing order, and two integers, m and n, representing the number of elements in nums1 and nums2, respectively. Merge nums1 and nums2 into a single array sorted in non-decreasing order. The final sorted array should not be returned by the function but should instead be stored inside the array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n.\n",
   "keywords": [
     "Data Structures", "Algorithms", "DSA", "LeetCode", "Swift"
   ],

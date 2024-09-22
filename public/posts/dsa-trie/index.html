@@ -7,10 +7,28 @@
 <meta name="robots" content="index, follow">
 <title>DSA - Trie | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="DSA, Data Structures, Algorithms, Trie, Swift">
-<meta name="description" content="What is a Trie? A Trie is a data structure usually called a &ldquo;prefix tree,&rdquo; often represented as a nested tree of dictionaries where each key is a character that maps to the next character in a word.
+<meta name="description" content="What is a Trie?
+A Trie is a data structure usually called a &ldquo;prefix tree,&rdquo; often represented as a nested tree of dictionaries where each key is a character that maps to the next character in a word.
 Let&rsquo;s look at some examples of a Trie. The Trie consists of two main classes: the TrieNode class and the Trie class.
-TrieNode The TrieNode class has two properties:
-children - a property that represents all characters in a given word and points to the next character.">
+TrieNode
+The TrieNode class has two properties:
+
+children - a property that represents all characters in a given word and points to the next character.
+isEndSymbol - a property that indicates the end of the word in a given sequence of characters.
+
+final class TrieNode {
+
+    var children: [Character: TrieNode?]
+    var isEndSymbol: Bool
+
+    init() {
+        self.children = [:]
+        self.isEndSymbol = false
+    }
+
+}
+Trie
+The Trie class has two main operations, insert and exists, and a root property that stores all possible combinations of words.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/dsa-trie/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -77,21 +95,42 @@ children - a property that represents all characters in a given word and points 
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="DSA - Trie" />
-<meta property="og:description" content="What is a Trie? A Trie is a data structure usually called a &ldquo;prefix tree,&rdquo; often represented as a nested tree of dictionaries where each key is a character that maps to the next character in a word.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="DSA - Trie" />
+<meta property="og:description" content="What is a Trie?
+A Trie is a data structure usually called a &ldquo;prefix tree,&rdquo; often represented as a nested tree of dictionaries where each key is a character that maps to the next character in a word.
 Let&rsquo;s look at some examples of a Trie. The Trie consists of two main classes: the TrieNode class and the Trie class.
-TrieNode The TrieNode class has two properties:
-children - a property that represents all characters in a given word and points to the next character." />
+TrieNode
+The TrieNode class has two properties:
+
+children - a property that represents all characters in a given word and points to the next character.
+isEndSymbol - a property that indicates the end of the word in a given sequence of characters.
+
+final class TrieNode {
+
+    var children: [Character: TrieNode?]
+    var isEndSymbol: Bool
+
+    init() {
+        self.children = [:]
+        self.isEndSymbol = false
+    }
+
+}
+Trie
+The Trie class has two main operations, insert and exists, and a root property that stores all possible combinations of words." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/dsa-trie/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -102,10 +141,28 @@ children - a property that represents all characters in a given word and points 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="DSA - Trie"/>
-<meta name="twitter:description" content="What is a Trie? A Trie is a data structure usually called a &ldquo;prefix tree,&rdquo; often represented as a nested tree of dictionaries where each key is a character that maps to the next character in a word.
+<meta name="twitter:description" content="What is a Trie?
+A Trie is a data structure usually called a &ldquo;prefix tree,&rdquo; often represented as a nested tree of dictionaries where each key is a character that maps to the next character in a word.
 Let&rsquo;s look at some examples of a Trie. The Trie consists of two main classes: the TrieNode class and the Trie class.
-TrieNode The TrieNode class has two properties:
-children - a property that represents all characters in a given word and points to the next character."/>
+TrieNode
+The TrieNode class has two properties:
+
+children - a property that represents all characters in a given word and points to the next character.
+isEndSymbol - a property that indicates the end of the word in a given sequence of characters.
+
+final class TrieNode {
+
+    var children: [Character: TrieNode?]
+    var isEndSymbol: Bool
+
+    init() {
+        self.children = [:]
+        self.isEndSymbol = false
+    }
+
+}
+Trie
+The Trie class has two main operations, insert and exists, and a root property that stores all possible combinations of words."/>
 
 
 <script type="application/ld+json">
@@ -134,7 +191,7 @@ children - a property that represents all characters in a given word and points 
   "@type": "BlogPosting",
   "headline": "DSA - Trie",
   "name": "DSA - Trie",
-  "description": "What is a Trie? A Trie is a data structure usually called a \u0026ldquo;prefix tree,\u0026rdquo; often represented as a nested tree of dictionaries where each key is a character that maps to the next character in a word.\nLet\u0026rsquo;s look at some examples of a Trie. The Trie consists of two main classes: the TrieNode class and the Trie class.\nTrieNode The TrieNode class has two properties:\nchildren - a property that represents all characters in a given word and points to the next character.",
+  "description": "What is a Trie? A Trie is a data structure usually called a \u0026ldquo;prefix tree,\u0026rdquo; often represented as a nested tree of dictionaries where each key is a character that maps to the next character in a word.\nLet\u0026rsquo;s look at some examples of a Trie. The Trie consists of two main classes: the TrieNode class and the Trie class.\nTrieNode The TrieNode class has two properties:\nchildren - a property that represents all characters in a given word and points to the next character. isEndSymbol - a property that indicates the end of the word in a given sequence of characters. final class TrieNode { var children: [Character: TrieNode?] var isEndSymbol: Bool init() { self.children = [:] self.isEndSymbol = false } } Trie The Trie class has two main operations, insert and exists, and a root property that stores all possible combinations of words.\n",
   "keywords": [
     "DSA", "Data Structures", "Algorithms", "Trie", "Swift"
   ],

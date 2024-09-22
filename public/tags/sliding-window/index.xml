@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Wed, 28 Aug 2024 07:20:26 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/sliding-window/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,10 @@
       <link>http://localhost:1313/posts/dsa-sliding-window/</link>
       <pubDate>Wed, 28 Aug 2024 07:20:26 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-sliding-window/</guid>
-      <description>What is the sliding window technique? The sliding window technique is a common algorithmic approach used to create a fixed-sized window that moves through the data one step at a time, typically from left to right, to perform specific operations or computations on the elements within the window.
-What is the sliding window algorithm? The sliding window algorithm is a method for finding a subset of elements that satisfy certain conditions in a given problem.</description>
+      <description>&lt;h3 id=&#34;what-is-the-sliding-window-technique&#34;&gt;What is the sliding window technique?&lt;/h3&gt;
+&lt;p&gt;The sliding window technique is a common algorithmic approach used to create a fixed-sized window that moves through the data one step at a time, typically from left to right, to perform specific operations or computations on the elements within the window.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-the-sliding-window-algorithm&#34;&gt;What is the sliding window algorithm?&lt;/h3&gt;
+&lt;p&gt;The sliding window algorithm is a method for finding a subset of elements that satisfy certain conditions in a given problem.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

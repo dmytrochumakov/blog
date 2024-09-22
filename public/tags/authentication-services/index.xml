@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Thu, 18 Jul 2024 07:26:13 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/authentication-services/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,23 @@
       <link>http://localhost:1313/posts/implementing-apple-sign-in-to-an-ios-app/</link>
       <pubDate>Thu, 18 Jul 2024 07:26:13 +0300</pubDate>
       <guid>http://localhost:1313/posts/implementing-apple-sign-in-to-an-ios-app/</guid>
-      <description>Introduction The Apple Sign-In feature is very helpful and offers users login functionality with one click. It could be highly beneficial from a business perspective to attract more potential customers by providing easy and secure access to application functionality. In this article, I will focus on how to implement Apple Sign-In.
-Before implementation, let’s set up the necessary options to be able to run the app without errors.
-Add Sign in with Apple Capability to the project &amp;#x1f4dd; Before testing on the simulator, you need to be signed in to an account with enabled two-factor authentication.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;The Apple Sign-In feature is very helpful and offers users login functionality with one click. It could be highly beneficial from a business perspective to attract more potential customers by providing easy and secure access to application functionality. In this article, I will focus on how to implement Apple Sign-In.&lt;/p&gt;
+&lt;p&gt;Before implementation, let’s set up the necessary options to be able to run the app without errors.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add &lt;code&gt;Sign in with Apple&lt;/code&gt; Capability to the project
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-f7bcf&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-f7bcf&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/0.png#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#x1f4dd; Before testing on the simulator, you need to be signed in to an account with enabled two-factor authentication.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

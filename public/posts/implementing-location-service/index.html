@@ -7,9 +7,16 @@
 <meta name="robots" content="index, follow">
 <title>Implementing Location Service | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Implementing, Location Service, Swift, CoreLocation">
-<meta name="description" content="Introduction Nowadays, location is an essential feature in almost every application. It&rsquo;s very important to know the best ways to implement it without affecting performance and user experience. In this article, I will focus on how to implement general methods in location service.
-Preparation Before we begin, let&rsquo;s add location permission keys to Info.plist:
-Privacy - Location When In Use Usage Description Privacy - Location Always and When In Use Usage Description First Step The first step is to create LocationService with the requestPermissions method to be able to receive location events.">
+<meta name="description" content="Introduction
+Nowadays, location is an essential feature in almost every application. It&rsquo;s very important to know the best ways to implement it without affecting performance and user experience. In this article, I will focus on how to implement general methods in location service.
+Preparation
+Before we begin, let&rsquo;s add location permission keys to Info.plist:
+
+Privacy - Location When In Use Usage Description
+Privacy - Location Always and When In Use Usage Description
+
+First Step
+The first step is to create LocationService with the requestPermissions method to be able to receive location events.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/implementing-location-service/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -76,20 +83,30 @@ Privacy - Location When In Use Usage Description Privacy - Location Always and W
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Implementing Location Service" />
-<meta property="og:description" content="Introduction Nowadays, location is an essential feature in almost every application. It&rsquo;s very important to know the best ways to implement it without affecting performance and user experience. In this article, I will focus on how to implement general methods in location service.
-Preparation Before we begin, let&rsquo;s add location permission keys to Info.plist:
-Privacy - Location When In Use Usage Description Privacy - Location Always and When In Use Usage Description First Step The first step is to create LocationService with the requestPermissions method to be able to receive location events." />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Implementing Location Service" />
+<meta property="og:description" content="Introduction
+Nowadays, location is an essential feature in almost every application. It&rsquo;s very important to know the best ways to implement it without affecting performance and user experience. In this article, I will focus on how to implement general methods in location service.
+Preparation
+Before we begin, let&rsquo;s add location permission keys to Info.plist:
+
+Privacy - Location When In Use Usage Description
+Privacy - Location Always and When In Use Usage Description
+
+First Step
+The first step is to create LocationService with the requestPermissions method to be able to receive location events." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/implementing-location-service/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -100,9 +117,16 @@ Privacy - Location When In Use Usage Description Privacy - Location Always and W
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Implementing Location Service"/>
-<meta name="twitter:description" content="Introduction Nowadays, location is an essential feature in almost every application. It&rsquo;s very important to know the best ways to implement it without affecting performance and user experience. In this article, I will focus on how to implement general methods in location service.
-Preparation Before we begin, let&rsquo;s add location permission keys to Info.plist:
-Privacy - Location When In Use Usage Description Privacy - Location Always and When In Use Usage Description First Step The first step is to create LocationService with the requestPermissions method to be able to receive location events."/>
+<meta name="twitter:description" content="Introduction
+Nowadays, location is an essential feature in almost every application. It&rsquo;s very important to know the best ways to implement it without affecting performance and user experience. In this article, I will focus on how to implement general methods in location service.
+Preparation
+Before we begin, let&rsquo;s add location permission keys to Info.plist:
+
+Privacy - Location When In Use Usage Description
+Privacy - Location Always and When In Use Usage Description
+
+First Step
+The first step is to create LocationService with the requestPermissions method to be able to receive location events."/>
 
 
 <script type="application/ld+json">
@@ -131,7 +155,7 @@ Privacy - Location When In Use Usage Description Privacy - Location Always and W
   "@type": "BlogPosting",
   "headline": "Implementing Location Service",
   "name": "Implementing Location Service",
-  "description": "Introduction Nowadays, location is an essential feature in almost every application. It\u0026rsquo;s very important to know the best ways to implement it without affecting performance and user experience. In this article, I will focus on how to implement general methods in location service.\nPreparation Before we begin, let\u0026rsquo;s add location permission keys to Info.plist:\nPrivacy - Location When In Use Usage Description Privacy - Location Always and When In Use Usage Description First Step The first step is to create LocationService with the requestPermissions method to be able to receive location events.",
+  "description": "Introduction Nowadays, location is an essential feature in almost every application. It\u0026rsquo;s very important to know the best ways to implement it without affecting performance and user experience. In this article, I will focus on how to implement general methods in location service.\nPreparation Before we begin, let\u0026rsquo;s add location permission keys to Info.plist:\nPrivacy - Location When In Use Usage Description Privacy - Location Always and When In Use Usage Description First Step The first step is to create LocationService with the requestPermissions method to be able to receive location events.\n",
   "keywords": [
     "Implementing", "Location Service", "Swift", "CoreLocation"
   ],

@@ -7,9 +7,12 @@
 <meta name="robots" content="index, follow">
 <title>Securing user data with Keychain, Touch ID, and Face ID | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="security, Securing, user data, Keychain, Touch ID, Face ID">
-<meta name="description" content="Introduction I was eager to learn about securing user data using Keychain and biometric authentication. Here are a few steps I found:
-Caveats You can test accessing Keychain data using Touch ID and Face ID only on a real device.
-First Step The first step is to add the Privacy - Face ID Usage Description key to your Info.plist. Without it, you would not be able to retrieve data from Keychain using Face ID.">
+<meta name="description" content="Introduction
+I was eager to learn about securing user data using Keychain and biometric authentication. Here are a few steps I found:
+Caveats
+You can test accessing Keychain data using Touch ID and Face ID only on a real device.
+First Step
+The first step is to add the Privacy - Face ID Usage Description key to your Info.plist. Without it, you would not be able to retrieve data from Keychain using Face ID.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/securing-user-data-with-keychain-touch-id-and-face-id/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -76,20 +79,26 @@ First Step The first step is to add the Privacy - Face ID Usage Description key 
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Securing user data with Keychain, Touch ID, and Face ID" />
-<meta property="og:description" content="Introduction I was eager to learn about securing user data using Keychain and biometric authentication. Here are a few steps I found:
-Caveats You can test accessing Keychain data using Touch ID and Face ID only on a real device.
-First Step The first step is to add the Privacy - Face ID Usage Description key to your Info.plist. Without it, you would not be able to retrieve data from Keychain using Face ID." />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Securing user data with Keychain, Touch ID, and Face ID" />
+<meta property="og:description" content="Introduction
+I was eager to learn about securing user data using Keychain and biometric authentication. Here are a few steps I found:
+Caveats
+You can test accessing Keychain data using Touch ID and Face ID only on a real device.
+First Step
+The first step is to add the Privacy - Face ID Usage Description key to your Info.plist. Without it, you would not be able to retrieve data from Keychain using Face ID." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/securing-user-data-with-keychain-touch-id-and-face-id/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -100,9 +109,12 @@ First Step The first step is to add the Privacy - Face ID Usage Description key 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Securing user data with Keychain, Touch ID, and Face ID"/>
-<meta name="twitter:description" content="Introduction I was eager to learn about securing user data using Keychain and biometric authentication. Here are a few steps I found:
-Caveats You can test accessing Keychain data using Touch ID and Face ID only on a real device.
-First Step The first step is to add the Privacy - Face ID Usage Description key to your Info.plist. Without it, you would not be able to retrieve data from Keychain using Face ID."/>
+<meta name="twitter:description" content="Introduction
+I was eager to learn about securing user data using Keychain and biometric authentication. Here are a few steps I found:
+Caveats
+You can test accessing Keychain data using Touch ID and Face ID only on a real device.
+First Step
+The first step is to add the Privacy - Face ID Usage Description key to your Info.plist. Without it, you would not be able to retrieve data from Keychain using Face ID."/>
 
 
 <script type="application/ld+json">
@@ -131,7 +143,7 @@ First Step The first step is to add the Privacy - Face ID Usage Description key 
   "@type": "BlogPosting",
   "headline": "Securing user data with Keychain, Touch ID, and Face ID",
   "name": "Securing user data with Keychain, Touch ID, and Face ID",
-  "description": "Introduction I was eager to learn about securing user data using Keychain and biometric authentication. Here are a few steps I found:\nCaveats You can test accessing Keychain data using Touch ID and Face ID only on a real device.\nFirst Step The first step is to add the Privacy - Face ID Usage Description key to your Info.plist. Without it, you would not be able to retrieve data from Keychain using Face ID.",
+  "description": "Introduction I was eager to learn about securing user data using Keychain and biometric authentication. Here are a few steps I found:\nCaveats You can test accessing Keychain data using Touch ID and Face ID only on a real device.\nFirst Step The first step is to add the Privacy - Face ID Usage Description key to your Info.plist. Without it, you would not be able to retrieve data from Keychain using Face ID.\n",
   "keywords": [
     "security", "Securing", "user data", "Keychain", "Touch ID", "Face ID"
   ],

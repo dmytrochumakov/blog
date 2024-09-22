@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Queue" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Queue" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/queue/" />
@@ -195,7 +198,8 @@ if (!doNotTrack) {
 A simple queue typically has several operations:
 push(item) - adds an item to the tail pop() - removes and returns an item from the head These operations make a queue a FIFO (First In, First Out) data structure.
 Implementation There are two ways to implement a queue.
-The first and simplest (but less efficient) way is by using an array and basic operations:...</p>
+The first and simplest (but less efficient) way is by using an array and basic operations:
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-09-20 07:15:17 +0300 EEST'>September 20, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Queue" href="http://localhost:1313/posts/dsa-queue/"></a>

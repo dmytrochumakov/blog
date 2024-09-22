@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Threads" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Threads" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/threads/" />
@@ -192,7 +195,7 @@ if (!doNotTrack) {
   </header>
   <div class="entry-content">
     <p>What is the Thread? A Thread is a small set of instructions that can be executed independently from the main program. Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time. The Thread has its own stack, registers, and program counters.
-Threads share memory address space, and it is possible to communicate between Threads using shared memory space. How to use it?...</p>
+Threads share memory address space, and it is possible to communicate between Threads using shared memory space. ...</p>
   </div>
   <footer class="entry-footer"><span title='2024-01-20 08:29:30 +0300 +0300'>January 20, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to What are Threads in Swift?" href="http://localhost:1313/posts/what-are-threads-in-swift/"></a>

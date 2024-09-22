@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Mon, 12 Aug 2024 07:01:34 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/array/index.xml" rel="self" type="application/rss+xml" />
@@ -18,10 +18,11 @@
       <link>http://localhost:1313/posts/data-structures-and-algorithms-arrays-swift/</link>
       <pubDate>Mon, 12 Aug 2024 07:01:34 +0300</pubDate>
       <guid>http://localhost:1313/posts/data-structures-and-algorithms-arrays-swift/</guid>
-      <description>Introduction I’ve always been curious about data structures and algorithms, and how they can improve user experiences while saving money for businesses through optimized computations.
-In this series of articles, I’m going to solve LeetCode problems and share my approach with you.
-I’ve just started my journey in solving LeetCode problems, so my solutions might not be as efficient as they could be, but I’m always looking for improvement.
-Before each topic, I’ll provide a brief introduction to the data structure, algorithm, or technique I’ll be using to solve a specific problem.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I’ve always been curious about data structures and algorithms, and how they can improve user experiences while saving money for businesses through optimized computations.&lt;/p&gt;
+&lt;p&gt;In this series of articles, I’m going to solve LeetCode problems and share my approach with you.&lt;/p&gt;
+&lt;p&gt;I’ve just started my journey in solving LeetCode problems, so my solutions might not be as efficient as they could be, but I’m always looking for improvement.&lt;/p&gt;
+&lt;p&gt;Before each topic, I’ll provide a brief introduction to the data structure, algorithm, or technique I’ll be using to solve a specific problem.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -7,7 +7,8 @@
 <meta name="robots" content="index, follow">
 <title>Data Structures and Algorithms Arrays Swift | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Data Structures and Algorithms, DSA, Array, Swift, LeetCode">
-<meta name="description" content="Introduction I’ve always been curious about data structures and algorithms, and how they can improve user experiences while saving money for businesses through optimized computations.
+<meta name="description" content="Introduction
+I’ve always been curious about data structures and algorithms, and how they can improve user experiences while saving money for businesses through optimized computations.
 In this series of articles, I’m going to solve LeetCode problems and share my approach with you.
 I’ve just started my journey in solving LeetCode problems, so my solutions might not be as efficient as they could be, but I’m always looking for improvement.
 Before each topic, I’ll provide a brief introduction to the data structure, algorithm, or technique I’ll be using to solve a specific problem.">
@@ -77,18 +78,22 @@ Before each topic, I’ll provide a brief introduction to the data structure, al
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Data Structures and Algorithms Arrays Swift" />
-<meta property="og:description" content="Introduction I’ve always been curious about data structures and algorithms, and how they can improve user experiences while saving money for businesses through optimized computations.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Data Structures and Algorithms Arrays Swift" />
+<meta property="og:description" content="Introduction
+I’ve always been curious about data structures and algorithms, and how they can improve user experiences while saving money for businesses through optimized computations.
 In this series of articles, I’m going to solve LeetCode problems and share my approach with you.
 I’ve just started my journey in solving LeetCode problems, so my solutions might not be as efficient as they could be, but I’m always looking for improvement.
 Before each topic, I’ll provide a brief introduction to the data structure, algorithm, or technique I’ll be using to solve a specific problem." />
@@ -102,7 +107,8 @@ Before each topic, I’ll provide a brief introduction to the data structure, al
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="Data Structures and Algorithms Arrays Swift"/>
-<meta name="twitter:description" content="Introduction I’ve always been curious about data structures and algorithms, and how they can improve user experiences while saving money for businesses through optimized computations.
+<meta name="twitter:description" content="Introduction
+I’ve always been curious about data structures and algorithms, and how they can improve user experiences while saving money for businesses through optimized computations.
 In this series of articles, I’m going to solve LeetCode problems and share my approach with you.
 I’ve just started my journey in solving LeetCode problems, so my solutions might not be as efficient as they could be, but I’m always looking for improvement.
 Before each topic, I’ll provide a brief introduction to the data structure, algorithm, or technique I’ll be using to solve a specific problem."/>
@@ -134,7 +140,7 @@ Before each topic, I’ll provide a brief introduction to the data structure, al
   "@type": "BlogPosting",
   "headline": "Data Structures and Algorithms Arrays Swift",
   "name": "Data Structures and Algorithms Arrays Swift",
-  "description": "Introduction I’ve always been curious about data structures and algorithms, and how they can improve user experiences while saving money for businesses through optimized computations.\nIn this series of articles, I’m going to solve LeetCode problems and share my approach with you.\nI’ve just started my journey in solving LeetCode problems, so my solutions might not be as efficient as they could be, but I’m always looking for improvement.\nBefore each topic, I’ll provide a brief introduction to the data structure, algorithm, or technique I’ll be using to solve a specific problem.",
+  "description": "Introduction I’ve always been curious about data structures and algorithms, and how they can improve user experiences while saving money for businesses through optimized computations.\nIn this series of articles, I’m going to solve LeetCode problems and share my approach with you.\nI’ve just started my journey in solving LeetCode problems, so my solutions might not be as efficient as they could be, but I’m always looking for improvement.\nBefore each topic, I’ll provide a brief introduction to the data structure, algorithm, or technique I’ll be using to solve a specific problem.\n",
   "keywords": [
     "Data Structures and Algorithms", "DSA", "Array", "Swift", "LeetCode"
   ],
@@ -309,22 +315,22 @@ A <a href="https://en.wikipedia.org/wiki/Data_structure">data structure</a> is a
 <p>In the Swift programming language, arrays are dynamic by default. A <a href="https://en.wikipedia.org/wiki/Dynamic_array">dynamic array</a> is a commonly used data structure that consists of a collection of elements of the same memory size, with each element identified by an index or key. You can access, remove, and add new elements to the tail by index in O(1) time.</p>
 <h4 id="time-complexity">Time Complexity<a hidden class="anchor" aria-hidden="true" href="#time-complexity">#</a></h4>
 <table>
-<thead>
-<tr>
-<th>Peak Index</th>
-<th>Insert or Delete from Beginning</th>
-<th>Insert or Delete from End</th>
-<th>Insert or Delete from Middle</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>O(1)</td>
-<td>O(n)</td>
-<td>O(1)</td>
-<td>O(n)</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Peak Index</th>
+          <th style="text-align: left">Insert or Delete from Beginning</th>
+          <th style="text-align: left">Insert or Delete from End</th>
+          <th style="text-align: left">Insert or Delete from Middle</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">O(1)</td>
+          <td style="text-align: left">O(n)</td>
+          <td style="text-align: left">O(1)</td>
+          <td style="text-align: left">O(n)</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="resizing-a-dynamic-array">Resizing a Dynamic Array<a hidden class="anchor" aria-hidden="true" href="#resizing-a-dynamic-array">#</a></h3>
 <p>A dynamic array increases its underlying capacity and resizes to double its size only when the array size equals its capacity, to avoid the expensive cost of resizing frequently.</p>

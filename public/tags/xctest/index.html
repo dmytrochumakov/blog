@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="XCTest" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="XCTest" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/xctest/" />
@@ -191,7 +194,8 @@ if (!doNotTrack) {
     </h2>
   </header>
   <div class="entry-content">
-    <p>Introduction After spending some time developing my personal iOS app, I found myself in a position where I needed to add UI tests to my application. The reason behind this decision was the necessity to change the architecture to make it more scalable. However, this task proved to be challenging due to certain parts of the code being tightly coupled. The situation was quite frustrating. To address this problem, I decided to incorporate UI tests that could help identify issues during the refactoring process....</p>
+    <p>Introduction After spending some time developing my personal iOS app, I found myself in a position where I needed to add UI tests to my application. The reason behind this decision was the necessity to change the architecture to make it more scalable. However, this task proved to be challenging due to certain parts of the code being tightly coupled. The situation was quite frustrating. To address this problem, I decided to incorporate UI tests that could help identify issues during the refactoring process.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-08 06:34:32 +0300 EEST'>May 8, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to UI testing SwiftUI views using XCTest Framework" href="http://localhost:1313/posts/ui-testing-swiftui-views-using-xctest-framework/"></a>

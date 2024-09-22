@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Swift" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Swift" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/swift/" />
@@ -187,6 +190,22 @@ if (!doNotTrack) {
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">The Dependency Inversion Principle
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is a Dependency Inversion Principle? The Dependency Inversion Principle means that high-level modules should not depend on low-level modules.
+Source
+Source
+What problems does it solve? The Dependency Inversion Principle (DIP) helps solve:
+Rigidity Fragility Immobility problems Real-world code example Violation of DIP // High-level module directly depending on low-level modules class MessageService { func sendMessageViaEmail(message: String) { let emailSender = EmailSender() emailSender.sendMessage(message: message) } func sendMessageViaSMS(message: String) { let smsSender = SMSSender() smsSender.sendMessage(message: message) } func sendMessageViaPushNotification(message: String) { let pushNotificationSender = PushNotificationSender() pushNotificationSender.sendMessage(message: message) } } Adhering to DIP // Protocol defining the interface for sending messages protocol MessageSender { func sendMessage(message: String) } // High-level module depending on abstraction (MessageSender protocol) class MessageService { private let messageSender: MessageSender init(messageSender: MessageSender) { self.messageSender = messageSender } func sendMessage(message: String) { messageSender.sendMessage(message: message) } } // Concrete implementations of MessageSender protocol for different channels class EmailSender: MessageSender { func sendMessage(message: String) { print(&#34;Sending email: \(message)&#34;) } } class SMSSender: MessageSender { func sendMessage(message: String) { print(&#34;Sending SMS: \(message)&#34;) } } class PushNotificationSender: MessageSender { func sendMessage(message: String) { print(&#34;Sending push notification: \(message)&#34;) } } // Example usage let emailSender = EmailSender() let smsSender = SMSSender() let pushNotificationSender = PushNotificationSender() let emailService = MessageService(messageSender: emailSender) let smsService = MessageService(messageSender: smsSender) let pushNotificationService = MessageService(messageSender: pushNotificationSender) emailService.sendMessage(message: &#34;Hello via email&#34;) smsService.sendMessage(message: &#34;Hello via SMS&#34;) pushNotificationService.sendMessage(message: &#34;Hello via push notification&#34;) Thank you for reading! 😊</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-05 08:29:30 +0300 +0300'>March 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to The Dependency Inversion Principle" href="http://localhost:1313/posts/the-dependency-inversion-principle/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Modern Concurrency
     </h2>
   </header>
@@ -194,7 +213,8 @@ if (!doNotTrack) {
     <p>When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
 You can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.
 What are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
-actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&gt; String?...</p>
+actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&gt; String? { data[key] } func writeData(key: String, value: String) { data[key] = value } } What is an asynchronous function? The asynchronous function or asynchronous method can be suspended while it is partway through execution. It can pause in the middle when it’s waiting for something.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-02-04 08:29:30 +0300 +0300'>February 4, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Modern Concurrency" href="http://localhost:1313/posts/modern-concurrency/"></a>
@@ -207,7 +227,7 @@ actor DatabaseManager { private var data: [String: String] = [:] func readData(k
   </header>
   <div class="entry-content">
     <p>What is the Thread? A Thread is a small set of instructions that can be executed independently from the main program. Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time. The Thread has its own stack, registers, and program counters.
-Threads share memory address space, and it is possible to communicate between Threads using shared memory space. How to use it?...</p>
+Threads share memory address space, and it is possible to communicate between Threads using shared memory space. ...</p>
   </div>
   <footer class="entry-footer"><span title='2024-01-20 08:29:30 +0300 +0300'>January 20, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to What are Threads in Swift?" href="http://localhost:1313/posts/what-are-threads-in-swift/"></a>
@@ -221,7 +241,8 @@ Threads share memory address space, and it is possible to communicate between Th
   <div class="entry-content">
     <p>What is DispatchGroup? DispatchGroup provides a mechanism to track the completion group of tasks.
 How DispatchGroup works? DispatchGroup has three main methods, enter, leave and notify, that allow you to control the completion of a specific task.
-let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() dispatchGroup.notify(queue: .main) {} Let`s talk about each of these methods. enter — manually indicate a block has entered group. leave — manually indicate a block in the group has been completed....</p>
+let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() dispatchGroup.notify(queue: .main) {} Let`s talk about each of these methods. enter — manually indicate a block has entered group. leave — manually indicate a block in the group has been completed. notify(queue: ) — schedule a block to be submitted to a queue when all the blocks associated with a group have been completed. The queue parameter is the queue to which the supplied block will be submitted when the group is complete.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-01-10 00:00:00 +0300 +0300'>January 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DispatchGroup in Swift" href="http://localhost:1313/posts/dispatchgroup-in-swift/"></a>
@@ -234,32 +255,18 @@ let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() 
   </header>
   <div class="entry-content">
     <p>What is concurrency? The system can perform multiple tasks simultaneously. By tasks, I mean code or instructions. Modern computer chips have multiple cores that allow developers to create and run various tasks on multiple cores. Even if your chip has one core operating system it will provide context switching mechanism by enabling it to execute multiple tasks concurrently.
-Material about processes, threads I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it....</p>
+Material about processes, threads I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it. I attached links to the material to help you understand it more deeply. https://youtu.be/4rLW7zg21gI?si=49hq8Wrbpmeev41k https://youtu.be/r2__Rw8vu1M?si=b7b257Qu4Bty7OxA I will focus on implementation.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-01-07 00:00:00 +0300 +0300'>January 7, 2024</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Concurrency in Swift" href="http://localhost:1313/posts/concurrency-in-swift/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">What are value types in Swift?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What are value types? Value types play a central role in programming languages by grouping data values.
-`Value type” is a type of data copied when assigned to a new variable.
-struct Storage { var data: String = &#34;some data&#34; } let originalStorage = Storage() var copiedStorage = originalStorage // `originalStorage` is copied to `copiedStorage` How can you pass value types? You can pass value type by copying value.
-struct Storage { var data: String = &#34;some data&#34; } let originalStorage = Storage() var copiedStorage = originalStorage // `originalStorage` is copied to `copiedStorage` copiedStorage....</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-12-28 00:00:00 +0300 +0300'>December 28, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to What are value types in Swift?" href="http://localhost:1313/posts/what-are-value-types-in-swift/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/swift/page/6/">
-      «&nbsp;Prev&nbsp;6/8
+      «&nbsp;Prev&nbsp;6/9
     </a>
-    <a class="next" href="http://localhost:1313/tags/swift/page/8/">Next&nbsp;8/8&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/swift/page/8/">Next&nbsp;8/9&nbsp;»
     </a>
   </nav>
 </footer>

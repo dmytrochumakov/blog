@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Integration Testing" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Integration Testing" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/integration-testing/" />
@@ -193,7 +196,8 @@ if (!doNotTrack) {
   <div class="entry-content">
     <p>Introduction I have been looking for information about implementation details of integration testing. I found a lot of information, but it was theoretical and all information looked the same. I did not find a meaningful example, so I tried to come up with my own definition and sample.
 Integration testing means testing the behavior between modules or views to ensure they work as expected after user actions.
-There are two ways of conducting integration testing: The first is by unit tests, where you try to test the flowing data between view models....</p>
+There are two ways of conducting integration testing: The first is by unit tests, where you try to test the flowing data between view models. The second is UI tests, where you try to test if the UI items exist and navigation works correctly. I will focus on testing the flowing data between view models.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-10 06:20:50 +0300 EEST'>May 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Integration testing for SwiftUI views" href="http://localhost:1313/posts/integration-testing-for-swiftui-views/"></a>

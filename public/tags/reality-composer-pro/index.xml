@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Thu, 02 May 2024 08:45:39 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/reality-composer-pro/index.xml" rel="self" type="application/rss+xml" />
@@ -18,18 +18,36 @@
       <link>http://localhost:1313/posts/exploring-visionos/</link>
       <pubDate>Thu, 02 May 2024 08:45:39 +0300</pubDate>
       <guid>http://localhost:1313/posts/exploring-visionos/</guid>
-      <description>Introduction I find myself fascinated by the idea of creating an app for visionOS where I could possibly display 3D AirPods that I like. Here are a few steps on how you can do the same:
-First step The first step that you need to do is to create a visionOS project.
-Second step The next step would be adding a 3D object to Reality Composer Pro and exporting it as a .</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I find myself fascinated by the idea of creating an app for &lt;code&gt;visionOS&lt;/code&gt; where I could possibly display 3D AirPods that I like.
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-3215a&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-3215a&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/0.gif#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+
+Here are a few steps on how you can do the same:&lt;/p&gt;
+&lt;h3 id=&#34;first-step&#34;&gt;First step&lt;/h3&gt;
+&lt;p&gt;The first step that you need to do is to create a &lt;code&gt;visionOS&lt;/code&gt; project.&lt;/p&gt;
+&lt;h3 id=&#34;second-step&#34;&gt;Second step&lt;/h3&gt;
+&lt;p&gt;The next step would be adding a 3D object to &lt;code&gt;Reality Composer Pro&lt;/code&gt; and exporting it as a &lt;code&gt;.usdz&lt;/code&gt; file. You can download free 3D objects &lt;a href=&#34;https://sketchfab.com/feed&#34;&gt;here&lt;/a&gt;. All you need to do to download content is to register on this site.&lt;/p&gt;</description>
     </item>
     <item>
       <title>iOS AR App: Experience 3D Guitar</title>
       <link>http://localhost:1313/posts/ios-ar-app-experience-3d-guitar/</link>
       <pubDate>Wed, 01 May 2024 15:57:54 +0300</pubDate>
       <guid>http://localhost:1313/posts/ios-ar-app-experience-3d-guitar/</guid>
-      <description>Introduction I was searching for an AR implementation of a 3D guitar inside an iOS app. Here&amp;rsquo;s what I discovered:
-First Step The first step is not related to building the app. Before that you need to create a project using the Reality Composer Pro app (you can find it through Spotlight search).
-Second Step After that, you need to visit https://developer.apple.com/augmented-reality/quick-look/ and download one of the USDZ files. In my case, I chose the 3D guitar.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I was searching for an AR implementation of a 3D guitar inside an iOS app. Here&amp;rsquo;s what I discovered:&lt;/p&gt;
+&lt;h3 id=&#34;first-step&#34;&gt;First Step&lt;/h3&gt;
+&lt;p&gt;The first step is not related to building the app.
+Before that you need to create a project using the &lt;code&gt;Reality Composer Pro&lt;/code&gt; app (you can find it through &lt;code&gt;Spotlight search&lt;/code&gt;).&lt;/p&gt;
+&lt;h3 id=&#34;second-step&#34;&gt;Second Step&lt;/h3&gt;
+&lt;p&gt;After that, you need to visit &lt;a href=&#34;https://developer.apple.com/augmented-reality/quick-look/&#34;&gt;https://developer.apple.com/augmented-reality/quick-look/&lt;/a&gt; and download one of the &lt;code&gt;USDZ&lt;/code&gt; files.
+In my case, I chose the &lt;a href=&#34;https://developer.apple.com/augmented-reality/quick-look/models/stratocaster/fender_stratocaster.usdz&#34;&gt;3D guitar&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Sat, 20 Jan 2024 08:29:30 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/programming/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,29 @@
       <link>http://localhost:1313/posts/what-are-threads-in-swift/</link>
       <pubDate>Sat, 20 Jan 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/posts/what-are-threads-in-swift/</guid>
-      <description>What is the Thread? A Thread is a small set of instructions that can be executed independently from the main program. Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time. The Thread has its own stack, registers, and program counters.
-Threads share memory address space, and it is possible to communicate between Threads using shared memory space. How to use it?</description>
+      <description>&lt;h3 id=&#34;what-is-the-thread&#34;&gt;What is the Thread?&lt;/h3&gt;
+&lt;p&gt;A &lt;a href=&#34;https://developer.apple.com/documentation/foundation/thread&#34;&gt;Thread&lt;/a&gt; is a small set of instructions that can be executed independently from the main program.
+Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time.
+The Thread has its own &lt;code&gt;stack&lt;/code&gt;, &lt;code&gt;registers&lt;/code&gt;, and &lt;code&gt;program counters&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-35972&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-35972&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/0.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;Threads share memory address space, and it is possible to communicate between Threads using shared memory space.
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-3a9c2&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-3a9c2&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/1.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

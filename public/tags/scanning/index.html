@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Scanning" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Scanning" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/scanning/" />
@@ -193,7 +196,8 @@ if (!doNotTrack) {
   <div class="entry-content">
     <p>Introduction I never had a chance to work with NFC (Near Field Communication), but I have always been curious to find out how it works. In this article, I will focus on scanning NFC tags using CoreNFC with NFCNDEFReaderSession.
 Preparation Before we begin, let’s add the necessary objects:
-Near Field Communication Tag Reading capability to the project. Privacy - NFC Scan Usage Description key to Info.plist. Near Field Communication Tag Reader Session Formats to the entitlements file....</p>
+Near Field Communication Tag Reading capability to the project. Privacy - NFC Scan Usage Description key to Info.plist. Near Field Communication Tag Reader Session Formats to the entitlements file. First Step The first step before starting scanning is to check if the device supports NFC reading by using the NFCNDEFReaderSession.readingAvailable property.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-12 07:27:51 +0300 EEST'>July 12, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Scanning NFC tags using CoreNFC in an iOS app" href="http://localhost:1313/posts/scanning-nfc-tags-using-corenfc-in-an-ios-app/"></a>
@@ -207,7 +211,8 @@ Near Field Communication Tag Reading capability to the project. Privacy - NFC Sc
   <div class="entry-content">
     <p>Introduction I had the chance to work on a project where communication via BLE was at the heart of the project.
 Before adding any code to application, I always asked myself about two scenarios:
-The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices. The second scenario is when the device acts as a peripheral device by using CBCharacteristic and changes its value....</p>
+The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices. The second scenario is when the device acts as a peripheral device by using CBCharacteristic and changes its value. In this article, I will focus on the first scenario and will show how to scan for peripheral devices.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-10 07:27:14 +0300 EEST'>July 10, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Scanning for peripheral devices using BLE in an iOS app" href="http://localhost:1313/posts/scanning-for-peripheral-devices-using-ble-in-an-ios-app/"></a>

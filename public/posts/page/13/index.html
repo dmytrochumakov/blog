@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Posts" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Posts" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/posts/" />
@@ -202,6 +205,21 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">The State Pattern
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is a State Pattern? The State Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+Source
+What problems does it solve? Complex conditional logic: When an object’s behavior depends on its internal state, it often leads to complex conditional statements. The State pattern simplifies this by encapsulating each state and its behavior in separate classes, making the code more readable and maintainable. State-specific behavior: Objects often need to change their behavior based on their state. The State pattern allows objects to delegate behavior to state objects, which can vary independently. This promotes better encapsulation and separation of concerns. Adding new states: When new states need to be added, the State pattern makes it easier to extend the functionality without modifying existing code. New states can be added by creating new state classes and integrating them into the existing context, without changing the context class itself. Real-world code example // Define the VendingMachine protocol protocol VendingMachineState { func insertCoin() func dispenseItem() } // Define concrete states class NoCoinState: VendingMachineState { private let vendingMachine: VendingMachine init(vendingMachine: VendingMachine) { self.vendingMachine = vendingMachine } func insertCoin() { print(&#34;Coin inserted&#34;) // Transition to the HasCoinState vendingMachine.changeState(newState: vendingMachine.hasCoinState) } func dispenseItem() { print(&#34;Please insert a coin first&#34;) } } class HasCoinState: VendingMachineState { private let vendingMachine: VendingMachine init(vendingMachine: VendingMachine) { self.vendingMachine = vendingMachine } func insertCoin() { print(&#34;Coin already inserted&#34;) } func dispenseItem() { if vendingMachine.inventoryCount &gt; 0 { print(&#34;Item dispensed&#34;) vendingMachine.decreaseInventory() // Transition to the NoCoinState vendingMachine.changeState(newState: vendingMachine.noCoinState) } else { print(&#34;Out of stock&#34;) } } } // Define the VendingMachine class class VendingMachine { var inventoryCount: Int = 5 var currentState: VendingMachineState! var noCoinState: VendingMachineState! var hasCoinState: VendingMachineState! init() { noCoinState = NoCoinState(vendingMachine: self) hasCoinState = HasCoinState(vendingMachine: self) currentState = noCoinState } func changeState(newState: VendingMachineState) { currentState = newState } func insertCoin() { currentState.insertCoin() } func dispenseItem() { currentState.dispenseItem() } func decreaseInventory() { inventoryCount -= 1 } } // Usage let vendingMachine = VendingMachine() vendingMachine.dispenseItem() vendingMachine.insertCoin() vendingMachine.insertCoin() vendingMachine.dispenseItem() vendingMachine.dispenseItem() Thank you for reading!
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-10 08:29:30 +0300 +0300'>March 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to The State Pattern" href="http://localhost:1313/posts/the-state-pattern/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">The Dependency Inversion Principle
     </h2>
   </header>
@@ -210,7 +228,7 @@ if (!doNotTrack) {
 Source
 Source
 What problems does it solve? The Dependency Inversion Principle (DIP) helps solve:
-Rigidity Fragility Immobility problems Real-world code example Violation of DIP // High-level module directly depending on low-level modules class MessageService { func sendMessageViaEmail(message: String) { let emailSender = EmailSender() emailSender.sendMessage(message: message) } func sendMessageViaSMS(message: String) { let smsSender = SMSSender() smsSender....</p>
+Rigidity Fragility Immobility problems Real-world code example Violation of DIP // High-level module directly depending on low-level modules class MessageService { func sendMessageViaEmail(message: String) { let emailSender = EmailSender() emailSender.sendMessage(message: message) } func sendMessageViaSMS(message: String) { let smsSender = SMSSender() smsSender.sendMessage(message: message) } func sendMessageViaPushNotification(message: String) { let pushNotificationSender = PushNotificationSender() pushNotificationSender.sendMessage(message: message) } } Adhering to DIP // Protocol defining the interface for sending messages protocol MessageSender { func sendMessage(message: String) } // High-level module depending on abstraction (MessageSender protocol) class MessageService { private let messageSender: MessageSender init(messageSender: MessageSender) { self.messageSender = messageSender } func sendMessage(message: String) { messageSender.sendMessage(message: message) } } // Concrete implementations of MessageSender protocol for different channels class EmailSender: MessageSender { func sendMessage(message: String) { print(&#34;Sending email: \(message)&#34;) } } class SMSSender: MessageSender { func sendMessage(message: String) { print(&#34;Sending SMS: \(message)&#34;) } } class PushNotificationSender: MessageSender { func sendMessage(message: String) { print(&#34;Sending push notification: \(message)&#34;) } } // Example usage let emailSender = EmailSender() let smsSender = SMSSender() let pushNotificationSender = PushNotificationSender() let emailService = MessageService(messageSender: emailSender) let smsService = MessageService(messageSender: smsSender) let pushNotificationService = MessageService(messageSender: pushNotificationSender) emailService.sendMessage(message: &#34;Hello via email&#34;) smsService.sendMessage(message: &#34;Hello via SMS&#34;) pushNotificationService.sendMessage(message: &#34;Hello via push notification&#34;) Thank you for reading! 😊</p>
   </div>
   <footer class="entry-footer"><span title='2024-03-05 08:29:30 +0300 +0300'>March 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to The Dependency Inversion Principle" href="http://localhost:1313/posts/the-dependency-inversion-principle/"></a>
@@ -224,7 +242,8 @@ Rigidity Fragility Immobility problems Real-world code example Violation of DIP 
   <div class="entry-content">
     <p>What is a Big O notation? The Big O notation helps identify algorithm efficiency. It can measure computation and memory growth with respect to input. Real-world code example O(n) — Linear Time
 func containsValue(array: [Int], value: Int) -&gt; Bool { for element in array { if element == value { return true } } return false } O(1) — Constant Time
-func findFirstElement(array: [Int]) -&gt; Int? { return array.first } Thank you for reading!...</p>
+func findFirstElement(array: [Int]) -&gt; Int? { return array.first } Thank you for reading!
+</p>
   </div>
   <footer class="entry-footer"><span title='2024-02-21 08:29:30 +0300 +0300'>February 21, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Big O notation" href="http://localhost:1313/posts/big-o-notation/"></a>
@@ -239,7 +258,8 @@ func findFirstElement(array: [Int]) -&gt; Int? { return array.first } Thank you 
     <p>What is Combine? Combine Framework provides an API for processing async events over time such as user-input, network response, and other dynamic data.
 What is the purpose of Combine? The purpose of Combine is to simplify the management of async events and data streams.
 Publishers Publisher declares that a type can transit a sequence of values over time. A publisher delivers elements to one or more Subscriber instances.
-class PostService { func fetchPosts() -&gt; AnyPublisher&lt;[Post], Error&gt; { guard let url = URL(string: &#34;https://jsonplaceholder....</p>
+class PostService { func fetchPosts() -&gt; AnyPublisher&lt;[Post], Error&gt; { guard let url = URL(string: &#34;https://jsonplaceholder.typicode.com/posts&#34;) else { fatalError(&#34;Invalid URL&#34;) } return URLSession.shared.dataTaskPublisher(for: url) .map(\.data) .decode(type: [Post].self, decoder: JSONDecoder()) .receive(on: DispatchQueue.main) .eraseToAnyPublisher() } } Subscribers Subscriber is a protocol that declares a type that can receive input from a publisher. A Subscriber instance receives a stream of elements from a Publisher.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-02-07 08:29:30 +0300 +0300'>February 7, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Combine — Basics" href="http://localhost:1313/posts/combine-basics/"></a>
@@ -254,23 +274,11 @@ class PostService { func fetchPosts() -&gt; AnyPublisher&lt;[Post], Error&gt; { 
     <p>When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
 You can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.
 What are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
-actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&gt; String?...</p>
+actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&gt; String? { data[key] } func writeData(key: String, value: String) { data[key] = value } } What is an asynchronous function? The asynchronous function or asynchronous method can be suspended while it is partway through execution. It can pause in the middle when it’s waiting for something.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-02-04 08:29:30 +0300 +0300'>February 4, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Modern Concurrency" href="http://localhost:1313/posts/modern-concurrency/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">What are Threads in Swift?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is the Thread? A Thread is a small set of instructions that can be executed independently from the main program. Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time. The Thread has its own stack, registers, and program counters.
-Threads share memory address space, and it is possible to communicate between Threads using shared memory space. How to use it?...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-20 08:29:30 +0300 +0300'>January 20, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to What are Threads in Swift?" href="http://localhost:1313/posts/what-are-threads-in-swift/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

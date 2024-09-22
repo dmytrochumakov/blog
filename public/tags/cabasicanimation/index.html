@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="CABasicAnimation" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="CABasicAnimation" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/cabasicanimation/" />
@@ -194,7 +197,8 @@ if (!doNotTrack) {
     <p>Introduction I was curious about creating animations in UIKit. I wanted to animate different properties such as color and path. Here is what I found:
 It’s impossible to create complex animations only by using the block-based animation API. To do that, you need the Core Animation API and CAPropertyAnimation with its various subclasses.
 Complex animation in UIKit is based on a few key components:
-CAShapeLayer - provides extensive customization options: path, stroke, fill, shadow CABasicAnimation - helps animate color or change the path Implementation First Step The first step is to create a shape layer that will draw an arrow using CAShapeLayer....</p>
+CAShapeLayer - provides extensive customization options: path, stroke, fill, shadow CABasicAnimation - helps animate color or change the path Implementation First Step The first step is to create a shape layer that will draw an arrow using CAShapeLayer.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-21 06:31:02 +0300 EEST'>May 21, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Animation - UIKit" href="http://localhost:1313/posts/animation-uikit/"></a>

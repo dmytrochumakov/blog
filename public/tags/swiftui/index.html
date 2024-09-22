@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="SwiftUI" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="SwiftUI" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/swiftui/" />
@@ -192,7 +195,8 @@ if (!doNotTrack) {
   </header>
   <div class="entry-content">
     <p>Introduction Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.
-Preparation Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store....</p>
+Preparation Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store. Let’s add:
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-26 07:18:58 +0300 EEST'>July 26, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Implementing HealthKit in an iOS App" href="http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/"></a>
@@ -206,7 +210,8 @@ Preparation Before we dive into implementation, I assume that you have an active
   <div class="entry-content">
     <p>Introduction I haven’t had the opportunity to build a chatbot before. This topic was trending some time ago, and I always wanted to implement it myself. In this article, I will focus on the steps you need to know to successfully build and run a chatbot application.
 First Step The first step is to add the OpenAI dependency to your project:
-.package(url: &#34;https://github.com/MacPaw/OpenAI.git&#34;, branch: &#34;main&#34;) dependencies: [ .byNameItem( name: &#34;OpenAI&#34;, condition: ....</p>
+.package(url: &#34;https://github.com/MacPaw/OpenAI.git&#34;, branch: &#34;main&#34;) dependencies: [ .byNameItem( name: &#34;OpenAI&#34;, condition: .when(platforms: [ .iOS, ]) ), ], Second Step The second step is to generate an OpenAI key and replace it inside your project.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-21 07:25:28 +0300 EEST'>July 21, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Implementing ChatGPT in an iOS App" href="http://localhost:1313/posts/implementing-chatgpt-in-an-ios-app/"></a>
@@ -220,7 +225,7 @@ First Step The first step is to add the OpenAI dependency to your project:
   <div class="entry-content">
     <p>Introduction Previously, I posted about Accessibility for UIKit. The idea behind this post is to find differences between UIKit Accessibility and SwiftUI features.
 Similarities: Both UIKit and SwiftUI have accessibilityLabel and accessibilityHints APIs.
-Differences: To use dynamic type for fonts, you need additional modifiers in SwiftUI. struct ScaledFont: ViewModifier { @Environment(\.sizeCategory) var sizeCategory var name: String var size: Double func body(content: Content) -&gt; some View { let scaledSize = UIFontMetrics.default.scaledValue(for: size) return content....</p>
+Differences: To use dynamic type for fonts, you need additional modifiers in SwiftUI. struct ScaledFont: ViewModifier { @Environment(\.sizeCategory) var sizeCategory var name: String var size: Double func body(content: Content) -&gt; some View { let scaledSize = UIFontMetrics.default.scaledValue(for: size) return content.font(.custom(name, size: scaledSize)) } } extension View { func scaledFont(name: String, textSize size: Double) -&gt; some View { return self.modifier(ScaledFont(name: name, size: size)) } } To step over elements in a list, you need to add .accessibilityElement(children: .combine) to each row in SwiftUI. struct FruitCaloriesCounter: View { var body: some View { NavigationView { List(fruits) { fruit in FruitRow(fruit: fruit) .accessibilityElement(children: .combine) } .navigationTitle(&#34;Fruits Calories Counter&#34;) .accessibilityElement(children: .contain) .navigationBarTitleDisplayMode(.inline) } } } In UIKit, you can insert and remove accessibilityTraits depending on the button state: if button.isSelected { button.accessibilityTraits.insert(.header) } else { button.accessibilityTraits.remove(.header) } In SwiftUI, you need to pass .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton) to one modifier. Button(action: { selected.toggle() }) { Image(systemName: selected ? &#34;star.fill&#34; : &#34;star&#34;) .frame(width: 44, height: 44) .accessibilityLabel(&#34;favourite&#34;) .accessibilityHint(selected ? &#34;removes favourite&#34; : &#34;makes favourite&#34;) .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton) } .buttonStyle(.plain) Complete Sample import SwiftUI let fruits = [ Fruit(name: &#34;Apple&#34;, calories: 52), Fruit(name: &#34;Banana&#34;, calories: 89), Fruit(name: &#34;Orange&#34;, calories: 47), Fruit(name: &#34;Pineapple&#34;, calories: 50), Fruit(name: &#34;Strawberry&#34;, calories: 32) ] struct Fruit: Identifiable { var id: String { name } let name: String let calories: Int } struct FruitRow: View { @State private var selected = false let fruit: Fruit var body: some View { HStack(spacing: 8) { VStack(alignment: .leading, spacing: 8) { Text(fruit.name) .scaledFont(name: &#34;Helvetica&#34;, textSize: 20) .accessibilityLabel(fruit.name) Text(&#34;\(fruit.calories) per 100g&#34;) .scaledFont(name: &#34;Helvetica&#34;, textSize: 15) .accessibilityLabel(&#34;\(fruit.calories) calories per 100 grams&#34;) } Spacer() Button(action: { selected.toggle() }) { Image(systemName: selected ? &#34;star.fill&#34; : &#34;star&#34;) .frame(width: 44, height: 44) .accessibilityLabel(&#34;favourite&#34;) .accessibilityHint(selected ? &#34;removes favourite&#34; : &#34;makes favourite&#34;) .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton) } .buttonStyle(.plain) } } } struct FruitCaloriesCounter: View { var body: some View { NavigationView { List(fruits) { fruit in FruitRow(fruit: fruit) .accessibilityElement(children: .combine) } .navigationTitle(&#34;Fruits Calories Counter&#34;) .accessibilityElement(children: .contain) .navigationBarTitleDisplayMode(.inline) } } } struct ContentView: View { var body: some View { FruitCaloriesCounter() } } #Preview { ContentView() } struct ScaledFont: ViewModifier { @Environment(\.sizeCategory) var sizeCategory var name: String var size: Double func body(content: Content) -&gt; some View { let scaledSize = UIFontMetrics.default.scaledValue(for: size) return content.font(.custom(name, size: scaledSize)) } } extension View { func scaledFont(name: String, textSize size: Double) -&gt; some View { return self.modifier(ScaledFont(name: name, size: size)) } } Thank you for reading! 😊</p>
   </div>
   <footer class="entry-footer"><span title='2024-06-02 09:04:06 +0300 EEST'>June 2, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Accessibility iOS SwiftUI" href="http://localhost:1313/posts/accessibility-ios-swiftui/"></a>
@@ -235,7 +240,7 @@ Differences: To use dynamic type for fonts, you need additional modifiers in Swi
     <p>Introduction I was eager to learn about creating complex animations in SwiftUI. The few questions that were on my mind included what types of animations exist and what I can animate. Here is what I found:
 Types of Animation SwiftUI has explicit and implicit animation types.
 Implicit Animation: This is specified with the .animation() modifier. SwiftUI will animate changes in old and new values.
-struct ImplicitAnimation: View { @State private var half = false @State private var dim = false var body: some View { Image(&#34;tower&#34;) ....</p>
+struct ImplicitAnimation: View { @State private var half = false @State private var dim = false var body: some View { Image(&#34;tower&#34;) .scaleEffect(half ? 0.5 : 1.0) .opacity(dim ? 0.2 : 1.0) .animation(.easeInOut(duration: 1.0)) .onTapGesture { self.dim.toggle() self.half.toggle() } } } ...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-17 07:23:46 +0300 EEST'>May 17, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Animation - SwiftUI" href="http://localhost:1313/posts/animation-swiftui/"></a>
@@ -248,7 +253,8 @@ struct ImplicitAnimation: View { @State private var half = false @State private 
   </header>
   <div class="entry-content">
     <p>Introduction I was wondering how to add in-app purchases to my app. I chose non-consumable in-app purchase because you can pay one time for this item. Here are a few steps on how I did it.
-First Step Set up In-App Purchases for your app in App Store Connect account or add a .storekit configuration file and start from there. If you’ve already set up In-App Purchases in your account, you can sync the StoreKit config with that data....</p>
+First Step Set up In-App Purchases for your app in App Store Connect account or add a .storekit configuration file and start from there. If you’ve already set up In-App Purchases in your account, you can sync the StoreKit config with that data.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-12 07:57:51 +0300 EEST'>May 12, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Implementing In-App Purchases to SwiftUI app using StoreKit 2" href="http://localhost:1313/posts/implementing-in-app-purchases-to-swiftui-app-using-storekit-2/"></a>

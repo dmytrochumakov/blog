@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="BFS" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="BFS" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/bfs/" />
@@ -194,7 +197,7 @@ if (!doNotTrack) {
     <p>What is Breadth First Search? Breadth-first search (BFS) is an algorithm for traversing tree or graph data structures. It starts at the root and explores all the neighboring nodes at the current depth before moving on to nodes at the next depth level.
 Source
 Implementation The implementation of BFS may vary depending on the problem. The main idea of BFS is:
-It has a visited array that collects all elements that have already been visited....</p>
+It has a visited array that collects all elements that have already been visited. It has a queue with all elements it’s going to visit. It loops through the queue, removes the first element, and appends it to the visited list. Finally, it loops through all the neighbors and appends the neighbor to the queue if it has not been visited and is not already in the queue. Code Example func bfs(_ value: String) -&gt; [String] { let graph: [String: [String]] = [ &#34;New York&#34;: [&#34;Buenos Aires&#34;, &#34;Cairo&#34;, &#34;Tokyo&#34;, &#34;London&#34;] ] var visited: [String] = [] var queue: [String] = [] queue.append(value) while !queue.isEmpty { let tmp = queue.removeFirst() visited.append(tmp) if let neighbors = graph[tmp] { for neighbor in neighbors.sorted() { if !visited.contains(neighbor) &amp;&amp; !queue.contains(neighbor) { queue.append(neighbor) } } } } return visited } Thank you for reading! 😊</p>
   </div>
   <footer class="entry-footer"><span title='2024-09-12 07:14:47 +0300 EEST'>September 12, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Breadth First Search" href="http://localhost:1313/posts/dsa-breadth-first-search/"></a>

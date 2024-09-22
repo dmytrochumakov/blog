@@ -7,8 +7,37 @@
 <meta name="robots" content="index, follow">
 <title>DSA - Stack | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Data Structures, Algorithms, DSA, Stack, Swift">
-<meta name="description" content="What is a Stack? A stack is an abstract data type that serves as a collection of elements and implements operations like push, pop, and peek at the end in O(1) time. It uses the LIFO (last in, first out) order. For example, a stack can be a collection of items where adding or removing is practical at the top.
-Code Example struct Stack&lt;Element&gt; { private var array: [Element] init(array: [Element] = []) { self.">
+<meta name="description" content="What is a Stack?
+A stack is an abstract data type that serves as a collection of elements and implements operations like push, pop, and peek at the end in O(1) time. It uses the LIFO (last in, first out) order. For example, a stack can be a collection of items where adding or removing is practical at the top.
+Code Example
+struct Stack&lt;Element&gt; {
+
+    private var array: [Element]
+
+    init(array: [Element] = []) {
+        self.array = array
+    }
+
+    mutating func push(_ element: Element) {
+        array.append(element)
+    }
+
+    mutating func pop() -&gt; Element? {
+        if array.isEmpty {
+            return nil
+        }
+        return array.popLast()
+    }
+
+    func peek() -&gt; Element? {
+        if array.isEmpty {
+            return nil
+        }
+        return array.last
+    }
+}
+Practical Applications of Stacks
+You can observe stack-like behavior in many places, such as redo-undo features in text editors, Photoshop, and the forward and backward navigation features in web browsers.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/dsa-stack/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -75,19 +104,51 @@ Code Example struct Stack&lt;Element&gt; { private var array: [Element] init(arr
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="DSA - Stack" />
+<meta property="og:description" content="What is a Stack?
+A stack is an abstract data type that serves as a collection of elements and implements operations like push, pop, and peek at the end in O(1) time. It uses the LIFO (last in, first out) order. For example, a stack can be a collection of items where adding or removing is practical at the top.
+Code Example
+struct Stack&lt;Element&gt; {
+
+    private var array: [Element]
+
+    init(array: [Element] = []) {
+        self.array = array
+    }
+
+    mutating func push(_ element: Element) {
+        array.append(element)
+    }
+
+    mutating func pop() -&gt; Element? {
+        if array.isEmpty {
+            return nil
+        }
+        return array.popLast()
+    }
+
+    func peek() -&gt; Element? {
+        if array.isEmpty {
+            return nil
+        }
+        return array.last
+    }
 }
-</script>
-<meta property="og:title" content="DSA - Stack" />
-<meta property="og:description" content="What is a Stack? A stack is an abstract data type that serves as a collection of elements and implements operations like push, pop, and peek at the end in O(1) time. It uses the LIFO (last in, first out) order. For example, a stack can be a collection of items where adding or removing is practical at the top.
-Code Example struct Stack&lt;Element&gt; { private var array: [Element] init(array: [Element] = []) { self." />
+Practical Applications of Stacks
+You can observe stack-like behavior in many places, such as redo-undo features in text editors, Photoshop, and the forward and backward navigation features in web browsers." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/dsa-stack/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -98,8 +159,37 @@ Code Example struct Stack&lt;Element&gt; { private var array: [Element] init(arr
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="DSA - Stack"/>
-<meta name="twitter:description" content="What is a Stack? A stack is an abstract data type that serves as a collection of elements and implements operations like push, pop, and peek at the end in O(1) time. It uses the LIFO (last in, first out) order. For example, a stack can be a collection of items where adding or removing is practical at the top.
-Code Example struct Stack&lt;Element&gt; { private var array: [Element] init(array: [Element] = []) { self."/>
+<meta name="twitter:description" content="What is a Stack?
+A stack is an abstract data type that serves as a collection of elements and implements operations like push, pop, and peek at the end in O(1) time. It uses the LIFO (last in, first out) order. For example, a stack can be a collection of items where adding or removing is practical at the top.
+Code Example
+struct Stack&lt;Element&gt; {
+
+    private var array: [Element]
+
+    init(array: [Element] = []) {
+        self.array = array
+    }
+
+    mutating func push(_ element: Element) {
+        array.append(element)
+    }
+
+    mutating func pop() -&gt; Element? {
+        if array.isEmpty {
+            return nil
+        }
+        return array.popLast()
+    }
+
+    func peek() -&gt; Element? {
+        if array.isEmpty {
+            return nil
+        }
+        return array.last
+    }
+}
+Practical Applications of Stacks
+You can observe stack-like behavior in many places, such as redo-undo features in text editors, Photoshop, and the forward and backward navigation features in web browsers."/>
 
 
 <script type="application/ld+json">
@@ -128,7 +218,7 @@ Code Example struct Stack&lt;Element&gt; { private var array: [Element] init(arr
   "@type": "BlogPosting",
   "headline": "DSA - Stack",
   "name": "DSA - Stack",
-  "description": "What is a Stack? A stack is an abstract data type that serves as a collection of elements and implements operations like push, pop, and peek at the end in O(1) time. It uses the LIFO (last in, first out) order. For example, a stack can be a collection of items where adding or removing is practical at the top.\nCode Example struct Stack\u0026lt;Element\u0026gt; { private var array: [Element] init(array: [Element] = []) { self.",
+  "description": "What is a Stack? A stack is an abstract data type that serves as a collection of elements and implements operations like push, pop, and peek at the end in O(1) time. It uses the LIFO (last in, first out) order. For example, a stack can be a collection of items where adding or removing is practical at the top.\nCode Example struct Stack\u0026lt;Element\u0026gt; { private var array: [Element] init(array: [Element] = []) { self.array = array } mutating func push(_ element: Element) { array.append(element) } mutating func pop() -\u0026gt; Element? { if array.isEmpty { return nil } return array.popLast() } func peek() -\u0026gt; Element? { if array.isEmpty { return nil } return array.last } } Practical Applications of Stacks You can observe stack-like behavior in many places, such as redo-undo features in text editors, Photoshop, and the forward and backward navigation features in web browsers.\n",
   "keywords": [
     "Data Structures", "Algorithms", "DSA", "Stack", "Swift"
   ],

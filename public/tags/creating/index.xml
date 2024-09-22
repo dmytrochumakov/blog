@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Wed, 03 Jul 2024 06:39:04 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/creating/index.xml" rel="self" type="application/rss+xml" />
@@ -18,17 +18,21 @@
       <link>http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-2/</link>
       <pubDate>Wed, 03 Jul 2024 06:39:04 +0300</pubDate>
       <guid>http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-2/</guid>
-      <description>Introduction In the previous chapter, I started talking about the video game creation process, from project setup to adding the background. Now, I&amp;rsquo;m going to add the player and physics to it.
-You can download the project here.
-First Step The first step is to initialize player using SKSpriteNode, set up player.position, and add player as a child node.
-SKSpriteNode - is an onscreen graphical element that can be initialized from an image or a solid color.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;In the &lt;a href=&#34;https://dmytros.blog/posts/creating-2d-space-game-for-ios-using-spritekit-part-1/&#34;&gt;previous chapter&lt;/a&gt;, I started talking about the video game creation process, from project setup to adding the background. Now, I&amp;rsquo;m going to add the player and physics to it.&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&#34;https://github.com/dmytrochumakov/2d-space-game-ios/archive/refs/heads/main.zip&#34;&gt;download the project here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;first-step&#34;&gt;First Step&lt;/h3&gt;
+&lt;p&gt;The first step is to initialize &lt;code&gt;player&lt;/code&gt; using &lt;a href=&#34;https://developer.apple.com/documentation/spritekit/skspritenode&#34;&gt;&lt;code&gt;SKSpriteNode&lt;/code&gt;&lt;/a&gt;, set up &lt;code&gt;player.position&lt;/code&gt;, and add &lt;code&gt;player&lt;/code&gt; as a child node.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;SKSpriteNode&lt;/strong&gt; - is an onscreen graphical element that can be initialized from an image or a solid color.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a 2D Space Game for iOS Using SpriteKit - Part 1</title>
       <link>http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-1/</link>
       <pubDate>Fri, 28 Jun 2024 07:18:59 +0300</pubDate>
       <guid>http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-1/</guid>
-      <description>Introduction I have never tried creating a game before; it feels like magic to me. I know that games have an enormous amount of underlying layers of abstractions and tools such as game engines, rendering, and so on. I have always been eager to learn at least 1% of the game creation process. In this article, I&amp;rsquo;m going to explore step-by-step instructions for creating a game for the iOS platform using SpriteKit.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I have never tried creating a game before; it feels like magic to me. I know that games have an enormous amount of underlying layers of abstractions and tools such as game engines, rendering, and so on. I have always been eager to learn at least 1% of the game creation process. In this article, I&amp;rsquo;m going to explore step-by-step instructions for creating a game for the iOS platform using SpriteKit.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Location Service" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Location Service" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/location-service/" />
@@ -193,7 +196,8 @@ if (!doNotTrack) {
   <div class="entry-content">
     <p>Introduction Nowadays, location is an essential feature in almost every application. It’s very important to know the best ways to implement it without affecting performance and user experience. In this article, I will focus on how to implement general methods in location service.
 Preparation Before we begin, let’s add location permission keys to Info.plist:
-Privacy - Location When In Use Usage Description Privacy - Location Always and When In Use Usage Description First Step The first step is to create LocationService with the requestPermissions method to be able to receive location events....</p>
+Privacy - Location When In Use Usage Description Privacy - Location Always and When In Use Usage Description First Step The first step is to create LocationService with the requestPermissions method to be able to receive location events.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-23 07:04:25 +0300 EEST'>July 23, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Implementing Location Service" href="http://localhost:1313/posts/implementing-location-service/"></a>

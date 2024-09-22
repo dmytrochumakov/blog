@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Recommendations" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Recommendations" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/recommendations/" />
@@ -193,7 +196,8 @@ if (!doNotTrack) {
   <div class="entry-content">
     <p>Introduction I was wondering about how to create movie recommendations, so I decided to take a closer look and find out more about this topic. This is what I found:
 First step: You need to create a JSON file with the data that you will use to train the model and define the parameters for training the model.
-[ { &#34;title&#34;: &#34;Avatar&#34;, &#34;year&#34;: &#34;2009&#34;, &#34;rated&#34;: &#34;PG-13&#34;, &#34;released&#34;: &#34;18 Dec 2009&#34;, &#34;runtime&#34;: &#34;162 min&#34;, &#34;genre&#34;: &#34;Action, Adventure, Fantasy&#34;, &#34;director&#34;: &#34;James Cameron&#34;, &#34;writer&#34;: &#34;James Cameron&#34;, &#34;actors&#34;: &#34;Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang&#34;, &#34;plot&#34;: &#34;A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home....</p>
+[ { &#34;title&#34;: &#34;Avatar&#34;, &#34;year&#34;: &#34;2009&#34;, &#34;rated&#34;: &#34;PG-13&#34;, &#34;released&#34;: &#34;18 Dec 2009&#34;, &#34;runtime&#34;: &#34;162 min&#34;, &#34;genre&#34;: &#34;Action, Adventure, Fantasy&#34;, &#34;director&#34;: &#34;James Cameron&#34;, &#34;writer&#34;: &#34;James Cameron&#34;, &#34;actors&#34;: &#34;Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang&#34;, &#34;plot&#34;: &#34;A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.&#34;, &#34;language&#34;: &#34;English, Spanish&#34;, &#34;country&#34;: &#34;USA, UK&#34;, &#34;awards&#34;: &#34;Won 3 Oscars. Another 80 wins &amp; 121 nominations.&#34;, &#34;poster&#34;: &#34;https://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg&#34;, &#34;metascore&#34;: &#34;83&#34;, &#34;imdbrating&#34;: &#34;7.9&#34;, &#34;imdbvotes&#34;: &#34;890,617&#34;, &#34;imdbid&#34;: &#34;tt0499549&#34;, &#34;type&#34;: &#34;movie&#34;, &#34;response&#34;: &#34;True&#34;, &#34;keywords&#34;: [&#34;alien&#34;, &#34;avatar&#34;, &#34;fantasy world&#34;, &#34;soldier&#34;, &#34;battle&#34;] }, ] When you have created the data, you can proceed to the next step.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-01 10:29:44 +0300 EEST'>May 1, 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Building movie recommendations using ML" href="http://localhost:1313/posts/building-movie-recommendations-using-ml/"></a>

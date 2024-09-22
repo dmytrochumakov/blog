@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Combine" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Combine" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/combine/" />
@@ -193,7 +196,8 @@ if (!doNotTrack) {
   <div class="entry-content">
     <p>Introduction I haven’t had the opportunity to build a chatbot before. This topic was trending some time ago, and I always wanted to implement it myself. In this article, I will focus on the steps you need to know to successfully build and run a chatbot application.
 First Step The first step is to add the OpenAI dependency to your project:
-.package(url: &#34;https://github.com/MacPaw/OpenAI.git&#34;, branch: &#34;main&#34;) dependencies: [ .byNameItem( name: &#34;OpenAI&#34;, condition: ....</p>
+.package(url: &#34;https://github.com/MacPaw/OpenAI.git&#34;, branch: &#34;main&#34;) dependencies: [ .byNameItem( name: &#34;OpenAI&#34;, condition: .when(platforms: [ .iOS, ]) ), ], Second Step The second step is to generate an OpenAI key and replace it inside your project.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-07-21 07:25:28 +0300 EEST'>July 21, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Implementing ChatGPT in an iOS App" href="http://localhost:1313/posts/implementing-chatgpt-in-an-ios-app/"></a>
@@ -207,7 +211,8 @@ First Step The first step is to add the OpenAI dependency to your project:
   <div class="entry-content">
     <p>Introduction When working in a large codebase with a significant number of async events, I often found myself in situations where I couldn’t combine events effectively. This resulted in optimization problems and inefficient consumption of OS resources.
 The codebase contained closures and async/await, so it wasn’t possible to use operators like merge or combineLatest. After discovering this limitation, I decided to add new methods using Combine.
-I will be demonstrating this with a simple NetworkService responsible only for executing and validating requests using Combine....</p>
+I will be demonstrating this with a simple NetworkService responsible only for executing and validating requests using Combine. Let’s dive into the implementation.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-06-22 07:13:00 +0300 EEST'>June 22, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Combine practical usage examples" href="http://localhost:1313/posts/combine-practical-usage-examples/"></a>
@@ -222,7 +227,8 @@ I will be demonstrating this with a simple NetworkService responsible only for e
     <p>What is Combine? Combine Framework provides an API for processing async events over time such as user-input, network response, and other dynamic data.
 What is the purpose of Combine? The purpose of Combine is to simplify the management of async events and data streams.
 Publishers Publisher declares that a type can transit a sequence of values over time. A publisher delivers elements to one or more Subscriber instances.
-class PostService { func fetchPosts() -&gt; AnyPublisher&lt;[Post], Error&gt; { guard let url = URL(string: &#34;https://jsonplaceholder....</p>
+class PostService { func fetchPosts() -&gt; AnyPublisher&lt;[Post], Error&gt; { guard let url = URL(string: &#34;https://jsonplaceholder.typicode.com/posts&#34;) else { fatalError(&#34;Invalid URL&#34;) } return URLSession.shared.dataTaskPublisher(for: url) .map(\.data) .decode(type: [Post].self, decoder: JSONDecoder()) .receive(on: DispatchQueue.main) .eraseToAnyPublisher() } } Subscribers Subscriber is a protocol that declares a type that can receive input from a publisher. A Subscriber instance receives a stream of elements from a Publisher.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-02-07 08:29:30 +0300 +0300'>February 7, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Combine — Basics" href="http://localhost:1313/posts/combine-basics/"></a>

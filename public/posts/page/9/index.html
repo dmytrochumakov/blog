@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Posts" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Posts" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/posts/" />
@@ -202,11 +205,27 @@ if (!doNotTrack) {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Integration testing for SwiftUI views
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction I have been looking for information about implementation details of integration testing. I found a lot of information, but it was theoretical and all information looked the same. I did not find a meaningful example, so I tried to come up with my own definition and sample.
+Integration testing means testing the behavior between modules or views to ensure they work as expected after user actions.
+There are two ways of conducting integration testing: The first is by unit tests, where you try to test the flowing data between view models. The second is UI tests, where you try to test if the UI items exist and navigation works correctly. I will focus on testing the flowing data between view models.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-10 06:20:50 +0300 EEST'>May 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Integration testing for SwiftUI views" href="http://localhost:1313/posts/integration-testing-for-swiftui-views/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">UI testing SwiftUI views using XCTest Framework
     </h2>
   </header>
   <div class="entry-content">
-    <p>Introduction After spending some time developing my personal iOS app, I found myself in a position where I needed to add UI tests to my application. The reason behind this decision was the necessity to change the architecture to make it more scalable. However, this task proved to be challenging due to certain parts of the code being tightly coupled. The situation was quite frustrating. To address this problem, I decided to incorporate UI tests that could help identify issues during the refactoring process....</p>
+    <p>Introduction After spending some time developing my personal iOS app, I found myself in a position where I needed to add UI tests to my application. The reason behind this decision was the necessity to change the architecture to make it more scalable. However, this task proved to be challenging due to certain parts of the code being tightly coupled. The situation was quite frustrating. To address this problem, I decided to incorporate UI tests that could help identify issues during the refactoring process.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-08 06:34:32 +0300 EEST'>May 8, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to UI testing SwiftUI views using XCTest Framework" href="http://localhost:1313/posts/ui-testing-swiftui-views-using-xctest-framework/"></a>
@@ -219,7 +238,8 @@ if (!doNotTrack) {
   </header>
   <div class="entry-content">
     <p>Introduction I was curious about how to add Dynamic Island and implement it into a Video Streaming App. Here are a few steps on how you can achieve this.
-Caveats Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 &#34;Failed to show Widget&#34;. The solution is to configure live activities and run them through the main app....</p>
+Caveats Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 &#34;Failed to show Widget&#34;. The solution is to configure live activities and run them through the main app. Be aware that when you add a widget to the project, in some cases, it adds all main target files to Compile Sources. Implementation Dynamic Islands are divided into different sizes: minimal, compactTrailing, compactLeading, and expanded. Before proceeding, you need to add LiveActivityManager to be able to display Dynamic Islands.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-06 07:35:52 +0300 EEST'>May 6, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Building Dynamic Island for Video Streaming App" href="http://localhost:1313/posts/building-dynamic-island-for-video-streaming-app/"></a>
@@ -232,7 +252,8 @@ Caveats Debugging Dynamic Island can be a bit tricky; it only works when the mai
   </header>
   <div class="entry-content">
     <p>Introduction I was exploring the idea of creating a YouTube-like widget for the lock screen on iOS devices. It wasn’t easy because most articles on the Internet discussed general implementations, such as for a coffee shop or a to-do list. Even when I found some similar versions, the project wouldn’t compile. I made the decision to approach it my way, so here’s what I found out:
-Caveats After being stuck for two or more hours without understanding why, after tapping on a button, I wasn&#39;t able to receive a callback from it and the widget always opened the main iOS app, I realized that I forgot to add AppIntent - without it, you can’t handle actions for iOS 17....</p>
+Caveats After being stuck for two or more hours without understanding why, after tapping on a button, I wasn&#39;t able to receive a callback from it and the widget always opened the main iOS app, I realized that I forgot to add AppIntent - without it, you can’t handle actions for iOS 17. import AppIntents struct ButtonIntent: AppIntent { static let title: LocalizedStringResource = &#34;ButtonIntent&#34; @Parameter(title: &#34;id&#34;) var id: String func perform() async throws -&gt; some IntentResult { if id == Command.playPause.rawValue { DataModel.shared.isPlaying.toggle() } return .result() } } Another crucial point is not to forget to add an explicit init. If you don’t implement it explicitly, it will not work. import AppIntents struct ButtonIntent: AppIntent { static let title: LocalizedStringResource = &#34;ButtonIntent&#34; @Parameter(title: &#34;id&#34;) var id: String init(id: String) { self.id = id } init() {} func perform() async throws -&gt; some IntentResult { if id == Command.playPause.rawValue { DataModel.shared.isPlaying.toggle() } return .result() } } Lastly, I attempted to add a Slider, but I found that it’s not supported by the widget. My solution was to choose a ProgressView instead. Implementation struct YouTubeLockScreenWidget: View { var body: some View { VStack { Spacer() ProgressView(value: DataModel.shared.currentTime, total: DataModel.shared.totalTime) .progressViewStyle(.linear) Spacer() HStack { ForEach(Command.allCases) { command in Button(intent: ButtonIntent(id: command.id)) { Image(systemName: imageSystemName(isPlaying: DataModel.shared.isPlaying, command: command)) } } } } } } final class DataModel { static let shared = DataModel() var isPlaying: Bool = false var currentTime: TimeInterval = 34 var totalTime: TimeInterval = 304 } enum Command: String, CaseIterable { case previous case playPause case next } extension Command: Identifiable { var id: String { rawValue } } func imageSystemName(isPlaying: Bool, command: Command) -&gt; String { switch command { case .playPause: if isPlaying { return &#34;pause.fill&#34; } else { return &#34;play.fill&#34; } case .next: return &#34;forward.fill&#34; case .previous: return &#34;backward.fill&#34; } } I had not replaced default generated code when I was adding widget to the project. I just added YouTubeLockScreenWidget to generated VideoStreamingWidgetEntryView.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-05 07:20:29 +0300 EEST'>May 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Building Video Streaming Widget for iOS App" href="http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/"></a>
@@ -246,23 +267,11 @@ Caveats After being stuck for two or more hours without understanding why, after
   <div class="entry-content">
     <p>Introduction I was looking for a way to add a video player to my iOS app that could be able to play remote videos.
 Caveats Problem I found that you can’t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 &#34;Operation Stopped&#34; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error. I don’t know exactly what this means, but I’m speculating it’s related to some protection.
-Solution My solution was to find another video that is not related to those platforms....</p>
+Solution My solution was to find another video that is not related to those platforms.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2024-05-03 07:34:56 +0300 EEST'>May 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Building Video Streaming iOS App" href="http://localhost:1313/posts/building-video-streaming-ios-app/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Building Group Chat using WebSockets
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I never had a chance to work with WebSockets, so I decided to take a look and create a group chat. Here’s what I discovered:
-To be able to send and receive messages, you need to create an interface for communication between a server and your application. In my case, I chose sendMessage and receiveMessage methods. For the server-side, I chose Node.js. For the iOS application, I chose the Socket....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-02 15:15:14 +0300 EEST'>May 2, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Building Group Chat using WebSockets" href="http://localhost:1313/posts/building-group-chat-using-websockets/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

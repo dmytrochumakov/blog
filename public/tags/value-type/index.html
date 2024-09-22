@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Value Type" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Value Type" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/value-type/" />
@@ -194,7 +197,8 @@ if (!doNotTrack) {
     <p>What are value types? Value types play a central role in programming languages by grouping data values.
 `Value type” is a type of data copied when assigned to a new variable.
 struct Storage { var data: String = &#34;some data&#34; } let originalStorage = Storage() var copiedStorage = originalStorage // `originalStorage` is copied to `copiedStorage` How can you pass value types? You can pass value type by copying value.
-struct Storage { var data: String = &#34;some data&#34; } let originalStorage = Storage() var copiedStorage = originalStorage // `originalStorage` is copied to `copiedStorage` copiedStorage....</p>
+struct Storage { var data: String = &#34;some data&#34; } let originalStorage = Storage() var copiedStorage = originalStorage // `originalStorage` is copied to `copiedStorage` copiedStorage.data = &#34;new data&#34; // Changes `copiedStorage`, not `originalStorage` print(&#34;\(originalStorage.data), \(copiedStorage.data)&#34;) // prints &#34;some data, new data&#34; The effect of assignment, initialization, and argument passing creates an independent instance with a unique copy of its data.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2023-12-28 00:00:00 +0300 +0300'>December 28, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to What are value types in Swift?" href="http://localhost:1313/posts/what-are-value-types-in-swift/"></a>

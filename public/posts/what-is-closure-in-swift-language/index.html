@@ -7,11 +7,23 @@
 <meta name="robots" content="index, follow">
 <title>What is closure in Swift language? | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Swift, Closure">
-<meta name="description" content="Introduction In this article, I’m going to briefly explain what closure is.
-Closures is self-conitained blocks of funcionality that can be passed around and used in your code. — Apple
+<meta name="description" content="Introduction
+In this article, I’m going to briefly explain what closure is.
+
+Closures is self-conitained blocks of funcionality that can be passed around and used in your code.
+— Apple
+
 Expression:
-{ (params) -&gt; return value in statements } @escaping When closure is marked as escaping, it will outlive or leave the scope you passed.
-func response(_ completionHandler: @escaping(Result) -&gt; Void) { completionHandler(.success) } @nonescaping By default, closures are nonescaping, meaning closure will no longer exist in memory after complete execution in the scope you have passed it to.">
+{ (params) -&gt; return value in
+  statements
+}
+@escaping
+When closure is marked as escaping, it will outlive or leave the scope you passed.
+func response(_ completionHandler: @escaping(Result) -&gt; Void) {
+   completionHandler(.success)
+}
+@nonescaping
+By default, closures are nonescaping, meaning closure will no longer exist in memory after complete execution in the scope you have passed it to.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/what-is-closure-in-swift-language/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -78,22 +90,37 @@ func response(_ completionHandler: @escaping(Result) -&gt; Void) { completionHan
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="What is closure in Swift language?" />
-<meta property="og:description" content="Introduction In this article, I’m going to briefly explain what closure is.
-Closures is self-conitained blocks of funcionality that can be passed around and used in your code. — Apple
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="What is closure in Swift language?" />
+<meta property="og:description" content="Introduction
+In this article, I’m going to briefly explain what closure is.
+
+Closures is self-conitained blocks of funcionality that can be passed around and used in your code.
+— Apple
+
 Expression:
-{ (params) -&gt; return value in statements } @escaping When closure is marked as escaping, it will outlive or leave the scope you passed.
-func response(_ completionHandler: @escaping(Result) -&gt; Void) { completionHandler(.success) } @nonescaping By default, closures are nonescaping, meaning closure will no longer exist in memory after complete execution in the scope you have passed it to." />
+{ (params) -&gt; return value in
+  statements
+}
+@escaping
+When closure is marked as escaping, it will outlive or leave the scope you passed.
+func response(_ completionHandler: @escaping(Result) -&gt; Void) {
+   completionHandler(.success)
+}
+@nonescaping
+By default, closures are nonescaping, meaning closure will no longer exist in memory after complete execution in the scope you have passed it to." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/what-is-closure-in-swift-language/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -104,11 +131,23 @@ func response(_ completionHandler: @escaping(Result) -&gt; Void) { completionHan
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="What is closure in Swift language?"/>
-<meta name="twitter:description" content="Introduction In this article, I’m going to briefly explain what closure is.
-Closures is self-conitained blocks of funcionality that can be passed around and used in your code. — Apple
+<meta name="twitter:description" content="Introduction
+In this article, I’m going to briefly explain what closure is.
+
+Closures is self-conitained blocks of funcionality that can be passed around and used in your code.
+— Apple
+
 Expression:
-{ (params) -&gt; return value in statements } @escaping When closure is marked as escaping, it will outlive or leave the scope you passed.
-func response(_ completionHandler: @escaping(Result) -&gt; Void) { completionHandler(.success) } @nonescaping By default, closures are nonescaping, meaning closure will no longer exist in memory after complete execution in the scope you have passed it to."/>
+{ (params) -&gt; return value in
+  statements
+}
+@escaping
+When closure is marked as escaping, it will outlive or leave the scope you passed.
+func response(_ completionHandler: @escaping(Result) -&gt; Void) {
+   completionHandler(.success)
+}
+@nonescaping
+By default, closures are nonescaping, meaning closure will no longer exist in memory after complete execution in the scope you have passed it to."/>
 
 
 <script type="application/ld+json">
@@ -137,7 +176,7 @@ func response(_ completionHandler: @escaping(Result) -&gt; Void) { completionHan
   "@type": "BlogPosting",
   "headline": "What is closure in Swift language?",
   "name": "What is closure in Swift language?",
-  "description": "Introduction In this article, I’m going to briefly explain what closure is.\nClosures is self-conitained blocks of funcionality that can be passed around and used in your code. — Apple\nExpression:\n{ (params) -\u0026gt; return value in statements } @escaping When closure is marked as escaping, it will outlive or leave the scope you passed.\nfunc response(_ completionHandler: @escaping(Result) -\u0026gt; Void) { completionHandler(.success) } @nonescaping By default, closures are nonescaping, meaning closure will no longer exist in memory after complete execution in the scope you have passed it to.",
+  "description": "Introduction In this article, I’m going to briefly explain what closure is.\nClosures is self-conitained blocks of funcionality that can be passed around and used in your code. — Apple\nExpression:\n{ (params) -\u0026gt; return value in statements } @escaping When closure is marked as escaping, it will outlive or leave the scope you passed.\nfunc response(_ completionHandler: @escaping(Result) -\u0026gt; Void) { completionHandler(.success) } @nonescaping By default, closures are nonescaping, meaning closure will no longer exist in memory after complete execution in the scope you have passed it to.\n",
   "keywords": [
     "Swift", "Closure"
   ],

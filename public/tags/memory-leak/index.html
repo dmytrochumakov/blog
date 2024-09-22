@@ -75,17 +75,20 @@
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Memory Leak" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="Memory Leak" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/memory-leak/" />
@@ -194,7 +197,8 @@ if (!doNotTrack) {
     <p>I was searching for tools that could help me find memory leaks faster and would be simple in implementation without affecting performance and memory size of application.
 I found a fantastic fit for this task LifetimeTracker developed by Krzysztof Zabłocki.
 All you need is to add LifetimeTracker package to the project, inherit from LifetimeTrackable protocol, and add two lines of code.
-class Department: LifetimeTrackable {} trackLifetime method to init of instance that you are going to verify, and lifetimeConfiguration property where you set max number of valid instances....</p>
+class Department: LifetimeTrackable {} trackLifetime method to init of instance that you are going to verify, and lifetimeConfiguration property where you set max number of valid instances.
+...</p>
   </div>
   <footer class="entry-footer"><span title='2023-12-24 00:00:00 +0300 +0300'>December 24, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to How to prevent memory leaks?" href="http://localhost:1313/posts/how-to-prevent-memory-leaks/"></a>
@@ -209,7 +213,7 @@ class Department: LifetimeTrackable {} trackLifetime method to init of instance 
     <p>The common way to find memory leaks is by using Xcode Instruments. All you need is the following:
 Open Xcode Instruments
 Choose Leaks option Select Simulator where you are going to test your application Select your installed application When you finish preparation, you can start immediate recoding and check application for leaks. To do that, you need to open Simulator and try some cases that could cause memory leaks.
-After you spend some time trying different scenarios, you can see that Instruments found Leaked Objects....</p>
+...</p>
   </div>
   <footer class="entry-footer"><span title='2023-12-20 00:00:00 +0300 +0300'>December 20, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to How to find memory leaks?" href="http://localhost:1313/posts/how-to-find-memory-leaks/"></a>

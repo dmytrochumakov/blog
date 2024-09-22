@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Sun, 04 Feb 2024 08:29:30 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
@@ -18,35 +18,85 @@
       <link>http://localhost:1313/posts/modern-concurrency/</link>
       <pubDate>Sun, 04 Feb 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/posts/modern-concurrency/</guid>
-      <description>When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
-You can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.
-What are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
-actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&amp;gt; String?</description>
+      <description>&lt;h3 id=&#34;when-was-it-introduced&#34;&gt;When was it introduced?&lt;/h3&gt;
+&lt;p&gt;It was introduced in &lt;a href=&#34;https://github.com/apple/swift/tree/swift-5.5-RELEASE&#34;&gt;Swift 5.5&lt;/a&gt; at &lt;a href=&#34;https://developer.apple.com/videos/wwdc2021/&#34;&gt;WWDC 2021&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can find the more comprehensive info about Modern Concurrency in &lt;a href=&#34;https://gist.github.com/lattner/31ed37682ef1576b16bca1432ea9f782#swift-concurrency-manifesto&#34;&gt;Swift Concurrency Manifesto&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;what-are-actors&#34;&gt;What are actors?&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/#Actors&#34;&gt;Actors&lt;/a&gt; eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are &lt;a href=&#34;https://www.swift.org/documentation/articles/value-and-reference-types.html#:~:text=changing%20the%20value.-,Reference%20Types,-In%20Swift%2C%20classes&#34;&gt;reference types&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;actor&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;DatabaseManager&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[:]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;readData&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;writeData&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;value&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;what-is-an-asynchronous-function&#34;&gt;What is an asynchronous function?&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/#Defining-and-Calling-Asynchronous-Functions&#34;&gt;The asynchronous function&lt;/a&gt; or asynchronous method can be suspended while it is partway through execution. It can pause in the middle when it’s waiting for something.&lt;/p&gt;</description>
     </item>
     <item>
       <title>What are Threads in Swift?</title>
       <link>http://localhost:1313/posts/what-are-threads-in-swift/</link>
       <pubDate>Sat, 20 Jan 2024 08:29:30 +0300</pubDate>
       <guid>http://localhost:1313/posts/what-are-threads-in-swift/</guid>
-      <description>What is the Thread? A Thread is a small set of instructions that can be executed independently from the main program. Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time. The Thread has its own stack, registers, and program counters.
-Threads share memory address space, and it is possible to communicate between Threads using shared memory space. How to use it?</description>
+      <description>&lt;h3 id=&#34;what-is-the-thread&#34;&gt;What is the Thread?&lt;/h3&gt;
+&lt;p&gt;A &lt;a href=&#34;https://developer.apple.com/documentation/foundation/thread&#34;&gt;Thread&lt;/a&gt; is a small set of instructions that can be executed independently from the main program.
+Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time.
+The Thread has its own &lt;code&gt;stack&lt;/code&gt;, &lt;code&gt;registers&lt;/code&gt;, and &lt;code&gt;program counters&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-35972&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-35972&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/0.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;Threads share memory address space, and it is possible to communicate between Threads using shared memory space.
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-3a9c2&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-3a9c2&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/1.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;</description>
     </item>
     <item>
       <title>DispatchGroup in Swift</title>
       <link>http://localhost:1313/posts/dispatchgroup-in-swift/</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0300</pubDate>
       <guid>http://localhost:1313/posts/dispatchgroup-in-swift/</guid>
-      <description>What is DispatchGroup? DispatchGroup provides a mechanism to track the completion group of tasks.
-How DispatchGroup works? DispatchGroup has three main methods, enter, leave and notify, that allow you to control the completion of a specific task.
-let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() dispatchGroup.notify(queue: .main) {} Let`s talk about each of these methods. enter — manually indicate a block has entered group. leave — manually indicate a block in the group has been completed.</description>
+      <description>&lt;h3 id=&#34;what-is-dispatchgroup&#34;&gt;What is DispatchGroup?&lt;/h3&gt;
+&lt;p&gt;DispatchGroup provides a mechanism to track the completion group of tasks.&lt;/p&gt;
+&lt;h3 id=&#34;how-dispatchgroup-works&#34;&gt;How DispatchGroup works?&lt;/h3&gt;
+&lt;p&gt;DispatchGroup has three main methods, &lt;code&gt;enter&lt;/code&gt;, &lt;code&gt;leave&lt;/code&gt; and &lt;code&gt;notify&lt;/code&gt;, that allow you to control the completion of a specific task.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;dispatchGroup&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;DispatchGroup&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dispatchGroup&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;enter&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dispatchGroup&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;leave&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dispatchGroup&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;notify&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;queue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;lets-talk-about-each-of-these-methods&#34;&gt;Let`s talk about each of these methods.&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;enter&lt;/code&gt; — manually indicate a block has entered group.
+&lt;code&gt;leave&lt;/code&gt; — manually indicate a block in the group has been completed.
+&lt;code&gt;notify(queue: )&lt;/code&gt; — schedule a block to be submitted to a queue when all the blocks associated with a group have been completed. The &lt;code&gt;queue&lt;/code&gt; parameter is the queue to which the supplied block will be submitted when the group is complete.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Concurrency in Swift</title>
       <link>http://localhost:1313/posts/concurrency-in-swift/</link>
       <pubDate>Sun, 07 Jan 2024 00:00:00 +0300</pubDate>
       <guid>http://localhost:1313/posts/concurrency-in-swift/</guid>
-      <description>What is concurrency? The system can perform multiple tasks simultaneously. By tasks, I mean code or instructions. Modern computer chips have multiple cores that allow developers to create and run various tasks on multiple cores. Even if your chip has one core operating system it will provide context switching mechanism by enabling it to execute multiple tasks concurrently.
-Material about processes, threads I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it.</description>
+      <description>&lt;h3 id=&#34;what-is-concurrency&#34;&gt;What is concurrency?&lt;/h3&gt;
+&lt;p&gt;The system can perform multiple tasks simultaneously. By tasks, I mean &lt;code&gt;code or instructions&lt;/code&gt;.
+Modern computer chips have multiple cores that allow developers to create and run various tasks on multiple cores. Even if your chip has one core operating system it will provide context switching mechanism by enabling it to execute multiple tasks concurrently.&lt;/p&gt;
+&lt;h3 id=&#34;material-about-processes-threads&#34;&gt;Material about processes, threads&lt;/h3&gt;
+&lt;p&gt;I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it. I attached links to the material to help you understand it more deeply.
+&lt;a href=&#34;https://youtu.be/4rLW7zg21gI?si=49hq8Wrbpmeev41k&#34;&gt;https://youtu.be/4rLW7zg21gI?si=49hq8Wrbpmeev41k&lt;/a&gt;
+&lt;a href=&#34;https://youtu.be/r2__Rw8vu1M?si=b7b257Qu4Bty7OxA&#34;&gt;https://youtu.be/r2__Rw8vu1M?si=b7b257Qu4Bty7OxA&lt;/a&gt;
+I will focus on implementation.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

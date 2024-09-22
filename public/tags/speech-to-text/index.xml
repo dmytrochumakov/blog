@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Thu, 23 May 2024 08:37:45 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/speech-to-text/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,19 @@
       <link>http://localhost:1313/posts/speech-to-text-ios/</link>
       <pubDate>Thu, 23 May 2024 08:37:45 +0300</pubDate>
       <guid>http://localhost:1313/posts/speech-to-text-ios/</guid>
-      <description>Introduction I always wanted an iOS app that would allow me to economize my time by converting speech to text. I know this option is built into the keyboard, but you first need to click the text field, then tap on the microphone, and finally speak. I wanted a one-click option with the possibility to integrate it into all my daily routines. Here is what I discovered:
-First Step The first step is to request authorization to access the device&amp;rsquo;s microphone using the Privacy - Speech Recognition Usage Description key and the Privacy - Microphone Usage Description key.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I always wanted an iOS app that would allow me to economize my time by converting speech to text.
+I know this option is built into the keyboard, but you first need to click the text field, then tap on the microphone, and finally speak.
+I wanted a one-click option with the possibility to integrate it into all my daily routines. Here is what I discovered:&lt;/p&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-3215a&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-3215a&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/0.gif#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Mon, 13 May 2024 07:31:49 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/touch-id/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,12 @@
       <link>http://localhost:1313/posts/securing-user-data-with-keychain-touch-id-and-face-id/</link>
       <pubDate>Mon, 13 May 2024 07:31:49 +0300</pubDate>
       <guid>http://localhost:1313/posts/securing-user-data-with-keychain-touch-id-and-face-id/</guid>
-      <description>Introduction I was eager to learn about securing user data using Keychain and biometric authentication. Here are a few steps I found:
-Caveats You can test accessing Keychain data using Touch ID and Face ID only on a real device.
-First Step The first step is to add the Privacy - Face ID Usage Description key to your Info.plist. Without it, you would not be able to retrieve data from Keychain using Face ID.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I was eager to learn about securing user data using &lt;code&gt;Keychain&lt;/code&gt; and &lt;code&gt;biometric authentication&lt;/code&gt;. Here are a few steps I found:&lt;/p&gt;
+&lt;h3 id=&#34;caveats&#34;&gt;Caveats&lt;/h3&gt;
+&lt;p&gt;You can test accessing Keychain data using Touch ID and Face ID only on a real device.&lt;/p&gt;
+&lt;h3 id=&#34;first-step&#34;&gt;First Step&lt;/h3&gt;
+&lt;p&gt;The first step is to add the &lt;code&gt;Privacy - Face ID Usage Description&lt;/code&gt; key to your &lt;code&gt;Info.plist&lt;/code&gt;. Without it, you would not be able to retrieve data from &lt;code&gt;Keychain&lt;/code&gt; using &lt;code&gt;Face ID&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

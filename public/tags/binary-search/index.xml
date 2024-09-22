@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Mon, 26 Aug 2024 07:09:48 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/binary-search/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,10 @@
       <link>http://localhost:1313/posts/dsa-binary-search/</link>
       <pubDate>Mon, 26 Aug 2024 07:09:48 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-binary-search/</guid>
-      <description>What is binary search? Binary search is an algorithm that helps find an element in a sorted array in O(log n) time.
-Why should the input be sorted before performing binary search? The input array for binary search needs to be sorted because the algorithm eliminates half of the choices at each step. If the guessed value is greater than the target value, it knows that the right part can’t contain the target value.</description>
+      <description>&lt;h3 id=&#34;what-is-binary-search&#34;&gt;What is binary search?&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Binary_search&#34;&gt;Binary search&lt;/a&gt; is an algorithm that helps find an element in a sorted array in O(log n) time.&lt;/p&gt;
+&lt;h3 id=&#34;why-should-the-input-be-sorted-before-performing-binary-search&#34;&gt;Why should the input be sorted before performing binary search?&lt;/h3&gt;
+&lt;p&gt;The input array for binary search needs to be sorted because the algorithm eliminates half of the choices at each step. If the guessed value is greater than the target value, it knows that the right part can’t contain the target value.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

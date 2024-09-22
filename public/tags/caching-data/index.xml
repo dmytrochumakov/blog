@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Wed, 05 Jun 2024 07:13:58 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/caching-data/index.xml" rel="self" type="application/rss+xml" />
@@ -18,8 +18,17 @@
       <link>http://localhost:1313/posts/caching-data-using-nscache-in-ios/</link>
       <pubDate>Wed, 05 Jun 2024 07:13:58 +0300</pubDate>
       <guid>http://localhost:1313/posts/caching-data-using-nscache-in-ios/</guid>
-      <description>Introduction I was curious about caching data using NSCache for an iOS app. So, I did some digging. Here is what I found:
-Quick Overview NSCache helps store data in memory. When the application gets killed, it frees memory; it’s not persisted on disk. Storing data is carried out using a key-value pair mechanism like Dictionary. You can set automatic eviction to delete objects automatically. NSCache has multi-platform support: iOS, iPadOS, watchOS, macOS, and tvOS.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I was curious about caching data using &lt;a href=&#34;https://developer.apple.com/documentation/foundation/nscache&#34;&gt;&lt;code&gt;NSCache&lt;/code&gt;&lt;/a&gt; for an iOS app. So, I did some digging. Here is what I found:&lt;/p&gt;
+&lt;h3 id=&#34;quick-overview&#34;&gt;Quick Overview&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;NSCache&lt;/code&gt; helps store data in memory. When the application gets killed, it frees memory; it’s not persisted on disk.&lt;/li&gt;
+&lt;li&gt;Storing data is carried out using a key-value pair mechanism like &lt;code&gt;Dictionary&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;You can set automatic eviction to delete objects automatically.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;NSCache&lt;/code&gt; has multi-platform support: iOS, iPadOS, watchOS, macOS, and tvOS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;caveats&#34;&gt;Caveats&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;NSCache&lt;/code&gt; has Objective-C roots. It can’t use &lt;code&gt;struct&lt;/code&gt; because it is constrained to conform to &lt;code&gt;AnyObject&lt;/code&gt;, meaning you must use &lt;code&gt;class&lt;/code&gt; and &lt;code&gt;NSString&lt;/code&gt; instead of &lt;code&gt;String&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

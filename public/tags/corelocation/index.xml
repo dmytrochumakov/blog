@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Tue, 23 Jul 2024 07:04:25 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/corelocation/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,16 @@
       <link>http://localhost:1313/posts/implementing-location-service/</link>
       <pubDate>Tue, 23 Jul 2024 07:04:25 +0300</pubDate>
       <guid>http://localhost:1313/posts/implementing-location-service/</guid>
-      <description>Introduction Nowadays, location is an essential feature in almost every application. It&amp;rsquo;s very important to know the best ways to implement it without affecting performance and user experience. In this article, I will focus on how to implement general methods in location service.
-Preparation Before we begin, let&amp;rsquo;s add location permission keys to Info.plist:
-Privacy - Location When In Use Usage Description Privacy - Location Always and When In Use Usage Description First Step The first step is to create LocationService with the requestPermissions method to be able to receive location events.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;Nowadays, location is an essential feature in almost every application. It&amp;rsquo;s very important to know the best ways to implement it without affecting performance and user experience. In this article, I will focus on how to implement general methods in location service.&lt;/p&gt;
+&lt;h3 id=&#34;preparation&#34;&gt;Preparation&lt;/h3&gt;
+&lt;p&gt;Before we begin, let&amp;rsquo;s add location permission keys to &lt;code&gt;Info.plist&lt;/code&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Privacy - Location When In Use Usage Description&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Privacy - Location Always and When In Use Usage Description&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;first-step&#34;&gt;First Step&lt;/h3&gt;
+&lt;p&gt;The first step is to create &lt;code&gt;LocationService&lt;/code&gt; with the &lt;code&gt;requestPermissions&lt;/code&gt; method to be able to receive location events.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -7,10 +7,16 @@
 <meta name="robots" content="index, follow">
 <title>DSA - Queue | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="DSA, Data Structures, Algorithms, Queue, Linked List Queue, Swift">
-<meta name="description" content="What is a Queue? A Queue is an abstract data type that serves as an ordered collection of elements.
+<meta name="description" content="What is a Queue?
+A Queue is an abstract data type that serves as an ordered collection of elements.
 A simple queue typically has several operations:
-push(item) - adds an item to the tail pop() - removes and returns an item from the head These operations make a queue a FIFO (First In, First Out) data structure.
-Implementation There are two ways to implement a queue.
+
+push(item) - adds an item to the tail
+pop() - removes and returns an item from the head
+
+These operations make a queue a FIFO (First In, First Out) data structure.
+Implementation
+There are two ways to implement a queue.
 The first and simplest (but less efficient) way is by using an array and basic operations:">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/dsa-queue/">
@@ -78,21 +84,30 @@ The first and simplest (but less efficient) way is by using an array and basic o
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="DSA - Queue" />
-<meta property="og:description" content="What is a Queue? A Queue is an abstract data type that serves as an ordered collection of elements.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="DSA - Queue" />
+<meta property="og:description" content="What is a Queue?
+A Queue is an abstract data type that serves as an ordered collection of elements.
 A simple queue typically has several operations:
-push(item) - adds an item to the tail pop() - removes and returns an item from the head These operations make a queue a FIFO (First In, First Out) data structure.
-Implementation There are two ways to implement a queue.
+
+push(item) - adds an item to the tail
+pop() - removes and returns an item from the head
+
+These operations make a queue a FIFO (First In, First Out) data structure.
+Implementation
+There are two ways to implement a queue.
 The first and simplest (but less efficient) way is by using an array and basic operations:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/dsa-queue/" />
@@ -104,10 +119,16 @@ The first and simplest (but less efficient) way is by using an array and basic o
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="DSA - Queue"/>
-<meta name="twitter:description" content="What is a Queue? A Queue is an abstract data type that serves as an ordered collection of elements.
+<meta name="twitter:description" content="What is a Queue?
+A Queue is an abstract data type that serves as an ordered collection of elements.
 A simple queue typically has several operations:
-push(item) - adds an item to the tail pop() - removes and returns an item from the head These operations make a queue a FIFO (First In, First Out) data structure.
-Implementation There are two ways to implement a queue.
+
+push(item) - adds an item to the tail
+pop() - removes and returns an item from the head
+
+These operations make a queue a FIFO (First In, First Out) data structure.
+Implementation
+There are two ways to implement a queue.
 The first and simplest (but less efficient) way is by using an array and basic operations:"/>
 
 
@@ -137,7 +158,7 @@ The first and simplest (but less efficient) way is by using an array and basic o
   "@type": "BlogPosting",
   "headline": "DSA - Queue",
   "name": "DSA - Queue",
-  "description": "What is a Queue? A Queue is an abstract data type that serves as an ordered collection of elements.\nA simple queue typically has several operations:\npush(item) - adds an item to the tail pop() - removes and returns an item from the head These operations make a queue a FIFO (First In, First Out) data structure.\nImplementation There are two ways to implement a queue.\nThe first and simplest (but less efficient) way is by using an array and basic operations:",
+  "description": "What is a Queue? A Queue is an abstract data type that serves as an ordered collection of elements.\nA simple queue typically has several operations:\npush(item) - adds an item to the tail pop() - removes and returns an item from the head These operations make a queue a FIFO (First In, First Out) data structure.\nImplementation There are two ways to implement a queue.\nThe first and simplest (but less efficient) way is by using an array and basic operations:\n",
   "keywords": [
     "DSA", "Data Structures", "Algorithms", "Queue", "Linked List Queue", "Swift"
   ],
@@ -363,25 +384,25 @@ The first and simplest (but less efficient) way is by using an array and basic o
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><h4 id="timespace-complexity-using-a-linked-list-queue">Time/Space Complexity using a Linked List Queue<a hidden class="anchor" aria-hidden="true" href="#timespace-complexity-using-a-linked-list-queue">#</a></h4>
 <table>
-<thead>
-<tr>
-<th>Operation</th>
-<th>Average</th>
-<th>Worst Case</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Insert</td>
-<td>O(1)</td>
-<td>O(1)</td>
-</tr>
-<tr>
-<td>Delete</td>
-<td>O(1)</td>
-<td>O(1)</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Operation</th>
+          <th style="text-align: left">Average</th>
+          <th style="text-align: left">Worst Case</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Insert</td>
+          <td style="text-align: left">O(1)</td>
+          <td style="text-align: left">O(1)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Delete</td>
+          <td style="text-align: left">O(1)</td>
+          <td style="text-align: left">O(1)</td>
+      </tr>
+  </tbody>
 </table>
 <p><strong>Space Complexity</strong>: O(n) for both average and worst case.</p>
 <h4 id="thank-you-for-reading-">Thank you for reading! 😊<a hidden class="anchor" aria-hidden="true" href="#thank-you-for-reading-">#</a></h4>
@@ -399,6 +420,11 @@ The first and simplest (but less efficient) way is by using an array and basic o
       <li><a href="http://localhost:1313/tags/swift/">Swift</a></li>
     </ul>
 <nav class="paginav">
+  <a class="prev" href="http://localhost:1313/posts/dsa-binary-search-tree-min-max/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>DSA - Binary Search Tree Min/Max</span>
+  </a>
   <a class="next" href="http://localhost:1313/posts/dsa-adjacency-list/">
     <span class="title">Next »</span>
     <br>

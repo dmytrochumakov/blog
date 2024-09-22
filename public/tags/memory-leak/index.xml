@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.123.3</generator>
+    <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
     <lastBuildDate>Sun, 24 Dec 2023 00:00:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/memory-leak/index.xml" rel="self" type="application/rss+xml" />
@@ -18,20 +18,61 @@
       <link>http://localhost:1313/posts/how-to-prevent-memory-leaks/</link>
       <pubDate>Sun, 24 Dec 2023 00:00:00 +0300</pubDate>
       <guid>http://localhost:1313/posts/how-to-prevent-memory-leaks/</guid>
-      <description>I was searching for tools that could help me find memory leaks faster and would be simple in implementation without affecting performance and memory size of application.
-I found a fantastic fit for this task LifetimeTracker developed by Krzysztof Zabłocki.
-All you need is to add LifetimeTracker package to the project, inherit from LifetimeTrackable protocol, and add two lines of code.
-class Department: LifetimeTrackable {} trackLifetime method to init of instance that you are going to verify, and lifetimeConfiguration property where you set max number of valid instances.</description>
+      <description>&lt;p&gt;I was searching for tools that could help me find memory leaks faster and would be simple in implementation without affecting performance and memory size of application.&lt;/p&gt;
+&lt;p&gt;I found a fantastic fit for this task &lt;a href=&#34;https://github.com/krzysztofzablocki/LifetimeTracker&#34;&gt;&lt;code&gt;LifetimeTracker&lt;/code&gt;&lt;/a&gt; developed by &lt;a href=&#34;https://twitter.com/merowing_&#34;&gt;Krzysztof Zabłocki&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;All you need is to add &lt;code&gt;LifetimeTracker&lt;/code&gt; package to the project, inherit from &lt;code&gt;LifetimeTrackable&lt;/code&gt; protocol, and add two lines of code.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Department&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;LifetimeTrackable&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;trackLifetime&lt;/code&gt; method to &lt;code&gt;init&lt;/code&gt; of instance that you are going to verify, and &lt;code&gt;lifetimeConfiguration&lt;/code&gt; property where you set max number of valid instances.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to find memory leaks?</title>
       <link>http://localhost:1313/posts/how-to-find-memory-leaks/</link>
       <pubDate>Wed, 20 Dec 2023 00:00:00 +0300</pubDate>
       <guid>http://localhost:1313/posts/how-to-find-memory-leaks/</guid>
-      <description>The common way to find memory leaks is by using Xcode Instruments. All you need is the following:
-Open Xcode Instruments
-Choose Leaks option Select Simulator where you are going to test your application Select your installed application When you finish preparation, you can start immediate recoding and check application for leaks. To do that, you need to open Simulator and try some cases that could cause memory leaks.
-After you spend some time trying different scenarios, you can see that Instruments found Leaked Objects.</description>
+      <description>&lt;p&gt;The common way to find memory leaks is by using Xcode Instruments.
+All you need is the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Open Xcode Instruments&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose Leaks option
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-3a9c2&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-3a9c2&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/1.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Select Simulator where you are going to test your application
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-956ad&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-956ad&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/2.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Select your installed application
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-1ab49&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-1ab49&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/3.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When you finish preparation, you can start immediate recoding and check application for leaks. To do that, you need to open Simulator and try some cases that could cause memory leaks.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

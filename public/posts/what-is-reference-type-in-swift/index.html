@@ -7,11 +7,30 @@
 <meta name="robots" content="index, follow">
 <title>What is “reference type” in Swift? | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Swift, Reference Type">
-<meta name="description" content="Introduction In Swift, classes, closures, and actors all reference types.
+<meta name="description" content="Introduction
+In Swift, classes, closures, and actors all reference types.
+
 &lsquo;Reference type’ is instance that shares a single copy of data.
+
 Assigning a reference type to a constant or variable, or passing it into a function or method, it is always a reference to a shared instance that is assigned or passed in.
-Example You can pass your property value by sharing the same address in memory.
-// Reference type example class Storage { var data = “data-example” } var storage = Storage() print(&#34;\(storage.">
+Example
+You can pass your property value by sharing the same address in memory.
+// Reference type example
+class Storage { var data = “data-example” }
+var storage = Storage()
+print(&#34;\(storage.data)&#34;) // prints &#34;data-example&#34;
+print(&#34;storage address:&#34;, Unmanaged.passUnretained(storage).toOpaque())
+var copiedStorage = storage      
+copiedStorage.data = “new-data”      
+print(&#34;\(storage.data), \(copiedStorage.data)&#34;) // prints &#34;new-data, new-data&#34;
+print(&#34;copiedStorage address:&#34;, Unmanaged.passUnretained(copiedStorage).toOpaque())
+
+    
+    
+    
+        
+    
+">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/what-is-reference-type-in-swift/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -78,22 +97,44 @@ Example You can pass your property value by sharing the same address in memory.
     }
     </style>
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-HZZ4JTFGDP', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="What is “reference type” in Swift?" />
-<meta property="og:description" content="Introduction In Swift, classes, closures, and actors all reference types.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:title" content="What is “reference type” in Swift?" />
+<meta property="og:description" content="Introduction
+In Swift, classes, closures, and actors all reference types.
+
 &lsquo;Reference type’ is instance that shares a single copy of data.
+
 Assigning a reference type to a constant or variable, or passing it into a function or method, it is always a reference to a shared instance that is assigned or passed in.
-Example You can pass your property value by sharing the same address in memory.
-// Reference type example class Storage { var data = “data-example” } var storage = Storage() print(&#34;\(storage." />
+Example
+You can pass your property value by sharing the same address in memory.
+// Reference type example
+class Storage { var data = “data-example” }
+var storage = Storage()
+print(&#34;\(storage.data)&#34;) // prints &#34;data-example&#34;
+print(&#34;storage address:&#34;, Unmanaged.passUnretained(storage).toOpaque())
+var copiedStorage = storage      
+copiedStorage.data = “new-data”      
+print(&#34;\(storage.data), \(copiedStorage.data)&#34;) // prints &#34;new-data, new-data&#34;
+print(&#34;copiedStorage address:&#34;, Unmanaged.passUnretained(copiedStorage).toOpaque())
+
+    
+    
+    
+        
+    
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/what-is-reference-type-in-swift/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
@@ -104,11 +145,30 @@ Example You can pass your property value by sharing the same address in memory.
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta name="twitter:title" content="What is “reference type” in Swift?"/>
-<meta name="twitter:description" content="Introduction In Swift, classes, closures, and actors all reference types.
+<meta name="twitter:description" content="Introduction
+In Swift, classes, closures, and actors all reference types.
+
 &lsquo;Reference type’ is instance that shares a single copy of data.
+
 Assigning a reference type to a constant or variable, or passing it into a function or method, it is always a reference to a shared instance that is assigned or passed in.
-Example You can pass your property value by sharing the same address in memory.
-// Reference type example class Storage { var data = “data-example” } var storage = Storage() print(&#34;\(storage."/>
+Example
+You can pass your property value by sharing the same address in memory.
+// Reference type example
+class Storage { var data = “data-example” }
+var storage = Storage()
+print(&#34;\(storage.data)&#34;) // prints &#34;data-example&#34;
+print(&#34;storage address:&#34;, Unmanaged.passUnretained(storage).toOpaque())
+var copiedStorage = storage      
+copiedStorage.data = “new-data”      
+print(&#34;\(storage.data), \(copiedStorage.data)&#34;) // prints &#34;new-data, new-data&#34;
+print(&#34;copiedStorage address:&#34;, Unmanaged.passUnretained(copiedStorage).toOpaque())
+
+    
+    
+    
+        
+    
+"/>
 
 
 <script type="application/ld+json">
@@ -137,7 +197,7 @@ Example You can pass your property value by sharing the same address in memory.
   "@type": "BlogPosting",
   "headline": "What is “reference type” in Swift?",
   "name": "What is “reference type” in Swift?",
-  "description": "Introduction In Swift, classes, closures, and actors all reference types.\n\u0026lsquo;Reference type’ is instance that shares a single copy of data.\nAssigning a reference type to a constant or variable, or passing it into a function or method, it is always a reference to a shared instance that is assigned or passed in.\nExample You can pass your property value by sharing the same address in memory.\n// Reference type example class Storage { var data = “data-example” } var storage = Storage() print(\u0026#34;\\(storage.",
+  "description": "Introduction In Swift, classes, closures, and actors all reference types.\n\u0026lsquo;Reference type’ is instance that shares a single copy of data.\nAssigning a reference type to a constant or variable, or passing it into a function or method, it is always a reference to a shared instance that is assigned or passed in.\nExample You can pass your property value by sharing the same address in memory.\n// Reference type example class Storage { var data = “data-example” } var storage = Storage() print(\u0026#34;\\(storage.data)\u0026#34;) // prints \u0026#34;data-example\u0026#34; print(\u0026#34;storage address:\u0026#34;, Unmanaged.passUnretained(storage).toOpaque()) var copiedStorage = storage copiedStorage.data = “new-data” print(\u0026#34;\\(storage.data), \\(copiedStorage.data)\u0026#34;) // prints \u0026#34;new-data, new-data\u0026#34; print(\u0026#34;copiedStorage address:\u0026#34;, Unmanaged.passUnretained(copiedStorage).toOpaque()) ",
   "keywords": [
     "Swift", "Reference Type"
   ],
