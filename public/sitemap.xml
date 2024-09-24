@@ -3,22 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/algorithms/</loc>
-    <lastmod>2024-09-22T07:26:23+03:00</lastmod>
+    <lastmod>2024-09-24T06:53:52+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/binary-search-tree/</loc>
-    <lastmod>2024-09-22T07:26:23+03:00</lastmod>
+    <lastmod>2024-09-24T06:53:52+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/bst/</loc>
-    <lastmod>2024-09-22T07:26:23+03:00</lastmod>
+    <lastmod>2024-09-24T06:53:52+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/data-structures/</loc>
-    <lastmod>2024-09-22T07:26:23+03:00</lastmod>
+    <lastmod>2024-09-24T06:53:52+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/delete/</loc>
+    <lastmod>2024-09-24T06:53:52+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-09-22T07:26:23+03:00</lastmod>
+    <lastmod>2024-09-24T06:53:52+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/dsa/</loc>
-    <lastmod>2024-09-22T07:26:23+03:00</lastmod>
+    <lastmod>2024-09-24T06:53:52+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/dsa-binary-search-tree-delete/</loc>
+    <lastmod>2024-09-24T06:53:52+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-09-24T06:53:52+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swift/</loc>
+    <lastmod>2024-09-24T06:53:52+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-09-24T06:53:52+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/dsa-binary-search-tree-min-max/</loc>
     <lastmod>2024-09-22T07:26:23+03:00</lastmod>
@@ -27,15 +42,6 @@
     <lastmod>2024-09-22T07:26:23+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/min/</loc>
-    <lastmod>2024-09-22T07:26:23+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-09-22T07:26:23+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2024-09-22T07:26:23+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-09-22T07:26:23+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/dsa-queue/</loc>

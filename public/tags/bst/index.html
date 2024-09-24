@@ -190,6 +190,20 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - Binary Search Tree - Delete
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction The delete algorithm is perhaps one of the hardest parts of managing a binary search tree (BST).
+Code Example final class BSTNode { var val: Int? var left: BSTNode? var right: BSTNode? init(val: Int? = nil) { self.val = val } func delete(_ val: Int) -&gt; BSTNode? { // 1 guard let selfVal = self.val else { return nil } // 2 if val &lt; selfVal { if self.left == nil { return self } self.left = self.left!.delete(val) } // 3 if val &gt; selfVal { if self.right == nil { return self } self.right = self.right!.delete(val) } // 4 if self.right == nil { return self.left } // 5 if self.left == nil { return self.right } // 6 var minLargerNode = self.right while minLargerNode?.left != nil { minLargerNode = minLargerNode?.left } guard let minLargerNode = minLargerNode else { return self } self.val = minLargerNode.val self.right = self.right?.delete(minLargerNode.val!) return self } } Implementation Let’s look at the details:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-09-24 06:53:52 +0300 EEST'>September 24, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to DSA - Binary Search Tree - Delete" href="http://localhost:1313/posts/dsa-binary-search-tree-delete/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">DSA - Binary Search Tree Min/Max
     </h2>
   </header>

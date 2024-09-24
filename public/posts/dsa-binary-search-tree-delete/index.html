@@ -5,35 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>DSA - Binary Search Tree Min/Max | Dmytro&#39;s Blog</title>
-<meta name="keywords" content="DSA, Data Structures, Algorithms, Binary Search Tree, BST, Min, Max, Swift">
+<title>DSA - Binary Search Tree - Delete | Dmytro&#39;s Blog</title>
+<meta name="keywords" content="DSA, Data Structures, Algorithms, Binary Search Tree, BST, Delete, Swift">
 <meta name="description" content="Introduction
-Finding the min and max elements is one of the simplest algorithms regarding BST (Binary Search Tree). The findMin method loops through the left child nodes and returns the value from the last node. The findMax method does the same but traverses the right child nodes.
-Code Example - Min
-func findMin() -&gt; Int? {
-    var min: Int?
-    var curr: BSTNode? = self
-
-    while curr != nil {
-        min = curr?.val
-        curr = curr?.left
-    }
-
-    return min
-}
-Code Example - Max
-func findMax() -&gt; Int? {
-    var max: Int?
-    var curr: BSTNode? = self
-
-    while curr != nil {
-        max = curr?.val
-        curr = curr?.right
-    }
-
-    return max
-}
-Complete Code Example
+The delete algorithm is perhaps one of the hardest parts of managing a binary search tree (BST).
+Code Example
 final class BSTNode {
 
     var val: Int?
@@ -44,61 +20,54 @@ final class BSTNode {
         self.val = val
     }
 
-    func insert(_ newVal: Int) {
-        if self.val == nil {
-            self.val = newVal
-            return
+    func delete(_ val: Int) -&gt; BSTNode? {
+        // 1
+        guard let selfVal = self.val else {
+            return nil
         }
-
-        if self.val == newVal {
-            return
-        }
-
-        if newVal &lt; self.val! {
+        // 2
+        if val &lt; selfVal {
             if self.left == nil {
-                self.left = BSTNode(val: newVal)
-                return
+                return self
             }
-            self.insert(self.left!.val!)
-            return
+            self.left = self.left!.delete(val)
         }
-
+        // 3
+        if val &gt; selfVal {
+            if self.right == nil {
+                return self
+            }
+            self.right = self.right!.delete(val)
+        }
+        // 4
         if self.right == nil {
-            self.right = BSTNode(val: newVal)
-            return
+            return self.left
         }
-        self.insert(self.right!.val!)
-    }
-
-    func findMin() -&gt; Int? {
-        var min: Int?
-        var curr: BSTNode? = self
-
-        while curr != nil {
-            min = curr?.val
-            curr = curr?.left
+        // 5
+        if self.left == nil {
+            return self.right
         }
 
-        return min
-    }
-
-    func findMax() -&gt; Int? {
-        var max: Int?
-        var curr: BSTNode? = self
-
-        while curr != nil {
-            max = curr?.val
-            curr = curr?.right
+        // 6
+        var minLargerNode = self.right
+        while minLargerNode?.left != nil {
+            minLargerNode = minLargerNode?.left
         }
 
-        return max
+        guard let minLargerNode = minLargerNode else {
+            return self
+        }
+        self.val = minLargerNode.val
+        self.right = self.right?.delete(minLargerNode.val!)
+
+        return self
     }
 
 }
-Time/Space Complexity
-For both findMin and findMax:">
+Implementation
+Let’s look at the details:">
 <meta name="author" content="Dmytro Chumakov">
-<link rel="canonical" href="http://localhost:1313/posts/dsa-binary-search-tree-min-max/">
+<link rel="canonical" href="http://localhost:1313/posts/dsa-binary-search-tree-delete/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f3be8e64f4e443c8e74473a0ae2c84b64621f8ec061e3432118c9f8aad022bd8.css" integrity="sha256-876OZPTkQ8jnRHOgriyEtkYh&#43;OwGHjQyEYyfiq0CK9g=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -108,7 +77,7 @@ For both findMin and findMax:">
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/dsa-binary-search-tree-min-max/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/dsa-binary-search-tree-delete/">
 <noscript>
     <style>
         #theme-toggle,
@@ -176,34 +145,10 @@ For both findMin and findMax:">
           gtag('js', new Date());
           gtag('config', 'G-HZZ4JTFGDP');
         }
-      </script><meta property="og:title" content="DSA - Binary Search Tree Min/Max" />
+      </script><meta property="og:title" content="DSA - Binary Search Tree - Delete" />
 <meta property="og:description" content="Introduction
-Finding the min and max elements is one of the simplest algorithms regarding BST (Binary Search Tree). The findMin method loops through the left child nodes and returns the value from the last node. The findMax method does the same but traverses the right child nodes.
-Code Example - Min
-func findMin() -&gt; Int? {
-    var min: Int?
-    var curr: BSTNode? = self
-
-    while curr != nil {
-        min = curr?.val
-        curr = curr?.left
-    }
-
-    return min
-}
-Code Example - Max
-func findMax() -&gt; Int? {
-    var max: Int?
-    var curr: BSTNode? = self
-
-    while curr != nil {
-        max = curr?.val
-        curr = curr?.right
-    }
-
-    return max
-}
-Complete Code Example
+The delete algorithm is perhaps one of the hardest parts of managing a binary search tree (BST).
+Code Example
 final class BSTNode {
 
     var val: Int?
@@ -214,96 +159,65 @@ final class BSTNode {
         self.val = val
     }
 
-    func insert(_ newVal: Int) {
-        if self.val == nil {
-            self.val = newVal
-            return
+    func delete(_ val: Int) -&gt; BSTNode? {
+        // 1
+        guard let selfVal = self.val else {
+            return nil
         }
-
-        if self.val == newVal {
-            return
-        }
-
-        if newVal &lt; self.val! {
+        // 2
+        if val &lt; selfVal {
             if self.left == nil {
-                self.left = BSTNode(val: newVal)
-                return
+                return self
             }
-            self.insert(self.left!.val!)
-            return
+            self.left = self.left!.delete(val)
         }
-
+        // 3
+        if val &gt; selfVal {
+            if self.right == nil {
+                return self
+            }
+            self.right = self.right!.delete(val)
+        }
+        // 4
         if self.right == nil {
-            self.right = BSTNode(val: newVal)
-            return
+            return self.left
         }
-        self.insert(self.right!.val!)
-    }
-
-    func findMin() -&gt; Int? {
-        var min: Int?
-        var curr: BSTNode? = self
-
-        while curr != nil {
-            min = curr?.val
-            curr = curr?.left
+        // 5
+        if self.left == nil {
+            return self.right
         }
 
-        return min
-    }
-
-    func findMax() -&gt; Int? {
-        var max: Int?
-        var curr: BSTNode? = self
-
-        while curr != nil {
-            max = curr?.val
-            curr = curr?.right
+        // 6
+        var minLargerNode = self.right
+        while minLargerNode?.left != nil {
+            minLargerNode = minLargerNode?.left
         }
 
-        return max
+        guard let minLargerNode = minLargerNode else {
+            return self
+        }
+        self.val = minLargerNode.val
+        self.right = self.right?.delete(minLargerNode.val!)
+
+        return self
     }
 
 }
-Time/Space Complexity
-For both findMin and findMax:" />
+Implementation
+Let’s look at the details:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/posts/dsa-binary-search-tree-min-max/" />
+<meta property="og:url" content="http://localhost:1313/posts/dsa-binary-search-tree-delete/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
 <meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-09-22T07:26:23+03:00" />
-<meta property="article:modified_time" content="2024-09-22T07:26:23+03:00" />
+<meta property="article:published_time" content="2024-09-24T06:53:52+03:00" />
+<meta property="article:modified_time" content="2024-09-24T06:53:52+03:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
-<meta name="twitter:title" content="DSA - Binary Search Tree Min/Max"/>
+<meta name="twitter:title" content="DSA - Binary Search Tree - Delete"/>
 <meta name="twitter:description" content="Introduction
-Finding the min and max elements is one of the simplest algorithms regarding BST (Binary Search Tree). The findMin method loops through the left child nodes and returns the value from the last node. The findMax method does the same but traverses the right child nodes.
-Code Example - Min
-func findMin() -&gt; Int? {
-    var min: Int?
-    var curr: BSTNode? = self
-
-    while curr != nil {
-        min = curr?.val
-        curr = curr?.left
-    }
-
-    return min
-}
-Code Example - Max
-func findMax() -&gt; Int? {
-    var max: Int?
-    var curr: BSTNode? = self
-
-    while curr != nil {
-        max = curr?.val
-        curr = curr?.right
-    }
-
-    return max
-}
-Complete Code Example
+The delete algorithm is perhaps one of the hardest parts of managing a binary search tree (BST).
+Code Example
 final class BSTNode {
 
     var val: Int?
@@ -314,59 +228,52 @@ final class BSTNode {
         self.val = val
     }
 
-    func insert(_ newVal: Int) {
-        if self.val == nil {
-            self.val = newVal
-            return
+    func delete(_ val: Int) -&gt; BSTNode? {
+        // 1
+        guard let selfVal = self.val else {
+            return nil
         }
-
-        if self.val == newVal {
-            return
-        }
-
-        if newVal &lt; self.val! {
+        // 2
+        if val &lt; selfVal {
             if self.left == nil {
-                self.left = BSTNode(val: newVal)
-                return
+                return self
             }
-            self.insert(self.left!.val!)
-            return
+            self.left = self.left!.delete(val)
         }
-
+        // 3
+        if val &gt; selfVal {
+            if self.right == nil {
+                return self
+            }
+            self.right = self.right!.delete(val)
+        }
+        // 4
         if self.right == nil {
-            self.right = BSTNode(val: newVal)
-            return
+            return self.left
         }
-        self.insert(self.right!.val!)
-    }
-
-    func findMin() -&gt; Int? {
-        var min: Int?
-        var curr: BSTNode? = self
-
-        while curr != nil {
-            min = curr?.val
-            curr = curr?.left
+        // 5
+        if self.left == nil {
+            return self.right
         }
 
-        return min
-    }
-
-    func findMax() -&gt; Int? {
-        var max: Int?
-        var curr: BSTNode? = self
-
-        while curr != nil {
-            max = curr?.val
-            curr = curr?.right
+        // 6
+        var minLargerNode = self.right
+        while minLargerNode?.left != nil {
+            minLargerNode = minLargerNode?.left
         }
 
-        return max
+        guard let minLargerNode = minLargerNode else {
+            return self
+        }
+        self.val = minLargerNode.val
+        self.right = self.right?.delete(minLargerNode.val!)
+
+        return self
     }
 
 }
-Time/Space Complexity
-For both findMin and findMax:"/>
+Implementation
+Let’s look at the details:"/>
 
 
 <script type="application/ld+json">
@@ -383,8 +290,8 @@ For both findMin and findMax:"/>
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "DSA - Binary Search Tree Min/Max",
-      "item": "http://localhost:1313/posts/dsa-binary-search-tree-min-max/"
+      "name": "DSA - Binary Search Tree - Delete",
+      "item": "http://localhost:1313/posts/dsa-binary-search-tree-delete/"
     }
   ]
 }
@@ -393,24 +300,24 @@ For both findMin and findMax:"/>
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "DSA - Binary Search Tree Min/Max",
-  "name": "DSA - Binary Search Tree Min\/Max",
-  "description": "Introduction Finding the min and max elements is one of the simplest algorithms regarding BST (Binary Search Tree). The findMin method loops through the left child nodes and returns the value from the last node. The findMax method does the same but traverses the right child nodes.\nCode Example - Min func findMin() -\u0026gt; Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } Code Example - Max func findMax() -\u0026gt; Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } Complete Code Example final class BSTNode { var val: Int? var left: BSTNode? var right: BSTNode? init(val: Int? = nil) { self.val = val } func insert(_ newVal: Int) { if self.val == nil { self.val = newVal return } if self.val == newVal { return } if newVal \u0026lt; self.val! { if self.left == nil { self.left = BSTNode(val: newVal) return } self.insert(self.left!.val!) return } if self.right == nil { self.right = BSTNode(val: newVal) return } self.insert(self.right!.val!) } func findMin() -\u0026gt; Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } func findMax() -\u0026gt; Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } } Time/Space Complexity For both findMin and findMax:\n",
+  "headline": "DSA - Binary Search Tree - Delete",
+  "name": "DSA - Binary Search Tree - Delete",
+  "description": "Introduction The delete algorithm is perhaps one of the hardest parts of managing a binary search tree (BST).\nCode Example final class BSTNode { var val: Int? var left: BSTNode? var right: BSTNode? init(val: Int? = nil) { self.val = val } func delete(_ val: Int) -\u0026gt; BSTNode? { // 1 guard let selfVal = self.val else { return nil } // 2 if val \u0026lt; selfVal { if self.left == nil { return self } self.left = self.left!.delete(val) } // 3 if val \u0026gt; selfVal { if self.right == nil { return self } self.right = self.right!.delete(val) } // 4 if self.right == nil { return self.left } // 5 if self.left == nil { return self.right } // 6 var minLargerNode = self.right while minLargerNode?.left != nil { minLargerNode = minLargerNode?.left } guard let minLargerNode = minLargerNode else { return self } self.val = minLargerNode.val self.right = self.right?.delete(minLargerNode.val!) return self } } Implementation Let’s look at the details:\n",
   "keywords": [
-    "DSA", "Data Structures", "Algorithms", "Binary Search Tree", "BST", "Min", "Max", "Swift"
+    "DSA", "Data Structures", "Algorithms", "Binary Search Tree", "BST", "Delete", "Swift"
   ],
-  "articleBody": "Introduction Finding the min and max elements is one of the simplest algorithms regarding BST (Binary Search Tree). The findMin method loops through the left child nodes and returns the value from the last node. The findMax method does the same but traverses the right child nodes.\nCode Example - Min func findMin() -\u003e Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } Code Example - Max func findMax() -\u003e Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } Complete Code Example final class BSTNode { var val: Int? var left: BSTNode? var right: BSTNode? init(val: Int? = nil) { self.val = val } func insert(_ newVal: Int) { if self.val == nil { self.val = newVal return } if self.val == newVal { return } if newVal \u003c self.val! { if self.left == nil { self.left = BSTNode(val: newVal) return } self.insert(self.left!.val!) return } if self.right == nil { self.right = BSTNode(val: newVal) return } self.insert(self.right!.val!) } func findMin() -\u003e Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } func findMax() -\u003e Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } } Time/Space Complexity For both findMin and findMax:\nTime Complexity is O(h), where h is the height of the tree. Space Complexity is O(1). Thank you for reading! 😊 ",
-  "wordCount" : "275",
+  "articleBody": "Introduction The delete algorithm is perhaps one of the hardest parts of managing a binary search tree (BST).\nCode Example final class BSTNode { var val: Int? var left: BSTNode? var right: BSTNode? init(val: Int? = nil) { self.val = val } func delete(_ val: Int) -\u003e BSTNode? { // 1 guard let selfVal = self.val else { return nil } // 2 if val \u003c selfVal { if self.left == nil { return self } self.left = self.left!.delete(val) } // 3 if val \u003e selfVal { if self.right == nil { return self } self.right = self.right!.delete(val) } // 4 if self.right == nil { return self.left } // 5 if self.left == nil { return self.right } // 6 var minLargerNode = self.right while minLargerNode?.left != nil { minLargerNode = minLargerNode?.left } guard let minLargerNode = minLargerNode else { return self } self.val = minLargerNode.val self.right = self.right?.delete(minLargerNode.val!) return self } } Implementation Let’s look at the details:\nThe first step is to check for the base scenario: whether the BST has a self.val. If it does not, return nil. If it has a value, move to the second step. The second step is to check if the delete value is less than self.val. If it is, check if the left node exists. If it does not exist, return the self node. If it does exist, call delete on the left node and assign the new result to the left node. The third step is the opposite of the second step but for the right node. The fourth step is to check if the right node is nil. If it is, return the left node. The fifth step is the opposite of the fourth but for the left and right nodes. The sixth step is to find the minLargerNode, update self.val with minLargerNode.val, and delete minLargerNode.val from the right node, assigning the new result to it. Time Complexity The time complexity of the BST deletion algorithm is O(h), where h is the height of the tree.\nIn the case where the BST becomes skewed, the height of the BST h becomes O(n), making the time complexity O(n).\nIn the case where the BST is balanced, the height of the BST h becomes O(log n), making the time complexity O(log n).\nThank you for reading! 😊 ",
+  "wordCount" : "387",
   "inLanguage": "en",
-  "image": "http://localhost:1313/images/papermod-cover.png","datePublished": "2024-09-22T07:26:23+03:00",
-  "dateModified": "2024-09-22T07:26:23+03:00",
+  "image": "http://localhost:1313/images/papermod-cover.png","datePublished": "2024-09-24T06:53:52+03:00",
+  "dateModified": "2024-09-24T06:53:52+03:00",
   "author":{
     "@type": "Person",
     "name": "Dmytro Chumakov"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:1313/posts/dsa-binary-search-tree-min-max/"
+    "@id": "http://localhost:1313/posts/dsa-binary-search-tree-delete/"
   },
   "publisher": {
     "@type": "Organization",
@@ -509,9 +416,9 @@ For both findMin and findMax:"/>
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
-      DSA - Binary Search Tree Min/Max
+      DSA - Binary Search Tree - Delete
     </h1>
-    <div class="post-meta"><span title='2024-09-22 07:26:23 +0300 EEST'>September 22, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov
+    <div class="post-meta"><span title='2024-09-24 06:53:52 +0300 EEST'>September 24, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov
 
 </div>
   </header> <div class="toc">
@@ -522,17 +429,15 @@ For both findMin and findMax:"/>
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#introduction" aria-label="Introduction">Introduction</a><ul>
+                    <a href="#introduction" aria-label="Introduction">Introduction</a></li>
+                <li>
+                    <a href="#code-example" aria-label="Code Example">Code Example</a><ul>
                         
                 <li>
-                    <a href="#code-example---min" aria-label="Code Example - Min">Code Example - Min</a></li>
-                <li>
-                    <a href="#code-example---max" aria-label="Code Example - Max">Code Example - Max</a></li>
-                <li>
-                    <a href="#complete-code-example" aria-label="Complete Code Example">Complete Code Example</a></li></ul>
+                    <a href="#implementation" aria-label="Implementation">Implementation</a></li></ul>
                 </li>
                 <li>
-                    <a href="#timespace-complexity" aria-label="Time/Space Complexity">Time/Space Complexity</a><ul>
+                    <a href="#time-complexity" aria-label="Time Complexity">Time Complexity</a><ul>
                         
                 <li>
                     <a href="#thank-you-for-reading-" aria-label="Thank you for reading! 😊">Thank you for reading! 😊</a>
@@ -545,32 +450,8 @@ For both findMin and findMax:"/>
 </div>
 
   <div class="post-content"><h3 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h3>
-<p>Finding the <code>min</code> and <code>max</code> elements is one of the simplest algorithms regarding <code>BST</code> (Binary Search Tree). The <code>findMin</code> method loops through the <code>left</code> child nodes and returns the value from the last node. The <code>findMax</code> method does the same but traverses the <code>right</code> child nodes.</p>
-<h4 id="code-example---min">Code Example - Min<a hidden class="anchor" aria-hidden="true" href="#code-example---min">#</a></h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">findMin</span><span class="p">()</span> <span class="p">-&gt;</span> <span class="nb">Int</span><span class="p">?</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">min</span><span class="p">:</span> <span class="nb">Int</span><span class="p">?</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">curr</span><span class="p">:</span> <span class="n">BSTNode</span><span class="p">?</span> <span class="p">=</span> <span class="kc">self</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">curr</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="bp">min</span> <span class="p">=</span> <span class="n">curr</span><span class="p">?.</span><span class="n">val</span>
-</span></span><span class="line"><span class="cl">        <span class="n">curr</span> <span class="p">=</span> <span class="n">curr</span><span class="p">?.</span><span class="kr">left</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="bp">min</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><h4 id="code-example---max">Code Example - Max<a hidden class="anchor" aria-hidden="true" href="#code-example---max">#</a></h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">findMax</span><span class="p">()</span> <span class="p">-&gt;</span> <span class="nb">Int</span><span class="p">?</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">max</span><span class="p">:</span> <span class="nb">Int</span><span class="p">?</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">curr</span><span class="p">:</span> <span class="n">BSTNode</span><span class="p">?</span> <span class="p">=</span> <span class="kc">self</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">curr</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="bp">max</span> <span class="p">=</span> <span class="n">curr</span><span class="p">?.</span><span class="n">val</span>
-</span></span><span class="line"><span class="cl">        <span class="n">curr</span> <span class="p">=</span> <span class="n">curr</span><span class="p">?.</span><span class="kr">right</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="bp">max</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><h4 id="complete-code-example">Complete Code Example<a hidden class="anchor" aria-hidden="true" href="#complete-code-example">#</a></h4>
+<p>The <a href="https://en.wikipedia.org/wiki/Binary_search_tree#Deletion">delete</a> algorithm is perhaps one of the hardest parts of managing a binary search tree (BST).</p>
+<h3 id="code-example">Code Example<a hidden class="anchor" aria-hidden="true" href="#code-example">#</a></h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kr">final</span> <span class="kd">class</span> <span class="nc">BSTNode</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">val</span><span class="p">:</span> <span class="nb">Int</span><span class="p">?</span>
@@ -581,63 +462,64 @@ For both findMin and findMax:"/>
 </span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="n">val</span> <span class="p">=</span> <span class="n">val</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">insert</span><span class="p">(</span><span class="kc">_</span> <span class="n">newVal</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="kc">self</span><span class="p">.</span><span class="n">val</span> <span class="p">==</span> <span class="kc">nil</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="kc">self</span><span class="p">.</span><span class="n">val</span> <span class="p">=</span> <span class="n">newVal</span>
-</span></span><span class="line"><span class="cl">            <span class="k">return</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">delete</span><span class="p">(</span><span class="kc">_</span> <span class="n">val</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="n">BSTNode</span><span class="p">?</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">guard</span> <span class="kd">let</span> <span class="nv">selfVal</span> <span class="p">=</span> <span class="kc">self</span><span class="p">.</span><span class="n">val</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">nil</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="kc">self</span><span class="p">.</span><span class="n">val</span> <span class="p">==</span> <span class="n">newVal</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="k">return</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">newVal</span> <span class="o">&lt;</span> <span class="kc">self</span><span class="p">.</span><span class="n">val</span><span class="p">!</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 2</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">val</span> <span class="o">&lt;</span> <span class="n">selfVal</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="kc">self</span><span class="p">.</span><span class="kr">left</span> <span class="p">==</span> <span class="kc">nil</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                <span class="kc">self</span><span class="p">.</span><span class="kr">left</span> <span class="p">=</span> <span class="n">BSTNode</span><span class="p">(</span><span class="n">val</span><span class="p">:</span> <span class="n">newVal</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                <span class="k">return</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="kc">self</span>
 </span></span><span class="line"><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="cl">            <span class="kc">self</span><span class="p">.</span><span class="bp">insert</span><span class="p">(</span><span class="kc">self</span><span class="p">.</span><span class="kr">left</span><span class="p">!.</span><span class="n">val</span><span class="p">!)</span>
-</span></span><span class="line"><span class="cl">            <span class="k">return</span>
+</span></span><span class="line"><span class="cl">            <span class="kc">self</span><span class="p">.</span><span class="kr">left</span> <span class="p">=</span> <span class="kc">self</span><span class="p">.</span><span class="kr">left</span><span class="p">!.</span><span class="n">delete</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 3</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">val</span> <span class="o">&gt;</span> <span class="n">selfVal</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="kc">self</span><span class="p">.</span><span class="kr">right</span> <span class="p">==</span> <span class="kc">nil</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="kc">self</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="kc">self</span><span class="p">.</span><span class="kr">right</span> <span class="p">=</span> <span class="kc">self</span><span class="p">.</span><span class="kr">right</span><span class="p">!.</span><span class="n">delete</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 4</span>
 </span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="kc">self</span><span class="p">.</span><span class="kr">right</span> <span class="p">==</span> <span class="kc">nil</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="kc">self</span><span class="p">.</span><span class="kr">right</span> <span class="p">=</span> <span class="n">BSTNode</span><span class="p">(</span><span class="n">val</span><span class="p">:</span> <span class="n">newVal</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">            <span class="k">return</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">self</span><span class="p">.</span><span class="kr">left</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="bp">insert</span><span class="p">(</span><span class="kc">self</span><span class="p">.</span><span class="kr">right</span><span class="p">!.</span><span class="n">val</span><span class="p">!)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">findMin</span><span class="p">()</span> <span class="p">-&gt;</span> <span class="nb">Int</span><span class="p">?</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nv">min</span><span class="p">:</span> <span class="nb">Int</span><span class="p">?</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nv">curr</span><span class="p">:</span> <span class="n">BSTNode</span><span class="p">?</span> <span class="p">=</span> <span class="kc">self</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="n">curr</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="bp">min</span> <span class="p">=</span> <span class="n">curr</span><span class="p">?.</span><span class="n">val</span>
-</span></span><span class="line"><span class="cl">            <span class="n">curr</span> <span class="p">=</span> <span class="n">curr</span><span class="p">?.</span><span class="kr">left</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 5</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="kc">self</span><span class="p">.</span><span class="kr">left</span> <span class="p">==</span> <span class="kc">nil</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">self</span><span class="p">.</span><span class="kr">right</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="bp">min</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">findMax</span><span class="p">()</span> <span class="p">-&gt;</span> <span class="nb">Int</span><span class="p">?</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nv">max</span><span class="p">:</span> <span class="nb">Int</span><span class="p">?</span>
-</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nv">curr</span><span class="p">:</span> <span class="n">BSTNode</span><span class="p">?</span> <span class="p">=</span> <span class="kc">self</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="n">curr</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="bp">max</span> <span class="p">=</span> <span class="n">curr</span><span class="p">?.</span><span class="n">val</span>
-</span></span><span class="line"><span class="cl">            <span class="n">curr</span> <span class="p">=</span> <span class="n">curr</span><span class="p">?.</span><span class="kr">right</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 6</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nv">minLargerNode</span> <span class="p">=</span> <span class="kc">self</span><span class="p">.</span><span class="kr">right</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="n">minLargerNode</span><span class="p">?.</span><span class="kr">left</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">minLargerNode</span> <span class="p">=</span> <span class="n">minLargerNode</span><span class="p">?.</span><span class="kr">left</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="bp">max</span>
+</span></span><span class="line"><span class="cl">        <span class="k">guard</span> <span class="kd">let</span> <span class="nv">minLargerNode</span> <span class="p">=</span> <span class="n">minLargerNode</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">self</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="n">val</span> <span class="p">=</span> <span class="n">minLargerNode</span><span class="p">.</span><span class="n">val</span>
+</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="kr">right</span> <span class="p">=</span> <span class="kc">self</span><span class="p">.</span><span class="kr">right</span><span class="p">?.</span><span class="n">delete</span><span class="p">(</span><span class="n">minLargerNode</span><span class="p">.</span><span class="n">val</span><span class="p">!)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">self</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><h3 id="timespace-complexity">Time/Space Complexity<a hidden class="anchor" aria-hidden="true" href="#timespace-complexity">#</a></h3>
-<p>For both <code>findMin</code> and <code>findMax</code>:</p>
-<ul>
-<li>Time Complexity is O(h), where <code>h</code> is the height of the tree.</li>
-<li>Space Complexity is O(1).</li>
-</ul>
+</span></span></code></pre></div><h4 id="implementation">Implementation<a hidden class="anchor" aria-hidden="true" href="#implementation">#</a></h4>
+<p>Let’s look at the details:</p>
+<ol>
+<li>The first step is to check for the base scenario: whether the BST has a <code>self.val</code>. If it does not, return <code>nil</code>. If it has a value, move to the second step.</li>
+<li>The second step is to check if the delete value is less than <code>self.val</code>. If it is, check if the left node exists. If it does not exist, return the <code>self</code> node. If it does exist, call <code>delete</code> on the left node and assign the new result to the <code>left</code> node.</li>
+<li>The third step is the opposite of the second step but for the right node.</li>
+<li>The fourth step is to check if the <code>right</code> node is <code>nil</code>. If it is, return the <code>left</code> node.</li>
+<li>The fifth step is the opposite of the fourth but for the <code>left</code> and <code>right</code> nodes.</li>
+<li>The sixth step is to find the <code>minLargerNode</code>, update <code>self.val</code> with <code>minLargerNode.val</code>, and delete <code>minLargerNode.val</code> from the <code>right</code> node, assigning the new result to it.</li>
+</ol>
+<h3 id="time-complexity">Time Complexity<a hidden class="anchor" aria-hidden="true" href="#time-complexity">#</a></h3>
+<p>The time complexity of the BST deletion algorithm is O(h), where <code>h</code> is the height of the tree.</p>
+<p>In the case where the BST becomes skewed, the height of the BST <code>h</code> becomes O(n), making the time complexity O(n).</p>
+<p>In the case where the BST is balanced, the height of the BST <code>h</code> becomes O(log n), making the time complexity O(log n).</p>
 <h4 id="thank-you-for-reading-">Thank you for reading! 😊<a hidden class="anchor" aria-hidden="true" href="#thank-you-for-reading-">#</a></h4>
 
 
@@ -650,28 +532,22 @@ For both findMin and findMax:"/>
       <li><a href="http://localhost:1313/tags/algorithms/">Algorithms</a></li>
       <li><a href="http://localhost:1313/tags/binary-search-tree/">Binary Search Tree</a></li>
       <li><a href="http://localhost:1313/tags/bst/">BST</a></li>
-      <li><a href="http://localhost:1313/tags/min/">Min</a></li>
-      <li><a href="http://localhost:1313/tags/max/">Max</a></li>
+      <li><a href="http://localhost:1313/tags/delete/">Delete</a></li>
       <li><a href="http://localhost:1313/tags/swift/">Swift</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/posts/dsa-binary-search-tree-delete/">
-    <span class="title">« Prev</span>
-    <br>
-    <span>DSA - Binary Search Tree - Delete</span>
-  </a>
-  <a class="next" href="http://localhost:1313/posts/dsa-queue/">
+  <a class="next" href="http://localhost:1313/posts/dsa-binary-search-tree-min-max/">
     <span class="title">Next »</span>
     <br>
-    <span>DSA - Queue</span>
+    <span>DSA - Binary Search Tree Min/Max</span>
   </a>
 </nav>
 
 
 <ul class="share-buttons">
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share DSA - Binary Search Tree Min/Max on x"
-            href="https://x.com/intent/tweet/?text=DSA%20-%20Binary%20Search%20Tree%20Min%2fMax&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fdsa-binary-search-tree-min-max%2f&amp;hashtags=DSA%2cDataStructures%2cAlgorithms%2cBinarySearchTree%2cBST%2cMin%2cMax%2cSwift">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share DSA - Binary Search Tree - Delete on x"
+            href="https://x.com/intent/tweet/?text=DSA%20-%20Binary%20Search%20Tree%20-%20Delete&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fdsa-binary-search-tree-delete%2f&amp;hashtags=DSA%2cDataStructures%2cAlgorithms%2cBinarySearchTree%2cBST%2cDelete%2cSwift">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
@@ -679,8 +555,8 @@ For both findMin and findMax:"/>
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share DSA - Binary Search Tree Min/Max on linkedin"
-            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fdsa-binary-search-tree-min-max%2f&amp;title=DSA%20-%20Binary%20Search%20Tree%20Min%2fMax&amp;summary=DSA%20-%20Binary%20Search%20Tree%20Min%2fMax&amp;source=http%3a%2f%2flocalhost%3a1313%2fposts%2fdsa-binary-search-tree-min-max%2f">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share DSA - Binary Search Tree - Delete on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fdsa-binary-search-tree-delete%2f&amp;title=DSA%20-%20Binary%20Search%20Tree%20-%20Delete&amp;summary=DSA%20-%20Binary%20Search%20Tree%20-%20Delete&amp;source=http%3a%2f%2flocalhost%3a1313%2fposts%2fdsa-binary-search-tree-delete%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
@@ -688,8 +564,8 @@ For both findMin and findMax:"/>
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share DSA - Binary Search Tree Min/Max on reddit"
-            href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fdsa-binary-search-tree-min-max%2f&title=DSA%20-%20Binary%20Search%20Tree%20Min%2fMax">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share DSA - Binary Search Tree - Delete on reddit"
+            href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fdsa-binary-search-tree-delete%2f&title=DSA%20-%20Binary%20Search%20Tree%20-%20Delete">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
@@ -697,8 +573,8 @@ For both findMin and findMax:"/>
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share DSA - Binary Search Tree Min/Max on facebook"
-            href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fdsa-binary-search-tree-min-max%2f">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share DSA - Binary Search Tree - Delete on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fdsa-binary-search-tree-delete%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
@@ -706,8 +582,8 @@ For both findMin and findMax:"/>
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share DSA - Binary Search Tree Min/Max on whatsapp"
-            href="https://api.whatsapp.com/send?text=DSA%20-%20Binary%20Search%20Tree%20Min%2fMax%20-%20http%3a%2f%2flocalhost%3a1313%2fposts%2fdsa-binary-search-tree-min-max%2f">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share DSA - Binary Search Tree - Delete on whatsapp"
+            href="https://api.whatsapp.com/send?text=DSA%20-%20Binary%20Search%20Tree%20-%20Delete%20-%20http%3a%2f%2flocalhost%3a1313%2fposts%2fdsa-binary-search-tree-delete%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
@@ -715,8 +591,8 @@ For both findMin and findMax:"/>
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share DSA - Binary Search Tree Min/Max on telegram"
-            href="https://telegram.me/share/url?text=DSA%20-%20Binary%20Search%20Tree%20Min%2fMax&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fdsa-binary-search-tree-min-max%2f">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share DSA - Binary Search Tree - Delete on telegram"
+            href="https://telegram.me/share/url?text=DSA%20-%20Binary%20Search%20Tree%20-%20Delete&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fdsa-binary-search-tree-delete%2f">
             <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
@@ -724,8 +600,8 @@ For both findMin and findMax:"/>
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share DSA - Binary Search Tree Min/Max on ycombinator"
-            href="https://news.ycombinator.com/submitlink?t=DSA%20-%20Binary%20Search%20Tree%20Min%2fMax&u=http%3a%2f%2flocalhost%3a1313%2fposts%2fdsa-binary-search-tree-min-max%2f">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share DSA - Binary Search Tree - Delete on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=DSA%20-%20Binary%20Search%20Tree%20-%20Delete&u=http%3a%2f%2flocalhost%3a1313%2fposts%2fdsa-binary-search-tree-delete%2f">
             <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
                 xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
                 <path
