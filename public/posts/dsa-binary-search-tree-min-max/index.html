@@ -44,30 +44,32 @@ final class BSTNode {
         self.val = val
     }
 
-    func insert(_ newVal: Int) {
+    func insert(_ val: Value) {
         if self.val == nil {
-            self.val = newVal
+            self.val = val
             return
         }
 
-        if self.val == newVal {
+        if self.val == val {
             return
         }
 
-        if newVal &lt; self.val! {
-            if self.left == nil {
-                self.left = BSTNode(val: newVal)
+        if val &lt; self.val! {
+            if self.left != nil {
+                self.left!.insert(val)
+                return
+            } else {
+                self.left = BSTNode(val: val)
                 return
             }
-            self.insert(self.left!.val!)
+        }
+
+        if self.right != nil {
+            self.right!.insert(val)
             return
         }
 
-        if self.right == nil {
-            self.right = BSTNode(val: newVal)
-            return
-        }
-        self.insert(self.right!.val!)
+        self.right = BSTNode(val: val)
     }
 
     func findMin() -&gt; Int? {
@@ -214,30 +216,32 @@ final class BSTNode {
         self.val = val
     }
 
-    func insert(_ newVal: Int) {
+    func insert(_ val: Value) {
         if self.val == nil {
-            self.val = newVal
+            self.val = val
             return
         }
 
-        if self.val == newVal {
+        if self.val == val {
             return
         }
 
-        if newVal &lt; self.val! {
-            if self.left == nil {
-                self.left = BSTNode(val: newVal)
+        if val &lt; self.val! {
+            if self.left != nil {
+                self.left!.insert(val)
+                return
+            } else {
+                self.left = BSTNode(val: val)
                 return
             }
-            self.insert(self.left!.val!)
+        }
+
+        if self.right != nil {
+            self.right!.insert(val)
             return
         }
 
-        if self.right == nil {
-            self.right = BSTNode(val: newVal)
-            return
-        }
-        self.insert(self.right!.val!)
+        self.right = BSTNode(val: val)
     }
 
     func findMin() -&gt; Int? {
@@ -314,30 +318,32 @@ final class BSTNode {
         self.val = val
     }
 
-    func insert(_ newVal: Int) {
+    func insert(_ val: Value) {
         if self.val == nil {
-            self.val = newVal
+            self.val = val
             return
         }
 
-        if self.val == newVal {
+        if self.val == val {
             return
         }
 
-        if newVal &lt; self.val! {
-            if self.left == nil {
-                self.left = BSTNode(val: newVal)
+        if val &lt; self.val! {
+            if self.left != nil {
+                self.left!.insert(val)
+                return
+            } else {
+                self.left = BSTNode(val: val)
                 return
             }
-            self.insert(self.left!.val!)
+        }
+
+        if self.right != nil {
+            self.right!.insert(val)
             return
         }
 
-        if self.right == nil {
-            self.right = BSTNode(val: newVal)
-            return
-        }
-        self.insert(self.right!.val!)
+        self.right = BSTNode(val: val)
     }
 
     func findMin() -&gt; Int? {
@@ -395,12 +401,12 @@ For both findMin and findMax:"/>
   "@type": "BlogPosting",
   "headline": "DSA - Binary Search Tree Min/Max",
   "name": "DSA - Binary Search Tree Min\/Max",
-  "description": "Introduction Finding the min and max elements is one of the simplest algorithms regarding BST (Binary Search Tree). The findMin method loops through the left child nodes and returns the value from the last node. The findMax method does the same but traverses the right child nodes.\nCode Example - Min func findMin() -\u0026gt; Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } Code Example - Max func findMax() -\u0026gt; Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } Complete Code Example final class BSTNode { var val: Int? var left: BSTNode? var right: BSTNode? init(val: Int? = nil) { self.val = val } func insert(_ newVal: Int) { if self.val == nil { self.val = newVal return } if self.val == newVal { return } if newVal \u0026lt; self.val! { if self.left == nil { self.left = BSTNode(val: newVal) return } self.insert(self.left!.val!) return } if self.right == nil { self.right = BSTNode(val: newVal) return } self.insert(self.right!.val!) } func findMin() -\u0026gt; Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } func findMax() -\u0026gt; Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } } Time/Space Complexity For both findMin and findMax:\n",
+  "description": "Introduction Finding the min and max elements is one of the simplest algorithms regarding BST (Binary Search Tree). The findMin method loops through the left child nodes and returns the value from the last node. The findMax method does the same but traverses the right child nodes.\nCode Example - Min func findMin() -\u0026gt; Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } Code Example - Max func findMax() -\u0026gt; Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } Complete Code Example final class BSTNode { var val: Int? var left: BSTNode? var right: BSTNode? init(val: Int? = nil) { self.val = val } func insert(_ val: Value) { if self.val == nil { self.val = val return } if self.val == val { return } if val \u0026lt; self.val! { if self.left != nil { self.left!.insert(val) return } else { self.left = BSTNode(val: val) return } } if self.right != nil { self.right!.insert(val) return } self.right = BSTNode(val: val) } func findMin() -\u0026gt; Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } func findMax() -\u0026gt; Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } } Time/Space Complexity For both findMin and findMax:\n",
   "keywords": [
     "DSA", "Data Structures", "Algorithms", "Binary Search Tree", "BST", "Min", "Max", "Swift"
   ],
-  "articleBody": "Introduction Finding the min and max elements is one of the simplest algorithms regarding BST (Binary Search Tree). The findMin method loops through the left child nodes and returns the value from the last node. The findMax method does the same but traverses the right child nodes.\nCode Example - Min func findMin() -\u003e Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } Code Example - Max func findMax() -\u003e Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } Complete Code Example final class BSTNode { var val: Int? var left: BSTNode? var right: BSTNode? init(val: Int? = nil) { self.val = val } func insert(_ newVal: Int) { if self.val == nil { self.val = newVal return } if self.val == newVal { return } if newVal \u003c self.val! { if self.left == nil { self.left = BSTNode(val: newVal) return } self.insert(self.left!.val!) return } if self.right == nil { self.right = BSTNode(val: newVal) return } self.insert(self.right!.val!) } func findMin() -\u003e Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } func findMax() -\u003e Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } } Time/Space Complexity For both findMin and findMax:\nTime Complexity is O(h), where h is the height of the tree. Space Complexity is O(1). Thank you for reading! 😊 ",
-  "wordCount" : "275",
+  "articleBody": "Introduction Finding the min and max elements is one of the simplest algorithms regarding BST (Binary Search Tree). The findMin method loops through the left child nodes and returns the value from the last node. The findMax method does the same but traverses the right child nodes.\nCode Example - Min func findMin() -\u003e Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } Code Example - Max func findMax() -\u003e Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } Complete Code Example final class BSTNode { var val: Int? var left: BSTNode? var right: BSTNode? init(val: Int? = nil) { self.val = val } func insert(_ val: Value) { if self.val == nil { self.val = val return } if self.val == val { return } if val \u003c self.val! { if self.left != nil { self.left!.insert(val) return } else { self.left = BSTNode(val: val) return } } if self.right != nil { self.right!.insert(val) return } self.right = BSTNode(val: val) } func findMin() -\u003e Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } func findMax() -\u003e Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } } Time/Space Complexity For both findMin and findMax:\nTime Complexity is O(h), where h is the height of the tree. Space Complexity is O(1). Thank you for reading! 😊 ",
+  "wordCount" : "278",
   "inLanguage": "en",
   "image": "http://localhost:1313/images/papermod-cover.png","datePublished": "2024-09-22T07:26:23+03:00",
   "dateModified": "2024-09-22T07:26:23+03:00",
@@ -581,30 +587,32 @@ For both findMin and findMax:"/>
 </span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="n">val</span> <span class="p">=</span> <span class="n">val</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">insert</span><span class="p">(</span><span class="kc">_</span> <span class="n">newVal</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">insert</span><span class="p">(</span><span class="kc">_</span> <span class="n">val</span><span class="p">:</span> <span class="n">Value</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="kc">self</span><span class="p">.</span><span class="n">val</span> <span class="p">==</span> <span class="kc">nil</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="kc">self</span><span class="p">.</span><span class="n">val</span> <span class="p">=</span> <span class="n">newVal</span>
+</span></span><span class="line"><span class="cl">            <span class="kc">self</span><span class="p">.</span><span class="n">val</span> <span class="p">=</span> <span class="n">val</span>
 </span></span><span class="line"><span class="cl">            <span class="k">return</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="kc">self</span><span class="p">.</span><span class="n">val</span> <span class="p">==</span> <span class="n">newVal</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="kc">self</span><span class="p">.</span><span class="n">val</span> <span class="p">==</span> <span class="n">val</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="k">return</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">newVal</span> <span class="o">&lt;</span> <span class="kc">self</span><span class="p">.</span><span class="n">val</span><span class="p">!</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="kc">self</span><span class="p">.</span><span class="kr">left</span> <span class="p">==</span> <span class="kc">nil</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                <span class="kc">self</span><span class="p">.</span><span class="kr">left</span> <span class="p">=</span> <span class="n">BSTNode</span><span class="p">(</span><span class="n">val</span><span class="p">:</span> <span class="n">newVal</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">val</span> <span class="o">&lt;</span> <span class="kc">self</span><span class="p">.</span><span class="n">val</span><span class="p">!</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="kc">self</span><span class="p">.</span><span class="kr">left</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="kc">self</span><span class="p">.</span><span class="kr">left</span><span class="p">!.</span><span class="bp">insert</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="kc">self</span><span class="p">.</span><span class="kr">left</span> <span class="p">=</span> <span class="n">BSTNode</span><span class="p">(</span><span class="n">val</span><span class="p">:</span> <span class="n">val</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">                <span class="k">return</span>
 </span></span><span class="line"><span class="cl">            <span class="p">}</span>
-</span></span><span class="line"><span class="cl">            <span class="kc">self</span><span class="p">.</span><span class="bp">insert</span><span class="p">(</span><span class="kc">self</span><span class="p">.</span><span class="kr">left</span><span class="p">!.</span><span class="n">val</span><span class="p">!)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="kc">self</span><span class="p">.</span><span class="kr">right</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kc">self</span><span class="p">.</span><span class="kr">right</span><span class="p">!.</span><span class="bp">insert</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">            <span class="k">return</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="kc">self</span><span class="p">.</span><span class="kr">right</span> <span class="p">==</span> <span class="kc">nil</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="kc">self</span><span class="p">.</span><span class="kr">right</span> <span class="p">=</span> <span class="n">BSTNode</span><span class="p">(</span><span class="n">val</span><span class="p">:</span> <span class="n">newVal</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">            <span class="k">return</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="bp">insert</span><span class="p">(</span><span class="kc">self</span><span class="p">.</span><span class="kr">right</span><span class="p">!.</span><span class="n">val</span><span class="p">!)</span>
+</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="kr">right</span> <span class="p">=</span> <span class="n">BSTNode</span><span class="p">(</span><span class="n">val</span><span class="p">:</span> <span class="n">val</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">findMin</span><span class="p">()</span> <span class="p">-&gt;</span> <span class="nb">Int</span><span class="p">?</span> <span class="p">{</span>

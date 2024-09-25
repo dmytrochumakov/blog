@@ -50,30 +50,32 @@ final class BSTNode {
         self.val = val
     }
 
-    func insert(_ newVal: Int) {
+    func insert(_ val: Value) {
         if self.val == nil {
-            self.val = newVal
+            self.val = val
             return
         }
 
-        if self.val == newVal {
+        if self.val == val {
             return
         }
 
-        if newVal < self.val! {
-            if self.left == nil {
-                self.left = BSTNode(val: newVal)
+        if val < self.val! {
+            if self.left != nil {
+                self.left!.insert(val)
+                return
+            } else {
+                self.left = BSTNode(val: val)
                 return
             }
-            self.insert(self.left!.val!)
+        }
+
+        if self.right != nil {
+            self.right!.insert(val)
             return
         }
 
-        if self.right == nil {
-            self.right = BSTNode(val: newVal)
-            return
-        }
-        self.insert(self.right!.val!)
+        self.right = BSTNode(val: val)
     }
 
     func findMin() -> Int? {
