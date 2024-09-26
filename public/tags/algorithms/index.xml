@@ -11,8 +11,53 @@
     </image>
     <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Sep 2024 06:53:52 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 26 Sep 2024 07:01:30 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSA - Binary Search Tree - Traverse - Preorder</title>
+      <link>http://localhost:1313/posts/dsa-binary-search-tree-traverse-preorder/</link>
+      <pubDate>Thu, 26 Sep 2024 07:01:30 +0300</pubDate>
+      <guid>http://localhost:1313/posts/dsa-binary-search-tree-traverse-preorder/</guid>
+      <description>&lt;h3 id=&#34;what-is-tree-traversal&#34;&gt;What is tree traversal?&lt;/h3&gt;
+&lt;p&gt;Tree traversal, also known as &amp;ldquo;tree search&amp;rdquo; or &amp;ldquo;walking the tree,&amp;rdquo; is the process of visiting each node in a tree data structure exactly once.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-the-bst-preorder-algorithm&#34;&gt;What is the BST preorder algorithm?&lt;/h3&gt;
+&lt;p&gt;The preorder algorithm returns a list of values in the order they are visited. It makes a copy that preserves the structure and recursively traverses the BST.&lt;/p&gt;
+&lt;h3 id=&#34;code-example&#34;&gt;Code example&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;preorder&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;_&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;visited&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kr&#34;&gt;inout&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Value&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Value&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;val&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;nil&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;visited&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;append&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;val&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;!)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;left&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;nil&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;left&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;!.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;preorder&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;visited&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;right&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;nil&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;kc&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;right&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;!.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;preorder&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;visited&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;visited&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;The first step is to check if &lt;code&gt;val&lt;/code&gt; exists. If it does, append &lt;code&gt;val&lt;/code&gt; to the &lt;code&gt;visited&lt;/code&gt; array.&lt;/li&gt;
+&lt;li&gt;The second step is to check if the &lt;code&gt;left&lt;/code&gt; node exists. If it does, recursively call the &lt;code&gt;preorder&lt;/code&gt; method on the &lt;code&gt;left&lt;/code&gt; node.&lt;/li&gt;
+&lt;li&gt;The third step is similar to the second one but for the &lt;code&gt;right&lt;/code&gt; node.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;timespace-complexity&#34;&gt;Time/Space Complexity&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The time complexity of the preorder algorithm is O(N), where N is the total number of nodes.&lt;/li&gt;
+&lt;li&gt;The space complexity:
+&lt;ul&gt;
+&lt;li&gt;O(1) if no recursion stack space is considered.&lt;/li&gt;
+&lt;li&gt;Otherwise, O(H), where H is the height of the tree.&lt;/li&gt;
+&lt;li&gt;In the worst case, H can be the same as N (when the tree is skewed).&lt;/li&gt;
+&lt;li&gt;In the best case, H can be the same as logN (when the tree is complete).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;thank-you-for-reading-&#34;&gt;Thank you for reading! 😊&lt;/h4&gt;</description>
+    </item>
     <item>
       <title>DSA - Binary Search Tree - Delete</title>
       <link>http://localhost:1313/posts/dsa-binary-search-tree-delete/</link>
