@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Posts | Dmytro&#39;s Blog</title>
+<title>Postorder | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="">
-<meta name="description" content="Posts - Dmytro&#39;s Blog">
+<meta name="description" content="">
 <meta name="author" content="Dmytro Chumakov">
-<link rel="canonical" href="http://localhost:1313/posts/">
+<link rel="canonical" href="http://localhost:1313/tags/postorder/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f3be8e64f4e443c8e74473a0ae2c84b64621f8ec061e3432118c9f8aad022bd8.css" integrity="sha256-876OZPTkQ8jnRHOgriyEtkYh&#43;OwGHjQyEYyfiq0CK9g=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -19,8 +19,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/postorder/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/postorder/">
 <noscript>
     <style>
         #theme-toggle,
@@ -88,33 +88,18 @@
           gtag('js', new Date());
           gtag('config', 'G-HZZ4JTFGDP');
         }
-      </script><meta property="og:title" content="Posts" />
+      </script><meta property="og:title" content="Postorder" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/posts/" />
+<meta property="og:url" content="http://localhost:1313/tags/postorder/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
 
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
-<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:title" content="Postorder"/>
 <meta name="twitter:description" content=""/>
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "http://localhost:1313/posts/"
-    }
-  ]
-}
-</script>
 </head>
 
 <body class="list" id="top">
@@ -197,95 +182,25 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
   <h1>
-    Posts
+    Postorder
   </h1>
 </header>
 
-<article class="post-entry"> 
+<article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Text To Speech iOS
+    <h2 class="entry-hint-parent">DSA - Binary Search Tree - Postorder
     </h2>
   </header>
   <div class="entry-content">
-    <p>Introduction I was eager to learn how converting Text To Speech works in iOS. Here is what I discovered:
-First Step The first step is to add AVSpeechSynthesizer, an object that produces synthesized speech from text utterances.
-@State private var speechSynthesizer = AVSpeechSynthesizer() Second Step The second step is to add AVSpeechUtterance, an object that encapsulates the text for speech synthesis.
-private var utterance: AVSpeechUtterance { let inputMessage = &#34;Hello world!&#34; let utterance = AVSpeechUtterance(string: inputMessage) utterance.voice = AVSpeechSynthesisVoice(language: &#34;en-US&#34;) return utterance } Optional You can configure pitch, rate, and voice parameters.
-...</p>
+    <p>What is the postorder algorithm? The postorder algorithm, similar to the preorder algorithm, returns a list of values in the order they are visited.
+Code Example final class BSTNode&lt;Value: Comparable&gt; { var val: Value? var left: BSTNode? var right: BSTNode? init(val: Value? = nil) { self.val = val } func postorder(_ visited: inout [Value]) -&gt; [Value] { if self.left != nil { self.left!.postorder(&amp;visited) } if self.right != nil { self.right!.postorder(&amp;visited) } if self.val != nil { visited.append(self.val!) } return visited } } Implementation The postorder algorithm:
+Recursively traverse the current node’s left subtree. Recursively traverse the current node’s right subtree. Visit the current node. Time/Space Complexity The time complexity of the postorder algorithm is O(N), where N is the total number of nodes. The space complexity: O(1) if recursion stack space is not considered. Otherwise, O(H), where H is the height of the tree. In the worst case, H can be the same as N (when the tree is skewed). In the best case, H can be the same as logN (when the tree is complete). Thank you for reading! 😊</p>
   </div>
-  <footer class="entry-footer"><span title='2024-05-24 07:52:07 +0300 EEST'>May 24, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Text To Speech iOS" href="http://localhost:1313/posts/text-to-speech-ios/"></a>
+  <footer class="entry-footer"><span title='2024-09-27 06:55:55 +0300 EEST'>September 27, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to DSA - Binary Search Tree - Postorder" href="http://localhost:1313/posts/dsa-binary-search-tree-postorder/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Speech To Text iOS
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I always wanted an iOS app that would allow me to economize my time by converting speech to text. I know this option is built into the keyboard, but you first need to click the text field, then tap on the microphone, and finally speak. I wanted a one-click option with the possibility to integrate it into all my daily routines. Here is what I discovered:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-23 08:37:45 +0300 EEST'>May 23, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Speech To Text iOS" href="http://localhost:1313/posts/speech-to-text-ios/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Animation - UIKit
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was curious about creating animations in UIKit. I wanted to animate different properties such as color and path. Here is what I found:
-It’s impossible to create complex animations only by using the block-based animation API. To do that, you need the Core Animation API and CAPropertyAnimation with its various subclasses.
-Complex animation in UIKit is based on a few key components:
-CAShapeLayer - provides extensive customization options: path, stroke, fill, shadow CABasicAnimation - helps animate color or change the path Implementation First Step The first step is to create a shape layer that will draw an arrow using CAShapeLayer.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-21 06:31:02 +0300 EEST'>May 21, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Animation - UIKit" href="http://localhost:1313/posts/animation-uikit/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Animation - SwiftUI
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was eager to learn about creating complex animations in SwiftUI. The few questions that were on my mind included what types of animations exist and what I can animate. Here is what I found:
-Types of Animation SwiftUI has explicit and implicit animation types.
-Implicit Animation: This is specified with the .animation() modifier. SwiftUI will animate changes in old and new values.
-struct ImplicitAnimation: View { @State private var half = false @State private var dim = false var body: some View { Image(&#34;tower&#34;) .scaleEffect(half ? 0.5 : 1.0) .opacity(dim ? 0.2 : 1.0) .animation(.easeInOut(duration: 1.0)) .onTapGesture { self.dim.toggle() self.half.toggle() } } } ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-17 07:23:46 +0300 EEST'>May 17, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Animation - SwiftUI" href="http://localhost:1313/posts/animation-swiftui/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Implementing GraphQL in an iOS application
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I previously never had a chance to work with GraphQL. I was excited to learn when to apply this technology, what tools I can use, and how I can implement it. Here’s what I found:
-For testing, I used the Star Wars GraphQL API with AllFilmsQuery:
-query AllFilmsQuery { allFilms { films { title director created producers releaseDate } } } I requested allFilms with title, director, created, producers, and releaseDate information.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-15 07:13:39 +0300 EEST'>May 15, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Implementing GraphQL in an iOS application" href="http://localhost:1313/posts/implementing-graphql-in-an-ios-application/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/posts/page/7/">
-      «&nbsp;Prev&nbsp;7/16
-    </a>
-    <a class="next" href="http://localhost:1313/posts/page/9/">Next&nbsp;9/16&nbsp;»
-    </a>
-  </nav>
-</footer>
     </main>
     
 <footer class="footer">

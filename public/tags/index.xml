@@ -11,41 +11,62 @@
     </image>
     <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Sep 2024 07:01:30 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 27 Sep 2024 06:55:55 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algorithms</title>
       <link>http://localhost:1313/tags/algorithms/</link>
-      <pubDate>Thu, 26 Sep 2024 07:01:30 +0300</pubDate>
+      <pubDate>Fri, 27 Sep 2024 06:55:55 +0300</pubDate>
       <guid>http://localhost:1313/tags/algorithms/</guid>
       <description></description>
     </item>
     <item>
       <title>Binary Search Tree</title>
       <link>http://localhost:1313/tags/binary-search-tree/</link>
-      <pubDate>Thu, 26 Sep 2024 07:01:30 +0300</pubDate>
+      <pubDate>Fri, 27 Sep 2024 06:55:55 +0300</pubDate>
       <guid>http://localhost:1313/tags/binary-search-tree/</guid>
       <description></description>
     </item>
     <item>
       <title>BST</title>
       <link>http://localhost:1313/tags/bst/</link>
-      <pubDate>Thu, 26 Sep 2024 07:01:30 +0300</pubDate>
+      <pubDate>Fri, 27 Sep 2024 06:55:55 +0300</pubDate>
       <guid>http://localhost:1313/tags/bst/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Structures</title>
       <link>http://localhost:1313/tags/data-structures/</link>
-      <pubDate>Thu, 26 Sep 2024 07:01:30 +0300</pubDate>
+      <pubDate>Fri, 27 Sep 2024 06:55:55 +0300</pubDate>
       <guid>http://localhost:1313/tags/data-structures/</guid>
       <description></description>
     </item>
     <item>
       <title>DSA</title>
       <link>http://localhost:1313/tags/dsa/</link>
-      <pubDate>Thu, 26 Sep 2024 07:01:30 +0300</pubDate>
+      <pubDate>Fri, 27 Sep 2024 06:55:55 +0300</pubDate>
       <guid>http://localhost:1313/tags/dsa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Postorder</title>
+      <link>http://localhost:1313/tags/postorder/</link>
+      <pubDate>Fri, 27 Sep 2024 06:55:55 +0300</pubDate>
+      <guid>http://localhost:1313/tags/postorder/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Swift</title>
+      <link>http://localhost:1313/tags/swift/</link>
+      <pubDate>Fri, 27 Sep 2024 06:55:55 +0300</pubDate>
+      <guid>http://localhost:1313/tags/swift/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Traverse</title>
+      <link>http://localhost:1313/tags/traverse/</link>
+      <pubDate>Fri, 27 Sep 2024 06:55:55 +0300</pubDate>
+      <guid>http://localhost:1313/tags/traverse/</guid>
       <description></description>
     </item>
     <item>
@@ -53,20 +74,6 @@
       <link>http://localhost:1313/tags/preorder/</link>
       <pubDate>Thu, 26 Sep 2024 07:01:30 +0300</pubDate>
       <guid>http://localhost:1313/tags/preorder/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Swift</title>
-      <link>http://localhost:1313/tags/swift/</link>
-      <pubDate>Thu, 26 Sep 2024 07:01:30 +0300</pubDate>
-      <guid>http://localhost:1313/tags/swift/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Traverse</title>
-      <link>http://localhost:1313/tags/traverse/</link>
-      <pubDate>Thu, 26 Sep 2024 07:01:30 +0300</pubDate>
-      <guid>http://localhost:1313/tags/traverse/</guid>
       <description></description>
     </item>
     <item>
