@@ -190,6 +190,20 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - Stack
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is a Stack? A stack is an abstract data type that serves as a collection of elements and implements operations like push, pop, and peek at the end in O(1) time. It uses the LIFO (last in, first out) order. For example, a stack can be a collection of items where adding or removing is practical at the top.
+Code Example struct Stack&lt;Element&gt; { private var array: [Element] init(array: [Element] = []) { self.array = array } mutating func push(_ element: Element) { array.append(element) } mutating func pop() -&gt; Element? { if array.isEmpty { return nil } return array.popLast() } func peek() -&gt; Element? { if array.isEmpty { return nil } return array.last } } Practical Applications of Stacks You can observe stack-like behavior in many places, such as redo-undo features in text editors, Photoshop, and the forward and backward navigation features in web browsers.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-08-20 07:17:01 +0300 EEST'>August 20, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to DSA - Stack" href="http://localhost:1313/posts/dsa-stack/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">DSA - Two Pointers Technique
     </h2>
   </header>
@@ -245,21 +259,6 @@ Preparation Before we dive into implementation, I assume that you have an active
   </div>
   <footer class="entry-footer"><span title='2024-07-26 07:18:58 +0300 EEST'>July 26, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Implementing HealthKit in an iOS App" href="http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Implementing Location Service
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction Nowadays, location is an essential feature in almost every application. It’s very important to know the best ways to implement it without affecting performance and user experience. In this article, I will focus on how to implement general methods in location service.
-Preparation Before we begin, let’s add location permission keys to Info.plist:
-Privacy - Location When In Use Usage Description Privacy - Location Always and When In Use Usage Description First Step The first step is to create LocationService with the requestPermissions method to be able to receive location events.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-07-23 07:04:25 +0300 EEST'>July 23, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Implementing Location Service" href="http://localhost:1313/posts/implementing-location-service/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Posts | Dmytro&#39;s Blog</title>
+<title>Binary Search Tree | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="">
-<meta name="description" content="Posts - Dmytro&#39;s Blog">
+<meta name="description" content="">
 <meta name="author" content="Dmytro Chumakov">
-<link rel="canonical" href="http://localhost:1313/posts/">
+<link rel="canonical" href="http://localhost:1313/tags/binary-search-tree/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f3be8e64f4e443c8e74473a0ae2c84b64621f8ec061e3432118c9f8aad022bd8.css" integrity="sha256-876OZPTkQ8jnRHOgriyEtkYh&#43;OwGHjQyEYyfiq0CK9g=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -19,8 +19,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/binary-search-tree/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/binary-search-tree/">
 <noscript>
     <style>
         #theme-toggle,
@@ -88,33 +88,18 @@
           gtag('js', new Date());
           gtag('config', 'G-HZZ4JTFGDP');
         }
-      </script><meta property="og:title" content="Posts" />
+      </script><meta property="og:title" content="Binary Search Tree" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/posts/" />
+<meta property="og:url" content="http://localhost:1313/tags/binary-search-tree/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
 
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
-<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:title" content="Binary Search Tree"/>
 <meta name="twitter:description" content=""/>
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "http://localhost:1313/posts/"
-    }
-  ]
-}
-</script>
 </head>
 
 <body class="list" id="top">
@@ -197,89 +182,29 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
   <h1>
-    Posts
+    Binary Search Tree
   </h1>
 </header>
 
-<article class="post-entry"> 
+<article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Implementing GraphQL in an iOS application
+    <h2 class="entry-hint-parent">DSA - Binary Search Tree
     </h2>
   </header>
   <div class="entry-content">
-    <p>Introduction I previously never had a chance to work with GraphQL. I was excited to learn when to apply this technology, what tools I can use, and how I can implement it. Here’s what I found:
-For testing, I used the Star Wars GraphQL API with AllFilmsQuery:
-query AllFilmsQuery { allFilms { films { title director created producers releaseDate } } } I requested allFilms with title, director, created, producers, and releaseDate information.
+    <p>What is a Tree? A Tree is a data structure that has a root and subtrees of children, representing a set of linked nodes. Trees behave similarly to a LinkedList in that they have a collection of nodes starting with a head (root). The main difference is that Trees can have multiple children, whereas a LinkedList, on the other hand, can have only one next child.
+I’m going to focus on a commonly used type of tree, the Binary Search Tree.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-05-15 07:13:39 +0300 EEST'>May 15, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Implementing GraphQL in an iOS application" href="http://localhost:1313/posts/implementing-graphql-in-an-ios-application/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Securing user data with Keychain, Touch ID, and Face ID
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was eager to learn about securing user data using Keychain and biometric authentication. Here are a few steps I found:
-Caveats You can test accessing Keychain data using Touch ID and Face ID only on a real device.
-First Step The first step is to add the Privacy - Face ID Usage Description key to your Info.plist. Without it, you would not be able to retrieve data from Keychain using Face ID.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-13 07:31:49 +0300 EEST'>May 13, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Securing user data with Keychain, Touch ID, and Face ID" href="http://localhost:1313/posts/securing-user-data-with-keychain-touch-id-and-face-id/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Implementing In-App Purchases to SwiftUI app using StoreKit 2
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was wondering how to add in-app purchases to my app. I chose non-consumable in-app purchase because you can pay one time for this item. Here are a few steps on how I did it.
-First Step Set up In-App Purchases for your app in App Store Connect account or add a .storekit configuration file and start from there. If you’ve already set up In-App Purchases in your account, you can sync the StoreKit config with that data.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-12 07:57:51 +0300 EEST'>May 12, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Implementing In-App Purchases to SwiftUI app using StoreKit 2" href="http://localhost:1313/posts/implementing-in-app-purchases-to-swiftui-app-using-storekit-2/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Implementing Apple Pay in a SwiftUI app
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction Sometime ago, I was working on a marketplace app, and I needed to add Apple Pay to make purchases more easily. Here are a few steps on how I did it: First Step You need to add Apple Pay capability to your project. You will need to Register a Merchant ID. I will skip this step; you can find info by following this link Setting up Apple Pay. Second Step You will need to import PassKit and create PKPaymentRequest to interact with PKPaymentAuthorizationController and PKPaymentAuthorizationControllerDelegate. func initiateApplePay() { // Create payment request let paymentRequest = PKPaymentRequest() paymentRequest.merchantIdentifier = &#34;your_merchant_identifier&#34; paymentRequest.countryCode = &#34;US&#34; paymentRequest.currencyCode = &#34;USD&#34; paymentRequest.supportedNetworks = [.visa, .masterCard, .amex] paymentRequest.merchantCapabilities = .threeDSecure // Add payment items from cart for item in cartItems { let paymentItem = PKPaymentSummaryItem(label: item.name, amount: item.price) paymentRequest.paymentSummaryItems.append(paymentItem) } // Add total amount let totalItem = PKPaymentSummaryItem(label: &#34;Total&#34;, amount: totalAmount) paymentRequest.paymentSummaryItems.append(totalItem) // Present Apple Pay sheet let paymentController = PKPaymentAuthorizationController(paymentRequest: paymentRequest) paymentController.delegate = self paymentController.present(completion: nil) } Third Step Add UI and connect it with the view model.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-11 07:25:24 +0300 EEST'>May 11, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Implementing Apple Pay in a SwiftUI app" href="http://localhost:1313/posts/implementing-apple-pay-in-a-swiftui-app/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Integration testing for SwiftUI views
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I have been looking for information about implementation details of integration testing. I found a lot of information, but it was theoretical and all information looked the same. I did not find a meaningful example, so I tried to come up with my own definition and sample.
-Integration testing means testing the behavior between modules or views to ensure they work as expected after user actions.
-There are two ways of conducting integration testing: The first is by unit tests, where you try to test the flowing data between view models. The second is UI tests, where you try to test if the UI items exist and navigation works correctly. I will focus on testing the flowing data between view models.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-10 06:20:50 +0300 EEST'>May 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Integration testing for SwiftUI views" href="http://localhost:1313/posts/integration-testing-for-swiftui-views/"></a>
+  <footer class="entry-footer"><span title='2024-09-02 07:12:55 +0300 EEST'>September 2, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to DSA - Binary Search Tree" href="http://localhost:1313/posts/dsa-binary-search-tree/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/posts/page/8/">
-      «&nbsp;Prev&nbsp;8/16
-    </a>
-    <a class="next" href="http://localhost:1313/posts/page/10/">Next&nbsp;10/16&nbsp;»
+    <a class="prev" href="http://localhost:1313/tags/binary-search-tree/">
+      «&nbsp;Prev&nbsp;1/2
     </a>
   </nav>
 </footer>
