@@ -11,13 +11,41 @@
     </image>
     <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Sep 2024 07:08:52 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 30 Sep 2024 07:17:10 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algorithms</title>
       <link>http://localhost:1313/tags/algorithms/</link>
-      <pubDate>Sat, 28 Sep 2024 07:08:52 +0300</pubDate>
+      <pubDate>Mon, 30 Sep 2024 07:17:10 +0300</pubDate>
       <guid>http://localhost:1313/tags/algorithms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Structures</title>
+      <link>http://localhost:1313/tags/data-structures/</link>
+      <pubDate>Mon, 30 Sep 2024 07:17:10 +0300</pubDate>
+      <guid>http://localhost:1313/tags/data-structures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSA</title>
+      <link>http://localhost:1313/tags/dsa/</link>
+      <pubDate>Mon, 30 Sep 2024 07:17:10 +0300</pubDate>
+      <guid>http://localhost:1313/tags/dsa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Red-Black Tree</title>
+      <link>http://localhost:1313/tags/red-black-tree/</link>
+      <pubDate>Mon, 30 Sep 2024 07:17:10 +0300</pubDate>
+      <guid>http://localhost:1313/tags/red-black-tree/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Swift</title>
+      <link>http://localhost:1313/tags/swift/</link>
+      <pubDate>Mon, 30 Sep 2024 07:17:10 +0300</pubDate>
+      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>
@@ -35,31 +63,10 @@
       <description></description>
     </item>
     <item>
-      <title>Data Structures</title>
-      <link>http://localhost:1313/tags/data-structures/</link>
-      <pubDate>Sat, 28 Sep 2024 07:08:52 +0300</pubDate>
-      <guid>http://localhost:1313/tags/data-structures/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>DSA</title>
-      <link>http://localhost:1313/tags/dsa/</link>
-      <pubDate>Sat, 28 Sep 2024 07:08:52 +0300</pubDate>
-      <guid>http://localhost:1313/tags/dsa/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Inorder</title>
       <link>http://localhost:1313/tags/inorder/</link>
       <pubDate>Sat, 28 Sep 2024 07:08:52 +0300</pubDate>
       <guid>http://localhost:1313/tags/inorder/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Swift</title>
-      <link>http://localhost:1313/tags/swift/</link>
-      <pubDate>Sat, 28 Sep 2024 07:08:52 +0300</pubDate>
-      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>

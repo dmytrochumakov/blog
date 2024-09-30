@@ -3,7 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/algorithms/</loc>
-    <lastmod>2024-09-28T07:08:52+03:00</lastmod>
+    <lastmod>2024-09-30T07:17:10+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/data-structures/</loc>
+    <lastmod>2024-09-30T07:17:10+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-09-30T07:17:10+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/dsa/</loc>
+    <lastmod>2024-09-30T07:17:10+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/dsa-red-black-tree/</loc>
+    <lastmod>2024-09-30T07:17:10+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-09-30T07:17:10+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/red-black-tree/</loc>
+    <lastmod>2024-09-30T07:17:10+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swift/</loc>
+    <lastmod>2024-09-30T07:17:10+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-09-30T07:17:10+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/binary-search-tree/</loc>
     <lastmod>2024-09-28T07:08:52+03:00</lastmod>
@@ -11,28 +35,10 @@
     <loc>http://localhost:1313/tags/bst/</loc>
     <lastmod>2024-09-28T07:08:52+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/data-structures/</loc>
-    <lastmod>2024-09-28T07:08:52+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-09-28T07:08:52+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/dsa/</loc>
-    <lastmod>2024-09-28T07:08:52+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/dsa-binary-search-tree-inorder/</loc>
     <lastmod>2024-09-28T07:08:52+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/inorder/</loc>
-    <lastmod>2024-09-28T07:08:52+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-09-28T07:08:52+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2024-09-28T07:08:52+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-09-28T07:08:52+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/traverse/</loc>

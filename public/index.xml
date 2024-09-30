@@ -11,8 +11,37 @@
     </image>
     <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Sep 2024 07:08:52 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 30 Sep 2024 07:17:10 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSA - Red-Black Tree</title>
+      <link>http://localhost:1313/posts/dsa-red-black-tree/</link>
+      <pubDate>Mon, 30 Sep 2024 07:17:10 +0300</pubDate>
+      <guid>http://localhost:1313/posts/dsa-red-black-tree/</guid>
+      <description>&lt;h3 id=&#34;what-is-a-red-black-tree&#34;&gt;What is a Red-Black Tree?&lt;/h3&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Red%E2%80%93black_tree&#34;&gt;Red-Black tree&lt;/a&gt; is a &lt;a href=&#34;https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree&#34;&gt;self-balancing&lt;/a&gt; binary search tree data structure. When the tree is modified, the new tree is rearranged and &amp;ldquo;repainted&amp;rdquo; to restore the coloring properties that constrain how unbalanced the tree can become in the worst case.&lt;br&gt;
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-197fb&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-197fb&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/Red-black_tree_example.png&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;br&gt;
+&lt;a href=&#34;https://upload.wikimedia.org/wikipedia/commons/4/41/Red-black_tree_example_with_NIL.svg&#34;&gt;source&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;properties&#34;&gt;Properties&lt;/h3&gt;
+&lt;p&gt;A Red-Black tree has all binary search tree properties, with some additional properties:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Every node is either &lt;code&gt;red&lt;/code&gt; or &lt;code&gt;black&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;All &lt;code&gt;nil&lt;/code&gt; nodes are considered &lt;code&gt;black&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;A &lt;code&gt;red&lt;/code&gt; node does not have a &lt;code&gt;red&lt;/code&gt; child.&lt;/li&gt;
+&lt;li&gt;If a node is &lt;code&gt;red&lt;/code&gt;, then both its children are &lt;code&gt;black&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Every path from a given node to any of its descendant &lt;code&gt;nil&lt;/code&gt; nodes goes through the same number of &lt;code&gt;black&lt;/code&gt; nodes.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;time-complexity&#34;&gt;Time Complexity&lt;/h3&gt;
+&lt;p&gt;The (re-)balancing is not perfect, but guarantees searching in O(log n) time, where n is the number of entries in the tree. The insert and delete operations, along with tree rearrangement and recoloring, also execute in O(log n) time.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>DSA - Binary Search Tree - Inorder</title>
       <link>http://localhost:1313/posts/dsa-binary-search-tree-inorder/</link>
