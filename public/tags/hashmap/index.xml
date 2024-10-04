@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hashmap on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/hashmap/</link>
+    <description>Recent content in Hashmap on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.134.3</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 04 Oct 2024 07:14:03 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/hashmap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSA - Hashmap</title>
+      <link>http://localhost:1313/posts/dsa-hashmap/</link>
+      <pubDate>Fri, 04 Oct 2024 07:14:03 +0300</pubDate>
+      <guid>http://localhost:1313/posts/dsa-hashmap/</guid>
+      <description>&lt;h3 id=&#34;what-is-hashmap-aka-hash-table&#34;&gt;What is Hashmap (aka Hash Table)?&lt;/h3&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Hash_table&#34;&gt;hashmap&lt;/a&gt; is a data structure that implements an associative array, also called a dictionary. An associative array maps keys to values. A hash table uses a &lt;a href=&#34;https://en.wikipedia.org/wiki/Hash_function&#34;&gt;hash function&lt;/a&gt; to compute an index, also called a &lt;code&gt;hash code&lt;/code&gt;, into an array of &lt;code&gt;buckets or slots&lt;/code&gt;, from which the desired value can be found. During a lookup, the &lt;code&gt;key&lt;/code&gt; is hashed, and the resulting hash indicates where the corresponding value is stored.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
