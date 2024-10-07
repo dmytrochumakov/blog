@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Hashmap | Dmytro&#39;s Blog</title>
+<title>HashMap | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="Dmytro Chumakov">
@@ -88,7 +88,7 @@
           gtag('js', new Date());
           gtag('config', 'G-HZZ4JTFGDP');
         }
-      </script><meta property="og:title" content="Hashmap" />
+      </script><meta property="og:title" content="HashMap" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/tags/hashmap/" />
@@ -97,7 +97,7 @@
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
-<meta name="twitter:title" content="Hashmap"/>
+<meta name="twitter:title" content="HashMap"/>
 <meta name="twitter:description" content=""/>
 
 </head>
@@ -184,9 +184,23 @@
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
   <h1>
-    Hashmap
+    HashMap
   </h1>
 </header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - HashMap - Custom Implementation
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction Let’s take a closer look at a HashMap implementation by building it without using the built-in dictionary in Swift. The HashMap will use a fixed-size array underneath the hash function that will transform the key into an index. In this example, the hash function is based on taking the modulo of the sum of all key.unicodeScalars integer values with the size of the array.
+Code Example final class HashMap&lt;Key: StringProtocol, Value&gt; { private var hashMap: [Value?] private var size: Int init(size: Int) { self.hashMap = Array(repeating: nil, count: size) self.size = size } private func hashFunction(key: Key) -&gt; Int { var count = 0 for element in key.unicodeScalars { count &#43;= Int(element.value) } return count % self.size } } Insert The insert operation uses the index provided by the hashFunction and sets the value at this index.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-07 07:01:20 +0300 EEST'>October 7, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to DSA - HashMap - Custom Implementation" href="http://localhost:1313/posts/dsa-hashmap-custom-implementation/"></a>
+</article>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
