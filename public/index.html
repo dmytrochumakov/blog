@@ -270,7 +270,7 @@
   </header>
   <div class="entry-content">
     <p>Introduction Let’s take a closer look at a HashMap implementation by building it without using the built-in dictionary in Swift. The HashMap will use a fixed-size array underneath the hash function that will transform the key into an index. In this example, the hash function is based on taking the modulo of the sum of all key.unicodeScalars integer values with the size of the array.
-Code Example final class HashMap&lt;Key: StringProtocol, Value&gt; { private var hashMap: [Value?] private var size: Int init(size: Int) { self.hashMap = Array(repeating: nil, count: size) self.size = size } private func hashFunction(key: Key) -&gt; Int { var count = 0 for element in key.unicodeScalars { count &#43;= Int(element.value) } return count % self.size } } Insert The insert operation uses the index provided by the hashFunction and sets the value at this index.
+Code Example final class HashMap&lt;Key: StringProtocol, Value&gt; { private var hashMap: [(key: Key, value: Value)?] private var size: Int init(size: Int) { self.hashMap = Array(repeating: nil, count: size) self.size = size } private func hashFunction(key: Key) -&gt; Int { var count = 0 for element in key.unicodeScalars { count &#43;= Int(element.value) } return count % self.size } } Insert The insert operation uses the index provided by the hashFunction and sets the value at this index.
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2024-10-07 07:01:20 +0300 EEST'>October 7, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>

@@ -12,7 +12,7 @@ Let&rsquo;s take a closer look at a HashMap implementation by building it withou
 Code Example
 final class HashMap&lt;Key: StringProtocol, Value&gt; {
 
-    private var hashMap: [Value?]
+    private var hashMap: [(key: Key, value: Value)?]
     private var size: Int
 
     init(size: Int) {
@@ -116,7 +116,7 @@ Let&rsquo;s take a closer look at a HashMap implementation by building it withou
 Code Example
 final class HashMap&lt;Key: StringProtocol, Value&gt; {
 
-    private var hashMap: [Value?]
+    private var hashMap: [(key: Key, value: Value)?]
     private var size: Int
 
     init(size: Int) {
@@ -150,7 +150,7 @@ Let&rsquo;s take a closer look at a HashMap implementation by building it withou
 Code Example
 final class HashMap&lt;Key: StringProtocol, Value&gt; {
 
-    private var hashMap: [Value?]
+    private var hashMap: [(key: Key, value: Value)?]
     private var size: Int
 
     init(size: Int) {
@@ -197,12 +197,12 @@ The insert operation uses the index provided by the hashFunction and sets the va
   "@type": "BlogPosting",
   "headline": "DSA - HashMap - Custom Implementation",
   "name": "DSA - HashMap - Custom Implementation",
-  "description": "Introduction Let\u0026rsquo;s take a closer look at a HashMap implementation by building it without using the built-in dictionary in Swift. The HashMap will use a fixed-size array underneath the hash function that will transform the key into an index. In this example, the hash function is based on taking the modulo of the sum of all key.unicodeScalars integer values with the size of the array.\nCode Example final class HashMap\u0026lt;Key: StringProtocol, Value\u0026gt; { private var hashMap: [Value?] private var size: Int init(size: Int) { self.hashMap = Array(repeating: nil, count: size) self.size = size } private func hashFunction(key: Key) -\u0026gt; Int { var count = 0 for element in key.unicodeScalars { count += Int(element.value) } return count % self.size } } Insert The insert operation uses the index provided by the hashFunction and sets the value at this index.\n",
+  "description": "Introduction Let\u0026rsquo;s take a closer look at a HashMap implementation by building it without using the built-in dictionary in Swift. The HashMap will use a fixed-size array underneath the hash function that will transform the key into an index. In this example, the hash function is based on taking the modulo of the sum of all key.unicodeScalars integer values with the size of the array.\nCode Example final class HashMap\u0026lt;Key: StringProtocol, Value\u0026gt; { private var hashMap: [(key: Key, value: Value)?] private var size: Int init(size: Int) { self.hashMap = Array(repeating: nil, count: size) self.size = size } private func hashFunction(key: Key) -\u0026gt; Int { var count = 0 for element in key.unicodeScalars { count += Int(element.value) } return count % self.size } } Insert The insert operation uses the index provided by the hashFunction and sets the value at this index.\n",
   "keywords": [
     "DSA", "Data Structures", "Algorithms", "HashMap", "Swift"
   ],
-  "articleBody": "Introduction Let’s take a closer look at a HashMap implementation by building it without using the built-in dictionary in Swift. The HashMap will use a fixed-size array underneath the hash function that will transform the key into an index. In this example, the hash function is based on taking the modulo of the sum of all key.unicodeScalars integer values with the size of the array.\nCode Example final class HashMap\u003cKey: StringProtocol, Value\u003e { private var hashMap: [Value?] private var size: Int init(size: Int) { self.hashMap = Array(repeating: nil, count: size) self.size = size } private func hashFunction(key: Key) -\u003e Int { var count = 0 for element in key.unicodeScalars { count += Int(element.value) } return count % self.size } } Insert The insert operation uses the index provided by the hashFunction and sets the value at this index.\nfunc insert(key: Key, value: Value) { let index = hashFunction(key: key) self.hashMap[index] = value } Get The get operation uses the index provided by the hashFunction and retrieves the value at this index.\nfunc getValue(by key: Key) -\u003e Value? { let index = hashFunction(key: key) return self.hashMap[index] } Complete Code Example final class HashMap\u003cKey: StringProtocol, Value\u003e { private var hashMap: [Value?] private var size: Int init(size: Int) { self.hashMap = Array(repeating: nil, count: size) self.size = size } func getValue(by key: Key) -\u003e Value? { let index = hashFunction(key: key) return self.hashMap[index] } func insert(key: Key, value: Value) { let index = hashFunction(key: key) self.hashMap[index] = value } private func hashFunction(key: Key) -\u003e Int { var count = 0 for element in key.unicodeScalars { count += Int(element.value) } return count % self.size } } Time/Space Complexity Time complexity in Big O notation:\nOperation Average Worst Case Insert Θ(1) O(n) Space complexity: Θ(n)\nThank you for reading! 😊 ",
-  "wordCount" : "295",
+  "articleBody": "Introduction Let’s take a closer look at a HashMap implementation by building it without using the built-in dictionary in Swift. The HashMap will use a fixed-size array underneath the hash function that will transform the key into an index. In this example, the hash function is based on taking the modulo of the sum of all key.unicodeScalars integer values with the size of the array.\nCode Example final class HashMap\u003cKey: StringProtocol, Value\u003e { private var hashMap: [(key: Key, value: Value)?] private var size: Int init(size: Int) { self.hashMap = Array(repeating: nil, count: size) self.size = size } private func hashFunction(key: Key) -\u003e Int { var count = 0 for element in key.unicodeScalars { count += Int(element.value) } return count % self.size } } Insert The insert operation uses the index provided by the hashFunction and sets the value at this index.\nfunc insert(key: Key, value: Value) { let index = hashFunction(key: key) self.hashMap[index] = (key, value) } Get The get operation uses the index provided by the hashFunction and retrieves the value at this index.\nfunc getValue(by key: Key) -\u003e Value? { let index = hashFunction(key: key) return self.hashMap[index]?.value } Complete Code Example final class HashMap\u003cKey: StringProtocol, Value\u003e { private var hashMap: [(key: Key, value: Value)?] private var size: Int init(size: Int) { self.hashMap = Array(repeating: nil, count: size) self.size = size } func getValue(by key: Key) -\u003e Value? { let index = hashFunction(key: key) return self.hashMap[index]?.value } func insert(key: Key, value: Value) { let index = hashFunction(key: key) self.hashMap[index] = (key, value) } private func hashFunction(key: Key) -\u003e Int { var count = 0 for element in key.unicodeScalars { count += Int(element.value) } return count % self.size } } Time/Space Complexity Time complexity in Big O notation:\nOperation Average Worst Case Insert Θ(1) O(n) Space complexity: Θ(n)\nThank you for reading! 😊 ",
+  "wordCount" : "303",
   "inLanguage": "en",
   "image": "http://localhost:1313/images/papermod-cover.png","datePublished": "2024-10-07T07:01:20+03:00",
   "dateModified": "2024-10-07T07:01:20+03:00",
@@ -351,7 +351,7 @@ The insert operation uses the index provided by the hashFunction and sets the va
 <h3 id="code-example">Code Example<a hidden class="anchor" aria-hidden="true" href="#code-example">#</a></h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kr">final</span> <span class="kd">class</span> <span class="nc">HashMap</span><span class="p">&lt;</span><span class="n">Key</span><span class="p">:</span> <span class="n">StringProtocol</span><span class="p">,</span> <span class="n">Value</span><span class="p">&gt;</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">var</span> <span class="nv">hashMap</span><span class="p">:</span> <span class="p">[</span><span class="n">Value</span><span class="p">?]</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">var</span> <span class="nv">hashMap</span><span class="p">:</span> <span class="p">[(</span><span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Value</span><span class="p">)?]</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">var</span> <span class="nv">size</span><span class="p">:</span> <span class="nb">Int</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="kd">init</span><span class="p">(</span><span class="n">size</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">{</span>
@@ -372,18 +372,18 @@ The insert operation uses the index provided by the hashFunction and sets the va
 <p>The insert operation uses the <code>index</code> provided by the <code>hashFunction</code> and sets the value at this <code>index</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">insert</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Value</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nv">index</span> <span class="p">=</span> <span class="n">hashFunction</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">key</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="kc">self</span><span class="p">.</span><span class="n">hashMap</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">=</span> <span class="n">value</span>
+</span></span><span class="line"><span class="cl">    <span class="kc">self</span><span class="p">.</span><span class="n">hashMap</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">=</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><h3 id="get">Get<a hidden class="anchor" aria-hidden="true" href="#get">#</a></h3>
 <p>The get operation uses the <code>index</code> provided by the <code>hashFunction</code> and retrieves the value at this <code>index</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">getValue</span><span class="p">(</span><span class="n">by</span> <span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="n">Value</span><span class="p">?</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nv">index</span> <span class="p">=</span> <span class="n">hashFunction</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">key</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kc">self</span><span class="p">.</span><span class="n">hashMap</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kc">self</span><span class="p">.</span><span class="n">hashMap</span><span class="p">[</span><span class="n">index</span><span class="p">]?.</span><span class="n">value</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><h3 id="complete-code-example">Complete Code Example<a hidden class="anchor" aria-hidden="true" href="#complete-code-example">#</a></h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kr">final</span> <span class="kd">class</span> <span class="nc">HashMap</span><span class="p">&lt;</span><span class="n">Key</span><span class="p">:</span> <span class="n">StringProtocol</span><span class="p">,</span> <span class="n">Value</span><span class="p">&gt;</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">var</span> <span class="nv">hashMap</span><span class="p">:</span> <span class="p">[</span><span class="n">Value</span><span class="p">?]</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">var</span> <span class="nv">hashMap</span><span class="p">:</span> <span class="p">[(</span><span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Value</span><span class="p">)?]</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">var</span> <span class="nv">size</span><span class="p">:</span> <span class="nb">Int</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="kd">init</span><span class="p">(</span><span class="n">size</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">{</span>
@@ -393,12 +393,12 @@ The insert operation uses the index provided by the hashFunction and sets the va
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">getValue</span><span class="p">(</span><span class="n">by</span> <span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="n">Value</span><span class="p">?</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">        <span class="kd">let</span> <span class="nv">index</span> <span class="p">=</span> <span class="n">hashFunction</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">key</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">self</span><span class="p">.</span><span class="n">hashMap</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">self</span><span class="p">.</span><span class="n">hashMap</span><span class="p">[</span><span class="n">index</span><span class="p">]?.</span><span class="n">value</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">insert</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Value</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">        <span class="kd">let</span> <span class="nv">index</span> <span class="p">=</span> <span class="n">hashFunction</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">key</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="n">hashMap</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">=</span> <span class="n">value</span>
+</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="n">hashMap</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">=</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">func</span> <span class="nf">hashFunction</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="n">Key</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span> <span class="p">{</span>

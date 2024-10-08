@@ -13,7 +13,7 @@ Let's take a closer look at a HashMap implementation by building it without usin
 ```swift
 final class HashMap<Key: StringProtocol, Value> {
 
-    private var hashMap: [Value?]
+    private var hashMap: [(key: Key, value: Value)?]
     private var size: Int
 
     init(size: Int) {
@@ -37,7 +37,7 @@ The insert operation uses the `index` provided by the `hashFunction` and sets th
 ```swift
 func insert(key: Key, value: Value) {
     let index = hashFunction(key: key)
-    self.hashMap[index] = value
+    self.hashMap[index] = (key, value)
 }
 ```
 
@@ -46,7 +46,7 @@ The get operation uses the `index` provided by the `hashFunction` and retrieves 
 ```swift
 func getValue(by key: Key) -> Value? {
     let index = hashFunction(key: key)
-    return self.hashMap[index]
+    return self.hashMap[index]?.value
 }
 ```
 
@@ -54,7 +54,7 @@ func getValue(by key: Key) -> Value? {
 ```swift
 final class HashMap<Key: StringProtocol, Value> {
 
-    private var hashMap: [Value?]
+    private var hashMap: [(key: Key, value: Value)?]
     private var size: Int
 
     init(size: Int) {
@@ -64,12 +64,12 @@ final class HashMap<Key: StringProtocol, Value> {
 
     func getValue(by key: Key) -> Value? {
         let index = hashFunction(key: key)
-        return self.hashMap[index]
+        return self.hashMap[index]?.value
     }
 
     func insert(key: Key, value: Value) {
         let index = hashFunction(key: key)
-        self.hashMap[index] = value
+        self.hashMap[index] = (key, value)
     }
 
     private func hashFunction(key: Key) -> Int {
