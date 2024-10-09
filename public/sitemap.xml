@@ -3,30 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/algorithms/</loc>
-    <lastmod>2024-10-07T07:01:20+03:00</lastmod>
+    <lastmod>2024-10-09T07:20:29+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/data-structures/</loc>
-    <lastmod>2024-10-07T07:01:20+03:00</lastmod>
+    <lastmod>2024-10-09T07:20:29+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-10-07T07:01:20+03:00</lastmod>
+    <lastmod>2024-10-09T07:20:29+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/dsa/</loc>
-    <lastmod>2024-10-07T07:01:20+03:00</lastmod>
+    <lastmod>2024-10-09T07:20:29+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/dsa-hashmap-custom-implementation/</loc>
-    <lastmod>2024-10-07T07:01:20+03:00</lastmod>
+    <loc>http://localhost:1313/posts/dsa-hashmap-resize/</loc>
+    <lastmod>2024-10-09T07:20:29+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/hashmap/</loc>
-    <lastmod>2024-10-07T07:01:20+03:00</lastmod>
+    <lastmod>2024-10-09T07:20:29+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-10-07T07:01:20+03:00</lastmod>
+    <lastmod>2024-10-09T07:20:29+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/resize/</loc>
+    <lastmod>2024-10-09T07:20:29+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2024-10-07T07:01:20+03:00</lastmod>
+    <lastmod>2024-10-09T07:20:29+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-10-09T07:20:29+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/dsa-hashmap-custom-implementation/</loc>
     <lastmod>2024-10-07T07:01:20+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/dsa-hashmap/</loc>

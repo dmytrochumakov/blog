@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Swift | Dmytro&#39;s Blog</title>
+<title>Resize | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="Dmytro Chumakov">
-<link rel="canonical" href="http://localhost:1313/tags/swift/">
+<link rel="canonical" href="http://localhost:1313/tags/resize/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f3be8e64f4e443c8e74473a0ae2c84b64621f8ec061e3432118c9f8aad022bd8.css" integrity="sha256-876OZPTkQ8jnRHOgriyEtkYh&#43;OwGHjQyEYyfiq0CK9g=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -19,8 +19,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/swift/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/swift/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/resize/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/resize/">
 <noscript>
     <style>
         #theme-toggle,
@@ -88,16 +88,16 @@
           gtag('js', new Date());
           gtag('config', 'G-HZZ4JTFGDP');
         }
-      </script><meta property="og:title" content="Swift" />
+      </script><meta property="og:title" content="Resize" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/tags/swift/" />
+<meta property="og:url" content="http://localhost:1313/tags/resize/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
 
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
-<meta name="twitter:title" content="Swift"/>
+<meta name="twitter:title" content="Resize"/>
 <meta name="twitter:description" content=""/>
 
 </head>
@@ -184,91 +184,24 @@
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
   <h1>
-    Swift
+    Resize
   </h1>
 </header>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Trie
+    <h2 class="entry-hint-parent">DSA - Hashmap - Resize
     </h2>
   </header>
   <div class="entry-content">
-    <p>What is a Trie? A Trie is a data structure usually called a “prefix tree,” often represented as a nested tree of dictionaries where each key is a character that maps to the next character in a word.
-Let’s look at some examples of a Trie. The Trie consists of two main classes: the TrieNode class and the Trie class.
-TrieNode The TrieNode class has two properties:
-children - a property that represents all characters in a given word and points to the next character. isEndSymbol - a property that indicates the end of the word in a given sequence of characters. final class TrieNode { var children: [Character: TrieNode?] var isEndSymbol: Bool init() { self.children = [:] self.isEndSymbol = false } } Trie The Trie class has two main operations, insert and exists, and a root property that stores all possible combinations of words.
+    <p>Introduction Previously, we discussed a custom hashmap implementation. That implementation has a lot of collisions because we are using a fixed-size array.
+If we want to reduce the chances of collisions, we can increase the number of slots in the hashmap, or in other words, resize our hashmap. Resizing cannot guarantee that collisions will be entirely eliminated, but it will help reduce the likelihood of one happening.
+Code Example private func loadFactor() -&gt; Double? { if self.hashMap.isEmpty { return nil } else { var filledSlots = 0 for slot in self.hashMap { if slot != nil { filledSlots &#43;= 1 } } return Double(filledSlots / self.hashMap.count) } } private func resize() { if self.hashMap.isEmpty { self.hashMap = [nil] return } guard let load = self.loadFactor() else { return } if load &lt; 0.05 { return } let oldHashMap = self.hashMap self.hashMap = Array(repeating: nil, count: oldHashMap.count * 10) for kvp in oldHashMap { if let kvp = kvp { self.insert(key: kvp.key, value: kvp.value) } } } Implementation When resizing, we create a new hashmap with a larger number of slots. Then, we re-insert all the key-value pairs from the old hashmap into the new one.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-09-06 06:56:18 +0300 EEST'>September 6, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Trie" href="http://localhost:1313/posts/dsa-trie/"></a>
+  <footer class="entry-footer"><span title='2024-10-09 07:20:29 +0300 EEST'>October 9, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to DSA - Hashmap - Resize" href="http://localhost:1313/posts/dsa-hashmap-resize/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Binary Search Tree
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is a Tree? A Tree is a data structure that has a root and subtrees of children, representing a set of linked nodes. Trees behave similarly to a LinkedList in that they have a collection of nodes starting with a head (root). The main difference is that Trees can have multiple children, whereas a LinkedList, on the other hand, can have only one next child.
-I’m going to focus on a commonly used type of tree, the Binary Search Tree.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-02 07:12:55 +0300 EEST'>September 2, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Binary Search Tree" href="http://localhost:1313/posts/dsa-binary-search-tree/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Sliding Window
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is the sliding window technique? The sliding window technique is a common algorithmic approach used to create a fixed-sized window that moves through the data one step at a time, typically from left to right, to perform specific operations or computations on the elements within the window.
-What is the sliding window algorithm? The sliding window algorithm is a method for finding a subset of elements that satisfy certain conditions in a given problem.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-08-28 07:20:26 +0300 EEST'>August 28, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Sliding Window" href="http://localhost:1313/posts/dsa-sliding-window/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Linked List
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is a Linked List? A linked list is a common data structure that is similar to an array, but its order is based on pointers to the next element in memory instead of using physical placement (indices).
-A linked list has two main components:
-ListNode class: This class has a val property that represents the value and a next property that represents a pointer to the next element in memory. LinkedList class: This class stores a collection of ListNode elements and provides operations like add to tail and add to head. The add to tail operation takes O(n) time because it needs to iterate through the list to find the last element. The add to head operation takes O(1) time because it only needs to set the next pointer of the new node to the current head and update the head with the new node. Where can it be used? A linked list can be used in stacks, queues, and lists.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-08-27 07:13:19 +0300 EEST'>August 27, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Linked List" href="http://localhost:1313/posts/dsa-linked-list/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Binary Search
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is binary search? Binary search is an algorithm that helps find an element in a sorted array in O(log n) time.
-Why should the input be sorted before performing binary search? The input array for binary search needs to be sorted because the algorithm eliminates half of the choices at each step. If the guessed value is greater than the target value, it knows that the right part can’t contain the target value.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-08-26 07:09:48 +0300 EEST'>August 26, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Binary Search" href="http://localhost:1313/posts/dsa-binary-search/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/tags/swift/page/3/">
-      «&nbsp;Prev&nbsp;3/10
-    </a>
-    <a class="next" href="http://localhost:1313/tags/swift/page/5/">Next&nbsp;5/10&nbsp;»
-    </a>
-  </nav>
-</footer>
     </main>
     
 <footer class="footer">
