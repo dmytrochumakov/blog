@@ -26,7 +26,7 @@ final class HashMap<Key: StringProtocol, Value> {
         for element in key.unicodeScalars {
             count += Int(element.value)
         }
-        return count % self.size
+        return count % self.hashMap.count
     }
 
 }
@@ -77,7 +77,7 @@ final class HashMap<Key: StringProtocol, Value> {
         for element in key.unicodeScalars {
             count += Int(element.value)
         }
-        return count % self.size
+        return count % self.hashMap.count
     }
 
 }

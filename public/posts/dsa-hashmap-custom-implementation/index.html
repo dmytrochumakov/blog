@@ -25,7 +25,7 @@ final class HashMap&lt;Key: StringProtocol, Value&gt; {
         for element in key.unicodeScalars {
             count &#43;= Int(element.value)
         }
-        return count % self.size
+        return count % self.hashMap.count
     }
 
 }
@@ -129,7 +129,7 @@ final class HashMap&lt;Key: StringProtocol, Value&gt; {
         for element in key.unicodeScalars {
             count &#43;= Int(element.value)
         }
-        return count % self.size
+        return count % self.hashMap.count
     }
 
 }
@@ -163,7 +163,7 @@ final class HashMap&lt;Key: StringProtocol, Value&gt; {
         for element in key.unicodeScalars {
             count &#43;= Int(element.value)
         }
-        return count % self.size
+        return count % self.hashMap.count
     }
 
 }
@@ -197,11 +197,11 @@ The insert operation uses the index provided by the hashFunction and sets the va
   "@type": "BlogPosting",
   "headline": "DSA - HashMap - Custom Implementation",
   "name": "DSA - HashMap - Custom Implementation",
-  "description": "Introduction Let\u0026rsquo;s take a closer look at a HashMap implementation by building it without using the built-in dictionary in Swift. The HashMap will use a fixed-size array underneath the hash function that will transform the key into an index. In this example, the hash function is based on taking the modulo of the sum of all key.unicodeScalars integer values with the size of the array.\nCode Example final class HashMap\u0026lt;Key: StringProtocol, Value\u0026gt; { private var hashMap: [(key: Key, value: Value)?] private var size: Int init(size: Int) { self.hashMap = Array(repeating: nil, count: size) self.size = size } private func hashFunction(key: Key) -\u0026gt; Int { var count = 0 for element in key.unicodeScalars { count += Int(element.value) } return count % self.size } } Insert The insert operation uses the index provided by the hashFunction and sets the value at this index.\n",
+  "description": "Introduction Let\u0026rsquo;s take a closer look at a HashMap implementation by building it without using the built-in dictionary in Swift. The HashMap will use a fixed-size array underneath the hash function that will transform the key into an index. In this example, the hash function is based on taking the modulo of the sum of all key.unicodeScalars integer values with the size of the array.\nCode Example final class HashMap\u0026lt;Key: StringProtocol, Value\u0026gt; { private var hashMap: [(key: Key, value: Value)?] private var size: Int init(size: Int) { self.hashMap = Array(repeating: nil, count: size) self.size = size } private func hashFunction(key: Key) -\u0026gt; Int { var count = 0 for element in key.unicodeScalars { count += Int(element.value) } return count % self.hashMap.count } } Insert The insert operation uses the index provided by the hashFunction and sets the value at this index.\n",
   "keywords": [
     "DSA", "Data Structures", "Algorithms", "HashMap", "Swift"
   ],
-  "articleBody": "Introduction Let’s take a closer look at a HashMap implementation by building it without using the built-in dictionary in Swift. The HashMap will use a fixed-size array underneath the hash function that will transform the key into an index. In this example, the hash function is based on taking the modulo of the sum of all key.unicodeScalars integer values with the size of the array.\nCode Example final class HashMap\u003cKey: StringProtocol, Value\u003e { private var hashMap: [(key: Key, value: Value)?] private var size: Int init(size: Int) { self.hashMap = Array(repeating: nil, count: size) self.size = size } private func hashFunction(key: Key) -\u003e Int { var count = 0 for element in key.unicodeScalars { count += Int(element.value) } return count % self.size } } Insert The insert operation uses the index provided by the hashFunction and sets the value at this index.\nfunc insert(key: Key, value: Value) { let index = hashFunction(key: key) self.hashMap[index] = (key, value) } Get The get operation uses the index provided by the hashFunction and retrieves the value at this index.\nfunc getValue(by key: Key) -\u003e Value? { let index = hashFunction(key: key) return self.hashMap[index]?.value } Complete Code Example final class HashMap\u003cKey: StringProtocol, Value\u003e { private var hashMap: [(key: Key, value: Value)?] private var size: Int init(size: Int) { self.hashMap = Array(repeating: nil, count: size) self.size = size } func getValue(by key: Key) -\u003e Value? { let index = hashFunction(key: key) return self.hashMap[index]?.value } func insert(key: Key, value: Value) { let index = hashFunction(key: key) self.hashMap[index] = (key, value) } private func hashFunction(key: Key) -\u003e Int { var count = 0 for element in key.unicodeScalars { count += Int(element.value) } return count % self.size } } Time/Space Complexity Time complexity in Big O notation:\nOperation Average Worst Case Insert Θ(1) O(n) Space complexity: Θ(n)\nThank you for reading! 😊 ",
+  "articleBody": "Introduction Let’s take a closer look at a HashMap implementation by building it without using the built-in dictionary in Swift. The HashMap will use a fixed-size array underneath the hash function that will transform the key into an index. In this example, the hash function is based on taking the modulo of the sum of all key.unicodeScalars integer values with the size of the array.\nCode Example final class HashMap\u003cKey: StringProtocol, Value\u003e { private var hashMap: [(key: Key, value: Value)?] private var size: Int init(size: Int) { self.hashMap = Array(repeating: nil, count: size) self.size = size } private func hashFunction(key: Key) -\u003e Int { var count = 0 for element in key.unicodeScalars { count += Int(element.value) } return count % self.hashMap.count } } Insert The insert operation uses the index provided by the hashFunction and sets the value at this index.\nfunc insert(key: Key, value: Value) { let index = hashFunction(key: key) self.hashMap[index] = (key, value) } Get The get operation uses the index provided by the hashFunction and retrieves the value at this index.\nfunc getValue(by key: Key) -\u003e Value? { let index = hashFunction(key: key) return self.hashMap[index]?.value } Complete Code Example final class HashMap\u003cKey: StringProtocol, Value\u003e { private var hashMap: [(key: Key, value: Value)?] private var size: Int init(size: Int) { self.hashMap = Array(repeating: nil, count: size) self.size = size } func getValue(by key: Key) -\u003e Value? { let index = hashFunction(key: key) return self.hashMap[index]?.value } func insert(key: Key, value: Value) { let index = hashFunction(key: key) self.hashMap[index] = (key, value) } private func hashFunction(key: Key) -\u003e Int { var count = 0 for element in key.unicodeScalars { count += Int(element.value) } return count % self.hashMap.count } } Time/Space Complexity Time complexity in Big O notation:\nOperation Average Worst Case Insert Θ(1) O(n) Space complexity: Θ(n)\nThank you for reading! 😊 ",
   "wordCount" : "303",
   "inLanguage": "en",
   "image": "http://localhost:1313/images/papermod-cover.png","datePublished": "2024-10-07T07:01:20+03:00",
@@ -364,7 +364,7 @@ The insert operation uses the index provided by the hashFunction and sets the va
 </span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">element</span> <span class="k">in</span> <span class="n">key</span><span class="p">.</span><span class="n">unicodeScalars</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="bp">count</span> <span class="o">+=</span> <span class="nb">Int</span><span class="p">(</span><span class="n">element</span><span class="p">.</span><span class="n">value</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="bp">count</span> <span class="o">%</span> <span class="kc">self</span><span class="p">.</span><span class="n">size</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="bp">count</span> <span class="o">%</span> <span class="kc">self</span><span class="p">.</span><span class="n">hashMap</span><span class="p">.</span><span class="bp">count</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
@@ -406,7 +406,7 @@ The insert operation uses the index provided by the hashFunction and sets the va
 </span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">element</span> <span class="k">in</span> <span class="n">key</span><span class="p">.</span><span class="n">unicodeScalars</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="bp">count</span> <span class="o">+=</span> <span class="nb">Int</span><span class="p">(</span><span class="n">element</span><span class="p">.</span><span class="n">value</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="bp">count</span> <span class="o">%</span> <span class="kc">self</span><span class="p">.</span><span class="n">size</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="bp">count</span> <span class="o">%</span> <span class="kc">self</span><span class="p">.</span><span class="n">hashMap</span><span class="p">.</span><span class="bp">count</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
