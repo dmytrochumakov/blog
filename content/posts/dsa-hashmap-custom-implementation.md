@@ -14,11 +14,9 @@ Let's take a closer look at a HashMap implementation by building it without usin
 final class HashMap<Key: StringProtocol, Value> {
 
     private var hashMap: [(key: Key, value: Value)?]
-    private var size: Int
 
     init(size: Int) {
-        self.hashMap = Array(repeating: nil, count: size)
-        self.size = size
+        self.hashMap = Array(repeating: nil, count: size)        
     }
 
     private func hashFunction(key: Key) -> Int {
@@ -54,12 +52,10 @@ func getValue(by key: Key) -> Value? {
 ```swift
 final class HashMap<Key: StringProtocol, Value> {
 
-    private var hashMap: [(key: Key, value: Value)?]
-    private var size: Int
+    private var hashMap: [(key: Key, value: Value)?]    
 
     init(size: Int) {
         self.hashMap = Array(repeating: nil, count: size)
-        self.size = size
     }
 
     func getValue(by key: Key) -> Value? {
