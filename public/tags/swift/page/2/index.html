@@ -190,6 +190,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - Binary Search Tree - Inorder
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is the BST inorder algorithm? The inorder algorithm returns values in ascending order (sorted from smallest to the largest value).
+Code example final class BSTNode&lt;Value: Comparable&gt; { var val: Value? var left: BSTNode? var right: BSTNode? init(val: Value? = nil) { self.val = val } func inorder(_ visited: inout [Value]) -&gt; [Value] { if self.left != nil { self.left!.inorder(&amp;visited) } if self.val != nil { visited.append(self.val!) } if self.right != nil { self.right!.inorder(&amp;visited) } return visited } } Implementation The inorder algorithm:
+Recursively traverse the left subtree. Visit the current node. Recursively traverse the right subtree. Time/Space complexity The time complexity of the inorder algorithm is O(N), where N is the total number of nodes. The space complexity:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-09-28 07:08:52 +0300 EEST'>September 28, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to DSA - Binary Search Tree - Inorder" href="http://localhost:1313/posts/dsa-binary-search-tree-inorder/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">DSA - Binary Search Tree - Exists
     </h2>
   </header>
@@ -242,26 +257,12 @@ Code Example final class BSTNode { var val: Int? var left: BSTNode? var right: B
   <footer class="entry-footer"><span title='2024-09-24 06:53:52 +0300 EEST'>September 24, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Binary Search Tree - Delete" href="http://localhost:1313/posts/dsa-binary-search-tree-delete/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Binary Search Tree Min/Max
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction Finding the min and max elements is one of the simplest algorithms regarding BST (Binary Search Tree). The findMin method loops through the left child nodes and returns the value from the last node. The findMax method does the same but traverses the right child nodes.
-Code Example - Min func findMin() -&gt; Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } Code Example - Max func findMax() -&gt; Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } Complete Code Example final class BSTNode { var val: Int? var left: BSTNode? var right: BSTNode? init(val: Int? = nil) { self.val = val } func insert(_ val: Value) { if self.val == nil { self.val = val return } if self.val == val { return } if val &lt; self.val! { if self.left != nil { self.left!.insert(val) return } else { self.left = BSTNode(val: val) return } } if self.right != nil { self.right!.insert(val) return } self.right = BSTNode(val: val) } func findMin() -&gt; Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } func findMax() -&gt; Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } } Time/Space Complexity For both findMin and findMax:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-22 07:26:23 +0300 EEST'>September 22, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Binary Search Tree Min/Max" href="http://localhost:1313/posts/dsa-binary-search-tree-min-max/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/swift/">
-      «&nbsp;Prev&nbsp;1/10
+      «&nbsp;Prev&nbsp;1/11
     </a>
-    <a class="next" href="http://localhost:1313/tags/swift/page/3/">Next&nbsp;3/10&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/swift/page/3/">Next&nbsp;3/11&nbsp;»
     </a>
   </nav>
 </footer>
