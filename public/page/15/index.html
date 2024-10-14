@@ -200,6 +200,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">The Chain Of Responsibility Pattern
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is a Chain Of Responsibility Pattern? The Chain Of Responsibility Pattern helps create a chain of objects to examine requests. Each object in turn examines a request and either handles it or passes onto the next object in the chain.
+Source
+What problems does it solve? The Chain Of Responsibility Pattern (CoR) helps solve following problems:
+Dynamic Request Handling: It enables dynamic assignment of responsibilities at runtime. Handlers can be added, removed, or reordered without affecting the client’s code. This flexibility allows for easier maintenance and extension of the system. Decoupling Sender and Receiver: In traditional systems, a sender often needs to know the exact receiver of a request, leading to tight coupling between them. The CoR pattern decouples senders from receivers by allowing multiple objects to handle a request without the sender knowing the specific handler. Real-world code example // Protocol defining the handler interface protocol PurchaseHandler { var next: PurchaseHandler? { get set } func handleRequest(amount: Double) } // Concrete handlers class SmallPurchaseHandler: PurchaseHandler { var next: PurchaseHandler? let maxAmount: Double = 100.0 func handleRequest(amount: Double) { if amount &lt;= maxAmount { print(&#34;SmallPurchaseHandler: Purchase approved for $\(amount)&#34;) } else if let nextHandler = next { print(&#34;SmallPurchaseHandler: Passing request to next handler&#34;) nextHandler.handleRequest(amount: amount) } else { print(&#34;SmallPurchaseHandler: No handler available, purchase rejected&#34;) } } } class MediumPurchaseHandler: PurchaseHandler { var next: PurchaseHandler? let maxAmount: Double = 500.0 func handleRequest(amount: Double) { if amount &lt;= maxAmount { print(&#34;MediumPurchaseHandler: Purchase approved for $\(amount)&#34;) } else if let nextHandler = next { print(&#34;MediumPurchaseHandler: Passing request to next handler&#34;) nextHandler.handleRequest(amount: amount) } else { print(&#34;MediumPurchaseHandler: No handler available, purchase rejected&#34;) } } } class LargePurchaseHandler: PurchaseHandler { var next: PurchaseHandler? func handleRequest(amount: Double) { print(&#34;LargePurchaseHandler: Purchase approved for $\(amount)&#34;) } } // Usage func main() { let smallHandler = SmallPurchaseHandler() let mediumHandler = MediumPurchaseHandler() let largeHandler = LargePurchaseHandler() // Connecting handlers into a chain smallHandler.next = mediumHandler mediumHandler.next = largeHandler smallHandler.handleRequest(amount: 50.0) smallHandler.handleRequest(amount: 200.0) smallHandler.handleRequest(amount: 1000.0) } Thank you for reading! 😊</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-15 08:29:30 +0300 +0300'>March 15, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to The Chain Of Responsibility Pattern" href="http://localhost:1313/posts/the-chain-of-responsibility-pattern/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">The State Pattern
     </h2>
   </header>
@@ -259,28 +274,12 @@ class PostService { func fetchPosts() -&gt; AnyPublisher&lt;[Post], Error&gt; { 
   <footer class="entry-footer"><span title='2024-02-07 08:29:30 +0300 +0300'>February 7, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Combine — Basics" href="http://localhost:1313/posts/combine-basics/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Modern Concurrency
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>When was it introduced? It was introduced in Swift 5.5 at WWDC 2021.
-You can find the more comprehensive info about Modern Concurrency in Swift Concurrency Manifesto.
-What are actors? Actors eliminate shared mutable state and explicit synchronization through deep copying of all the data that passed to an actor to a message sent and preventing direct access to actor state. Actors are reference types.
-actor DatabaseManager { private var data: [String: String] = [:] func readData(key: String) -&gt; String? { data[key] } func writeData(key: String, value: String) { data[key] = value } } What is an asynchronous function? The asynchronous function or asynchronous method can be suspended while it is partway through execution. It can pause in the middle when it’s waiting for something.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-02-04 08:29:30 +0300 +0300'>February 4, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Modern Concurrency" href="http://localhost:1313/posts/modern-concurrency/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/page/14/">
-      «&nbsp;Prev&nbsp;14/17
+      «&nbsp;Prev&nbsp;14/18
     </a>
-    <a class="next" href="http://localhost:1313/page/16/">Next&nbsp;16/17&nbsp;»
+    <a class="next" href="http://localhost:1313/page/16/">Next&nbsp;16/18&nbsp;»
     </a>
   </nav>
 </footer>

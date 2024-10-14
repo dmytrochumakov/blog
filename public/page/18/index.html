@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head>
+	<meta name="generator" content="Hugo 0.134.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Posts | Dmytro&#39;s Blog</title>
-<meta name="keywords" content="">
-<meta name="description" content="Posts - Dmytro&#39;s Blog">
+<title>Dmytro&#39;s Blog</title>
+
+<meta name="description" content="">
 <meta name="author" content="Dmytro Chumakov">
-<link rel="canonical" href="http://localhost:1313/posts/">
+<link rel="canonical" href="http://localhost:1313/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f3be8e64f4e443c8e74473a0ae2c84b64621f8ec061e3432118c9f8aad022bd8.css" integrity="sha256-876OZPTkQ8jnRHOgriyEtkYh&#43;OwGHjQyEYyfiq0CK9g=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -19,8 +20,9 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
 <noscript>
     <style>
         #theme-toggle,
@@ -88,30 +90,28 @@
           gtag('js', new Date());
           gtag('config', 'G-HZZ4JTFGDP');
         }
-      </script><meta property="og:title" content="Posts" />
+      </script><meta property="og:title" content="Dmytro&#39;s Blog" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/posts/" />
+<meta property="og:url" content="http://localhost:1313/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
 
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
-<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:title" content="Dmytro&#39;s Blog"/>
 <meta name="twitter:description" content=""/>
-
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "http://localhost:1313/posts/"
-    }
+  "@type": "Organization",
+  "name": "Dmytro's Blog",
+  "url": "http://localhost:1313/",
+  "description": "",
+  "thumbnailUrl": "http://localhost:1313/favicon.ico",
+  "sameAs": [
+      "https://github.com/dmytrochumakov", "https://leetcode.com/u/dmytrochumakov/", "https://app.codesignal.com/profile/dmytrochumakov", "https://www.linkedin.com/in/dmytro-chumakov/", "https://www.youtube.com/@dmytro_chumakov", "mailto:dmytro.v.chumakov.work@gmail.com"
   ]
 }
 </script>
@@ -197,86 +197,25 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
-  <h1>
-    Posts
-  </h1>
-</header>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Implementing Apple Pay in a SwiftUI app
+    <h2 class="entry-hint-parent">Let’s talk about Composable Architecture
     </h2>
   </header>
   <div class="entry-content">
-    <p>Introduction Sometime ago, I was working on a marketplace app, and I needed to add Apple Pay to make purchases more easily. Here are a few steps on how I did it: First Step You need to add Apple Pay capability to your project. You will need to Register a Merchant ID. I will skip this step; you can find info by following this link Setting up Apple Pay. Second Step You will need to import PassKit and create PKPaymentRequest to interact with PKPaymentAuthorizationController and PKPaymentAuthorizationControllerDelegate. func initiateApplePay() { // Create payment request let paymentRequest = PKPaymentRequest() paymentRequest.merchantIdentifier = &#34;your_merchant_identifier&#34; paymentRequest.countryCode = &#34;US&#34; paymentRequest.currencyCode = &#34;USD&#34; paymentRequest.supportedNetworks = [.visa, .masterCard, .amex] paymentRequest.merchantCapabilities = .threeDSecure // Add payment items from cart for item in cartItems { let paymentItem = PKPaymentSummaryItem(label: item.name, amount: item.price) paymentRequest.paymentSummaryItems.append(paymentItem) } // Add total amount let totalItem = PKPaymentSummaryItem(label: &#34;Total&#34;, amount: totalAmount) paymentRequest.paymentSummaryItems.append(totalItem) // Present Apple Pay sheet let paymentController = PKPaymentAuthorizationController(paymentRequest: paymentRequest) paymentController.delegate = self paymentController.present(completion: nil) } Third Step Add UI and connect it with the view model.
+    <p>Introduction The Composable Architecture (TCA) uses a unidirectional data flow (UDF). UDF is a design pattern where data and events move consistently and predictably. In UDF, data can only be transferred to other application parts in one way.
+In TCA, the only way to mutate the state is by sending actions to a runtime store. The runtime store holds the entire app’s business logic and mutates the state inside.
+UDF can reduce data inconsistencies because of the single source of truth for the application.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-05-11 07:25:24 +0300 EEST'>May 11, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Implementing Apple Pay in a SwiftUI app" href="http://localhost:1313/posts/implementing-apple-pay-in-a-swiftui-app/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Integration testing for SwiftUI views
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I have been looking for information about implementation details of integration testing. I found a lot of information, but it was theoretical and all information looked the same. I did not find a meaningful example, so I tried to come up with my own definition and sample.
-Integration testing means testing the behavior between modules or views to ensure they work as expected after user actions.
-There are two ways of conducting integration testing: The first is by unit tests, where you try to test the flowing data between view models. The second is UI tests, where you try to test if the UI items exist and navigation works correctly. I will focus on testing the flowing data between view models.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-10 06:20:50 +0300 EEST'>May 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Integration testing for SwiftUI views" href="http://localhost:1313/posts/integration-testing-for-swiftui-views/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">UI testing SwiftUI views using XCTest Framework
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction After spending some time developing my personal iOS app, I found myself in a position where I needed to add UI tests to my application. The reason behind this decision was the necessity to change the architecture to make it more scalable. However, this task proved to be challenging due to certain parts of the code being tightly coupled. The situation was quite frustrating. To address this problem, I decided to incorporate UI tests that could help identify issues during the refactoring process.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-08 06:34:32 +0300 EEST'>May 8, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to UI testing SwiftUI views using XCTest Framework" href="http://localhost:1313/posts/ui-testing-swiftui-views-using-xctest-framework/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Building Dynamic Island for Video Streaming App
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was curious about how to add Dynamic Island and implement it into a Video Streaming App. Here are a few steps on how you can achieve this.
-Caveats Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 &#34;Failed to show Widget&#34;. The solution is to configure live activities and run them through the main app. Be aware that when you add a widget to the project, in some cases, it adds all main target files to Compile Sources. Implementation Dynamic Islands are divided into different sizes: minimal, compactTrailing, compactLeading, and expanded. Before proceeding, you need to add LiveActivityManager to be able to display Dynamic Islands.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-06 07:35:52 +0300 EEST'>May 6, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Building Dynamic Island for Video Streaming App" href="http://localhost:1313/posts/building-dynamic-island-for-video-streaming-app/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Building Video Streaming Widget for iOS App
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was exploring the idea of creating a YouTube-like widget for the lock screen on iOS devices. It wasn’t easy because most articles on the Internet discussed general implementations, such as for a coffee shop or a to-do list. Even when I found some similar versions, the project wouldn’t compile. I made the decision to approach it my way, so here’s what I found out:
-Caveats After being stuck for two or more hours without understanding why, after tapping on a button, I wasn&#39;t able to receive a callback from it and the widget always opened the main iOS app, I realized that I forgot to add AppIntent - without it, you can’t handle actions for iOS 17. import AppIntents struct ButtonIntent: AppIntent { static let title: LocalizedStringResource = &#34;ButtonIntent&#34; @Parameter(title: &#34;id&#34;) var id: String func perform() async throws -&gt; some IntentResult { if id == Command.playPause.rawValue { DataModel.shared.isPlaying.toggle() } return .result() } } Another crucial point is not to forget to add an explicit init. If you don’t implement it explicitly, it will not work. import AppIntents struct ButtonIntent: AppIntent { static let title: LocalizedStringResource = &#34;ButtonIntent&#34; @Parameter(title: &#34;id&#34;) var id: String init(id: String) { self.id = id } init() {} func perform() async throws -&gt; some IntentResult { if id == Command.playPause.rawValue { DataModel.shared.isPlaying.toggle() } return .result() } } Lastly, I attempted to add a Slider, but I found that it’s not supported by the widget. My solution was to choose a ProgressView instead. Implementation struct YouTubeLockScreenWidget: View { var body: some View { VStack { Spacer() ProgressView(value: DataModel.shared.currentTime, total: DataModel.shared.totalTime) .progressViewStyle(.linear) Spacer() HStack { ForEach(Command.allCases) { command in Button(intent: ButtonIntent(id: command.id)) { Image(systemName: imageSystemName(isPlaying: DataModel.shared.isPlaying, command: command)) } } } } } } final class DataModel { static let shared = DataModel() var isPlaying: Bool = false var currentTime: TimeInterval = 34 var totalTime: TimeInterval = 304 } enum Command: String, CaseIterable { case previous case playPause case next } extension Command: Identifiable { var id: String { rawValue } } func imageSystemName(isPlaying: Bool, command: Command) -&gt; String { switch command { case .playPause: if isPlaying { return &#34;pause.fill&#34; } else { return &#34;play.fill&#34; } case .next: return &#34;forward.fill&#34; case .previous: return &#34;backward.fill&#34; } } I had not replaced default generated code when I was adding widget to the project. I just added YouTubeLockScreenWidget to generated VideoStreamingWidgetEntryView.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-05 07:20:29 +0300 EEST'>May 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Building Video Streaming Widget for iOS App" href="http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/"></a>
+  <footer class="entry-footer"><span title='2023-08-11 00:00:00 +0300 EEST'>August 11, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Let’s talk about Composable Architecture" href="http://localhost:1313/posts/lets-talk-about-composable-architecture/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/posts/page/10/">
-      «&nbsp;Prev&nbsp;10/18
-    </a>
-    <a class="next" href="http://localhost:1313/posts/page/12/">Next&nbsp;12/18&nbsp;»
+    <a class="prev" href="http://localhost:1313/page/17/">
+      «&nbsp;Prev&nbsp;17/18
     </a>
   </nav>
 </footer>
