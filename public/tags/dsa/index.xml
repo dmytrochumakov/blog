@@ -11,8 +11,34 @@
     </image>
     <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 11 Oct 2024 07:02:51 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 14 Oct 2024 07:15:07 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/dsa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSA - Sorting - Merge Sort</title>
+      <link>http://localhost:1313/posts/dsa-sorting-merge-sort/</link>
+      <pubDate>Mon, 14 Oct 2024 07:15:07 +0300</pubDate>
+      <guid>http://localhost:1313/posts/dsa-sorting-merge-sort/</guid>
+      <description>&lt;h3 id=&#34;what-is-merge-sort&#34;&gt;What is Merge Sort?&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Merge_sort&#34;&gt;Merge sort&lt;/a&gt; is a recursive algorithm that uses the &lt;a href=&#34;https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm&#34;&gt;divide and conquer&lt;/a&gt; algorithm design paradigm to find the solution.&lt;/p&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-438f5&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-438f5&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/Merge-sort-example-300px.gif#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Merge_sort#/media/File:Merge-sort-example-300px.gif&#34;&gt;source&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The merge sort conceptually consists of two separate functions: &lt;code&gt;mergeSort&lt;/code&gt; and &lt;code&gt;merge&lt;/code&gt;. It works as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Divide the unsorted list into two equal halves.&lt;/li&gt;
+&lt;li&gt;Recursively sort the two halves.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Merge_algorithm&#34;&gt;Merge&lt;/a&gt; the two halves to form a sorted array.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There are multiple implementations of merge sort. I will be focusing on the &lt;a href=&#34;https://en.wikipedia.org/wiki/Merge_sort#Top-down_implementation_using_lists&#34;&gt;top-down implementation using lists&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>DSA - Sorting - Bubble Sort</title>
       <link>http://localhost:1313/posts/dsa-sorting-bubble-sort/</link>

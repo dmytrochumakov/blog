@@ -1,7 +1,7 @@
 +++
 title = 'DSA - Sorting - Merge Sort'
 date = 2024-10-14T07:15:07+03:00
-tags = [""]
+tags = ["DSA", "Data Structures", "Algorithms", "Sorting", "Merge Sort", "Swift"]
 draft = false
 +++
 

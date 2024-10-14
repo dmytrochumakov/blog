@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>DSA - Sorting - Merge Sort | Dmytro&#39;s Blog</title>
-<meta name="keywords" content="">
+<meta name="keywords" content="DSA, Data Structures, Algorithms, Sorting, Merge Sort, Swift">
 <meta name="description" content="What is Merge Sort?
 Merge sort is a recursive algorithm that uses the divide and conquer algorithm design paradigm to find the solution.
 
@@ -181,7 +181,7 @@ There are multiple implementations of merge sort. I will be focusing on the top-
   "name": "DSA - Sorting - Merge Sort",
   "description": "What is Merge Sort? Merge sort is a recursive algorithm that uses the divide and conquer algorithm design paradigm to find the solution.\nsource\nThe merge sort conceptually consists of two separate functions: mergeSort and merge. It works as follows:\nDivide the unsorted list into two equal halves. Recursively sort the two halves. Merge the two halves to form a sorted array. There are multiple implementations of merge sort. I will be focusing on the top-down implementation using lists.\n",
   "keywords": [
-    ""
+    "DSA", "Data Structures", "Algorithms", "Sorting", "Merge Sort", "Swift"
   ],
   "articleBody": "What is Merge Sort? Merge sort is a recursive algorithm that uses the divide and conquer algorithm design paradigm to find the solution.\nsource\nThe merge sort conceptually consists of two separate functions: mergeSort and merge. It works as follows:\nDivide the unsorted list into two equal halves. Recursively sort the two halves. Merge the two halves to form a sorted array. There are multiple implementations of merge sort. I will be focusing on the top-down implementation using lists.\nCode Example func mergeSort(_ array: [Int]) -\u003e [Int] { if array.count \u003c 2 { return array } let sortedLeftSide = mergeSort(Array(array[0 ..\u003c array.count / 2])) let sortedRightSide = mergeSort(Array(array[array.count / 2 ..\u003c array.count])) return merge(sortedLeftSide, sortedRightSide) } func merge(_ first: [Int], _ second: [Int]) -\u003e [Int] { var result: [Int] = [] var i = 0 var j = 0 while i \u003c first.count \u0026\u0026 j \u003c second.count { if first[i] \u003c= second[j] { result.append(first[i]) i += 1 } else { result.append(second[j]) j += 1 } } while i \u003c first.count { result.append(first[i]) i += 1 } while j \u003c second.count { result.append(second[j]) j += 1 } return result } Explanation mergeSort method: If the array’s count is less than 2, it means the array is already sorted and is returned as-is. Splits the array into two halves down the middle. Recursively calls the mergeSort method on the left side of the split array. Recursively calls the mergeSort method on the right side of the split array. Returns the result of the merge method with sortedLeftSide and sortedRightSide properties. merge method: Creates a result list of integers. Sets i and j pointers to zero. Uses a loop to iterate over both the first and second input arrays. If an element in first is less than or equal to the respective element in second, it adds it to the final list and increments i. Otherwise, it adds the item from second to the final list and increments j. After comparing all the items, if there are any leftover elements in either first or second, it adds them to the result. Time Complexity This algorithm has a time complexity of O(n log n).\nThank you for reading! 😊 ",
   "wordCount" : "365",
@@ -411,6 +411,12 @@ There are multiple implementations of merge sort. I will be focusing on the top-
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/dsa/">DSA</a></li>
+      <li><a href="http://localhost:1313/tags/data-structures/">Data Structures</a></li>
+      <li><a href="http://localhost:1313/tags/algorithms/">Algorithms</a></li>
+      <li><a href="http://localhost:1313/tags/sorting/">Sorting</a></li>
+      <li><a href="http://localhost:1313/tags/merge-sort/">Merge Sort</a></li>
+      <li><a href="http://localhost:1313/tags/swift/">Swift</a></li>
     </ul>
 <nav class="paginav">
   <a class="next" href="http://localhost:1313/posts/dsa-sorting-bubble-sort/">
@@ -424,7 +430,7 @@ There are multiple implementations of merge sort. I will be focusing on the top-
 <ul class="share-buttons">
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share DSA - Sorting - Merge Sort on x"
-            href="https://x.com/intent/tweet/?text=DSA%20-%20Sorting%20-%20Merge%20Sort&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fdsa-sorting-merge-sort%2f&amp;hashtags=">
+            href="https://x.com/intent/tweet/?text=DSA%20-%20Sorting%20-%20Merge%20Sort&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fdsa-sorting-merge-sort%2f&amp;hashtags=DSA%2cDataStructures%2cAlgorithms%2cSorting%2cMergeSort%2cSwift">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
