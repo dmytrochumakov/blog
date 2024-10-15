@@ -190,6 +190,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - Sorting - Insertion Sort
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction The insertion sort algorithm builds a sorted list one item at a time by comparison. It is more efficient on small datasets but much less efficient on larger ones.
+source
+source
+Code Example func insertionSort(_ array: [Int]) -&gt; [Int] { var A = array for i in 0 ..&lt; A.count { var j = i while j &gt; 0 &amp;&amp; A[j - 1] &gt; A[j] { let tmp = A[j] A[j] = A[j - 1] A[j - 1] = tmp j -= 1 } } return A } Implementation For each index in the input array: Set the j variable to i. Loop while j is greater than 0 and the element at index j - 1 is greater than the element at index j: Swap the elements at index j and j - 1. Decrement j by 1. Time/Space Complexity Time: O(N^2) Space: O(1) (in-place) Thank you for reading! 😊</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-15 07:16:04 +0300 EEST'>October 15, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to DSA - Sorting - Insertion Sort" href="http://localhost:1313/posts/dsa-sorting-insertion-sort/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">DSA - Sorting - Merge Sort
     </h2>
   </header>
