@@ -38,6 +38,13 @@ func insertionSort(_ array: [Int]) -> [Int] {
    1. Swap the elements at index `j` and `j - 1`.  
    2. Decrement `j` by 1.
 
+### Why use Insertion Sort?
+- Fast for small data sets. More efficient in practice than most other algorithms, such as selection sort or bubble sort.
+- [Adaptive](https://en.wikipedia.org/wiki/Adaptive_sort): Efficient for datasets that are already substantially sorted; the time complexity is O(kn) when each element in the input is no more than *k* places away from its sorted position.
+- [Stable](https://en.wikipedia.org/wiki/Stable_sort): Does not change the relative order of elements with equal keys.
+- [In-place](https://en.wikipedia.org/wiki/In-place_algorithm): Only requires O(1) of additional memory space.
+- [Online](https://en.wikipedia.org/wiki/Online_algorithm): Can sort a list as it receives it.
+
 ### Time/Space Complexity 
 - Time: O(N^2)  
 - Space: O(1) (in-place)

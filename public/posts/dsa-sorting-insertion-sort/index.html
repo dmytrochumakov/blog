@@ -53,6 +53,14 @@ Decrement j by 1.
 
 
 
+Why use Insertion Sort?
+
+Fast for small data sets. More efficient in practice than most other algorithms, such as selection sort or bubble sort.
+Adaptive: Efficient for datasets that are already substantially sorted; the time complexity is O(kn) when each element in the input is no more than k places away from its sorted position.
+Stable: Does not change the relative order of elements with equal keys.
+In-place: Only requires O(1) of additional memory space.
+Online: Can sort a list as it receives it.
+
 Time/Space Complexity
 
 Time: O(N^2)
@@ -185,6 +193,14 @@ Decrement j by 1.
 
 
 
+Why use Insertion Sort?
+
+Fast for small data sets. More efficient in practice than most other algorithms, such as selection sort or bubble sort.
+Adaptive: Efficient for datasets that are already substantially sorted; the time complexity is O(kn) when each element in the input is no more than k places away from its sorted position.
+Stable: Does not change the relative order of elements with equal keys.
+In-place: Only requires O(1) of additional memory space.
+Online: Can sort a list as it receives it.
+
 Time/Space Complexity
 
 Time: O(N^2)
@@ -247,6 +263,14 @@ Decrement j by 1.
 
 
 
+Why use Insertion Sort?
+
+Fast for small data sets. More efficient in practice than most other algorithms, such as selection sort or bubble sort.
+Adaptive: Efficient for datasets that are already substantially sorted; the time complexity is O(kn) when each element in the input is no more than k places away from its sorted position.
+Stable: Does not change the relative order of elements with equal keys.
+In-place: Only requires O(1) of additional memory space.
+Online: Can sort a list as it receives it.
+
 Time/Space Complexity
 
 Time: O(N^2)
@@ -281,12 +305,12 @@ Thank you for reading! 😊"/>
   "@type": "BlogPosting",
   "headline": "DSA - Sorting - Insertion Sort",
   "name": "DSA - Sorting - Insertion Sort",
-  "description": "Introduction The insertion sort algorithm builds a sorted list one item at a time by comparison. It is more efficient on small datasets but much less efficient on larger ones.\nsource\nsource\nCode Example func insertionSort(_ array: [Int]) -\u0026gt; [Int] { var A = array for i in 0 ..\u0026lt; A.count { var j = i while j \u0026gt; 0 \u0026amp;\u0026amp; A[j - 1] \u0026gt; A[j] { let tmp = A[j] A[j] = A[j - 1] A[j - 1] = tmp j -= 1 } } return A } Implementation For each index in the input array: Set the j variable to i. Loop while j is greater than 0 and the element at index j - 1 is greater than the element at index j: Swap the elements at index j and j - 1. Decrement j by 1. Time/Space Complexity Time: O(N^2) Space: O(1) (in-place) Thank you for reading! 😊",
+  "description": "Introduction The insertion sort algorithm builds a sorted list one item at a time by comparison. It is more efficient on small datasets but much less efficient on larger ones.\nsource\nsource\nCode Example func insertionSort(_ array: [Int]) -\u0026gt; [Int] { var A = array for i in 0 ..\u0026lt; A.count { var j = i while j \u0026gt; 0 \u0026amp;\u0026amp; A[j - 1] \u0026gt; A[j] { let tmp = A[j] A[j] = A[j - 1] A[j - 1] = tmp j -= 1 } } return A } Implementation For each index in the input array: Set the j variable to i. Loop while j is greater than 0 and the element at index j - 1 is greater than the element at index j: Swap the elements at index j and j - 1. Decrement j by 1. Why use Insertion Sort? Fast for small data sets. More efficient in practice than most other algorithms, such as selection sort or bubble sort. Adaptive: Efficient for datasets that are already substantially sorted; the time complexity is O(kn) when each element in the input is no more than k places away from its sorted position. Stable: Does not change the relative order of elements with equal keys. In-place: Only requires O(1) of additional memory space. Online: Can sort a list as it receives it. Time/Space Complexity Time: O(N^2) Space: O(1) (in-place) Thank you for reading! 😊",
   "keywords": [
     "DSA", "Data Structures", "Algorithms", "Sorting", "Insertion Sort", "Swift"
   ],
-  "articleBody": "Introduction The insertion sort algorithm builds a sorted list one item at a time by comparison. It is more efficient on small datasets but much less efficient on larger ones.\nsource\nsource\nCode Example func insertionSort(_ array: [Int]) -\u003e [Int] { var A = array for i in 0 ..\u003c A.count { var j = i while j \u003e 0 \u0026\u0026 A[j - 1] \u003e A[j] { let tmp = A[j] A[j] = A[j - 1] A[j - 1] = tmp j -= 1 } } return A } Implementation For each index in the input array: Set the j variable to i. Loop while j is greater than 0 and the element at index j - 1 is greater than the element at index j: Swap the elements at index j and j - 1. Decrement j by 1. Time/Space Complexity Time: O(N^2) Space: O(1) (in-place) Thank you for reading! 😊 ",
-  "wordCount" : "152",
+  "articleBody": "Introduction The insertion sort algorithm builds a sorted list one item at a time by comparison. It is more efficient on small datasets but much less efficient on larger ones.\nsource\nsource\nCode Example func insertionSort(_ array: [Int]) -\u003e [Int] { var A = array for i in 0 ..\u003c A.count { var j = i while j \u003e 0 \u0026\u0026 A[j - 1] \u003e A[j] { let tmp = A[j] A[j] = A[j - 1] A[j - 1] = tmp j -= 1 } } return A } Implementation For each index in the input array: Set the j variable to i. Loop while j is greater than 0 and the element at index j - 1 is greater than the element at index j: Swap the elements at index j and j - 1. Decrement j by 1. Why use Insertion Sort? Fast for small data sets. More efficient in practice than most other algorithms, such as selection sort or bubble sort. Adaptive: Efficient for datasets that are already substantially sorted; the time complexity is O(kn) when each element in the input is no more than k places away from its sorted position. Stable: Does not change the relative order of elements with equal keys. In-place: Only requires O(1) of additional memory space. Online: Can sort a list as it receives it. Time/Space Complexity Time: O(N^2) Space: O(1) (in-place) Thank you for reading! 😊 ",
+  "wordCount" : "236",
   "inLanguage": "en",
   "image": "http://localhost:1313/images/papermod-cover.png","datePublished": "2024-10-15T07:16:04+03:00",
   "dateModified": "2024-10-15T07:16:04+03:00",
@@ -397,7 +421,7 @@ Thank you for reading! 😊"/>
     <h1 class="post-title entry-hint-parent">
       DSA - Sorting - Insertion Sort
     </h1>
-    <div class="post-meta"><span title='2024-10-15 07:16:04 +0300 EEST'>October 15, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov
+    <div class="post-meta"><span title='2024-10-15 07:16:04 +0300 EEST'>October 15, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov
 
 </div>
   </header> <div class="toc">
@@ -415,6 +439,8 @@ Thank you for reading! 😊"/>
                 <li>
                     <a href="#implementation" aria-label="Implementation">Implementation</a></li></ul>
                 </li>
+                <li>
+                    <a href="#why-use-insertion-sort" aria-label="Why use Insertion Sort?">Why use Insertion Sort?</a></li>
                 <li>
                     <a href="#timespace-complexity" aria-label="Time/Space Complexity">Time/Space Complexity</a><ul>
                         
@@ -478,6 +504,14 @@ Thank you for reading! 😊"/>
 </ol>
 </li>
 </ol>
+<h3 id="why-use-insertion-sort">Why use Insertion Sort?<a hidden class="anchor" aria-hidden="true" href="#why-use-insertion-sort">#</a></h3>
+<ul>
+<li>Fast for small data sets. More efficient in practice than most other algorithms, such as selection sort or bubble sort.</li>
+<li><a href="https://en.wikipedia.org/wiki/Adaptive_sort">Adaptive</a>: Efficient for datasets that are already substantially sorted; the time complexity is O(kn) when each element in the input is no more than <em>k</em> places away from its sorted position.</li>
+<li><a href="https://en.wikipedia.org/wiki/Stable_sort">Stable</a>: Does not change the relative order of elements with equal keys.</li>
+<li><a href="https://en.wikipedia.org/wiki/In-place_algorithm">In-place</a>: Only requires O(1) of additional memory space.</li>
+<li><a href="https://en.wikipedia.org/wiki/Online_algorithm">Online</a>: Can sort a list as it receives it.</li>
+</ul>
 <h3 id="timespace-complexity">Time/Space Complexity<a hidden class="anchor" aria-hidden="true" href="#timespace-complexity">#</a></h3>
 <ul>
 <li>Time: O(N^2)</li>

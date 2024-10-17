@@ -68,6 +68,14 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;h3 id=&#34;why-use-insertion-sort&#34;&gt;Why use Insertion Sort?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fast for small data sets. More efficient in practice than most other algorithms, such as selection sort or bubble sort.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Adaptive_sort&#34;&gt;Adaptive&lt;/a&gt;: Efficient for datasets that are already substantially sorted; the time complexity is O(kn) when each element in the input is no more than &lt;em&gt;k&lt;/em&gt; places away from its sorted position.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Stable_sort&#34;&gt;Stable&lt;/a&gt;: Does not change the relative order of elements with equal keys.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/In-place_algorithm&#34;&gt;In-place&lt;/a&gt;: Only requires O(1) of additional memory space.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Online_algorithm&#34;&gt;Online&lt;/a&gt;: Can sort a list as it receives it.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;timespace-complexity&#34;&gt;Time/Space Complexity&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Time: O(N^2)&lt;/li&gt;
