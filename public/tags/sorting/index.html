@@ -190,6 +190,24 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - Sorting - Quick Sort
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction The quick sort is an efficient sorting algorithm commonly used widely in production. Quick sort is a divide-and-conquer algorithm. It works by selecting a pivot from the array and partitioning the other elements into two subarrays.
+source
+Code example // Sorts a (portion of an) array, divides it into partitions, then sorts those func quickSort(array: inout [Int], low: Int, high: Int) { // Ensure indices are in correct order if low &lt; high { // Partition array and get the pivot index let p = partition(array: &amp;array, low: low, high: high) // Sort the two partitions quickSort(array: &amp;array, low: low, high: p - 1) // Left side of pivot quickSort(array: &amp;array, low: p &#43; 1, high: high) // Right side of pivot } } // Divides array into two partitions func partition(array: inout [Int], low: Int, high: Int) -&gt; Int { let pivot = array[high] // Choose the last element as the pivot // Temporary pivot index var i = low for j in low ..&lt; high { // If the current element is less than or equal to the pivot if array[j] &lt;= pivot { // Swap the current element with the element at the temporary pivot index let tmp = array[i] array[i] = array[j] array[j] = tmp // Move the temporary pivot index forward i &#43;= 1 } } // Swap the pivot with the last element let tmp = array[i] array[i] = array[high] array[high] = tmp return i } Implementation quickSort Ensure that the low and high indices are in the correct order. Partition the input list using the partition function. Recursively call quickSort on the left side of the pivot. Recursively call quickSort on the right side of the pivot. partition Choose the last element as the pivot. Set i to low. For each j from low to high (not inclusive), compare if the current element is less than or equal to the pivot:
+3.1 Swap the element at index i with the element at index j.
+3.2 Increment i by 1. Swap the element at index i with the last element. Return i. Time/Space complexity Time complexity: O(N^2)
+Space complexity: O(N)
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-19 06:51:04 +0300 EEST'>October 19, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to DSA - Sorting - Quick Sort" href="http://localhost:1313/posts/dsa-sorting-quick-sort/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">DSA - Sorting - Insertion Sort
     </h2>
   </header>

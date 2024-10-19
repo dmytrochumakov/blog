@@ -200,6 +200,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">The Interpreter Pattern
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is an Interpreter Pattern? The Interpreter Pattern helps implement a simple language and defines a class based representation for its grammar along with an interpreter to interpret its sentences.
+Source
+What problems does it solve? The Interpreter Pattern helps solve following problems:
+Language Interpretation: When you have a language or syntax that needs to be interpreted, such as mathematical expressions, regular expressions, or domain-specific languages (DSLs), the Interpreter Pattern helps in implementing the logic to interpret and execute these expressions. Extensibility: The Interpreter Pattern allows for easy addition of new grammar rules or language constructs without modifying the core interpreter logic. This promotes extensibility, enabling the interpreter to support new features or languages with minimal changes. Separation of Concerns: It separates the grammar definition from the interpretation logic. This separation of concerns makes the codebase modular and easier to maintain. Changes to the grammar or language rules do not affect the interpretation logic, and vice versa. Real-world code example // Define the protocol for the expression protocol Expression { func interpret() -&gt; Int } // Concrete expression for a number class NumberExpression: Expression { private var value: Int init(_ value: Int) { self.value = value } func interpret() -&gt; Int { return value } } // Concrete expression for addition class AdditionExpression: Expression { private var left: Expression private var right: Expression init(_ left: Expression, _ right: Expression) { self.left = left self.right = right } func interpret() -&gt; Int { return left.interpret() &#43; right.interpret() } } // Concrete expression for subtraction class SubtractionExpression: Expression { private var left: Expression private var right: Expression init(_ left: Expression, _ right: Expression) { self.left = left self.right = right } func interpret() -&gt; Int { return left.interpret() - right.interpret() } } // Concrete expression for multiplication class MultiplicationExpression: Expression { private var left: Expression private var right: Expression init(_ left: Expression, _ right: Expression) { self.left = left self.right = right } func interpret() -&gt; Int { return left.interpret() * right.interpret() } } // Concrete expression for division class DivisionExpression: Expression { private var left: Expression private var right: Expression init(_ left: Expression, _ right: Expression) { self.left = left self.right = right } func interpret() -&gt; Int { let divisor = right.interpret() if divisor != 0 { return left.interpret() / divisor } else { // Handle division by zero error fatalError(&#34;Division by zero&#34;) } } } // Usage let expression = AdditionExpression( MultiplicationExpression(NumberExpression(2), NumberExpression(3)), DivisionExpression(NumberExpression(10), NumberExpression(5)) ) // Interpret the expression let result = expression.interpret() print(&#34;Result: \(result)&#34;) Thank you for reading! 😊</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-18 08:29:30 +0300 +0300'>March 18, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to The Interpreter Pattern" href="http://localhost:1313/posts/the-interpreter-pattern/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">The Flyweight Pattern
     </h2>
   </header>
@@ -257,21 +272,6 @@ Rigidity Fragility Immobility problems Real-world code example Violation of DIP 
   </div>
   <footer class="entry-footer"><span title='2024-03-05 08:29:30 +0300 +0300'>March 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to The Dependency Inversion Principle" href="http://localhost:1313/posts/the-dependency-inversion-principle/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Big O notation
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is a Big O notation? The Big O notation helps identify algorithm efficiency. It can measure computation and memory growth with respect to input. Real-world code example O(n) — Linear Time
-func containsValue(array: [Int], value: Int) -&gt; Bool { for element in array { if element == value { return true } } return false } O(1) — Constant Time
-func findFirstElement(array: [Int]) -&gt; Int? { return array.first } Thank you for reading!
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-02-21 08:29:30 +0300 +0300'>February 21, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Big O notation" href="http://localhost:1313/posts/big-o-notation/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
