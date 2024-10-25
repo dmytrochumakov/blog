@@ -11,8 +11,23 @@
     </image>
     <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 23 Oct 2024 07:19:52 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 25 Oct 2024 07:16:07 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Two Sum</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-two-sum/</link>
+      <pubDate>Fri, 25 Oct 2024 07:16:07 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-two-sum/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
+&lt;p&gt;Given an array of integers &lt;code&gt;nums&lt;/code&gt; and an integer &lt;code&gt;target&lt;/code&gt;, return indices of the two numbers such that they add up to the &lt;code&gt;target&lt;/code&gt;.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+You can return the answer in any order.&lt;/p&gt;
+&lt;h4 id=&#34;example&#34;&gt;Example&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Follow-up: Can you come up with an algorithm that has less than O(N^2) time complexity?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>DSA - Sorting - Selection Sort</title>
       <link>http://localhost:1313/posts/dsa-sorting-selection-sort/</link>
