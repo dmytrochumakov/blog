@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Swift | Dmytro&#39;s Blog</title>
+<title>Posts | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="">
-<meta name="description" content="">
+<meta name="description" content="Posts - Dmytro&#39;s Blog">
 <meta name="author" content="Dmytro Chumakov">
-<link rel="canonical" href="http://localhost:1313/tags/swift/">
+<link rel="canonical" href="http://localhost:1313/posts/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f3be8e64f4e443c8e74473a0ae2c84b64621f8ec061e3432118c9f8aad022bd8.css" integrity="sha256-876OZPTkQ8jnRHOgriyEtkYh&#43;OwGHjQyEYyfiq0CK9g=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -19,8 +19,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/swift/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/swift/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
 <noscript>
     <style>
         #theme-toggle,
@@ -88,18 +88,33 @@
           gtag('js', new Date());
           gtag('config', 'G-HZZ4JTFGDP');
         }
-      </script><meta property="og:title" content="Swift" />
+      </script><meta property="og:title" content="Posts" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/tags/swift/" />
+<meta property="og:url" content="http://localhost:1313/posts/" />
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png" />
 
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png" />
-<meta name="twitter:title" content="Swift"/>
+<meta name="twitter:title" content="Posts"/>
 <meta name="twitter:description" content=""/>
 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/posts/"
+    }
+  ]
+}
+</script>
 </head>
 
 <body class="list" id="top">
@@ -182,90 +197,30 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
   <h1>
-    Swift
+    Posts
   </h1>
 </header>
 
-<article class="post-entry tag-entry"> 
+<article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Breadth First Search
+    <h2 class="entry-hint-parent">Let’s talk about Composable Architecture
     </h2>
   </header>
   <div class="entry-content">
-    <p>What is Breadth First Search? Breadth-first search (BFS) is an algorithm for traversing tree or graph data structures. It starts at the root and explores all the neighboring nodes at the current depth before moving on to nodes at the next depth level.
-Source
-Implementation The implementation of BFS may vary depending on the problem. The main idea of BFS is:
-It has a visited array that collects all elements that have already been visited. It has a queue with all elements it’s going to visit. It loops through the queue, removes the first element, and appends it to the visited list. Finally, it loops through all the neighbors and appends the neighbor to the queue if it has not been visited and is not already in the queue. Code Example func bfs(_ value: String) -&gt; [String] { let graph: [String: [String]] = [ &#34;New York&#34;: [&#34;Buenos Aires&#34;, &#34;Cairo&#34;, &#34;Tokyo&#34;, &#34;London&#34;] ] var visited: [String] = [] var queue: [String] = [] queue.append(value) while !queue.isEmpty { let tmp = queue.removeFirst() visited.append(tmp) if let neighbors = graph[tmp] { for neighbor in neighbors.sorted() { if !visited.contains(neighbor) &amp;&amp; !queue.contains(neighbor) { queue.append(neighbor) } } } } return visited } Thank you for reading! 😊</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-12 07:14:47 +0300 EEST'>September 12, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Breadth First Search" href="http://localhost:1313/posts/dsa-breadth-first-search/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Backtracking
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is Backtracking? Backtracking is a class of algorithms for finding solutions to complex problems. A backtracking algorithm uses recursion and is based on depth-first search (DFS).
-Depth First Search (DFS) Depth First Search (DFS) is an essential part of backtracking. DFS is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (or an arbitrary node in the case of a graph) and explores as far as possible along each branch before backtracking.
+    <p>Introduction The Composable Architecture (TCA) uses a unidirectional data flow (UDF). UDF is a design pattern where data and events move consistently and predictably. In UDF, data can only be transferred to other application parts in one way.
+In TCA, the only way to mutate the state is by sending actions to a runtime store. The runtime store holds the entire app’s business logic and mutates the state inside.
+UDF can reduce data inconsistencies because of the single source of truth for the application.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-09-09 07:19:46 +0300 EEST'>September 9, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Backtracking" href="http://localhost:1313/posts/dsa-backtracking/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Trie
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is a Trie? A Trie is a data structure usually called a “prefix tree,” often represented as a nested tree of dictionaries where each key is a character that maps to the next character in a word.
-Let’s look at some examples of a Trie. The Trie consists of two main classes: the TrieNode class and the Trie class.
-TrieNode The TrieNode class has two properties:
-children - a property that represents all characters in a given word and points to the next character. isEndSymbol - a property that indicates the end of the word in a given sequence of characters. final class TrieNode { var children: [Character: TrieNode?] var isEndSymbol: Bool init() { self.children = [:] self.isEndSymbol = false } } Trie The Trie class has two main operations, insert and exists, and a root property that stores all possible combinations of words.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-06 06:56:18 +0300 EEST'>September 6, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Trie" href="http://localhost:1313/posts/dsa-trie/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Binary Search Tree
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is a Tree? A Tree is a data structure that has a root and subtrees of children, representing a set of linked nodes. Trees behave similarly to a LinkedList in that they have a collection of nodes starting with a head (root). The main difference is that Trees can have multiple children, whereas a LinkedList, on the other hand, can have only one next child.
-I’m going to focus on a commonly used type of tree, the Binary Search Tree.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-02 07:12:55 +0300 EEST'>September 2, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Binary Search Tree" href="http://localhost:1313/posts/dsa-binary-search-tree/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Sliding Window
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is the sliding window technique? The sliding window technique is a common algorithmic approach used to create a fixed-sized window that moves through the data one step at a time, typically from left to right, to perform specific operations or computations on the elements within the window.
-What is the sliding window algorithm? The sliding window algorithm is a method for finding a subset of elements that satisfy certain conditions in a given problem.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-08-28 07:20:26 +0300 EEST'>August 28, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Sliding Window" href="http://localhost:1313/posts/dsa-sliding-window/"></a>
+  <footer class="entry-footer"><span title='2023-08-11 00:00:00 +0300 EEST'>August 11, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Let’s talk about Composable Architecture" href="http://localhost:1313/posts/lets-talk-about-composable-architecture/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/tags/swift/page/4/">
-      «&nbsp;Prev&nbsp;4/12
-    </a>
-    <a class="next" href="http://localhost:1313/tags/swift/page/6/">Next&nbsp;6/12&nbsp;»
+    <a class="prev" href="http://localhost:1313/posts/page/18/">
+      «&nbsp;Prev&nbsp;18/19
     </a>
   </nav>
 </footer>

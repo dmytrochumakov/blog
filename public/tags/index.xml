@@ -11,26 +11,33 @@
     </image>
     <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 25 Oct 2024 07:16:07 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 26 Oct 2024 07:27:13 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blind 75</title>
       <link>http://localhost:1313/tags/blind-75/</link>
-      <pubDate>Fri, 25 Oct 2024 07:16:07 +0300</pubDate>
+      <pubDate>Sat, 26 Oct 2024 07:27:13 +0300</pubDate>
       <guid>http://localhost:1313/tags/blind-75/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Contains Duplicate</title>
+      <link>http://localhost:1313/tags/contains-duplicate/</link>
+      <pubDate>Sat, 26 Oct 2024 07:27:13 +0300</pubDate>
+      <guid>http://localhost:1313/tags/contains-duplicate/</guid>
       <description></description>
     </item>
     <item>
       <title>LeetCode</title>
       <link>http://localhost:1313/tags/leetcode/</link>
-      <pubDate>Fri, 25 Oct 2024 07:16:07 +0300</pubDate>
+      <pubDate>Sat, 26 Oct 2024 07:27:13 +0300</pubDate>
       <guid>http://localhost:1313/tags/leetcode/</guid>
       <description></description>
     </item>
     <item>
       <title>Swift</title>
       <link>http://localhost:1313/tags/swift/</link>
-      <pubDate>Fri, 25 Oct 2024 07:16:07 +0300</pubDate>
+      <pubDate>Sat, 26 Oct 2024 07:27:13 +0300</pubDate>
       <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>

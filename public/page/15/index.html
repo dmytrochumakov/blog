@@ -200,6 +200,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Building Xcode project using the CLI
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to build a project in the fastest way.
+One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you’re in the project directory, you can run xcodebuild with the appropriate parameters to build your project. Example: xcodebuild -project YourProjectName.xcodeproj -scheme YourSchemeName Another way is by integrating fastlane into your workflow: Outline of the process Install Fastlane: If you haven’t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-05 04:59:38 +0300 EEST'>April 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Building Xcode project using the CLI" href="http://localhost:1313/posts/building-xcode-project-using-the-cli/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">The Visitor Pattern
     </h2>
   </header>
@@ -257,27 +271,12 @@ Large Memory Footprint: When dealing with a large number of objects, especially 
   <footer class="entry-footer"><span title='2024-03-17 08:29:30 +0300 +0300'>March 17, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to The Flyweight Pattern" href="http://localhost:1313/posts/the-flyweight-pattern/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">The Chain Of Responsibility Pattern
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is a Chain Of Responsibility Pattern? The Chain Of Responsibility Pattern helps create a chain of objects to examine requests. Each object in turn examines a request and either handles it or passes onto the next object in the chain.
-Source
-What problems does it solve? The Chain Of Responsibility Pattern (CoR) helps solve following problems:
-Dynamic Request Handling: It enables dynamic assignment of responsibilities at runtime. Handlers can be added, removed, or reordered without affecting the client’s code. This flexibility allows for easier maintenance and extension of the system. Decoupling Sender and Receiver: In traditional systems, a sender often needs to know the exact receiver of a request, leading to tight coupling between them. The CoR pattern decouples senders from receivers by allowing multiple objects to handle a request without the sender knowing the specific handler. Real-world code example // Protocol defining the handler interface protocol PurchaseHandler { var next: PurchaseHandler? { get set } func handleRequest(amount: Double) } // Concrete handlers class SmallPurchaseHandler: PurchaseHandler { var next: PurchaseHandler? let maxAmount: Double = 100.0 func handleRequest(amount: Double) { if amount &lt;= maxAmount { print(&#34;SmallPurchaseHandler: Purchase approved for $\(amount)&#34;) } else if let nextHandler = next { print(&#34;SmallPurchaseHandler: Passing request to next handler&#34;) nextHandler.handleRequest(amount: amount) } else { print(&#34;SmallPurchaseHandler: No handler available, purchase rejected&#34;) } } } class MediumPurchaseHandler: PurchaseHandler { var next: PurchaseHandler? let maxAmount: Double = 500.0 func handleRequest(amount: Double) { if amount &lt;= maxAmount { print(&#34;MediumPurchaseHandler: Purchase approved for $\(amount)&#34;) } else if let nextHandler = next { print(&#34;MediumPurchaseHandler: Passing request to next handler&#34;) nextHandler.handleRequest(amount: amount) } else { print(&#34;MediumPurchaseHandler: No handler available, purchase rejected&#34;) } } } class LargePurchaseHandler: PurchaseHandler { var next: PurchaseHandler? func handleRequest(amount: Double) { print(&#34;LargePurchaseHandler: Purchase approved for $\(amount)&#34;) } } // Usage func main() { let smallHandler = SmallPurchaseHandler() let mediumHandler = MediumPurchaseHandler() let largeHandler = LargePurchaseHandler() // Connecting handlers into a chain smallHandler.next = mediumHandler mediumHandler.next = largeHandler smallHandler.handleRequest(amount: 50.0) smallHandler.handleRequest(amount: 200.0) smallHandler.handleRequest(amount: 1000.0) } Thank you for reading! 😊</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-03-15 08:29:30 +0300 +0300'>March 15, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to The Chain Of Responsibility Pattern" href="http://localhost:1313/posts/the-chain-of-responsibility-pattern/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/page/14/">
-      «&nbsp;Prev&nbsp;14/18
+      «&nbsp;Prev&nbsp;14/19
     </a>
-    <a class="next" href="http://localhost:1313/page/16/">Next&nbsp;16/18&nbsp;»
+    <a class="next" href="http://localhost:1313/page/16/">Next&nbsp;16/19&nbsp;»
     </a>
   </nav>
 </footer>
