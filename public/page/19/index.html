@@ -200,6 +200,22 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">What is “reference type” in Swift?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction In Swift, classes, closures, and actors all reference types.
+‘Reference type’ is instance that shares a single copy of data.
+Assigning a reference type to a constant or variable, or passing it into a function or method, it is always a reference to a shared instance that is assigned or passed in.
+Example You can pass your property value by sharing the same address in memory.
+// Reference type example class Storage { var data = “data-example” } var storage = Storage() print(&#34;\(storage.data)&#34;) // prints &#34;data-example&#34; print(&#34;storage address:&#34;, Unmanaged.passUnretained(storage).toOpaque()) var copiedStorage = storage copiedStorage.data = “new-data” print(&#34;\(storage.data), \(copiedStorage.data)&#34;) // prints &#34;new-data, new-data&#34; print(&#34;copiedStorage address:&#34;, Unmanaged.passUnretained(copiedStorage).toOpaque()) ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-12-03 00:00:00 +0300 +0300'>December 3, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to What is “reference type” in Swift?" href="http://localhost:1313/posts/what-is-reference-type-in-swift/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Let’s talk about Composable Architecture
     </h2>
   </header>

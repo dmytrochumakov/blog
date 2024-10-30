@@ -11,8 +11,25 @@
     </image>
     <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 26 Oct 2024 07:27:13 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 30 Oct 2024 07:26:31 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Valid Anagram</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-valid-anagram/</link>
+      <pubDate>Wed, 30 Oct 2024 07:26:31 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-valid-anagram/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
+&lt;p&gt;Given two strings &lt;code&gt;s&lt;/code&gt; and &lt;code&gt;t&lt;/code&gt;, return &lt;code&gt;true&lt;/code&gt; if &lt;code&gt;t&lt;/code&gt; is an anagram of &lt;code&gt;s&lt;/code&gt;, and &lt;code&gt;false&lt;/code&gt; otherwise.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, using all the original letters exactly once.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;anagram&amp;#34;, t = &amp;#34;nagaram&amp;#34;
+Output: true
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;rat&amp;#34;, t = &amp;#34;car&amp;#34;
+Output: false 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Follow-up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Contains Duplicate</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-contains-duplicate/</link>
