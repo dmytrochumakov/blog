@@ -205,6 +205,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Testing push notifications locally in an iOS app
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction I always wondered how I could automate testing the push notification process. Even when Apple introduced the possibility of dragging a configured file to the simulator to display a notification, it is still a manual process. I’ll skip testing via the terminal because I think it takes more time than using an APNS file or the RocketSim app.
+Before I was first introduced to the RocketSim app, I used an APNS file for testing push notifications. It worked for me and my teammates, but I knew it could be better. It looks something like this:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-06-19 07:13:19 +0300 EEST'>June 19, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Testing push notifications locally in an iOS app" href="http://localhost:1313/posts/testing-push-notifications-locally-in-an-ios-app/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Adding Push Notifications to an iOS App
     </h2>
   </header>
@@ -257,22 +271,6 @@ Where to Start Before diving into implementation details, I want to highlight so
   </div>
   <footer class="entry-footer"><span title='2024-05-30 07:04:49 +0300 EEST'>May 30, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Accessibility iOS UIKit" href="http://localhost:1313/posts/accessibility-ios-uikit/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Text To Speech iOS
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was eager to learn how converting Text To Speech works in iOS. Here is what I discovered:
-First Step The first step is to add AVSpeechSynthesizer, an object that produces synthesized speech from text utterances.
-@State private var speechSynthesizer = AVSpeechSynthesizer() Second Step The second step is to add AVSpeechUtterance, an object that encapsulates the text for speech synthesis.
-private var utterance: AVSpeechUtterance { let inputMessage = &#34;Hello world!&#34; let utterance = AVSpeechUtterance(string: inputMessage) utterance.voice = AVSpeechSynthesisVoice(language: &#34;en-US&#34;) return utterance } Optional You can configure pitch, rate, and voice parameters.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-24 07:52:07 +0300 EEST'>May 24, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Text To Speech iOS" href="http://localhost:1313/posts/text-to-speech-ios/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
