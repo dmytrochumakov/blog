@@ -205,6 +205,22 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - Trie
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is a Trie? A Trie is a data structure usually called a “prefix tree,” often represented as a nested tree of dictionaries where each key is a character that maps to the next character in a word.
+Let’s look at some examples of a Trie. The Trie consists of two main classes: the TrieNode class and the Trie class.
+TrieNode The TrieNode class has two properties:
+children - a property that represents all characters in a given word and points to the next character. isEndSymbol - a property that indicates the end of the word in a given sequence of characters. final class TrieNode { var children: [Character: TrieNode?] var isEndSymbol: Bool init() { self.children = [:] self.isEndSymbol = false } } Trie The Trie class has two main operations, insert and exists, and a root property that stores all possible combinations of words.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-09-06 06:56:18 +0300 EEST'>September 6, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to DSA - Trie" href="http://localhost:1313/posts/dsa-trie/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">DSA - Binary Search Tree
     </h2>
   </header>
@@ -258,20 +274,6 @@ Why should the input be sorted before performing binary search? The input array 
   </div>
   <footer class="entry-footer"><span title='2024-08-26 07:09:48 +0300 EEST'>August 26, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Binary Search" href="http://localhost:1313/posts/dsa-binary-search/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Stack
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is a Stack? A stack is an abstract data type that serves as a collection of elements and implements operations like push, pop, and peek at the end in O(1) time. It uses the LIFO (last in, first out) order. For example, a stack can be a collection of items where adding or removing is practical at the top.
-Code Example struct Stack&lt;Element&gt; { private var array: [Element] init(array: [Element] = []) { self.array = array } mutating func push(_ element: Element) { array.append(element) } mutating func pop() -&gt; Element? { if array.isEmpty { return nil } return array.popLast() } func peek() -&gt; Element? { if array.isEmpty { return nil } return array.last } } Practical Applications of Stacks You can observe stack-like behavior in many places, such as redo-undo features in text editors, Photoshop, and the forward and backward navigation features in web browsers.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-08-20 07:17:01 +0300 EEST'>August 20, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Stack" href="http://localhost:1313/posts/dsa-stack/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

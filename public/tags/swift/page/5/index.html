@@ -190,6 +190,23 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - Queue
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is a Queue? A Queue is an abstract data type that serves as an ordered collection of elements.
+A simple queue typically has several operations:
+push(item) - adds an item to the tail pop() - removes and returns an item from the head These operations make a queue a FIFO (First In, First Out) data structure.
+Implementation There are two ways to implement a queue.
+The first and simplest (but less efficient) way is by using an array and basic operations:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-09-20 07:15:17 +0300 EEST'>September 20, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to DSA - Queue" href="http://localhost:1313/posts/dsa-queue/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">DSA - Adjacency List
     </h2>
   </header>
@@ -245,22 +262,6 @@ Depth First Search (DFS) Depth First Search (DFS) is an essential part of backtr
   </div>
   <footer class="entry-footer"><span title='2024-09-09 07:19:46 +0300 EEST'>September 9, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Backtracking" href="http://localhost:1313/posts/dsa-backtracking/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Trie
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is a Trie? A Trie is a data structure usually called a “prefix tree,” often represented as a nested tree of dictionaries where each key is a character that maps to the next character in a word.
-Let’s look at some examples of a Trie. The Trie consists of two main classes: the TrieNode class and the Trie class.
-TrieNode The TrieNode class has two properties:
-children - a property that represents all characters in a given word and points to the next character. isEndSymbol - a property that indicates the end of the word in a given sequence of characters. final class TrieNode { var children: [Character: TrieNode?] var isEndSymbol: Bool init() { self.children = [:] self.isEndSymbol = false } } Trie The Trie class has two main operations, insert and exists, and a root property that stores all possible combinations of words.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-06 06:56:18 +0300 EEST'>September 6, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Trie" href="http://localhost:1313/posts/dsa-trie/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
