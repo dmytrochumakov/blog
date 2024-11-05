@@ -11,8 +11,30 @@
     </image>
     <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 03 Nov 2024 08:18:58 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 05 Nov 2024 07:25:53 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Product of Array Except Self</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-product-of-array-except-self/</link>
+      <pubDate>Tue, 05 Nov 2024 07:25:53 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-product-of-array-except-self/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given an integer array &lt;code&gt;nums&lt;/code&gt;, return an array &lt;code&gt;answer&lt;/code&gt; such that &lt;code&gt;answer[i]&lt;/code&gt; is equal to the product of all the elements of &lt;code&gt;nums&lt;/code&gt; except &lt;code&gt;nums[i]&lt;/code&gt;.&lt;br&gt;
+The product of any prefix or suffix of &lt;code&gt;nums&lt;/code&gt; is guaranteed to fit in a 32-bit integer.&lt;br&gt;
+You must write an algorithm that runs in &lt;code&gt;O(n)&lt;/code&gt; time and without using the division operation.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [1,2,3,4]
+Output: [24,12,8,6]
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [-1,1,0,-3,3]
+Output: [0,0,9,0,0]
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;2 &amp;lt;= nums.length &amp;lt;= 10^5&lt;/li&gt;
+&lt;li&gt;-30 &amp;lt;= nums[i] &amp;lt;= 30&lt;/li&gt;
+&lt;li&gt;The product of any prefix or suffix of &lt;code&gt;nums&lt;/code&gt; is guaranteed to fit in a 32-bit integer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Follow up: Can you solve the problem in &lt;code&gt;O(1)&lt;/code&gt; extra space complexity? (The output array does not count as extra space for space complexity analysis.)&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Top K Frequent Elements</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-top-k-frequent-elements/</link>

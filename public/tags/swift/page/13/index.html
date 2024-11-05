@@ -190,82 +190,23 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Implementing HealthKit in an iOS App
+    <h2 class="entry-hint-parent">What is “reference type” in Swift?
     </h2>
   </header>
   <div class="entry-content">
-    <p>Introduction Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.
-Preparation Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store. Let’s add:
-...</p>
+    <p>Introduction In Swift, classes, closures, and actors all reference types.
+‘Reference type’ is instance that shares a single copy of data.
+Assigning a reference type to a constant or variable, or passing it into a function or method, it is always a reference to a shared instance that is assigned or passed in.
+Example You can pass your property value by sharing the same address in memory.
+// Reference type example class Storage { var data = “data-example” } var storage = Storage() print(&#34;\(storage.data)&#34;) // prints &#34;data-example&#34; print(&#34;storage address:&#34;, Unmanaged.passUnretained(storage).toOpaque()) var copiedStorage = storage copiedStorage.data = “new-data” print(&#34;\(storage.data), \(copiedStorage.data)&#34;) // prints &#34;new-data, new-data&#34; print(&#34;copiedStorage address:&#34;, Unmanaged.passUnretained(copiedStorage).toOpaque()) ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-07-26 07:18:58 +0300 EEST'>July 26, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Implementing HealthKit in an iOS App" href="http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Implementing Location Service
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction Nowadays, location is an essential feature in almost every application. It’s very important to know the best ways to implement it without affecting performance and user experience. In this article, I will focus on how to implement general methods in location service.
-Preparation Before we begin, let’s add location permission keys to Info.plist:
-Privacy - Location When In Use Usage Description Privacy - Location Always and When In Use Usage Description First Step The first step is to create LocationService with the requestPermissions method to be able to receive location events.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-07-23 07:04:25 +0300 EEST'>July 23, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Implementing Location Service" href="http://localhost:1313/posts/implementing-location-service/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Implementing ChatGPT in an iOS App
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I haven’t had the opportunity to build a chatbot before. This topic was trending some time ago, and I always wanted to implement it myself. In this article, I will focus on the steps you need to know to successfully build and run a chatbot application.
-First Step The first step is to add the OpenAI dependency to your project:
-.package(url: &#34;https://github.com/MacPaw/OpenAI.git&#34;, branch: &#34;main&#34;) dependencies: [ .byNameItem( name: &#34;OpenAI&#34;, condition: .when(platforms: [ .iOS, ]) ), ], Second Step The second step is to generate an OpenAI key and replace it inside your project.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-07-21 07:25:28 +0300 EEST'>July 21, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Implementing ChatGPT in an iOS App" href="http://localhost:1313/posts/implementing-chatgpt-in-an-ios-app/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Implementing Apple Sign-In to an iOS App
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction The Apple Sign-In feature is very helpful and offers users login functionality with one click. It could be highly beneficial from a business perspective to attract more potential customers by providing easy and secure access to application functionality. In this article, I will focus on how to implement Apple Sign-In.
-Before implementation, let’s set up the necessary options to be able to run the app without errors.
-Add Sign in with Apple Capability to the project 📝 Before testing on the simulator, you need to be signed in to an account with enabled two-factor authentication.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-07-18 07:26:13 +0300 EEST'>July 18, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Implementing Apple Sign-In to an iOS App" href="http://localhost:1313/posts/implementing-apple-sign-in-to-an-ios-app/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Implementing gRPC Swift
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I’ve never had the chance to use this technology before. I’ve always wondered how gRPC operates. In this article, I will explore what gRPC is, how to install and use it, and when to use gRPC.
-What is gRPC? gRPC is an open-source, high-performance framework that facilitates efficient communication in distributed systems. gRPC is an implementation of the RPC (Remote Procedure Call) protocol, which enables services to call functions on other machines as if they were local software methods. gRPC was developed by Google in 2015, and it includes several features that enhance the way remote procedure calls are made. For instance, its use of Protocol Buffers (Protobuf) supports strongly typed service contracts, data serialization, and code generation in a variety of programming languages. It also uses HTTP/2 as its transport protocol, which facilitates bi-directional streaming and reduces latency.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-07-16 07:16:41 +0300 EEST'>July 16, 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Implementing gRPC Swift" href="http://localhost:1313/posts/implementing-grpc-swift/"></a>
+  <footer class="entry-footer"><span title='2023-12-03 00:00:00 +0300 +0300'>December 3, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to What is “reference type” in Swift?" href="http://localhost:1313/posts/what-is-reference-type-in-swift/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/tags/swift/page/7/">
-      «&nbsp;Prev&nbsp;7/13
-    </a>
-    <a class="next" href="http://localhost:1313/tags/swift/page/9/">Next&nbsp;9/13&nbsp;»
+    <a class="prev" href="http://localhost:1313/tags/swift/page/12/">
+      «&nbsp;Prev&nbsp;12/13
     </a>
   </nav>
 </footer>
