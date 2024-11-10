@@ -3,27 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/blind-75/</loc>
-    <lastmod>2024-11-05T07:25:53+03:00</lastmod>
+    <lastmod>2024-11-10T07:10:01+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-11-05T07:25:53+03:00</lastmod>
+    <lastmod>2024-11-10T07:10:01+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/leetcode/</loc>
-    <lastmod>2024-11-05T07:25:53+03:00</lastmod>
+    <lastmod>2024-11-10T07:10:01+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/leetcode-blind-75-longest-consecutive-sequence/</loc>
+    <lastmod>2024-11-10T07:10:01+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/longest-consecutive-sequence/</loc>
+    <lastmod>2024-11-10T07:10:01+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-11-10T07:10:01+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swift/</loc>
+    <lastmod>2024-11-10T07:10:01+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-11-10T07:10:01+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/leetcode-blind-75-product-of-array-except-self/</loc>
     <lastmod>2024-11-05T07:25:53+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-11-05T07:25:53+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/product-of-array-except-self/</loc>
-    <lastmod>2024-11-05T07:25:53+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2024-11-05T07:25:53+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-11-05T07:25:53+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/leetcode-blind-75-top-k-frequent-elements/</loc>
