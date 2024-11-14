@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Posts | Dmytro&#39;s Blog</title>
+<title>Valid Palindrome | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="">
-<meta name="description" content="Posts - Dmytro&#39;s Blog">
+<meta name="description" content="">
 <meta name="author" content="Dmytro Chumakov">
-<link rel="canonical" href="http://localhost:1313/posts/">
+<link rel="canonical" href="http://localhost:1313/tags/valid-palindrome/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f3be8e64f4e443c8e74473a0ae2c84b64621f8ec061e3432118c9f8aad022bd8.css" integrity="sha256-876OZPTkQ8jnRHOgriyEtkYh&#43;OwGHjQyEYyfiq0CK9g=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -19,8 +19,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/valid-palindrome/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/valid-palindrome/">
 <noscript>
     <style>
         #theme-toggle,
@@ -88,32 +88,17 @@
           gtag('js', new Date());
           gtag('config', 'G-HZZ4JTFGDP');
         }
-      </script><meta property="og:title" content="Posts">
+      </script><meta property="og:title" content="Valid Palindrome">
 <meta property="og:description" content="">
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://localhost:1313/posts/">
+<meta property="og:url" content="http://localhost:1313/tags/valid-palindrome/">
 <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="Posts">
+<meta name="twitter:title" content="Valid Palindrome">
 <meta name="twitter:description" content="">
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "http://localhost:1313/posts/"
-    }
-  ]
-}
-</script>
 </head>
 
 <body class="list" id="top">
@@ -196,49 +181,26 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
   <h1>
-    Posts
+    Valid Palindrome
   </h1>
 </header>
 
-<article class="post-entry"> 
+<article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">What is “reference type” in Swift?
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Valid Palindrome
     </h2>
   </header>
   <div class="entry-content">
-    <p>Introduction In Swift, classes, closures, and actors all reference types.
-‘Reference type’ is instance that shares a single copy of data.
-Assigning a reference type to a constant or variable, or passing it into a function or method, it is always a reference to a shared instance that is assigned or passed in.
-Example You can pass your property value by sharing the same address in memory.
-// Reference type example class Storage { var data = “data-example” } var storage = Storage() print(&#34;\(storage.data)&#34;) // prints &#34;data-example&#34; print(&#34;storage address:&#34;, Unmanaged.passUnretained(storage).toOpaque()) var copiedStorage = storage copiedStorage.data = “new-data” print(&#34;\(storage.data), \(copiedStorage.data)&#34;) // prints &#34;new-data, new-data&#34; print(&#34;copiedStorage address:&#34;, Unmanaged.passUnretained(copiedStorage).toOpaque()) ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-12-03 00:00:00 +0300 +0300'>December 3, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to What is “reference type” in Swift?" href="http://localhost:1313/posts/what-is-reference-type-in-swift/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Let’s talk about Composable Architecture
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction The Composable Architecture (TCA) uses a unidirectional data flow (UDF). UDF is a design pattern where data and events move consistently and predictably. In UDF, data can only be transferred to other application parts in one way.
-In TCA, the only way to mutate the state is by sending actions to a runtime store. The runtime store holds the entire app’s business logic and mutates the state inside.
-UDF can reduce data inconsistencies because of the single source of truth for the application.
+    <p>The Problem Given a string s, return true if it is a palindrome, or false otherwise.
+A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
+Examples Input: s = &#34;A man, a plan, a canal: Panama&#34; Output: true Explanation: &#34;amanaplanacanalpanama&#34; is a palindrome. Input: s = &#34;race a car&#34; Output: false Explanation: &#34;raceacar&#34; is not a palindrome. Input: s = &#34; &#34; Output: true Explanation: s is an empty string &#34;&#34; after removing non-alphanumeric characters. Since an empty string reads the same forward and backward, it is a palindrome. Constraints 1 &lt;= s.length &lt;= 2 * 10^5 s consists only of printable ASCII characters. Brute Force Solution func isPalindrome(_ s: String) -&gt; Bool { var newStr = &#34;&#34; for c in s { if c.isLetter || c.isNumber { newStr &#43;= c.lowercased() } } return newStr == String(newStr.reversed()) } Explanation Let’s start with the brute force solution. According to the description, we need to check if the string contains only lowercase, alphanumeric characters and reads the same forward and backward. In Swift, you can check this using the built-in isLetter and isNumber properties. Based on this information, we iterate through all characters in the s string, verify that each character is a letter or number, update newStr with the current lowercased character, and compare the result with its reversed version.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2023-08-11 00:00:00 +0300 EEST'>August 11, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Let’s talk about Composable Architecture" href="http://localhost:1313/posts/lets-talk-about-composable-architecture/"></a>
+  <footer class="entry-footer"><span title='2024-11-14 07:00:45 +0300 +0300'>November 14, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Valid Palindrome" href="http://localhost:1313/posts/leetcode-blind-75-valid-palindrome/"></a>
 </article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/posts/page/19/">
-      «&nbsp;Prev&nbsp;19/20
-    </a>
-  </nav>
-</footer>
     </main>
     
 <footer class="footer">
