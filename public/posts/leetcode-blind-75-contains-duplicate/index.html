@@ -41,7 +41,7 @@ The brute force solution for this problem uses sorting to allow us to quickly de
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/leetcode-blind-75-contains-duplicate/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f3be8e64f4e443c8e74473a0ae2c84b64621f8ec061e3432118c9f8aad022bd8.css" integrity="sha256-876OZPTkQ8jnRHOgriyEtkYh&#43;OwGHjQyEYyfiq0CK9g=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.90bf44a6ebd7c6748b4a028cfa0a41da583261f03ee2201d567f914a36ac58bb.css" integrity="sha256-kL9EpuvXxnSLSgKM&#43;gpB2lgyYfA&#43;4iAdVn&#43;RSjasWLs=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -117,44 +117,22 @@ The brute force solution for this problem uses sorting to allow us to quickly de
           gtag('js', new Date());
           gtag('config', 'G-HZZ4JTFGDP');
         }
-      </script><meta property="og:title" content="LeetCode - Blind 75 - Contains Duplicate">
-<meta property="og:description" content="The Problem
-Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
-Example
-Input: nums = [1,2,3,1]
-Output: true
-Explanation:
-The element 1 occurs at indices 0 and 3.
-Follow-up: Can you come up with an algorithm that has less than O(NlogN) time complexity?
-Brute Force Solution
-func containsDuplicate(_ nums: [Int]) -&gt; Bool {
-    var nums = nums
-    let N = nums.count
-    if N == 0 {
-        return false
-    }
-    nums.sort()
-    var prev = nums[0]
-
-    for i in 1 ..&lt; N {
-        let num = nums[i]
-        if num == prev {
-            return true
-        } else {
-            prev = num
-        }
-    }
-
-    return false
-}
-Explanation
-The brute force solution for this problem uses sorting to allow us to quickly detect duplicates since identical elements will be adjacent. After sorting, it iterates through all elements, checking if the current element is equal to the previous one; if it is, it returns true immediately. If not, it updates prev. If no duplicates are detected, it returns false.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="http://localhost:1313/posts/leetcode-blind-75-contains-duplicate/">
-<meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta property="article:section" content="posts">
-<meta property="article:published_time" content="2024-10-26T07:27:13+03:00">
-<meta property="article:modified_time" content="2024-10-26T07:27:13+03:00">
+      </script><meta property="og:url" content="http://localhost:1313/posts/leetcode-blind-75-contains-duplicate/">
+  <meta property="og:site_name" content="Dmytro&#39;s Blog">
+  <meta property="og:title" content="LeetCode - Blind 75 - Contains Duplicate">
+  <meta property="og:description" content="The Problem Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+Example Input: nums = [1,2,3,1] Output: true Explanation: The element 1 occurs at indices 0 and 3. Follow-up: Can you come up with an algorithm that has less than O(NlogN) time complexity?
+Brute Force Solution func containsDuplicate(_ nums: [Int]) -&gt; Bool { var nums = nums let N = nums.count if N == 0 { return false } nums.sort() var prev = nums[0] for i in 1 ..&lt; N { let num = nums[i] if num == prev { return true } else { prev = num } } return false } Explanation The brute force solution for this problem uses sorting to allow us to quickly detect duplicates since identical elements will be adjacent. After sorting, it iterates through all elements, checking if the current element is equal to the previous one; if it is, it returns true immediately. If not, it updates prev. If no duplicates are detected, it returns false.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-10-26T07:27:13+03:00">
+    <meta property="article:modified_time" content="2024-10-26T07:27:13+03:00">
+    <meta property="article:tag" content="LeetCode">
+    <meta property="article:tag" content="Blind 75">
+    <meta property="article:tag" content="Contains Duplicate">
+    <meta property="article:tag" content="Swift">
+      <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
 <meta name="twitter:title" content="LeetCode - Blind 75 - Contains Duplicate">
