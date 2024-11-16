@@ -189,6 +189,22 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - 3Sum
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] &#43; nums[j] &#43; nums[k] == 0.
+Notice that the solution set must not contain duplicate triplets.
+Examples Input: nums = [-1,0,1,2,-1,-4] Output: [[-1,-1,2],[-1,0,1]] Explanation: nums[0] &#43; nums[1] &#43; nums[2] = (-1) &#43; 0 &#43; 1 = 0. nums[1] &#43; nums[2] &#43; nums[4] = 0 &#43; 1 &#43; (-1) = 0. nums[0] &#43; nums[3] &#43; nums[4] = (-1) &#43; 2 &#43; (-1) = 0. The distinct triplets are [-1,0,1] and [-1,-1,2]. Notice that the order of the output and the order of the triplets does not matter. Input: nums = [0,1,1] Output: [] Explanation: The only possible triplet does not sum up to 0. Input: nums = [0,0,0] Output: [[0,0,0]] Explanation: The only possible triplet sums up to 0. Constraints 3 &lt;= nums.length &lt;= 3000 -10⁵ &lt;= nums[i] &lt;= 10⁵ Brute Force Solution func threeSum(_ nums: [Int]) -&gt; [[Int]] { var nums = nums let n = nums.count var res: Set&lt;[Int]&gt; = [] nums.sort() for i in 0 ..&lt; n { for j in i &#43; 1 ..&lt; n { for k in j &#43; 1 ..&lt; n { if nums[i] &#43; nums[j] &#43; nums[k] == 0 { let val = [nums[i], nums[j], nums[k]] res.insert(val) } } } } return Array(res) } Explanation Let’s start with the brute force solution.
+According to the problem, we need to find triplet elements that, when added together, equal 0. By looking at examples, the first thing that comes to mind is to use three loops, add each of the elements, and compare the result with 0. If the result equals 0, we add the elements to the result.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-11-16 07:20:13 +0300 +0300'>November 16, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - 3Sum" href="http://localhost:1313/posts/leetcode-blind-75-3sum/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Valid Palindrome
     </h2>
   </header>
@@ -247,24 +263,9 @@ Examples Input: nums = [1,1,1,2,2,3], k = 2 Output: [1,2] Input: nums = [1], k =
   <footer class="entry-footer"><span title='2024-11-03 08:18:58 +0300 +0300'>November 3, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Top K Frequent Elements" href="http://localhost:1313/posts/leetcode-blind-75-top-k-frequent-elements/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Group Anagrams
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The problem Given an array of strings strs, group the anagrams together. You can return the answer in any order.
-An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, using all the original letters exactly once.
-Examples Input: strs = [&#34;eat&#34;,&#34;tea&#34;,&#34;tan&#34;,&#34;ate&#34;,&#34;nat&#34;,&#34;bat&#34;] Output: [[&#34;bat&#34;],[&#34;nat&#34;,&#34;tan&#34;],[&#34;ate&#34;,&#34;eat&#34;,&#34;tea&#34;]] Explanation: * There is no string in strs that can be rearranged to form &#34;bat.&#34; * The strings &#34;nat&#34; and &#34;tan&#34; are anagrams as they can be rearranged to form each other. * The strings &#34;ate,&#34; &#34;eat,&#34; and &#34;tea&#34; are anagrams as they can be rearranged to form each other. Input: strs = [&#34;&#34;] Output: [[&#34;&#34;]] Input: strs = [&#34;a&#34;] Output: [[&#34;a&#34;]] Constraints 1 &lt;= strs.length &lt;= 1000 0 &lt;= strs[i].length &lt;= 100 strs[i] is made up of lowercase English letters. Brute force solution func groupAnagrams(_ strs: [String]) -&gt; [[String]] { var res: [String: [String]] = [:] for s in strs { let sortedS = String(s.sorted()) res[sortedS, default: []].append(s) } return Array(res.values) } Explanation The brute force solution:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-11-01 07:20:55 +0300 +0300'>November 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Group Anagrams" href="http://localhost:1313/posts/leetcode-blind-75-group-anagrams/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="next" href="http://localhost:1313/tags/leetcode/page/2/">Next&nbsp;2/2&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/leetcode/page/2/">Next&nbsp;2/3&nbsp;»
     </a>
   </nav>
 </footer>
