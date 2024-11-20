@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Container With Most Water on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/container-with-most-water/</link>
+    <description>Recent content in Container With Most Water on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.134.3</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 20 Nov 2024 06:57:55 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/container-with-most-water/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Container With Most Water</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-container-with-most-water/</link>
+      <pubDate>Wed, 20 Nov 2024 06:57:55 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-container-with-most-water/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
+&lt;p&gt;You are given an integer array &lt;code&gt;height&lt;/code&gt; of length &lt;code&gt;n&lt;/code&gt;. There are &lt;code&gt;n&lt;/code&gt; vertical lines drawn such that the two endpoints of the &lt;code&gt;ith&lt;/code&gt; line are &lt;code&gt;(i, 0)&lt;/code&gt; and &lt;code&gt;(i, height[i])&lt;/code&gt;.&lt;br&gt;
+Find two lines that, together with the x-axis, form a container such that the container contains the most water.&lt;br&gt;
+Return the maximum amount of water a container can store.&lt;br&gt;
+Notice that you may not slant the container.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
