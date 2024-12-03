@@ -189,6 +189,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Group Anagrams
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, using all the original letters exactly once.
+Examples Input: strs = [&#34;eat&#34;,&#34;tea&#34;,&#34;tan&#34;,&#34;ate&#34;,&#34;nat&#34;,&#34;bat&#34;] Output: [[&#34;bat&#34;],[&#34;nat&#34;,&#34;tan&#34;],[&#34;ate&#34;,&#34;eat&#34;,&#34;tea&#34;]] Explanation: * There is no string in strs that can be rearranged to form &#34;bat.&#34; * The strings &#34;nat&#34; and &#34;tan&#34; are anagrams as they can be rearranged to form each other. * The strings &#34;ate,&#34; &#34;eat,&#34; and &#34;tea&#34; are anagrams as they can be rearranged to form each other. Input: strs = [&#34;&#34;] Output: [[&#34;&#34;]] Input: strs = [&#34;a&#34;] Output: [[&#34;a&#34;]] Constraints 1 &lt;= strs.length &lt;= 1000 0 &lt;= strs[i].length &lt;= 100 strs[i] is made up of lowercase English letters. Brute force solution func groupAnagrams(_ strs: [String]) -&gt; [[String]] { var res: [String: [String]] = [:] for s in strs { let sortedS = String(s.sorted()) res[sortedS, default: []].append(s) } return Array(res.values) } Explanation The brute force solution:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-11-01 07:20:55 +0300 +0300'>November 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Group Anagrams" href="http://localhost:1313/posts/leetcode-blind-75-group-anagrams/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Valid Anagram
     </h2>
   </header>
@@ -245,26 +260,12 @@ Problem You are given two integer arrays, nums1 and nums2, sorted in non-dec
   <footer class="entry-footer"><span title='2024-08-15 07:04:16 +0300 EEST'>August 15, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Merge Sorted Array Problem" href="http://localhost:1313/posts/dsa-merge-sorted-array-problem/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Data Structures and Algorithms Arrays Swift
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I’ve always been curious about data structures and algorithms, and how they can improve user experiences while saving money for businesses through optimized computations.
-In this series of articles, I’m going to solve LeetCode problems and share my approach with you.
-I’ve just started my journey in solving LeetCode problems, so my solutions might not be as efficient as they could be, but I’m always looking for improvement.
-Before each topic, I’ll provide a brief introduction to the data structure, algorithm, or technique I’ll be using to solve a specific problem.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-08-12 07:01:34 +0300 EEST'>August 12, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Data Structures and Algorithms Arrays Swift" href="http://localhost:1313/posts/data-structures-and-algorithms-arrays-swift/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/leetcode/page/2/">
-      «&nbsp;Prev&nbsp;2/3
+      «&nbsp;Prev&nbsp;2/4
+    </a>
+    <a class="next" href="http://localhost:1313/tags/leetcode/page/4/">Next&nbsp;4/4&nbsp;»
     </a>
   </nav>
 </footer>

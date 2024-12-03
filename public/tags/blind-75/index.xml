@@ -11,8 +11,39 @@
     </image>
     <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 29 Nov 2024 07:27:59 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2024 07:09:24 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/blind-75/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Minimum Window Substring</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-minimum-window-substring/</link>
+      <pubDate>Tue, 03 Dec 2024 07:09:24 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-minimum-window-substring/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
+&lt;p&gt;Given two strings &lt;code&gt;s&lt;/code&gt; and &lt;code&gt;t&lt;/code&gt; of lengths &lt;code&gt;m&lt;/code&gt; and &lt;code&gt;n&lt;/code&gt;, respectively, return the minimum window substring of &lt;code&gt;s&lt;/code&gt; such that every character in &lt;code&gt;t&lt;/code&gt; (including duplicates) is included in the window. If there is no such substring, return the empty string &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A substring is a contiguous, non-empty sequence of characters within a string.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The test cases will be generated such that the answer is unique.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;ADOBECODEBANC&amp;#34;, t = &amp;#34;ABC&amp;#34;
+Output: &amp;#34;BANC&amp;#34;
+Explanation: The minimum window substring &amp;#34;BANC&amp;#34; includes &amp;#39;A&amp;#39;, &amp;#39;B&amp;#39;, and &amp;#39;C&amp;#39; from string t.
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;a&amp;#34;, t = &amp;#34;a&amp;#34;
+Output: &amp;#34;a&amp;#34;
+Explanation: The entire string s is the minimum window.
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;a&amp;#34;, t = &amp;#34;aa&amp;#34;
+Output: &amp;#34;&amp;#34;
+Explanation: Both &amp;#39;a&amp;#39;s from t must be included in the window.
+Since the largest window of s only has one &amp;#39;a&amp;#39;, return an empty string.
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;m == s.length&lt;/li&gt;
+&lt;li&gt;n == t.length&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;= m, n &amp;lt;= 10⁵&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;s&lt;/code&gt; and &lt;code&gt;t&lt;/code&gt; consist of uppercase and lowercase English letters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Follow-up:&lt;/strong&gt; Could you find an algorithm that runs in &lt;code&gt;O(m + n)&lt;/code&gt; time?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Longest Repeating Character Replacement</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-longest-repeating-character-replacement/</link>
