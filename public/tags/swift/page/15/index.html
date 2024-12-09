@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Posts | Dmytro&#39;s Blog</title>
+<title>Swift | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="">
-<meta name="description" content="Posts - Dmytro&#39;s Blog">
+<meta name="description" content="">
 <meta name="author" content="Dmytro Chumakov">
-<link rel="canonical" href="http://localhost:1313/posts/">
+<link rel="canonical" href="http://localhost:1313/tags/swift/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.90bf44a6ebd7c6748b4a028cfa0a41da583261f03ee2201d567f914a36ac58bb.css" integrity="sha256-kL9EpuvXxnSLSgKM&#43;gpB2lgyYfA&#43;4iAdVn&#43;RSjasWLs=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -19,8 +19,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/swift/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/swift/">
 <noscript>
     <style>
         #theme-toggle,
@@ -88,32 +88,17 @@
           gtag('js', new Date());
           gtag('config', 'G-HZZ4JTFGDP');
         }
-      </script><meta property="og:url" content="http://localhost:1313/posts/">
+      </script><meta property="og:url" content="http://localhost:1313/tags/swift/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
-  <meta property="og:title" content="Posts">
+  <meta property="og:title" content="Swift">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="Posts">
+<meta name="twitter:title" content="Swift">
 <meta name="twitter:description" content="">
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "http://localhost:1313/posts/"
-    }
-  ]
-}
-</script>
 </head>
 
 <body class="list" id="top">
@@ -196,88 +181,31 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
   <h1>
-    Posts
+    Swift
   </h1>
 </header>
 
-<article class="post-entry"> 
+<article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Integration testing for SwiftUI views
+    <h2 class="entry-hint-parent">What is “reference type” in Swift?
     </h2>
   </header>
   <div class="entry-content">
-    <p>Introduction I have been looking for information about implementation details of integration testing. I found a lot of information, but it was theoretical and all information looked the same. I did not find a meaningful example, so I tried to come up with my own definition and sample.
-Integration testing means testing the behavior between modules or views to ensure they work as expected after user actions.
-There are two ways of conducting integration testing: The first is by unit tests, where you try to test the flowing data between view models. The second is UI tests, where you try to test if the UI items exist and navigation works correctly. I will focus on testing the flowing data between view models.
-...</p>
+    <p>Introduction In Swift, classes, closures, and actors all reference types.
+‘Reference type’ is instance that shares a single copy of data.
+Assigning a reference type to a constant or variable, or passing it into a function or method, it is always a reference to a shared instance that is assigned or passed in.
+Example You can pass your property value by sharing the same address in memory.
+// Reference type example class Storage { var data = “data-example” } var storage = Storage() print(&#34;\(storage.data)&#34;) // prints &#34;data-example&#34; print(&#34;storage address:&#34;, Unmanaged.passUnretained(storage).toOpaque()) var copiedStorage = storage copiedStorage.data = “new-data” print(&#34;\(storage.data), \(copiedStorage.data)&#34;) // prints &#34;new-data, new-data&#34; print(&#34;copiedStorage address:&#34;, Unmanaged.passUnretained(copiedStorage).toOpaque()) ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-05-10 06:20:50 +0300 EEST'>May 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Integration testing for SwiftUI views" href="http://localhost:1313/posts/integration-testing-for-swiftui-views/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">UI testing SwiftUI views using XCTest Framework
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction After spending some time developing my personal iOS app, I found myself in a position where I needed to add UI tests to my application. The reason behind this decision was the necessity to change the architecture to make it more scalable. However, this task proved to be challenging due to certain parts of the code being tightly coupled. The situation was quite frustrating. To address this problem, I decided to incorporate UI tests that could help identify issues during the refactoring process.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-08 06:34:32 +0300 EEST'>May 8, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to UI testing SwiftUI views using XCTest Framework" href="http://localhost:1313/posts/ui-testing-swiftui-views-using-xctest-framework/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Building Dynamic Island for Video Streaming App
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was curious about how to add Dynamic Island and implement it into a Video Streaming App. Here are a few steps on how you can achieve this.
-Caveats Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 &#34;Failed to show Widget&#34;. The solution is to configure live activities and run them through the main app. Be aware that when you add a widget to the project, in some cases, it adds all main target files to Compile Sources. Implementation Dynamic Islands are divided into different sizes: minimal, compactTrailing, compactLeading, and expanded. Before proceeding, you need to add LiveActivityManager to be able to display Dynamic Islands.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-06 07:35:52 +0300 EEST'>May 6, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Building Dynamic Island for Video Streaming App" href="http://localhost:1313/posts/building-dynamic-island-for-video-streaming-app/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Building Video Streaming Widget for iOS App
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was exploring the idea of creating a YouTube-like widget for the lock screen on iOS devices. It wasn’t easy because most articles on the Internet discussed general implementations, such as for a coffee shop or a to-do list. Even when I found some similar versions, the project wouldn’t compile. I made the decision to approach it my way, so here’s what I found out:
-Caveats After being stuck for two or more hours without understanding why, after tapping on a button, I wasn&#39;t able to receive a callback from it and the widget always opened the main iOS app, I realized that I forgot to add AppIntent - without it, you can’t handle actions for iOS 17. import AppIntents struct ButtonIntent: AppIntent { static let title: LocalizedStringResource = &#34;ButtonIntent&#34; @Parameter(title: &#34;id&#34;) var id: String func perform() async throws -&gt; some IntentResult { if id == Command.playPause.rawValue { DataModel.shared.isPlaying.toggle() } return .result() } } Another crucial point is not to forget to add an explicit init. If you don’t implement it explicitly, it will not work. import AppIntents struct ButtonIntent: AppIntent { static let title: LocalizedStringResource = &#34;ButtonIntent&#34; @Parameter(title: &#34;id&#34;) var id: String init(id: String) { self.id = id } init() {} func perform() async throws -&gt; some IntentResult { if id == Command.playPause.rawValue { DataModel.shared.isPlaying.toggle() } return .result() } } Lastly, I attempted to add a Slider, but I found that it’s not supported by the widget. My solution was to choose a ProgressView instead. Implementation struct YouTubeLockScreenWidget: View { var body: some View { VStack { Spacer() ProgressView(value: DataModel.shared.currentTime, total: DataModel.shared.totalTime) .progressViewStyle(.linear) Spacer() HStack { ForEach(Command.allCases) { command in Button(intent: ButtonIntent(id: command.id)) { Image(systemName: imageSystemName(isPlaying: DataModel.shared.isPlaying, command: command)) } } } } } } final class DataModel { static let shared = DataModel() var isPlaying: Bool = false var currentTime: TimeInterval = 34 var totalTime: TimeInterval = 304 } enum Command: String, CaseIterable { case previous case playPause case next } extension Command: Identifiable { var id: String { rawValue } } func imageSystemName(isPlaying: Bool, command: Command) -&gt; String { switch command { case .playPause: if isPlaying { return &#34;pause.fill&#34; } else { return &#34;play.fill&#34; } case .next: return &#34;forward.fill&#34; case .previous: return &#34;backward.fill&#34; } } I had not replaced default generated code when I was adding widget to the project. I just added YouTubeLockScreenWidget to generated VideoStreamingWidgetEntryView.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-05 07:20:29 +0300 EEST'>May 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Building Video Streaming Widget for iOS App" href="http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Building Video Streaming iOS App
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was looking for a way to add a video player to my iOS app that could be able to play remote videos.
-Caveats Problem I found that you can’t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 &#34;Operation Stopped&#34; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error. I don’t know exactly what this means, but I’m speculating it’s related to some protection.
-Solution My solution was to find another video that is not related to those platforms.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-03 07:34:56 +0300 EEST'>May 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Building Video Streaming iOS App" href="http://localhost:1313/posts/building-video-streaming-ios-app/"></a>
+  <footer class="entry-footer"><span title='2023-12-03 00:00:00 +0300 +0300'>December 3, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to What is “reference type” in Swift?" href="http://localhost:1313/posts/what-is-reference-type-in-swift/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/posts/page/14/">
-      «&nbsp;Prev&nbsp;14/21
-    </a>
-    <a class="next" href="http://localhost:1313/posts/page/16/">Next&nbsp;16/21&nbsp;»
+    <a class="prev" href="http://localhost:1313/tags/swift/page/14/">
+      «&nbsp;Prev&nbsp;14/15
     </a>
   </nav>
 </footer>
