@@ -11,8 +11,19 @@
     </image>
     <generator>Hugo -- 0.134.3</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 09 Dec 2024 07:05:38 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 11 Dec 2024 07:11:25 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Search in Rotated Sorted Array</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-search-in-rotated-sorted-array/</link>
+      <pubDate>Wed, 11 Dec 2024 07:11:25 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-search-in-rotated-sorted-array/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;There is an integer array &lt;code&gt;nums&lt;/code&gt; sorted in ascending order (with distinct values).&lt;br&gt;
+Prior to being passed to your function, &lt;code&gt;nums&lt;/code&gt; is possibly rotated at an unknown pivot index &lt;code&gt;k (1 &amp;lt;= k &amp;lt; nums.length)&lt;/code&gt; such that the resulting array is &lt;code&gt;[nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]&lt;/code&gt; (0-indexed). For example, &lt;code&gt;[0,1,2,4,5,6,7]&lt;/code&gt; might be rotated at pivot index &lt;code&gt;3&lt;/code&gt; and become &lt;code&gt;[4,5,6,7,0,1,2]&lt;/code&gt;.&lt;br&gt;
+Given the array &lt;code&gt;nums&lt;/code&gt; after the possible rotation and an integer &lt;code&gt;target&lt;/code&gt;, return the index of &lt;code&gt;target&lt;/code&gt; if it is in &lt;code&gt;nums&lt;/code&gt;, or &lt;code&gt;-1&lt;/code&gt; if it is not in &lt;code&gt;nums&lt;/code&gt;.&lt;br&gt;
+You must write an algorithm with &lt;code&gt;O(log n)&lt;/code&gt; runtime complexity.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Find Minimum in Rotated Sorted Array</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-find-minimum-in-rotated-sorted-array/</link>

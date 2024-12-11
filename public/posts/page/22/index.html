@@ -204,88 +204,22 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Contains Duplicate
+    <h2 class="entry-hint-parent">Let’s talk about Composable Architecture
     </h2>
   </header>
   <div class="entry-content">
-    <p>The Problem Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
-Example Input: nums = [1,2,3,1] Output: true Explanation: The element 1 occurs at indices 0 and 3. Follow-up: Can you come up with an algorithm that has less than O(NlogN) time complexity?
-Brute Force Solution func containsDuplicate(_ nums: [Int]) -&gt; Bool { var nums = nums let N = nums.count if N == 0 { return false } nums.sort() var prev = nums[0] for i in 1 ..&lt; N { let num = nums[i] if num == prev { return true } else { prev = num } } return false } Explanation The brute force solution for this problem uses sorting to allow us to quickly detect duplicates since identical elements will be adjacent. After sorting, it iterates through all elements, checking if the current element is equal to the previous one; if it is, it returns true immediately. If not, it updates prev. If no duplicates are detected, it returns false.
+    <p>Introduction The Composable Architecture (TCA) uses a unidirectional data flow (UDF). UDF is a design pattern where data and events move consistently and predictably. In UDF, data can only be transferred to other application parts in one way.
+In TCA, the only way to mutate the state is by sending actions to a runtime store. The runtime store holds the entire app’s business logic and mutates the state inside.
+UDF can reduce data inconsistencies because of the single source of truth for the application.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-10-26 07:27:13 +0300 EEST'>October 26, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Contains Duplicate" href="http://localhost:1313/posts/leetcode-blind-75-contains-duplicate/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Two Sum
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to the target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.
-Example Input: nums = [2,7,11,15], target = 9 Output: [0,1] Explanation: Because nums[0] &#43; nums[1] == 9, we return [0, 1]. Follow-up: Can you come up with an algorithm that has less than O(N^2) time complexity?
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-10-25 07:16:07 +0300 EEST'>October 25, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Two Sum" href="http://localhost:1313/posts/leetcode-blind-75-two-sum/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Sorting - Selection Sort
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction The selection sort is an in-place comparison sorting algorithm. It’s similar to bubble sort in that it works by repeatedly swapping items in a list and not very efficient on larger lists.
-source
-Code Example func selectionSort(_ array: [Int]) -&gt; [Int] { var A = array let N = array.count for i in 0 ..&lt; N { var jMin = i for j in (i &#43; 1) ..&lt; N { if A[j] &lt; A[jMin] { jMin = j } } if jMin != i { let tmp = A[i] A[i] = A[jMin] A[jMin] = tmp } } return A } Implementation For each index:
-Set jMin index to the current index For each index from i &#43; 1 to the end of the list: If the element at inner index j is less than the element at index jMin, set jMin to j If jMin does not equal i, swap the element at the current index i with the element at index jMin Time/Space Complexity Time complexity: O(N^2)
-Space complexity: O(1) auxiliary
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-10-23 07:19:52 +0300 EEST'>October 23, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Sorting - Selection Sort" href="http://localhost:1313/posts/dsa-sorting-selection-sort/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Sorting - Quick Sort
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction The quick sort is an efficient sorting algorithm commonly used widely in production. Quick sort is a divide-and-conquer algorithm. It works by selecting a pivot from the array and partitioning the other elements into two subarrays.
-source
-Code example // Sorts a (portion of an) array, divides it into partitions, then sorts those func quickSort(array: inout [Int], low: Int, high: Int) { // Ensure indices are in correct order if low &lt; high { // Partition array and get the pivot index let p = partition(array: &amp;array, low: low, high: high) // Sort the two partitions quickSort(array: &amp;array, low: low, high: p - 1) // Left side of pivot quickSort(array: &amp;array, low: p &#43; 1, high: high) // Right side of pivot } } // Divides array into two partitions func partition(array: inout [Int], low: Int, high: Int) -&gt; Int { let pivot = array[high] // Choose the last element as the pivot // Temporary pivot index var i = low for j in low ..&lt; high { // If the current element is less than or equal to the pivot if array[j] &lt;= pivot { // Swap the current element with the element at the temporary pivot index let tmp = array[i] array[i] = array[j] array[j] = tmp // Move the temporary pivot index forward i &#43;= 1 } } // Swap the pivot with the last element let tmp = array[i] array[i] = array[high] array[high] = tmp return i } Implementation quickSort Ensure that the low and high indices are in the correct order. Partition the input list using the partition function. Recursively call quickSort on the left side of the pivot. Recursively call quickSort on the right side of the pivot. partition Choose the last element as the pivot. Set i to low. For each j from low to high (not inclusive), compare if the current element is less than or equal to the pivot:
-3.1 Swap the element at index i with the element at index j.
-3.2 Increment i by 1. Swap the element at index i with the last element. Return i. Time/Space complexity Time complexity: O(N^2)
-Space complexity: O(N)
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-10-19 06:51:04 +0300 EEST'>October 19, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Sorting - Quick Sort" href="http://localhost:1313/posts/dsa-sorting-quick-sort/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Sorting - Insertion Sort
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction The insertion sort algorithm builds a sorted list one item at a time by comparison. It is more efficient on small datasets but much less efficient on larger ones.
-source
-source
-Code Example func insertionSort(_ array: [Int]) -&gt; [Int] { var A = array for i in 0 ..&lt; A.count { var j = i while j &gt; 0 &amp;&amp; A[j - 1] &gt; A[j] { let tmp = A[j] A[j] = A[j - 1] A[j - 1] = tmp j -= 1 } } return A } Implementation For each index in the input array: Set the j variable to i. Loop while j is greater than 0 and the element at index j - 1 is greater than the element at index j: Swap the elements at index j and j - 1. Decrement j by 1. Why use Insertion Sort? Fast for small data sets. More efficient in practice than most other algorithms, such as selection sort or bubble sort. Adaptive: Efficient for datasets that are already substantially sorted; the time complexity is O(kn) when each element in the input is no more than k places away from its sorted position. Stable: Does not change the relative order of elements with equal keys. In-place: Only requires O(1) of additional memory space. Online: Can sort a list as it receives it. Time/Space Complexity Time: O(N^2) Space: O(1) (in-place) Thank you for reading! 😊</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-10-15 07:16:04 +0300 EEST'>October 15, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Sorting - Insertion Sort" href="http://localhost:1313/posts/dsa-sorting-insertion-sort/"></a>
+  <footer class="entry-footer"><span title='2023-08-11 00:00:00 +0300 EEST'>August 11, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Let’s talk about Composable Architecture" href="http://localhost:1313/posts/lets-talk-about-composable-architecture/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/posts/page/3/">
-      «&nbsp;Prev&nbsp;3/22
-    </a>
-    <a class="next" href="http://localhost:1313/posts/page/5/">Next&nbsp;5/22&nbsp;»
+    <a class="prev" href="http://localhost:1313/posts/page/21/">
+      «&nbsp;Prev&nbsp;21/22
     </a>
   </nav>
 </footer>
