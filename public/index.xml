@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.134.3</generator>
+    <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
     <lastBuildDate>Tue, 17 Dec 2024 07:16:48 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
@@ -886,7 +886,7 @@ Space complexity: O(N)&lt;/p&gt;</description>
       <pubDate>Wed, 09 Oct 2024 07:20:29 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-hashmap-resize/</guid>
       <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
-&lt;p&gt;Previously, we discussed a &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-hashmap-custom-implementation?r=2fepxg&amp;utm_campaign=post&amp;utm_medium=web&amp;showWelcomeOnShare=true&#34;&gt;custom hashmap implementation&lt;/a&gt;. That implementation has a lot of &lt;a href=&#34;https://en.wikipedia.org/wiki/Hash_collision&#34;&gt;collisions&lt;/a&gt; because we are using a fixed-size array.&lt;/p&gt;
+&lt;p&gt;Previously, we discussed a &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-hashmap-custom-implementation?r=2fepxg&amp;amp;utm_campaign=post&amp;amp;utm_medium=web&amp;amp;showWelcomeOnShare=true&#34;&gt;custom hashmap implementation&lt;/a&gt;. That implementation has a lot of &lt;a href=&#34;https://en.wikipedia.org/wiki/Hash_collision&#34;&gt;collisions&lt;/a&gt; because we are using a fixed-size array.&lt;/p&gt;
 &lt;p&gt;If we want to reduce the chances of &lt;code&gt;collisions&lt;/code&gt;, we can increase the number of slots in the hashmap, or in other words, &lt;code&gt;resize&lt;/code&gt; our hashmap. Resizing cannot guarantee that collisions will be entirely eliminated, but it will help reduce the likelihood of one happening.&lt;/p&gt;
 &lt;h3 id=&#34;code-example&#34;&gt;Code Example&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;loadFactor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Double&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
@@ -1105,7 +1105,7 @@ The space complexity:&lt;/p&gt;</description>
       <pubDate>Fri, 27 Sep 2024 06:55:55 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-binary-search-tree-postorder/</guid>
       <description>&lt;h3 id=&#34;what-is-the-postorder-algorithm&#34;&gt;What is the postorder algorithm?&lt;/h3&gt;
-&lt;p&gt;The postorder algorithm, similar to the &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-binary-search-tree-traverse-preorder?r=2fepxg&amp;utm_campaign=post&amp;utm_medium=web&amp;showWelcomeOnShare=true&#34;&gt;preorder&lt;/a&gt; algorithm, returns a list of values in the order they are visited.&lt;/p&gt;
+&lt;p&gt;The postorder algorithm, similar to the &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-binary-search-tree-traverse-preorder?r=2fepxg&amp;amp;utm_campaign=post&amp;amp;utm_medium=web&amp;amp;showWelcomeOnShare=true&#34;&gt;preorder&lt;/a&gt; algorithm, returns a list of values in the order they are visited.&lt;/p&gt;
 &lt;h3 id=&#34;code-example&#34;&gt;Code Example&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kr&#34;&gt;final&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;BSTNode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Value&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Comparable&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -1369,7 +1369,7 @@ The space complexity:&lt;/p&gt;</description>
       <pubDate>Fri, 20 Sep 2024 07:15:17 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-queue/</guid>
       <description>&lt;h3 id=&#34;what-is-a-queue&#34;&gt;What is a Queue?&lt;/h3&gt;
-&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Queue_(abstract_data_type)&#34;&gt;Queue&lt;/a&gt; is an abstract data type that serves as an ordered collection of elements.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Queue_%28abstract_data_type%29&#34;&gt;Queue&lt;/a&gt; is an abstract data type that serves as an ordered collection of elements.&lt;/p&gt;
 &lt;p&gt;A simple queue typically has several operations:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;push(item)&lt;/code&gt; - adds an item to the &lt;code&gt;tail&lt;/code&gt;&lt;/li&gt;
@@ -1386,30 +1386,30 @@ The space complexity:&lt;/p&gt;</description>
       <pubDate>Tue, 17 Sep 2024 07:06:52 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-adjacency-list/</guid>
       <description>&lt;h3 id=&#34;what-is-an-adjacency-list&#34;&gt;What is an Adjacency List?&lt;/h3&gt;
-&lt;p&gt;An &lt;a href=&#34;https://en.wikipedia.org/wiki/Adjacency_list&#34;&gt;Adjacency List&lt;/a&gt; helps store a list of connections between each vertex in a finite &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-graph?r=2fepxg&amp;utm_campaign=post&amp;utm_medium=web&amp;showWelcomeOnShare=true&#34;&gt;graph&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An &lt;a href=&#34;https://en.wikipedia.org/wiki/Adjacency_list&#34;&gt;Adjacency List&lt;/a&gt; helps store a list of connections between each vertex in a finite &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-graph?r=2fepxg&amp;amp;utm_campaign=post&amp;amp;utm_medium=web&amp;amp;showWelcomeOnShare=true&#34;&gt;graph&lt;/a&gt;.&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Vertex&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Connects with&lt;/th&gt;
+          &lt;th&gt;Vertex&lt;/th&gt;
+          &lt;th&gt;Connects with&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;0&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;0, 2, 3&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0, 2, 3&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;2&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1, 3&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;1, 3&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;3&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1, 2&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;1, 2&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1422,7 +1422,7 @@ The space complexity:&lt;/p&gt;</description>
       <pubDate>Sat, 14 Sep 2024 06:57:03 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-graph/</guid>
       <description>&lt;h3 id=&#34;what-is-a-graph&#34;&gt;What is a graph?&lt;/h3&gt;
-&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Graph_(abstract_data_type)&#34;&gt;graph&lt;/a&gt; is an abstract data type that represents vertices and edges that connect those vertices.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Graph_%28abstract_data_type%29&#34;&gt;graph&lt;/a&gt; is an abstract data type that represents vertices and edges that connect those vertices.&lt;/p&gt;
 &lt;p&gt;
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-cafc5&#34; hidden&gt;
@@ -1438,54 +1438,54 @@ The space complexity:&lt;/p&gt;</description>
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;0&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;1&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;2&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;3&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;4&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;0&lt;/th&gt;
+          &lt;th&gt;1&lt;/th&gt;
+          &lt;th&gt;2&lt;/th&gt;
+          &lt;th&gt;3&lt;/th&gt;
+          &lt;th&gt;4&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;0&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;2&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;3&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;4&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1550,7 +1550,7 @@ The space complexity:&lt;/p&gt;</description>
       <pubDate>Mon, 09 Sep 2024 07:19:46 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-backtracking/</guid>
       <description>&lt;h3 id=&#34;what-is-backtracking&#34;&gt;What is Backtracking?&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Backtracking&#34;&gt;Backtracking&lt;/a&gt; is a class of algorithms for finding solutions to complex problems. A backtracking algorithm uses &lt;a href=&#34;https://en.wikipedia.org/wiki/Recursion_(computer_science)&#34;&gt;recursion&lt;/a&gt; and is based on &lt;a href=&#34;https://en.wikipedia.org/wiki/Depth-first_search&#34;&gt;depth-first search&lt;/a&gt; (DFS).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Backtracking&#34;&gt;Backtracking&lt;/a&gt; is a class of algorithms for finding solutions to complex problems. A backtracking algorithm uses &lt;a href=&#34;https://en.wikipedia.org/wiki/Recursion_%28computer_science%29&#34;&gt;recursion&lt;/a&gt; and is based on &lt;a href=&#34;https://en.wikipedia.org/wiki/Depth-first_search&#34;&gt;depth-first search&lt;/a&gt; (DFS).&lt;/p&gt;
 &lt;h3 id=&#34;depth-first-search-dfs&#34;&gt;Depth First Search (DFS)&lt;/h3&gt;
 &lt;p&gt;Depth First Search (DFS) is an essential part of backtracking. DFS is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (or an arbitrary node in the case of a graph) and explores as far as possible along each branch before backtracking.&lt;/p&gt;</description>
     </item>
@@ -1588,7 +1588,7 @@ The space complexity:&lt;/p&gt;</description>
       <pubDate>Mon, 02 Sep 2024 07:12:55 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-binary-search-tree/</guid>
       <description>&lt;h3 id=&#34;what-is-a-tree&#34;&gt;What is a Tree?&lt;/h3&gt;
-&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Tree_(data_structure)&#34;&gt;&lt;code&gt;Tree&lt;/code&gt;&lt;/a&gt; is a data structure that has a root and subtrees of children, representing a set of linked nodes. &lt;code&gt;Trees&lt;/code&gt; behave similarly to a &lt;a href=&#34;https://dmytrosblog.substack.com/p/dsa-linked-list?r=2fepxg&#34;&gt;&lt;code&gt;LinkedList&lt;/code&gt;&lt;/a&gt; in that they have a collection of nodes starting with a &lt;code&gt;head (root)&lt;/code&gt;. The main difference is that &lt;code&gt;Trees&lt;/code&gt; can have multiple children, whereas a &lt;code&gt;LinkedList&lt;/code&gt;, on the other hand, can have only one &lt;code&gt;next&lt;/code&gt; child.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Tree_%28data_structure%29&#34;&gt;&lt;code&gt;Tree&lt;/code&gt;&lt;/a&gt; is a data structure that has a root and subtrees of children, representing a set of linked nodes. &lt;code&gt;Trees&lt;/code&gt; behave similarly to a &lt;a href=&#34;https://dmytrosblog.substack.com/p/dsa-linked-list?r=2fepxg&#34;&gt;&lt;code&gt;LinkedList&lt;/code&gt;&lt;/a&gt; in that they have a collection of nodes starting with a &lt;code&gt;head (root)&lt;/code&gt;. The main difference is that &lt;code&gt;Trees&lt;/code&gt; can have multiple children, whereas a &lt;code&gt;LinkedList&lt;/code&gt;, on the other hand, can have only one &lt;code&gt;next&lt;/code&gt; child.&lt;/p&gt;
 &lt;p&gt;I’m going to focus on a commonly used type of tree, the Binary Search Tree.&lt;/p&gt;</description>
     </item>
     <item>
@@ -1637,7 +1637,7 @@ The space complexity:&lt;/p&gt;</description>
       <pubDate>Tue, 20 Aug 2024 07:17:01 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-stack/</guid>
       <description>&lt;h3 id=&#34;what-is-a-stack&#34;&gt;What is a Stack?&lt;/h3&gt;
-&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Stack_(abstract_data_type)&#34;&gt;stack&lt;/a&gt; is an abstract data type that serves as a collection of elements and implements operations like &lt;code&gt;push&lt;/code&gt;, &lt;code&gt;pop&lt;/code&gt;, and &lt;code&gt;peek&lt;/code&gt; at the end in O(1) time. It uses the LIFO (&lt;strong&gt;last in&lt;/strong&gt;, &lt;strong&gt;first out&lt;/strong&gt;) order. For example, a stack can be a collection of items where adding or removing is practical at the top.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29&#34;&gt;stack&lt;/a&gt; is an abstract data type that serves as a collection of elements and implements operations like &lt;code&gt;push&lt;/code&gt;, &lt;code&gt;pop&lt;/code&gt;, and &lt;code&gt;peek&lt;/code&gt; at the end in O(1) time. It uses the LIFO (&lt;strong&gt;last in&lt;/strong&gt;, &lt;strong&gt;first out&lt;/strong&gt;) order. For example, a stack can be a collection of items where adding or removing is practical at the top.&lt;/p&gt;
 &lt;h4 id=&#34;code-example&#34;&gt;Code Example&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Stack&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Element&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -1685,7 +1685,7 @@ The space complexity:&lt;/p&gt;</description>
       <guid>http://localhost:1313/posts/dsa-merge-sorted-array-problem/</guid>
       <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;In the &lt;a href=&#34;https://dmytros.blog/posts/data-structures-and-algorithms-arrays-swift/&#34;&gt;previous chapter&lt;/a&gt;, we discussed Data Structures and Algorithms, delved into an overview of Dynamic Arrays, and solved the &amp;ldquo;Remove Element&amp;rdquo; problem.&lt;/p&gt;
-&lt;p&gt;In this article, I&amp;rsquo;m going to show one of the ways to solve the &lt;a href=&#34;https://leetcode.com/problems/merge-sorted-array/description/?envType=study-plan-v2&amp;envId=top-interview-150&#34;&gt;88. Merge Sorted Array&lt;/a&gt; problem.&lt;/p&gt;
+&lt;p&gt;In this article, I&amp;rsquo;m going to show one of the ways to solve the &lt;a href=&#34;https://leetcode.com/problems/merge-sorted-array/description/?envType=study-plan-v2&amp;amp;envId=top-interview-150&#34;&gt;88. Merge Sorted Array&lt;/a&gt; problem.&lt;/p&gt;
 &lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;
 &lt;p&gt;You are given two integer arrays, &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt;, sorted in non-decreasing order, and two integers, &lt;code&gt;m&lt;/code&gt; and &lt;code&gt;n&lt;/code&gt;, representing the number of elements in &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt;, respectively. Merge &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt; into a single array sorted in non-decreasing order. The final sorted array should not be returned by the function but should instead be stored inside the array &lt;code&gt;nums1&lt;/code&gt;. To accommodate this, &lt;code&gt;nums1&lt;/code&gt; has a length of &lt;code&gt;m + n&lt;/code&gt;, where the first &lt;code&gt;m&lt;/code&gt; elements denote the elements that should be merged, and the last &lt;code&gt;n&lt;/code&gt; elements are set to &lt;code&gt;0&lt;/code&gt; and should be ignored. &lt;code&gt;nums2&lt;/code&gt; has a length of &lt;code&gt;n&lt;/code&gt;.&lt;/p&gt;</description>
     </item>

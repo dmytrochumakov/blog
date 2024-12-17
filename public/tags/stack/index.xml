@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.134.3</generator>
+    <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
     <lastBuildDate>Tue, 20 Aug 2024 07:17:01 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/stack/index.xml" rel="self" type="application/rss+xml" />
@@ -19,7 +19,7 @@
       <pubDate>Tue, 20 Aug 2024 07:17:01 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-stack/</guid>
       <description>&lt;h3 id=&#34;what-is-a-stack&#34;&gt;What is a Stack?&lt;/h3&gt;
-&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Stack_(abstract_data_type)&#34;&gt;stack&lt;/a&gt; is an abstract data type that serves as a collection of elements and implements operations like &lt;code&gt;push&lt;/code&gt;, &lt;code&gt;pop&lt;/code&gt;, and &lt;code&gt;peek&lt;/code&gt; at the end in O(1) time. It uses the LIFO (&lt;strong&gt;last in&lt;/strong&gt;, &lt;strong&gt;first out&lt;/strong&gt;) order. For example, a stack can be a collection of items where adding or removing is practical at the top.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29&#34;&gt;stack&lt;/a&gt; is an abstract data type that serves as a collection of elements and implements operations like &lt;code&gt;push&lt;/code&gt;, &lt;code&gt;pop&lt;/code&gt;, and &lt;code&gt;peek&lt;/code&gt; at the end in O(1) time. It uses the LIFO (&lt;strong&gt;last in&lt;/strong&gt;, &lt;strong&gt;first out&lt;/strong&gt;) order. For example, a stack can be a collection of items where adding or removing is practical at the top.&lt;/p&gt;
 &lt;h4 id=&#34;code-example&#34;&gt;Code Example&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Stack&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Element&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;

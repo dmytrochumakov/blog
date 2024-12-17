@@ -303,7 +303,7 @@ The first and simplest (but less efficient) way is by using an array and basic o
 </div>
 
   <div class="post-content"><h3 id="what-is-a-queue">What is a Queue?<a hidden class="anchor" aria-hidden="true" href="#what-is-a-queue">#</a></h3>
-<p>A <a href="https://en.wikipedia.org/wiki/Queue_(abstract_data_type)">Queue</a> is an abstract data type that serves as an ordered collection of elements.</p>
+<p>A <a href="https://en.wikipedia.org/wiki/Queue_%28abstract_data_type%29">Queue</a> is an abstract data type that serves as an ordered collection of elements.</p>
 <p>A simple queue typically has several operations:</p>
 <ul>
 <li><code>push(item)</code> - adds an item to the <code>tail</code></li>
@@ -334,7 +334,7 @@ The first and simplest (but less efficient) way is by using an array and basic o
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>The second, more efficient way is by using a <a href="https://open.substack.com/pub/dmytrosblog/p/dsa-linked-list?r=2fepxg&utm_campaign=post&utm_medium=web">linked list</a>, which allows <code>push</code> and <code>pop</code> operations in O(1) time.</p>
+</span></span></code></pre></div><p>The second, more efficient way is by using a <a href="https://open.substack.com/pub/dmytrosblog/p/dsa-linked-list?r=2fepxg&amp;utm_campaign=post&amp;utm_medium=web">linked list</a>, which allows <code>push</code> and <code>pop</code> operations in O(1) time.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kr">final</span> <span class="kd">class</span> <span class="nc">Node</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="kd">private</span><span class="p">(</span><span class="kr">set</span><span class="p">)</span> <span class="kd">var</span> <span class="nv">val</span><span class="p">:</span> <span class="nb">Int</span>
@@ -387,21 +387,21 @@ The first and simplest (but less efficient) way is by using an array and basic o
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Operation</th>
-          <th style="text-align: left">Average</th>
-          <th style="text-align: left">Worst Case</th>
+          <th>Operation</th>
+          <th>Average</th>
+          <th>Worst Case</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">Insert</td>
-          <td style="text-align: left">O(1)</td>
-          <td style="text-align: left">O(1)</td>
+          <td>Insert</td>
+          <td>O(1)</td>
+          <td>O(1)</td>
       </tr>
       <tr>
-          <td style="text-align: left">Delete</td>
-          <td style="text-align: left">O(1)</td>
-          <td style="text-align: left">O(1)</td>
+          <td>Delete</td>
+          <td>O(1)</td>
+          <td>O(1)</td>
       </tr>
   </tbody>
 </table>

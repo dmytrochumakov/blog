@@ -428,7 +428,7 @@ The asynchronous function or asynchronous method can be suspended while it is pa
 </span></span><span class="line"><span class="cl">    <span class="c1">// Download and return the image</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><h3 id="what-is-taskyield">What is Task.yield()?<a hidden class="anchor" aria-hidden="true" href="#what-is-taskyield">#</a></h3>
-<p>If you have a long-running operation you can call the <a href="https://developer.apple.com/documentation/swift/task/yield()"><code>Task.yield()</code></a> method to explicitly add suspension points. By doing that you are letting other tasks make progress.</p>
+<p>If you have a long-running operation you can call the <a href="https://developer.apple.com/documentation/swift/task/yield%28%29"><code>Task.yield()</code></a> method to explicitly add suspension points. By doing that you are letting other tasks make progress.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">performAsyncOperationsWithYield</span><span class="p">()</span> <span class="n">async</span> <span class="kr">throws</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">index</span> <span class="k">in</span> <span class="mf">1.</span><span class="p">..</span><span class="mi">1000</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">        <span class="n">Task</span><span class="p">.</span><span class="n">detached</span> <span class="p">{</span>

@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.134.3</generator>
+    <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
     <lastBuildDate>Tue, 17 Sep 2024 07:06:52 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/graph/index.xml" rel="self" type="application/rss+xml" />
@@ -19,30 +19,30 @@
       <pubDate>Tue, 17 Sep 2024 07:06:52 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-adjacency-list/</guid>
       <description>&lt;h3 id=&#34;what-is-an-adjacency-list&#34;&gt;What is an Adjacency List?&lt;/h3&gt;
-&lt;p&gt;An &lt;a href=&#34;https://en.wikipedia.org/wiki/Adjacency_list&#34;&gt;Adjacency List&lt;/a&gt; helps store a list of connections between each vertex in a finite &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-graph?r=2fepxg&amp;utm_campaign=post&amp;utm_medium=web&amp;showWelcomeOnShare=true&#34;&gt;graph&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An &lt;a href=&#34;https://en.wikipedia.org/wiki/Adjacency_list&#34;&gt;Adjacency List&lt;/a&gt; helps store a list of connections between each vertex in a finite &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-graph?r=2fepxg&amp;amp;utm_campaign=post&amp;amp;utm_medium=web&amp;amp;showWelcomeOnShare=true&#34;&gt;graph&lt;/a&gt;.&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Vertex&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Connects with&lt;/th&gt;
+          &lt;th&gt;Vertex&lt;/th&gt;
+          &lt;th&gt;Connects with&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;0&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;0, 2, 3&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0, 2, 3&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;2&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1, 3&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;1, 3&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;3&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1, 2&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;1, 2&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -55,7 +55,7 @@
       <pubDate>Sat, 14 Sep 2024 06:57:03 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-graph/</guid>
       <description>&lt;h3 id=&#34;what-is-a-graph&#34;&gt;What is a graph?&lt;/h3&gt;
-&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Graph_(abstract_data_type)&#34;&gt;graph&lt;/a&gt; is an abstract data type that represents vertices and edges that connect those vertices.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Graph_%28abstract_data_type%29&#34;&gt;graph&lt;/a&gt; is an abstract data type that represents vertices and edges that connect those vertices.&lt;/p&gt;
 &lt;p&gt;
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-cafc5&#34; hidden&gt;
@@ -71,54 +71,54 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;0&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;1&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;2&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;3&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;4&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;0&lt;/th&gt;
+          &lt;th&gt;1&lt;/th&gt;
+          &lt;th&gt;2&lt;/th&gt;
+          &lt;th&gt;3&lt;/th&gt;
+          &lt;th&gt;4&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;0&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;2&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;3&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;4&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;true&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;false&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
+          &lt;td&gt;true&lt;/td&gt;
+          &lt;td&gt;false&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;

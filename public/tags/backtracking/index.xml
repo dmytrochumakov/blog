@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.134.3</generator>
+    <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
     <lastBuildDate>Mon, 09 Sep 2024 07:19:46 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/backtracking/index.xml" rel="self" type="application/rss+xml" />
@@ -19,7 +19,7 @@
       <pubDate>Mon, 09 Sep 2024 07:19:46 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-backtracking/</guid>
       <description>&lt;h3 id=&#34;what-is-backtracking&#34;&gt;What is Backtracking?&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Backtracking&#34;&gt;Backtracking&lt;/a&gt; is a class of algorithms for finding solutions to complex problems. A backtracking algorithm uses &lt;a href=&#34;https://en.wikipedia.org/wiki/Recursion_(computer_science)&#34;&gt;recursion&lt;/a&gt; and is based on &lt;a href=&#34;https://en.wikipedia.org/wiki/Depth-first_search&#34;&gt;depth-first search&lt;/a&gt; (DFS).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Backtracking&#34;&gt;Backtracking&lt;/a&gt; is a class of algorithms for finding solutions to complex problems. A backtracking algorithm uses &lt;a href=&#34;https://en.wikipedia.org/wiki/Recursion_%28computer_science%29&#34;&gt;recursion&lt;/a&gt; and is based on &lt;a href=&#34;https://en.wikipedia.org/wiki/Depth-first_search&#34;&gt;depth-first search&lt;/a&gt; (DFS).&lt;/p&gt;
 &lt;h3 id=&#34;depth-first-search-dfs&#34;&gt;Depth First Search (DFS)&lt;/h3&gt;
 &lt;p&gt;Depth First Search (DFS) is an essential part of backtracking. DFS is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (or an arbitrary node in the case of a graph) and explores as far as possible along each branch before backtracking.&lt;/p&gt;</description>
     </item>

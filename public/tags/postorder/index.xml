@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.134.3</generator>
+    <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
     <lastBuildDate>Fri, 27 Sep 2024 06:55:55 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/postorder/index.xml" rel="self" type="application/rss+xml" />
@@ -19,7 +19,7 @@
       <pubDate>Fri, 27 Sep 2024 06:55:55 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-binary-search-tree-postorder/</guid>
       <description>&lt;h3 id=&#34;what-is-the-postorder-algorithm&#34;&gt;What is the postorder algorithm?&lt;/h3&gt;
-&lt;p&gt;The postorder algorithm, similar to the &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-binary-search-tree-traverse-preorder?r=2fepxg&amp;utm_campaign=post&amp;utm_medium=web&amp;showWelcomeOnShare=true&#34;&gt;preorder&lt;/a&gt; algorithm, returns a list of values in the order they are visited.&lt;/p&gt;
+&lt;p&gt;The postorder algorithm, similar to the &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-binary-search-tree-traverse-preorder?r=2fepxg&amp;amp;utm_campaign=post&amp;amp;utm_medium=web&amp;amp;showWelcomeOnShare=true&#34;&gt;preorder&lt;/a&gt; algorithm, returns a list of values in the order they are visited.&lt;/p&gt;
 &lt;h3 id=&#34;code-example&#34;&gt;Code Example&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kr&#34;&gt;final&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;BSTNode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Value&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Comparable&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;

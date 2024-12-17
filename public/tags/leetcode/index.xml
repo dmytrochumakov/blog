@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.134.3</generator>
+    <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
     <lastBuildDate>Tue, 17 Dec 2024 07:16:48 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
@@ -619,7 +619,7 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
       <guid>http://localhost:1313/posts/dsa-merge-sorted-array-problem/</guid>
       <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;In the &lt;a href=&#34;https://dmytros.blog/posts/data-structures-and-algorithms-arrays-swift/&#34;&gt;previous chapter&lt;/a&gt;, we discussed Data Structures and Algorithms, delved into an overview of Dynamic Arrays, and solved the &amp;ldquo;Remove Element&amp;rdquo; problem.&lt;/p&gt;
-&lt;p&gt;In this article, I&amp;rsquo;m going to show one of the ways to solve the &lt;a href=&#34;https://leetcode.com/problems/merge-sorted-array/description/?envType=study-plan-v2&amp;envId=top-interview-150&#34;&gt;88. Merge Sorted Array&lt;/a&gt; problem.&lt;/p&gt;
+&lt;p&gt;In this article, I&amp;rsquo;m going to show one of the ways to solve the &lt;a href=&#34;https://leetcode.com/problems/merge-sorted-array/description/?envType=study-plan-v2&amp;amp;envId=top-interview-150&#34;&gt;88. Merge Sorted Array&lt;/a&gt; problem.&lt;/p&gt;
 &lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;
 &lt;p&gt;You are given two integer arrays, &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt;, sorted in non-decreasing order, and two integers, &lt;code&gt;m&lt;/code&gt; and &lt;code&gt;n&lt;/code&gt;, representing the number of elements in &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt;, respectively. Merge &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt; into a single array sorted in non-decreasing order. The final sorted array should not be returned by the function but should instead be stored inside the array &lt;code&gt;nums1&lt;/code&gt;. To accommodate this, &lt;code&gt;nums1&lt;/code&gt; has a length of &lt;code&gt;m + n&lt;/code&gt;, where the first &lt;code&gt;m&lt;/code&gt; elements denote the elements that should be merged, and the last &lt;code&gt;n&lt;/code&gt; elements are set to &lt;code&gt;0&lt;/code&gt; and should be ignored. &lt;code&gt;nums2&lt;/code&gt; has a length of &lt;code&gt;n&lt;/code&gt;.&lt;/p&gt;</description>
     </item>

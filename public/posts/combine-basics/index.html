@@ -368,7 +368,7 @@ A Subscriber instance receives a stream of elements from a Publisher.</p>
 </span></span><span class="line"><span class="cl">        <span class="bp">print</span><span class="p">(</span><span class="s">&#34;Received posts count:&#34;</span><span class="p">,</span> <span class="n">posts</span><span class="p">.</span><span class="bp">count</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="p">})</span>
 </span></span></code></pre></div><h3 id="anycancellable">AnyCancellable<a hidden class="anchor" aria-hidden="true" href="#anycancellable">#</a></h3>
-<p>When you call a method like <a href="https://developer.apple.com/documentation/combine/publisher/sink(receivecompletion:receivevalue:)"><code>sink</code></a> or <a href="https://developer.apple.com/documentation/combine/publisher/assign(to:on:)"><code>assign</code></a> on a publisher, it returns a type that conforms to the <a href="https://developer.apple.com/documentation/combine/cancellable/"><code>Cancellable</code></a> protocol. Storing this return value in an instance of <a href="https://developer.apple.com/documentation/combine/anycancellable/"><code>AnyCancellable</code></a> keeps the subscription active. When the AnyCancellable instance is deallocated, its deinit method automatically cancels the subscription.</p>
+<p>When you call a method like <a href="https://developer.apple.com/documentation/combine/publisher/sink%28receivecompletion:receivevalue:%29"><code>sink</code></a> or <a href="https://developer.apple.com/documentation/combine/publisher/assign%28to:on:%29"><code>assign</code></a> on a publisher, it returns a type that conforms to the <a href="https://developer.apple.com/documentation/combine/cancellable/"><code>Cancellable</code></a> protocol. Storing this return value in an instance of <a href="https://developer.apple.com/documentation/combine/anycancellable/"><code>AnyCancellable</code></a> keeps the subscription active. When the AnyCancellable instance is deallocated, its deinit method automatically cancels the subscription.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nv">cancellables</span> <span class="p">=</span> <span class="n">Set</span><span class="p">&lt;</span><span class="n">AnyCancellable</span><span class="p">&gt;()</span>
 </span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">publisher</span> <span class="p">=</span> <span class="n">Just</span><span class="p">(</span><span class="s">&#34;Hello, Combine!&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">publisher</span>
@@ -381,41 +381,41 @@ A Subscriber instance receives a stream of elements from a Publisher.</p>
 </span></span></code></pre></div><h3 id="operators">Operators<a hidden class="anchor" aria-hidden="true" href="#operators">#</a></h3>
 <h3 id="transforming-operators">Transforming Operators<a hidden class="anchor" aria-hidden="true" href="#transforming-operators">#</a></h3>
 <ul>
-<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/map(_:)-6vw93"><code>map</code></a>: Transforms each value received from a publisher by applying a function.</li>
-<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/flatmap(maxpublishers:_:)-9nww4"><code>flatMap</code></a>: Transforms each value received into a new publisher, then flattens the result into a single publisher stream.</li>
-<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/scan(_:_:)"><code>scan</code></a>: Applies a closure over the previous result and the current value to produce a new value, useful for accumulating values.</li>
+<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/map%28_:%29-6vw93"><code>map</code></a>: Transforms each value received from a publisher by applying a function.</li>
+<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/flatmap%28maxpublishers:_:%29-9nww4"><code>flatMap</code></a>: Transforms each value received into a new publisher, then flattens the result into a single publisher stream.</li>
+<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/scan%28_:_:%29"><code>scan</code></a>: Applies a closure over the previous result and the current value to produce a new value, useful for accumulating values.</li>
 </ul>
 <h3 id="filtering-operators">Filtering Operators<a hidden class="anchor" aria-hidden="true" href="#filtering-operators">#</a></h3>
 <ul>
-<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/filter(_:)"><code>filter</code></a>: Emits only those values from a publisher that satisfy a given predicate.</li>
-<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/removeduplicates()"><code>removeDuplicates</code></a>: Suppresses duplicate consecutive values published by a publisher.</li>
-<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/last()"><code>first/last</code></a>: Emits only the first or last value from a publisher that satisfies a predicate condition.</li>
+<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/filter%28_:%29"><code>filter</code></a>: Emits only those values from a publisher that satisfy a given predicate.</li>
+<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/removeduplicates%28%29"><code>removeDuplicates</code></a>: Suppresses duplicate consecutive values published by a publisher.</li>
+<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/last%28%29"><code>first/last</code></a>: Emits only the first or last value from a publisher that satisfies a predicate condition.</li>
 </ul>
 <h3 id="combining-operators">Combining Operators<a hidden class="anchor" aria-hidden="true" href="#combining-operators">#</a></h3>
 <ul>
-<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/combinelatest(_:_:)-2s61"><code>combineLatest</code></a>: Combines the latest value from two or more publishers and emits a combined value each time any of the publishers emit a value.</li>
-<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/merge(with:)"><code>merge</code></a>: Combines multiple publishers of the same type into a single publisher stream, emitting values as they arrive.</li>
-<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/zip(_:)"><code>zip</code></a>: Combines values from multiple publishers into tuples, emitting a tuple only when each of the publishers has emitted a new value.</li>
+<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/combinelatest%28_:_:%29-2s61"><code>combineLatest</code></a>: Combines the latest value from two or more publishers and emits a combined value each time any of the publishers emit a value.</li>
+<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/merge%28with:%29"><code>merge</code></a>: Combines multiple publishers of the same type into a single publisher stream, emitting values as they arrive.</li>
+<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/zip%28_:%29"><code>zip</code></a>: Combines values from multiple publishers into tuples, emitting a tuple only when each of the publishers has emitted a new value.</li>
 </ul>
 <h3 id="error-handling-operators">Error Handling Operators<a hidden class="anchor" aria-hidden="true" href="#error-handling-operators">#</a></h3>
 <ul>
-<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/catch(_:)"><code>catch</code></a>: Handles errors from a publisher by replacing the failed publisher with another publisher or a value.</li>
-<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/retry(_:)"><code>retry</code></a>: Attempts to recreate a subscription to a failed publisher for a specified number of times.</li>
+<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/catch%28_:%29"><code>catch</code></a>: Handles errors from a publisher by replacing the failed publisher with another publisher or a value.</li>
+<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/retry%28_:%29"><code>retry</code></a>: Attempts to recreate a subscription to a failed publisher for a specified number of times.</li>
 </ul>
 <h3 id="utility-operators">Utility Operators<a hidden class="anchor" aria-hidden="true" href="#utility-operators">#</a></h3>
 <ul>
-<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/delay(for:tolerance:scheduler:options:)"><code>delay</code></a>: Delays the emission of items from the publisher for a specified interval.</li>
-<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/receive(on:options:)"><code>subscribe(on:)/receive(on:)</code></a>: Specifies the dispatch queue for performing subscription work or receiving values.</li>
-<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/print(_:to:)"><code>print</code></a>: Prints log messages for all publisher events to the console, useful for debugging.</li>
+<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/delay%28for:tolerance:scheduler:options:%29"><code>delay</code></a>: Delays the emission of items from the publisher for a specified interval.</li>
+<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/receive%28on:options:%29"><code>subscribe(on:)/receive(on:)</code></a>: Specifies the dispatch queue for performing subscription work or receiving values.</li>
+<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/print%28_:to:%29"><code>print</code></a>: Prints log messages for all publisher events to the console, useful for debugging.</li>
 </ul>
 <h3 id="timing-operators">Timing Operators<a hidden class="anchor" aria-hidden="true" href="#timing-operators">#</a></h3>
 <ul>
-<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/debounce(for:scheduler:options:)"><code>debounce</code></a>: Emits a value from a publisher only after a specified time interval has passed without receiving another value.</li>
-<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/throttle(for:scheduler:latest:)"><code>throttle</code></a>: Emits either the first or last value received in a specified time window.</li>
+<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/debounce%28for:scheduler:options:%29"><code>debounce</code></a>: Emits a value from a publisher only after a specified time interval has passed without receiving another value.</li>
+<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/throttle%28for:scheduler:latest:%29"><code>throttle</code></a>: Emits either the first or last value received in a specified time window.</li>
 </ul>
 <h3 id="collecting-operators">Collecting Operators<a hidden class="anchor" aria-hidden="true" href="#collecting-operators">#</a></h3>
 <ul>
-<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/collect()"><code>collect</code></a>: Collects received values and emits an array of those values either when the publisher completes or when a buffer size is reached.</li>
+<li><a href="https://developer.apple.com/documentation/combine/publishers/catch/collect%28%29"><code>collect</code></a>: Collects received values and emits an array of those values either when the publisher completes or when a buffer size is reached.</li>
 </ul>
 <h3 id="when-to-use-combine">When to use Combine?<a hidden class="anchor" aria-hidden="true" href="#when-to-use-combine">#</a></h3>
 <p>I found great <a href="https://developer.apple.com/documentation/combine/publisher">advice</a> from Apple when it comes to Combine:</p>

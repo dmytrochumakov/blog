@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.134.3</generator>
+    <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
     <lastBuildDate>Wed, 09 Oct 2024 07:20:29 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/hashmap/index.xml" rel="self" type="application/rss+xml" />
@@ -19,7 +19,7 @@
       <pubDate>Wed, 09 Oct 2024 07:20:29 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-hashmap-resize/</guid>
       <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
-&lt;p&gt;Previously, we discussed a &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-hashmap-custom-implementation?r=2fepxg&amp;utm_campaign=post&amp;utm_medium=web&amp;showWelcomeOnShare=true&#34;&gt;custom hashmap implementation&lt;/a&gt;. That implementation has a lot of &lt;a href=&#34;https://en.wikipedia.org/wiki/Hash_collision&#34;&gt;collisions&lt;/a&gt; because we are using a fixed-size array.&lt;/p&gt;
+&lt;p&gt;Previously, we discussed a &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-hashmap-custom-implementation?r=2fepxg&amp;amp;utm_campaign=post&amp;amp;utm_medium=web&amp;amp;showWelcomeOnShare=true&#34;&gt;custom hashmap implementation&lt;/a&gt;. That implementation has a lot of &lt;a href=&#34;https://en.wikipedia.org/wiki/Hash_collision&#34;&gt;collisions&lt;/a&gt; because we are using a fixed-size array.&lt;/p&gt;
 &lt;p&gt;If we want to reduce the chances of &lt;code&gt;collisions&lt;/code&gt;, we can increase the number of slots in the hashmap, or in other words, &lt;code&gt;resize&lt;/code&gt; our hashmap. Resizing cannot guarantee that collisions will be entirely eliminated, but it will help reduce the likelihood of one happening.&lt;/p&gt;
 &lt;h3 id=&#34;code-example&#34;&gt;Code Example&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;loadFactor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Double&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
