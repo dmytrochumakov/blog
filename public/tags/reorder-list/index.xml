@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Reorder List on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/reorder-list/</link>
+    <description>Recent content in Reorder List on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.139.5</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Dec 2024 09:58:35 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/reorder-list/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Reorder List</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-reorder-list/</link>
+      <pubDate>Mon, 23 Dec 2024 09:58:35 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-reorder-list/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
+&lt;p&gt;You are given the head of a singly linked list. The list can be represented as:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;L0 → L1 → … → Ln - 1 → Ln&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Reorder the list to be in the following form:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You may not modify the values in the list&amp;rsquo;s nodes. Only the nodes themselves may be changed.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
