@@ -3,27 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/blind-75/</loc>
-    <lastmod>2024-12-23T09:58:35+03:00</lastmod>
+    <lastmod>2024-12-25T09:22:40+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-12-23T09:58:35+03:00</lastmod>
+    <lastmod>2024-12-25T09:22:40+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/leetcode/</loc>
-    <lastmod>2024-12-23T09:58:35+03:00</lastmod>
+    <lastmod>2024-12-25T09:22:40+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/leetcode-blind-75-remove-nth-node-from-end-of-list/</loc>
+    <lastmod>2024-12-25T09:22:40+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-12-25T09:22:40+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/remove-nth-node-from-end-of-list/</loc>
+    <lastmod>2024-12-25T09:22:40+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swift/</loc>
+    <lastmod>2024-12-25T09:22:40+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-12-25T09:22:40+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/leetcode-blind-75-reorder-list/</loc>
     <lastmod>2024-12-23T09:58:35+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-12-23T09:58:35+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/reorder-list/</loc>
-    <lastmod>2024-12-23T09:58:35+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2024-12-23T09:58:35+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-12-23T09:58:35+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/leetcode-blind-75-merge-two-sorted-lists/</loc>

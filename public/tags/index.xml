@@ -11,20 +11,34 @@
     </image>
     <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Dec 2024 09:58:35 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 25 Dec 2024 09:22:40 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blind 75</title>
       <link>http://localhost:1313/tags/blind-75/</link>
-      <pubDate>Mon, 23 Dec 2024 09:58:35 +0300</pubDate>
+      <pubDate>Wed, 25 Dec 2024 09:22:40 +0300</pubDate>
       <guid>http://localhost:1313/tags/blind-75/</guid>
       <description></description>
     </item>
     <item>
       <title>LeetCode</title>
       <link>http://localhost:1313/tags/leetcode/</link>
-      <pubDate>Mon, 23 Dec 2024 09:58:35 +0300</pubDate>
+      <pubDate>Wed, 25 Dec 2024 09:22:40 +0300</pubDate>
       <guid>http://localhost:1313/tags/leetcode/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Remove Nth Node From End of List</title>
+      <link>http://localhost:1313/tags/remove-nth-node-from-end-of-list/</link>
+      <pubDate>Wed, 25 Dec 2024 09:22:40 +0300</pubDate>
+      <guid>http://localhost:1313/tags/remove-nth-node-from-end-of-list/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Swift</title>
+      <link>http://localhost:1313/tags/swift/</link>
+      <pubDate>Wed, 25 Dec 2024 09:22:40 +0300</pubDate>
+      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>
@@ -32,13 +46,6 @@
       <link>http://localhost:1313/tags/reorder-list/</link>
       <pubDate>Mon, 23 Dec 2024 09:58:35 +0300</pubDate>
       <guid>http://localhost:1313/tags/reorder-list/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Swift</title>
-      <link>http://localhost:1313/tags/swift/</link>
-      <pubDate>Mon, 23 Dec 2024 09:58:35 +0300</pubDate>
-      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>
