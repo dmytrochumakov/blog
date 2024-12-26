@@ -204,6 +204,19 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Implementing Apple Pay in a SwiftUI app
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction Sometime ago, I was working on a marketplace app, and I needed to add Apple Pay to make purchases more easily. Here are a few steps on how I did it: First Step You need to add Apple Pay capability to your project. You will need to Register a Merchant ID. I will skip this step; you can find info by following this link Setting up Apple Pay. Second Step You will need to import PassKit and create PKPaymentRequest to interact with PKPaymentAuthorizationController and PKPaymentAuthorizationControllerDelegate. func initiateApplePay() { // Create payment request let paymentRequest = PKPaymentRequest() paymentRequest.merchantIdentifier = &#34;your_merchant_identifier&#34; paymentRequest.countryCode = &#34;US&#34; paymentRequest.currencyCode = &#34;USD&#34; paymentRequest.supportedNetworks = [.visa, .masterCard, .amex] paymentRequest.merchantCapabilities = .threeDSecure // Add payment items from cart for item in cartItems { let paymentItem = PKPaymentSummaryItem(label: item.name, amount: item.price) paymentRequest.paymentSummaryItems.append(paymentItem) } // Add total amount let totalItem = PKPaymentSummaryItem(label: &#34;Total&#34;, amount: totalAmount) paymentRequest.paymentSummaryItems.append(totalItem) // Present Apple Pay sheet let paymentController = PKPaymentAuthorizationController(paymentRequest: paymentRequest) paymentController.delegate = self paymentController.present(completion: nil) } Third Step Add UI and connect it with the view model.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-11 07:25:24 +0300 EEST'>May 11, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Implementing Apple Pay in a SwiftUI app" href="http://localhost:1313/posts/implementing-apple-pay-in-a-swiftui-app/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Integration testing for SwiftUI views
     </h2>
   </header>
@@ -257,27 +270,12 @@ Caveats After being stuck for two or more hours without understanding why, after
   <footer class="entry-footer"><span title='2024-05-05 07:20:29 +0300 EEST'>May 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Building Video Streaming Widget for iOS App" href="http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Building Video Streaming iOS App
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was looking for a way to add a video player to my iOS app that could be able to play remote videos.
-Caveats Problem I found that you can’t open Vimeo or Youtube videos because of AVFoundationErrorDomain Code=-11850 &#34;Operation Stopped&#34; UserInfo={NSLocalizedFailureReason=The server is not correctly configured Domain=NSOSStatusErrorDomain Code=-12939 error. I don’t know exactly what this means, but I’m speculating it’s related to some protection.
-Solution My solution was to find another video that is not related to those platforms.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-03 07:34:56 +0300 EEST'>May 3, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Building Video Streaming iOS App" href="http://localhost:1313/posts/building-video-streaming-ios-app/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/posts/page/15/">
-      «&nbsp;Prev&nbsp;15/22
+      «&nbsp;Prev&nbsp;15/23
     </a>
-    <a class="next" href="http://localhost:1313/posts/page/17/">Next&nbsp;17/22&nbsp;»
+    <a class="next" href="http://localhost:1313/posts/page/17/">Next&nbsp;17/23&nbsp;»
     </a>
   </nav>
 </footer>

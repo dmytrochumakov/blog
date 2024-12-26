@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Dec 2024 09:22:40 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 26 Dec 2024 11:21:15 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Linked List Cycle</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-linked-list-cycle/</link>
+      <pubDate>Thu, 26 Dec 2024 11:21:15 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-linked-list-cycle/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
+&lt;p&gt;Given &lt;code&gt;head&lt;/code&gt;, the head of a linked list, determine if the linked list has a cycle in it.&lt;br&gt;
+There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the &lt;code&gt;next&lt;/code&gt; pointer. Internally, &lt;code&gt;pos&lt;/code&gt; is used to denote the index of the node that the tail&amp;rsquo;s &lt;code&gt;next&lt;/code&gt; pointer is connected to. Note that &lt;code&gt;pos&lt;/code&gt; is not passed as a parameter.&lt;br&gt;
+Return &lt;code&gt;true&lt;/code&gt; if there is a cycle in the linked list. Otherwise, return &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Remove Nth Node From End of List</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-remove-nth-node-from-end-of-list/</link>
