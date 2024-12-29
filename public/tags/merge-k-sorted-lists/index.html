@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>LeetCode | Dmytro&#39;s Blog</title>
+<title>Merge K Sorted Lists | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="Dmytro Chumakov">
-<link rel="canonical" href="http://localhost:1313/tags/leetcode/">
+<link rel="canonical" href="http://localhost:1313/tags/merge-k-sorted-lists/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.90bf44a6ebd7c6748b4a028cfa0a41da583261f03ee2201d567f914a36ac58bb.css" integrity="sha256-kL9EpuvXxnSLSgKM&#43;gpB2lgyYfA&#43;4iAdVn&#43;RSjasWLs=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -19,8 +19,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/leetcode/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/leetcode/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/merge-k-sorted-lists/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/merge-k-sorted-lists/">
 <noscript>
     <style>
         #theme-toggle,
@@ -88,15 +88,15 @@
           gtag('js', new Date());
           gtag('config', 'G-HZZ4JTFGDP');
         }
-      </script><meta property="og:url" content="http://localhost:1313/tags/leetcode/">
+      </script><meta property="og:url" content="http://localhost:1313/tags/merge-k-sorted-lists/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
-  <meta property="og:title" content="LeetCode">
+  <meta property="og:title" content="Merge K Sorted Lists">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="LeetCode">
+<meta name="twitter:title" content="Merge K Sorted Lists">
 <meta name="twitter:description" content="">
 
 </head>
@@ -183,95 +183,24 @@
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
   <h1>
-    LeetCode
+    Merge K Sorted Lists
   </h1>
 </header>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Reverse Linked List
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Merge k Sorted Lists
     </h2>
   </header>
   <div class="entry-content">
-    <p>The problem Given the head of a singly linked list, reverse the list, and return the reversed list.
-Examples Input: head = [1,2,3,4,5] Output: [5,4,3,2,1] Input: head = [1,2] Output: [2,1] Input: head = [] Output: [] Constraints The number of nodes in the list is in the range [0, 5000]. -5000 &lt;= Node.val &lt;= 5000 Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?
+    <p>The problem You are given an array of k linked lists lists, each linked list is sorted in ascending order.
+Merge all the linked lists into one sorted linked list and return it.
+Examples Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] Explanation: The linked lists are: [ 1-&gt;4-&gt;5, 1-&gt;3-&gt;4, 2-&gt;6 ] merging them into one sorted list: 1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4-&gt;5-&gt;6 Input: lists = [] Output: [] Input: lists = [[]] Output: [] Constraints k == lists.length 0 &lt;= k &lt;= 10^4 0 &lt;= lists[i].length &lt;= 500 -10^4 &lt;= lists[i][j] &lt;= 10^4 lists[i] is sorted in ascending order. The sum of lists[i].length will not exceed 10^4. Brute Force Solution func mergeKLists(_ lists: [ListNode?]) -&gt; ListNode? { var nodes: [Int] = [] // Step 1 for i in 0..&lt;lists.count { var lst = lists[i] while lst != nil { nodes.append(lst!.val) lst = lst?.next } } // Step 2 nodes.sort() // Step 3 var res = ListNode(0) var curr: ListNode? = res for node in nodes { curr?.next = ListNode(node) curr = curr?.next } return res.next } Explanation We can solve this problem by separating it into three steps:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-12-17 07:16:48 +0300 +0300'>December 17, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Reverse Linked List" href="http://localhost:1313/posts/leetcode-blind-75-reverse-linked-list/"></a>
+  <footer class="entry-footer"><span title='2024-12-29 12:33:03 +0300 +0300'>December 29, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Merge k Sorted Lists" href="http://localhost:1313/posts/leetcode-blind-75-merge-k-sorted-lists/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Search in Rotated Sorted Array
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The problem There is an integer array nums sorted in ascending order (with distinct values).
-Prior to being passed to your function, nums is possibly rotated at an unknown pivot index k (1 &lt;= k &lt; nums.length) such that the resulting array is [nums[k], nums[k&#43;1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2].
-Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
-You must write an algorithm with O(log n) runtime complexity.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-12-11 07:11:25 +0300 +0300'>December 11, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Search in Rotated Sorted Array" href="http://localhost:1313/posts/leetcode-blind-75-search-in-rotated-sorted-array/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Find Minimum in Rotated Sorted Array
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
-[4,5,6,7,0,1,2] if it was rotated 4 times. [0,1,2,4,5,6,7] if it was rotated 7 times. Notice that rotating an array [a[0], a[1], a[2], ..., a[n-1]] 1 time results in the array [a[n-1], a[0], a[1], a[2], ..., a[n-2]].
-Given the sorted rotated array nums of unique elements, return the minimum element of this array.
-You must write an algorithm that runs in O(log n) time.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-12-09 07:05:38 +0300 +0300'>December 9, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Find Minimum in Rotated Sorted Array" href="http://localhost:1313/posts/leetcode-blind-75-find-minimum-in-rotated-sorted-array/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Valid Parentheses
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Given a string s containing just the characters &#39;(&#39;, &#39;)&#39;, &#39;{&#39;, &#39;}&#39;, &#39;[&#39;, and &#39;]&#39;, determine if the input string is valid.
-An input string is valid if:
-Open brackets must be closed by the same type of brackets. Open brackets must be closed in the correct order. Every closing bracket has a corresponding open bracket of the same type. Examples Input: s = &#34;()&#34; Output: true Input: s = &#34;()[]{}&#34; Output: true Input: s = &#34;(]&#34; Output: false Input: s = &#34;([])&#34; Output: true Constraints 1 &lt;= s.length &lt;= 10⁴ s consists of parentheses only &#39;()[]{}&#39;. Brute Force Solution func isValid(_ s: String) -&gt; Bool { var s = s while s.contains(&#34;()&#34;) || s.contains(&#34;{}&#34;) || s.contains(&#34;[]&#34;) { s = s.replacingOccurrences(of: &#34;()&#34;, with: &#34;&#34;) s = s.replacingOccurrences(of: &#34;{}&#34;, with: &#34;&#34;) s = s.replacingOccurrences(of: &#34;[]&#34;, with: &#34;&#34;) } return s.isEmpty } Explanation The brute force way to solve this problem is to check if the string contains &#34;()&#34;, &#34;{}&#34;, &#34;[]&#34; and replace them with an empty string. It’s not a very efficient algorithm and takes O(n²) time because of the while loop and the replacing operation on the entire string. We can optimize it by using a stack data structure.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-12-05 07:25:46 +0300 +0300'>December 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Valid Parentheses" href="http://localhost:1313/posts/leetcode-blind-75-valid-parentheses/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Minimum Window Substring
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Given two strings s and t of lengths m and n, respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string &#34;&#34;.
-A substring is a contiguous, non-empty sequence of characters within a string.
-The test cases will be generated such that the answer is unique.
-Examples Input: s = &#34;ADOBECODEBANC&#34;, t = &#34;ABC&#34; Output: &#34;BANC&#34; Explanation: The minimum window substring &#34;BANC&#34; includes &#39;A&#39;, &#39;B&#39;, and &#39;C&#39; from string t. Input: s = &#34;a&#34;, t = &#34;a&#34; Output: &#34;a&#34; Explanation: The entire string s is the minimum window. Input: s = &#34;a&#34;, t = &#34;aa&#34; Output: &#34;&#34; Explanation: Both &#39;a&#39;s from t must be included in the window. Since the largest window of s only has one &#39;a&#39;, return an empty string. Constraints m == s.length n == t.length 1 &lt;= m, n &lt;= 10⁵ s and t consist of uppercase and lowercase English letters. Follow-up: Could you find an algorithm that runs in O(m &#43; n) time?
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-12-03 07:09:24 +0300 +0300'>December 3, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Minimum Window Substring" href="http://localhost:1313/posts/leetcode-blind-75-minimum-window-substring/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="prev" href="http://localhost:1313/tags/leetcode/">
-      «&nbsp;Prev&nbsp;1/5
-    </a>
-    <a class="next" href="http://localhost:1313/tags/leetcode/page/3/">Next&nbsp;3/5&nbsp;»
-    </a>
-  </nav>
-</footer>
     </main>
     
 <footer class="footer">
