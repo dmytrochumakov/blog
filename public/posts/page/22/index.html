@@ -204,6 +204,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Concurrency in Swift
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is concurrency? The system can perform multiple tasks simultaneously. By tasks, I mean code or instructions. Modern computer chips have multiple cores that allow developers to create and run various tasks on multiple cores. Even if your chip has one core operating system it will provide context switching mechanism by enabling it to execute multiple tasks concurrently.
+Material about processes, threads I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it. I attached links to the material to help you understand it more deeply. https://youtu.be/4rLW7zg21gI?si=49hq8Wrbpmeev41k https://youtu.be/r2__Rw8vu1M?si=b7b257Qu4Bty7OxA I will focus on implementation.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-07 00:00:00 +0300 +0300'>January 7, 2024</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Concurrency in Swift" href="http://localhost:1313/posts/concurrency-in-swift/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">What are value types in Swift?
     </h2>
   </header>
@@ -261,23 +275,6 @@ ARC In Action In this example, we assign an instance to the reference1 property.
   </div>
   <footer class="entry-footer"><span title='2023-12-17 00:00:00 +0300 +0300'>December 17, 2023</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to ARC in Swift" href="http://localhost:1313/posts/arc-in-swift/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">What is closure in Swift language?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction In this article, I’m going to briefly explain what closure is.
-Closures is self-conitained blocks of funcionality that can be passed around and used in your code. — Apple
-Expression:
-{ (params) -&gt; return value in statements } @escaping When closure is marked as escaping, it will outlive or leave the scope you passed.
-func response(_ completionHandler: @escaping(Result) -&gt; Void) { completionHandler(.success) } @nonescaping By default, closures are nonescaping, meaning closure will no longer exist in memory after complete execution in the scope you have passed it to.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-12-10 00:00:00 +0300 +0300'>December 10, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to What is closure in Swift language?" href="http://localhost:1313/posts/what-is-closure-in-swift-language/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
