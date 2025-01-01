@@ -11,8 +11,48 @@
     </image>
     <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 30 Dec 2024 09:54:49 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jan 2025 10:09:24 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Maximum Depth of Binary Tree</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-maximum-depth-of-binary-tree/</link>
+      <pubDate>Wed, 01 Jan 2025 10:09:24 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-maximum-depth-of-binary-tree/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
+&lt;p&gt;Given the &lt;code&gt;root&lt;/code&gt; of a binary tree, return its maximum depth.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A binary tree&amp;rsquo;s &lt;strong&gt;maximum depth&lt;/strong&gt; is the number of nodes along the longest path from the root node down to the farthest leaf node.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-83548&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-83548&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/tmp-tree.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Input&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;root&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;9&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;7&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Output&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Input&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;root&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Output&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;The number of nodes in the tree is in the range &lt;code&gt;[0, 10⁴]&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-100 &amp;lt;= Node.val &amp;lt;= 100&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;brute-force-solution&#34;&gt;Brute Force Solution&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;maxDepth&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;_&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;root&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;TreeNode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Int&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;root&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;nil&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;bp&#34;&gt;max&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;maxDepth&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;root&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?.&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;left&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;maxDepth&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;root&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?.&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;right&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;p&gt;We can solve this problem using recursion by calling the &lt;code&gt;maxDepth&lt;/code&gt; function on the &lt;code&gt;left&lt;/code&gt; and &lt;code&gt;right&lt;/code&gt; child nodes. This approach helps us find the longest path down the tree.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Invert Binary Tree</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-invert-binary-tree/</link>

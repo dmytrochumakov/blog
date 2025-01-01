@@ -189,6 +189,19 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - Binary Search Tree - Exists
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Code Example final class BSTNode&lt;Value: Comparable&gt; { var val: Value? var left: BSTNode? var right: BSTNode? init(val: Value? = nil) { self.val = val } func exists(_ val: Value) -&gt; Bool { // 1 guard let selfVal = self.val else { return false } // 2 if self.val == val { return true } // 3 if val &lt; self.val! { if self.left == nil { return false } return self.left!.exists(val) } // 4 if self.right == nil { return false } // 5 return self.right!.exists(val) } } Implementation The exists algorithm:
+Check if self.val exists. If it does not exist, return false. If it does, move to the next step. Compare self.val with the input value. If the values are equal, return true. If they are not equal, move to the next step. If the input val is less than self.val, and the left node exists, return a recursive call of the exists method on the left node; otherwise, return false. If the input val is greater than self.val, move to the next step. Check if the right node exists. If it does not exist, return false. If it does exist, move to the next step. Return a recursive call of the exists method on the right node. Time/Space Complexity Time complexity: The time complexity of the exists algorithm is O(N), where N is the total number of nodes. Space complexity: O(1) if recursion stack space is not considered. Otherwise, O(H), where H is the height of the tree. In the worst case, H can be the same as N (when the tree is skewed). In the best case, H can be the same as log N (when the tree is complete). Thank you for reading! 😊</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-09-28 06:56:08 +0300 EEST'>September 28, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to DSA - Binary Search Tree - Exists" href="http://localhost:1313/posts/dsa-binary-search-tree-exists/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">DSA - Binary Search Tree - Postorder
     </h2>
   </header>
@@ -242,23 +255,6 @@ Code Example - Min func findMin() -&gt; Int? { var min: Int? var curr: BSTNode? 
   <footer class="entry-footer"><span title='2024-09-22 07:26:23 +0300 EEST'>September 22, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Binary Search Tree Min/Max" href="http://localhost:1313/posts/dsa-binary-search-tree-min-max/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Queue
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is a Queue? A Queue is an abstract data type that serves as an ordered collection of elements.
-A simple queue typically has several operations:
-push(item) - adds an item to the tail pop() - removes and returns an item from the head These operations make a queue a FIFO (First In, First Out) data structure.
-Implementation There are two ways to implement a queue.
-The first and simplest (but less efficient) way is by using an array and basic operations:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-20 07:15:17 +0300 EEST'>September 20, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Queue" href="http://localhost:1313/posts/dsa-queue/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/swift/page/7/">
@@ -271,7 +267,7 @@ The first and simplest (but less efficient) way is by using an array and basic o
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="http://localhost:1313/">Dmytro&#39;s Blog</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Dmytro&#39;s Blog</a></span> · 
 
     <span>
         Powered by
