@@ -11,8 +11,51 @@
     </image>
     <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Jan 2025 10:09:24 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jan 2025 12:30:42 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/blind-75/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Same Tree</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-same-tree/</link>
+      <pubDate>Thu, 02 Jan 2025 12:30:42 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-same-tree/</guid>
+      <description>&lt;h4 id=&#34;the-problem&#34;&gt;The Problem&lt;/h4&gt;
+&lt;p&gt;Given the roots of two binary trees &lt;code&gt;p&lt;/code&gt; and &lt;code&gt;q&lt;/code&gt;, write a function to check if they are the same or not.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Two binary trees are considered the same if they are structurally identical, and the nodes have the same values.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-55033&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-55033&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/ex1.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: p = [1,2,3], q = [1,2,3]
+Output: true
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-17e6e&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-17e6e&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/ex2.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: p = [1,2], q = [1,null,2]
+Output: false
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-1471d&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-1471d&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/ex3.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Maximum Depth of Binary Tree</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-maximum-depth-of-binary-tree/</link>
