@@ -11,8 +11,29 @@
     </image>
     <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 02 Jan 2025 12:30:42 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jan 2025 12:34:59 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Subtree of Another Tree</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-subtree-of-another-tree/</link>
+      <pubDate>Sun, 05 Jan 2025 12:34:59 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-subtree-of-another-tree/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
+&lt;p&gt;Given the roots of two binary trees &lt;code&gt;root&lt;/code&gt; and &lt;code&gt;subRoot&lt;/code&gt;, return &lt;code&gt;true&lt;/code&gt; if there is a subtree of &lt;code&gt;root&lt;/code&gt; with the same structure and node values as &lt;code&gt;subRoot&lt;/code&gt;, and &lt;code&gt;false&lt;/code&gt; otherwise.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A subtree of a binary tree &lt;code&gt;tree&lt;/code&gt; is a tree that consists of a node in &lt;code&gt;tree&lt;/code&gt; and all of this node&amp;rsquo;s descendants. The tree &lt;code&gt;tree&lt;/code&gt; could also be considered as a subtree of itself.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-26d95&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-26d95&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/subtree1-tree.jpg#center&#34; alt=&#34;Example 1&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Same Tree</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-same-tree/</link>
