@@ -204,6 +204,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - Binary Search Tree - Delete
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction The delete algorithm is perhaps one of the hardest parts of managing a binary search tree (BST).
+Code Example final class BSTNode { var val: Int? var left: BSTNode? var right: BSTNode? init(val: Int? = nil) { self.val = val } func delete(_ val: Int) -&gt; BSTNode? { // 1 guard let selfVal = self.val else { return nil } // 2 if val &lt; selfVal { if self.left == nil { return self } self.left = self.left!.delete(val) } // 3 if val &gt; selfVal { if self.right == nil { return self } self.right = self.right!.delete(val) } // 4 if self.right == nil { return self.left } // 5 if self.left == nil { return self.right } // 6 var minLargerNode = self.right while minLargerNode?.left != nil { minLargerNode = minLargerNode?.left } guard let minLargerNode = minLargerNode else { return self } self.val = minLargerNode.val self.right = self.right?.delete(minLargerNode.val!) return self } } Implementation Let’s look at the details:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-09-24 06:53:52 +0300 EEST'>September 24, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to DSA - Binary Search Tree - Delete" href="http://localhost:1313/posts/dsa-binary-search-tree-delete/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">DSA - Binary Search Tree Min/Max
     </h2>
   </header>
@@ -262,27 +276,12 @@ Implementation A graph can be represented as a matrix with edges connecting each
   <footer class="entry-footer"><span title='2024-09-14 06:57:03 +0300 EEST'>September 14, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Graph" href="http://localhost:1313/posts/dsa-graph/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Breadth First Search
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is Breadth First Search? Breadth-first search (BFS) is an algorithm for traversing tree or graph data structures. It starts at the root and explores all the neighboring nodes at the current depth before moving on to nodes at the next depth level.
-Source
-Implementation The implementation of BFS may vary depending on the problem. The main idea of BFS is:
-It has a visited array that collects all elements that have already been visited. It has a queue with all elements it’s going to visit. It loops through the queue, removes the first element, and appends it to the visited list. Finally, it loops through all the neighbors and appends the neighbor to the queue if it has not been visited and is not already in the queue. Code Example func bfs(_ value: String) -&gt; [String] { let graph: [String: [String]] = [ &#34;New York&#34;: [&#34;Buenos Aires&#34;, &#34;Cairo&#34;, &#34;Tokyo&#34;, &#34;London&#34;] ] var visited: [String] = [] var queue: [String] = [] queue.append(value) while !queue.isEmpty { let tmp = queue.removeFirst() visited.append(tmp) if let neighbors = graph[tmp] { for neighbor in neighbors.sorted() { if !visited.contains(neighbor) &amp;&amp; !queue.contains(neighbor) { queue.append(neighbor) } } } } return visited } Thank you for reading! 😊</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-12 07:14:47 +0300 EEST'>September 12, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Breadth First Search" href="http://localhost:1313/posts/dsa-breadth-first-search/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/posts/page/9/">
-      «&nbsp;Prev&nbsp;9/24
+      «&nbsp;Prev&nbsp;9/25
     </a>
-    <a class="next" href="http://localhost:1313/posts/page/11/">Next&nbsp;11/24&nbsp;»
+    <a class="next" href="http://localhost:1313/posts/page/11/">Next&nbsp;11/25&nbsp;»
     </a>
   </nav>
 </footer>
