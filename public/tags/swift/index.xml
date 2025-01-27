@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Jan 2025 15:17:04 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jan 2025 10:24:47 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Binary Tree Maximum Path Sum</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-binary-tree-maximum-path-sum/</link>
+      <pubDate>Mon, 27 Jan 2025 10:24:47 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-binary-tree-maximum-path-sum/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge connecting them. A node can only appear in the sequence at most once. Note that the path does not need to pass through the root.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The path sum of a path is the sum of the node&amp;rsquo;s values in the path.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Given the &lt;code&gt;root&lt;/code&gt; of a binary tree, return the maximum path sum of any non-empty path.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Construct Binary Tree from Preorder and Inorder Traversal</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-construct-binary-tree-from-preorder-and-inorder-traversal/</link>
