@@ -53,13 +53,9 @@ params:
       title: View Source on Github
       url: "https://github.com/dmytrochumakov"    
     - name: leetcode
-      url: "https://leetcode.com/u/dmytrochumakov/"    
-    - name: codesignal
-      url: "https://app.codesignal.com/profile/dmytrochumakov"    
+      url: "https://leetcode.com/u/dmytrochumakov0/"        
     - name: linkedin
-      url: "https://www.linkedin.com/in/dmytro-chumakov/"
-    - name: youtube
-      url: "https://www.youtube.com/@dmytro_chumakov"
+      url: "https://www.linkedin.com/in/dmytro-chumakov/"    
     - name: email
       url: "mailto:dmytro.v.chumakov.work@gmail.com"
 
