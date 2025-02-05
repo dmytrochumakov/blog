@@ -204,6 +204,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">The Visitor Pattern
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is a Visitor Pattern? The Visitor Pattern helps add new capabilities to a composite of objects.
+Source
+What problems does it solve? The Visitor Pattern helps solve following problems:
+Separation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on. Extensibility: It allows you to add new operations to existing object structures without modifying those structures. This is especially useful when dealing with complex object hierarchies where adding new functionality directly to the classes would lead to code bloat and tight coupling. Traversal of Object Structures: It provides a way to traverse complex object structures while performing some action on each element of the structure. This is particularly useful in scenarios where you need to process every element of a data structure in a specific order or with a specific algorithm. Real-world code example // Element protocol representing the items on the menu protocol MenuItem { func accept(visitor: OrderVisitor) } // Concrete item types class Coffee: MenuItem { let name: String let price: Double init(name: String, price: Double) { self.name = name self.price = price } func accept(visitor: OrderVisitor) { visitor.visit(self) } } class Tea: MenuItem { let name: String let price: Double init(name: String, price: Double) { self.name = name self.price = price } func accept(visitor: OrderVisitor) { visitor.visit(self) } } class Pastry: MenuItem { let name: String let price: Double init(name: String, price: Double) { self.name = name self.price = price } func accept(visitor: OrderVisitor) { visitor.visit(self) } } // Visitor protocol defining the operations to be performed on menu items protocol OrderVisitor { func visit(_ item: Coffee) func visit(_ item: Tea) func visit(_ item: Pastry) } // Concrete visitor implementing operations on menu items class TotalCostVisitor: OrderVisitor { var totalCost = 0.0 func visit(_ item: Coffee) { totalCost &#43;= item.price } func visit(_ item: Tea) { totalCost &#43;= item.price } func visit(_ item: Pastry) { totalCost &#43;= item.price } } class ItemDetailsVisitor: OrderVisitor { var details = &#34;&#34; func visit(_ item: Coffee) { details &#43;= &#34;Coffee: \(item.name), Price: $\(item.price)\n&#34; } func visit(_ item: Tea) { details &#43;= &#34;Tea: \(item.name), Price: $\(item.price)\n&#34; } func visit(_ item: Pastry) { details &#43;= &#34;Pastry: \(item.name), Price: $\(item.price)\n&#34; } } // Example usage let items: [MenuItem] = [Coffee(name: &#34;Espresso&#34;, price: 2.5), Tea(name: &#34;Green Tea&#34;, price: 2.0), Pastry(name: &#34;Croissant&#34;, price: 3.0)] let totalCostVisitor = TotalCostVisitor() for item in items { item.accept(visitor: totalCostVisitor) } print(&#34;Total cost of the order: $\(totalCostVisitor.totalCost)&#34;) let itemDetailsVisitor = ItemDetailsVisitor() for item in items { item.accept(visitor: itemDetailsVisitor) } print(&#34;Order details:&#34;) print(itemDetailsVisitor.details) </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-01 08:01:22 +0300 EEST'>April 1, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to The Visitor Pattern" href="http://localhost:1313/posts/the-visitor-pattern/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">The Memento Pattern
     </h2>
   </header>
@@ -260,21 +275,6 @@ Dynamic Request Handling: It enables dynamic assignment of responsibilities at r
   </div>
   <footer class="entry-footer"><span title='2024-03-15 08:29:30 +0300 +0300'>March 15, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to The Chain Of Responsibility Pattern" href="http://localhost:1313/posts/the-chain-of-responsibility-pattern/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">The State Pattern
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is a State Pattern? The State Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
-Source
-What problems does it solve? Complex conditional logic: When an object’s behavior depends on its internal state, it often leads to complex conditional statements. The State pattern simplifies this by encapsulating each state and its behavior in separate classes, making the code more readable and maintainable. State-specific behavior: Objects often need to change their behavior based on their state. The State pattern allows objects to delegate behavior to state objects, which can vary independently. This promotes better encapsulation and separation of concerns. Adding new states: When new states need to be added, the State pattern makes it easier to extend the functionality without modifying existing code. New states can be added by creating new state classes and integrating them into the existing context, without changing the context class itself. Real-world code example // Define the VendingMachine protocol protocol VendingMachineState { func insertCoin() func dispenseItem() } // Define concrete states class NoCoinState: VendingMachineState { private let vendingMachine: VendingMachine init(vendingMachine: VendingMachine) { self.vendingMachine = vendingMachine } func insertCoin() { print(&#34;Coin inserted&#34;) // Transition to the HasCoinState vendingMachine.changeState(newState: vendingMachine.hasCoinState) } func dispenseItem() { print(&#34;Please insert a coin first&#34;) } } class HasCoinState: VendingMachineState { private let vendingMachine: VendingMachine init(vendingMachine: VendingMachine) { self.vendingMachine = vendingMachine } func insertCoin() { print(&#34;Coin already inserted&#34;) } func dispenseItem() { if vendingMachine.inventoryCount &gt; 0 { print(&#34;Item dispensed&#34;) vendingMachine.decreaseInventory() // Transition to the NoCoinState vendingMachine.changeState(newState: vendingMachine.noCoinState) } else { print(&#34;Out of stock&#34;) } } } // Define the VendingMachine class class VendingMachine { var inventoryCount: Int = 5 var currentState: VendingMachineState! var noCoinState: VendingMachineState! var hasCoinState: VendingMachineState! init() { noCoinState = NoCoinState(vendingMachine: self) hasCoinState = HasCoinState(vendingMachine: self) currentState = noCoinState } func changeState(newState: VendingMachineState) { currentState = newState } func insertCoin() { currentState.insertCoin() } func dispenseItem() { currentState.dispenseItem() } func decreaseInventory() { inventoryCount -= 1 } } // Usage let vendingMachine = VendingMachine() vendingMachine.dispenseItem() vendingMachine.insertCoin() vendingMachine.insertCoin() vendingMachine.dispenseItem() vendingMachine.dispenseItem() Thank you for reading!
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-03-10 08:29:30 +0300 +0300'>March 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to The State Pattern" href="http://localhost:1313/posts/the-state-pattern/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

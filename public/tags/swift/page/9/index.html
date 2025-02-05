@@ -189,6 +189,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - Sorting - Bubble Sort
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is the Bubble Sort Algorithm? The bubble sort is a basic sorting algorithm named after the way elements progressively “bubble up” to the top of the list.
+source
+Code Example func bubbleSort(_ array: [Int]) -&gt; [Int] { var A = array var N = array.count var swapping = true while swapping { swapping = false for i in 1 ..&lt; N { if A[i - 1] &gt; A[i] { let tmp = A[i - 1] A[i - 1] = A[i] A[i] = tmp swapping = true } } N -= 1 } return A } Implementation The bubble sort uses an loop and swapping property to control it behaviour. Inside the loop, it iterates over all elements, comparing the current and next elements. If the current element is greater than the next, it swaps them.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-11 07:02:51 +0300 EEST'>October 11, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to DSA - Sorting - Bubble Sort" href="http://localhost:1313/posts/dsa-sorting-bubble-sort/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">DSA - Hashmap - Resize
     </h2>
   </header>
@@ -244,27 +259,12 @@ Every node is either red or black. All nil nodes are considered black. A red nod
   <footer class="entry-footer"><span title='2024-09-30 07:17:10 +0300 EEST'>September 30, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Red-Black Tree" href="http://localhost:1313/posts/dsa-red-black-tree/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Binary Search Tree - Inorder
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is the BST inorder algorithm? The inorder algorithm returns values in ascending order (sorted from smallest to the largest value).
-Code example final class BSTNode&lt;Value: Comparable&gt; { var val: Value? var left: BSTNode? var right: BSTNode? init(val: Value? = nil) { self.val = val } func inorder(_ visited: inout [Value]) -&gt; [Value] { if self.left != nil { self.left!.inorder(&amp;visited) } if self.val != nil { visited.append(self.val!) } if self.right != nil { self.right!.inorder(&amp;visited) } return visited } } Implementation The inorder algorithm:
-Recursively traverse the left subtree. Visit the current node. Recursively traverse the right subtree. Time/Space complexity The time complexity of the inorder algorithm is O(N), where N is the total number of nodes. The space complexity:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-28 07:08:52 +0300 EEST'>September 28, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Binary Search Tree - Inorder" href="http://localhost:1313/posts/dsa-binary-search-tree-inorder/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/swift/page/8/">
-      «&nbsp;Prev&nbsp;8/18
+      «&nbsp;Prev&nbsp;8/19
     </a>
-    <a class="next" href="http://localhost:1313/tags/swift/page/10/">Next&nbsp;10/18&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/swift/page/10/">Next&nbsp;10/19&nbsp;»
     </a>
   </nav>
 </footer>
