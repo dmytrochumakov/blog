@@ -11,8 +11,49 @@
     </image>
     <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 05 Feb 2025 14:11:48 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 07 Feb 2025 10:25:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/blind-75/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Word Search</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-word-search/</link>
+      <pubDate>Fri, 07 Feb 2025 10:25:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-word-search/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
+&lt;p&gt;Given an &lt;code&gt;m x n&lt;/code&gt; grid of characters &lt;code&gt;board&lt;/code&gt; and a string &lt;code&gt;word&lt;/code&gt;, return &lt;code&gt;true&lt;/code&gt; if &lt;code&gt;word&lt;/code&gt; exists in the grid.&lt;/p&gt;
+&lt;p&gt;The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-5c4f6&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-5c4f6&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/word2.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: board = [[&amp;#34;A&amp;#34;,&amp;#34;B&amp;#34;,&amp;#34;C&amp;#34;,&amp;#34;E&amp;#34;],[&amp;#34;S&amp;#34;,&amp;#34;F&amp;#34;,&amp;#34;C&amp;#34;,&amp;#34;S&amp;#34;],[&amp;#34;A&amp;#34;,&amp;#34;D&amp;#34;,&amp;#34;E&amp;#34;,&amp;#34;E&amp;#34;]], word = &amp;#34;ABCCED&amp;#34;  
+Output: true  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-aa26b&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-aa26b&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/word-1.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: board = [[&amp;#34;A&amp;#34;,&amp;#34;B&amp;#34;,&amp;#34;C&amp;#34;,&amp;#34;E&amp;#34;],[&amp;#34;S&amp;#34;,&amp;#34;F&amp;#34;,&amp;#34;C&amp;#34;,&amp;#34;S&amp;#34;],[&amp;#34;A&amp;#34;,&amp;#34;D&amp;#34;,&amp;#34;E&amp;#34;,&amp;#34;E&amp;#34;]], word = &amp;#34;SEE&amp;#34;  
+Output: true  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-147e3&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-147e3&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/word3.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Combination Sum</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-combination-sum/</link>
