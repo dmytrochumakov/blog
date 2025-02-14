@@ -189,6 +189,20 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - Binary Search Tree - Postorder
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is the postorder algorithm? The postorder algorithm, similar to the preorder algorithm, returns a list of values in the order they are visited.
+Code Example final class BSTNode&lt;Value: Comparable&gt; { var val: Value? var left: BSTNode? var right: BSTNode? init(val: Value? = nil) { self.val = val } func postorder(_ visited: inout [Value]) -&gt; [Value] { if self.left != nil { self.left!.postorder(&amp;visited) } if self.right != nil { self.right!.postorder(&amp;visited) } if self.val != nil { visited.append(self.val!) } return visited } } Implementation The postorder algorithm:
+Recursively traverse the current node’s left subtree. Recursively traverse the current node’s right subtree. Visit the current node. Time/Space Complexity The time complexity of the postorder algorithm is O(N), where N is the total number of nodes. The space complexity: O(1) if recursion stack space is not considered. Otherwise, O(H), where H is the height of the tree. In the worst case, H can be the same as N (when the tree is skewed). In the best case, H can be the same as logN (when the tree is complete). Thank you for reading! 😊</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-09-27 06:55:55 +0300 EEST'>September 27, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to DSA - Binary Search Tree - Postorder" href="http://localhost:1313/posts/dsa-binary-search-tree-postorder/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">DSA - Binary Search Tree - Traverse - Preorder
     </h2>
   </header>
@@ -244,20 +258,6 @@ The first and simplest (but less efficient) way is by using an array and basic o
   </div>
   <footer class="entry-footer"><span title='2024-09-20 07:15:17 +0300 EEST'>September 20, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Queue" href="http://localhost:1313/posts/dsa-queue/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Adjacency List
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is an Adjacency List? An Adjacency List helps store a list of connections between each vertex in a finite graph.
-Vertex Connects with 0 1 1 0, 2, 3 2 1, 3 3 1, 2 Implementation The addEdge method takes vertices as input and adds an edge to the adjacency list. In this example, the adjacency list is represented as a dictionary that maps vertices to a set of all connected vertices.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-17 07:06:52 +0300 EEST'>September 17, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Adjacency List" href="http://localhost:1313/posts/dsa-adjacency-list/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
