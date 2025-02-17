@@ -246,6 +246,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Word Search II
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Given an m x n board of characters and a list of strings words, return all words on the board.
+Each word must be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
+Examples Input: board = [[&#34;o&#34;,&#34;a&#34;,&#34;a&#34;,&#34;n&#34;],[&#34;e&#34;,&#34;t&#34;,&#34;a&#34;,&#34;e&#34;],[&#34;i&#34;,&#34;h&#34;,&#34;k&#34;,&#34;r&#34;],[&#34;i&#34;,&#34;f&#34;,&#34;l&#34;,&#34;v&#34;]], words = [&#34;oath&#34;,&#34;pea&#34;,&#34;eat&#34;,&#34;rain&#34;] Output: [&#34;eat&#34;,&#34;oath&#34;] ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-17 12:29:06 +0300 +0300'>February 17, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Word Search II" href="http://localhost:1313/posts/leetcode-blind-75-word-search-ii/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Design Add and Search Words Data Structure
     </h2>
   </header>
@@ -302,21 +316,6 @@ The frequency of an element x is the number of times it occurs in the array.
   </div>
   <footer class="entry-footer"><span title='2025-02-05 14:11:48 +0300 +0300'>February 5, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Combination Sum" href="http://localhost:1313/posts/leetcode-blind-75-combination-sum/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Find Median from Data Stream
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem The median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value, and the median is the mean of the two middle values.
-For example, for arr = [2,3,4], the median is 3. For example, for arr = [2,3], the median is (2 &#43; 3) / 2 = 2.5. Implement the MedianFinder class:
-MedianFinder() initializes the MedianFinder object. void addNum(int num) adds the integer num from the data stream to the data structure. double findMedian() returns the median of all elements so far. Answers within 10⁻⁵ of the actual answer will be accepted. Examples Input [&#34;MedianFinder&#34;, &#34;addNum&#34;, &#34;addNum&#34;, &#34;findMedian&#34;, &#34;addNum&#34;, &#34;findMedian&#34;] [[], [1], [2], [], [3], []] Output [null, null, null, 1.5, null, 2.0] Explanation MedianFinder medianFinder = new MedianFinder(); medianFinder.addNum(1); // arr = [1] medianFinder.addNum(2); // arr = [1, 2] medianFinder.findMedian(); // return 1.5 (i.e., (1 &#43; 2) / 2) medianFinder.addNum(3); // arr = [1, 2, 3] medianFinder.findMedian(); // return 2.0 Constraints -10⁵ &lt;= num &lt;= 10⁵ There will be at least one element in the data structure before calling findMedian(). At most 5 * 10⁴ calls will be made to addNum and findMedian(). Follow-up: If all integer numbers from the stream are in the range [0, 100], how would you optimize your solution? If 99% of all integer numbers from the stream are in the range [0, 100], how would you optimize your solution? Sorting Solution class MedianFinder { private var data: [Int] init() { self.data = [] } func addNum(_ num: Int) { data.append(num) } func findMedian() -&gt; Double { data.sort() let n = data.count if (n &amp; 1) != 0 { return Double(data[n / 2]) } else { return (Double(data[n / 2]) &#43; Double(data[n / 2 - 1])) / 2 } } } Explanation One approach to solving this problem is to apply a built-in sorting algorithm. To find the result, we use an array to collect all numbers added using the addNum method.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-02-03 11:28:36 +0300 +0300'>February 3, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Find Median from Data Stream" href="http://localhost:1313/posts/leetcode-blind-75-find-median-from-data-stream/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

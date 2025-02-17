@@ -11,8 +11,38 @@
     </image>
     <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Feb 2025 09:53:50 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 17 Feb 2025 12:29:06 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/blind-75/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Word Search II</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-word-search-ii/</link>
+      <pubDate>Mon, 17 Feb 2025 12:29:06 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-word-search-ii/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
+&lt;p&gt;Given an &lt;code&gt;m x n&lt;/code&gt; &lt;code&gt;board&lt;/code&gt; of characters and a list of strings &lt;code&gt;words&lt;/code&gt;, return all words on the board.&lt;/p&gt;
+&lt;p&gt;Each word must be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-4b0a8&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-4b0a8&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/search1.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: board = [[&amp;#34;o&amp;#34;,&amp;#34;a&amp;#34;,&amp;#34;a&amp;#34;,&amp;#34;n&amp;#34;],[&amp;#34;e&amp;#34;,&amp;#34;t&amp;#34;,&amp;#34;a&amp;#34;,&amp;#34;e&amp;#34;],[&amp;#34;i&amp;#34;,&amp;#34;h&amp;#34;,&amp;#34;k&amp;#34;,&amp;#34;r&amp;#34;],[&amp;#34;i&amp;#34;,&amp;#34;f&amp;#34;,&amp;#34;l&amp;#34;,&amp;#34;v&amp;#34;]], words = [&amp;#34;oath&amp;#34;,&amp;#34;pea&amp;#34;,&amp;#34;eat&amp;#34;,&amp;#34;rain&amp;#34;]
+Output: [&amp;#34;eat&amp;#34;,&amp;#34;oath&amp;#34;]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-7f901&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-7f901&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/search2.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Design Add and Search Words Data Structure</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-design-add-and-search-words-data-structure/</link>
