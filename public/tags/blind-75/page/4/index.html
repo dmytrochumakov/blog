@@ -189,6 +189,20 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Same Tree
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Given the roots of two binary trees p and q, write a function to check if they are the same or not.
+Two binary trees are considered the same if they are structurally identical, and the nodes have the same values.
+Examples Input: p = [1,2,3], q = [1,2,3] Output: true Input: p = [1,2], q = [1,null,2] Output: false ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-02 12:30:42 +0300 +0300'>January 2, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Same Tree" href="http://localhost:1313/posts/leetcode-blind-75-same-tree/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Maximum Depth of Binary Tree
     </h2>
   </header>
@@ -246,26 +260,12 @@ Return true if there is a cycle in the linked list. Otherwise, return false.
   <footer class="entry-footer"><span title='2024-12-26 11:21:15 +0300 +0300'>December 26, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Linked List Cycle" href="http://localhost:1313/posts/leetcode-blind-75-linked-list-cycle/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Remove Nth Node From End of List
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Given the head of a linked list, remove the nth node from the end of the list and return its head.
-Examples Input: head = [1,2,3,4,5], n = 2 Output: [1,2,3,5] Input: head = [1], n = 1 Output: [] Input: head = [1,2], n = 1 Output: [1] Constraints The number of nodes in the list is sz. 1 &lt;= sz &lt;= 30 0 &lt;= Node.val &lt;= 100 1 &lt;= n &lt;= sz Brute Force Solution func removeNthFromEnd(_ head: ListNode?, _ n: Int) -&gt; ListNode? { var nodes: [ListNode] = [] var curr = head while curr != nil { nodes.append(curr!) curr = curr!.next } let removeIndex = nodes.count - n if removeIndex == 0 { return head?.next } nodes[removeIndex - 1].next = nodes[removeIndex].next return head } Explanation One way to solve this problem is to use extra memory by iterating over all elements in head and storing them in an array. The brute force solution allows us to know the index of each element and delete the node.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-12-25 09:22:40 +0300 +0300'>December 25, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Remove Nth Node From End of List" href="http://localhost:1313/posts/leetcode-blind-75-remove-nth-node-from-end-of-list/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/blind-75/page/3/">
-      «&nbsp;Prev&nbsp;3/8
+      «&nbsp;Prev&nbsp;3/9
     </a>
-    <a class="next" href="http://localhost:1313/tags/blind-75/page/5/">Next&nbsp;5/8&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/blind-75/page/5/">Next&nbsp;5/9&nbsp;»
     </a>
   </nav>
 </footer>

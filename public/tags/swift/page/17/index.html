@@ -189,6 +189,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">The Memento Pattern
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is a Memento Pattern? The Memento Pattern helps return an object to one of its previous states; for instance, if the user requests an “undo” operation.
+Source
+What problems does it solve? The Memento Pattern helps solve following problems:
+Undo/Redo Functionality: Memento allows you to capture an object’s state at a specific point in time and store it externally. This enables you to implement undo/redo functionality by restoring the object to its previous state. Checkpointing: In applications where users need to save progress or create checkpoints (such as in games or long processes), the Memento Pattern allows you to save the state of an object at various intervals so that users can return to those points later. Real-world code example // Memento: Represents the state of the TextEditor struct TextEditorMemento { let text: String } // Originator: Creates and stores states in Memento objects class TextEditor { private var text: String = &#34;&#34; func setText(_ text: String) { self.text = text } func getText() -&gt; String { return text } func save() -&gt; TextEditorMemento { return TextEditorMemento(text: text) } func restore(fromMemento memento: TextEditorMemento) { self.text = memento.text } } // Caretaker: Manages the mementos class TextEditorHistory { private var history: [TextEditorMemento] = [] private let editor: TextEditor init(editor: TextEditor) { self.editor = editor } func save() { let snapshot = editor.save() history.append(snapshot) } func undo() { guard let lastSnapshot = history.popLast() else { print(&#34;Nothing to undo.&#34;) return } editor.restore(fromMemento: lastSnapshot) } func printHistory() { print(&#34;Text Editor History:&#34;) for (index, snapshot) in history.enumerated() { print(&#34;Step \(index &#43; 1): \(snapshot.text)&#34;) } print(&#34;Current text: \(editor.getText())&#34;) } } // Example usage let textEditor = TextEditor() let history = TextEditorHistory(editor: textEditor) textEditor.setText(&#34;Hello, World!&#34;) history.save() textEditor.setText(&#34;This is a Swift example.&#34;) history.save() textEditor.setText(&#34;Using Memento Pattern.&#34;) history.save() history.printHistory() history.undo() print(&#34;After Undo:&#34;) history.printHistory() Thank you for reading! 😊</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-22 08:29:30 +0300 +0300'>March 22, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to The Memento Pattern" href="http://localhost:1313/posts/the-memento-pattern/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">The Interpreter Pattern
     </h2>
   </header>
@@ -246,28 +261,12 @@ What problems does it solve? Complex conditional logic: When an object’s behav
   <footer class="entry-footer"><span title='2024-03-10 08:29:30 +0300 +0300'>March 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to The State Pattern" href="http://localhost:1313/posts/the-state-pattern/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">The Dependency Inversion Principle
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is a Dependency Inversion Principle? The Dependency Inversion Principle means that high-level modules should not depend on low-level modules.
-Source
-Source
-What problems does it solve? The Dependency Inversion Principle (DIP) helps solve:
-Rigidity Fragility Immobility problems Real-world code example Violation of DIP // High-level module directly depending on low-level modules class MessageService { func sendMessageViaEmail(message: String) { let emailSender = EmailSender() emailSender.sendMessage(message: message) } func sendMessageViaSMS(message: String) { let smsSender = SMSSender() smsSender.sendMessage(message: message) } func sendMessageViaPushNotification(message: String) { let pushNotificationSender = PushNotificationSender() pushNotificationSender.sendMessage(message: message) } } Adhering to DIP // Protocol defining the interface for sending messages protocol MessageSender { func sendMessage(message: String) } // High-level module depending on abstraction (MessageSender protocol) class MessageService { private let messageSender: MessageSender init(messageSender: MessageSender) { self.messageSender = messageSender } func sendMessage(message: String) { messageSender.sendMessage(message: message) } } // Concrete implementations of MessageSender protocol for different channels class EmailSender: MessageSender { func sendMessage(message: String) { print(&#34;Sending email: \(message)&#34;) } } class SMSSender: MessageSender { func sendMessage(message: String) { print(&#34;Sending SMS: \(message)&#34;) } } class PushNotificationSender: MessageSender { func sendMessage(message: String) { print(&#34;Sending push notification: \(message)&#34;) } } // Example usage let emailSender = EmailSender() let smsSender = SMSSender() let pushNotificationSender = PushNotificationSender() let emailService = MessageService(messageSender: emailSender) let smsService = MessageService(messageSender: smsSender) let pushNotificationService = MessageService(messageSender: pushNotificationSender) emailService.sendMessage(message: &#34;Hello via email&#34;) smsService.sendMessage(message: &#34;Hello via SMS&#34;) pushNotificationService.sendMessage(message: &#34;Hello via push notification&#34;) Thank you for reading! 😊</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-03-05 08:29:30 +0300 +0300'>March 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to The Dependency Inversion Principle" href="http://localhost:1313/posts/the-dependency-inversion-principle/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/swift/page/16/">
-      «&nbsp;Prev&nbsp;16/19
+      «&nbsp;Prev&nbsp;16/20
     </a>
-    <a class="next" href="http://localhost:1313/tags/swift/page/18/">Next&nbsp;18/19&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/swift/page/18/">Next&nbsp;18/20&nbsp;»
     </a>
   </nav>
 </footer>
