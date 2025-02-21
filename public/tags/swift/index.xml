@@ -11,8 +11,23 @@
     </image>
     <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Feb 2025 12:55:16 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 21 Feb 2025 12:49:46 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Clone Graph</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-clone-graph/</link>
+      <pubDate>Fri, 21 Feb 2025 12:49:46 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-clone-graph/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
+&lt;p&gt;Given a reference to a node in a &lt;a href=&#34;https://en.wikipedia.org/wiki/Connectivity_%28graph_theory%29#Connected_graph&#34;&gt;connected&lt;/a&gt; undirected graph, return a &lt;a href=&#34;https://en.wikipedia.org/wiki/Object_copying#Deep_copy&#34;&gt;deep copy&lt;/a&gt; (clone) of the graph.&lt;/p&gt;
+&lt;p&gt;Each node in the graph contains a value (&lt;code&gt;int&lt;/code&gt;) and a list (&lt;code&gt;List[Node]&lt;/code&gt;) of its neighbors:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Node&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;val&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;List&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Node&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;neighbors&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;test-case-format&#34;&gt;Test Case Format&lt;/h4&gt;
+&lt;p&gt;For simplicity, each node&amp;rsquo;s value is the same as the node&amp;rsquo;s index (1-indexed). For example, the first node has &lt;code&gt;val == 1&lt;/code&gt;, the second node has &lt;code&gt;val == 2&lt;/code&gt;, and so on. The graph is represented in the test case using an adjacency list.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Number of Islands</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-number-of-islands/</link>
