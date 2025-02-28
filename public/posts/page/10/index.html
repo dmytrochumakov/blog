@@ -204,6 +204,23 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - Sorting - Selection Sort
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction The selection sort is an in-place comparison sorting algorithm. It’s similar to bubble sort in that it works by repeatedly swapping items in a list and not very efficient on larger lists.
+source
+Code Example func selectionSort(_ array: [Int]) -&gt; [Int] { var A = array let N = array.count for i in 0 ..&lt; N { var jMin = i for j in (i &#43; 1) ..&lt; N { if A[j] &lt; A[jMin] { jMin = j } } if jMin != i { let tmp = A[i] A[i] = A[jMin] A[jMin] = tmp } } return A } Implementation For each index:
+Set jMin index to the current index For each index from i &#43; 1 to the end of the list: If the element at inner index j is less than the element at index jMin, set jMin to j If jMin does not equal i, swap the element at the current index i with the element at index jMin Time/Space Complexity Time complexity: O(N^2)
+Space complexity: O(1) auxiliary
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-23 07:19:52 +0300 EEST'>October 23, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to DSA - Sorting - Selection Sort" href="http://localhost:1313/posts/dsa-sorting-selection-sort/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">DSA - Sorting - Quick Sort
     </h2>
   </header>
@@ -264,21 +281,6 @@ Code Example func bubbleSort(_ array: [Int]) -&gt; [Int] { var A = array var N =
   </div>
   <footer class="entry-footer"><span title='2024-10-11 07:02:51 +0300 EEST'>October 11, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Sorting - Bubble Sort" href="http://localhost:1313/posts/dsa-sorting-bubble-sort/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Hashmap - Resize
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction Previously, we discussed a custom hashmap implementation. That implementation has a lot of collisions because we are using a fixed-size array.
-If we want to reduce the chances of collisions, we can increase the number of slots in the hashmap, or in other words, resize our hashmap. Resizing cannot guarantee that collisions will be entirely eliminated, but it will help reduce the likelihood of one happening.
-Code Example private func loadFactor() -&gt; Double? { if self.hashMap.isEmpty { return nil } else { var filledSlots = 0 for slot in self.hashMap { if slot != nil { filledSlots &#43;= 1 } } return Double(filledSlots / self.hashMap.count) } } private func resize() { if self.hashMap.isEmpty { self.hashMap = [nil] return } guard let load = self.loadFactor() else { return } if load &lt; 0.05 { return } let oldHashMap = self.hashMap self.hashMap = Array(repeating: nil, count: oldHashMap.count * 10) for kvp in oldHashMap { if let kvp = kvp { self.insert(key: kvp.key, value: kvp.value) } } } Implementation When resizing, we create a new hashmap with a larger number of slots. Then, we re-insert all the key-value pairs from the old hashmap into the new one.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-10-09 07:20:29 +0300 EEST'>October 9, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Hashmap - Resize" href="http://localhost:1313/posts/dsa-hashmap-resize/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

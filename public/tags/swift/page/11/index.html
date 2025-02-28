@@ -189,6 +189,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - Hashmap - Resize
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction Previously, we discussed a custom hashmap implementation. That implementation has a lot of collisions because we are using a fixed-size array.
+If we want to reduce the chances of collisions, we can increase the number of slots in the hashmap, or in other words, resize our hashmap. Resizing cannot guarantee that collisions will be entirely eliminated, but it will help reduce the likelihood of one happening.
+Code Example private func loadFactor() -&gt; Double? { if self.hashMap.isEmpty { return nil } else { var filledSlots = 0 for slot in self.hashMap { if slot != nil { filledSlots &#43;= 1 } } return Double(filledSlots / self.hashMap.count) } } private func resize() { if self.hashMap.isEmpty { self.hashMap = [nil] return } guard let load = self.loadFactor() else { return } if load &lt; 0.05 { return } let oldHashMap = self.hashMap self.hashMap = Array(repeating: nil, count: oldHashMap.count * 10) for kvp in oldHashMap { if let kvp = kvp { self.insert(key: kvp.key, value: kvp.value) } } } Implementation When resizing, we create a new hashmap with a larger number of slots. Then, we re-insert all the key-value pairs from the old hashmap into the new one.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-09 07:20:29 +0300 EEST'>October 9, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to DSA - Hashmap - Resize" href="http://localhost:1313/posts/dsa-hashmap-resize/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">DSA - HashMap - Custom Implementation
     </h2>
   </header>
@@ -243,19 +258,6 @@ Recursively traverse the left subtree. Visit the current node. Recursively trave
   </div>
   <footer class="entry-footer"><span title='2024-09-28 07:08:52 +0300 EEST'>September 28, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Binary Search Tree - Inorder" href="http://localhost:1313/posts/dsa-binary-search-tree-inorder/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Binary Search Tree - Exists
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Code Example final class BSTNode&lt;Value: Comparable&gt; { var val: Value? var left: BSTNode? var right: BSTNode? init(val: Value? = nil) { self.val = val } func exists(_ val: Value) -&gt; Bool { // 1 guard let selfVal = self.val else { return false } // 2 if self.val == val { return true } // 3 if val &lt; self.val! { if self.left == nil { return false } return self.left!.exists(val) } // 4 if self.right == nil { return false } // 5 return self.right!.exists(val) } } Implementation The exists algorithm:
-Check if self.val exists. If it does not exist, return false. If it does, move to the next step. Compare self.val with the input value. If the values are equal, return true. If they are not equal, move to the next step. If the input val is less than self.val, and the left node exists, return a recursive call of the exists method on the left node; otherwise, return false. If the input val is greater than self.val, move to the next step. Check if the right node exists. If it does not exist, return false. If it does exist, move to the next step. Return a recursive call of the exists method on the right node. Time/Space Complexity Time complexity: The time complexity of the exists algorithm is O(N), where N is the total number of nodes. Space complexity: O(1) if recursion stack space is not considered. Otherwise, O(H), where H is the height of the tree. In the worst case, H can be the same as N (when the tree is skewed). In the best case, H can be the same as log N (when the tree is complete). Thank you for reading! 😊</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-28 06:56:08 +0300 EEST'>September 28, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Binary Search Tree - Exists" href="http://localhost:1313/posts/dsa-binary-search-tree-exists/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

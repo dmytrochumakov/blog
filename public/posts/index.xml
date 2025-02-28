@@ -11,8 +11,38 @@
     </image>
     <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 25 Feb 2025 13:14:37 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 28 Feb 2025 07:24:12 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Graph Valid Tree</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-graph-valid-tree/</link>
+      <pubDate>Fri, 28 Feb 2025 07:24:12 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-graph-valid-tree/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;You have a graph of &lt;code&gt;n&lt;/code&gt; nodes labeled from &lt;code&gt;0&lt;/code&gt; to &lt;code&gt;n - 1&lt;/code&gt;. You are given an integer &lt;code&gt;n&lt;/code&gt; and a list of &lt;code&gt;edges&lt;/code&gt; where &lt;code&gt;edges[i] = [ai, bi]&lt;/code&gt; indicates that there is an undirected edge between nodes &lt;code&gt;ai&lt;/code&gt; and &lt;code&gt;bi&lt;/code&gt; in the graph.&lt;/p&gt;
+&lt;p&gt;Return &lt;code&gt;true&lt;/code&gt; if the edges of the given graph make up a valid tree, and &lt;code&gt;false&lt;/code&gt; otherwise.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-846c4&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-846c4&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/tree1-graph.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: n = 5, edges = [[0,1],[0,2],[0,3],[1,4]]
+Output: true
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-7f3ac&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-7f3ac&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/tree2-graph.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Course Schedule</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-course-schedule/</link>
