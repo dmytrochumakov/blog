@@ -11,8 +11,19 @@
     </image>
     <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 03 Mar 2025 07:39:10 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 06 Mar 2025 07:40:15 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Alien Dictionary</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-alien-dictionary/</link>
+      <pubDate>Thu, 06 Mar 2025 07:40:15 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-alien-dictionary/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
+&lt;p&gt;There is a new alien language that uses the English alphabet. However, the order of the letters is unknown to you.&lt;/p&gt;
+&lt;p&gt;You are given a list of strings &lt;code&gt;words&lt;/code&gt; from the alien language&amp;rsquo;s dictionary. It is claimed that the strings in &lt;code&gt;words&lt;/code&gt; are sorted lexicographically by the rules of this new language.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A string &lt;code&gt;a&lt;/code&gt; is lexicographically smaller than a string &lt;code&gt;b&lt;/code&gt; if, in the first position where &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt; differ, string &lt;code&gt;a&lt;/code&gt; has a letter that appears earlier in the alien language than the corresponding letter in &lt;code&gt;b&lt;/code&gt;. If the first &lt;code&gt;min(a.length, b.length)&lt;/code&gt; characters do not differ, then the shorter string is the lexicographically smaller one.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Number of Connected Components in an Undirected Graph</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-number-of-connected-components-in-an-undirected-graph/</link>

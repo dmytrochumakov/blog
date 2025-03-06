@@ -199,6 +199,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Contains Duplicate
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+Example Input: nums = [1,2,3,1] Output: true Explanation: The element 1 occurs at indices 0 and 3. Follow-up: Can you come up with an algorithm that has less than O(NlogN) time complexity?
+Brute Force Solution func containsDuplicate(_ nums: [Int]) -&gt; Bool { var nums = nums let N = nums.count if N == 0 { return false } nums.sort() var prev = nums[0] for i in 1 ..&lt; N { let num = nums[i] if num == prev { return true } else { prev = num } } return false } Explanation The brute force solution for this problem uses sorting to allow us to quickly detect duplicates since identical elements will be adjacent. After sorting, it iterates through all elements, checking if the current element is equal to the previous one; if it is, it returns true immediately. If not, it updates prev. If no duplicates are detected, it returns false.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-26 07:27:13 +0300 EEST'>October 26, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Contains Duplicate" href="http://localhost:1313/posts/leetcode-blind-75-contains-duplicate/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Two Sum
     </h2>
   </header>
@@ -260,28 +275,12 @@ Code Example func insertionSort(_ array: [Int]) -&gt; [Int] { var A = array for 
   <footer class="entry-footer"><span title='2024-10-15 07:16:04 +0300 EEST'>October 15, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Sorting - Insertion Sort" href="http://localhost:1313/posts/dsa-sorting-insertion-sort/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Sorting - Merge Sort
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is Merge Sort? Merge sort is a recursive algorithm that uses the divide and conquer algorithm design paradigm to find the solution.
-source
-The merge sort conceptually consists of two separate functions: mergeSort and merge. It works as follows:
-Divide the unsorted list into two equal halves. Recursively sort the two halves. Merge the two halves to form a sorted array. There are multiple implementations of merge sort. I will be focusing on the top-down implementation using lists.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-10-14 07:15:07 +0300 EEST'>October 14, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DSA - Sorting - Merge Sort" href="http://localhost:1313/posts/dsa-sorting-merge-sort/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/page/9/">
-      «&nbsp;Prev&nbsp;9/27
+      «&nbsp;Prev&nbsp;9/28
     </a>
-    <a class="next" href="http://localhost:1313/page/11/">Next&nbsp;11/27&nbsp;»
+    <a class="next" href="http://localhost:1313/page/11/">Next&nbsp;11/28&nbsp;»
     </a>
   </nav>
 </footer>
