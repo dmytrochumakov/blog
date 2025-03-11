@@ -2,28 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/blind-75/</loc>
+    <lastmod>2025-03-11T07:43:01+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/climbing-stairs/</loc>
+    <lastmod>2025-03-11T07:43:01+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-03-11T07:43:01+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/leetcode/</loc>
+    <lastmod>2025-03-11T07:43:01+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/leetcode-blind-75-climbing-stairs/</loc>
+    <lastmod>2025-03-11T07:43:01+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-03-11T07:43:01+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swift/</loc>
+    <lastmod>2025-03-11T07:43:01+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-03-11T07:43:01+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/alien-dictionary/</loc>
     <lastmod>2025-03-06T07:40:15+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/blind-75/</loc>
-    <lastmod>2025-03-06T07:40:15+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-03-06T07:40:15+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/leetcode/</loc>
-    <lastmod>2025-03-06T07:40:15+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/leetcode-blind-75-alien-dictionary/</loc>
-    <lastmod>2025-03-06T07:40:15+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-03-06T07:40:15+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2025-03-06T07:40:15+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-03-06T07:40:15+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/leetcode-blind-75-number-of-connected-components-in-an-undirected-graph/</loc>
