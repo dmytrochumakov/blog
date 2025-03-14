@@ -204,6 +204,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Archiving Xcode project using the CLI
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to archive a project in the fastest way.
+One of such ways is by using the xcodebuild archive command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild archive: Once you’re in the project directory, you can run xcodebuild archive with the appropriate parameters to build your project. Example: xcodebuild archive -scheme YourSchemeName -archivePath ~/Desktop/YourAppName.xcarchive Another way is by integrating fastlane into your workflow: Outline of the process Install Fastlane: If you haven’t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-16 13:46:03 +0300 EEST'>April 16, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Archiving Xcode project using the CLI" href="http://localhost:1313/posts/archiving-xcode-project-using-the-cli/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Testing Xcode project using the CLI
     </h2>
   </header>
@@ -258,21 +272,6 @@ Undo/Redo Functionality: Memento allows you to capture an object’s state at a 
   </div>
   <footer class="entry-footer"><span title='2024-03-22 08:29:30 +0300 +0300'>March 22, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to The Memento Pattern" href="http://localhost:1313/posts/the-memento-pattern/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">The Interpreter Pattern
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is an Interpreter Pattern? The Interpreter Pattern helps implement a simple language and defines a class based representation for its grammar along with an interpreter to interpret its sentences.
-Source
-What problems does it solve? The Interpreter Pattern helps solve following problems:
-Language Interpretation: When you have a language or syntax that needs to be interpreted, such as mathematical expressions, regular expressions, or domain-specific languages (DSLs), the Interpreter Pattern helps in implementing the logic to interpret and execute these expressions. Extensibility: The Interpreter Pattern allows for easy addition of new grammar rules or language constructs without modifying the core interpreter logic. This promotes extensibility, enabling the interpreter to support new features or languages with minimal changes. Separation of Concerns: It separates the grammar definition from the interpretation logic. This separation of concerns makes the codebase modular and easier to maintain. Changes to the grammar or language rules do not affect the interpretation logic, and vice versa. Real-world code example // Define the protocol for the expression protocol Expression { func interpret() -&gt; Int } // Concrete expression for a number class NumberExpression: Expression { private var value: Int init(_ value: Int) { self.value = value } func interpret() -&gt; Int { return value } } // Concrete expression for addition class AdditionExpression: Expression { private var left: Expression private var right: Expression init(_ left: Expression, _ right: Expression) { self.left = left self.right = right } func interpret() -&gt; Int { return left.interpret() &#43; right.interpret() } } // Concrete expression for subtraction class SubtractionExpression: Expression { private var left: Expression private var right: Expression init(_ left: Expression, _ right: Expression) { self.left = left self.right = right } func interpret() -&gt; Int { return left.interpret() - right.interpret() } } // Concrete expression for multiplication class MultiplicationExpression: Expression { private var left: Expression private var right: Expression init(_ left: Expression, _ right: Expression) { self.left = left self.right = right } func interpret() -&gt; Int { return left.interpret() * right.interpret() } } // Concrete expression for division class DivisionExpression: Expression { private var left: Expression private var right: Expression init(_ left: Expression, _ right: Expression) { self.left = left self.right = right } func interpret() -&gt; Int { let divisor = right.interpret() if divisor != 0 { return left.interpret() / divisor } else { // Handle division by zero error fatalError(&#34;Division by zero&#34;) } } } // Usage let expression = AdditionExpression( MultiplicationExpression(NumberExpression(2), NumberExpression(3)), DivisionExpression(NumberExpression(10), NumberExpression(5)) ) // Interpret the expression let result = expression.interpret() print(&#34;Result: \(result)&#34;) Thank you for reading! 😊</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-03-18 08:29:30 +0300 +0300'>March 18, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to The Interpreter Pattern" href="http://localhost:1313/posts/the-interpreter-pattern/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
