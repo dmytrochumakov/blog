@@ -11,8 +11,25 @@
     </image>
     <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Mar 2025 07:39:02 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 23 Mar 2025 08:03:03 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Decode Ways</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-decode-ways/</link>
+      <pubDate>Sun, 23 Mar 2025 08:03:03 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-decode-ways/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
+&lt;p&gt;You have intercepted a secret message encoded as a string of numbers. The message is decoded via the following mapping:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;1&amp;quot;&lt;/code&gt; → &lt;code&gt;&#39;A&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;2&amp;quot;&lt;/code&gt; → &lt;code&gt;&#39;B&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;…&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;25&amp;quot;&lt;/code&gt; → &lt;code&gt;&#39;Y&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;26&amp;quot;&lt;/code&gt; → &lt;code&gt;&#39;Z&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;However, while decoding the message, you realize that there are many different ways to decode it because some codes are contained within others (e.g., &lt;code&gt;&amp;quot;2&amp;quot;&lt;/code&gt; and &lt;code&gt;&amp;quot;5&amp;quot;&lt;/code&gt; vs. &lt;code&gt;&amp;quot;25&amp;quot;&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;For example, &lt;code&gt;&amp;quot;11106&amp;quot;&lt;/code&gt; can be decoded into:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Palindromic Substrings</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-palindromic-substrings/</link>
