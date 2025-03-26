@@ -189,6 +189,36 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">The Flyweight Pattern
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is a Flyweight Pattern? The Flyweight Pattern refers to an object that minimizes memory usage by sharing some of its data with other similar objects.
+Source
+What problems does it solve? The Flyweight Pattern helps solve following problems:
+Large Memory Footprint: When dealing with a large number of objects, especially if these objects share a significant amount of common state, traditional object creation can lead to excessive memory consumption. The Flyweight Pattern reduces memory usage by sharing this common state among multiple objects. Performance Overhead: Creating and managing a large number of objects can also introduce performance overhead due to memory allocation, deallocation, and initialization. By reusing shared objects and minimizing the creation of new objects, the Flyweight Pattern can improve performance. Object Creation Cost: Creating new objects can be costly in terms of time and resources, especially if the objects require complex initialization. By reusing existing objects, the Flyweight Pattern reduces the need for creating new objects, thereby reducing object creation costs. Real-world code example // Flyweight protocol defining the interface for shapes protocol Shape { func draw(at point: CGPoint) } // Concrete flyweight class representing a circle class Circle: Shape { private let radius: CGFloat private let fillColor: UIColor init(radius: CGFloat, fillColor: UIColor) { self.radius = radius self.fillColor = fillColor } func draw(at point: CGPoint) { print(&#34;Drawing Circle at (\(point.x), \(point.y)) with radius \(radius) and fill color \(fillColor)&#34;) // Actual drawing logic would go here } } // Flyweight factory class responsible for creating and managing flyweight objects class ShapeFactory { private var flyweights = [String: Shape]() func getCircle(radius: CGFloat, fillColor: UIColor) -&gt; Shape { let key = &#34;Circle-\(radius)-\(fillColor)&#34; if let existingShape = flyweights[key] { return existingShape } else { let newShape = Circle(radius: radius, fillColor: fillColor) flyweights[key] = newShape return newShape } } } // Client code let shapeFactory = ShapeFactory() // Request for circles with different properties let circle1 = shapeFactory.getCircle(radius: 10, fillColor: .red) let circle2 = shapeFactory.getCircle(radius: 10, fillColor: .red) // Reusing the same circle object let circle3 = shapeFactory.getCircle(radius: 20, fillColor: .blue) // Drawing circles circle1.draw(at: CGPoint(x: 100, y: 100)) circle2.draw(at: CGPoint(x: 200, y: 200)) circle3.draw(at: CGPoint(x: 300, y: 300)) Thank you for reading! 😊</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-17 08:29:30 +0300 +0300'>March 17, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to The Flyweight Pattern" href="http://localhost:1313/posts/the-flyweight-pattern/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Chain Of Responsibility Pattern
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is a Chain Of Responsibility Pattern? The Chain Of Responsibility Pattern helps create a chain of objects to examine requests. Each object in turn examines a request and either handles it or passes onto the next object in the chain.
+Source
+What problems does it solve? The Chain Of Responsibility Pattern (CoR) helps solve following problems:
+Dynamic Request Handling: It enables dynamic assignment of responsibilities at runtime. Handlers can be added, removed, or reordered without affecting the client’s code. This flexibility allows for easier maintenance and extension of the system. Decoupling Sender and Receiver: In traditional systems, a sender often needs to know the exact receiver of a request, leading to tight coupling between them. The CoR pattern decouples senders from receivers by allowing multiple objects to handle a request without the sender knowing the specific handler. Real-world code example // Protocol defining the handler interface protocol PurchaseHandler { var next: PurchaseHandler? { get set } func handleRequest(amount: Double) } // Concrete handlers class SmallPurchaseHandler: PurchaseHandler { var next: PurchaseHandler? let maxAmount: Double = 100.0 func handleRequest(amount: Double) { if amount &lt;= maxAmount { print(&#34;SmallPurchaseHandler: Purchase approved for $\(amount)&#34;) } else if let nextHandler = next { print(&#34;SmallPurchaseHandler: Passing request to next handler&#34;) nextHandler.handleRequest(amount: amount) } else { print(&#34;SmallPurchaseHandler: No handler available, purchase rejected&#34;) } } } class MediumPurchaseHandler: PurchaseHandler { var next: PurchaseHandler? let maxAmount: Double = 500.0 func handleRequest(amount: Double) { if amount &lt;= maxAmount { print(&#34;MediumPurchaseHandler: Purchase approved for $\(amount)&#34;) } else if let nextHandler = next { print(&#34;MediumPurchaseHandler: Passing request to next handler&#34;) nextHandler.handleRequest(amount: amount) } else { print(&#34;MediumPurchaseHandler: No handler available, purchase rejected&#34;) } } } class LargePurchaseHandler: PurchaseHandler { var next: PurchaseHandler? func handleRequest(amount: Double) { print(&#34;LargePurchaseHandler: Purchase approved for $\(amount)&#34;) } } // Usage func main() { let smallHandler = SmallPurchaseHandler() let mediumHandler = MediumPurchaseHandler() let largeHandler = LargePurchaseHandler() // Connecting handlers into a chain smallHandler.next = mediumHandler mediumHandler.next = largeHandler smallHandler.handleRequest(amount: 50.0) smallHandler.handleRequest(amount: 200.0) smallHandler.handleRequest(amount: 1000.0) } Thank you for reading! 😊</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-15 08:29:30 +0300 +0300'>March 15, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to The Chain Of Responsibility Pattern" href="http://localhost:1313/posts/the-chain-of-responsibility-pattern/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">The State Pattern
     </h2>
   </header>
@@ -232,34 +262,6 @@ actor DatabaseManager { private var data: [String: String] = [:] func readData(k
   </div>
   <footer class="entry-footer"><span title='2024-02-04 08:29:30 +0300 +0300'>February 4, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Modern Concurrency" href="http://localhost:1313/posts/modern-concurrency/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">What are Threads in Swift?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is the Thread? A Thread is a small set of instructions that can be executed independently from the main program. Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time. The Thread has its own stack, registers, and program counters.
-Threads share memory address space, and it is possible to communicate between Threads using shared memory space. ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-20 08:29:30 +0300 +0300'>January 20, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to What are Threads in Swift?" href="http://localhost:1313/posts/what-are-threads-in-swift/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DispatchGroup in Swift
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is DispatchGroup? DispatchGroup provides a mechanism to track the completion group of tasks.
-How DispatchGroup works? DispatchGroup has three main methods, enter, leave and notify, that allow you to control the completion of a specific task.
-let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() dispatchGroup.notify(queue: .main) {} Let`s talk about each of these methods. enter — manually indicate a block has entered group. leave — manually indicate a block in the group has been completed. notify(queue: ) — schedule a block to be submitted to a queue when all the blocks associated with a group have been completed. The queue parameter is the queue to which the supplied block will be submitted when the group is complete.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-10 00:00:00 +0300 +0300'>January 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to DispatchGroup in Swift" href="http://localhost:1313/posts/dispatchgroup-in-swift/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

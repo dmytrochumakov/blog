@@ -189,6 +189,36 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Merge Two Sorted Lists
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem You are given the heads of two sorted linked lists, list1 and list2.
+Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
+Return the head of the merged linked list.
+Examples Input: list1 = [1,2,4], list2 = [1,3,4] Output: [1,1,2,3,4,4] Input: list1 = [], list2 = [] Output: [] Input: list1 = [], list2 = [0] Output: [0] Constraints The number of nodes in both lists is in the range [0, 50]. -100 &lt;= Node.val &lt;= 100 Both list1 and list2 are sorted in non-decreasing order. Recursive Solution func mergeTwoLists(_ list1: ListNode?, _ list2: ListNode?) -&gt; ListNode? { guard let list1 = list1 else { return list2 } guard let list2 = list2 else { return list1 } if list1.val &lt;= list2.val { list1.next = mergeTwoLists(list1.next, list2) return list1 } else { list2.next = mergeTwoLists(list1, list2.next) return list2 } } Explanation Before moving to the part where we use recursion, we need to handle the base case and check list1 and list2 for nil values. Then we compare the node values and move the next pointer accordingly.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-20 09:11:43 +0300 +0300'>December 20, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Merge Two Sorted Lists" href="http://localhost:1313/posts/leetcode-blind-75-merge-two-sorted-lists/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Reverse Linked List
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem Given the head of a singly linked list, reverse the list, and return the reversed list.
+Examples Input: head = [1,2,3,4,5] Output: [5,4,3,2,1] Input: head = [1,2] Output: [2,1] Input: head = [] Output: [] Constraints The number of nodes in the list is in the range [0, 5000]. -5000 &lt;= Node.val &lt;= 5000 Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-17 07:16:48 +0300 +0300'>December 17, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Reverse Linked List" href="http://localhost:1313/posts/leetcode-blind-75-reverse-linked-list/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Search in Rotated Sorted Array
     </h2>
   </header>
@@ -233,44 +263,12 @@ Open brackets must be closed by the same type of brackets. Open brackets must be
   <footer class="entry-footer"><span title='2024-12-05 07:25:46 +0300 +0300'>December 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Valid Parentheses" href="http://localhost:1313/posts/leetcode-blind-75-valid-parentheses/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Minimum Window Substring
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Given two strings s and t of lengths m and n, respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string &#34;&#34;.
-A substring is a contiguous, non-empty sequence of characters within a string.
-The test cases will be generated such that the answer is unique.
-Examples Input: s = &#34;ADOBECODEBANC&#34;, t = &#34;ABC&#34; Output: &#34;BANC&#34; Explanation: The minimum window substring &#34;BANC&#34; includes &#39;A&#39;, &#39;B&#39;, and &#39;C&#39; from string t. Input: s = &#34;a&#34;, t = &#34;a&#34; Output: &#34;a&#34; Explanation: The entire string s is the minimum window. Input: s = &#34;a&#34;, t = &#34;aa&#34; Output: &#34;&#34; Explanation: Both &#39;a&#39;s from t must be included in the window. Since the largest window of s only has one &#39;a&#39;, return an empty string. Constraints m == s.length n == t.length 1 &lt;= m, n &lt;= 10⁵ s and t consist of uppercase and lowercase English letters. Follow-up: Could you find an algorithm that runs in O(m &#43; n) time?
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-12-03 07:09:24 +0300 +0300'>December 3, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Minimum Window Substring" href="http://localhost:1313/posts/leetcode-blind-75-minimum-window-substring/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Longest Repeating Character Replacement
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The problem You are given a string s and an integer k. You can choose any character of the string and change it to any other uppercase English character. You can perform this operation at most k times.
-Return the length of the longest substring containing the same letter you can get after performing the above operations.
-Examples Input: s = &#34;ABAB&#34;, k = 2 Output: 4 Explanation: Replace the two &#39;A&#39;s with two &#39;B&#39;s or vice versa. Input: s = &#34;AABABBA&#34;, k = 1 Output: 4 Explanation: Replace the one &#39;A&#39; in the middle with &#39;B&#39; and form &#34;AABBBBA&#34;. The substring &#34;BBBB&#34; has the longest repeating letters, which is 4. There may exist other ways to achieve this answer too. Constraints 1 &lt;= s.length &lt;= 105 s consists of only uppercase English letters. 0 &lt;= k &lt;= s.length Brute force solution func characterReplacement(_ s: String, _ k: Int) -&gt; Int { let n = s.count let s = Array(s) var res = 0 for i in 0 ..&lt; n { var count: [Character: Int] = [:] var maxF = 0 for j in i ..&lt; n { count[s[j], default: 0] &#43;= 1 maxF = max(maxF, count[s[j]]!) let windowSize = (j - i &#43; 1) let numOfCharsToReplace = (windowSize - maxF) let canReplace = (numOfCharsToReplace &lt;= k) if canReplace { res = max(res, windowSize) } } } return res } Explanation First things first, we need to figure out which character we are going to replace. We can do this by using a dictionary. This way, we can calculate the most frequent character in the substring. After that, we will be able to calculate the number of characters to replace and check if we can replace the character.
-This algorithm is not very fast and takes O(n^2) time. We can improve it further and optimize it to achieve O(n) time complexity.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-11-29 07:27:59 +0300 +0300'>November 29, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Longest Repeating Character Replacement" href="http://localhost:1313/posts/leetcode-blind-75-longest-repeating-character-replacement/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/leetcode/page/7/">
-      «&nbsp;Prev&nbsp;7/11
+      «&nbsp;Prev&nbsp;7/12
     </a>
-    <a class="next" href="http://localhost:1313/tags/leetcode/page/9/">Next&nbsp;9/11&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/leetcode/page/9/">Next&nbsp;9/12&nbsp;»
     </a>
   </nav>
 </footer>

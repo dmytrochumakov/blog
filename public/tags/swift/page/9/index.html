@@ -189,6 +189,38 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Minimum Window Substring
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Given two strings s and t of lengths m and n, respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string &#34;&#34;.
+A substring is a contiguous, non-empty sequence of characters within a string.
+The test cases will be generated such that the answer is unique.
+Examples Input: s = &#34;ADOBECODEBANC&#34;, t = &#34;ABC&#34; Output: &#34;BANC&#34; Explanation: The minimum window substring &#34;BANC&#34; includes &#39;A&#39;, &#39;B&#39;, and &#39;C&#39; from string t. Input: s = &#34;a&#34;, t = &#34;a&#34; Output: &#34;a&#34; Explanation: The entire string s is the minimum window. Input: s = &#34;a&#34;, t = &#34;aa&#34; Output: &#34;&#34; Explanation: Both &#39;a&#39;s from t must be included in the window. Since the largest window of s only has one &#39;a&#39;, return an empty string. Constraints m == s.length n == t.length 1 &lt;= m, n &lt;= 10⁵ s and t consist of uppercase and lowercase English letters. Follow-up: Could you find an algorithm that runs in O(m &#43; n) time?
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-03 07:09:24 +0300 +0300'>December 3, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Minimum Window Substring" href="http://localhost:1313/posts/leetcode-blind-75-minimum-window-substring/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Longest Repeating Character Replacement
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem You are given a string s and an integer k. You can choose any character of the string and change it to any other uppercase English character. You can perform this operation at most k times.
+Return the length of the longest substring containing the same letter you can get after performing the above operations.
+Examples Input: s = &#34;ABAB&#34;, k = 2 Output: 4 Explanation: Replace the two &#39;A&#39;s with two &#39;B&#39;s or vice versa. Input: s = &#34;AABABBA&#34;, k = 1 Output: 4 Explanation: Replace the one &#39;A&#39; in the middle with &#39;B&#39; and form &#34;AABBBBA&#34;. The substring &#34;BBBB&#34; has the longest repeating letters, which is 4. There may exist other ways to achieve this answer too. Constraints 1 &lt;= s.length &lt;= 105 s consists of only uppercase English letters. 0 &lt;= k &lt;= s.length Brute force solution func characterReplacement(_ s: String, _ k: Int) -&gt; Int { let n = s.count let s = Array(s) var res = 0 for i in 0 ..&lt; n { var count: [Character: Int] = [:] var maxF = 0 for j in i ..&lt; n { count[s[j], default: 0] &#43;= 1 maxF = max(maxF, count[s[j]]!) let windowSize = (j - i &#43; 1) let numOfCharsToReplace = (windowSize - maxF) let canReplace = (numOfCharsToReplace &lt;= k) if canReplace { res = max(res, windowSize) } } } return res } Explanation First things first, we need to figure out which character we are going to replace. We can do this by using a dictionary. This way, we can calculate the most frequent character in the substring. After that, we will be able to calculate the number of characters to replace and check if we can replace the character.
+This algorithm is not very fast and takes O(n^2) time. We can improve it further and optimize it to achieve O(n) time complexity.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-11-29 07:27:59 +0300 +0300'>November 29, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Longest Repeating Character Replacement" href="http://localhost:1313/posts/leetcode-blind-75-longest-repeating-character-replacement/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Longest Substring Without Repeating Characters
     </h2>
   </header>
@@ -233,37 +265,6 @@ Notice that you may not slant the container.
   </div>
   <footer class="entry-footer"><span title='2024-11-20 06:57:55 +0300 +0300'>November 20, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Container With Most Water" href="http://localhost:1313/posts/leetcode-blind-75-container-with-most-water/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - 3Sum
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] &#43; nums[j] &#43; nums[k] == 0.
-Notice that the solution set must not contain duplicate triplets.
-Examples Input: nums = [-1,0,1,2,-1,-4] Output: [[-1,-1,2],[-1,0,1]] Explanation: nums[0] &#43; nums[1] &#43; nums[2] = (-1) &#43; 0 &#43; 1 = 0. nums[1] &#43; nums[2] &#43; nums[4] = 0 &#43; 1 &#43; (-1) = 0. nums[0] &#43; nums[3] &#43; nums[4] = (-1) &#43; 2 &#43; (-1) = 0. The distinct triplets are [-1,0,1] and [-1,-1,2]. Notice that the order of the output and the order of the triplets does not matter. Input: nums = [0,1,1] Output: [] Explanation: The only possible triplet does not sum up to 0. Input: nums = [0,0,0] Output: [[0,0,0]] Explanation: The only possible triplet sums up to 0. Constraints 3 &lt;= nums.length &lt;= 3000 -10⁵ &lt;= nums[i] &lt;= 10⁵ Brute Force Solution func threeSum(_ nums: [Int]) -&gt; [[Int]] { var nums = nums let n = nums.count var res: Set&lt;[Int]&gt; = [] nums.sort() for i in 0 ..&lt; n { for j in i &#43; 1 ..&lt; n { for k in j &#43; 1 ..&lt; n { if nums[i] &#43; nums[j] &#43; nums[k] == 0 { let val = [nums[i], nums[j], nums[k]] res.insert(val) } } } } return Array(res) } Explanation Let’s start with the brute force solution.
-According to the problem, we need to find triplet elements that, when added together, equal 0. By looking at examples, the first thing that comes to mind is to use three loops, add each of the elements, and compare the result with 0. If the result equals 0, we add the elements to the result.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-11-16 07:20:13 +0300 +0300'>November 16, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - 3Sum" href="http://localhost:1313/posts/leetcode-blind-75-3sum/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Valid Palindrome
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Given a string s, return true if it is a palindrome, or false otherwise.
-A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
-Examples Input: s = &#34;A man, a plan, a canal: Panama&#34; Output: true Explanation: &#34;amanaplanacanalpanama&#34; is a palindrome. Input: s = &#34;race a car&#34; Output: false Explanation: &#34;raceacar&#34; is not a palindrome. Input: s = &#34; &#34; Output: true Explanation: s is an empty string &#34;&#34; after removing non-alphanumeric characters. Since an empty string reads the same forward and backward, it is a palindrome. Constraints 1 &lt;= s.length &lt;= 2 * 10^5 s consists only of printable ASCII characters. Brute Force Solution func isPalindrome(_ s: String) -&gt; Bool { var newStr = &#34;&#34; for c in s { if c.isLetter || c.isNumber { newStr &#43;= c.lowercased() } } return newStr == String(newStr.reversed()) } Explanation Let’s start with the brute force solution. According to the description, we need to check if the string contains only lowercase, alphanumeric characters and reads the same forward and backward. In Swift, you can check this using the built-in isLetter and isNumber properties. Based on this information, we iterate through all characters in the s string, verify that each character is a letter or number, update newStr with the current lowercased character, and compare the result with its reversed version.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-11-14 07:00:45 +0300 +0300'>November 14, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Valid Palindrome" href="http://localhost:1313/posts/leetcode-blind-75-valid-palindrome/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

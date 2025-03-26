@@ -1,7 +1,7 @@
 +++
 title = "LeetCode - Blind 75 - Decode Ways"
 date = 2025-03-23T08:03:03+03:00
-ags = ["LeetCode", "Blind 75", "Decode Ways", "Swift"]
+tags = ["LeetCode", "Blind 75", "Decode Ways", "Swift"]
 draft = false
 +++
 

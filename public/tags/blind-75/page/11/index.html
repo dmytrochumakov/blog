@@ -189,6 +189,36 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Group Anagrams
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, using all the original letters exactly once.
+Examples Input: strs = [&#34;eat&#34;,&#34;tea&#34;,&#34;tan&#34;,&#34;ate&#34;,&#34;nat&#34;,&#34;bat&#34;] Output: [[&#34;bat&#34;],[&#34;nat&#34;,&#34;tan&#34;],[&#34;ate&#34;,&#34;eat&#34;,&#34;tea&#34;]] Explanation: * There is no string in strs that can be rearranged to form &#34;bat.&#34; * The strings &#34;nat&#34; and &#34;tan&#34; are anagrams as they can be rearranged to form each other. * The strings &#34;ate,&#34; &#34;eat,&#34; and &#34;tea&#34; are anagrams as they can be rearranged to form each other. Input: strs = [&#34;&#34;] Output: [[&#34;&#34;]] Input: strs = [&#34;a&#34;] Output: [[&#34;a&#34;]] Constraints 1 &lt;= strs.length &lt;= 1000 0 &lt;= strs[i].length &lt;= 100 strs[i] is made up of lowercase English letters. Brute force solution func groupAnagrams(_ strs: [String]) -&gt; [[String]] { var res: [String: [String]] = [:] for s in strs { let sortedS = String(s.sorted()) res[sortedS, default: []].append(s) } return Array(res.values) } Explanation The brute force solution:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-11-01 07:20:55 +0300 +0300'>November 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Group Anagrams" href="http://localhost:1313/posts/leetcode-blind-75-group-anagrams/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Valid Anagram
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, using all the original letters exactly once.
+Examples Input: s = &#34;anagram&#34;, t = &#34;nagaram&#34; Output: true Input: s = &#34;rat&#34;, t = &#34;car&#34; Output: false Follow-up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-30 07:26:31 +0300 +0300'>October 30, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Valid Anagram" href="http://localhost:1313/posts/leetcode-blind-75-valid-anagram/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Contains Duplicate
     </h2>
   </header>
