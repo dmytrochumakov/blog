@@ -11,20 +11,34 @@
     </image>
     <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 Mar 2025 07:28:21 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 31 Mar 2025 07:40:53 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blind 75</title>
       <link>http://localhost:1313/tags/blind-75/</link>
-      <pubDate>Fri, 28 Mar 2025 07:28:21 +0300</pubDate>
+      <pubDate>Mon, 31 Mar 2025 07:40:53 +0300</pubDate>
       <guid>http://localhost:1313/tags/blind-75/</guid>
       <description></description>
     </item>
     <item>
       <title>LeetCode</title>
       <link>http://localhost:1313/tags/leetcode/</link>
-      <pubDate>Fri, 28 Mar 2025 07:28:21 +0300</pubDate>
+      <pubDate>Mon, 31 Mar 2025 07:40:53 +0300</pubDate>
       <guid>http://localhost:1313/tags/leetcode/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Swift</title>
+      <link>http://localhost:1313/tags/swift/</link>
+      <pubDate>Mon, 31 Mar 2025 07:40:53 +0300</pubDate>
+      <guid>http://localhost:1313/tags/swift/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Word Break</title>
+      <link>http://localhost:1313/tags/word-break/</link>
+      <pubDate>Mon, 31 Mar 2025 07:40:53 +0300</pubDate>
+      <guid>http://localhost:1313/tags/word-break/</guid>
       <description></description>
     </item>
     <item>
@@ -32,13 +46,6 @@
       <link>http://localhost:1313/tags/maximum-product-subarray/</link>
       <pubDate>Fri, 28 Mar 2025 07:28:21 +0300</pubDate>
       <guid>http://localhost:1313/tags/maximum-product-subarray/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Swift</title>
-      <link>http://localhost:1313/tags/swift/</link>
-      <pubDate>Fri, 28 Mar 2025 07:28:21 +0300</pubDate>
-      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>

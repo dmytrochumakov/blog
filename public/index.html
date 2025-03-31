@@ -246,6 +246,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Word Break
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words.
+Note that the same word in the dictionary may be reused multiple times in the segmentation.
+Examples Input: s = &#34;leetcode&#34;, wordDict = [&#34;leet&#34;,&#34;code&#34;] Output: true Explanation: Return true because &#34;leetcode&#34; can be segmented as &#34;leet code&#34;. Input: s = &#34;applepenapple&#34;, wordDict = [&#34;apple&#34;,&#34;pen&#34;] Output: true Explanation: Return true because &#34;applepenapple&#34; can be segmented as &#34;apple pen apple&#34;. Note that you are allowed to reuse a dictionary word. Input: s = &#34;catsandog&#34;, wordDict = [&#34;cats&#34;,&#34;dog&#34;,&#34;sand&#34;,&#34;and&#34;,&#34;cat&#34;] Output: false Constraints 1 &lt;= s.length &lt;= 300 1 &lt;= wordDict.length &lt;= 1000 1 &lt;= wordDict[i].length &lt;= 20 s and wordDict[i] consist of only lowercase English letters. All the strings of wordDict are unique. Recursion solution func wordBreak(_ s: String, _ wordDict: [String]) -&gt; Bool { let sCount = s.count let sArray = Array(s) func dfs(_ i: Int) -&gt; Bool { if i == sCount { return true } for w in wordDict { let wCount = w.count if ((i &#43; wCount) &lt;= sCount &amp;&amp; String(sArray[i ..&lt; i &#43; wCount]) == w ) { if dfs(i &#43; wCount) { return true } } } return false } return dfs(0) } Explanation There are multiple ways to solve this problem. For example, we can check every character in input s and compare it with characters in wordDict, but this approach is inefficient from a time complexity perspective. Instead:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-03-31 07:40:53 +0300 EEST'>March 31, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Word Break" href="http://localhost:1313/posts/leetcode-blind-75-word-break/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Maximum Product Subarray
     </h2>
   </header>
@@ -306,21 +321,6 @@ Examples Input: s = &#34;abc&#34; Output: 3 Explanation: Three palindromic strin
   </div>
   <footer class="entry-footer"><span title='2025-03-21 07:39:02 +0300 +0300'>March 21, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Palindromic Substrings" href="http://localhost:1313/posts/leetcode-blind-75-palindromic-substrings/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Longest Palindromic Substring
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Given a string s, return the longest palindromic substring in s.
-A string is palindromic if it reads the same forward and backward.
-Examples Input: s = &#34;babad&#34; Output: &#34;bab&#34; Explanation: &#34;aba&#34; is also a valid answer. Input: s = &#34;cbbd&#34; Output: &#34;bb&#34; Constraints 1 &lt;= s.length &lt;= 1000 s consists of only digits and English letters. Brute Force Solution func longestPalindrome(_ s: String) -&gt; String { let sArray = Array(s) var res = &#34;&#34; var resLen = 0 let n = s.count for i in 0 ..&lt; n { for j in i ..&lt; n { var l = i var r = j while l &lt; r &amp;&amp; sArray[l] == sArray[r] { l &#43;= 1 r -= 1 } if l &gt;= r &amp;&amp; resLen &lt; (j - i &#43; 1) { res = String(sArray[i ..&lt; j &#43; 1]) resLen = j - i &#43; 1 } } } return res } Explanation In the first example, we are given the input &#34;babad&#34;. Let’s visualize it and try to find the longest palindromic substring.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-19 07:54:06 +0300 +0300'>March 19, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Longest Palindromic Substring" href="http://localhost:1313/posts/leetcode-blind-75-longest-palindromic-substring/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
