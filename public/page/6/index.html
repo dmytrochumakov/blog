@@ -199,6 +199,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Construct Binary Tree from Preorder and Inorder Traversal
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Given two integer arrays preorder and inorder where preorder is the preorder traversal of a binary tree and inorder is the inorder traversal of the same tree, construct and return the binary tree.
+Examples Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7] Output: [3,9,20,null,null,15,7] Input: preorder = [-1], inorder = [-1] Output: [-1] Constraints 1 &lt;= preorder.length &lt;= 3000 inorder.length == preorder.length -3000 &lt;= preorder[i], inorder[i] &lt;= 3000 preorder and inorder consist of unique values. Each value of inorder also appears in preorder. preorder is guaranteed to be the preorder traversal of the tree. inorder is guaranteed to be the inorder traversal of the tree. Depth First Search Solution func buildTree(_ preorder: [Int], _ inorder: [Int]) -&gt; TreeNode? { if preorder.isEmpty || inorder.isEmpty { return nil } let rootVal = preorder[0] let root = TreeNode(rootVal) guard let mid = inorder.firstIndex(of: rootVal) else { return nil } if mid &gt; 0 { root.left = buildTree(Array(preorder[1...mid]), Array(inorder[0..&lt;mid])) } if mid &lt; inorder.count - 1 { root.right = buildTree(Array(preorder[mid &#43; 1..&lt;preorder.count]), Array(inorder[mid &#43; 1..&lt;inorder.count])) } return root } Explanation We can solve this problem by understanding how preorder and inorder traversal work.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-23 15:17:04 +0300 +0300'>January 23, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Construct Binary Tree from Preorder and Inorder Traversal" href="http://localhost:1313/posts/leetcode-blind-75-construct-binary-tree-from-preorder-and-inorder-traversal/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Kth Smallest Element in a BST
     </h2>
   </header>
@@ -253,26 +267,12 @@ Examples ...</p>
   <footer class="entry-footer"><span title='2025-01-07 12:19:23 +0300 +0300'>January 7, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Lowest Common Ancestor of a Binary Search Tree" href="http://localhost:1313/posts/leetcode-blind-75-lowest-common-ancestor-of-a-binary-search-tree/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Subtree of Another Tree
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Given the roots of two binary trees root and subRoot, return true if there is a subtree of root with the same structure and node values as subRoot, and false otherwise.
-A subtree of a binary tree tree is a tree that consists of a node in tree and all of this node’s descendants. The tree tree could also be considered as a subtree of itself.
-Examples ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-01-05 12:34:59 +0300 +0300'>January 5, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Subtree of Another Tree" href="http://localhost:1313/posts/leetcode-blind-75-subtree-of-another-tree/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/page/5/">
-      «&nbsp;Prev&nbsp;5/29
+      «&nbsp;Prev&nbsp;5/30
     </a>
-    <a class="next" href="http://localhost:1313/page/7/">Next&nbsp;7/29&nbsp;»
+    <a class="next" href="http://localhost:1313/page/7/">Next&nbsp;7/30&nbsp;»
     </a>
   </nav>
 </footer>

@@ -199,6 +199,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Testing Xcode project using Github Actions
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction If you’re wondering how to test an Xcode project using GitHub Actions, here are a few steps:
+First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15.3.app/Contents/Developer - name: Install xcpretty run: gem install xcpretty - name: Test project run: xcodebuild -project /Users/runner/work/YourProjectName/YourProjectName/YourProjectName/YourProjectName.xcodeproj -scheme YourSchemeName -destination &#39;platform=iOS Simulator,OS=17.4,name=iPhone 15 Pro&#39; clean build test | xcpretty Caveats If you don’t specify the path to the Xcode project, you will receive an error like this: xcodebuild: error: ‘YourProjectName.xcodeproj&#39; does not exist.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-26 06:51:21 +0300 EEST'>April 26, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Testing Xcode project using Github Actions" href="http://localhost:1313/posts/testing-xcode-project-using-github-actions/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Building Xcode project using Github Actions
     </h2>
   </header>
@@ -254,26 +268,12 @@ One of such ways is by using the xcodebuild command Basic outline of the process
   <footer class="entry-footer"><span title='2024-04-12 03:20:34 +0300 EEST'>April 12, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Testing Xcode project using the CLI" href="http://localhost:1313/posts/testing-xcode-project-using-the-cli/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Building Xcode project using the CLI
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to build a project in the fastest way.
-One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you’re in the project directory, you can run xcodebuild with the appropriate parameters to build your project. Example: xcodebuild -project YourProjectName.xcodeproj -scheme YourSchemeName Another way is by integrating fastlane into your workflow: Outline of the process Install Fastlane: If you haven’t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-04-05 04:59:38 +0300 EEST'>April 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Building Xcode project using the CLI" href="http://localhost:1313/posts/building-xcode-project-using-the-cli/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/page/24/">
-      «&nbsp;Prev&nbsp;24/29
+      «&nbsp;Prev&nbsp;24/30
     </a>
-    <a class="next" href="http://localhost:1313/page/26/">Next&nbsp;26/29&nbsp;»
+    <a class="next" href="http://localhost:1313/page/26/">Next&nbsp;26/30&nbsp;»
     </a>
   </nav>
 </footer>
