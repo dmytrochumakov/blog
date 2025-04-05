@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Unique Paths on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/unique-paths/</link>
+    <description>Recent content in Unique Paths on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.139.5</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Apr 2025 07:43:55 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/unique-paths/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Unique Paths</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-unique-paths/</link>
+      <pubDate>Sat, 05 Apr 2025 07:43:55 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-unique-paths/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;There is a robot on an &lt;code&gt;m x n&lt;/code&gt; grid. The robot is initially located at the top-left corner (i.e., &lt;code&gt;grid[0][0]&lt;/code&gt;). The robot tries to move to the bottom-right corner (i.e., &lt;code&gt;grid[m - 1][n - 1]&lt;/code&gt;). The robot can only move either down or right at any point in time.&lt;/p&gt;
+&lt;p&gt;Given the two integers &lt;code&gt;m&lt;/code&gt; and &lt;code&gt;n&lt;/code&gt;, return the number of possible unique paths that the robot can take to reach the bottom-right corner.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

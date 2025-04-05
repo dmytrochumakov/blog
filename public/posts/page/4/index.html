@@ -204,6 +204,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Pacific Atlantic Water Flow
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem There is an m x n rectangular island that borders both the Pacific Ocean and Atlantic Ocean. The Pacific Ocean touches the island’s left and top edges, and the Atlantic Ocean touches the island’s right and bottom edges.
+The island is partitioned into a grid of square cells. You are given an m x n integer matrix heights where heights[r][c] represents the height above sea level of the cell at coordinate (r, c).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-24 12:50:30 +0300 +0300'>February 24, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Pacific Atlantic Water Flow" href="http://localhost:1313/posts/leetcode-blind-75-pacific-atlantic-water-flow/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Clone Graph
     </h2>
   </header>
@@ -260,21 +274,6 @@ It is not the most efficient solution because the search operation will take O(m
   </div>
   <footer class="entry-footer"><span title='2025-02-14 09:53:50 +0300 +0300'>February 14, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Design Add and Search Words Data Structure" href="http://localhost:1313/posts/leetcode-blind-75-design-add-and-search-words-data-structure/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Implement Trie (Prefix Tree)
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The problem A trie (pronounced as “try”) or prefix tree is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete and spellchecker.
-Implement the Trie class:
-Trie() Initializes the trie object. void insert(String word) Inserts the string word into the trie. boolean search(String word) Returns true if the string word is in the trie (i.e., was inserted before), and false otherwise. boolean startsWith(String prefix) Returns true if there is a previously inserted string word that has the prefix prefix, and false otherwise. Examples Input [&#34;Trie&#34;, &#34;insert&#34;, &#34;search&#34;, &#34;search&#34;, &#34;startsWith&#34;, &#34;insert&#34;, &#34;search&#34;] [[], [&#34;apple&#34;], [&#34;apple&#34;], [&#34;app&#34;], [&#34;app&#34;], [&#34;app&#34;], [&#34;app&#34;]] Output [null, null, true, false, true, null, true] Explanation Trie trie = new Trie(); trie.insert(&#34;apple&#34;); trie.search(&#34;apple&#34;); // return True trie.search(&#34;app&#34;); // return False trie.startsWith(&#34;app&#34;); // return True trie.insert(&#34;app&#34;); trie.search(&#34;app&#34;); // return True Constraints 1 &lt;= word.length, prefix.length &lt;= 2000 word and prefix consist only of lowercase English letters. At most 3 * 10⁴ calls in total will be made to insert, search, and startsWith. Prefix Tree Array solution final class TrieNode { var children: [TrieNode?] var endOfWord: Bool init() { self.children = Array(repeating: nil, count: 26) self.endOfWord = false } } class Trie { private let root: TrieNode private let aAsciiValue: Int = Int(Character(&#34;a&#34;).asciiValue!) init() { self.root = TrieNode() } func insert(_ word: String) { var curr = self.root for c in word { let i = Int(c.asciiValue!) - aAsciiValue if curr.children[i] == nil { curr.children[i] = TrieNode() } curr = curr.children[i]! } curr.endOfWord = true } func search(_ word: String) -&gt; Bool { var curr = self.root for c in word { let i = Int(c.asciiValue!) - aAsciiValue if curr.children[i] == nil { return false } curr = curr.children[i]! } return curr.endOfWord } func startsWith(_ prefix: String) -&gt; Bool { var curr = self.root for c in prefix { let i = Int(c.asciiValue!) - aAsciiValue if curr.children[i] == nil { return false } curr = curr.children[i]! } return true } } Explanation Before we start implementing Trie, let’s take a look at what we are going to do.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-02-10 13:32:09 +0300 +0300'>February 10, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Implement Trie (Prefix Tree)" href="http://localhost:1313/posts/leetcode-blind-75-implement-trie-prefix-tree/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
