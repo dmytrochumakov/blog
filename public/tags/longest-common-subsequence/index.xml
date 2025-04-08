@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Longest Common Subsequence on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/longest-common-subsequence/</link>
+    <description>Recent content in Longest Common Subsequence on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.139.5</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 08 Apr 2025 07:57:29 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/longest-common-subsequence/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Longest Common Subsequence</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-longest-common-subsequence/</link>
+      <pubDate>Tue, 08 Apr 2025 07:57:29 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-longest-common-subsequence/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given two strings &lt;code&gt;text1&lt;/code&gt; and &lt;code&gt;text2&lt;/code&gt;, return the length of their longest common subsequence. If there is no common subsequence, return &lt;code&gt;0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A subsequence of a string is a new string generated from the original string with some characters (can be none) deleted without changing the relative order of the remaining characters.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For example, &lt;code&gt;”ace”&lt;/code&gt; is a subsequence of &lt;code&gt;”abcde”&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A common subsequence of two strings is a subsequence that is common to both strings.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
