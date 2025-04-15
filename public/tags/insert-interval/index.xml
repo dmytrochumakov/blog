@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Insert Interval on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/insert-interval/</link>
+    <description>Recent content in Insert Interval on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.139.5</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 15 Apr 2025 07:57:18 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/insert-interval/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Insert Interval</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-insert-interval/</link>
+      <pubDate>Tue, 15 Apr 2025 07:57:18 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-insert-interval/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;You are given an array of non-overlapping intervals &lt;code&gt;intervals&lt;/code&gt; where &lt;code&gt;intervals[i] = [starti, endi]&lt;/code&gt; represents the start and the end of the &lt;code&gt;ith&lt;/code&gt; interval, and &lt;code&gt;intervals&lt;/code&gt; is sorted in ascending order by &lt;code&gt;starti&lt;/code&gt;. You are also given an interval &lt;code&gt;newInterval = [start, end]&lt;/code&gt; that represents the start and end of another interval.&lt;/p&gt;
+&lt;p&gt;Insert &lt;code&gt;newInterval&lt;/code&gt; into &lt;code&gt;intervals&lt;/code&gt; such that &lt;code&gt;intervals&lt;/code&gt; is still sorted in ascending order by &lt;code&gt;starti&lt;/code&gt; and &lt;code&gt;intervals&lt;/code&gt; still does not have any overlapping intervals (merge overlapping intervals if necessary).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
