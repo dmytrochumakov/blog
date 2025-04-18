@@ -11,8 +11,31 @@
     </image>
     <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 15 Apr 2025 07:57:18 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 18 Apr 2025 07:23:08 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Merge Intervals</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-merge-intervals/</link>
+      <pubDate>Fri, 18 Apr 2025 07:23:08 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-merge-intervals/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given an array of &lt;code&gt;intervals&lt;/code&gt; where &lt;code&gt;intervals[i] = [starti, endi]&lt;/code&gt;, merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
+Output: [[1,6],[8,10],[15,18]]
+Explanation: Since intervals [1,3] and [2,6] overlap, merge them into [1,6].
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: intervals = [[1,4],[4,5]]
+Output: [[1,5]]
+Explanation: Intervals [1,4] and [4,5] are considered overlapping.
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;= intervals.length &amp;lt;= 10^4&lt;/li&gt;
+&lt;li&gt;intervals[i].length == 2&lt;/li&gt;
+&lt;li&gt;0 &amp;lt;= starti &amp;lt;= endi &amp;lt;= 10^4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;p&gt;Let&amp;rsquo;s look at examples and figure out our base cases for intervals that are considered overlapping.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Insert Interval</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-insert-interval/</link>
