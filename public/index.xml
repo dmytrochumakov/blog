@@ -11,8 +11,38 @@
     </image>
     <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 20 Apr 2025 07:59:44 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 22 Apr 2025 07:25:26 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Meeting Rooms</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-meeting-rooms/</link>
+      <pubDate>Tue, 22 Apr 2025 07:25:26 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-meeting-rooms/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given an array of meeting time &lt;code&gt;intervals&lt;/code&gt; where &lt;code&gt;intervals[i] = [starti, endi]&lt;/code&gt;, determine if a person could attend all meetings.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: intervals = [[0,30],[5,10],[15,20]]
+Output: false
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: intervals = [[7,10],[2,4]]
+Output: true
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;0 &amp;lt;= intervals.length &amp;lt;= 10^4&lt;/li&gt;
+&lt;li&gt;intervals[i].length == 2&lt;/li&gt;
+&lt;li&gt;0 &amp;lt;= starti &amp;lt; endi &amp;lt;= 10^6&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;p&gt;Before we dive into coding, let&amp;rsquo;s look at base cases in which intervals are not overlapping.&lt;br&gt;
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-32479&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-32479&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/252.png#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Non-overlapping Intervals</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-non-overlapping-intervals/</link>
