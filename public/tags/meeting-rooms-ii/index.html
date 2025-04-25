@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Meeting Rooms | Dmytro&#39;s Blog</title>
+<title>Meeting Rooms II | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="Dmytro Chumakov">
-<link rel="canonical" href="http://localhost:1313/tags/meeting-rooms/">
+<link rel="canonical" href="http://localhost:1313/tags/meeting-rooms-ii/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -19,8 +19,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/meeting-rooms/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/meeting-rooms/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/meeting-rooms-ii/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/meeting-rooms-ii/">
 <noscript>
     <style>
         #theme-toggle,
@@ -88,15 +88,15 @@
           gtag('js', new Date());
           gtag('config', 'G-HZZ4JTFGDP');
         }
-      </script><meta property="og:url" content="http://localhost:1313/tags/meeting-rooms/">
+      </script><meta property="og:url" content="http://localhost:1313/tags/meeting-rooms-ii/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
-  <meta property="og:title" content="Meeting Rooms">
+  <meta property="og:title" content="Meeting Rooms II">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="Meeting Rooms">
+<meta name="twitter:title" content="Meeting Rooms II">
 <meta name="twitter:description" content="">
 
 </head>
@@ -183,22 +183,23 @@
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
   <h1>
-    Meeting Rooms
+    Meeting Rooms II
   </h1>
 </header>
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Meeting Rooms
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Meeting Rooms II
     </h2>
   </header>
   <div class="entry-content">
-    <p>The problem Given an array of meeting time intervals where intervals[i] = [starti, endi], determine if a person could attend all meetings.
-Examples Input: intervals = [[0,30],[5,10],[15,20]] Output: false Input: intervals = [[7,10],[2,4]] Output: true Constraints 0 &lt;= intervals.length &lt;= 10^4 intervals[i].length == 2 0 &lt;= starti &lt; endi &lt;= 10^6 Explanation Before we dive into coding, let’s look at base cases in which intervals are not overlapping.
+    <p>The problem Given an array of meeting time intervals intervals where intervals[i] = [starti, endi], return the minimum number of conference rooms required.
+Examples Input: intervals = [[0,30],[5,10],[15,20]] Output: 2 Input: intervals = [[7,10],[2,4]] Output: 1 Constraints 1 &lt;= intervals.length &lt;= 10^4 0 &lt;= starti &lt; endi &lt;= 10^6 Explanation Before jumping to the code, we are going to sort the input because it’s not sorted by default.
+Sorting Solution func minMeetingRooms(_ intervals: [[Int]]) -&gt; Int { let start = intervals.map({ $0[0] }).sorted() let end = intervals.map({ $0[1] }).sorted() var res = 0 var count = 0 var s = 0 var e = 0 let n = intervals.count while s &lt; n { if start[s] &lt; end[e] { s &#43;= 1 count &#43;= 1 } else { e &#43;= 1 count -= 1 } res = max(res, count) } return res } Explanation We can visualize input with intervals = [[0,30],[5,10],[15,20]] like this:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-04-22 07:25:26 +0300 EEST'>April 22, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Meeting Rooms" href="http://localhost:1313/posts/leetcode-blind-75-meeting-rooms/"></a>
+  <footer class="entry-footer"><span title='2025-04-25 07:25:34 +0300 EEST'>April 25, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Meeting Rooms II" href="http://localhost:1313/posts/leetcode-blind-75-meeting-rooms-ii/"></a>
 </article>
     </main>
     

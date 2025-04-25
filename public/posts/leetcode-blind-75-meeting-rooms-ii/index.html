@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>LeetCode - Blind 75 - Meeting Rooms II | Dmytro&#39;s Blog</title>
-<meta name="keywords" content="LeetCode, Blind 75, Meeting Rooms, Swift">
+<meta name="keywords" content="LeetCode, Blind 75, Meeting Rooms II, Swift">
 <meta name="description" content="The problem
 Given an array of meeting time intervals intervals where intervals[i] = [starti, endi], return the minimum number of conference rooms required.
 Examples
@@ -145,7 +145,7 @@ Sorting Solution func minMeetingRooms(_ intervals: [[Int]]) -&gt; Int { let star
     <meta property="article:modified_time" content="2025-04-25T07:25:34+03:00">
     <meta property="article:tag" content="LeetCode">
     <meta property="article:tag" content="Blind 75">
-    <meta property="article:tag" content="Meeting Rooms">
+    <meta property="article:tag" content="Meeting Rooms II">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -227,7 +227,7 @@ We can visualize input with intervals = [[0,30],[5,10],[15,20]] like this:
   "name": "LeetCode - Blind 75 - Meeting Rooms II",
   "description": "The problem Given an array of meeting time intervals intervals where intervals[i] = [starti, endi], return the minimum number of conference rooms required.\nExamples Input: intervals = [[0,30],[5,10],[15,20]] Output: 2 Input: intervals = [[7,10],[2,4]] Output: 1 Constraints 1 \u0026lt;= intervals.length \u0026lt;= 10^4 0 \u0026lt;= starti \u0026lt; endi \u0026lt;= 10^6 Explanation Before jumping to the code, we are going to sort the input because it\u0026rsquo;s not sorted by default.\nSorting Solution func minMeetingRooms(_ intervals: [[Int]]) -\u0026gt; Int { let start = intervals.map({ $0[0] }).sorted() let end = intervals.map({ $0[1] }).sorted() var res = 0 var count = 0 var s = 0 var e = 0 let n = intervals.count while s \u0026lt; n { if start[s] \u0026lt; end[e] { s += 1 count += 1 } else { e += 1 count -= 1 } res = max(res, count) } return res } Explanation We can visualize input with intervals = [[0,30],[5,10],[15,20]] like this:\n",
   "keywords": [
-    "LeetCode", "Blind 75", "Meeting Rooms", "Swift"
+    "LeetCode", "Blind 75", "Meeting Rooms II", "Swift"
   ],
   "articleBody": "The problem Given an array of meeting time intervals intervals where intervals[i] = [starti, endi], return the minimum number of conference rooms required.\nExamples Input: intervals = [[0,30],[5,10],[15,20]] Output: 2 Input: intervals = [[7,10],[2,4]] Output: 1 Constraints 1 \u003c= intervals.length \u003c= 10^4 0 \u003c= starti \u003c endi \u003c= 10^6 Explanation Before jumping to the code, we are going to sort the input because it’s not sorted by default.\nSorting Solution func minMeetingRooms(_ intervals: [[Int]]) -\u003e Int { let start = intervals.map({ $0[0] }).sorted() let end = intervals.map({ $0[1] }).sorted() var res = 0 var count = 0 var s = 0 var e = 0 let n = intervals.count while s \u003c n { if start[s] \u003c end[e] { s += 1 count += 1 } else { e += 1 count -= 1 } res = max(res, count) } return res } Explanation We can visualize input with intervals = [[0,30],[5,10],[15,20]] like this:\nIf we go from left to right, we are going to see the first meeting start at time 0. We keep going and the next meeting started at time 5, and it tells us that we have two meetings that have started but no meeting that has ended. For the counting process, we will be creating and maintaining a count property that will count the number of meetings going on.\nAt time 10, we can see that the second meeting has ended, therefore we are going to decrement our count to 1. Now, we are going to look to the next point in order, where another meeting has started at 15, and we will increment our count property, which will be equal to 2. Next, we are going to repeat the same process and take the next point where the meeting has ended at 20. After that, we are going to take our count and decrement it by 1 — now count == 1. Lastly, we are going to go to our last point, which is also an end time. That means another meeting is stopping, so we decrement our count, therefore count == 0. We noticed that the max count that happened was 2, so we are going to return 2 as our result.\nNow let’s look at how we are going to sort these intervals and how we are going to iterate over the meetings regardless of whether it’s a start time for a meeting or its end time.\nInput intervals = [[0,30],[5,10],[10,15]] looks like this:\nLook at the time where point time equals 10: we have two intervals — one that ends at 10 and another that starts at 10. That means these meetings are not overlapping.\nIf we ever have a tie (two points with the exact same value), we always iterate through the end meeting time before we iterate through the start meeting time.\nWe are going to have two input arrays, start and end. After that, we are going to start this problem off using two pointers:\nWe are going to have one pointer at the beginning of the start array, and another at the beginning of the end array. Between the start value and end value, we are going to peek at the minimum. If the minimum of the two is a start point, then we are going to increment our count by 1 and shift the start pointer to the next value. We will continue doing this until we reach a tie. When we reach the tie, the meeting has to end, so we will shift our end pointer to the next one. If we iterate through an end value, that means the meeting has ended, therefore we are going to decrement our count by 1, count == 1. Now, we are going to compare values 10 and 15, where value 10 is smaller, and we are going to increment our count by 1, count == 2. Now we don’t have any start times left, so we are going to iterate through end times. From the solution above, we can see that our max count was equal to 2. Therefore, in the result, we will be returning 2.\nTime/Space Complexity Time complexity: O(n*logn) Space complexity: O(n) Thank you for reading! 😊 ",
   "wordCount" : "703",
@@ -475,7 +475,7 @@ If we ever have a tie (two points with the exact same value), we always iterate 
     <ul class="post-tags">
       <li><a href="http://localhost:1313/tags/leetcode/">LeetCode</a></li>
       <li><a href="http://localhost:1313/tags/blind-75/">Blind 75</a></li>
-      <li><a href="http://localhost:1313/tags/meeting-rooms/">Meeting Rooms</a></li>
+      <li><a href="http://localhost:1313/tags/meeting-rooms-ii/">Meeting Rooms II</a></li>
       <li><a href="http://localhost:1313/tags/swift/">Swift</a></li>
     </ul>
 <nav class="paginav">
@@ -490,7 +490,7 @@ If we ever have a tie (two points with the exact same value), we always iterate 
 <ul class="share-buttons">
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share LeetCode - Blind 75 - Meeting Rooms II on x"
-            href="https://x.com/intent/tweet/?text=LeetCode%20-%20Blind%2075%20-%20Meeting%20Rooms%20II&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fleetcode-blind-75-meeting-rooms-ii%2f&amp;hashtags=LeetCode%2cBlind75%2cMeetingRooms%2cSwift">
+            href="https://x.com/intent/tweet/?text=LeetCode%20-%20Blind%2075%20-%20Meeting%20Rooms%20II&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fleetcode-blind-75-meeting-rooms-ii%2f&amp;hashtags=LeetCode%2cBlind75%2cMeetingRoomsII%2cSwift">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
