@@ -189,6 +189,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Meeting Rooms II
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem Given an array of meeting time intervals intervals where intervals[i] = [starti, endi], return the minimum number of conference rooms required.
+Examples Input: intervals = [[0,30],[5,10],[15,20]] Output: 2 Input: intervals = [[7,10],[2,4]] Output: 1 Constraints 1 &lt;= intervals.length &lt;= 10^4 0 &lt;= starti &lt; endi &lt;= 10^6 Explanation Before jumping to the code, we are going to sort the input because it’s not sorted by default.
+Sorting Solution func minMeetingRooms(_ intervals: [[Int]]) -&gt; Int { let start = intervals.map({ $0[0] }).sorted() let end = intervals.map({ $0[1] }).sorted() var res = 0 var count = 0 var s = 0 var e = 0 let n = intervals.count while s &lt; n { if start[s] &lt; end[e] { s &#43;= 1 count &#43;= 1 } else { e &#43;= 1 count -= 1 } res = max(res, count) } return res } Explanation We can visualize input with intervals = [[0,30],[5,10],[15,20]] like this:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-25 07:25:34 +0300 EEST'>April 25, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Meeting Rooms II" href="http://localhost:1313/posts/leetcode-blind-75-meeting-rooms-ii/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Meeting Rooms
     </h2>
   </header>
