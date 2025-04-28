@@ -11,8 +11,57 @@
     </image>
     <generator>Hugo -- 0.139.5</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 25 Apr 2025 07:25:34 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 28 Apr 2025 07:13:43 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Rotate Image</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-rotate-image/</link>
+      <pubDate>Mon, 28 Apr 2025 07:13:43 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-rotate-image/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;You are given an &lt;code&gt;n x n&lt;/code&gt; 2D &lt;code&gt;matrix&lt;/code&gt; representing an image, rotate the image by 90 degrees (clockwise).&lt;/p&gt;
+&lt;p&gt;You have to rotate the image &lt;a href=&#34;https://en.wikipedia.org/wiki/In-place_algorithm&#34;&gt;in-place&lt;/a&gt;, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-fafeb&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-fafeb&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/mat1.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+Output: [[7,4,1],[8,5,2],[9,6,3]]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-7112f&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-7112f&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/mat2.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]
+Output: [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;n == matrix.length == matrix[i].length&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;= n &amp;lt;= 20&lt;/li&gt;
+&lt;li&gt;-1000 &amp;lt;= matrix[i][j] &amp;lt;= 1000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;p&gt;Before we jump to the solution, let&amp;rsquo;s look at how rotation was done to the &lt;code&gt;matrix = [[1,2,3],[4,5,6],[7,8,9]]&lt;/code&gt;.
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-ad954&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-ad954&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/48.png#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Meeting Rooms II</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-meeting-rooms-ii/</link>
