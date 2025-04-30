@@ -1,7 +1,7 @@
 +++
 title = "LeetCode - Blind 75 - Spiral Matrix"
 date = 2025-04-30T07:27:55+03:00
-tags = ["LeetCode", "Blind 75", "Rotate Image", "Swift"]
+tags = ["LeetCode", "Blind 75", "Spiral Matrix", "Swift"]
 draft = false
 +++
 

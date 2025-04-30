@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>LeetCode - Blind 75 - Spiral Matrix | Dmytro&#39;s Blog</title>
-<meta name="keywords" content="LeetCode, Blind 75, Rotate Image, Swift">
+<meta name="keywords" content="LeetCode, Blind 75, Spiral Matrix, Swift">
 <meta name="description" content="The problem
 Given an m x n matrix, return all elements of the matrix in spiral order.
 Examples
@@ -135,7 +135,7 @@ Examples Input: matrix = [[1,2,3],[4,5,6],[7,8,9]] Output: [1,2,3,6,9,8,7,4,5] I
     <meta property="article:modified_time" content="2025-04-30T07:27:55+03:00">
     <meta property="article:tag" content="LeetCode">
     <meta property="article:tag" content="Blind 75">
-    <meta property="article:tag" content="Rotate Image">
+    <meta property="article:tag" content="Spiral Matrix">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -208,7 +208,7 @@ Let&rsquo;s look at the example with matrix = [[1,2,3],[4,5,6],[7,8,9]] and try 
   "name": "LeetCode - Blind 75 - Spiral Matrix",
   "description": "The problem Given an m x n matrix, return all elements of the matrix in spiral order.\nExamples Input: matrix = [[1,2,3],[4,5,6],[7,8,9]] Output: [1,2,3,6,9,8,7,4,5] Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]] Output: [1,2,3,4,8,12,11,10,9,5,6,7] Constraints m == matrix.length n == matrix[i].length 1 \u0026lt;= m, n \u0026lt;= 10 -100 \u0026lt;= matrix[i][j] \u0026lt;= 100 Explanation Let\u0026rsquo;s look at the example with matrix = [[1,2,3],[4,5,6],[7,8,9]] and try to figure out a way to solve this problem.\n",
   "keywords": [
-    "LeetCode", "Blind 75", "Rotate Image", "Swift"
+    "LeetCode", "Blind 75", "Spiral Matrix", "Swift"
   ],
   "articleBody": "The problem Given an m x n matrix, return all elements of the matrix in spiral order.\nExamples Input: matrix = [[1,2,3],[4,5,6],[7,8,9]] Output: [1,2,3,6,9,8,7,4,5] Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]] Output: [1,2,3,4,8,12,11,10,9,5,6,7] Constraints m == matrix.length n == matrix[i].length 1 \u003c= m, n \u003c= 10 -100 \u003c= matrix[i][j] \u003c= 100 Explanation Let’s look at the example with matrix = [[1,2,3],[4,5,6],[7,8,9]] and try to figure out a way to solve this problem.\nWe are going to start from the top left corner:\nGo right from 1 to 2, Go right again from 2 to 3, now we can’t go right anymore Next, we go down from 3 to 6, Go down one more time from 6 to 9, Now we are going to go left from 9 to 8 because we can’t go down anymore, Go left again from 8 to 7 We can’t go left anymore, so we go up from 7 to 4, and if we try to go up, we see that we already visited it and we can’t go there Lastly, we go right from 4 to 5. If we try to go right, we can see that we cannot go right anymore because we already visited that element To solve this problem we are going to start from the top left corner:\nGo right until we visit all of them Next, we go down and visit all available elements Next, we go left and visit all of the elements Next, we go up We went through all four directions, but we still have some elements left.\nWe took the outermost layer and shrank it. Now we have a sub-matrix, and we can do the same algorithm on it. We can do it by introducing left and right boundaries that we move inward by 1. Similarly, we have top and bottom boundaries that we also need to shrink by 1. After that, we are going to solve the sub-matrix in spiral order by going from top left to the right. You can notice that we’ve gone through all elements, so now we can move our left and right boundaries once more, and stop because we don’t have a rectangle anymore and we visited all elements. Iteration Solution func spiralOrder(_ matrix: [[Int]]) -\u003e [Int] { var res: [Int] = [] var l = 0 var r = matrix[0].count var top = 0 var bottom = matrix.count while l \u003c r \u0026\u0026 top \u003c bottom { for i in l ..\u003c r { res.append(matrix[top][i]) } top += 1 for i in top ..\u003c bottom { res.append(matrix[i][r - 1]) } r -= 1 if !(l \u003c r \u0026\u0026 top \u003c bottom) { break } for i in stride(from: r - 1, to: l - 1, by: -1) { res.append(matrix[bottom - 1][i]) } bottom -= 1 for i in stride(from: bottom - 1, to: top - 1, by: -1) { res.append(matrix[i][l]) } l += 1 } return res } Explanation We are going to initialize the left boundary at 0, right at len(matrix[0]), top at 0, and bottom at len(matrix) to solve this problem in an easier way and avoid edge cases.\nWe are always going to start at the top left position.\nAfter that, we are going to go right and iterate through the first row, adding values to our result until we reach our right boundary. Now we can go down, so we need to shift our top boundary down by 1, add values to our result, and continue going down until we reach our bottom boundary We can see that we visited all elements in the last column, therefore we can now move our right boundary by decreasing it by 1 Next, we can go through elements to the left until we reach our left boundary and add those elements to our result When we reach the left boundary, you can see that we also finished the entire bottom row, meaning that we can shift our bottom boundary up by 1 Next, we are going to go up until we reach our top boundary, and add values to our result When we reach our top boundary we can update our left boundary by increasing it by 1 Next, we go right and add elements to our result until we reach our right boundary Lastly, when the left boundary reaches the right boundary or top reaches bottom, we will stop our algorithm because we’ve done every single element Time/ Space complexity Time complexity: O(m*n) Space complexity: O(1) extra memory, O(m*n) for the output list Where m is the number of rows, and n is the number of columns Thank you for reading! 😊 ",
   "wordCount" : "772",
@@ -511,7 +511,7 @@ We are always going to start at the <code>top</code> <code>left</code> position.
     <ul class="post-tags">
       <li><a href="http://localhost:1313/tags/leetcode/">LeetCode</a></li>
       <li><a href="http://localhost:1313/tags/blind-75/">Blind 75</a></li>
-      <li><a href="http://localhost:1313/tags/rotate-image/">Rotate Image</a></li>
+      <li><a href="http://localhost:1313/tags/spiral-matrix/">Spiral Matrix</a></li>
       <li><a href="http://localhost:1313/tags/swift/">Swift</a></li>
     </ul>
 <nav class="paginav">
@@ -526,7 +526,7 @@ We are always going to start at the <code>top</code> <code>left</code> position.
 <ul class="share-buttons">
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share LeetCode - Blind 75 - Spiral Matrix on x"
-            href="https://x.com/intent/tweet/?text=LeetCode%20-%20Blind%2075%20-%20Spiral%20Matrix&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fleetcode-blind-75-spiral-matrix%2f&amp;hashtags=LeetCode%2cBlind75%2cRotateImage%2cSwift">
+            href="https://x.com/intent/tweet/?text=LeetCode%20-%20Blind%2075%20-%20Spiral%20Matrix&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fleetcode-blind-75-spiral-matrix%2f&amp;hashtags=LeetCode%2cBlind75%2cSpiralMatrix%2cSwift">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
