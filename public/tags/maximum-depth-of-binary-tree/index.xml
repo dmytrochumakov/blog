@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.139.5</generator>
+    <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 01 Jan 2025 10:09:24 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/maximum-depth-of-binary-tree/index.xml" rel="self" type="application/rss+xml" />
@@ -21,8 +21,7 @@
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
 &lt;p&gt;Given the &lt;code&gt;root&lt;/code&gt; of a binary tree, return its maximum depth.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A binary tree&amp;rsquo;s &lt;strong&gt;maximum depth&lt;/strong&gt; is the number of nodes along the longest path from the root node down to the farthest leaf node.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A binary tree&amp;rsquo;s &lt;strong&gt;maximum depth&lt;/strong&gt; is the number of nodes along the longest path from the root node down to the farthest leaf node.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;p&gt;
     

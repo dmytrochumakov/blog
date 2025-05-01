@@ -330,14 +330,11 @@ In this article, I will focus on the first scenario and will show how to scan fo
 </span></span><span class="line"><span class="cl">    <span class="n">centralManager</span> <span class="p">=</span> <span class="n">CBCentralManager</span><span class="p">(</span><span class="n">delegate</span><span class="p">:</span> <span class="kc">self</span><span class="p">,</span> <span class="n">queue</span><span class="p">:</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">options</span><span class="p">:</span> <span class="p">[</span><span class="n">CBCentralManagerOptionShowPowerAlertKey</span><span class="p">:</span> <span class="kc">true</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><blockquote>
-<p><a href="https://developer.apple.com/documentation/corebluetooth/cbcentralmanager/"><code>CBCentralManager</code></a> - CBCentralManager objects manage discovered or connected remote peripheral devices (represented by CBPeripheral objects), including scanning for, discovering, and connecting to advertising peripherals.</p>
-</blockquote>
+<p><a href="https://developer.apple.com/documentation/corebluetooth/cbcentralmanager/"><code>CBCentralManager</code></a> - CBCentralManager objects manage discovered or connected remote peripheral devices (represented by CBPeripheral objects), including scanning for, discovering, and connecting to advertising peripherals.</p></blockquote>
 <blockquote>
-<p><code>CBCentralManagerDelegate</code> - The single required <code>centralManagerDidUpdateState</code> method indicates the availability of the central manager, while the optional methods allow for the discovery and connection of peripherals.</p>
-</blockquote>
+<p><code>CBCentralManagerDelegate</code> - The single required <code>centralManagerDidUpdateState</code> method indicates the availability of the central manager, while the optional methods allow for the discovery and connection of peripherals.</p></blockquote>
 <blockquote>
-<p><code>CBCentralManagerOptionShowPowerAlertKey</code> - An NSNumber (Boolean) indicating that the system should, if Bluetooth is powered off when <code>CBCentralManager</code> is instantiated, display a warning dialog to the user.</p>
-</blockquote>
+<p><code>CBCentralManagerOptionShowPowerAlertKey</code> - An NSNumber (Boolean) indicating that the system should, if Bluetooth is powered off when <code>CBCentralManager</code> is instantiated, display a warning dialog to the user.</p></blockquote>
 <h3 id="third-step">Third Step<a hidden class="anchor" aria-hidden="true" href="#third-step">#</a></h3>
 <p>The third step is to <code>scanForPeripherals</code> after <code>centralManager</code> changes its state to <code>poweredOn</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">centralManagerDidUpdateState</span><span class="p">(</span><span class="kc">_</span> <span class="n">central</span><span class="p">:</span> <span class="n">CBCentralManager</span><span class="p">)</span> <span class="p">{</span>

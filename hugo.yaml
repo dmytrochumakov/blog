@@ -1,7 +1,8 @@
 baseURL: https://dmytros.blog/
 languageCode: en-us
 title: Dmytro's Blog
-paginate: 5
+pagination:
+  pagerSize: 5
 theme: ["PaperMod"]
 
 enableInlineShortcodes: true

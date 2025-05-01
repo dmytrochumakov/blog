@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.139.5</generator>
+    <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 01 Apr 2024 08:01:22 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/design-patterns/index.xml" rel="self" type="application/rss+xml" />
@@ -20,8 +20,7 @@
       <guid>http://localhost:1313/posts/the-visitor-pattern/</guid>
       <description>&lt;h3 id=&#34;what-is-a-visitor-pattern&#34;&gt;What is a Visitor Pattern?&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The Visitor Pattern helps add new capabilities to a composite of objects.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The Visitor Pattern helps add new capabilities to a composite of objects.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-3a9c2&#34; hidden&gt;
@@ -152,8 +151,7 @@
       <guid>http://localhost:1313/posts/the-memento-pattern/</guid>
       <description>&lt;h3 id=&#34;what-is-a-memento-pattern&#34;&gt;What is a Memento Pattern?&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The Memento Pattern helps return an object to one of its previous states; for instance, if the user requests an “undo” operation.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The Memento Pattern helps return an object to one of its previous states; for instance, if the user requests an “undo” operation.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-35972&#34; hidden&gt;
@@ -256,8 +254,7 @@
       <guid>http://localhost:1313/posts/the-interpreter-pattern/</guid>
       <description>&lt;h3 id=&#34;what-is-an-interpreter-pattern&#34;&gt;What is an Interpreter Pattern?&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The Interpreter Pattern helps implement a simple language and defines a class based representation for its grammar along with an interpreter to interpret its sentences.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The Interpreter Pattern helps implement a simple language and defines a class based representation for its grammar along with an interpreter to interpret its sentences.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-35972&#34; hidden&gt;
@@ -378,8 +375,7 @@
       <guid>http://localhost:1313/posts/the-flyweight-pattern/</guid>
       <description>&lt;h3 id=&#34;what-is-a-flyweight-pattern&#34;&gt;What is a Flyweight Pattern?&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The Flyweight Pattern refers to an object that minimizes memory usage by sharing some of its data with other similar objects.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The Flyweight Pattern refers to an object that minimizes memory usage by sharing some of its data with other similar objects.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-35972&#34; hidden&gt;
@@ -456,8 +452,7 @@
       <guid>http://localhost:1313/posts/the-chain-of-responsibility-pattern/</guid>
       <description>&lt;h3 id=&#34;what-is-a-chain-of-responsibility-pattern&#34;&gt;What is a Chain Of Responsibility Pattern?&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The Chain Of Responsibility Pattern helps create a chain of objects to examine requests. Each object in turn examines a request and either handles it or passes onto the next object in the chain.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The Chain Of Responsibility Pattern helps create a chain of objects to examine requests. Each object in turn examines a request and either handles it or passes onto the next object in the chain.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-35972&#34; hidden&gt;
@@ -545,8 +540,7 @@
       <guid>http://localhost:1313/posts/the-state-pattern/</guid>
       <description>&lt;h3 id=&#34;what-is-a-state-pattern&#34;&gt;What is a State Pattern?&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The State Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The State Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-35972&#34; hidden&gt;

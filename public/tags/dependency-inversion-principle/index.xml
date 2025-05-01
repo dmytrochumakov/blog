@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.139.5</generator>
+    <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 05 Mar 2024 08:29:30 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/dependency-inversion-principle/index.xml" rel="self" type="application/rss+xml" />
@@ -20,8 +20,7 @@
       <guid>http://localhost:1313/posts/the-dependency-inversion-principle/</guid>
       <description>&lt;h3 id=&#34;what-is-a-dependency-inversion-principle&#34;&gt;What is a Dependency Inversion Principle?&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The Dependency Inversion Principle means that high-level modules should not depend on low-level modules.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The Dependency Inversion Principle means that high-level modules should not depend on low-level modules.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-35972&#34; hidden&gt;

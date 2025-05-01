@@ -360,8 +360,7 @@ Let’s add:</p>
 <h4 id="reading-data">Reading Data<a hidden class="anchor" aria-hidden="true" href="#reading-data">#</a></h4>
 <p>When you need to read/save data using HealthKit, you can do it by applying the <code>HKHealthStore</code> object.</p>
 <blockquote>
-<p>&#x1f4a1; <a href="https://developer.apple.com/documentation/healthkit/hkhealthstore"><code>HKHealthStore</code></a> - The access point for all data managed by HealthKit.</p>
-</blockquote>
+<p>&#x1f4a1; <a href="https://developer.apple.com/documentation/healthkit/hkhealthstore"><code>HKHealthStore</code></a> - The access point for all data managed by HealthKit.</p></blockquote>
 <p>As an example, you can read characteristic data by utilizing HKHealthStore-defined methods such as <code>biologicalSex</code>, <code>bloodType</code>, <code>dateOfBirthComponents</code>, etc.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">getProfileData</span><span class="p">()</span> <span class="kr">throws</span> <span class="p">-&gt;</span> <span class="n">ProfileData</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nv">healthStore</span> <span class="p">=</span> <span class="n">HKHealthStore</span><span class="p">()</span>
@@ -394,14 +393,11 @@ Let’s add:</p>
 </span></span><span class="line"><span class="cl">    <span class="k">try</span> <span class="n">await</span> <span class="n">HKHealthStore</span><span class="p">().</span><span class="n">save</span><span class="p">(</span><span class="n">sample</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><blockquote>
-<p>&#x1f4a1; <a href="https://developer.apple.com/documentation/healthkit/HKQuantityType"><code>HKQuantityType</code></a> - A type that identifies samples that store numerical values.</p>
-</blockquote>
+<p>&#x1f4a1; <a href="https://developer.apple.com/documentation/healthkit/HKQuantityType"><code>HKQuantityType</code></a> - A type that identifies samples that store numerical values.</p></blockquote>
 <blockquote>
-<p>&#x1f4a1; <a href="https://developer.apple.com/documentation/healthkit/HKQuantity"><code>HKQuantity</code></a> - An object that stores a value for a given unit.</p>
-</blockquote>
+<p>&#x1f4a1; <a href="https://developer.apple.com/documentation/healthkit/HKQuantity"><code>HKQuantity</code></a> - An object that stores a value for a given unit.</p></blockquote>
 <blockquote>
-<p>&#x1f4a1; <a href="https://developer.apple.com/documentation/healthkit/HKQuantitySample"><code>HKQuantitySample</code></a> - A sample that represents a quantity, including the value and the units.</p>
-</blockquote>
+<p>&#x1f4a1; <a href="https://developer.apple.com/documentation/healthkit/HKQuantitySample"><code>HKQuantitySample</code></a> - A sample that represents a quantity, including the value and the units.</p></blockquote>
 <h3 id="complete-example">Complete Example<a hidden class="anchor" aria-hidden="true" href="#complete-example">#</a></h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">import</span> <span class="nc">HealthKit</span>
 </span></span><span class="line"><span class="cl">

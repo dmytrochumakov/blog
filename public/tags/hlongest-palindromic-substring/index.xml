@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.139.5</generator>
+    <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 19 Mar 2025 07:54:06 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/hlongest-palindromic-substring/index.xml" rel="self" type="application/rss+xml" />
@@ -21,8 +21,7 @@
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
 &lt;p&gt;Given a string &lt;code&gt;s&lt;/code&gt;, return the longest palindromic substring in &lt;code&gt;s&lt;/code&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A string is palindromic if it reads the same forward and backward.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A string is palindromic if it reads the same forward and backward.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;babad&amp;#34;
 Output: &amp;#34;bab&amp;#34;

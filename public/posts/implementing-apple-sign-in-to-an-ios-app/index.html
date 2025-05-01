@@ -334,8 +334,7 @@ Add Sign in with Apple Capability to the project
 </li>
 </ul>
 <blockquote>
-<p>&#x1f4dd; Before testing on the simulator, you need to be signed in to an account with enabled two-factor authentication.</p>
-</blockquote>
+<p>&#x1f4dd; Before testing on the simulator, you need to be signed in to an account with enabled two-factor authentication.</p></blockquote>
 <h3 id="implementing-apple-sign-in">Implementing Apple Sign-In<a hidden class="anchor" aria-hidden="true" href="#implementing-apple-sign-in">#</a></h3>
 <p>Apple offers a built-in solution that uses the <a href="https://developer.apple.com/documentation/authenticationservices">Authentication Services</a> framework with <a href="https://developer.apple.com/documentation/authenticationservices/asauthorizationappleidbutton">ASAuthorizationAppleIDButton</a>.</p>
 <h4 id="first-step">First Step<a hidden class="anchor" aria-hidden="true" href="#first-step">#</a></h4>
@@ -347,8 +346,7 @@ Add Sign in with Apple Capability to the project
 </span></span><span class="line"><span class="cl">    <span class="n">view</span><span class="p">.</span><span class="n">addSubview</span><span class="p">(</span><span class="n">authButton</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><blockquote>
-<p>&#x1f4a1; <code>ASAuthorizationAppleIDButton</code> - A control that enables users to initiate the Sign In with Apple flow.</p>
-</blockquote>
+<p>&#x1f4a1; <code>ASAuthorizationAppleIDButton</code> - A control that enables users to initiate the Sign In with Apple flow.</p></blockquote>
 <h4 id="second-step">Second Step<a hidden class="anchor" aria-hidden="true" href="#second-step">#</a></h4>
 <p>The second step is to handle the authorization Apple ID button press.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kr">@objc</span>
@@ -363,11 +361,9 @@ Add Sign in with Apple Capability to the project
 </span></span><span class="line"><span class="cl">    <span class="n">authorizationController</span><span class="p">.</span><span class="n">performRequests</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><blockquote>
-<p>&#x1f4a1; <a href="https://developer.apple.com/documentation/authenticationservices/asauthorizationappleidprovider"><code>ASAuthorizationAppleIDProvider</code></a> - A mechanism for generating requests to authenticate users based on their Apple ID.</p>
-</blockquote>
+<p>&#x1f4a1; <a href="https://developer.apple.com/documentation/authenticationservices/asauthorizationappleidprovider"><code>ASAuthorizationAppleIDProvider</code></a> - A mechanism for generating requests to authenticate users based on their Apple ID.</p></blockquote>
 <blockquote>
-<p>&#x1f4a1; <a href="https://developer.apple.com/documentation/authenticationservices/asauthorizationcontroller"><code>ASAuthorizationController</code></a> - A controller that manages authorization requests that a provider creates.</p>
-</blockquote>
+<p>&#x1f4a1; <a href="https://developer.apple.com/documentation/authenticationservices/asauthorizationcontroller"><code>ASAuthorizationController</code></a> - A controller that manages authorization requests that a provider creates.</p></blockquote>
 <h4 id="third-step">Third Step<a hidden class="anchor" aria-hidden="true" href="#third-step">#</a></h4>
 <p>The third step is to implement <code>authorizationController.delegate</code> and <code>authorizationController.presentationContextProvider</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="c1">// </span><span class="cs">MARK:</span><span class="c1"> - ASAuthorizationControllerDelegate</span>
@@ -400,8 +396,7 @@ Add Sign in with Apple Capability to the project
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><blockquote>
-<p>&#x1f4a1; <a href="https://developer.apple.com/documentation/authenticationservices/asauthorizationcontrollerdelegate"><code>ASAuthorizationControllerDelegate</code></a> - An interface for providing information about the outcome of an authorization request.</p>
-</blockquote>
+<p>&#x1f4a1; <a href="https://developer.apple.com/documentation/authenticationservices/asauthorizationcontrollerdelegate"><code>ASAuthorizationControllerDelegate</code></a> - An interface for providing information about the outcome of an authorization request.</p></blockquote>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="c1">// </span><span class="cs">MARK:</span><span class="c1"> - ASAuthorizationControllerPresentationContextProviding</span>
 </span></span><span class="line"><span class="cl"><span class="kd">extension</span> <span class="nc">LoginViewController</span><span class="p">:</span> <span class="n">ASAuthorizationControllerPresentationContextProviding</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">/// - Tag: provide_presentation_anchor</span>
@@ -410,8 +405,7 @@ Add Sign in with Apple Capability to the project
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><blockquote>
-<p>&#x1f4a1; <a href="https://developer.apple.com/documentation/authenticationservices/asauthorizationcontrollerpresentationcontextproviding"><code>ASAuthorizationControllerPresentationContextProviding</code></a> - An interface the controller uses to ask a delegate for a presentation context.</p>
-</blockquote>
+<p>&#x1f4a1; <a href="https://developer.apple.com/documentation/authenticationservices/asauthorizationcontrollerpresentationcontextproviding"><code>ASAuthorizationControllerPresentationContextProviding</code></a> - An interface the controller uses to ask a delegate for a presentation context.</p></blockquote>
 <h3 id="resources">Resources<a hidden class="anchor" aria-hidden="true" href="#resources">#</a></h3>
 <p><a href="https://developer.apple.com/documentation/sign_in_with_apple/implementing_user_authentication_with_sign_in_with_apple">Implementing User Authentication with Sign In with Apple</a></p>
 <h3 id="download-materials">Download Materials<a hidden class="anchor" aria-hidden="true" href="#download-materials">#</a></h3>

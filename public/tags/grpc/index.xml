@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.139.5</generator>
+    <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 16 Jul 2024 07:16:41 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/grpc/index.xml" rel="self" type="application/rss+xml" />

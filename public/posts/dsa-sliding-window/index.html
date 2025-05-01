@@ -293,8 +293,7 @@ The sliding window algorithm is a method for finding a subset of elements that s
 <h3 id="how-does-the-sliding-window-algorithm-work">How does the sliding window algorithm work?<a hidden class="anchor" aria-hidden="true" href="#how-does-the-sliding-window-algorithm-work">#</a></h3>
 <p>Let’s look at the &ldquo;maximum sum of a subarray&rdquo; problem to better understand how it works:</p>
 <blockquote>
-<p><strong>Problem:</strong> Given an array of integers, find the maximum sum of a subarray with a fixed window size.</p>
-</blockquote>
+<p><strong>Problem:</strong> Given an array of integers, find the maximum sum of a subarray with a fixed window size.</p></blockquote>
 <p>In this case, the sliding window algorithm uses a fixed size window that the user can pass to a function as a parameter. It iterates through all the elements inside that window by accessing the <code>current value</code>(nums[i]) and <code>previous value</code>(nums[i - k]) and calculates the <code>window sum</code>, which is needed to determine the <code>max sum</code> result.</p>
 <h3 id="code-example">Code Example<a hidden class="anchor" aria-hidden="true" href="#code-example">#</a></h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">maxSubArraySum</span><span class="p">(</span><span class="kc">_</span> <span class="n">nums</span><span class="p">:</span> <span class="p">[</span><span class="nb">Int</span><span class="p">],</span> <span class="kc">_</span> <span class="n">k</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span> <span class="p">{</span>

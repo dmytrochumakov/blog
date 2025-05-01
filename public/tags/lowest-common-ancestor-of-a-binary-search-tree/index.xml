@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.139.5</generator>
+    <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 07 Jan 2025 12:19:23 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/lowest-common-ancestor-of-a-binary-search-tree/index.xml" rel="self" type="application/rss+xml" />
@@ -21,8 +21,7 @@
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
 &lt;p&gt;Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes &lt;code&gt;p&lt;/code&gt; and &lt;code&gt;q&lt;/code&gt; as the lowest node in &lt;code&gt;T&lt;/code&gt; that has both &lt;code&gt;p&lt;/code&gt; and &lt;code&gt;q&lt;/code&gt; as descendants (where we allow a node to be a descendant of itself).”&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes &lt;code&gt;p&lt;/code&gt; and &lt;code&gt;q&lt;/code&gt; as the lowest node in &lt;code&gt;T&lt;/code&gt; that has both &lt;code&gt;p&lt;/code&gt; and &lt;code&gt;q&lt;/code&gt; as descendants (where we allow a node to be a descendant of itself).”&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;p&gt;
     

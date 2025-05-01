@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.139.5</generator>
+    <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 06 May 2024 07:35:52 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/building/index.xml" rel="self" type="application/rss+xml" />
@@ -267,7 +267,7 @@ I don’t know exactly what this means, but I&amp;rsquo;m speculating it&amp;rsq
 &lt;/ul&gt;
 &lt;h4 id=&#34;example&#34;&gt;Example:&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;xcodebuild -project YourProjectName.xcodeproj -scheme YourSchemeName
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;another-way-is-by-integrating-fastlanehttpsfastlanetools-into-your-workflow&#34;&gt;Another way is by integrating &lt;a href=&#34;https://fastlane.tools/&#34;&gt;fastlane&lt;/a&gt; into your workflow:&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;another-way-is-by-integrating-fastlane-into-your-workflow&#34;&gt;Another way is by integrating &lt;a href=&#34;https://fastlane.tools/&#34;&gt;fastlane&lt;/a&gt; into your workflow:&lt;/h3&gt;
 &lt;h4 id=&#34;outline-of-the-process&#34;&gt;Outline of the process&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Install Fastlane&lt;/strong&gt;: If you haven&amp;rsquo;t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:&lt;/p&gt;</description>
     </item>

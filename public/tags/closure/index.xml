@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.139.5</generator>
+    <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 10 Dec 2023 00:00:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/closure/index.xml" rel="self" type="application/rss+xml" />
@@ -22,8 +22,7 @@
 &lt;p&gt;In this article, I’m going to briefly explain what closure is.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Closures is self-conitained blocks of funcionality that can be passed around and used in your code.
-— Apple&lt;/p&gt;
-&lt;/blockquote&gt;
+— Apple&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Expression:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;statements&lt;/span&gt;

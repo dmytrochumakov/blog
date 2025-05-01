@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.139.5</generator>
+    <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 26 Jul 2024 07:18:58 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swiftui/index.xml" rel="self" type="application/rss+xml" />
@@ -319,8 +319,7 @@ Let’s add:&lt;/p&gt;</description>
 I found a lot of information, but it was theoretical and all information looked the same.
 I did not find a meaningful example, so I tried to come up with my own definition and sample.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Integration testing means testing the behavior between modules or views to ensure they work as expected after user actions.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Integration testing means testing the behavior between modules or views to ensure they work as expected after user actions.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;there-are-two-ways-of-conducting-integration-testing&#34;&gt;There are two ways of conducting integration testing:&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;The first is by unit tests, where you try to test the flowing data between view models.&lt;/li&gt;

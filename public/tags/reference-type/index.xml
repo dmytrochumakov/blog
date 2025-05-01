@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.139.5</generator>
+    <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 03 Dec 2023 00:00:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/reference-type/index.xml" rel="self" type="application/rss+xml" />
@@ -21,8 +21,7 @@
       <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;In Swift, classes, closures, and actors all reference types.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&amp;lsquo;Reference type’ is instance that shares a single copy of data.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&amp;lsquo;Reference type’ is instance that shares a single copy of data.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Assigning a reference type to a constant or variable, or passing it into a function or method, it is always a reference to a shared instance that is assigned or passed in.&lt;/p&gt;
 &lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;
 &lt;p&gt;You can pass your property value by sharing the same address in memory.&lt;/p&gt;
