@@ -11,8 +11,36 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 02 May 2025 07:58:01 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 05 May 2025 07:41:18 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Number of 1 Bits</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-number-of-1-bits/</link>
+      <pubDate>Mon, 05 May 2025 07:41:18 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-number-of-1-bits/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given a positive integer &lt;code&gt;n&lt;/code&gt;, write a function that returns the number of set bits in its binary representation (also known as the &lt;a href=&#34;https://en.wikipedia.org/wiki/Hamming_weight&#34;&gt;Hamming weight&lt;/a&gt;).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A set bit refers to a bit in the binary representation of a number that has a value of 1.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: n = 11  
+Output: 3  
+Explanation:  
+The input binary string 1011 has a total of three set bits.
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: n = 128  
+Output: 1  
+Explanation:  
+The input binary string 10000000 has a total of one set bit.
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: n = 2147483645  
+Output: 30  
+Explanation:  
+The input binary string 1111111111111111111111111111101 has a total of thirty set bits.
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;= n &amp;lt;= 2^31 - 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Follow up: If this function is called many times, how would you optimize it?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Set Matrix Zeroes</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-set-matrix-zeroes/</link>
