@@ -189,6 +189,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Number of Connected Components in an Undirected Graph
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem You have a graph of n nodes. You are given an integer n and an array edges where edges[i] = [ai, bi] indicates that there is an edge between ai and bi in the graph.
+Return the number of connected components in the graph.
+Examples Input: n = 5, edges = [[0,1],[1,2],[3,4]] Output: 2 Input: n = 5, edges = [[0,1],[1,2],[2,3],[3,4]] Output: 1 Constraints 1 &lt;= n &lt;= 2000 1 &lt;= edges.length &lt;= 5000 edges[i].length == 2 0 &lt;= ai, bi &lt; n ai != bi There are no repeated edges. Depth-First Search Solution func countComponents(_ n: Int, _ edges: [[Int]]) -&gt; Int { var adj: [Int: [Int]] = [:] for i in 0 ..&lt; n { adj[i] = [] } var visit = Array(repeating: false, count: n) for value in edges { let u = value[0] let v = value[1] adj[u]!.append(v) adj[v]!.append(u) } func dfs(_ node: Int) { for nei in adj[node]! { if !visit[nei] { visit[nei] = true dfs(nei) } } } var res = 0 for node in 0 ..&lt; n { if !visit[node] { visit[node] = true dfs(node) res &#43;= 1 } } return res } Explanation From the description, we learn that we need to find the number of connected components in a graph. Let’s clarify what a connected component means:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-03-03 07:39:10 +0300 +0300'>March 3, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Number of Connected Components in an Undirected Graph" href="http://localhost:1313/posts/leetcode-blind-75-number-of-connected-components-in-an-undirected-graph/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Graph Valid Tree
     </h2>
   </header>
@@ -243,27 +258,12 @@ class Node { public int val; public List&lt;Node&gt; neighbors; } Test Case Form
   <footer class="entry-footer"><span title='2025-02-21 12:49:46 +0300 +0300'>February 21, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Clone Graph" href="http://localhost:1313/posts/leetcode-blind-75-clone-graph/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Number of Islands
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Given an m x n 2D binary grid grid, which represents a map of &#39;1&#39;s (land) and &#39;0&#39;s (water), return the number of islands.
-An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are surrounded by water.
-Examples Input: grid = [ [&#34;1&#34;,&#34;1&#34;,&#34;1&#34;,&#34;1&#34;,&#34;0&#34;], [&#34;1&#34;,&#34;1&#34;,&#34;0&#34;,&#34;1&#34;,&#34;0&#34;], [&#34;1&#34;,&#34;1&#34;,&#34;0&#34;,&#34;0&#34;,&#34;0&#34;], [&#34;0&#34;,&#34;0&#34;,&#34;0&#34;,&#34;0&#34;,&#34;0&#34;] ] Output: 1 Input: grid = [ [&#34;1&#34;,&#34;1&#34;,&#34;0&#34;,&#34;0&#34;,&#34;0&#34;], [&#34;1&#34;,&#34;1&#34;,&#34;0&#34;,&#34;0&#34;,&#34;0&#34;], [&#34;0&#34;,&#34;0&#34;,&#34;1&#34;,&#34;0&#34;,&#34;0&#34;], [&#34;0&#34;,&#34;0&#34;,&#34;0&#34;,&#34;1&#34;,&#34;1&#34;] ] Output: 3 Constraints m == grid.length n == grid[i].length 1 &lt;= m, n &lt;= 300 grid[i][j] is &#39;0&#39; or &#39;1&#39;. Depth-First Search Solution func numIslands(_ grid: [[Character]]) -&gt; Int { var grid = grid let ROWS = grid.count let COLS = grid[0].count let directions = [[1, 0], [-1, 0], [0, 1], [0, -1]] var islands = 0 func dfs(_ r: Int, _ c: Int) { if (r &lt; 0 || c &lt; 0 || r &gt;= ROWS || c &gt;= COLS || grid[r][c] == &#34;0&#34; ) { return } grid[r][c] = &#34;0&#34; for direction in directions { let dr = direction[0] let dc = direction[1] dfs(r &#43; dr, c &#43; dc) } } for r in 0 ..&lt; ROWS { for c in 0 ..&lt; COLS { if grid[r][c] == &#34;1&#34; { dfs(r, c) islands &#43;= 1 } } } return islands } Explanation From the description of the problem, we can see that we have islands formed by connecting adjacent land horizontally or vertically. If we draw a visual representation, we can find islands that are connected vertically or horizontally and surrounded by water.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-02-20 12:55:16 +0300 +0300'>February 20, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Number of Islands" href="http://localhost:1313/posts/leetcode-blind-75-number-of-islands/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/swift/page/5/">
-      «&nbsp;Prev&nbsp;5/25
+      «&nbsp;Prev&nbsp;5/26
     </a>
-    <a class="next" href="http://localhost:1313/tags/swift/page/7/">Next&nbsp;7/25&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/swift/page/7/">Next&nbsp;7/26&nbsp;»
     </a>
   </nav>
 </footer>

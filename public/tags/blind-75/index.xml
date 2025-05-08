@@ -11,8 +11,37 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 05 May 2025 07:41:18 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 08 May 2025 07:47:53 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/blind-75/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Counting Bits</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-counting-bits/</link>
+      <pubDate>Thu, 08 May 2025 07:47:53 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-counting-bits/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given an integer &lt;code&gt;n&lt;/code&gt;, return an array &lt;code&gt;ans&lt;/code&gt; of length &lt;code&gt;n + 1&lt;/code&gt; such that for each &lt;code&gt;i&lt;/code&gt; (&lt;code&gt;0 &amp;lt;= i &amp;lt;= n&lt;/code&gt;), &lt;code&gt;ans[i]&lt;/code&gt; is the number of &lt;code&gt;1&lt;/code&gt;s in the binary representation of &lt;code&gt;i&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: n = 2  
+Output: [0,1,1]  
+Explanation:  
+0 --&amp;gt; 0  
+1 --&amp;gt; 1  
+2 --&amp;gt; 10  
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: n = 5  
+Output: [0,1,1,2,1,2]  
+Explanation:  
+0 --&amp;gt; 0  
+1 --&amp;gt; 1  
+2 --&amp;gt; 10  
+3 --&amp;gt; 11  
+4 --&amp;gt; 100  
+5 --&amp;gt; 101  
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;0 &amp;lt;= n &amp;lt;= 10^5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Follow up:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Number of 1 Bits</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-number-of-1-bits/</link>
