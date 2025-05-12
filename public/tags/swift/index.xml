@@ -11,8 +11,37 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 10 May 2025 07:59:05 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 12 May 2025 08:01:36 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Missing Number</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-missing-number/</link>
+      <pubDate>Mon, 12 May 2025 08:01:36 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-missing-number/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given an array &lt;code&gt;nums&lt;/code&gt; containing &lt;code&gt;n&lt;/code&gt; distinct numbers in the range &lt;code&gt;[0, n]&lt;/code&gt;, return the only number in the range that is missing from the array.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [3,0,1]
+Output: 2
+Explanation:
+n = 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number in the range since it does not appear in nums.
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [0,1]
+Output: 2
+Explanation:
+n = 2 since there are 2 numbers, so all numbers are in the range [0,2]. 2 is the missing number in the range since it does not appear in nums.
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [9,6,4,2,3,5,7,0,1]
+Output: 8
+Explanation:
+n = 9 since there are 9 numbers, so all numbers are in the range [0,9]. 8 is the missing number in the range since it does not appear in nums.
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;n == nums.length&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;= n &amp;lt;= 10^4&lt;/li&gt;
+&lt;li&gt;0 &amp;lt;= nums[i] &amp;lt;= n&lt;/li&gt;
+&lt;li&gt;All the numbers of &lt;code&gt;nums&lt;/code&gt; are unique.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Follow up: Could you implement a solution using only &lt;code&gt;O(1)&lt;/code&gt; extra space complexity and &lt;code&gt;O(n)&lt;/code&gt; runtime complexity?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Reverse Bits</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-reverse-bits/</link>
