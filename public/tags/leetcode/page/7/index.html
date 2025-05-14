@@ -189,6 +189,20 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Course Schedule
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you must take course bi first if you want to take course ai.
+For example, the pair [0, 1] indicates that to take course 0, you have to first take course 1. Return true if you can finish all courses. Otherwise, return false.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-25 13:14:37 +0300 +0300'>February 25, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Course Schedule" href="http://localhost:1313/posts/leetcode-blind-75-course-schedule/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Pacific Atlantic Water Flow
     </h2>
   </header>
@@ -244,28 +258,12 @@ Examples Input: board = [[&#34;o&#34;,&#34;a&#34;,&#34;a&#34;,&#34;n&#34;],[&#34
   <footer class="entry-footer"><span title='2025-02-17 12:29:06 +0300 +0300'>February 17, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Word Search II" href="http://localhost:1313/posts/leetcode-blind-75-word-search-ii/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Design Add and Search Words Data Structure
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The problem Design a data structure that supports adding new words and finding if a string matches any previously added string.
-Implement the WordDictionary class:
-WordDictionary() Initializes the object. void addWord(word) Adds word to the data structure; it can be matched later. bool search(word) Returns true if there is any string in the data structure that matches word or false otherwise. word may contain dots (&#39;.&#39;), where dots can be matched with any letter. Examples Input [&#34;WordDictionary&#34;,&#34;addWord&#34;,&#34;addWord&#34;,&#34;addWord&#34;,&#34;search&#34;,&#34;search&#34;,&#34;search&#34;,&#34;search&#34;] [[],[&#34;bad&#34;],[&#34;dad&#34;],[&#34;mad&#34;],[&#34;pad&#34;],[&#34;bad&#34;],[&#34;.ad&#34;],[&#34;b..&#34;]] Output [null,null,null,null,false,true,true,true] Explanation WordDictionary wordDictionary = new WordDictionary(); wordDictionary.addWord(&#34;bad&#34;); wordDictionary.addWord(&#34;dad&#34;); wordDictionary.addWord(&#34;mad&#34;); wordDictionary.search(&#34;pad&#34;); // return False wordDictionary.search(&#34;bad&#34;); // return True wordDictionary.search(&#34;.ad&#34;); // return True wordDictionary.search(&#34;b..&#34;); // return True Constraints 1 &lt;= word.length &lt;= 25 word in addWord consists of lowercase English letters. word in search consists of &#39;.&#39; or lowercase English letters. There will be at most 2 dots in word for search queries. At most 10^4 calls will be made to addWord and search. Brute force solution class WordDictionary { private var store: [String] init() { self.store = [] } func addWord(_ word: String) { self.store.append(word) } func search(_ word: String) -&gt; Bool { let wordArray = Array(word) let wordCount = wordArray.count for w in self.store { let wArray = Array(w) let wCount = wArray.count if wCount != wordCount { continue } var i = 0 while i &lt; wCount { if wArray[i] == wordArray[i] || wordArray[i] == &#34;.&#34; { i &#43;= 1 } else { break } if i == wCount { return true } } } return false } } Explanation We can solve this problem in a brute-force way by using an array.
-It is not the most efficient solution because the search operation will take O(m * n) time. We can optimize it by using a Trie (Prefix Tree) data structure.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-02-14 09:53:50 +0300 +0300'>February 14, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Design Add and Search Words Data Structure" href="http://localhost:1313/posts/leetcode-blind-75-design-add-and-search-words-data-structure/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/leetcode/page/6/">
-      «&nbsp;Prev&nbsp;6/15
+      «&nbsp;Prev&nbsp;6/16
     </a>
-    <a class="next" href="http://localhost:1313/tags/leetcode/page/8/">Next&nbsp;8/15&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/leetcode/page/8/">Next&nbsp;8/16&nbsp;»
     </a>
   </nav>
 </footer>

@@ -11,8 +11,28 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 12 May 2025 08:01:36 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 14 May 2025 07:56:51 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Blind 75 - Sum of Two Integers</title>
+      <link>http://localhost:1313/posts/leetcode-blind-75-sum-of-two-integers/</link>
+      <pubDate>Wed, 14 May 2025 07:56:51 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-blind-75-sum-of-two-integers/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given two integers &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt;, return the sum of the two integers without using the operators &lt;code&gt;+&lt;/code&gt; and &lt;code&gt;-&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: a = 1, b = 2
+Output: 3
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: a = 2, b = 3
+Output: 5
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;-1000 &amp;lt;= a, b &amp;lt;= 1000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;p&gt;From the description of the problem, we learn that we need to figure out the way of adding two numbers without using &lt;code&gt;+&lt;/code&gt; or &lt;code&gt;-&lt;/code&gt; operators.&lt;br&gt;
+Let&amp;rsquo;s visualize this problem and find the way we can do it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Missing Number</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-missing-number/</link>

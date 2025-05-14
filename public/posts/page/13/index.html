@@ -204,6 +204,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Minimum Window Substring
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Given two strings s and t of lengths m and n, respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string &#34;&#34;.
+A substring is a contiguous, non-empty sequence of characters within a string.
+The test cases will be generated such that the answer is unique.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-03 07:09:24 +0300 +0300'>December 3, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Minimum Window Substring" href="http://localhost:1313/posts/leetcode-blind-75-minimum-window-substring/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Longest Repeating Character Replacement
     </h2>
   </header>
@@ -264,22 +279,6 @@ Notice that you may not slant the container.
   </div>
   <footer class="entry-footer"><span title='2024-11-20 06:57:55 +0300 +0300'>November 20, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Container With Most Water" href="http://localhost:1313/posts/leetcode-blind-75-container-with-most-water/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - 3Sum
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] &#43; nums[j] &#43; nums[k] == 0.
-Notice that the solution set must not contain duplicate triplets.
-Examples Input: nums = [-1,0,1,2,-1,-4] Output: [[-1,-1,2],[-1,0,1]] Explanation: nums[0] &#43; nums[1] &#43; nums[2] = (-1) &#43; 0 &#43; 1 = 0. nums[1] &#43; nums[2] &#43; nums[4] = 0 &#43; 1 &#43; (-1) = 0. nums[0] &#43; nums[3] &#43; nums[4] = (-1) &#43; 2 &#43; (-1) = 0. The distinct triplets are [-1,0,1] and [-1,-1,2]. Notice that the order of the output and the order of the triplets does not matter. Input: nums = [0,1,1] Output: [] Explanation: The only possible triplet does not sum up to 0. Input: nums = [0,0,0] Output: [[0,0,0]] Explanation: The only possible triplet sums up to 0. Constraints 3 &lt;= nums.length &lt;= 3000 -10⁵ &lt;= nums[i] &lt;= 10⁵ Brute Force Solution func threeSum(_ nums: [Int]) -&gt; [[Int]] { var nums = nums let n = nums.count var res: Set&lt;[Int]&gt; = [] nums.sort() for i in 0 ..&lt; n { for j in i &#43; 1 ..&lt; n { for k in j &#43; 1 ..&lt; n { if nums[i] &#43; nums[j] &#43; nums[k] == 0 { let val = [nums[i], nums[j], nums[k]] res.insert(val) } } } } return Array(res) } Explanation Let’s start with the brute force solution.
-According to the problem, we need to find triplet elements that, when added together, equal 0. By looking at examples, the first thing that comes to mind is to use three loops, add each of the elements, and compare the result with 0. If the result equals 0, we add the elements to the result.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-11-16 07:20:13 +0300 +0300'>November 16, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - 3Sum" href="http://localhost:1313/posts/leetcode-blind-75-3sum/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
