@@ -11,8 +11,36 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 14 May 2025 07:56:51 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 16 May 2025 08:02:42 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Valid Sudoku</title>
+      <link>http://localhost:1313/posts/leetcode-150-valid-sudoku/</link>
+      <pubDate>Fri, 16 May 2025 08:02:42 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-valid-sudoku/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Determine if a &lt;code&gt;9 x 9&lt;/code&gt; Sudoku board is valid. Only the filled cells need to be validated according to the following rules:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Each row must contain the digits &lt;code&gt;1-9&lt;/code&gt; without repetition.&lt;/li&gt;
+&lt;li&gt;Each column must contain the digits &lt;code&gt;1-9&lt;/code&gt; without repetition.&lt;/li&gt;
+&lt;li&gt;Each of the nine &lt;code&gt;3 x 3&lt;/code&gt; sub-boxes of the grid must contain the digits &lt;code&gt;1-9&lt;/code&gt; without repetition.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Note:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A Sudoku board (partially filled) could be valid but is not necessarily solvable.&lt;/li&gt;
+&lt;li&gt;Only the filled cells need to be validated according to the mentioned rules.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-334fd&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-334fd&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/Sudoku-by-L2G-20050714.svg.png#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Blind 75 - Sum of Two Integers</title>
       <link>http://localhost:1313/posts/leetcode-blind-75-sum-of-two-integers/</link>
