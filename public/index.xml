@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 16 May 2025 08:02:42 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 19 May 2025 07:17:39 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Two Sum II - Input Array Is Sorted</title>
+      <link>http://localhost:1313/posts/leetcode-150-two-sum-ii-input-array-is-sorted/</link>
+      <pubDate>Mon, 19 May 2025 07:17:39 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-two-sum-ii-input-array-is-sorted/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given a 1-indexed array of integers &lt;code&gt;numbers&lt;/code&gt; that is already sorted in non-decreasing order, find two numbers such that they add up to a specific &lt;code&gt;target&lt;/code&gt; number. Let these two numbers be &lt;code&gt;numbers[index1]&lt;/code&gt; and &lt;code&gt;numbers[index2]&lt;/code&gt; where &lt;code&gt;1 &amp;lt;= index1 &amp;lt; index2 &amp;lt;= numbers.length&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Return the indices of the two numbers, &lt;code&gt;index1&lt;/code&gt; and &lt;code&gt;index2&lt;/code&gt;, added by one as an integer array &lt;code&gt;[index1, index2]&lt;/code&gt; of length 2.&lt;/p&gt;
+&lt;p&gt;The tests are generated such that there is exactly one solution. You may not use the same element twice.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Valid Sudoku</title>
       <link>http://localhost:1313/posts/leetcode-150-valid-sudoku/</link>

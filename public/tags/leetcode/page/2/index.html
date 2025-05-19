@@ -189,6 +189,20 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Counting Bits
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem Given an integer n, return an array ans of length n &#43; 1 such that for each i (0 &lt;= i &lt;= n), ans[i] is the number of 1s in the binary representation of i.
+Examples Input: n = 2 Output: [0,1,1] Explanation: 0 --&gt; 0 1 --&gt; 1 2 --&gt; 10 Input: n = 5 Output: [0,1,1,2,1,2] Explanation: 0 --&gt; 0 1 --&gt; 1 2 --&gt; 10 3 --&gt; 11 4 --&gt; 100 5 --&gt; 101 Constraints 0 &lt;= n &lt;= 10^5 Follow up:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-05-08 07:47:53 +0300 EEST'>May 8, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Counting Bits" href="http://localhost:1313/posts/leetcode-blind-75-counting-bits/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Number of 1 Bits
     </h2>
   </header>
@@ -243,21 +257,6 @@ Examples Input: matrix = [[1,2,3],[4,5,6],[7,8,9]] Output: [[7,4,1],[8,5,2],[9,6
   </div>
   <footer class="entry-footer"><span title='2025-04-28 07:13:43 +0300 EEST'>April 28, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Rotate Image" href="http://localhost:1313/posts/leetcode-blind-75-rotate-image/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Meeting Rooms II
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The problem Given an array of meeting time intervals intervals where intervals[i] = [starti, endi], return the minimum number of conference rooms required.
-Examples Input: intervals = [[0,30],[5,10],[15,20]] Output: 2 Input: intervals = [[7,10],[2,4]] Output: 1 Constraints 1 &lt;= intervals.length &lt;= 10^4 0 &lt;= starti &lt; endi &lt;= 10^6 Explanation Before jumping to the code, we are going to sort the input because it’s not sorted by default.
-Sorting Solution func minMeetingRooms(_ intervals: [[Int]]) -&gt; Int { let start = intervals.map({ $0[0] }).sorted() let end = intervals.map({ $0[1] }).sorted() var res = 0 var count = 0 var s = 0 var e = 0 let n = intervals.count while s &lt; n { if start[s] &lt; end[e] { s &#43;= 1 count &#43;= 1 } else { e &#43;= 1 count -= 1 } res = max(res, count) } return res } Explanation We can visualize input with intervals = [[0,30],[5,10],[15,20]] like this:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-04-25 07:25:34 +0300 EEST'>April 25, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Meeting Rooms II" href="http://localhost:1313/posts/leetcode-blind-75-meeting-rooms-ii/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
