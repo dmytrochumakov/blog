@@ -1196,8 +1196,6 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/newsletter/</loc>
-  </url><url>
     <loc>http://localhost:1313/search/</loc>
   </url><url>
     <loc>http://localhost:1313/series/</loc>
