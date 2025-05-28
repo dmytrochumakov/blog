@@ -199,6 +199,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Testing Xcode project using the CLI
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction When you are working on different projects sometimes you need to use different IDE’s. You need to find a way to test a project in the fastest way.
+One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you’re in the project directory, you can run xcodebuild with the appropriate parameters to build your project. Example: xcodebuild -project YourProject.xcodeproj -scheme YourSchemeName test Another way is by integrating fastlane into your workflow: Outline of the process Install Fastlane: If you haven’t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-12 03:20:34 +0300 EEST'>April 12, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Testing Xcode project using the CLI" href="http://localhost:1313/posts/testing-xcode-project-using-the-cli/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Building Xcode project using the CLI
     </h2>
   </header>
@@ -254,21 +268,6 @@ Language Interpretation: When you have a language or syntax that needs to be int
   </div>
   <footer class="entry-footer"><span title='2024-03-18 08:29:30 +0300 +0300'>March 18, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to The Interpreter Pattern" href="http://localhost:1313/posts/the-interpreter-pattern/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">The Flyweight Pattern
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is a Flyweight Pattern? The Flyweight Pattern refers to an object that minimizes memory usage by sharing some of its data with other similar objects.
-Source
-What problems does it solve? The Flyweight Pattern helps solve following problems:
-Large Memory Footprint: When dealing with a large number of objects, especially if these objects share a significant amount of common state, traditional object creation can lead to excessive memory consumption. The Flyweight Pattern reduces memory usage by sharing this common state among multiple objects. Performance Overhead: Creating and managing a large number of objects can also introduce performance overhead due to memory allocation, deallocation, and initialization. By reusing shared objects and minimizing the creation of new objects, the Flyweight Pattern can improve performance. Object Creation Cost: Creating new objects can be costly in terms of time and resources, especially if the objects require complex initialization. By reusing existing objects, the Flyweight Pattern reduces the need for creating new objects, thereby reducing object creation costs. Real-world code example // Flyweight protocol defining the interface for shapes protocol Shape { func draw(at point: CGPoint) } // Concrete flyweight class representing a circle class Circle: Shape { private let radius: CGFloat private let fillColor: UIColor init(radius: CGFloat, fillColor: UIColor) { self.radius = radius self.fillColor = fillColor } func draw(at point: CGPoint) { print(&#34;Drawing Circle at (\(point.x), \(point.y)) with radius \(radius) and fill color \(fillColor)&#34;) // Actual drawing logic would go here } } // Flyweight factory class responsible for creating and managing flyweight objects class ShapeFactory { private var flyweights = [String: Shape]() func getCircle(radius: CGFloat, fillColor: UIColor) -&gt; Shape { let key = &#34;Circle-\(radius)-\(fillColor)&#34; if let existingShape = flyweights[key] { return existingShape } else { let newShape = Circle(radius: radius, fillColor: fillColor) flyweights[key] = newShape return newShape } } } // Client code let shapeFactory = ShapeFactory() // Request for circles with different properties let circle1 = shapeFactory.getCircle(radius: 10, fillColor: .red) let circle2 = shapeFactory.getCircle(radius: 10, fillColor: .red) // Reusing the same circle object let circle3 = shapeFactory.getCircle(radius: 20, fillColor: .blue) // Drawing circles circle1.draw(at: CGPoint(x: 100, y: 100)) circle2.draw(at: CGPoint(x: 200, y: 200)) circle3.draw(at: CGPoint(x: 300, y: 300)) Thank you for reading! 😊</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-03-17 08:29:30 +0300 +0300'>March 17, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to The Flyweight Pattern" href="http://localhost:1313/posts/the-flyweight-pattern/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

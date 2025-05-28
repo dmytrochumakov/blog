@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Permutation in String on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/permutation-in-string/</link>
+    <description>Recent content in Permutation in String on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.0</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 28 May 2025 07:53:36 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/permutation-in-string/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Permutation in String</title>
+      <link>http://localhost:1313/posts/leetcode-150-permutation-in-string/</link>
+      <pubDate>Wed, 28 May 2025 07:53:36 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-permutation-in-string/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given two strings &lt;code&gt;s1&lt;/code&gt; and &lt;code&gt;s2&lt;/code&gt;, return &lt;code&gt;true&lt;/code&gt; if &lt;code&gt;s2&lt;/code&gt; contains a permutation of &lt;code&gt;s1&lt;/code&gt;, or &lt;code&gt;false&lt;/code&gt; otherwise.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A permutation is a rearrangement of all the characters of a string.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;In other words, return &lt;code&gt;true&lt;/code&gt; if one of &lt;code&gt;s1&lt;/code&gt;’s permutations is a substring of &lt;code&gt;s2&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s1 = &amp;#34;ab&amp;#34;, s2 = &amp;#34;eidbaooo&amp;#34;
+Output: true
+Explanation: s2 contains one permutation of s1 (&amp;#34;ba&amp;#34;).
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s1 = &amp;#34;ab&amp;#34;, s2 = &amp;#34;eidboaoo&amp;#34;
+Output: false
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;= s1.length, s2.length &amp;lt;= 10^4&lt;/li&gt;
+&lt;li&gt;s1 and s2 consist of lowercase English letters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;p&gt;Before we jump into the solution, let&amp;rsquo;s take a look at the example with input &lt;code&gt;s1 = &amp;quot;ab&amp;quot;, s2 = &amp;quot;eidbaooo&amp;quot;&lt;/code&gt;&lt;br&gt;
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-7d24f&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-7d24f&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/567.png#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;br&gt;
+We are looking for a permutation of &lt;code&gt;s1&lt;/code&gt; in &lt;code&gt;s2&lt;/code&gt; with the size of &lt;code&gt;s1&lt;/code&gt;.&lt;br&gt;
+In the example, we can see that we have a permutation of &lt;code&gt;s1 = &amp;quot;ab&amp;quot;&lt;/code&gt; in &lt;code&gt;s2 = &amp;quot;eidbaooo&amp;quot;&lt;/code&gt; but in a different order.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
