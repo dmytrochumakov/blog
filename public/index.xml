@@ -5963,12 +5963,5 @@ UDF is a design pattern where data and events move consistently and predictably.
 &lt;p&gt;In TCA, the only way to mutate the state is by sending actions to a runtime store. The runtime store holds the entire app’s business logic and mutates the state inside.&lt;/p&gt;
 &lt;p&gt;UDF can reduce data inconsistencies because of the single source of truth for the application.&lt;/p&gt;</description>
     </item>
-    <item>
-      <title>About Me</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>Information about me.</description>
-    </item>
   </channel>
 </rss>
