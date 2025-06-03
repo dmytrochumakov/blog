@@ -11,8 +11,25 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Jun 2025 07:18:22 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 03 Jun 2025 07:29:07 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Min Stack</title>
+      <link>http://localhost:1313/posts/leetcode-150-min-stack/</link>
+      <pubDate>Tue, 03 Jun 2025 07:29:07 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-min-stack/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Design a stack that supports &lt;code&gt;push&lt;/code&gt;, &lt;code&gt;pop&lt;/code&gt;, &lt;code&gt;top&lt;/code&gt;, and &lt;strong&gt;retrieving the minimum element in constant time&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Implement the &lt;code&gt;MinStack&lt;/code&gt; class:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;MinStack()&lt;/code&gt; initializes the stack object.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;void push(int val)&lt;/code&gt; pushes the element &lt;code&gt;val&lt;/code&gt; onto the stack.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;void pop()&lt;/code&gt; removes the element on the top of the stack.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;int top()&lt;/code&gt; gets the top element of the stack.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;int getMin()&lt;/code&gt; retrieves the minimum element in the stack.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You must implement a solution with &lt;code&gt;O(1)&lt;/code&gt; time complexity for each function.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Sliding Window Maximum</title>
       <link>http://localhost:1313/posts/leetcode-150-sliding-window-maximum/</link>
