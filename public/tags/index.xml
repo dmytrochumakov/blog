@@ -11,20 +11,34 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Jun 2025 07:29:07 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 05 Jun 2025 07:51:16 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>150</title>
       <link>http://localhost:1313/tags/150/</link>
-      <pubDate>Tue, 03 Jun 2025 07:29:07 +0300</pubDate>
+      <pubDate>Thu, 05 Jun 2025 07:51:16 +0300</pubDate>
       <guid>http://localhost:1313/tags/150/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Evaluate Reverse Polish Notation</title>
+      <link>http://localhost:1313/tags/evaluate-reverse-polish-notation/</link>
+      <pubDate>Thu, 05 Jun 2025 07:51:16 +0300</pubDate>
+      <guid>http://localhost:1313/tags/evaluate-reverse-polish-notation/</guid>
       <description></description>
     </item>
     <item>
       <title>LeetCode</title>
       <link>http://localhost:1313/tags/leetcode/</link>
-      <pubDate>Tue, 03 Jun 2025 07:29:07 +0300</pubDate>
+      <pubDate>Thu, 05 Jun 2025 07:51:16 +0300</pubDate>
       <guid>http://localhost:1313/tags/leetcode/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Swift</title>
+      <link>http://localhost:1313/tags/swift/</link>
+      <pubDate>Thu, 05 Jun 2025 07:51:16 +0300</pubDate>
+      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>
@@ -32,13 +46,6 @@
       <link>http://localhost:1313/tags/min-stack/</link>
       <pubDate>Tue, 03 Jun 2025 07:29:07 +0300</pubDate>
       <guid>http://localhost:1313/tags/min-stack/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Swift</title>
-      <link>http://localhost:1313/tags/swift/</link>
-      <pubDate>Tue, 03 Jun 2025 07:29:07 +0300</pubDate>
-      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>
