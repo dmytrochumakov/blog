@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Generate Parentheses on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/generate-parentheses/</link>
+    <description>Recent content in Generate Parentheses on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.0</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 09 Jun 2025 07:54:24 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/generate-parentheses/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Generate Parentheses</title>
+      <link>http://localhost:1313/posts/leetcode-150-generate-parentheses/</link>
+      <pubDate>Mon, 09 Jun 2025 07:54:24 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-generate-parentheses/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given &lt;code&gt;n&lt;/code&gt; pairs of parentheses, write a function to generate all combinations of well-formed parentheses.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: n = 3  
+Output: [&amp;#34;((()))&amp;#34;,&amp;#34;(()())&amp;#34;,&amp;#34;(())()&amp;#34;,&amp;#34;()(())&amp;#34;,&amp;#34;()()()&amp;#34;]
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: n = 1  
+Output: [&amp;#34;()&amp;#34;]
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;= n &amp;lt;= 8&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;p&gt;Before we jump to the solution, let&amp;rsquo;s figure out what &lt;strong&gt;well-formed parentheses&lt;/strong&gt; mean.
+In this problem, this means when you&amp;rsquo;re writing the code using nested parentheses, you want them to be nested in a valid way, like &lt;code&gt;(()())&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
