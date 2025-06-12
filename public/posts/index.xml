@@ -11,8 +11,40 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 09 Jun 2025 07:54:24 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 12 Jun 2025 07:47:38 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Daily Temperatures</title>
+      <link>http://localhost:1313/posts/leetcode-150-daily-temperatures/</link>
+      <pubDate>Thu, 12 Jun 2025 07:47:38 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-daily-temperatures/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given an array of integers &lt;code&gt;temperatures&lt;/code&gt; represents the daily temperatures, return an array &lt;code&gt;answer&lt;/code&gt; such that &lt;code&gt;answer[i]&lt;/code&gt; is the number of days you have to wait after the &lt;code&gt;i&lt;/code&gt;th day to get a warmer temperature. If there is no future day for which this is possible, keep &lt;code&gt;answer[i] == 0&lt;/code&gt; instead.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: temperatures = [73,74,75,71,69,72,76,73]  
+Output: [1,1,4,2,1,1,0,0]  
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: temperatures = [30,40,50,60]  
+Output: [1,1,1,0]  
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: temperatures = [30,60,90]  
+Output: [1,1,0]  
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;= temperatures.length &amp;lt;= 10^5&lt;/li&gt;
+&lt;li&gt;30 &amp;lt;= temperatures[i] &amp;lt;= 100&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;p&gt;Before we jump to the solution, let&amp;rsquo;s figure out the way we can solve this problem.
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-ce6f1&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-ce6f1&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/739.png#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+
+In the first example, we can see that we can calculate how many days in the input array it takes us to find a temperature that is greater than &lt;code&gt;73&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Generate Parentheses</title>
       <link>http://localhost:1313/posts/leetcode-150-generate-parentheses/</link>
