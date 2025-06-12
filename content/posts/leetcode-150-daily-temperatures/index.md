@@ -126,8 +126,4 @@ To do that, we need to know the previous temperatures that we looked at.
 * Time complexity: O(n)
 * Space complexity: O(n)
 
-
-https://dmytros.blog/posts/leetcode-150-daily-temperatures
-#LeetCode #150 #Daily_Temperatures #Swift
-
 #### Thank you for reading! 😊
