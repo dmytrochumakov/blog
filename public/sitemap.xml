@@ -3,27 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/150/</loc>
-    <lastmod>2025-06-18T07:29:11+03:00</lastmod>
+    <lastmod>2025-06-24T07:51:28+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-06-24T07:51:28+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/largest-rectangle-in-histogram/</loc>
+    <lastmod>2025-06-24T07:51:28+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/leetcode/</loc>
+    <lastmod>2025-06-24T07:51:28+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/leetcode-150-largest-rectangle-in-histogram/</loc>
+    <lastmod>2025-06-24T07:51:28+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-06-24T07:51:28+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swift/</loc>
+    <lastmod>2025-06-24T07:51:28+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-06-24T07:51:28+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/car-fleet/</loc>
     <lastmod>2025-06-18T07:29:11+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-06-18T07:29:11+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/leetcode/</loc>
-    <lastmod>2025-06-18T07:29:11+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/leetcode-150-car-fleet/</loc>
-    <lastmod>2025-06-18T07:29:11+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-06-18T07:29:11+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2025-06-18T07:29:11+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-06-18T07:29:11+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/daily-temperatures/</loc>

@@ -11,8 +11,39 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Jun 2025 07:29:11 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 24 Jun 2025 07:51:28 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Largest Rectangle in Histogram</title>
+      <link>http://localhost:1313/posts/leetcode-150-largest-rectangle-in-histogram/</link>
+      <pubDate>Tue, 24 Jun 2025 07:51:28 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-largest-rectangle-in-histogram/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given an array of integers &lt;code&gt;heights&lt;/code&gt; representing the histogram&amp;rsquo;s bar height where the width of each bar is &lt;code&gt;1&lt;/code&gt;, return the area of the largest rectangle in the histogram.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-f3e90&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-f3e90&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/histogram.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: heights = [2,1,5,6,2,3]  
+Output: 10  
+Explanation: The above is a histogram where width of each bar is 1.  
+The largest rectangle is shown in the red area, which has an area = 10 units.  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-1deaf&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-1deaf&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/histogram-1.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Car Fleet</title>
       <link>http://localhost:1313/posts/leetcode-150-car-fleet/</link>
