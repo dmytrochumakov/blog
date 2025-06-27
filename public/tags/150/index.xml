@@ -11,8 +11,43 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Jun 2025 07:51:28 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 27 Jun 2025 07:37:23 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/150/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Binary Search</title>
+      <link>http://localhost:1313/posts/leetcode-150-binary-search/</link>
+      <pubDate>Fri, 27 Jun 2025 07:37:23 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-binary-search/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given an array of integers &lt;code&gt;nums&lt;/code&gt; which is sorted in ascending order, and an integer &lt;code&gt;target&lt;/code&gt;, write a function to search &lt;code&gt;target&lt;/code&gt; in &lt;code&gt;nums&lt;/code&gt;. If &lt;code&gt;target&lt;/code&gt; exists, then return its index. Otherwise, return &lt;code&gt;-1&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You must write an algorithm with &lt;code&gt;O(log n)&lt;/code&gt; runtime complexity.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [-1,0,3,5,9,12], target = 9  
+Output: 4  
+Explanation: 9 exists in nums and its index is 4
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [-1,0,3,5,9,12], target = 2  
+Output: -1  
+Explanation: 2 does not exist in nums so return -1
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;= nums.length &amp;lt;= 10^4&lt;/li&gt;
+&lt;li&gt;-10^4 &amp;lt; nums[i], target &amp;lt; 10^4&lt;/li&gt;
+&lt;li&gt;All the integers in nums are unique.&lt;/li&gt;
+&lt;li&gt;nums is sorted in ascending order.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;p&gt;Before we jump into the solution, let’s figure out what the requirements for a binary search algorithm are and how it is going to work.
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-0d4d4&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-0d4d4&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/704.png#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+
+The main requirement for binary search is that the input must be sorted.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Largest Rectangle in Histogram</title>
       <link>http://localhost:1313/posts/leetcode-150-largest-rectangle-in-histogram/</link>
