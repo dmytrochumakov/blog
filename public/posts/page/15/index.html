@@ -194,6 +194,22 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Search in Rotated Sorted Array
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem There is an integer array nums sorted in ascending order (with distinct values).
+Prior to being passed to your function, nums is possibly rotated at an unknown pivot index k (1 &lt;= k &lt; nums.length) such that the resulting array is [nums[k], nums[k&#43;1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2].
+Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
+You must write an algorithm with O(log n) runtime complexity.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-11 07:11:25 +0300 +0300'>December 11, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Search in Rotated Sorted Array" href="http://localhost:1313/posts/leetcode-blind-75-search-in-rotated-sorted-array/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Find Minimum in Rotated Sorted Array
     </h2>
   </header>
@@ -253,27 +269,12 @@ This algorithm is not very fast and takes O(n^2) time. We can improve it further
   <footer class="entry-footer"><span title='2024-11-29 07:27:59 +0300 +0300'>November 29, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Longest Repeating Character Replacement" href="http://localhost:1313/posts/leetcode-blind-75-longest-repeating-character-replacement/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Longest Substring Without Repeating Characters
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Given a string s, find the length of the longest substring without repeating characters.
-A substring is a contiguous non-empty sequence of characters within a string.
-Examples Input: s = &#34;abcabcbb&#34; Output: 3 Explanation: The answer is &#34;abc&#34;, with the length of 3. Input: s = &#34;bbbbb&#34; Output: 1 Explanation: The answer is &#34;b&#34;, with the length of 1. Input: s = &#34;pwwkew&#34; Output: 3 Explanation: The answer is &#34;wke&#34;, with the length of 3. Notice that the answer must be a substring. &#34;pwke&#34; is a subsequence and not a substring. Constraints 0 &lt;= s.length &lt;= 5 * 10⁴ s consists of English letters, digits, symbols, and spaces. Brute Force Solution func lengthOfLongestSubstring(_ s: String) -&gt; Int { let n = s.count var res = 0 for i in 0 ..&lt; n { var chars: [Character] = [] for j in i ..&lt; n { if chars.contains(s[j]) { break } chars.append(s[j]) } res = max(res, chars.count) } return res } Explanation Let’s start by visualizing the problem:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-11-26 07:12:59 +0300 +0300'>November 26, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Longest Substring Without Repeating Characters" href="http://localhost:1313/posts/leetcode-blind-75-longest-substring-without-repeating-characters/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/posts/page/14/">
-      «&nbsp;Prev&nbsp;14/35
+      «&nbsp;Prev&nbsp;14/36
     </a>
-    <a class="next" href="http://localhost:1313/posts/page/16/">Next&nbsp;16/35&nbsp;»
+    <a class="next" href="http://localhost:1313/posts/page/16/">Next&nbsp;16/36&nbsp;»
     </a>
   </nav>
 </footer>
