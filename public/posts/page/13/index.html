@@ -194,6 +194,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Lowest Common Ancestor of a Binary Search Tree
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.
+According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).”
+Examples ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-07 12:19:23 +0300 +0300'>January 7, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Lowest Common Ancestor of a Binary Search Tree" href="http://localhost:1313/posts/leetcode-blind-75-lowest-common-ancestor-of-a-binary-search-tree/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Subtree of Another Tree
     </h2>
   </header>
@@ -248,21 +262,6 @@ In this case, we use the DFS algorithm, where we swap the left subtree with the 
   </div>
   <footer class="entry-footer"><span title='2024-12-30 09:54:49 +0300 +0300'>December 30, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Invert Binary Tree" href="http://localhost:1313/posts/leetcode-blind-75-invert-binary-tree/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Merge k Sorted Lists
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The problem You are given an array of k linked lists lists, each linked list is sorted in ascending order.
-Merge all the linked lists into one sorted linked list and return it.
-Examples Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] Explanation: The linked lists are: [ 1-&gt;4-&gt;5, 1-&gt;3-&gt;4, 2-&gt;6 ] merging them into one sorted list: 1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4-&gt;5-&gt;6 Input: lists = [] Output: [] Input: lists = [[]] Output: [] Constraints k == lists.length 0 &lt;= k &lt;= 10^4 0 &lt;= lists[i].length &lt;= 500 -10^4 &lt;= lists[i][j] &lt;= 10^4 lists[i] is sorted in ascending order. The sum of lists[i].length will not exceed 10^4. Brute Force Solution func mergeKLists(_ lists: [ListNode?]) -&gt; ListNode? { var nodes: [Int] = [] // Step 1 for i in 0..&lt;lists.count { var lst = lists[i] while lst != nil { nodes.append(lst!.val) lst = lst?.next } } // Step 2 nodes.sort() // Step 3 var res = ListNode(0) var curr: ListNode? = res for node in nodes { curr?.next = ListNode(node) curr = curr?.next } return res.next } Explanation We can solve this problem by separating it into three steps:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-12-29 12:33:03 +0300 +0300'>December 29, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Merge k Sorted Lists" href="http://localhost:1313/posts/leetcode-blind-75-merge-k-sorted-lists/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 Jun 2025 07:43:19 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jul 2025 07:51:15 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Koko Eating Bananas</title>
+      <link>http://localhost:1313/posts/leetcode-150-koko-eating-bananas/</link>
+      <pubDate>Wed, 02 Jul 2025 07:51:15 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-koko-eating-bananas/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Koko loves to eat bananas. There are &lt;code&gt;n&lt;/code&gt; piles of bananas, the &lt;code&gt;ith&lt;/code&gt; pile has &lt;code&gt;piles[i]&lt;/code&gt; bananas. The guards have gone and will come back in &lt;code&gt;h&lt;/code&gt; hours.&lt;/p&gt;
+&lt;p&gt;Koko can decide her bananas-per-hour eating speed of &lt;code&gt;k&lt;/code&gt;. Each hour, she chooses some pile of bananas and eats &lt;code&gt;k&lt;/code&gt; bananas from that pile. If the pile has less than &lt;code&gt;k&lt;/code&gt; bananas, she eats all of them instead and will not eat any more bananas during this hour.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Search a 2D Matrix</title>
       <link>http://localhost:1313/posts/leetcode-150-search-a-2d-matrix/</link>

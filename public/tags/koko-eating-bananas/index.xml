@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Koko Eating Bananas on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/koko-eating-bananas/</link>
+    <description>Recent content in Koko Eating Bananas on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.0</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 02 Jul 2025 07:51:15 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/koko-eating-bananas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Koko Eating Bananas</title>
+      <link>http://localhost:1313/posts/leetcode-150-koko-eating-bananas/</link>
+      <pubDate>Wed, 02 Jul 2025 07:51:15 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-koko-eating-bananas/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Koko loves to eat bananas. There are &lt;code&gt;n&lt;/code&gt; piles of bananas, the &lt;code&gt;ith&lt;/code&gt; pile has &lt;code&gt;piles[i]&lt;/code&gt; bananas. The guards have gone and will come back in &lt;code&gt;h&lt;/code&gt; hours.&lt;/p&gt;
+&lt;p&gt;Koko can decide her bananas-per-hour eating speed of &lt;code&gt;k&lt;/code&gt;. Each hour, she chooses some pile of bananas and eats &lt;code&gt;k&lt;/code&gt; bananas from that pile. If the pile has less than &lt;code&gt;k&lt;/code&gt; bananas, she eats all of them instead and will not eat any more bananas during this hour.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
