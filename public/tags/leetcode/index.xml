@@ -11,8 +11,59 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Jul 2025 07:51:15 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 06 Jul 2025 07:42:17 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Time Based Key-Value Store</title>
+      <link>http://localhost:1313/posts/leetcode-150-time-based-key-value-store/</link>
+      <pubDate>Sun, 06 Jul 2025 07:42:17 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-time-based-key-value-store/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Design a time-based key-value data structure that can store multiple values for the same key at different timestamps and retrieve the key&amp;rsquo;s value at a certain timestamp.&lt;/p&gt;
+&lt;p&gt;Implement the &lt;code&gt;TimeMap&lt;/code&gt; class:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;TimeMap()&lt;/code&gt; Initializes the object of the data structure.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;void set(String key, String value, int timestamp)&lt;/code&gt; Stores the key &lt;code&gt;key&lt;/code&gt; with the value &lt;code&gt;value&lt;/code&gt; at the given time &lt;code&gt;timestamp&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;String get(String key, int timestamp)&lt;/code&gt; Returns a value such that &lt;code&gt;set&lt;/code&gt; was called previously, with &lt;code&gt;timestamp_prev &amp;lt;= timestamp&lt;/code&gt;. If there are multiple such values, it returns the value associated with the largest &lt;code&gt;timestamp_prev&lt;/code&gt;. If there are no values, it returns &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input
+[&amp;#34;TimeMap&amp;#34;, &amp;#34;set&amp;#34;, &amp;#34;get&amp;#34;, &amp;#34;get&amp;#34;, &amp;#34;set&amp;#34;, &amp;#34;get&amp;#34;, &amp;#34;get&amp;#34;]
+[[], [&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;, 1], [&amp;#34;foo&amp;#34;, 1], [&amp;#34;foo&amp;#34;, 3], [&amp;#34;foo&amp;#34;, &amp;#34;bar2&amp;#34;, 4], [&amp;#34;foo&amp;#34;, 4], [&amp;#34;foo&amp;#34;, 5]]
+Output
+[null, null, &amp;#34;bar&amp;#34;, &amp;#34;bar&amp;#34;, null, &amp;#34;bar2&amp;#34;, &amp;#34;bar2&amp;#34;]
+
+Explanation
+TimeMap timeMap = new TimeMap();
+timeMap.set(&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;, 1);  // store the key &amp;#34;foo&amp;#34; and value &amp;#34;bar&amp;#34; along with timestamp = 1.
+timeMap.get(&amp;#34;foo&amp;#34;, 1);         // return &amp;#34;bar&amp;#34;
+timeMap.get(&amp;#34;foo&amp;#34;, 3);         // return &amp;#34;bar&amp;#34;, since there is no value corresponding to foo at timestamp 3 and timestamp 2, then the only value is at timestamp 1 is &amp;#34;bar&amp;#34;.
+timeMap.set(&amp;#34;foo&amp;#34;, &amp;#34;bar2&amp;#34;, 4); // store the key &amp;#34;foo&amp;#34; and value &amp;#34;bar2&amp;#34; along with timestamp = 4.
+timeMap.get(&amp;#34;foo&amp;#34;, 4);         // return &amp;#34;bar2&amp;#34;
+timeMap.get(&amp;#34;foo&amp;#34;, 5);         // return &amp;#34;bar2&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;= key.length, value.length &amp;lt;= 100&lt;/li&gt;
+&lt;li&gt;key and value consist of lowercase English letters and digits.&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;= timestamp &amp;lt;= 10^7&lt;/li&gt;
+&lt;li&gt;All the timestamps of set are strictly increasing.&lt;/li&gt;
+&lt;li&gt;At most 2 * 10^5 calls will be made to set and get.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;p&gt;Our objective for this task is to design a key-value store.
+We are going to have a &lt;code&gt;key&lt;/code&gt;, and a list of &lt;code&gt;values&lt;/code&gt; associated with that key, and each value is going to have a &lt;code&gt;timestamp&lt;/code&gt; associated with it.
+As for operations, we are going to support only &lt;code&gt;set&lt;/code&gt; and &lt;code&gt;get&lt;/code&gt; operations.
+Now, let&amp;rsquo;s look at our example
+
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-93282&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-93282&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/981.png#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Koko Eating Bananas</title>
       <link>http://localhost:1313/posts/leetcode-150-koko-eating-bananas/</link>
