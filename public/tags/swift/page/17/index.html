@@ -179,6 +179,23 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Best Time to Buy and Sell Stock
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem You are given an array prices where prices[i] is the price of a given stock on the i-th day.
+You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
+Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+Examples Input: prices = [7,1,5,3,6,4] Output: 5 Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5. Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell. Input: prices = [7,6,4,3,1] Output: 0 Explanation: In this case, no transactions are done and the max profit = 0. Constraints 1 &lt;= prices.length &lt;= 10⁵ 0 &lt;= prices[i] &lt;= 10⁴ Brute force solution func maxProfit(_ prices: [Int]) -&gt; Int { let n = prices.count var res = 0 for i in 0 ..&lt; n { for j in i &#43; 1 ..&lt; n { let profit = prices[j] - prices[i] if profit &gt; 0 { res = max(res, profit) } } } return res } Explanation We can start with a brute force solution and find a way to a more optimal solution as we go.
+By visualizing the problem using input from example 1 [7,1,5,3,6,4]:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-11-22 07:14:17 +0300 +0300'>November 22, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Best Time to Buy and Sell Stock" href="http://localhost:1313/posts/leetcode-blind-75-best-time-to-buy-and-sell-stock/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Container With Most Water
     </h2>
   </header>
@@ -239,28 +256,12 @@ If you look closely at the array [3, 2, 1, 100, 5], it has a sequence of 2, 1, w
   <footer class="entry-footer"><span title='2024-11-10 07:10:01 +0300 +0300'>November 10, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Longest Consecutive Sequence" href="http://localhost:1313/posts/leetcode-blind-75-longest-consecutive-sequence/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Product of Array Except Self
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The problem Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
-The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
-You must write an algorithm that runs in O(n) time and without using the division operation.
-Examples Input: nums = [1,2,3,4] Output: [24,12,8,6] Input: nums = [-1,1,0,-3,3] Output: [0,0,9,0,0] Constraints 2 &lt;= nums.length &lt;= 10^5 -30 &lt;= nums[i] &lt;= 30 The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer. Follow up: Can you solve the problem in O(1) extra space complexity? (The output array does not count as extra space for space complexity analysis.)
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-11-05 07:25:53 +0300 +0300'>November 5, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Product of Array Except Self" href="http://localhost:1313/posts/leetcode-blind-75-product-of-array-except-self/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/swift/page/16/">
-      «&nbsp;Prev&nbsp;16/29
+      «&nbsp;Prev&nbsp;16/30
     </a>
-    <a class="next" href="http://localhost:1313/tags/swift/page/18/">Next&nbsp;18/29&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/swift/page/18/">Next&nbsp;18/30&nbsp;»
     </a>
   </nav>
 </footer>

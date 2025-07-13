@@ -189,6 +189,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">The State Pattern
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is a State Pattern? The State Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+Source
+What problems does it solve? Complex conditional logic: When an object’s behavior depends on its internal state, it often leads to complex conditional statements. The State pattern simplifies this by encapsulating each state and its behavior in separate classes, making the code more readable and maintainable. State-specific behavior: Objects often need to change their behavior based on their state. The State pattern allows objects to delegate behavior to state objects, which can vary independently. This promotes better encapsulation and separation of concerns. Adding new states: When new states need to be added, the State pattern makes it easier to extend the functionality without modifying existing code. New states can be added by creating new state classes and integrating them into the existing context, without changing the context class itself. Real-world code example // Define the VendingMachine protocol protocol VendingMachineState { func insertCoin() func dispenseItem() } // Define concrete states class NoCoinState: VendingMachineState { private let vendingMachine: VendingMachine init(vendingMachine: VendingMachine) { self.vendingMachine = vendingMachine } func insertCoin() { print(&#34;Coin inserted&#34;) // Transition to the HasCoinState vendingMachine.changeState(newState: vendingMachine.hasCoinState) } func dispenseItem() { print(&#34;Please insert a coin first&#34;) } } class HasCoinState: VendingMachineState { private let vendingMachine: VendingMachine init(vendingMachine: VendingMachine) { self.vendingMachine = vendingMachine } func insertCoin() { print(&#34;Coin already inserted&#34;) } func dispenseItem() { if vendingMachine.inventoryCount &gt; 0 { print(&#34;Item dispensed&#34;) vendingMachine.decreaseInventory() // Transition to the NoCoinState vendingMachine.changeState(newState: vendingMachine.noCoinState) } else { print(&#34;Out of stock&#34;) } } } // Define the VendingMachine class class VendingMachine { var inventoryCount: Int = 5 var currentState: VendingMachineState! var noCoinState: VendingMachineState! var hasCoinState: VendingMachineState! init() { noCoinState = NoCoinState(vendingMachine: self) hasCoinState = HasCoinState(vendingMachine: self) currentState = noCoinState } func changeState(newState: VendingMachineState) { currentState = newState } func insertCoin() { currentState.insertCoin() } func dispenseItem() { currentState.dispenseItem() } func decreaseInventory() { inventoryCount -= 1 } } // Usage let vendingMachine = VendingMachine() vendingMachine.dispenseItem() vendingMachine.insertCoin() vendingMachine.insertCoin() vendingMachine.dispenseItem() vendingMachine.dispenseItem() Thank you for reading!
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-10 08:29:30 +0300 +0300'>March 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to The State Pattern" href="http://localhost:1313/posts/the-state-pattern/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">The Dependency Inversion Principle
     </h2>
   </header>
@@ -248,19 +263,6 @@ actor DatabaseManager { private var data: [String: String] = [:] func readData(k
   </div>
   <footer class="entry-footer"><span title='2024-02-04 08:29:30 +0300 +0300'>February 4, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Modern Concurrency" href="http://localhost:1313/posts/modern-concurrency/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">What are Threads in Swift?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is the Thread? A Thread is a small set of instructions that can be executed independently from the main program. Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time. The Thread has its own stack, registers, and program counters.
-Threads share memory address space, and it is possible to communicate between Threads using shared memory space. ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-01-20 08:29:30 +0300 +0300'>January 20, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to What are Threads in Swift?" href="http://localhost:1313/posts/what-are-threads-in-swift/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
