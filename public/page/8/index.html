@@ -189,6 +189,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Longest Increasing Subsequence
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem Given an integer array nums, return the length of the longest strictly increasing subsequence.
+A subsequence is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements.
+Examples Input: nums = [10,9,2,5,3,7,101,18] Output: 4 Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4. Input: nums = [0,1,0,3,2,3] Output: 4 Input: nums = [7,7,7,7,7,7,7] Output: 1 Constraints 1 &lt;= nums.length &lt;= 2500 -10⁴ &lt;= nums[i] &lt;= 10⁴ Follow-up: Can you come up with an algorithm that runs in O(n log(n)) time complexity?
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-03 07:51:08 +0300 EEST'>April 3, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Longest Increasing Subsequence" href="http://localhost:1313/posts/leetcode-blind-75-longest-increasing-subsequence/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Word Break
     </h2>
   </header>
@@ -249,28 +264,12 @@ For example, &#34;11106&#34; can be decoded into:
   <footer class="entry-footer"><span title='2025-03-23 08:03:03 +0300 +0300'>March 23, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Decode Ways" href="http://localhost:1313/posts/leetcode-blind-75-decode-ways/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Palindromic Substrings
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Given a string s, return the number of palindromic substrings in it.
-A string is a palindrome when it reads the same backward as forward.
-A substring is a contiguous sequence of characters within the string.
-Examples Input: s = &#34;abc&#34; Output: 3 Explanation: Three palindromic strings: &#34;a&#34;, &#34;b&#34;, &#34;c&#34;. Input: s = &#34;aaa&#34; Output: 6 Explanation: Six palindromic strings: &#34;a&#34;, &#34;a&#34;, &#34;a&#34;, &#34;aa&#34;, &#34;aa&#34;, &#34;aaa&#34;. Constraints 1 &lt;= s.length &lt;= 1000 s consists of lowercase English letters. Brute Force Solution func countSubstrings(_ s: String) -&gt; Int { let n = s.count let sArray = Array(s) var res = 0 for i in 0 ..&lt; n { for j in i ..&lt; n { var l = i var r = j while l &lt; r &amp;&amp; sArray[l] == sArray[r] { l &#43;= 1 r -= 1 } res &#43;= (l &gt;= r) ? 1 : 0 } } return res } Explanation We can solve this problem by understanding how a brute-force approach works and then optimizing it.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-21 07:39:02 +0300 +0300'>March 21, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Palindromic Substrings" href="http://localhost:1313/posts/leetcode-blind-75-palindromic-substrings/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/page/7/">
-      «&nbsp;Prev&nbsp;7/36
+      «&nbsp;Prev&nbsp;7/37
     </a>
-    <a class="next" href="http://localhost:1313/page/9/">Next&nbsp;9/36&nbsp;»
+    <a class="next" href="http://localhost:1313/page/9/">Next&nbsp;9/37&nbsp;»
     </a>
   </nav>
 </footer>

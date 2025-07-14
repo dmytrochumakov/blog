@@ -11,8 +11,43 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Jul 2025 07:50:36 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 14 Jul 2025 08:00:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Add Two Numbers</title>
+      <link>http://localhost:1313/posts/leetcode-150-add-two-numbers/</link>
+      <pubDate>Mon, 14 Jul 2025 08:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-add-two-numbers/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;You are given two non‑empty linked lists representing two non‑negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.&lt;/p&gt;
+&lt;p&gt;You may assume the two numbers do not contain any leading zero, except the number 0 itself.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-44efa&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-44efa&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/addtwonumber1.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: l1 = [2,4,3], l2 = [5,6,4]
+Output: [7,0,8]
+Explanation: 342 + 465 = 807.
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: l1 = [0], l2 = [0]
+Output: [0]
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
+Output: [8,9,9,9,0,0,0,1]
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;The number of nodes in each linked list is in the range [1, 100].&lt;/li&gt;
+&lt;li&gt;0 ≤ Node.val ≤ 9&lt;/li&gt;
+&lt;li&gt;It is guaranteed that the list represents a number that does not have leading zeros.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;p&gt;When we add two numbers, we need to remember the carry value when it&amp;rsquo;s necessary. The main caveat in this problem is the edge cases; we will discuss them later.
+From the description of the problem, we know that we are given two non‑empty linked lists without negative integers, and the digits are stored in reverse order; we will see later that this reverse order will help us solve the problem.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Copy List with Random Pointer</title>
       <link>http://localhost:1313/posts/leetcode-150-copy-list-with-random-pointer/</link>
