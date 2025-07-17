@@ -52,7 +52,7 @@ But we can't solve this problem in a brute force way because we are given constr
 
 Another way to solve this problem is to use a linked list with cycle detection, and Floyd's algorithm which tells us the beginning of the cycle in the linked list.
 
-## Hash Set Solution
+### Hash Set Solution
 
 ```swift
 func findDuplicate(_ nums: [Int]) -> Int {

@@ -287,7 +287,7 @@ Follow up:">
             <span class="details">Table of Contents</span>
         </summary>
 
-        <div class="inner"><ul><ul>
+        <div class="inner"><ul>
                 <li>
                     <a href="#the-problem" aria-label="The problem">The problem</a><ul>
                         
@@ -297,15 +297,13 @@ Follow up:">
                     <a href="#constraints" aria-label="Constraints">Constraints</a></li>
                 <li>
                     <a href="#explanation" aria-label="Explanation">Explanation</a></li></ul>
-                </li></ul>
-                    
+                </li>
                 <li>
                     <a href="#hash-set-solution" aria-label="Hash Set Solution">Hash Set Solution</a><ul>
-                        <ul>
                         
                 <li>
                     <a href="#time-space-complexity" aria-label="Time/ Space complexity">Time/ Space complexity</a></li></ul>
-                    
+                </li>
                 <li>
                     <a href="#fast-and-slow-pointers-solution" aria-label="Fast and Slow Pointers Solution">Fast and Slow Pointers Solution</a><ul>
                         
@@ -316,8 +314,6 @@ Follow up:">
                 <li>
                     <a href="#thank-you-for-reading-" aria-label="Thank you for reading! 😊">Thank you for reading! 😊</a>
                 </li>
-            </ul>
-            </li>
             </ul>
             </li>
             </ul>
@@ -353,7 +349,7 @@ Output: 3
 <p>The brute force way to solve this problem would be to create a hash table and count the number of appearances of every single number and return the number that repeats twice or more times. The time and space complexity for this solution will be <code>O(n)</code>.</p>
 <p>But we can&rsquo;t solve this problem in a brute force way because we are given constraints that tell us that we must solve this problem without extra space.</p>
 <p>Another way to solve this problem is to use a linked list with cycle detection, and Floyd&rsquo;s algorithm which tells us the beginning of the cycle in the linked list.</p>
-<h2 id="hash-set-solution">Hash Set Solution<a hidden class="anchor" aria-hidden="true" href="#hash-set-solution">#</a></h2>
+<h3 id="hash-set-solution">Hash Set Solution<a hidden class="anchor" aria-hidden="true" href="#hash-set-solution">#</a></h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">findDuplicate</span><span class="p">(</span><span class="kc">_</span> <span class="n">nums</span><span class="p">:</span> <span class="p">[</span><span class="nb">Int</span><span class="p">])</span> <span class="p">-&gt;</span> <span class="nb">Int</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">seen</span><span class="p">:</span> <span class="n">Set</span><span class="p">&lt;</span><span class="nb">Int</span><span class="p">&gt;</span> <span class="p">=</span> <span class="p">[]</span>
 </span></span><span class="line"><span class="cl">
