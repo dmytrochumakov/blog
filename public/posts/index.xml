@@ -11,8 +11,24 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 17 Jul 2025 07:55:28 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 22 Jul 2025 07:51:33 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - LRU Cache</title>
+      <link>http://localhost:1313/posts/leetcode-150-lru-cache/</link>
+      <pubDate>Tue, 22 Jul 2025 07:51:33 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-lru-cache/</guid>
+      <description>&lt;p&gt;LeetCode - 150 - LRU Cache&lt;/p&gt;
+&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Design a data structure that follows the constraints of a &lt;a href=&#34;https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU&#34;&gt;Least Recently Used (LRU) cache&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Implement the &lt;code&gt;LRUCache&lt;/code&gt; class:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;LRUCache(int capacity)&lt;/code&gt; Initialize the LRU cache with positive size &lt;code&gt;capacity&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;int get(int key)&lt;/code&gt; Return the value of the &lt;code&gt;key&lt;/code&gt; if the key exists, otherwise return &lt;code&gt;-1&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;void put(int key, int value)&lt;/code&gt; Update the value of the &lt;code&gt;key&lt;/code&gt; if the &lt;code&gt;key&lt;/code&gt; exists. Otherwise, add the &lt;code&gt;key-value&lt;/code&gt; pair to the cache. If the number of keys exceeds the &lt;code&gt;capacity&lt;/code&gt; from this operation, evict the least recently used key.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The functions &lt;code&gt;get&lt;/code&gt; and &lt;code&gt;put&lt;/code&gt; must each run in &lt;code&gt;O(1)&lt;/code&gt; average time complexity.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Find the Duplicate Number</title>
       <link>http://localhost:1313/posts/leetcode-150-find-the-duplicate-number/</link>
