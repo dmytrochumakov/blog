@@ -11,15 +11,36 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 22 Jul 2025 07:51:33 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 26 Jul 2025 07:15:32 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/150/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Diameter of Binary Tree</title>
+      <link>http://localhost:1313/posts/leetcode-150-diameter-of-binary-tree/</link>
+      <pubDate>Sat, 26 Jul 2025 07:15:32 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-diameter-of-binary-tree/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given the &lt;code&gt;root&lt;/code&gt; of a binary tree, return the length of the diameter of the tree.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The diameter of a binary tree is the length of the longest path between any two nodes in a tree. This path may or may not pass through the &lt;code&gt;root&lt;/code&gt;.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The length of a path between two nodes is represented by the number of edges between them.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-ec853&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-ec853&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/diamtree.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - LRU Cache</title>
       <link>http://localhost:1313/posts/leetcode-150-lru-cache/</link>
       <pubDate>Tue, 22 Jul 2025 07:51:33 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-150-lru-cache/</guid>
-      <description>&lt;p&gt;LeetCode - 150 - LRU Cache&lt;/p&gt;
-&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
 &lt;p&gt;Design a data structure that follows the constraints of a &lt;a href=&#34;https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU&#34;&gt;Least Recently Used (LRU) cache&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Implement the &lt;code&gt;LRUCache&lt;/code&gt; class:&lt;/p&gt;
 &lt;ul&gt;

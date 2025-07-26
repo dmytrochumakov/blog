@@ -179,6 +179,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Maximum Subarray
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem Given an integer array nums, find the subarray with the largest sum, and return its sum.
+A subarray is a contiguous non-empty sequence of elements within an array.
+Examples Input: nums = [-2,1,-3,4,-1,2,1,-5,4] Output: 6 Explanation: The subarray [4,-1,2,1] has the largest sum 6. Input: nums = [1] Output: 1 Explanation: The subarray [1] has the largest sum 1. Input: nums = [5,4,-1,7,8] Output: 23 Explanation: The subarray [5,4,-1,7,8] has the largest sum 23. Constraints 1 &lt;= nums.length &lt;= 10⁵ -10⁴ &lt;= nums[i] &lt;= 10⁴ Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-10 07:40:25 +0300 EEST'>April 10, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Maximum Subarray" href="http://localhost:1313/posts/leetcode-blind-75-maximum-subarray/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Longest Common Subsequence
     </h2>
   </header>
@@ -234,23 +249,6 @@ Examples Input: s = &#34;leetcode&#34;, wordDict = [&#34;leet&#34;,&#34;code&#34
   </div>
   <footer class="entry-footer"><span title='2025-03-31 07:40:53 +0300 EEST'>March 31, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Word Break" href="http://localhost:1313/posts/leetcode-blind-75-word-break/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Maximum Product Subarray
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The problem Given an integer array nums, find a subarray that has the largest product and return the product.
-A subarray is a contiguous, non-empty sequence of elements within an array.
-The test cases are generated so that the answer will fit in a 32-bit integer.
-Examples Input: nums = [2,3,-2,4] Output: 6 Explanation: [2,3] has the largest product 6. Input: nums = [-2,0,-1] Output: 0 Explanation: The result cannot be 2 because [-2,-1] is not a subarray. Constraints 1 &lt;= nums.length &lt;= 2 * 10⁴ -10 &lt;= nums[i] &lt;= 10 The product of any subarray of nums is guaranteed to fit in a 32-bit integer. Brute force solution func maxProduct(_ nums: [Int]) -&gt; Int { var res = nums[0] let n = nums.count for i in 0 ..&lt; n { var curr = nums[i] res = max(res, curr) for j in i &#43; 1 ..&lt; n { curr *= nums[j] res = max(res, curr) } } return res } Explanation The brute-force way to solve this problem is to try every single subarray and calculate the product for each. This is not very efficient, and the time complexity will be O(n²).
-We can solve this problem in a more optimal way.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-28 07:28:21 +0300 +0300'>March 28, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Maximum Product Subarray" href="http://localhost:1313/posts/leetcode-blind-75-maximum-product-subarray/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
