@@ -11,8 +11,50 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 26 Jul 2025 07:15:32 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 30 Jul 2025 07:35:43 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Balanced Binary Tree</title>
+      <link>http://localhost:1313/posts/leetcode-150-balanced-binary-tree/</link>
+      <pubDate>Wed, 30 Jul 2025 07:35:43 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-balanced-binary-tree/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given a binary tree, determine if it is height-balanced.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A height-balanced binary tree is a binary tree in which the depth of the two subtrees of every node never differs by more than one.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-4b50b&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-4b50b&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/balance_1.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: root = [3,9,20,null,null,15,7]  
+Output: true  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-c5859&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-c5859&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/balance_2.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: root = [1,2,2,3,3,null,null,4,4]  
+Output: false  
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: root = []  
+Output: true  
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;The number of nodes in the tree is in the range [0, 5000].&lt;/li&gt;
+&lt;li&gt;-10^4 &amp;lt;= Node.val &amp;lt;= 10^4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;p&gt;From the description of the problem, we learn that we need to find if the tree is height-balanced, and that we can do it by determining if the difference between the height of every single node in the left and right subtrees is no more than &lt;code&gt;1&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Diameter of Binary Tree</title>
       <link>http://localhost:1313/posts/leetcode-150-diameter-of-binary-tree/</link>
