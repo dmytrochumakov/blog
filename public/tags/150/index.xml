@@ -11,8 +11,43 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Aug 2025 07:23:43 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 07 Aug 2025 07:55:32 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/150/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Count Good Nodes in Binary Tree</title>
+      <link>http://localhost:1313/posts/leetcode-150-count-good-nodes-in-binary-tree/</link>
+      <pubDate>Thu, 07 Aug 2025 07:55:32 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-count-good-nodes-in-binary-tree/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given a binary tree &lt;code&gt;root&lt;/code&gt;, a node X in the tree is named good if in the path from root to X there are no nodes with a value greater than X.&lt;/p&gt;
+&lt;p&gt;Return the number of good nodes in the binary tree.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-b588c&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-b588c&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/test_sample_1.png#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: root = [3,1,4,3,null,1,5]  
+Output: 4  
+Explanation: Nodes in blue are good.  
+Root Node (3) is always a good node.  
+Node 4 -&amp;gt; (3,4) is the maximum value in the path starting from the root.  
+Node 5 -&amp;gt; (3,4,5) is the maximum value in the path  
+Node 3 -&amp;gt; (3,1,3) is the maximum value in the path.  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-4b7b8&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-4b7b8&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/test_sample_2.png#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Binary Tree Right Side View</title>
       <link>http://localhost:1313/posts/leetcode-150-binary-tree-right-side-view/</link>
