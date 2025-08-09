@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 Aug 2025 07:55:32 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 09 Aug 2025 07:41:18 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Kth Largest Element in a Stream</title>
+      <link>http://localhost:1313/posts/leetcode-150-kth-largest-element-in-a-stream/</link>
+      <pubDate>Sat, 09 Aug 2025 07:41:18 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-kth-largest-element-in-a-stream/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;You are part of a university admissions office and need to keep track of the &lt;code&gt;kth&lt;/code&gt; highest test score from applicants in real-time. This helps to determine cut-off marks for interviews and admissions dynamically as new applicants submit their scores.&lt;/p&gt;
+&lt;p&gt;You are tasked to implement a class which, for a given integer &lt;code&gt;k&lt;/code&gt;, maintains a stream of test scores and continuously returns the &lt;code&gt;kth&lt;/code&gt; highest test score after a new score has been submitted. More specifically, we are looking for the &lt;code&gt;kth&lt;/code&gt; highest score in the sorted list of all scores.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Count Good Nodes in Binary Tree</title>
       <link>http://localhost:1313/posts/leetcode-150-count-good-nodes-in-binary-tree/</link>

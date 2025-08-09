@@ -194,6 +194,22 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Coin Change
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money.
+Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+You may assume that you have an infinite number of each kind of coin.
+Examples Input: coins = [1,2,5], amount = 11 Output: 3 Explanation: 11 = 5 &#43; 5 &#43; 1 Input: coins = [2], amount = 3 Output: -1 Input: coins = [1], amount = 0 Output: 0 Constraints 1 &lt;= coins.length &lt;= 12 1 &lt;= coins[i] &lt;= 2³¹ - 1 0 &lt;= amount &lt;= 10⁴ Dynamic programming top-down solution func coinChange(_ coins: [Int], _ amount: Int) -&gt; Int { var memo: [Int: Int] = [:] let int1e9 = Int(1e9) func dfs(_ amount: Int) -&gt; Int { if amount == 0 { return 0 } if let val = memo[amount] { return val } var res = int1e9 for coin in coins { if amount - coin &gt;= 0 { res = min(res, 1 &#43; dfs(amount - coin)) } } memo[amount] = res return res } let minCoins = dfs(amount) if minCoins &gt;= int1e9 { return -1 } else { return minCoins } } Explanation One of the ways that we can solve this problem is by using a depth-first search algorithm with memoization to optimize the overall time complexity.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-03-26 07:51:46 +0300 +0300'>March 26, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Coin Change" href="http://localhost:1313/posts/leetcode-blind-75-coin-change/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Decode Ways
     </h2>
   </header>
@@ -249,20 +265,6 @@ Examples Input: s = &#34;babad&#34; Output: &#34;bab&#34; Explanation: &#34;aba&
   </div>
   <footer class="entry-footer"><span title='2025-03-17 07:28:50 +0300 +0300'>March 17, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - House Robber II" href="http://localhost:1313/posts/leetcode-blind-75-house-robber-ii/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - House Robber
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. The only constraint stopping you from robbing each of them is that adjacent houses have security systems connected, and they will automatically contact the police if two adjacent houses are broken into on the same night.
-Given an integer array nums representing the amount of money in each house, return the maximum amount of money you can rob tonight without alerting the police.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-14 07:52:39 +0300 +0300'>March 14, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - House Robber" href="http://localhost:1313/posts/leetcode-blind-75-house-robber/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
