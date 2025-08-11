@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Last Stone Weight on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/last-stone-weight/</link>
+    <description>Recent content in Last Stone Weight on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.0</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 11 Aug 2025 07:25:28 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/last-stone-weight/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Last Stone Weight</title>
+      <link>http://localhost:1313/posts/leetcode-150-last-stone-weight/</link>
+      <pubDate>Mon, 11 Aug 2025 07:25:28 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-last-stone-weight/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;You are given an array of integers &lt;code&gt;stones&lt;/code&gt; where &lt;code&gt;stones[i]&lt;/code&gt; is the weight of the &lt;code&gt;ith&lt;/code&gt; stone.&lt;/p&gt;
+&lt;p&gt;We are playing a game with the stones. On each turn, we choose the heaviest two stones and smash them together. Suppose the heaviest two stones have weights &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt; with &lt;code&gt;x &amp;lt;= y&lt;/code&gt;. The result of this smash is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If &lt;code&gt;x == y&lt;/code&gt;, both stones are destroyed, and&lt;/li&gt;
+&lt;li&gt;If &lt;code&gt;x != y&lt;/code&gt;, the stone of weight &lt;code&gt;x&lt;/code&gt; is destroyed, and the stone of weight &lt;code&gt;y&lt;/code&gt; has new weight &lt;code&gt;y - x&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At the end of the game, there is at most one stone left.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
