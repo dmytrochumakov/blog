@@ -3,27 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/150/</loc>
-    <lastmod>2025-08-11T07:25:28+03:00</lastmod>
+    <lastmod>2025-08-13T07:45:42+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-08-11T07:25:28+03:00</lastmod>
+    <lastmod>2025-08-13T07:45:42+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/k-closest-points-to-origin/</loc>
+    <lastmod>2025-08-13T07:45:42+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/leetcode/</loc>
+    <lastmod>2025-08-13T07:45:42+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/leetcode-150-k-closest-points-to-origin/</loc>
+    <lastmod>2025-08-13T07:45:42+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-08-13T07:45:42+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swift/</loc>
+    <lastmod>2025-08-13T07:45:42+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-08-13T07:45:42+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/last-stone-weight/</loc>
     <lastmod>2025-08-11T07:25:28+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/leetcode/</loc>
-    <lastmod>2025-08-11T07:25:28+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/leetcode-150-last-stone-weight/</loc>
-    <lastmod>2025-08-11T07:25:28+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-08-11T07:25:28+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2025-08-11T07:25:28+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-08-11T07:25:28+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/kth-largest-element-in-a-stream/</loc>

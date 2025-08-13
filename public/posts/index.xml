@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Aug 2025 07:25:28 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 13 Aug 2025 07:45:42 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - K Closest Points to Origin</title>
+      <link>http://localhost:1313/posts/leetcode-150-k-closest-points-to-origin/</link>
+      <pubDate>Wed, 13 Aug 2025 07:45:42 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-k-closest-points-to-origin/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given an array of &lt;code&gt;points&lt;/code&gt; where &lt;code&gt;points[i] = [xi, yi]&lt;/code&gt; represents a point on the X-Y plane and an integer &lt;code&gt;k&lt;/code&gt;, return the &lt;code&gt;k&lt;/code&gt; closest points to the origin &lt;code&gt;(0, 0)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The distance between two points on the X-Y plane is the Euclidean distance (i.e., &lt;code&gt;√(x1 - x2)^2 + (y1 - y2)^2&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;You may return the answer in any order. The answer is guaranteed to be unique (except for the order that it is in).&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Last Stone Weight</title>
       <link>http://localhost:1313/posts/leetcode-150-last-stone-weight/</link>
