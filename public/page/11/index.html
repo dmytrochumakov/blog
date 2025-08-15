@@ -189,6 +189,22 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Palindromic Substrings
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Given a string s, return the number of palindromic substrings in it.
+A string is a palindrome when it reads the same backward as forward.
+A substring is a contiguous sequence of characters within the string.
+Examples Input: s = &#34;abc&#34; Output: 3 Explanation: Three palindromic strings: &#34;a&#34;, &#34;b&#34;, &#34;c&#34;. Input: s = &#34;aaa&#34; Output: 6 Explanation: Six palindromic strings: &#34;a&#34;, &#34;a&#34;, &#34;a&#34;, &#34;aa&#34;, &#34;aa&#34;, &#34;aaa&#34;. Constraints 1 &lt;= s.length &lt;= 1000 s consists of lowercase English letters. Brute Force Solution func countSubstrings(_ s: String) -&gt; Int { let n = s.count let sArray = Array(s) var res = 0 for i in 0 ..&lt; n { for j in i ..&lt; n { var l = i var r = j while l &lt; r &amp;&amp; sArray[l] == sArray[r] { l &#43;= 1 r -= 1 } res &#43;= (l &gt;= r) ? 1 : 0 } } return res } Explanation We can solve this problem by understanding how a brute-force approach works and then optimizing it.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-03-21 07:39:02 +0300 +0300'>March 21, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Palindromic Substrings" href="http://localhost:1313/posts/leetcode-blind-75-palindromic-substrings/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Longest Palindromic Substring
     </h2>
   </header>
@@ -244,27 +260,12 @@ You can see that we can take two single steps or we can take one double step at 
   <footer class="entry-footer"><span title='2025-03-11 07:43:01 +0300 +0300'>March 11, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Climbing Stairs" href="http://localhost:1313/posts/leetcode-blind-75-climbing-stairs/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Alien Dictionary
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem There is a new alien language that uses the English alphabet. However, the order of the letters is unknown to you.
-You are given a list of strings words from the alien language’s dictionary. It is claimed that the strings in words are sorted lexicographically by the rules of this new language.
-A string a is lexicographically smaller than a string b if, in the first position where a and b differ, string a has a letter that appears earlier in the alien language than the corresponding letter in b. If the first min(a.length, b.length) characters do not differ, then the shorter string is the lexicographically smaller one.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-06 07:40:15 +0300 +0300'>March 6, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Alien Dictionary" href="http://localhost:1313/posts/leetcode-blind-75-alien-dictionary/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/page/10/">
-      «&nbsp;Prev&nbsp;10/38
+      «&nbsp;Prev&nbsp;10/39
     </a>
-    <a class="next" href="http://localhost:1313/page/12/">Next&nbsp;12/38&nbsp;»
+    <a class="next" href="http://localhost:1313/page/12/">Next&nbsp;12/39&nbsp;»
     </a>
   </nav>
 </footer>
