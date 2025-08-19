@@ -194,6 +194,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Valid Palindrome
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Given a string s, return true if it is a palindrome, or false otherwise.
+A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
+Examples Input: s = &#34;A man, a plan, a canal: Panama&#34; Output: true Explanation: &#34;amanaplanacanalpanama&#34; is a palindrome. Input: s = &#34;race a car&#34; Output: false Explanation: &#34;raceacar&#34; is not a palindrome. Input: s = &#34; &#34; Output: true Explanation: s is an empty string &#34;&#34; after removing non-alphanumeric characters. Since an empty string reads the same forward and backward, it is a palindrome. Constraints 1 &lt;= s.length &lt;= 2 * 10^5 s consists only of printable ASCII characters. Brute Force Solution func isPalindrome(_ s: String) -&gt; Bool { var newStr = &#34;&#34; for c in s { if c.isLetter || c.isNumber { newStr &#43;= c.lowercased() } } return newStr == String(newStr.reversed()) } Explanation Let’s start with the brute force solution. According to the description, we need to check if the string contains only lowercase, alphanumeric characters and reads the same forward and backward. In Swift, you can check this using the built-in isLetter and isNumber properties. Based on this information, we iterate through all characters in the s string, verify that each character is a letter or number, update newStr with the current lowercased character, and compare the result with its reversed version.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-11-14 07:00:45 +0300 +0300'>November 14, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Valid Palindrome" href="http://localhost:1313/posts/leetcode-blind-75-valid-palindrome/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Longest Consecutive Sequence
     </h2>
   </header>
@@ -251,21 +266,6 @@ Examples Input: strs = [&#34;eat&#34;,&#34;tea&#34;,&#34;tan&#34;,&#34;ate&#34;,
   </div>
   <footer class="entry-footer"><span title='2024-11-01 07:20:55 +0300 +0300'>November 1, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Group Anagrams" href="http://localhost:1313/posts/leetcode-blind-75-group-anagrams/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Valid Anagram
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Given two strings s and t, return true if t is an anagram of s, and false otherwise.
-An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, using all the original letters exactly once.
-Examples Input: s = &#34;anagram&#34;, t = &#34;nagaram&#34; Output: true Input: s = &#34;rat&#34;, t = &#34;car&#34; Output: false Follow-up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-10-30 07:26:31 +0300 +0300'>October 30, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Valid Anagram" href="http://localhost:1313/posts/leetcode-blind-75-valid-anagram/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
