@@ -179,6 +179,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Invert Binary Tree
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Given the root of a binary tree, invert the tree, and return its root.
+Examples Input: root = [4,2,7,1,3,6,9] Output: [4,7,2,9,6,3,1] Input: root = [2,1,3] Output: [2,3,1] Input: root = [] Output: [] Constraints The number of nodes in the tree is in the range [0, 100]. -100 &lt;= Node.val &lt;= 100 Depth First Search Solution func invertTree(_ root: TreeNode?) -&gt; TreeNode? { if root == nil { return nil } let tmp = root?.left root?.left = root?.right root?.right = tmp invertTree(root?.left) invertTree(root?.right) return root } Explanation When working with trees, we often consider two general ways to solve these problems: depth-first search (DFS) and breadth-first search (BFS).
+In this case, we use the DFS algorithm, where we swap the left subtree with the right subtree and recursively call invertTree on the left and right nodes.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-30 09:54:49 +0300 +0300'>December 30, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Invert Binary Tree" href="http://localhost:1313/posts/leetcode-blind-75-invert-binary-tree/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Merge k Sorted Lists
     </h2>
   </header>
@@ -237,28 +252,12 @@ You may not modify the values in the list’s nodes. Only the nodes themselves m
   <footer class="entry-footer"><span title='2024-12-23 09:58:35 +0300 +0300'>December 23, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Reorder List" href="http://localhost:1313/posts/leetcode-blind-75-reorder-list/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Merge Two Sorted Lists
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem You are given the heads of two sorted linked lists, list1 and list2.
-Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
-Return the head of the merged linked list.
-Examples Input: list1 = [1,2,4], list2 = [1,3,4] Output: [1,1,2,3,4,4] Input: list1 = [], list2 = [] Output: [] Input: list1 = [], list2 = [0] Output: [0] Constraints The number of nodes in both lists is in the range [0, 50]. -100 &lt;= Node.val &lt;= 100 Both list1 and list2 are sorted in non-decreasing order. Recursive Solution func mergeTwoLists(_ list1: ListNode?, _ list2: ListNode?) -&gt; ListNode? { guard let list1 = list1 else { return list2 } guard let list2 = list2 else { return list1 } if list1.val &lt;= list2.val { list1.next = mergeTwoLists(list1.next, list2) return list1 } else { list2.next = mergeTwoLists(list1, list2.next) return list2 } } Explanation Before moving to the part where we use recursion, we need to handle the base case and check list1 and list2 for nil values. Then we compare the node values and move the next pointer accordingly.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-12-20 09:11:43 +0300 +0300'>December 20, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Merge Two Sorted Lists" href="http://localhost:1313/posts/leetcode-blind-75-merge-two-sorted-lists/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/leetcode/page/16/">
-      «&nbsp;Prev&nbsp;16/21
+      «&nbsp;Prev&nbsp;16/22
     </a>
-    <a class="next" href="http://localhost:1313/tags/leetcode/page/18/">Next&nbsp;18/21&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/leetcode/page/18/">Next&nbsp;18/22&nbsp;»
     </a>
   </nav>
 </footer>

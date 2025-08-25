@@ -11,8 +11,50 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 19 Aug 2025 07:34:45 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 25 Aug 2025 07:54:06 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Design Twitter</title>
+      <link>http://localhost:1313/posts/leetcode-150-design-twitter/</link>
+      <pubDate>Mon, 25 Aug 2025 07:54:06 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-design-twitter/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Design a simplified version of Twitter where users can post tweets, follow/unfollow another user, and are able to see the &lt;code&gt;10&lt;/code&gt; most recent tweets in the user&amp;rsquo;s news feed.&lt;/p&gt;
+&lt;p&gt;Implement the &lt;code&gt;Twitter&lt;/code&gt; class:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Twitter()&lt;/code&gt; Initializes your Twitter object.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;void postTweet(int userId, int tweetId)&lt;/code&gt; Composes a new tweet with ID &lt;code&gt;tweetId&lt;/code&gt; by the user &lt;code&gt;userId&lt;/code&gt;. Each call to this function will be made with a unique &lt;code&gt;tweetId&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;List&amp;lt;Integer&amp;gt; getNewsFeed(int userId)&lt;/code&gt; Retrieves the &lt;code&gt;10&lt;/code&gt; most recent tweet IDs in the user&amp;rsquo;s news feed. Each item in the news feed must be posted by users who the user followed or by the user themselves. Tweets must be ordered from most recent to least recent.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;void follow(int followerId, int followeeId)&lt;/code&gt; The user with ID &lt;code&gt;followerId&lt;/code&gt; starts following the user with ID &lt;code&gt;followeeId&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;void unfollow(int followerId, int followeeId)&lt;/code&gt; The user with ID &lt;code&gt;followerId&lt;/code&gt; stops following the user with ID &lt;code&gt;followeeId&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input
+[&amp;#34;Twitter&amp;#34;, &amp;#34;postTweet&amp;#34;, &amp;#34;getNewsFeed&amp;#34;, &amp;#34;follow&amp;#34;, &amp;#34;postTweet&amp;#34;, &amp;#34;getNewsFeed&amp;#34;, &amp;#34;unfollow&amp;#34;, &amp;#34;getNewsFeed&amp;#34;]
+[[], [1, 5], [1], [1, 2], [2, 6], [1], [1, 2], [1]]
+Output
+[null, null, [5], null, null, [6, 5], null, [5]]
+
+Explanation
+Twitter twitter = new Twitter();
+twitter.postTweet(1, 5); // User 1 posts a new tweet (id = 5).
+twitter.getNewsFeed(1);  // User 1&amp;#39;s news feed should return a list with 1 tweet id -&amp;gt; [5]. return [5]
+twitter.follow(1, 2);    // User 1 follows user 2.
+twitter.postTweet(2, 6); // User 2 posts a new tweet (id = 6).
+twitter.getNewsFeed(1);  // User 1&amp;#39;s news feed should return a list with 2 tweet ids -&amp;gt; [6, 5]. Tweet id 6 should precede tweet id 5 because it is posted after tweet id 5.
+twitter.unfollow(1, 2);  // User 1 unfollows user 2.
+twitter.getNewsFeed(1);  // User 1&amp;#39;s news feed should return a list with 1 tweet id -&amp;gt; [5], since user 1 is no longer following user 2.
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;= userId, followerId, followeeId &amp;lt;= 500&lt;/li&gt;
+&lt;li&gt;0 &amp;lt;= tweetId &amp;lt;= 10^4&lt;/li&gt;
+&lt;li&gt;All the tweets have unique IDs.&lt;/li&gt;
+&lt;li&gt;At most 3 * 10^4 calls will be made to postTweet, getNewsFeed, follow, and unfollow.&lt;/li&gt;
+&lt;li&gt;A user cannot follow himself.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;p&gt;Let&amp;rsquo;s start with the easy part of this problem that are &lt;code&gt;follow&lt;/code&gt; and &lt;code&gt;unfollow&lt;/code&gt; operations and move up as we go.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Task Scheduler</title>
       <link>http://localhost:1313/posts/leetcode-150-task-scheduler/</link>
