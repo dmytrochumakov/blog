@@ -11,8 +11,42 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 27 Aug 2025 08:00:51 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 02 Sep 2025 07:47:08 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Combination Sum II</title>
+      <link>http://localhost:1313/posts/leetcode-150-combination-sum-ii/</link>
+      <pubDate>Tue, 02 Sep 2025 07:47:08 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-combination-sum-ii/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given a collection of candidate numbers (&lt;code&gt;candidates&lt;/code&gt;) and a target number (&lt;code&gt;target&lt;/code&gt;), find all unique combinations in &lt;code&gt;candidates&lt;/code&gt; where the candidate numbers sum to &lt;code&gt;target&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Each number in &lt;code&gt;candidates&lt;/code&gt; may only be used once in the combination.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The solution set must not contain duplicate combinations.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: candidates = [10,1,2,7,6,1,5], target = 8
+Output: 
+[
+[1,1,6],
+[1,2,5],
+[1,7],
+[2,6]
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: candidates = [2,5,2,1,2], target = 5
+Output: 
+[
+[1,2,2],
+[5]
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;1 &amp;lt;= candidates.length &amp;lt;= 100&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;= candidates[i] &amp;lt;= 50&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;= target &amp;lt;= 30&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;p&gt;From the description of the problem, we learn that we are given an array of numbers &lt;code&gt;candidates&lt;/code&gt; and we want to find every combination that will sum to the given &lt;code&gt;target&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Subsets</title>
       <link>http://localhost:1313/posts/leetcode-150-subsets/</link>

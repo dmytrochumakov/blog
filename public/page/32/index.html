@@ -189,6 +189,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Animation - SwiftUI
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction I was eager to learn about creating complex animations in SwiftUI. The few questions that were on my mind included what types of animations exist and what I can animate. Here is what I found:
+Types of Animation SwiftUI has explicit and implicit animation types.
+Implicit Animation: This is specified with the .animation() modifier. SwiftUI will animate changes in old and new values.
+struct ImplicitAnimation: View { @State private var half = false @State private var dim = false var body: some View { Image(&#34;tower&#34;) .scaleEffect(half ? 0.5 : 1.0) .opacity(dim ? 0.2 : 1.0) .animation(.easeInOut(duration: 1.0)) .onTapGesture { self.dim.toggle() self.half.toggle() } } } ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-17 07:23:46 +0300 EEST'>May 17, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Animation - SwiftUI" href="http://localhost:1313/posts/animation-swiftui/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Implementing GraphQL in an iOS application
     </h2>
   </header>
@@ -242,21 +257,6 @@ First Step Set up In-App Purchases for your app in App Store Connect account or 
   </div>
   <footer class="entry-footer"><span title='2024-05-11 07:25:24 +0300 EEST'>May 11, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Implementing Apple Pay in a SwiftUI app" href="http://localhost:1313/posts/implementing-apple-pay-in-a-swiftui-app/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Integration testing for SwiftUI views
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I have been looking for information about implementation details of integration testing. I found a lot of information, but it was theoretical and all information looked the same. I did not find a meaningful example, so I tried to come up with my own definition and sample.
-Integration testing means testing the behavior between modules or views to ensure they work as expected after user actions.
-There are two ways of conducting integration testing: The first is by unit tests, where you try to test the flowing data between view models. The second is UI tests, where you try to test if the UI items exist and navigation works correctly. I will focus on testing the flowing data between view models.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-10 06:20:50 +0300 EEST'>May 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to Integration testing for SwiftUI views" href="http://localhost:1313/posts/integration-testing-for-swiftui-views/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
