@@ -3,27 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/150/</loc>
-    <lastmod>2025-09-02T07:47:08+03:00</lastmod>
+    <lastmod>2025-09-06T07:42:44+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-06T07:42:44+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/leetcode/</loc>
+    <lastmod>2025-09-06T07:42:44+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/leetcode-150-permutations/</loc>
+    <lastmod>2025-09-06T07:42:44+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/permutations/</loc>
+    <lastmod>2025-09-06T07:42:44+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-09-06T07:42:44+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swift/</loc>
+    <lastmod>2025-09-06T07:42:44+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-09-06T07:42:44+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/combination-sum-ii/</loc>
     <lastmod>2025-09-02T07:47:08+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-09-02T07:47:08+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/leetcode/</loc>
-    <lastmod>2025-09-02T07:47:08+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/leetcode-150-combination-sum-ii/</loc>
-    <lastmod>2025-09-02T07:47:08+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-09-02T07:47:08+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2025-09-02T07:47:08+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-09-02T07:47:08+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/leetcode-150-subsets/</loc>
