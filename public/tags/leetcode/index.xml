@@ -11,8 +11,40 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 12 Sep 2025 07:46:17 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 15 Sep 2025 07:36:50 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Letter Combinations of a Phone Number</title>
+      <link>http://localhost:1313/posts/leetcode-150-letter-combinations-of-a-phone-number/</link>
+      <pubDate>Mon, 15 Sep 2025 07:36:50 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-letter-combinations-of-a-phone-number/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.&lt;/p&gt;
+&lt;p&gt;A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.&lt;/p&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-2039f&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-2039f&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/1200px-telephone-keypad2svg.png#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: digits = &amp;#34;23&amp;#34;
+Output: [&amp;#34;ad&amp;#34;,&amp;#34;ae&amp;#34;,&amp;#34;af&amp;#34;,&amp;#34;bd&amp;#34;,&amp;#34;be&amp;#34;,&amp;#34;bf&amp;#34;,&amp;#34;cd&amp;#34;,&amp;#34;ce&amp;#34;,&amp;#34;cf&amp;#34;]
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: digits = &amp;#34;&amp;#34;
+Output: []
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: digits = &amp;#34;2&amp;#34;
+Output: [&amp;#34;a&amp;#34;,&amp;#34;b&amp;#34;,&amp;#34;c&amp;#34;]
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;0 &amp;lt;= digits.length &amp;lt;= 4&lt;/li&gt;
+&lt;li&gt;digits[i] is a digit in the range [&amp;lsquo;2&amp;rsquo;, &amp;lsquo;9&amp;rsquo;]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;p&gt;From the description of the problem, we learn that we are given a string with digits from &lt;code&gt;2-9&lt;/code&gt; and we need to return all possible combinations that the number could represent.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Palindrome Partitioning</title>
       <link>http://localhost:1313/posts/leetcode-150-palindrome-partitioning/</link>
