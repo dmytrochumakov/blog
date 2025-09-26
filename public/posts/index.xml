@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 15 Sep 2025 07:36:50 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 26 Sep 2025 08:01:26 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - N-Queens</title>
+      <link>http://localhost:1313/posts/leetcode-150-n-queens/</link>
+      <pubDate>Fri, 26 Sep 2025 08:01:26 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-n-queens/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;The n-queens puzzle is the problem of placing &lt;code&gt;n&lt;/code&gt; queens on an &lt;code&gt;n x n&lt;/code&gt; chessboard such that no two queens attack each other.&lt;/p&gt;
+&lt;p&gt;Given an integer n, return all distinct solutions to the &lt;code&gt;n&lt;/code&gt;-queens puzzle. You may return the answer in any order.&lt;/p&gt;
+&lt;p&gt;Each solution contains a distinct board configuration of the n-queens&amp;rsquo; placement, where &lt;code&gt;&#39;Q&#39;&lt;/code&gt; and &lt;code&gt;&#39;.&#39;&lt;/code&gt; both indicate a queen and an empty space, respectively.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Letter Combinations of a Phone Number</title>
       <link>http://localhost:1313/posts/leetcode-150-letter-combinations-of-a-phone-number/</link>

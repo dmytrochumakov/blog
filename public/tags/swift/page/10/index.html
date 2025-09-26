@@ -179,6 +179,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Meeting Rooms II
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem Given an array of meeting time intervals intervals where intervals[i] = [starti, endi], return the minimum number of conference rooms required.
+Examples Input: intervals = [[0,30],[5,10],[15,20]] Output: 2 Input: intervals = [[7,10],[2,4]] Output: 1 Constraints 1 &lt;= intervals.length &lt;= 10^4 0 &lt;= starti &lt; endi &lt;= 10^6 Explanation Before jumping to the code, we are going to sort the input because it’s not sorted by default.
+Sorting Solution func minMeetingRooms(_ intervals: [[Int]]) -&gt; Int { let start = intervals.map({ $0[0] }).sorted() let end = intervals.map({ $0[1] }).sorted() var res = 0 var count = 0 var s = 0 var e = 0 let n = intervals.count while s &lt; n { if start[s] &lt; end[e] { s &#43;= 1 count &#43;= 1 } else { e &#43;= 1 count -= 1 } res = max(res, count) } return res } Explanation We can visualize input with intervals = [[0,30],[5,10],[15,20]] like this:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-04-25 07:25:34 +0300 EEST'>April 25, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Meeting Rooms II" href="http://localhost:1313/posts/leetcode-blind-75-meeting-rooms-ii/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Meeting Rooms
     </h2>
   </header>
@@ -233,28 +248,12 @@ Insert newInterval into intervals such that intervals is still sorted in a
   <footer class="entry-footer"><span title='2025-04-15 07:57:18 +0300 EEST'>April 15, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Insert Interval" href="http://localhost:1313/posts/leetcode-blind-75-insert-interval/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Jump Game
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The problem You are given an integer array nums. You are initially positioned at the array’s first index, and each element in the array represents your maximum jump length at that position.
-Return true if you can reach the last index, or false otherwise.
-Examples Input: nums = [2,3,1,1,4] Output: true Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index. Input: nums = [3,2,1,0,4] Output: false Explanation: You will always arrive at index 3 no matter what. Its maximum jump length is 0, which makes it impossible to reach the last index. Constraints 1 &lt;= nums.length &lt;= 10⁴ 0 &lt;= nums[i] &lt;= 10⁵ Explanation From the description of the problem, we learn that we start from the start index, and for every element in the array, the number at the position represents the max jump length that we can perform at every single position.
-Basically, this means for input with nums = [2,3,1,1,4]
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-04-13 07:48:19 +0300 EEST'>April 13, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Jump Game" href="http://localhost:1313/posts/leetcode-blind-75-jump-game/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/swift/page/9/">
-      «&nbsp;Prev&nbsp;9/33
+      «&nbsp;Prev&nbsp;9/34
     </a>
-    <a class="next" href="http://localhost:1313/tags/swift/page/11/">Next&nbsp;11/33&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/swift/page/11/">Next&nbsp;11/34&nbsp;»
     </a>
   </nav>
 </footer>
