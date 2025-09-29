@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/design-patterns/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.9c01a4f9a4521ef0af35c2ce6e010795515fe13caeb992f2bb573ebf0f754043.css" integrity="sha256-nAGk&#43;aRSHvCvNcLObgEHlVFf4TyuuZLyu1c&#43;vw91QEM=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.23830bf4d3e301f84ac90cdafb3d702aa1cfa9dc93f20f2e37f8d775f06aea85.css" integrity="sha256-I4ML9NPjAfhKyQza&#43;z1wKqHPqdyT8g8uN/jXdfBq6oU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/design-patterns/index.xml">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/design-patterns/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/design-patterns/">
 <noscript>
     <style>
@@ -188,7 +188,7 @@ Source
 What problems does it solve? Complex conditional logic: When an object’s behavior depends on its internal state, it often leads to complex conditional statements. The State pattern simplifies this by encapsulating each state and its behavior in separate classes, making the code more readable and maintainable. State-specific behavior: Objects often need to change their behavior based on their state. The State pattern allows objects to delegate behavior to state objects, which can vary independently. This promotes better encapsulation and separation of concerns. Adding new states: When new states need to be added, the State pattern makes it easier to extend the functionality without modifying existing code. New states can be added by creating new state classes and integrating them into the existing context, without changing the context class itself. Real-world code example // Define the VendingMachine protocol protocol VendingMachineState { func insertCoin() func dispenseItem() } // Define concrete states class NoCoinState: VendingMachineState { private let vendingMachine: VendingMachine init(vendingMachine: VendingMachine) { self.vendingMachine = vendingMachine } func insertCoin() { print(&#34;Coin inserted&#34;) // Transition to the HasCoinState vendingMachine.changeState(newState: vendingMachine.hasCoinState) } func dispenseItem() { print(&#34;Please insert a coin first&#34;) } } class HasCoinState: VendingMachineState { private let vendingMachine: VendingMachine init(vendingMachine: VendingMachine) { self.vendingMachine = vendingMachine } func insertCoin() { print(&#34;Coin already inserted&#34;) } func dispenseItem() { if vendingMachine.inventoryCount &gt; 0 { print(&#34;Item dispensed&#34;) vendingMachine.decreaseInventory() // Transition to the NoCoinState vendingMachine.changeState(newState: vendingMachine.noCoinState) } else { print(&#34;Out of stock&#34;) } } } // Define the VendingMachine class class VendingMachine { var inventoryCount: Int = 5 var currentState: VendingMachineState! var noCoinState: VendingMachineState! var hasCoinState: VendingMachineState! init() { noCoinState = NoCoinState(vendingMachine: self) hasCoinState = HasCoinState(vendingMachine: self) currentState = noCoinState } func changeState(newState: VendingMachineState) { currentState = newState } func insertCoin() { currentState.insertCoin() } func dispenseItem() { currentState.dispenseItem() } func decreaseInventory() { inventoryCount -= 1 } } // Usage let vendingMachine = VendingMachine() vendingMachine.dispenseItem() vendingMachine.insertCoin() vendingMachine.insertCoin() vendingMachine.dispenseItem() vendingMachine.dispenseItem() Thank you for reading!
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-03-10 08:29:30 +0300 +0300'>March 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2024-03-10 08:29:30 +0300 +0300'>March 10, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to The State Pattern" href="http://localhost:1313/posts/the-state-pattern/"></a>
 </article>
 <footer class="page-footer">

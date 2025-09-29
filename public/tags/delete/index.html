@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/delete/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.9c01a4f9a4521ef0af35c2ce6e010795515fe13caeb992f2bb573ebf0f754043.css" integrity="sha256-nAGk&#43;aRSHvCvNcLObgEHlVFf4TyuuZLyu1c&#43;vw91QEM=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.23830bf4d3e301f84ac90cdafb3d702aa1cfa9dc93f20f2e37f8d775f06aea85.css" integrity="sha256-I4ML9NPjAfhKyQza&#43;z1wKqHPqdyT8g8uN/jXdfBq6oU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/delete/index.xml">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/delete/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/delete/">
 <noscript>
     <style>
@@ -187,7 +187,7 @@
 Code Example final class BSTNode { var val: Int? var left: BSTNode? var right: BSTNode? init(val: Int? = nil) { self.val = val } func delete(_ val: Int) -&gt; BSTNode? { // 1 guard let selfVal = self.val else { return nil } // 2 if val &lt; selfVal { if self.left == nil { return self } self.left = self.left!.delete(val) } // 3 if val &gt; selfVal { if self.right == nil { return self } self.right = self.right!.delete(val) } // 4 if self.right == nil { return self.left } // 5 if self.left == nil { return self.right } // 6 var minLargerNode = self.right while minLargerNode?.left != nil { minLargerNode = minLargerNode?.left } guard let minLargerNode = minLargerNode else { return self } self.val = minLargerNode.val self.right = self.right?.delete(minLargerNode.val!) return self } } Implementation Let’s look at the details:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-09-24 06:53:52 +0300 EEST'>September 24, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2024-09-24 06:53:52 +0300 EEST'>September 24, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to DSA - Binary Search Tree - Delete" href="http://localhost:1313/posts/dsa-binary-search-tree-delete/"></a>
 </article>
     </main>

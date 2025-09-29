@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.9c01a4f9a4521ef0af35c2ce6e010795515fe13caeb992f2bb573ebf0f754043.css" integrity="sha256-nAGk&#43;aRSHvCvNcLObgEHlVFf4TyuuZLyu1c&#43;vw91QEM=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.23830bf4d3e301f84ac90cdafb3d702aa1cfa9dc93f20f2e37f8d775f06aea85.css" integrity="sha256-I4ML9NPjAfhKyQza&#43;z1wKqHPqdyT8g8uN/jXdfBq6oU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
 <noscript>
     <style>
@@ -201,7 +201,7 @@
     <p>What is the Thread? A Thread is a small set of instructions that can be executed independently from the main program. Threads are often used to improve program performance by allowing multiple tasks to be executed at the same time. The Thread has its own stack, registers, and program counters.
 Threads share memory address space, and it is possible to communicate between Threads using shared memory space. ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-01-20 08:29:30 +0300 +0300'>January 20, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2024-01-20 08:29:30 +0300 +0300'>January 20, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to What are Threads in Swift?" href="http://localhost:1313/posts/what-are-threads-in-swift/"></a>
 </article>
 
@@ -216,7 +216,7 @@ How DispatchGroup works? DispatchGroup has three main methods, enter, leave and 
 let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() dispatchGroup.notify(queue: .main) {} Let`s talk about each of these methods. enter — manually indicate a block has entered group. leave — manually indicate a block in the group has been completed. notify(queue: ) — schedule a block to be submitted to a queue when all the blocks associated with a group have been completed. The queue parameter is the queue to which the supplied block will be submitted when the group is complete.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-01-10 00:00:00 +0300 +0300'>January 10, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2024-01-10 00:00:00 +0300 +0300'>January 10, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to DispatchGroup in Swift" href="http://localhost:1313/posts/dispatchgroup-in-swift/"></a>
 </article>
 
@@ -230,7 +230,7 @@ let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() 
 Material about processes, threads I will skip explaining concepts about processes and threads because it is a vast topic, and it will take a lot of time to explain it. I attached links to the material to help you understand it more deeply. https://youtu.be/4rLW7zg21gI?si=49hq8Wrbpmeev41k https://youtu.be/r2__Rw8vu1M?si=b7b257Qu4Bty7OxA I will focus on implementation.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-01-07 00:00:00 +0300 +0300'>January 7, 2024</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2024-01-07 00:00:00 +0300 +0300'>January 7, 2024</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to Concurrency in Swift" href="http://localhost:1313/posts/concurrency-in-swift/"></a>
 </article>
 
@@ -246,7 +246,7 @@ struct Storage { var data: String = &#34;some data&#34; } let originalStorage = 
 struct Storage { var data: String = &#34;some data&#34; } let originalStorage = Storage() var copiedStorage = originalStorage // `originalStorage` is copied to `copiedStorage` copiedStorage.data = &#34;new data&#34; // Changes `copiedStorage`, not `originalStorage` print(&#34;\(originalStorage.data), \(copiedStorage.data)&#34;) // prints &#34;some data, new data&#34; The effect of assignment, initialization, and argument passing creates an independent instance with a unique copy of its data.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2023-12-28 00:00:00 +0300 +0300'>December 28, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2023-12-28 00:00:00 +0300 +0300'>December 28, 2023</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to What are value types in Swift?" href="http://localhost:1313/posts/what-are-value-types-in-swift/"></a>
 </article>
 
@@ -262,7 +262,7 @@ All you need is to add LifetimeTracker package to the project, inherit from Life
 class Department: LifetimeTrackable {} trackLifetime method to init of instance that you are going to verify, and lifetimeConfiguration property where you set max number of valid instances.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2023-12-24 00:00:00 +0300 +0300'>December 24, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2023-12-24 00:00:00 +0300 +0300'>December 24, 2023</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to How to prevent memory leaks?" href="http://localhost:1313/posts/how-to-prevent-memory-leaks/"></a>
 </article>
 <footer class="page-footer">

@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/blind-75/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.9c01a4f9a4521ef0af35c2ce6e010795515fe13caeb992f2bb573ebf0f754043.css" integrity="sha256-nAGk&#43;aRSHvCvNcLObgEHlVFf4TyuuZLyu1c&#43;vw91QEM=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.23830bf4d3e301f84ac90cdafb3d702aa1cfa9dc93f20f2e37f8d775f06aea85.css" integrity="sha256-I4ML9NPjAfhKyQza&#43;z1wKqHPqdyT8g8uN/jXdfBq6oU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/blind-75/index.xml">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/blind-75/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/blind-75/">
 <noscript>
     <style>
@@ -188,7 +188,7 @@ A subsequence of a string is a new string generated from the original string wit
 For example, ”ace” is a subsequence of ”abcde”. A common subsequence of two strings is a subsequence that is common to both strings.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-04-08 07:57:29 +0300 EEST'>April 8, 2025</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2025-04-08 07:57:29 +0300 EEST'>April 8, 2025</span>&nbsp;·&nbsp;<span>7 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Longest Common Subsequence" href="http://localhost:1313/posts/leetcode-blind-75-longest-common-subsequence/"></a>
 </article>
 
@@ -202,7 +202,7 @@ For example, ”ace” is a subsequence of ”abcde”. A common subsequence of 
 Given the two integers m and n, return the number of possible unique paths that the robot can take to reach the bottom-right corner.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-04-05 07:43:55 +0300 EEST'>April 5, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2025-04-05 07:43:55 +0300 EEST'>April 5, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Unique Paths" href="http://localhost:1313/posts/leetcode-blind-75-unique-paths/"></a>
 </article>
 
@@ -217,7 +217,7 @@ A subsequence is an array that can be derived from another array by deleting som
 Examples Input: nums = [10,9,2,5,3,7,101,18] Output: 4 Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4. Input: nums = [0,1,0,3,2,3] Output: 4 Input: nums = [7,7,7,7,7,7,7] Output: 1 Constraints 1 &lt;= nums.length &lt;= 2500 -10⁴ &lt;= nums[i] &lt;= 10⁴ Follow-up: Can you come up with an algorithm that runs in O(n log(n)) time complexity?
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-04-03 07:51:08 +0300 EEST'>April 3, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2025-04-03 07:51:08 +0300 EEST'>April 3, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Longest Increasing Subsequence" href="http://localhost:1313/posts/leetcode-blind-75-longest-increasing-subsequence/"></a>
 </article>
 
@@ -232,7 +232,7 @@ Note that the same word in the dictionary may be reused multiple times in the se
 Examples Input: s = &#34;leetcode&#34;, wordDict = [&#34;leet&#34;,&#34;code&#34;] Output: true Explanation: Return true because &#34;leetcode&#34; can be segmented as &#34;leet code&#34;. Input: s = &#34;applepenapple&#34;, wordDict = [&#34;apple&#34;,&#34;pen&#34;] Output: true Explanation: Return true because &#34;applepenapple&#34; can be segmented as &#34;apple pen apple&#34;. Note that you are allowed to reuse a dictionary word. Input: s = &#34;catsandog&#34;, wordDict = [&#34;cats&#34;,&#34;dog&#34;,&#34;sand&#34;,&#34;and&#34;,&#34;cat&#34;] Output: false Constraints 1 &lt;= s.length &lt;= 300 1 &lt;= wordDict.length &lt;= 1000 1 &lt;= wordDict[i].length &lt;= 20 s and wordDict[i] consist of only lowercase English letters. All the strings of wordDict are unique. Recursion solution func wordBreak(_ s: String, _ wordDict: [String]) -&gt; Bool { let sCount = s.count let sArray = Array(s) func dfs(_ i: Int) -&gt; Bool { if i == sCount { return true } for w in wordDict { let wCount = w.count if ((i &#43; wCount) &lt;= sCount &amp;&amp; String(sArray[i ..&lt; i &#43; wCount]) == w ) { if dfs(i &#43; wCount) { return true } } } return false } return dfs(0) } Explanation There are multiple ways to solve this problem. For example, we can check every character in input s and compare it with characters in wordDict, but this approach is inefficient from a time complexity perspective. Instead:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-03-31 07:40:53 +0300 EEST'>March 31, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2025-03-31 07:40:53 +0300 EEST'>March 31, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Word Break" href="http://localhost:1313/posts/leetcode-blind-75-word-break/"></a>
 </article>
 
@@ -249,7 +249,7 @@ Examples Input: nums = [2,3,-2,4] Output: 6 Explanation: [2,3] has the largest p
 We can solve this problem in a more optimal way.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-03-28 07:28:21 +0300 +0300'>March 28, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2025-03-28 07:28:21 +0300 +0300'>March 28, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Maximum Product Subarray" href="http://localhost:1313/posts/leetcode-blind-75-maximum-product-subarray/"></a>
 </article>
 <footer class="page-footer">

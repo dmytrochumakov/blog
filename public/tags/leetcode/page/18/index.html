@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/leetcode/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.9c01a4f9a4521ef0af35c2ce6e010795515fe13caeb992f2bb573ebf0f754043.css" integrity="sha256-nAGk&#43;aRSHvCvNcLObgEHlVFf4TyuuZLyu1c&#43;vw91QEM=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.23830bf4d3e301f84ac90cdafb3d702aa1cfa9dc93f20f2e37f8d775f06aea85.css" integrity="sha256-I4ML9NPjAfhKyQza&#43;z1wKqHPqdyT8g8uN/jXdfBq6oU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/leetcode/index.xml">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/leetcode/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/leetcode/">
 <noscript>
     <style>
@@ -187,7 +187,7 @@
 Two binary trees are considered the same if they are structurally identical, and the nodes have the same values.
 Examples Input: p = [1,2,3], q = [1,2,3] Output: true Input: p = [1,2], q = [1,null,2] Output: false ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-01-02 12:30:42 +0300 +0300'>January 2, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2025-01-02 12:30:42 +0300 +0300'>January 2, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Same Tree" href="http://localhost:1313/posts/leetcode-blind-75-same-tree/"></a>
 </article>
 
@@ -202,7 +202,7 @@ A binary tree’s maximum depth is the number of nodes along the longest path fr
 Examples Input: root = [3,9,20,null,null,15,7] Output: 3 Input: root = [1,null,2] Output: 2 Constraints The number of nodes in the tree is in the range [0, 10⁴]. -100 &lt;= Node.val &lt;= 100 Brute Force Solution func maxDepth(_ root: TreeNode?) -&gt; Int { if root == nil { return 0 } return 1 &#43; max(maxDepth(root?.left), maxDepth(root?.right)) } Explanation We can solve this problem using recursion by calling the maxDepth function on the left and right child nodes. This approach helps us find the longest path down the tree.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-01-01 10:09:24 +0300 +0300'>January 1, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2025-01-01 10:09:24 +0300 +0300'>January 1, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Maximum Depth of Binary Tree" href="http://localhost:1313/posts/leetcode-blind-75-maximum-depth-of-binary-tree/"></a>
 </article>
 
@@ -217,7 +217,7 @@ Examples Input: root = [4,2,7,1,3,6,9] Output: [4,7,2,9,6,3,1] Input: root = [2,
 In this case, we use the DFS algorithm, where we swap the left subtree with the right subtree and recursively call invertTree on the left and right nodes.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-12-30 09:54:49 +0300 +0300'>December 30, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2024-12-30 09:54:49 +0300 +0300'>December 30, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Invert Binary Tree" href="http://localhost:1313/posts/leetcode-blind-75-invert-binary-tree/"></a>
 </article>
 
@@ -232,7 +232,7 @@ Merge all the linked lists into one sorted linked list and return it.
 Examples Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] Explanation: The linked lists are: [ 1-&gt;4-&gt;5, 1-&gt;3-&gt;4, 2-&gt;6 ] merging them into one sorted list: 1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4-&gt;5-&gt;6 Input: lists = [] Output: [] Input: lists = [[]] Output: [] Constraints k == lists.length 0 &lt;= k &lt;= 10^4 0 &lt;= lists[i].length &lt;= 500 -10^4 &lt;= lists[i][j] &lt;= 10^4 lists[i] is sorted in ascending order. The sum of lists[i].length will not exceed 10^4. Brute Force Solution func mergeKLists(_ lists: [ListNode?]) -&gt; ListNode? { var nodes: [Int] = [] // Step 1 for i in 0..&lt;lists.count { var lst = lists[i] while lst != nil { nodes.append(lst!.val) lst = lst?.next } } // Step 2 nodes.sort() // Step 3 var res = ListNode(0) var curr: ListNode? = res for node in nodes { curr?.next = ListNode(node) curr = curr?.next } return res.next } Explanation We can solve this problem by separating it into three steps:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-12-29 12:33:03 +0300 +0300'>December 29, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2024-12-29 12:33:03 +0300 +0300'>December 29, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Merge k Sorted Lists" href="http://localhost:1313/posts/leetcode-blind-75-merge-k-sorted-lists/"></a>
 </article>
 
@@ -247,7 +247,7 @@ There is a cycle in a linked list if there is some node in the list that can be 
 Return true if there is a cycle in the linked list. Otherwise, return false.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-12-26 11:21:15 +0300 +0300'>December 26, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2024-12-26 11:21:15 +0300 +0300'>December 26, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Linked List Cycle" href="http://localhost:1313/posts/leetcode-blind-75-linked-list-cycle/"></a>
 </article>
 <footer class="page-footer">

@@ -12,7 +12,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.9c01a4f9a4521ef0af35c2ce6e010795515fe13caeb992f2bb573ebf0f754043.css" integrity="sha256-nAGk&#43;aRSHvCvNcLObgEHlVFf4TyuuZLyu1c&#43;vw91QEM=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.23830bf4d3e301f84ac90cdafb3d702aa1cfa9dc93f20f2e37f8d775f06aea85.css" integrity="sha256-I4ML9NPjAfhKyQza&#43;z1wKqHPqdyT8g8uN/jXdfBq6oU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -20,8 +20,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
-<link rel="alternate" type="application/json" href="http://localhost:1313/index.json">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="rss">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json" title="json">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/">
 <noscript>
     <style>
@@ -198,7 +198,7 @@ Note that the same word in the dictionary may be reused multiple times in the se
 Examples Input: s = &#34;leetcode&#34;, wordDict = [&#34;leet&#34;,&#34;code&#34;] Output: true Explanation: Return true because &#34;leetcode&#34; can be segmented as &#34;leet code&#34;. Input: s = &#34;applepenapple&#34;, wordDict = [&#34;apple&#34;,&#34;pen&#34;] Output: true Explanation: Return true because &#34;applepenapple&#34; can be segmented as &#34;apple pen apple&#34;. Note that you are allowed to reuse a dictionary word. Input: s = &#34;catsandog&#34;, wordDict = [&#34;cats&#34;,&#34;dog&#34;,&#34;sand&#34;,&#34;and&#34;,&#34;cat&#34;] Output: false Constraints 1 &lt;= s.length &lt;= 300 1 &lt;= wordDict.length &lt;= 1000 1 &lt;= wordDict[i].length &lt;= 20 s and wordDict[i] consist of only lowercase English letters. All the strings of wordDict are unique. Recursion solution func wordBreak(_ s: String, _ wordDict: [String]) -&gt; Bool { let sCount = s.count let sArray = Array(s) func dfs(_ i: Int) -&gt; Bool { if i == sCount { return true } for w in wordDict { let wCount = w.count if ((i &#43; wCount) &lt;= sCount &amp;&amp; String(sArray[i ..&lt; i &#43; wCount]) == w ) { if dfs(i &#43; wCount) { return true } } } return false } return dfs(0) } Explanation There are multiple ways to solve this problem. For example, we can check every character in input s and compare it with characters in wordDict, but this approach is inefficient from a time complexity perspective. Instead:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-03-31 07:40:53 +0300 EEST'>March 31, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2025-03-31 07:40:53 +0300 EEST'>March 31, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Word Break" href="http://localhost:1313/posts/leetcode-blind-75-word-break/"></a>
 </article>
 
@@ -215,7 +215,7 @@ Examples Input: nums = [2,3,-2,4] Output: 6 Explanation: [2,3] has the largest p
 We can solve this problem in a more optimal way.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-03-28 07:28:21 +0300 +0300'>March 28, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2025-03-28 07:28:21 +0300 +0300'>March 28, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Maximum Product Subarray" href="http://localhost:1313/posts/leetcode-blind-75-maximum-product-subarray/"></a>
 </article>
 
@@ -231,7 +231,7 @@ You may assume that you have an infinite number of each kind of coin.
 Examples Input: coins = [1,2,5], amount = 11 Output: 3 Explanation: 11 = 5 &#43; 5 &#43; 1 Input: coins = [2], amount = 3 Output: -1 Input: coins = [1], amount = 0 Output: 0 Constraints 1 &lt;= coins.length &lt;= 12 1 &lt;= coins[i] &lt;= 2³¹ - 1 0 &lt;= amount &lt;= 10⁴ Dynamic programming top-down solution func coinChange(_ coins: [Int], _ amount: Int) -&gt; Int { var memo: [Int: Int] = [:] let int1e9 = Int(1e9) func dfs(_ amount: Int) -&gt; Int { if amount == 0 { return 0 } if let val = memo[amount] { return val } var res = int1e9 for coin in coins { if amount - coin &gt;= 0 { res = min(res, 1 &#43; dfs(amount - coin)) } } memo[amount] = res return res } let minCoins = dfs(amount) if minCoins &gt;= int1e9 { return -1 } else { return minCoins } } Explanation One of the ways that we can solve this problem is by using a depth-first search algorithm with memoization to optimize the overall time complexity.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-03-26 07:51:46 +0300 +0300'>March 26, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2025-03-26 07:51:46 +0300 +0300'>March 26, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Coin Change" href="http://localhost:1313/posts/leetcode-blind-75-coin-change/"></a>
 </article>
 
@@ -246,7 +246,7 @@ Examples Input: coins = [1,2,5], amount = 11 Output: 3 Explanation: 11 = 5 &#43;
 For example, &#34;11106&#34; can be decoded into:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-03-23 08:03:03 +0300 +0300'>March 23, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2025-03-23 08:03:03 +0300 +0300'>March 23, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Decode Ways" href="http://localhost:1313/posts/leetcode-blind-75-decode-ways/"></a>
 </article>
 
@@ -262,7 +262,7 @@ A substring is a contiguous sequence of characters within the string.
 Examples Input: s = &#34;abc&#34; Output: 3 Explanation: Three palindromic strings: &#34;a&#34;, &#34;b&#34;, &#34;c&#34;. Input: s = &#34;aaa&#34; Output: 6 Explanation: Six palindromic strings: &#34;a&#34;, &#34;a&#34;, &#34;a&#34;, &#34;aa&#34;, &#34;aa&#34;, &#34;aaa&#34;. Constraints 1 &lt;= s.length &lt;= 1000 s consists of lowercase English letters. Brute Force Solution func countSubstrings(_ s: String) -&gt; Int { let n = s.count let sArray = Array(s) var res = 0 for i in 0 ..&lt; n { for j in i ..&lt; n { var l = i var r = j while l &lt; r &amp;&amp; sArray[l] == sArray[r] { l &#43;= 1 r -= 1 } res &#43;= (l &gt;= r) ? 1 : 0 } } return res } Explanation We can solve this problem by understanding how a brute-force approach works and then optimizing it.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-03-21 07:39:02 +0300 +0300'>March 21, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2025-03-21 07:39:02 +0300 +0300'>March 21, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Palindromic Substrings" href="http://localhost:1313/posts/leetcode-blind-75-palindromic-substrings/"></a>
 </article>
 <footer class="page-footer">

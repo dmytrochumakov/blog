@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/blind-75/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.9c01a4f9a4521ef0af35c2ce6e010795515fe13caeb992f2bb573ebf0f754043.css" integrity="sha256-nAGk&#43;aRSHvCvNcLObgEHlVFf4TyuuZLyu1c&#43;vw91QEM=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.23830bf4d3e301f84ac90cdafb3d702aa1cfa9dc93f20f2e37f8d775f06aea85.css" integrity="sha256-I4ML9NPjAfhKyQza&#43;z1wKqHPqdyT8g8uN/jXdfBq6oU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/blind-75/index.xml">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/blind-75/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/blind-75/">
 <noscript>
     <style>
@@ -189,7 +189,7 @@ WordDictionary() Initializes the object. void addWord(word) Adds word to the dat
 It is not the most efficient solution because the search operation will take O(m * n) time. We can optimize it by using a Trie (Prefix Tree) data structure.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-02-14 09:53:50 +0300 +0300'>February 14, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2025-02-14 09:53:50 +0300 +0300'>February 14, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Design Add and Search Words Data Structure" href="http://localhost:1313/posts/leetcode-blind-75-design-add-and-search-words-data-structure/"></a>
 </article>
 
@@ -204,7 +204,7 @@ Implement the Trie class:
 Trie() Initializes the trie object. void insert(String word) Inserts the string word into the trie. boolean search(String word) Returns true if the string word is in the trie (i.e., was inserted before), and false otherwise. boolean startsWith(String prefix) Returns true if there is a previously inserted string word that has the prefix prefix, and false otherwise. Examples Input [&#34;Trie&#34;, &#34;insert&#34;, &#34;search&#34;, &#34;search&#34;, &#34;startsWith&#34;, &#34;insert&#34;, &#34;search&#34;] [[], [&#34;apple&#34;], [&#34;apple&#34;], [&#34;app&#34;], [&#34;app&#34;], [&#34;app&#34;], [&#34;app&#34;]] Output [null, null, true, false, true, null, true] Explanation Trie trie = new Trie(); trie.insert(&#34;apple&#34;); trie.search(&#34;apple&#34;); // return True trie.search(&#34;app&#34;); // return False trie.startsWith(&#34;app&#34;); // return True trie.insert(&#34;app&#34;); trie.search(&#34;app&#34;); // return True Constraints 1 &lt;= word.length, prefix.length &lt;= 2000 word and prefix consist only of lowercase English letters. At most 3 * 10⁴ calls in total will be made to insert, search, and startsWith. Prefix Tree Array solution final class TrieNode { var children: [TrieNode?] var endOfWord: Bool init() { self.children = Array(repeating: nil, count: 26) self.endOfWord = false } } class Trie { private let root: TrieNode private let aAsciiValue: Int = Int(Character(&#34;a&#34;).asciiValue!) init() { self.root = TrieNode() } func insert(_ word: String) { var curr = self.root for c in word { let i = Int(c.asciiValue!) - aAsciiValue if curr.children[i] == nil { curr.children[i] = TrieNode() } curr = curr.children[i]! } curr.endOfWord = true } func search(_ word: String) -&gt; Bool { var curr = self.root for c in word { let i = Int(c.asciiValue!) - aAsciiValue if curr.children[i] == nil { return false } curr = curr.children[i]! } return curr.endOfWord } func startsWith(_ prefix: String) -&gt; Bool { var curr = self.root for c in prefix { let i = Int(c.asciiValue!) - aAsciiValue if curr.children[i] == nil { return false } curr = curr.children[i]! } return true } } Explanation Before we start implementing Trie, let’s take a look at what we are going to do.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-02-10 13:32:09 +0300 +0300'>February 10, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2025-02-10 13:32:09 +0300 +0300'>February 10, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Implement Trie (Prefix Tree)" href="http://localhost:1313/posts/leetcode-blind-75-implement-trie-prefix-tree/"></a>
 </article>
 
@@ -218,7 +218,7 @@ Trie() Initializes the trie object. void insert(String word) Inserts the strin
 The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once.
 Examples Input: board = [[&#34;A&#34;,&#34;B&#34;,&#34;C&#34;,&#34;E&#34;],[&#34;S&#34;,&#34;F&#34;,&#34;C&#34;,&#34;S&#34;],[&#34;A&#34;,&#34;D&#34;,&#34;E&#34;,&#34;E&#34;]], word = &#34;ABCCED&#34; Output: true Input: board = [[&#34;A&#34;,&#34;B&#34;,&#34;C&#34;,&#34;E&#34;],[&#34;S&#34;,&#34;F&#34;,&#34;C&#34;,&#34;S&#34;],[&#34;A&#34;,&#34;D&#34;,&#34;E&#34;,&#34;E&#34;]], word = &#34;SEE&#34; Output: true ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-02-07 10:25:00 +0300 +0300'>February 7, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2025-02-07 10:25:00 +0300 +0300'>February 7, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Word Search" href="http://localhost:1313/posts/leetcode-blind-75-word-search/"></a>
 </article>
 
@@ -233,7 +233,7 @@ The same number may be chosen from candidates an unlimited number of times. Two 
 The frequency of an element x is the number of times it occurs in the array.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-02-05 14:11:48 +0300 +0300'>February 5, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2025-02-05 14:11:48 +0300 +0300'>February 5, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Combination Sum" href="http://localhost:1313/posts/leetcode-blind-75-combination-sum/"></a>
 </article>
 
@@ -248,7 +248,7 @@ For example, for arr = [2,3,4], the median is 3. For example, for arr = [2,3], t
 MedianFinder() initializes the MedianFinder object. void addNum(int num) adds the integer num from the data stream to the data structure. double findMedian() returns the median of all elements so far. Answers within 10⁻⁵ of the actual answer will be accepted. Examples Input [&#34;MedianFinder&#34;, &#34;addNum&#34;, &#34;addNum&#34;, &#34;findMedian&#34;, &#34;addNum&#34;, &#34;findMedian&#34;] [[], [1], [2], [], [3], []] Output [null, null, null, 1.5, null, 2.0] Explanation MedianFinder medianFinder = new MedianFinder(); medianFinder.addNum(1); // arr = [1] medianFinder.addNum(2); // arr = [1, 2] medianFinder.findMedian(); // return 1.5 (i.e., (1 &#43; 2) / 2) medianFinder.addNum(3); // arr = [1, 2, 3] medianFinder.findMedian(); // return 2.0 Constraints -10⁵ &lt;= num &lt;= 10⁵ There will be at least one element in the data structure before calling findMedian(). At most 5 * 10⁴ calls will be made to addNum and findMedian(). Follow-up: If all integer numbers from the stream are in the range [0, 100], how would you optimize your solution? If 99% of all integer numbers from the stream are in the range [0, 100], how would you optimize your solution? Sorting Solution class MedianFinder { private var data: [Int] init() { self.data = [] } func addNum(_ num: Int) { data.append(num) } func findMedian() -&gt; Double { data.sort() let n = data.count if (n &amp; 1) != 0 { return Double(data[n / 2]) } else { return (Double(data[n / 2]) &#43; Double(data[n / 2 - 1])) / 2 } } } Explanation One approach to solving this problem is to apply a built-in sorting algorithm. To find the result, we use an array to collect all numbers added using the addNum method.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-02-03 11:28:36 +0300 +0300'>February 3, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2025-02-03 11:28:36 +0300 +0300'>February 3, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Find Median from Data Stream" href="http://localhost:1313/posts/leetcode-blind-75-find-median-from-data-stream/"></a>
 </article>
 <footer class="page-footer">

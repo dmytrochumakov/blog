@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/binary-search-tree/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.9c01a4f9a4521ef0af35c2ce6e010795515fe13caeb992f2bb573ebf0f754043.css" integrity="sha256-nAGk&#43;aRSHvCvNcLObgEHlVFf4TyuuZLyu1c&#43;vw91QEM=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.23830bf4d3e301f84ac90cdafb3d702aa1cfa9dc93f20f2e37f8d775f06aea85.css" integrity="sha256-I4ML9NPjAfhKyQza&#43;z1wKqHPqdyT8g8uN/jXdfBq6oU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/binary-search-tree/index.xml">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/binary-search-tree/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/binary-search-tree/">
 <noscript>
     <style>
@@ -187,7 +187,7 @@
 Code Example - Min func findMin() -&gt; Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } Code Example - Max func findMax() -&gt; Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } Complete Code Example final class BSTNode { var val: Int? var left: BSTNode? var right: BSTNode? init(val: Int? = nil) { self.val = val } func insert(_ val: Value) { if self.val == nil { self.val = val return } if self.val == val { return } if val &lt; self.val! { if self.left != nil { self.left!.insert(val) return } else { self.left = BSTNode(val: val) return } } if self.right != nil { self.right!.insert(val) return } self.right = BSTNode(val: val) } func findMin() -&gt; Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } func findMax() -&gt; Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } } Time/Space Complexity For both findMin and findMax:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-09-22 07:26:23 +0300 EEST'>September 22, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2024-09-22 07:26:23 +0300 EEST'>September 22, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to DSA - Binary Search Tree Min/Max" href="http://localhost:1313/posts/dsa-binary-search-tree-min-max/"></a>
 </article>
 
@@ -201,7 +201,7 @@ Code Example - Min func findMin() -&gt; Int? { var min: Int? var curr: BSTNode? 
 I’m going to focus on a commonly used type of tree, the Binary Search Tree.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-09-02 07:12:55 +0300 EEST'>September 2, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2024-09-02 07:12:55 +0300 EEST'>September 2, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to DSA - Binary Search Tree" href="http://localhost:1313/posts/dsa-binary-search-tree/"></a>
 </article>
 <footer class="page-footer">

@@ -12,7 +12,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.9c01a4f9a4521ef0af35c2ce6e010795515fe13caeb992f2bb573ebf0f754043.css" integrity="sha256-nAGk&#43;aRSHvCvNcLObgEHlVFf4TyuuZLyu1c&#43;vw91QEM=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.23830bf4d3e301f84ac90cdafb3d702aa1cfa9dc93f20f2e37f8d775f06aea85.css" integrity="sha256-I4ML9NPjAfhKyQza&#43;z1wKqHPqdyT8g8uN/jXdfBq6oU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -20,8 +20,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
-<link rel="alternate" type="application/json" href="http://localhost:1313/index.json">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="rss">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json" title="json">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/">
 <noscript>
     <style>
@@ -199,7 +199,7 @@ Given the sorted rotated array nums of unique elements, return the minimum 
 You must write an algorithm that runs in O(log n) time.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-12-09 07:05:38 +0300 +0300'>December 9, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2024-12-09 07:05:38 +0300 +0300'>December 9, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Find Minimum in Rotated Sorted Array" href="http://localhost:1313/posts/leetcode-blind-75-find-minimum-in-rotated-sorted-array/"></a>
 </article>
 
@@ -214,7 +214,7 @@ An input string is valid if:
 Open brackets must be closed by the same type of brackets. Open brackets must be closed in the correct order. Every closing bracket has a corresponding open bracket of the same type. Examples Input: s = &#34;()&#34; Output: true Input: s = &#34;()[]{}&#34; Output: true Input: s = &#34;(]&#34; Output: false Input: s = &#34;([])&#34; Output: true Constraints 1 &lt;= s.length &lt;= 10⁴ s consists of parentheses only &#39;()[]{}&#39;. Brute Force Solution func isValid(_ s: String) -&gt; Bool { var s = s while s.contains(&#34;()&#34;) || s.contains(&#34;{}&#34;) || s.contains(&#34;[]&#34;) { s = s.replacingOccurrences(of: &#34;()&#34;, with: &#34;&#34;) s = s.replacingOccurrences(of: &#34;{}&#34;, with: &#34;&#34;) s = s.replacingOccurrences(of: &#34;[]&#34;, with: &#34;&#34;) } return s.isEmpty } Explanation The brute force way to solve this problem is to check if the string contains &#34;()&#34;, &#34;{}&#34;, &#34;[]&#34; and replace them with an empty string. It’s not a very efficient algorithm and takes O(n²) time because of the while loop and the replacing operation on the entire string. We can optimize it by using a stack data structure.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-12-05 07:25:46 +0300 +0300'>December 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2024-12-05 07:25:46 +0300 +0300'>December 5, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Valid Parentheses" href="http://localhost:1313/posts/leetcode-blind-75-valid-parentheses/"></a>
 </article>
 
@@ -229,7 +229,7 @@ A substring is a contiguous, non-empty sequence of characters within a strin
 The test cases will be generated such that the answer is unique.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-12-03 07:09:24 +0300 +0300'>December 3, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2024-12-03 07:09:24 +0300 +0300'>December 3, 2024</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Minimum Window Substring" href="http://localhost:1313/posts/leetcode-blind-75-minimum-window-substring/"></a>
 </article>
 
@@ -245,7 +245,7 @@ Examples Input: s = &#34;ABAB&#34;, k = 2 Output: 4 Explanation: Replace the two
 This algorithm is not very fast and takes O(n^2) time. We can improve it further and optimize it to achieve O(n) time complexity.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-11-29 07:27:59 +0300 +0300'>November 29, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2024-11-29 07:27:59 +0300 +0300'>November 29, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Longest Repeating Character Replacement" href="http://localhost:1313/posts/leetcode-blind-75-longest-repeating-character-replacement/"></a>
 </article>
 
@@ -260,7 +260,7 @@ A substring is a contiguous non-empty sequence of characters within a string.
 Examples Input: s = &#34;abcabcbb&#34; Output: 3 Explanation: The answer is &#34;abc&#34;, with the length of 3. Input: s = &#34;bbbbb&#34; Output: 1 Explanation: The answer is &#34;b&#34;, with the length of 1. Input: s = &#34;pwwkew&#34; Output: 3 Explanation: The answer is &#34;wke&#34;, with the length of 3. Notice that the answer must be a substring. &#34;pwke&#34; is a subsequence and not a substring. Constraints 0 &lt;= s.length &lt;= 5 * 10⁴ s consists of English letters, digits, symbols, and spaces. Brute Force Solution func lengthOfLongestSubstring(_ s: String) -&gt; Int { let n = s.count var res = 0 for i in 0 ..&lt; n { var chars: [Character] = [] for j in i ..&lt; n { if chars.contains(s[j]) { break } chars.append(s[j]) } res = max(res, chars.count) } return res } Explanation Let’s start by visualizing the problem:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-11-26 07:12:59 +0300 +0300'>November 26, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2024-11-26 07:12:59 +0300 +0300'>November 26, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Longest Substring Without Repeating Characters" href="http://localhost:1313/posts/leetcode-blind-75-longest-substring-without-repeating-characters/"></a>
 </article>
 <footer class="page-footer">

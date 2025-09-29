@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/find-median-from-data-stream/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.9c01a4f9a4521ef0af35c2ce6e010795515fe13caeb992f2bb573ebf0f754043.css" integrity="sha256-nAGk&#43;aRSHvCvNcLObgEHlVFf4TyuuZLyu1c&#43;vw91QEM=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.23830bf4d3e301f84ac90cdafb3d702aa1cfa9dc93f20f2e37f8d775f06aea85.css" integrity="sha256-I4ML9NPjAfhKyQza&#43;z1wKqHPqdyT8g8uN/jXdfBq6oU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/find-median-from-data-stream/index.xml">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/find-median-from-data-stream/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/find-median-from-data-stream/">
 <noscript>
     <style>
@@ -188,7 +188,7 @@ For example, for arr = [2,3,4], the median is 3. For example, for arr = [2,3], t
 MedianFinder() initializes the MedianFinder object. void addNum(int num) adds the integer num from the data stream to the data structure. double findMedian() returns the median of all elements so far. Answers within 10⁻⁵ of the actual answer will be accepted. Examples Input [&#34;MedianFinder&#34;, &#34;addNum&#34;, &#34;addNum&#34;, &#34;findMedian&#34;, &#34;addNum&#34;, &#34;findMedian&#34;] [[], [1], [2], [], [3], []] Output [null, null, null, 1.5, null, 2.0] Explanation MedianFinder medianFinder = new MedianFinder(); medianFinder.addNum(1); // arr = [1] medianFinder.addNum(2); // arr = [1, 2] medianFinder.findMedian(); // return 1.5 (i.e., (1 &#43; 2) / 2) medianFinder.addNum(3); // arr = [1, 2, 3] medianFinder.findMedian(); // return 2.0 Constraints -10⁵ &lt;= num &lt;= 10⁵ There will be at least one element in the data structure before calling findMedian(). At most 5 * 10⁴ calls will be made to addNum and findMedian(). Follow-up: If all integer numbers from the stream are in the range [0, 100], how would you optimize your solution? If 99% of all integer numbers from the stream are in the range [0, 100], how would you optimize your solution? Sorting Solution class MedianFinder { private var data: [Int] init() { self.data = [] } func addNum(_ num: Int) { data.append(num) } func findMedian() -&gt; Double { data.sort() let n = data.count if (n &amp; 1) != 0 { return Double(data[n / 2]) } else { return (Double(data[n / 2]) &#43; Double(data[n / 2 - 1])) / 2 } } } Explanation One approach to solving this problem is to apply a built-in sorting algorithm. To find the result, we use an array to collect all numbers added using the addNum method.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-02-03 11:28:36 +0300 +0300'>February 3, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2025-02-03 11:28:36 +0300 +0300'>February 3, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Find Median from Data Stream" href="http://localhost:1313/posts/leetcode-blind-75-find-median-from-data-stream/"></a>
 </article>
     </main>

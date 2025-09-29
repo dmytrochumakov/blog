@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/remove-nth-node-from-end-of-list/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.9c01a4f9a4521ef0af35c2ce6e010795515fe13caeb992f2bb573ebf0f754043.css" integrity="sha256-nAGk&#43;aRSHvCvNcLObgEHlVFf4TyuuZLyu1c&#43;vw91QEM=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.23830bf4d3e301f84ac90cdafb3d702aa1cfa9dc93f20f2e37f8d775f06aea85.css" integrity="sha256-I4ML9NPjAfhKyQza&#43;z1wKqHPqdyT8g8uN/jXdfBq6oU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/remove-nth-node-from-end-of-list/index.xml">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/remove-nth-node-from-end-of-list/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/remove-nth-node-from-end-of-list/">
 <noscript>
     <style>
@@ -187,7 +187,7 @@
 Examples Input: head = [1,2,3,4,5], n = 2 Output: [1,2,3,5] Input: head = [1], n = 1 Output: [] Input: head = [1,2], n = 1 Output: [1] Constraints The number of nodes in the list is sz. 1 &lt;= sz &lt;= 30 0 &lt;= Node.val &lt;= 100 1 &lt;= n &lt;= sz Brute Force Solution func removeNthFromEnd(_ head: ListNode?, _ n: Int) -&gt; ListNode? { var nodes: [ListNode] = [] var curr = head while curr != nil { nodes.append(curr!) curr = curr!.next } let removeIndex = nodes.count - n if removeIndex == 0 { return head?.next } nodes[removeIndex - 1].next = nodes[removeIndex].next return head } Explanation One way to solve this problem is to use extra memory by iterating over all elements in head and storing them in an array. The brute force solution allows us to know the index of each element and delete the node.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-12-25 09:22:40 +0300 +0300'>December 25, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2024-12-25 09:22:40 +0300 +0300'>December 25, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Remove Nth Node From End of List" href="http://localhost:1313/posts/leetcode-blind-75-remove-nth-node-from-end-of-list/"></a>
 </article>
     </main>

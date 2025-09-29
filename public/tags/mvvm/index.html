@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/mvvm/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.9c01a4f9a4521ef0af35c2ce6e010795515fe13caeb992f2bb573ebf0f754043.css" integrity="sha256-nAGk&#43;aRSHvCvNcLObgEHlVFf4TyuuZLyu1c&#43;vw91QEM=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.23830bf4d3e301f84ac90cdafb3d702aa1cfa9dc93f20f2e37f8d775f06aea85.css" integrity="sha256-I4ML9NPjAfhKyQza&#43;z1wKqHPqdyT8g8uN/jXdfBq6oU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/mvvm/index.xml">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/mvvm/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/mvvm/">
 <noscript>
     <style>
@@ -186,7 +186,7 @@
     <p>Introduction Sometime ago, I was working on a marketplace app, and I needed to add Apple Pay to make purchases more easily. Here are a few steps on how I did it: First Step You need to add Apple Pay capability to your project. You will need to Register a Merchant ID. I will skip this step; you can find info by following this link Setting up Apple Pay. Second Step You will need to import PassKit and create PKPaymentRequest to interact with PKPaymentAuthorizationController and PKPaymentAuthorizationControllerDelegate. func initiateApplePay() { // Create payment request let paymentRequest = PKPaymentRequest() paymentRequest.merchantIdentifier = &#34;your_merchant_identifier&#34; paymentRequest.countryCode = &#34;US&#34; paymentRequest.currencyCode = &#34;USD&#34; paymentRequest.supportedNetworks = [.visa, .masterCard, .amex] paymentRequest.merchantCapabilities = .threeDSecure // Add payment items from cart for item in cartItems { let paymentItem = PKPaymentSummaryItem(label: item.name, amount: item.price) paymentRequest.paymentSummaryItems.append(paymentItem) } // Add total amount let totalItem = PKPaymentSummaryItem(label: &#34;Total&#34;, amount: totalAmount) paymentRequest.paymentSummaryItems.append(totalItem) // Present Apple Pay sheet let paymentController = PKPaymentAuthorizationController(paymentRequest: paymentRequest) paymentController.delegate = self paymentController.present(completion: nil) } Third Step Add UI and connect it with the view model.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-05-11 07:25:24 +0300 EEST'>May 11, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2024-05-11 07:25:24 +0300 EEST'>May 11, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to Implementing Apple Pay in a SwiftUI app" href="http://localhost:1313/posts/implementing-apple-pay-in-a-swiftui-app/"></a>
 </article>
     </main>

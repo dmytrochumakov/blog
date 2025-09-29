@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/memento-pattern/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.9c01a4f9a4521ef0af35c2ce6e010795515fe13caeb992f2bb573ebf0f754043.css" integrity="sha256-nAGk&#43;aRSHvCvNcLObgEHlVFf4TyuuZLyu1c&#43;vw91QEM=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.23830bf4d3e301f84ac90cdafb3d702aa1cfa9dc93f20f2e37f8d775f06aea85.css" integrity="sha256-I4ML9NPjAfhKyQza&#43;z1wKqHPqdyT8g8uN/jXdfBq6oU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/memento-pattern/index.xml">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/memento-pattern/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/memento-pattern/">
 <noscript>
     <style>
@@ -188,7 +188,7 @@ Source
 What problems does it solve? The Memento Pattern helps solve following problems:
 Undo/Redo Functionality: Memento allows you to capture an object’s state at a specific point in time and store it externally. This enables you to implement undo/redo functionality by restoring the object to its previous state. Checkpointing: In applications where users need to save progress or create checkpoints (such as in games or long processes), the Memento Pattern allows you to save the state of an object at various intervals so that users can return to those points later. Real-world code example // Memento: Represents the state of the TextEditor struct TextEditorMemento { let text: String } // Originator: Creates and stores states in Memento objects class TextEditor { private var text: String = &#34;&#34; func setText(_ text: String) { self.text = text } func getText() -&gt; String { return text } func save() -&gt; TextEditorMemento { return TextEditorMemento(text: text) } func restore(fromMemento memento: TextEditorMemento) { self.text = memento.text } } // Caretaker: Manages the mementos class TextEditorHistory { private var history: [TextEditorMemento] = [] private let editor: TextEditor init(editor: TextEditor) { self.editor = editor } func save() { let snapshot = editor.save() history.append(snapshot) } func undo() { guard let lastSnapshot = history.popLast() else { print(&#34;Nothing to undo.&#34;) return } editor.restore(fromMemento: lastSnapshot) } func printHistory() { print(&#34;Text Editor History:&#34;) for (index, snapshot) in history.enumerated() { print(&#34;Step \(index &#43; 1): \(snapshot.text)&#34;) } print(&#34;Current text: \(editor.getText())&#34;) } } // Example usage let textEditor = TextEditor() let history = TextEditorHistory(editor: textEditor) textEditor.setText(&#34;Hello, World!&#34;) history.save() textEditor.setText(&#34;This is a Swift example.&#34;) history.save() textEditor.setText(&#34;Using Memento Pattern.&#34;) history.save() history.printHistory() history.undo() print(&#34;After Undo:&#34;) history.printHistory() Thank you for reading! 😊</p>
   </div>
-  <footer class="entry-footer"><span title='2024-03-22 08:29:30 +0300 +0300'>March 22, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2024-03-22 08:29:30 +0300 +0300'>March 22, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to The Memento Pattern" href="http://localhost:1313/posts/the-memento-pattern/"></a>
 </article>
     </main>

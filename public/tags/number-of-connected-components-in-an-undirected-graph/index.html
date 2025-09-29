@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/number-of-connected-components-in-an-undirected-graph/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.9c01a4f9a4521ef0af35c2ce6e010795515fe13caeb992f2bb573ebf0f754043.css" integrity="sha256-nAGk&#43;aRSHvCvNcLObgEHlVFf4TyuuZLyu1c&#43;vw91QEM=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.23830bf4d3e301f84ac90cdafb3d702aa1cfa9dc93f20f2e37f8d775f06aea85.css" integrity="sha256-I4ML9NPjAfhKyQza&#43;z1wKqHPqdyT8g8uN/jXdfBq6oU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/number-of-connected-components-in-an-undirected-graph/index.xml">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/number-of-connected-components-in-an-undirected-graph/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/number-of-connected-components-in-an-undirected-graph/">
 <noscript>
     <style>
@@ -188,7 +188,7 @@ Return the number of connected components in the graph.
 Examples Input: n = 5, edges = [[0,1],[1,2],[3,4]] Output: 2 Input: n = 5, edges = [[0,1],[1,2],[2,3],[3,4]] Output: 1 Constraints 1 &lt;= n &lt;= 2000 1 &lt;= edges.length &lt;= 5000 edges[i].length == 2 0 &lt;= ai, bi &lt; n ai != bi There are no repeated edges. Depth-First Search Solution func countComponents(_ n: Int, _ edges: [[Int]]) -&gt; Int { var adj: [Int: [Int]] = [:] for i in 0 ..&lt; n { adj[i] = [] } var visit = Array(repeating: false, count: n) for value in edges { let u = value[0] let v = value[1] adj[u]!.append(v) adj[v]!.append(u) } func dfs(_ node: Int) { for nei in adj[node]! { if !visit[nei] { visit[nei] = true dfs(nei) } } } var res = 0 for node in 0 ..&lt; n { if !visit[node] { visit[node] = true dfs(node) res &#43;= 1 } } return res } Explanation From the description, we learn that we need to find the number of connected components in a graph. Let’s clarify what a connected component means:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-03-03 07:39:10 +0300 +0300'>March 3, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer"><span title='2025-03-03 07:39:10 +0300 +0300'>March 3, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Number of Connected Components in an Undirected Graph" href="http://localhost:1313/posts/leetcode-blind-75-number-of-connected-components-in-an-undirected-graph/"></a>
 </article>
     </main>
