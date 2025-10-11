@@ -189,6 +189,24 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - Sorting - Quick Sort
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction The quick sort is an efficient sorting algorithm commonly used widely in production. Quick sort is a divide-and-conquer algorithm. It works by selecting a pivot from the array and partitioning the other elements into two subarrays.
+source
+Code example // Sorts a (portion of an) array, divides it into partitions, then sorts those func quickSort(array: inout [Int], low: Int, high: Int) { // Ensure indices are in correct order if low &lt; high { // Partition array and get the pivot index let p = partition(array: &amp;array, low: low, high: high) // Sort the two partitions quickSort(array: &amp;array, low: low, high: p - 1) // Left side of pivot quickSort(array: &amp;array, low: p &#43; 1, high: high) // Right side of pivot } } // Divides array into two partitions func partition(array: inout [Int], low: Int, high: Int) -&gt; Int { let pivot = array[high] // Choose the last element as the pivot // Temporary pivot index var i = low for j in low ..&lt; high { // If the current element is less than or equal to the pivot if array[j] &lt;= pivot { // Swap the current element with the element at the temporary pivot index let tmp = array[i] array[i] = array[j] array[j] = tmp // Move the temporary pivot index forward i &#43;= 1 } } // Swap the pivot with the last element let tmp = array[i] array[i] = array[high] array[high] = tmp return i } Implementation quickSort Ensure that the low and high indices are in the correct order. Partition the input list using the partition function. Recursively call quickSort on the left side of the pivot. Recursively call quickSort on the right side of the pivot. partition Choose the last element as the pivot. Set i to low. For each j from low to high (not inclusive), compare if the current element is less than or equal to the pivot:
+3.1 Swap the element at index i with the element at index j.
+3.2 Increment i by 1. Swap the element at index i with the last element. Return i. Time/Space complexity Time complexity: O(N^2)
+Space complexity: O(N)
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-19 06:51:04 +0300 EEST'>October 19, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to DSA - Sorting - Quick Sort" href="http://localhost:1313/posts/dsa-sorting-quick-sort/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">DSA - Sorting - Insertion Sort
     </h2>
   </header>
@@ -246,20 +264,6 @@ Code Example private func loadFactor() -&gt; Double? { if self.hashMap.isEmpty {
   </div>
   <footer class="entry-footer"><span title='2024-10-09 07:20:29 +0300 EEST'>October 9, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to DSA - Hashmap - Resize" href="http://localhost:1313/posts/dsa-hashmap-resize/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - HashMap - Custom Implementation
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction Let’s take a closer look at a HashMap implementation by building it without using the built-in dictionary in Swift. The HashMap will use a fixed-size array underneath the hash function that will transform the key into an index. In this example, the hash function is based on taking the modulo of the sum of all key.unicodeScalars integer values with the size of the array.
-Code Example final class HashMap&lt;Key: StringProtocol, Value&gt; { private var hashMap: [(key: Key, value: Value)?] init(size: Int) { self.hashMap = Array(repeating: nil, count: size) } private func hashFunction(key: Key) -&gt; Int { var count = 0 for element in key.unicodeScalars { count &#43;= Int(element.value) } return count % self.hashMap.count } } Insert The insert operation uses the index provided by the hashFunction and sets the value at this index.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-10-07 07:01:20 +0300 EEST'>October 7, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to DSA - HashMap - Custom Implementation" href="http://localhost:1313/posts/dsa-hashmap-custom-implementation/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
