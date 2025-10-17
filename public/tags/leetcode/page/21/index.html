@@ -179,6 +179,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Valid Parentheses
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Given a string s containing just the characters &#39;(&#39;, &#39;)&#39;, &#39;{&#39;, &#39;}&#39;, &#39;[&#39;, and &#39;]&#39;, determine if the input string is valid.
+An input string is valid if:
+Open brackets must be closed by the same type of brackets. Open brackets must be closed in the correct order. Every closing bracket has a corresponding open bracket of the same type. Examples Input: s = &#34;()&#34; Output: true Input: s = &#34;()[]{}&#34; Output: true Input: s = &#34;(]&#34; Output: false Input: s = &#34;([])&#34; Output: true Constraints 1 &lt;= s.length &lt;= 10⁴ s consists of parentheses only &#39;()[]{}&#39;. Brute Force Solution func isValid(_ s: String) -&gt; Bool { var s = s while s.contains(&#34;()&#34;) || s.contains(&#34;{}&#34;) || s.contains(&#34;[]&#34;) { s = s.replacingOccurrences(of: &#34;()&#34;, with: &#34;&#34;) s = s.replacingOccurrences(of: &#34;{}&#34;, with: &#34;&#34;) s = s.replacingOccurrences(of: &#34;[]&#34;, with: &#34;&#34;) } return s.isEmpty } Explanation The brute force way to solve this problem is to check if the string contains &#34;()&#34;, &#34;{}&#34;, &#34;[]&#34; and replace them with an empty string. It’s not a very efficient algorithm and takes O(n²) time because of the while loop and the replacing operation on the entire string. We can optimize it by using a stack data structure.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-05 07:25:46 +0300 +0300'>December 5, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Valid Parentheses" href="http://localhost:1313/posts/leetcode-blind-75-valid-parentheses/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Minimum Window Substring
     </h2>
   </header>
@@ -238,22 +253,6 @@ By visualizing the problem using input from example 1 [7,1,5,3,6,4]:
   </div>
   <footer class="entry-footer"><span title='2024-11-22 07:14:17 +0300 +0300'>November 22, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Best Time to Buy and Sell Stock" href="http://localhost:1313/posts/leetcode-blind-75-best-time-to-buy-and-sell-stock/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Container With Most Water
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
-Find two lines that, together with the x-axis, form a container such that the container contains the most water.
-Return the maximum amount of water a container can store.
-Notice that you may not slant the container.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-11-20 06:57:55 +0300 +0300'>November 20, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Container With Most Water" href="http://localhost:1313/posts/leetcode-blind-75-container-with-most-water/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

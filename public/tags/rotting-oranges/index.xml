@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Rotting Oranges on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/rotting-oranges/</link>
+    <description>Recent content in Rotting Oranges on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.0</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 17 Oct 2025 07:58:23 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/rotting-oranges/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Rotting Oranges</title>
+      <link>http://localhost:1313/posts/leetcode-150-rotting-oranges/</link>
+      <pubDate>Fri, 17 Oct 2025 07:58:23 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-rotting-oranges/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;You are given an &lt;code&gt;m x n grid&lt;/code&gt; where each cell can have one of three values:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;0&lt;/code&gt; representing an empty cell,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;1&lt;/code&gt; representing a fresh orange, or&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;2&lt;/code&gt; representing a rotten orange.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Every minute, any fresh orange that is 4-directionally adjacent to a rotten orange becomes rotten.&lt;/p&gt;
+&lt;p&gt;Return the minimum number of minutes that must elapse until no cell has a fresh orange. If this is impossible, return &lt;code&gt;-1&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
