@@ -2,7 +2,7 @@
 <html lang="en" dir="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.147.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.151.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -189,6 +189,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Remove Nth Node From End of List
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Given the head of a linked list, remove the nth node from the end of the list and return its head.
+Examples Input: head = [1,2,3,4,5], n = 2 Output: [1,2,3,5] Input: head = [1], n = 1 Output: [] Input: head = [1,2], n = 1 Output: [1] Constraints The number of nodes in the list is sz. 1 &lt;= sz &lt;= 30 0 &lt;= Node.val &lt;= 100 1 &lt;= n &lt;= sz Brute Force Solution func removeNthFromEnd(_ head: ListNode?, _ n: Int) -&gt; ListNode? { var nodes: [ListNode] = [] var curr = head while curr != nil { nodes.append(curr!) curr = curr!.next } let removeIndex = nodes.count - n if removeIndex == 0 { return head?.next } nodes[removeIndex - 1].next = nodes[removeIndex].next return head } Explanation One way to solve this problem is to use extra memory by iterating over all elements in head and storing them in an array. The brute force solution allows us to know the index of each element and delete the node.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-25 09:22:40 +0300 +0300'>December 25, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Remove Nth Node From End of List" href="http://localhost:1313/posts/leetcode-blind-75-remove-nth-node-from-end-of-list/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Reorder List
     </h2>
   </header>
@@ -248,22 +262,6 @@ You must write an algorithm with O(log n) runtime complexity.
   </div>
   <footer class="entry-footer"><span title='2024-12-11 07:11:25 +0300 +0300'>December 11, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Search in Rotated Sorted Array" href="http://localhost:1313/posts/leetcode-blind-75-search-in-rotated-sorted-array/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Find Minimum in Rotated Sorted Array
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
-[4,5,6,7,0,1,2] if it was rotated 4 times. [0,1,2,4,5,6,7] if it was rotated 7 times. Notice that rotating an array [a[0], a[1], a[2], ..., a[n-1]] 1 time results in the array [a[n-1], a[0], a[1], a[2], ..., a[n-2]].
-Given the sorted rotated array nums of unique elements, return the minimum element of this array.
-You must write an algorithm that runs in O(log n) time.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-12-09 07:05:38 +0300 +0300'>December 9, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Find Minimum in Rotated Sorted Array" href="http://localhost:1313/posts/leetcode-blind-75-find-minimum-in-rotated-sorted-array/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

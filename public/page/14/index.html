@@ -2,7 +2,7 @@
 <html lang="en" dir="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.147.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.151.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -189,6 +189,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Longest Palindromic Substring
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Given a string s, return the longest palindromic substring in s.
+A string is palindromic if it reads the same forward and backward.
+Examples Input: s = &#34;babad&#34; Output: &#34;bab&#34; Explanation: &#34;aba&#34; is also a valid answer. Input: s = &#34;cbbd&#34; Output: &#34;bb&#34; Constraints 1 &lt;= s.length &lt;= 1000 s consists of only digits and English letters. Brute Force Solution func longestPalindrome(_ s: String) -&gt; String { let sArray = Array(s) var res = &#34;&#34; var resLen = 0 let n = s.count for i in 0 ..&lt; n { for j in i ..&lt; n { var l = i var r = j while l &lt; r &amp;&amp; sArray[l] == sArray[r] { l &#43;= 1 r -= 1 } if l &gt;= r &amp;&amp; resLen &lt; (j - i &#43; 1) { res = String(sArray[i ..&lt; j &#43; 1]) resLen = j - i &#43; 1 } } } return res } Explanation In the first example, we are given the input &#34;babad&#34;. Let’s visualize it and try to find the longest palindromic substring.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-03-19 07:54:06 +0300 +0300'>March 19, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Longest Palindromic Substring" href="http://localhost:1313/posts/leetcode-blind-75-longest-palindromic-substring/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - House Robber II
     </h2>
   </header>
@@ -243,21 +258,6 @@ A string a is lexicographically smaller than a string b if, in the first positio
   </div>
   <footer class="entry-footer"><span title='2025-03-06 07:40:15 +0300 +0300'>March 6, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Alien Dictionary" href="http://localhost:1313/posts/leetcode-blind-75-alien-dictionary/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Number of Connected Components in an Undirected Graph
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem You have a graph of n nodes. You are given an integer n and an array edges where edges[i] = [ai, bi] indicates that there is an edge between ai and bi in the graph.
-Return the number of connected components in the graph.
-Examples Input: n = 5, edges = [[0,1],[1,2],[3,4]] Output: 2 Input: n = 5, edges = [[0,1],[1,2],[2,3],[3,4]] Output: 1 Constraints 1 &lt;= n &lt;= 2000 1 &lt;= edges.length &lt;= 5000 edges[i].length == 2 0 &lt;= ai, bi &lt; n ai != bi There are no repeated edges. Depth-First Search Solution func countComponents(_ n: Int, _ edges: [[Int]]) -&gt; Int { var adj: [Int: [Int]] = [:] for i in 0 ..&lt; n { adj[i] = [] } var visit = Array(repeating: false, count: n) for value in edges { let u = value[0] let v = value[1] adj[u]!.append(v) adj[v]!.append(u) } func dfs(_ node: Int) { for nei in adj[node]! { if !visit[nei] { visit[nei] = true dfs(nei) } } } var res = 0 for node in 0 ..&lt; n { if !visit[node] { visit[node] = true dfs(node) res &#43;= 1 } } return res } Explanation From the description, we learn that we need to find the number of connected components in a graph. Let’s clarify what a connected component means:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-03-03 07:39:10 +0300 +0300'>March 3, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Number of Connected Components in an Undirected Graph" href="http://localhost:1313/posts/leetcode-blind-75-number-of-connected-components-in-an-undirected-graph/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

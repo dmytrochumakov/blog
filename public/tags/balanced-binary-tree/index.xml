@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.0</generator>
+    <generator>Hugo -- 0.151.2</generator>
     <language>en</language>
     <lastBuildDate>Wed, 30 Jul 2025 07:35:43 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/balanced-binary-tree/index.xml" rel="self" type="application/rss+xml" />
@@ -21,7 +21,8 @@
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
 &lt;p&gt;Given a binary tree, determine if it is height-balanced.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A height-balanced binary tree is a binary tree in which the depth of the two subtrees of every node never differs by more than one.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;A height-balanced binary tree is a binary tree in which the depth of the two subtrees of every node never differs by more than one.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;p&gt;
     

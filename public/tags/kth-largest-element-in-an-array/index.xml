@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.0</generator>
+    <generator>Hugo -- 0.151.2</generator>
     <language>en</language>
     <lastBuildDate>Fri, 15 Aug 2025 07:29:52 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/kth-largest-element-in-an-array/index.xml" rel="self" type="application/rss+xml" />
@@ -21,7 +21,8 @@
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
 &lt;p&gt;Given an integer array &lt;code&gt;nums&lt;/code&gt; and an integer &lt;code&gt;k&lt;/code&gt;, return the &lt;code&gt;kth&lt;/code&gt; largest element in the array.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Note that it is the &lt;code&gt;kth&lt;/code&gt; largest element in the sorted order, not the &lt;code&gt;kth&lt;/code&gt; distinct element.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Note that it is the &lt;code&gt;kth&lt;/code&gt; largest element in the sorted order, not the &lt;code&gt;kth&lt;/code&gt; distinct element.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Can you solve it without sorting?&lt;/p&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [3,2,1,5,6,4], k = 2

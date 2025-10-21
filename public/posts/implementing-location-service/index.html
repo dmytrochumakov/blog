@@ -318,7 +318,8 @@ The first step is to create LocationService with the requestPermissions method t
 </span></span><span class="line"><span class="cl">    <span class="n">locationManager</span><span class="p">.</span><span class="n">requestWhenInUseAuthorization</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><blockquote>
-<p>💡 Use <code>requestWhenInUseAuthorization</code> only if you need location updates when the user is using your app.</p></blockquote>
+<p>💡 Use <code>requestWhenInUseAuthorization</code> only if you need location updates when the user is using your app.</p>
+</blockquote>
 <h3 id="second-step">Second Step<a hidden class="anchor" aria-hidden="true" href="#second-step">#</a></h3>
 <p>The second step is to add <code>locationManager.delegate</code> to be able to handle location updates or errors.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="c1">// </span><span class="cs">MARK:</span><span class="c1"> - CLLocationManagerDelegate</span>
@@ -343,9 +344,11 @@ The first step is to create LocationService with the requestPermissions method t
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><blockquote>
-<p>💡 <a href="https://developer.apple.com/documentation/corelocation/cllocationmanager"><code>CLLocationManager</code></a> - The object you use to start and stop the delivery of location-related events to your app.</p></blockquote>
+<p>💡 <a href="https://developer.apple.com/documentation/corelocation/cllocationmanager"><code>CLLocationManager</code></a> - The object you use to start and stop the delivery of location-related events to your app.</p>
+</blockquote>
 <blockquote>
-<p>💡 <a href="https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate"><code>CLLocationManagerDelegate</code></a> - The methods you use to receive events from an associated location-manager object.</p></blockquote>
+<p>💡 <a href="https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate"><code>CLLocationManagerDelegate</code></a> - The methods you use to receive events from an associated location-manager object.</p>
+</blockquote>
 <h3 id="authorization-status">Authorization Status<a hidden class="anchor" aria-hidden="true" href="#authorization-status">#</a></h3>
 <p>Sometimes you need to know about authorization status and create logic around it. In this case, you can check the status by using the <code>authorizationStatus</code> property.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">authorizationStatus</span><span class="p">()</span> <span class="p">{</span>
@@ -378,7 +381,8 @@ The first step is to create LocationService with the requestPermissions method t
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><blockquote>
-<p>⚠️ Do not forget to call the <code>stopUpdatingLocation</code> method, as it can cause performance issues.</p></blockquote>
+<p>⚠️ Do not forget to call the <code>stopUpdatingLocation</code> method, as it can cause performance issues.</p>
+</blockquote>
 <h3 id="complete-example">Complete Example<a hidden class="anchor" aria-hidden="true" href="#complete-example">#</a></h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">import</span> <span class="nc">CoreLocation</span>
 </span></span><span class="line"><span class="cl">

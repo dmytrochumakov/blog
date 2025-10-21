@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.0</generator>
+    <generator>Hugo -- 0.151.2</generator>
     <language>en</language>
     <lastBuildDate>Fri, 01 Nov 2024 07:20:55 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/group-anagrams/index.xml" rel="self" type="application/rss+xml" />
@@ -21,7 +21,8 @@
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
 &lt;p&gt;Given an array of strings &lt;code&gt;strs&lt;/code&gt;, group the anagrams together. You can return the answer in any order.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, using all the original letters exactly once.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, using all the original letters exactly once.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: strs = [&amp;#34;eat&amp;#34;,&amp;#34;tea&amp;#34;,&amp;#34;tan&amp;#34;,&amp;#34;ate&amp;#34;,&amp;#34;nat&amp;#34;,&amp;#34;bat&amp;#34;]
 Output: [[&amp;#34;bat&amp;#34;],[&amp;#34;nat&amp;#34;,&amp;#34;tan&amp;#34;],[&amp;#34;ate&amp;#34;,&amp;#34;eat&amp;#34;,&amp;#34;tea&amp;#34;]]

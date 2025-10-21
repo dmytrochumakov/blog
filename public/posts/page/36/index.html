@@ -194,6 +194,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Building Group Chat using WebSockets
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction I never had a chance to work with WebSockets, so I decided to take a look and create a group chat. Here’s what I discovered:
+To be able to send and receive messages, you need to create an interface for communication between a server and your application. In my case, I chose sendMessage and receiveMessage methods. For the server-side, I chose Node.js. For the iOS application, I chose the Socket.IO library. Implementation Let’s dive deeper into the implementation.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-02 15:15:14 +0300 EEST'>May 2, 2024</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to Building Group Chat using WebSockets" href="http://localhost:1313/posts/building-group-chat-using-websockets/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Exploring visionOS
     </h2>
   </header>
@@ -249,20 +263,6 @@ First, you need to create a .github/workflows folder with a CI.yml file inside y
   </div>
   <footer class="entry-footer"><span title='2024-04-26 06:51:21 +0300 EEST'>April 26, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to Testing Xcode project using Github Actions" href="http://localhost:1313/posts/testing-xcode-project-using-github-actions/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Building Xcode project using Github Actions
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction If you’re wondering how to build an Xcode project using GitHub Actions, here are a few steps:
-First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15.3.app/Contents/Developer - name: Install xcpretty run: gem install xcpretty - name: Build project run: xcodebuild -project /Users/runner/work/YourProjectName/YourProjectName/YourProjectName/YourProjectName.xcodeproj -scheme YourSchemeName -sdk iphonesimulator -destination &#39;platform=iOS Simulator,name=iPhone 15 Pro&#39; clean build | xcpretty Caveats If you don’t specify the path to the Xcode project, you will receive an error like this: xcodebuild: error: ‘YourProjectName.xcodeproj&#39; does not exist.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-04-23 08:29:30 +0300 EEST'>April 23, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to Building Xcode project using Github Actions" href="http://localhost:1313/posts/building-xcode-project-using-github-actions/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

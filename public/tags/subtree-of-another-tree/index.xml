@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.0</generator>
+    <generator>Hugo -- 0.151.2</generator>
     <language>en</language>
     <lastBuildDate>Sun, 05 Jan 2025 12:34:59 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/subtree-of-another-tree/index.xml" rel="self" type="application/rss+xml" />
@@ -21,7 +21,8 @@
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
 &lt;p&gt;Given the roots of two binary trees &lt;code&gt;root&lt;/code&gt; and &lt;code&gt;subRoot&lt;/code&gt;, return &lt;code&gt;true&lt;/code&gt; if there is a subtree of &lt;code&gt;root&lt;/code&gt; with the same structure and node values as &lt;code&gt;subRoot&lt;/code&gt;, and &lt;code&gt;false&lt;/code&gt; otherwise.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A subtree of a binary tree &lt;code&gt;tree&lt;/code&gt; is a tree that consists of a node in &lt;code&gt;tree&lt;/code&gt; and all of this node&amp;rsquo;s descendants. The tree &lt;code&gt;tree&lt;/code&gt; could also be considered as a subtree of itself.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;A subtree of a binary tree &lt;code&gt;tree&lt;/code&gt; is a tree that consists of a node in &lt;code&gt;tree&lt;/code&gt; and all of this node&amp;rsquo;s descendants. The tree &lt;code&gt;tree&lt;/code&gt; could also be considered as a subtree of itself.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;p&gt;
     

@@ -348,7 +348,8 @@ What we have discovered is logical operator <code>xor</code> - <code>^</code> (e
 </ul>
 <p>So <code>xor</code> works. If we have <code>a = 1</code> and <code>b = 1</code>, and we do the <code>xor</code> operation, we&rsquo;re going to get a <code>0</code> in the output, but we also want a <code>1</code> carry.</p>
 <blockquote>
-<p>We are going to have a carry only in the case when we have two <strong>ones</strong> <code>a = 1</code> and <code>b = 1</code>.</p></blockquote>
+<p>We are going to have a carry only in the case when we have two <strong>ones</strong> <code>a = 1</code> and <code>b = 1</code>.</p>
+</blockquote>
 <p>To determine if we have a carry, we are going to use the <code>&amp;</code> operator, because by using the <code>&amp;</code> operator on <code>a = 1</code> and <code>b = 1</code> we will get <code>1</code>.<br>
 
     
@@ -398,7 +399,8 @@ Now our solution will look like this: <code>(a &amp; b) &lt;&lt; 1</code></p>
 <li>We will continue doing these operations until our carry is equal to <code>0</code>.</li>
 </ul>
 <blockquote>
-<p>We do not need to create additional logic for dealing with <strong>negative</strong> numbers because <code>xor</code> and <code>&amp;</code> operations are equivalent to <strong>addition</strong>, as long as the language that we are using handles binary representation correctly.</p></blockquote>
+<p>We do not need to create additional logic for dealing with <strong>negative</strong> numbers because <code>xor</code> and <code>&amp;</code> operations are equivalent to <strong>addition</strong>, as long as the language that we are using handles binary representation correctly.</p>
+</blockquote>
 <h4 id="time-space-complexity">Time/ Space complexity<a hidden class="anchor" aria-hidden="true" href="#time-space-complexity">#</a></h4>
 <ul>
 <li>Time complexity: O(1)</li>

@@ -11,6 +11,7 @@
 Given the roots of two binary trees p and q, write a function to check if they are the same or not.
 
 Two binary trees are considered the same if they are structurally identical, and the nodes have the same values.
+
 Examples
 
     
@@ -139,6 +140,7 @@ Examples Input: p = [1,2,3], q = [1,2,3] Output: true Input: p = [1,2], q = [1,n
 Given the roots of two binary trees p and q, write a function to check if they are the same or not.
 
 Two binary trees are considered the same if they are structurally identical, and the nodes have the same values.
+
 Examples
 
     
@@ -348,7 +350,8 @@ Output: false
   <div class="post-content"><h4 id="the-problem">The Problem<a hidden class="anchor" aria-hidden="true" href="#the-problem">#</a></h4>
 <p>Given the roots of two binary trees <code>p</code> and <code>q</code>, write a function to check if they are the same or not.</p>
 <blockquote>
-<p>Two binary trees are considered the same if they are structurally identical, and the nodes have the same values.</p></blockquote>
+<p>Two binary trees are considered the same if they are structurally identical, and the nodes have the same values.</p>
+</blockquote>
 <h4 id="examples">Examples<a hidden class="anchor" aria-hidden="true" href="#examples">#</a></h4>
 <p>
     
@@ -408,7 +411,8 @@ Output: false
 </span></span></code></pre></div><h4 id="explanation">Explanation<a hidden class="anchor" aria-hidden="true" href="#explanation">#</a></h4>
 <p>One way to solve this problem is using depth-first search. We need to be very cautious with base cases, as they can affect the result. In our case, the trees can be the same if <code>p</code> and <code>q</code> are both <code>nil</code> and their values are equal. In all other cases, the trees are not the same.</p>
 <blockquote>
-<p>If you have never implemented the DFS algorithm before, you can refer to this <a href="https://en.wikipedia.org/wiki/Depth-first_search#:~:text=high%20degree.-,Example,-%5Bedit%5D">Wiki example</a>.</p></blockquote>
+<p>If you have never implemented the DFS algorithm before, you can refer to this <a href="https://en.wikipedia.org/wiki/Depth-first_search#:~:text=high%20degree.-,Example,-%5Bedit%5D">Wiki example</a>.</p>
+</blockquote>
 <h5 id="timespace-complexity">Time/Space Complexity<a hidden class="anchor" aria-hidden="true" href="#timespace-complexity">#</a></h5>
 <ul>
 <li><strong>Time complexity</strong>: O(n)</li>
@@ -442,7 +446,8 @@ Output: false
 </span></span></code></pre></div><h4 id="explanation-1">Explanation<a hidden class="anchor" aria-hidden="true" href="#explanation-1">#</a></h4>
 <p>Another way to solve this problem is by using the breadth-first search algorithm. In this case, we use two queues and a few additional checks to determine the equality of the trees. Trees can be the same if <code>p</code> and <code>q</code> are both <code>nil</code> and their values are equal. In all other cases, the trees are not the same.</p>
 <blockquote>
-<p>If you have never implemented the BFS algorithm before, you can refer to this <a href="https://en.wikipedia.org/wiki/Breadth-first_search#:~:text=%5B8%5D-,Pseudocode,-%5Bedit%5D">Wiki example</a>.</p></blockquote>
+<p>If you have never implemented the BFS algorithm before, you can refer to this <a href="https://en.wikipedia.org/wiki/Breadth-first_search#:~:text=%5B8%5D-,Pseudocode,-%5Bedit%5D">Wiki example</a>.</p>
+</blockquote>
 <h5 id="timespace-complexity-1">Time/Space Complexity<a hidden class="anchor" aria-hidden="true" href="#timespace-complexity-1">#</a></h5>
 <ul>
 <li><strong>Time complexity</strong>: O(n)</li>

@@ -194,6 +194,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Building Xcode project using Github Actions
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction If you’re wondering how to build an Xcode project using GitHub Actions, here are a few steps:
+First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15.3.app/Contents/Developer - name: Install xcpretty run: gem install xcpretty - name: Build project run: xcodebuild -project /Users/runner/work/YourProjectName/YourProjectName/YourProjectName/YourProjectName.xcodeproj -scheme YourSchemeName -sdk iphonesimulator -destination &#39;platform=iOS Simulator,name=iPhone 15 Pro&#39; clean build | xcpretty Caveats If you don’t specify the path to the Xcode project, you will receive an error like this: xcodebuild: error: ‘YourProjectName.xcodeproj&#39; does not exist.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-23 08:29:30 +0300 EEST'>April 23, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to Building Xcode project using Github Actions" href="http://localhost:1313/posts/building-xcode-project-using-github-actions/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Delivering iOS app using Fastlane
     </h2>
   </header>
@@ -248,21 +262,6 @@ One of such ways is by using the xcodebuild command Basic outline of the process
   </div>
   <footer class="entry-footer"><span title='2024-04-05 04:59:38 +0300 EEST'>April 5, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to Building Xcode project using the CLI" href="http://localhost:1313/posts/building-xcode-project-using-the-cli/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">The Visitor Pattern
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is a Visitor Pattern? The Visitor Pattern helps add new capabilities to a composite of objects.
-Source
-What problems does it solve? The Visitor Pattern helps solve following problems:
-Separation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on. Extensibility: It allows you to add new operations to existing object structures without modifying those structures. This is especially useful when dealing with complex object hierarchies where adding new functionality directly to the classes would lead to code bloat and tight coupling. Traversal of Object Structures: It provides a way to traverse complex object structures while performing some action on each element of the structure. This is particularly useful in scenarios where you need to process every element of a data structure in a specific order or with a specific algorithm. Real-world code example // Element protocol representing the items on the menu protocol MenuItem { func accept(visitor: OrderVisitor) } // Concrete item types class Coffee: MenuItem { let name: String let price: Double init(name: String, price: Double) { self.name = name self.price = price } func accept(visitor: OrderVisitor) { visitor.visit(self) } } class Tea: MenuItem { let name: String let price: Double init(name: String, price: Double) { self.name = name self.price = price } func accept(visitor: OrderVisitor) { visitor.visit(self) } } class Pastry: MenuItem { let name: String let price: Double init(name: String, price: Double) { self.name = name self.price = price } func accept(visitor: OrderVisitor) { visitor.visit(self) } } // Visitor protocol defining the operations to be performed on menu items protocol OrderVisitor { func visit(_ item: Coffee) func visit(_ item: Tea) func visit(_ item: Pastry) } // Concrete visitor implementing operations on menu items class TotalCostVisitor: OrderVisitor { var totalCost = 0.0 func visit(_ item: Coffee) { totalCost &#43;= item.price } func visit(_ item: Tea) { totalCost &#43;= item.price } func visit(_ item: Pastry) { totalCost &#43;= item.price } } class ItemDetailsVisitor: OrderVisitor { var details = &#34;&#34; func visit(_ item: Coffee) { details &#43;= &#34;Coffee: \(item.name), Price: $\(item.price)\n&#34; } func visit(_ item: Tea) { details &#43;= &#34;Tea: \(item.name), Price: $\(item.price)\n&#34; } func visit(_ item: Pastry) { details &#43;= &#34;Pastry: \(item.name), Price: $\(item.price)\n&#34; } } // Example usage let items: [MenuItem] = [Coffee(name: &#34;Espresso&#34;, price: 2.5), Tea(name: &#34;Green Tea&#34;, price: 2.0), Pastry(name: &#34;Croissant&#34;, price: 3.0)] let totalCostVisitor = TotalCostVisitor() for item in items { item.accept(visitor: totalCostVisitor) } print(&#34;Total cost of the order: $\(totalCostVisitor.totalCost)&#34;) let itemDetailsVisitor = ItemDetailsVisitor() for item in items { item.accept(visitor: itemDetailsVisitor) } print(&#34;Order details:&#34;) print(itemDetailsVisitor.details) </p>
-  </div>
-  <footer class="entry-footer"><span title='2024-04-01 08:01:22 +0300 EEST'>April 1, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to The Visitor Pattern" href="http://localhost:1313/posts/the-visitor-pattern/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

@@ -11,7 +11,27 @@
 Given two strings s and t of lengths m and n, respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string &quot;&quot;.
 
 A substring is a contiguous, non-empty sequence of characters within a string.
-The test cases will be generated such that the answer is unique.">
+
+The test cases will be generated such that the answer is unique.
+Examples
+Input: s = &#34;ADOBECODEBANC&#34;, t = &#34;ABC&#34;
+Output: &#34;BANC&#34;
+Explanation: The minimum window substring &#34;BANC&#34; includes &#39;A&#39;, &#39;B&#39;, and &#39;C&#39; from string t.
+Input: s = &#34;a&#34;, t = &#34;a&#34;
+Output: &#34;a&#34;
+Explanation: The entire string s is the minimum window.
+Input: s = &#34;a&#34;, t = &#34;aa&#34;
+Output: &#34;&#34;
+Explanation: Both &#39;a&#39;s from t must be included in the window.
+Since the largest window of s only has one &#39;a&#39;, return an empty string.
+Constraints
+
+m == s.length
+n == t.length
+1 &lt;= m, n &lt;= 10⁵
+s and t consist of uppercase and lowercase English letters.
+
+Follow-up: Could you find an algorithm that runs in O(m &#43; n) time?">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/leetcode-blind-75-minimum-window-substring/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -96,7 +116,8 @@ The test cases will be generated such that the answer is unique.">
   <meta property="og:title" content="LeetCode - Blind 75 - Minimum Window Substring">
   <meta property="og:description" content="The Problem Given two strings s and t of lengths m and n, respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string &#34;&#34;.
 A substring is a contiguous, non-empty sequence of characters within a string.
-The test cases will be generated such that the answer is unique.">
+The test cases will be generated such that the answer is unique.
+Examples Input: s = &#34;ADOBECODEBANC&#34;, t = &#34;ABC&#34; Output: &#34;BANC&#34; Explanation: The minimum window substring &#34;BANC&#34; includes &#39;A&#39;, &#39;B&#39;, and &#39;C&#39; from string t. Input: s = &#34;a&#34;, t = &#34;a&#34; Output: &#34;a&#34; Explanation: The entire string s is the minimum window. Input: s = &#34;a&#34;, t = &#34;aa&#34; Output: &#34;&#34; Explanation: Both &#39;a&#39;s from t must be included in the window. Since the largest window of s only has one &#39;a&#39;, return an empty string. Constraints m == s.length n == t.length 1 &lt;= m, n &lt;= 10⁵ s and t consist of uppercase and lowercase English letters. Follow-up: Could you find an algorithm that runs in O(m &#43; n) time?">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -114,7 +135,27 @@ The test cases will be generated such that the answer is unique.">
 Given two strings s and t of lengths m and n, respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string &quot;&quot;.
 
 A substring is a contiguous, non-empty sequence of characters within a string.
-The test cases will be generated such that the answer is unique.">
+
+The test cases will be generated such that the answer is unique.
+Examples
+Input: s = &#34;ADOBECODEBANC&#34;, t = &#34;ABC&#34;
+Output: &#34;BANC&#34;
+Explanation: The minimum window substring &#34;BANC&#34; includes &#39;A&#39;, &#39;B&#39;, and &#39;C&#39; from string t.
+Input: s = &#34;a&#34;, t = &#34;a&#34;
+Output: &#34;a&#34;
+Explanation: The entire string s is the minimum window.
+Input: s = &#34;a&#34;, t = &#34;aa&#34;
+Output: &#34;&#34;
+Explanation: Both &#39;a&#39;s from t must be included in the window.
+Since the largest window of s only has one &#39;a&#39;, return an empty string.
+Constraints
+
+m == s.length
+n == t.length
+1 &lt;= m, n &lt;= 10⁵
+s and t consist of uppercase and lowercase English letters.
+
+Follow-up: Could you find an algorithm that runs in O(m &#43; n) time?">
 
 
 <script type="application/ld+json">
@@ -143,7 +184,7 @@ The test cases will be generated such that the answer is unique.">
   "@type": "BlogPosting",
   "headline": "LeetCode - Blind 75 - Minimum Window Substring",
   "name": "LeetCode - Blind 75 - Minimum Window Substring",
-  "description": "The Problem Given two strings s and t of lengths m and n, respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string \u0026quot;\u0026quot;.\nA substring is a contiguous, non-empty sequence of characters within a string.\nThe test cases will be generated such that the answer is unique.\n",
+  "description": "The Problem Given two strings s and t of lengths m and n, respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string \u0026quot;\u0026quot;.\nA substring is a contiguous, non-empty sequence of characters within a string.\nThe test cases will be generated such that the answer is unique.\nExamples Input: s = \u0026#34;ADOBECODEBANC\u0026#34;, t = \u0026#34;ABC\u0026#34; Output: \u0026#34;BANC\u0026#34; Explanation: The minimum window substring \u0026#34;BANC\u0026#34; includes \u0026#39;A\u0026#39;, \u0026#39;B\u0026#39;, and \u0026#39;C\u0026#39; from string t. Input: s = \u0026#34;a\u0026#34;, t = \u0026#34;a\u0026#34; Output: \u0026#34;a\u0026#34; Explanation: The entire string s is the minimum window. Input: s = \u0026#34;a\u0026#34;, t = \u0026#34;aa\u0026#34; Output: \u0026#34;\u0026#34; Explanation: Both \u0026#39;a\u0026#39;s from t must be included in the window. Since the largest window of s only has one \u0026#39;a\u0026#39;, return an empty string. Constraints m == s.length n == t.length 1 \u0026lt;= m, n \u0026lt;= 10⁵ s and t consist of uppercase and lowercase English letters. Follow-up: Could you find an algorithm that runs in O(m + n) time?\n",
   "keywords": [
     "LeetCode", "Blind 75", "Minimum Window Substring", "Swift"
   ],
@@ -299,7 +340,8 @@ The test cases will be generated such that the answer is unique.">
   <div class="post-content"><h3 id="the-problem">The Problem<a hidden class="anchor" aria-hidden="true" href="#the-problem">#</a></h3>
 <p>Given two strings <code>s</code> and <code>t</code> of lengths <code>m</code> and <code>n</code>, respectively, return the minimum window substring of <code>s</code> such that every character in <code>t</code> (including duplicates) is included in the window. If there is no such substring, return the empty string <code>&quot;&quot;</code>.</p>
 <blockquote>
-<p>A substring is a contiguous, non-empty sequence of characters within a string.</p></blockquote>
+<p>A substring is a contiguous, non-empty sequence of characters within a string.</p>
+</blockquote>
 <p>The test cases will be generated such that the answer is unique.</p>
 <h4 id="examples">Examples<a hidden class="anchor" aria-hidden="true" href="#examples">#</a></h4>
 <pre tabindex="0"><code>Input: s = &#34;ADOBECODEBANC&#34;, t = &#34;ABC&#34;

@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.0</generator>
+    <generator>Hugo -- 0.151.2</generator>
     <language>en</language>
     <lastBuildDate>Mon, 03 Feb 2025 11:28:36 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/find-median-from-data-stream/index.xml" rel="self" type="application/rss+xml" />
@@ -20,7 +20,8 @@
       <guid>http://localhost:1313/posts/leetcode-blind-75-find-median-from-data-stream/</guid>
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The &lt;strong&gt;median&lt;/strong&gt; is the middle value in an ordered integer list. If the size of the list is even, there is no middle value, and the median is the mean of the two middle values.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The &lt;strong&gt;median&lt;/strong&gt; is the middle value in an ordered integer list. If the size of the list is even, there is no middle value, and the median is the mean of the two middle values.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;For example, for &lt;code&gt;arr = [2,3,4]&lt;/code&gt;, the median is &lt;code&gt;3&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;For example, for &lt;code&gt;arr = [2,3]&lt;/code&gt;, the median is &lt;code&gt;(2 + 3) / 2 = 2.5&lt;/code&gt;.&lt;/li&gt;

@@ -11,6 +11,7 @@
 Given two strings s1 and s2, return true if s2 contains a permutation of s1, or false otherwise.
 
 A permutation is a rearrangement of all the characters of a string.
+
 In other words, return true if one of s1’s permutations is a substring of s2.
 Examples
 Input: s1 = &#34;ab&#34;, s2 = &#34;eidbaooo&#34;
@@ -139,6 +140,7 @@ In the example, we can see that we have a permutation of s1 = &#34;ab&#34; in s2
 Given two strings s1 and s2, return true if s2 contains a permutation of s1, or false otherwise.
 
 A permutation is a rearrangement of all the characters of a string.
+
 In other words, return true if one of s1’s permutations is a substring of s2.
 Examples
 Input: s1 = &#34;ab&#34;, s2 = &#34;eidbaooo&#34;
@@ -344,7 +346,8 @@ In the example, we can see that we have a permutation of s1 = &quot;ab&quot; in 
   <div class="post-content"><h3 id="the-problem">The problem<a hidden class="anchor" aria-hidden="true" href="#the-problem">#</a></h3>
 <p>Given two strings <code>s1</code> and <code>s2</code>, return <code>true</code> if <code>s2</code> contains a permutation of <code>s1</code>, or <code>false</code> otherwise.</p>
 <blockquote>
-<p>A permutation is a rearrangement of all the characters of a string.</p></blockquote>
+<p>A permutation is a rearrangement of all the characters of a string.</p>
+</blockquote>
 <p>In other words, return <code>true</code> if one of <code>s1</code>’s permutations is a substring of <code>s2</code>.</p>
 <h4 id="examples">Examples<a hidden class="anchor" aria-hidden="true" href="#examples">#</a></h4>
 <pre tabindex="0"><code>Input: s1 = &#34;ab&#34;, s2 = &#34;eidbaooo&#34;
@@ -371,7 +374,8 @@ Output: false
 We are looking for a permutation of <code>s1</code> in <code>s2</code> with the size of <code>s1</code>.<br>
 In the example, we can see that we have a permutation of <code>s1 = &quot;ab&quot;</code> in <code>s2 = &quot;eidbaooo&quot;</code> but in a different order.</p>
 <blockquote>
-<p>If we had, for example, characters <code>&quot;ab&quot;</code> in <code>s2</code>, it would also count as a permutation. Order in this case does not matter.</p></blockquote>
+<p>If we had, for example, characters <code>&quot;ab&quot;</code> in <code>s2</code>, it would also count as a permutation. Order in this case does not matter.</p>
+</blockquote>
 <h3 id="hash-map-solution">Hash Map Solution<a hidden class="anchor" aria-hidden="true" href="#hash-map-solution">#</a></h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">checkInclusion</span><span class="p">(</span><span class="kc">_</span> <span class="n">s1</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span> <span class="kc">_</span> <span class="n">s2</span><span class="p">:</span> <span class="nb">String</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Bool</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nv">s2Len</span> <span class="p">=</span> <span class="n">s2</span><span class="p">.</span><span class="bp">count</span>

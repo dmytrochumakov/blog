@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.0</generator>
+    <generator>Hugo -- 0.151.2</generator>
     <language>en</language>
     <lastBuildDate>Tue, 02 Sep 2025 07:47:08 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/combination-sum-ii/index.xml" rel="self" type="application/rss+xml" />
@@ -22,7 +22,8 @@
 &lt;p&gt;Given a collection of candidate numbers (&lt;code&gt;candidates&lt;/code&gt;) and a target number (&lt;code&gt;target&lt;/code&gt;), find all unique combinations in &lt;code&gt;candidates&lt;/code&gt; where the candidate numbers sum to &lt;code&gt;target&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Each number in &lt;code&gt;candidates&lt;/code&gt; may only be used once in the combination.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The solution set must not contain duplicate combinations.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The solution set must not contain duplicate combinations.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: candidates = [10,1,2,7,6,1,5], target = 8
 Output: 

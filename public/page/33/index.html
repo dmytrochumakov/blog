@@ -2,7 +2,7 @@
 <html lang="en" dir="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.147.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.151.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -189,6 +189,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Accessibility iOS SwiftUI
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction Previously, I posted about Accessibility for UIKit. The idea behind this post is to find differences between UIKit Accessibility and SwiftUI features.
+Similarities: Both UIKit and SwiftUI have accessibilityLabel and accessibilityHints APIs.
+Differences: To use dynamic type for fonts, you need additional modifiers in SwiftUI. struct ScaledFont: ViewModifier { @Environment(\.sizeCategory) var sizeCategory var name: String var size: Double func body(content: Content) -&gt; some View { let scaledSize = UIFontMetrics.default.scaledValue(for: size) return content.font(.custom(name, size: scaledSize)) } } extension View { func scaledFont(name: String, textSize size: Double) -&gt; some View { return self.modifier(ScaledFont(name: name, size: size)) } } To step over elements in a list, you need to add .accessibilityElement(children: .combine) to each row in SwiftUI. struct FruitCaloriesCounter: View { var body: some View { NavigationView { List(fruits) { fruit in FruitRow(fruit: fruit) .accessibilityElement(children: .combine) } .navigationTitle(&#34;Fruits Calories Counter&#34;) .accessibilityElement(children: .contain) .navigationBarTitleDisplayMode(.inline) } } } In UIKit, you can insert and remove accessibilityTraits depending on the button state: if button.isSelected { button.accessibilityTraits.insert(.header) } else { button.accessibilityTraits.remove(.header) } In SwiftUI, you need to pass .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton) to one modifier. Button(action: { selected.toggle() }) { Image(systemName: selected ? &#34;star.fill&#34; : &#34;star&#34;) .frame(width: 44, height: 44) .accessibilityLabel(&#34;favourite&#34;) .accessibilityHint(selected ? &#34;removes favourite&#34; : &#34;makes favourite&#34;) .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton) } .buttonStyle(.plain) Complete Sample import SwiftUI let fruits = [ Fruit(name: &#34;Apple&#34;, calories: 52), Fruit(name: &#34;Banana&#34;, calories: 89), Fruit(name: &#34;Orange&#34;, calories: 47), Fruit(name: &#34;Pineapple&#34;, calories: 50), Fruit(name: &#34;Strawberry&#34;, calories: 32) ] struct Fruit: Identifiable { var id: String { name } let name: String let calories: Int } struct FruitRow: View { @State private var selected = false let fruit: Fruit var body: some View { HStack(spacing: 8) { VStack(alignment: .leading, spacing: 8) { Text(fruit.name) .scaledFont(name: &#34;Helvetica&#34;, textSize: 20) .accessibilityLabel(fruit.name) Text(&#34;\(fruit.calories) per 100g&#34;) .scaledFont(name: &#34;Helvetica&#34;, textSize: 15) .accessibilityLabel(&#34;\(fruit.calories) calories per 100 grams&#34;) } Spacer() Button(action: { selected.toggle() }) { Image(systemName: selected ? &#34;star.fill&#34; : &#34;star&#34;) .frame(width: 44, height: 44) .accessibilityLabel(&#34;favourite&#34;) .accessibilityHint(selected ? &#34;removes favourite&#34; : &#34;makes favourite&#34;) .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton) } .buttonStyle(.plain) } } } struct FruitCaloriesCounter: View { var body: some View { NavigationView { List(fruits) { fruit in FruitRow(fruit: fruit) .accessibilityElement(children: .combine) } .navigationTitle(&#34;Fruits Calories Counter&#34;) .accessibilityElement(children: .contain) .navigationBarTitleDisplayMode(.inline) } } } struct ContentView: View { var body: some View { FruitCaloriesCounter() } } #Preview { ContentView() } struct ScaledFont: ViewModifier { @Environment(\.sizeCategory) var sizeCategory var name: String var size: Double func body(content: Content) -&gt; some View { let scaledSize = UIFontMetrics.default.scaledValue(for: size) return content.font(.custom(name, size: scaledSize)) } } extension View { func scaledFont(name: String, textSize size: Double) -&gt; some View { return self.modifier(ScaledFont(name: name, size: size)) } } Thank you for reading! 😊</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-06-02 09:04:06 +0300 EEST'>June 2, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to Accessibility iOS SwiftUI" href="http://localhost:1313/posts/accessibility-ios-swiftui/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Accessibility iOS UIKit
     </h2>
   </header>
@@ -244,21 +258,6 @@ CAShapeLayer - provides extensive customization options: path, stroke, fill, sha
   </div>
   <footer class="entry-footer"><span title='2024-05-21 06:31:02 +0300 EEST'>May 21, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to Animation - UIKit" href="http://localhost:1313/posts/animation-uikit/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Animation - SwiftUI
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was eager to learn about creating complex animations in SwiftUI. The few questions that were on my mind included what types of animations exist and what I can animate. Here is what I found:
-Types of Animation SwiftUI has explicit and implicit animation types.
-Implicit Animation: This is specified with the .animation() modifier. SwiftUI will animate changes in old and new values.
-struct ImplicitAnimation: View { @State private var half = false @State private var dim = false var body: some View { Image(&#34;tower&#34;) .scaleEffect(half ? 0.5 : 1.0) .opacity(dim ? 0.2 : 1.0) .animation(.easeInOut(duration: 1.0)) .onTapGesture { self.dim.toggle() self.half.toggle() } } } ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-17 07:23:46 +0300 EEST'>May 17, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to Animation - SwiftUI" href="http://localhost:1313/posts/animation-swiftui/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

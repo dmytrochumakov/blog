@@ -295,7 +295,8 @@ SKSpriteNode - is an onscreen graphical element that can be initialized from an 
 <h3 id="first-step">First Step<a hidden class="anchor" aria-hidden="true" href="#first-step">#</a></h3>
 <p>The first step is to initialize <code>player</code> using <a href="https://developer.apple.com/documentation/spritekit/skspritenode"><code>SKSpriteNode</code></a>, set up <code>player.position</code>, and add <code>player</code> as a child node.</p>
 <blockquote>
-<p><strong>SKSpriteNode</strong> - is an onscreen graphical element that can be initialized from an image or a solid color.</p></blockquote>
+<p><strong>SKSpriteNode</strong> - is an onscreen graphical element that can be initialized from an image or a solid color.</p>
+</blockquote>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kc">self</span><span class="p">.</span><span class="n">player</span> <span class="p">=</span> <span class="n">SKSpriteNode</span><span class="p">(</span><span class="n">imageNamed</span><span class="p">:</span> <span class="s">&#34;shuttle&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">player</span><span class="p">.</span><span class="n">position</span> <span class="p">=</span> <span class="n">CGPoint</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="kc">self</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">width</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">player</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">height</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">20</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
@@ -306,7 +307,8 @@ SKSpriteNode - is an onscreen graphical element that can be initialized from an 
 </span></span></code></pre></div><h3 id="third-step">Third Step<a hidden class="anchor" aria-hidden="true" href="#third-step">#</a></h3>
 <p>The third step is to add <code>contactDelegate</code> to be able to respond when physics bodies come into contact.</p>
 <blockquote>
-<p><a href="https://developer.apple.com/documentation/spritekit/skphysicscontactdelegate">SKPhysicsContactDelegate</a> - An object that implements the SKPhysicsContactDelegate protocol can respond when two physics bodies with overlapping <code>contactTestBitMask</code> values are in contact with each other in a physics world. You can use the contact delegate to play a sound or execute game logic, such as increasing a player’s score when a contact event occurs.</p></blockquote>
+<p><a href="https://developer.apple.com/documentation/spritekit/skphysicscontactdelegate">SKPhysicsContactDelegate</a> - An object that implements the SKPhysicsContactDelegate protocol can respond when two physics bodies with overlapping <code>contactTestBitMask</code> values are in contact with each other in a physics world. You can use the contact delegate to play a sound or execute game logic, such as increasing a player’s score when a contact event occurs.</p>
+</blockquote>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kc">self</span><span class="p">.</span><span class="n">physicsWorld</span><span class="p">.</span><span class="n">contactDelegate</span> <span class="p">=</span> <span class="kc">self</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">private</span> <span class="kd">let</span> <span class="nv">alienCategory</span><span class="p">:</span> <span class="nb">UInt32</span> <span class="p">=</span> <span class="mh">0x1</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span>
 </span></span><span class="line"><span class="cl"><span class="kd">private</span> <span class="kd">let</span> <span class="nv">photonTorpedoCategory</span><span class="p">:</span> <span class="nb">UInt32</span> <span class="p">=</span> <span class="mh">0x1</span> <span class="o">&lt;&lt;</span> <span class="mi">0</span>
@@ -341,7 +343,8 @@ SKSpriteNode - is an onscreen graphical element that can be initialized from an 
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><blockquote>
-<p><code>didBegin(_:)</code> is an instance method called when two bodies first contact each other.</p></blockquote>
+<p><code>didBegin(_:)</code> is an instance method called when two bodies first contact each other.</p>
+</blockquote>
 <h3 id="additionally">Additionally<a hidden class="anchor" aria-hidden="true" href="#additionally">#</a></h3>
 <p>We need to add <code>scoreLabel</code> to track the player&rsquo;s score:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kc">self</span><span class="p">.</span><span class="n">scoreLabel</span> <span class="p">=</span> <span class="n">SKLabelNode</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="s">&#34;Score: 0&#34;</span><span class="p">)</span>

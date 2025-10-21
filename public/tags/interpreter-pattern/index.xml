@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.0</generator>
+    <generator>Hugo -- 0.151.2</generator>
     <language>en</language>
     <lastBuildDate>Mon, 18 Mar 2024 08:29:30 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/interpreter-pattern/index.xml" rel="self" type="application/rss+xml" />
@@ -20,7 +20,8 @@
       <guid>http://localhost:1313/posts/the-interpreter-pattern/</guid>
       <description>&lt;h3 id=&#34;what-is-an-interpreter-pattern&#34;&gt;What is an Interpreter Pattern?&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The Interpreter Pattern helps implement a simple language and defines a class based representation for its grammar along with an interpreter to interpret its sentences.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The Interpreter Pattern helps implement a simple language and defines a class based representation for its grammar along with an interpreter to interpret its sentences.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-35972&#34; hidden&gt;

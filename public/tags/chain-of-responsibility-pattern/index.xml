@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.0</generator>
+    <generator>Hugo -- 0.151.2</generator>
     <language>en</language>
     <lastBuildDate>Fri, 15 Mar 2024 08:29:30 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/chain-of-responsibility-pattern/index.xml" rel="self" type="application/rss+xml" />
@@ -20,7 +20,8 @@
       <guid>http://localhost:1313/posts/the-chain-of-responsibility-pattern/</guid>
       <description>&lt;h3 id=&#34;what-is-a-chain-of-responsibility-pattern&#34;&gt;What is a Chain Of Responsibility Pattern?&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The Chain Of Responsibility Pattern helps create a chain of objects to examine requests. Each object in turn examines a request and either handles it or passes onto the next object in the chain.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The Chain Of Responsibility Pattern helps create a chain of objects to examine requests. Each object in turn examines a request and either handles it or passes onto the next object in the chain.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-35972&#34; hidden&gt;

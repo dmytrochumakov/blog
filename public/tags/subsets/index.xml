@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.0</generator>
+    <generator>Hugo -- 0.151.2</generator>
     <language>en</language>
     <lastBuildDate>Wed, 27 Aug 2025 08:00:51 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/subsets/index.xml" rel="self" type="application/rss+xml" />
@@ -21,7 +21,8 @@
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
 &lt;p&gt;Given an integer array &lt;code&gt;nums&lt;/code&gt; of unique elements, return all possible subsets (the power set).&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A subset of an array is a selection of elements (possibly none) of the array.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;A subset of an array is a selection of elements (possibly none) of the array.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;The solution set must not contain duplicate subsets. Return the solution in any order.&lt;/p&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [1,2,3]

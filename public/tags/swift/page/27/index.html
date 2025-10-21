@@ -179,6 +179,20 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - Binary Search Tree Min/Max
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction Finding the min and max elements is one of the simplest algorithms regarding BST (Binary Search Tree). The findMin method loops through the left child nodes and returns the value from the last node. The findMax method does the same but traverses the right child nodes.
+Code Example - Min func findMin() -&gt; Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } Code Example - Max func findMax() -&gt; Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } Complete Code Example final class BSTNode { var val: Int? var left: BSTNode? var right: BSTNode? init(val: Int? = nil) { self.val = val } func insert(_ val: Value) { if self.val == nil { self.val = val return } if self.val == val { return } if val &lt; self.val! { if self.left != nil { self.left!.insert(val) return } else { self.left = BSTNode(val: val) return } } if self.right != nil { self.right!.insert(val) return } self.right = BSTNode(val: val) } func findMin() -&gt; Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } func findMax() -&gt; Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } } Time/Space Complexity For both findMin and findMax:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-09-22 07:26:23 +0300 EEST'>September 22, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to DSA - Binary Search Tree Min/Max" href="http://localhost:1313/posts/dsa-binary-search-tree-min-max/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">DSA - Queue
     </h2>
   </header>
@@ -238,26 +252,12 @@ It has a visited array that collects all elements that have already been visited
   <footer class="entry-footer"><span title='2024-09-12 07:14:47 +0300 EEST'>September 12, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to DSA - Breadth First Search" href="http://localhost:1313/posts/dsa-breadth-first-search/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Backtracking
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is Backtracking? Backtracking is a class of algorithms for finding solutions to complex problems. A backtracking algorithm uses recursion and is based on depth-first search (DFS).
-Depth First Search (DFS) Depth First Search (DFS) is an essential part of backtracking. DFS is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (or an arbitrary node in the case of a graph) and explores as far as possible along each branch before backtracking.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-09 07:19:46 +0300 EEST'>September 9, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to DSA - Backtracking" href="http://localhost:1313/posts/dsa-backtracking/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/swift/page/26/">
-      «&nbsp;Prev&nbsp;26/34
+      «&nbsp;Prev&nbsp;26/35
     </a>
-    <a class="next" href="http://localhost:1313/tags/swift/page/28/">Next&nbsp;28/34&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/swift/page/28/">Next&nbsp;28/35&nbsp;»
     </a>
   </nav>
 </footer>

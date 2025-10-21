@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.0</generator>
+    <generator>Hugo -- 0.151.2</generator>
     <language>en</language>
     <lastBuildDate>Tue, 28 Jan 2025 12:30:52 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/serialize-and-deserialize-binary-tree/index.xml" rel="self" type="application/rss+xml" />
@@ -20,7 +20,8 @@
       <guid>http://localhost:1313/posts/leetcode-blind-75-serialize-and-deserialize-binary-tree/</guid>
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer or transmitted across a network connection link to be reconstructed later in the same or another computer environment.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer or transmitted across a network connection link to be reconstructed later in the same or another computer environment.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.&lt;/p&gt;</description>
     </item>
   </channel>
