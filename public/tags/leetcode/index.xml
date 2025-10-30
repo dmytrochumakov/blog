@@ -11,8 +11,20 @@
     </image>
     <generator>Hugo -- 0.151.2</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Oct 2025 07:58:33 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 30 Oct 2025 07:52:44 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Course Schedule II</title>
+      <link>http://localhost:1313/posts/leetcode-150-course-schedule-ii/</link>
+      <pubDate>Thu, 30 Oct 2025 07:52:44 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-course-schedule-ii/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;There are a total of &lt;code&gt;numCourses&lt;/code&gt; courses you have to take, labeled from &lt;code&gt;0&lt;/code&gt; to &lt;code&gt;numCourses - 1&lt;/code&gt;. You are given an array &lt;code&gt;prerequisites&lt;/code&gt; where &lt;code&gt;prerequisites[i] = [ai, bi]&lt;/code&gt; indicates that you must take course &lt;code&gt;bi&lt;/code&gt; first if you want to take course &lt;code&gt;ai&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For example, the pair &lt;code&gt;[0, 1]&lt;/code&gt; indicates that to take course &lt;code&gt;0&lt;/code&gt; you have to first take course &lt;code&gt;1&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Return the ordering of courses you should take to finish all courses. If there are many valid answers, return any of them. If it is impossible to finish all courses, return an empty array.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Surrounded Regions</title>
       <link>http://localhost:1313/posts/leetcode-150-surrounded-regions/</link>

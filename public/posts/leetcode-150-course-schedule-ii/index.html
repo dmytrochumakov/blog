@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>LeetCode - 150 - Course Schedule II | Dmytro&#39;s Blog</title>
+<meta name="keywords" content="LeetCode, 150, Course Schedule II, Swift">
+<meta name="description" content="The problem
+There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you must take course bi first if you want to take course ai.
+
+For example, the pair [0, 1] indicates that to take course 0 you have to first take course 1.
+
+Return the ordering of courses you should take to finish all courses. If there are many valid answers, return any of them. If it is impossible to finish all courses, return an empty array.">
+<meta name="author" content="Dmytro Chumakov">
+<link rel="canonical" href="http://localhost:1313/posts/leetcode-150-course-schedule-ii/">
+<meta name="google-site-verification" content="G-HZZ4JTFGDP">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.23830bf4d3e301f84ac90cdafb3d702aa1cfa9dc93f20f2e37f8d775f06aea85.css" integrity="sha256-I4ML9NPjAfhKyQza&#43;z1wKqHPqdyT8g8uN/jXdfBq6oU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/leetcode-150-course-schedule-ii/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><style>
+    @media screen and (min-width: 769px) {
+         
+        .post-content input[type="checkbox"]:checked ~ label > img {
+            transform: scale(1.6);
+            cursor: zoom-out;
+            position: relative;
+            z-index: 999;
+        }
+    
+        .post-content img.zoomCheck {
+            transition: transform 0.15s ease;
+            z-index: 999;
+            cursor: zoom-in;
+        }
+    }
+    </style>
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/leetcode-150-course-schedule-ii/">
+  <meta property="og:site_name" content="Dmytro&#39;s Blog">
+  <meta property="og:title" content="LeetCode - 150 - Course Schedule II">
+  <meta property="og:description" content="The problem There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you must take course bi first if you want to take course ai.
+For example, the pair [0, 1] indicates that to take course 0 you have to first take course 1. Return the ordering of courses you should take to finish all courses. If there are many valid answers, return any of them. If it is impossible to finish all courses, return an empty array.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-30T07:52:44+03:00">
+    <meta property="article:modified_time" content="2025-10-30T07:52:44+03:00">
+    <meta property="article:tag" content="LeetCode">
+    <meta property="article:tag" content="150">
+    <meta property="article:tag" content="Course Schedule II">
+    <meta property="article:tag" content="Swift">
+      <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="LeetCode - 150 - Course Schedule II">
+<meta name="twitter:description" content="The problem
+There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you must take course bi first if you want to take course ai.
+
+For example, the pair [0, 1] indicates that to take course 0 you have to first take course 1.
+
+Return the ordering of courses you should take to finish all courses. If there are many valid answers, return any of them. If it is impossible to finish all courses, return an empty array.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "LeetCode - 150 - Course Schedule II",
+      "item": "http://localhost:1313/posts/leetcode-150-course-schedule-ii/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "LeetCode - 150 - Course Schedule II",
+  "name": "LeetCode - 150 - Course Schedule II",
+  "description": "The problem There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you must take course bi first if you want to take course ai.\nFor example, the pair [0, 1] indicates that to take course 0 you have to first take course 1. Return the ordering of courses you should take to finish all courses. If there are many valid answers, return any of them. If it is impossible to finish all courses, return an empty array.\n",
+  "keywords": [
+    "LeetCode", "150", "Course Schedule II", "Swift"
+  ],
+  "articleBody": "The problem There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you must take course bi first if you want to take course ai.\nFor example, the pair [0, 1] indicates that to take course 0 you have to first take course 1. Return the ordering of courses you should take to finish all courses. If there are many valid answers, return any of them. If it is impossible to finish all courses, return an empty array.\nExamples Input: numCourses = 2, prerequisites = [[1,0]] Output: [0,1] Explanation: There are a total of 2 courses to take. To take course 1 you should have finished course 0. So the correct course order is [0,1]. Input: numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]] Output: [0,2,1,3] Explanation: There are a total of 4 courses to take. To take course 3 you should have finished both courses 1 and 2. Both courses 1 and 2 should be taken after you finished course 0. So one correct course order is [0,1,2,3]. Another correct ordering is [0,2,1,3]. Input: numCourses = 1, prerequisites = [] Output: [0] Constraints 1 \u003c= numCourses \u003c= 2000 0 \u003c= prerequisites.length \u003c= numCourses * (numCourses - 1) prerequisites[i].length == 2 0 \u003c= ai, bi \u003c numCourses ai != bi All the pairs [ai, bi] are distinct. Explanation From the description of the problem, we learn that we are given n courses that are labeled from 0 to n - 1. We also know that some courses have prerequisites, and we want to return the order of courses that we need to take in order to finish all the courses. If it’s not possible, we will return an empty array.\nLet’s look at the first example We are given two courses 0 and 1 and prerequisites = [[1, 0]].\nIn order to take course 1, we have to take course 0 first. As a result, we have the array [0, 1]. You can see that we can represent our prerequisites as a graph; therefore, we will be creating our solution around it. Now, let’s look at another example when we have two prerequisites - [[1, 0], [0, 1]] The first prerequisite tells us that in order to take course 1, we need to take course 0. The second prerequisite tells us that in order to take course 0, we need to take course 1. You can see that we can’t take those courses because there is no valid order, and our prerequisites form a cycle. So as a result, we will return an empty array. Topological Sort Solution func findOrder(_ numCourses: Int, _ prerequisites: [[Int]]) -\u003e [Int] { var prereq: [Int: [Int]] = [:] for element in prerequisites { let crs = element[0] let pre = element[1] prereq[crs, default: []].append(pre) } var output: [Int] = [] var visited: Set\u003cInt\u003e = [] var cycle: Set\u003cInt\u003e = [] func dfs(_ crs: Int) -\u003e Bool { if cycle.contains(crs) { return false } if visited.contains(crs) { return true } cycle.insert(crs) for pre in prereq[crs, default: []) { if dfs(pre) == false { return false } } cycle.remove(crs) visited.insert(crs) output.append(crs) return true } for c in 0 ..\u003c numCourses { if dfs(c) == false { return [] } } return output } Explanation We are going to solve this problem by using the topological sort algorithm. Let’s look at the example: The first step that we are going to do is to build an adjacency list that will tell us what prerequisites we have for each node. Next, we are going to build the output using the depth-first search algorithm, visiting every single node: We are going to start our DFS from node 0 and visit our prerequisite 1 that we have in our adjacency list. Next, we are going to visit the prerequisite of 1, which is the single node 3. Next, we are going to visit the prerequisite of 3, which is node 2 that has no prerequisites. Since node 2 has no prerequisites, we are allowed to take course 2, and now we can add it to our output. We are also going to mark node 2 as visited so we don’t end up visiting it twice. Next, in our DFS, we are going to go back to node 3, and since it does not have more prerequisites, we are going to mark it as visited and add it to our output. Next, we are going back to node 1, and you can see that it does not have more prerequisites; therefore, we are going to mark it as visited and add it to our output. Next, we are going to node 0. Node 0 has prerequisite 1, which we already visited, and it also has a prerequisite with node 2 that we can ignore because we have already visited it earlier in our DFS. After that, we can mark node 0 as visited and add it to our result. Next, we are going to visit node 4, mark it as visited, and add it to our output since it only has one prerequisite 0 that we already visited. Lastly, we are going to do the same for node 5, mark it as visited, and add it to our output. In case we detect a cycle, we will return an empty array.\nLet’s look at an example with a cycle We are going to follow the same steps as we did above, except now we have node 2 that points to node 0 and forms a cycle:\nWe are going to start at node 0, next we are going to go to 1, then we are going to go to 3, then to node 2, and lastly, we are going to go to node 0. This will tell us that we found a cycle, and we are going to stop our algorithm and return []. To detect a cycle, we will be using a hash set where we will store the current path, and it will help us recognize the cycle.\nTime/Space complexity Time complexity: O(V + E) Space complexity: O(V + E) Where V is the number of courses and E is the number of prerequisites Thank you for reading! 😊 ",
+  "wordCount" : "1049",
+  "inLanguage": "en",
+  "image": "http://localhost:1313/images/papermod-cover.png","datePublished": "2025-10-30T07:52:44+03:00",
+  "dateModified": "2025-10-30T07:52:44+03:00",
+  "author":{
+    "@type": "Person",
+    "name": "Dmytro Chumakov"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/posts/leetcode-150-course-schedule-ii/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dmytro's Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Dmytro&#39;s Blog (Alt + H)">Dmytro&#39;s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <button id="menu-trigger" aria-haspopup="menu" aria-label="Menu Button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+        <ul class="menu hidden">
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      LeetCode - 150 - Course Schedule II
+    </h1>
+    <div class="post-meta"><span title='2025-10-30 07:52:44 +0300 +0300'>October 30, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#the-problem" aria-label="The problem">The problem</a><ul>
+                        
+                <li>
+                    <a href="#examples" aria-label="Examples">Examples</a></li>
+                <li>
+                    <a href="#constraints" aria-label="Constraints">Constraints</a></li>
+                <li>
+                    <a href="#explanation" aria-label="Explanation">Explanation</a></li></ul>
+                </li>
+                <li>
+                    <a href="#topological-sort-solution" aria-label="Topological Sort Solution">Topological Sort Solution</a><ul>
+                        
+                <li>
+                    <a href="#explanation-1" aria-label="Explanation">Explanation</a></li>
+                <li>
+                    <a href="#timespace-complexity" aria-label="Time/Space complexity">Time/Space complexity</a></li>
+                <li>
+                    <a href="#thank-you-for-reading-" aria-label="Thank you for reading! 😊">Thank you for reading! 😊</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h3 id="the-problem">The problem<a hidden class="anchor" aria-hidden="true" href="#the-problem">#</a></h3>
+<p>There are a total of <code>numCourses</code> courses you have to take, labeled from <code>0</code> to <code>numCourses - 1</code>. You are given an array <code>prerequisites</code> where <code>prerequisites[i] = [ai, bi]</code> indicates that you must take course <code>bi</code> first if you want to take course <code>ai</code>.</p>
+<ul>
+<li>For example, the pair <code>[0, 1]</code> indicates that to take course <code>0</code> you have to first take course <code>1</code>.</li>
+</ul>
+<p>Return the ordering of courses you should take to finish all courses. If there are many valid answers, return any of them. If it is impossible to finish all courses, return an empty array.</p>
+<h4 id="examples">Examples<a hidden class="anchor" aria-hidden="true" href="#examples">#</a></h4>
+<pre tabindex="0"><code>Input: numCourses = 2, prerequisites = [[1,0]]
+Output: [0,1]
+Explanation: There are a total of 2 courses to take. To take course 1 you should have finished course 0. So the correct course order is [0,1].
+</code></pre><pre tabindex="0"><code>Input: numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]
+Output: [0,2,1,3]
+Explanation: There are a total of 4 courses to take. To take course 3 you should have finished both courses 1 and 2. Both courses 1 and 2 should be taken after you finished course 0.
+So one correct course order is [0,1,2,3]. Another correct ordering is [0,2,1,3].
+</code></pre><pre tabindex="0"><code>Input: numCourses = 1, prerequisites = []
+Output: [0]
+</code></pre><h4 id="constraints">Constraints<a hidden class="anchor" aria-hidden="true" href="#constraints">#</a></h4>
+<ul>
+<li>1 &lt;= numCourses &lt;= 2000</li>
+<li>0 &lt;= prerequisites.length &lt;= numCourses * (numCourses - 1)</li>
+<li>prerequisites[i].length == 2</li>
+<li>0 &lt;= ai, bi &lt; numCourses</li>
+<li>ai != bi</li>
+<li>All the pairs [ai, bi] are distinct.</li>
+</ul>
+<h4 id="explanation">Explanation<a hidden class="anchor" aria-hidden="true" href="#explanation">#</a></h4>
+<p>From the description of the problem, we learn that we are given <code>n</code> courses that are labeled from <code>0</code> to <code>n - 1</code>. We also know that some courses have <code>prerequisites</code>, and we want to return the order of courses that we need to take in order to finish all the courses. If it’s not possible, we will return an <code>empty</code> array.</p>
+<p>Let’s look at the first example
+
+    
+    <input type="checkbox" id="zoomCheck-c73af" hidden>
+    <label for="zoomCheck-c73af">
+        <img class="zoomCheck" loading="lazy" decoding="async" 
+            src="images/210.png#center" alt="alt image" 
+             />
+    </label>
+
+We are given <code>two</code> courses <code>0</code> and <code>1</code> and <code>prerequisites = [[1, 0]]</code>.</p>
+<ul>
+<li>In order to take course <code>1</code>, we have to take course <code>0</code> first.
+As a result, we have the array <code>[0, 1]</code>.
+You can see that we can represent our <code>prerequisites</code> as a graph; therefore, we will be creating our solution around it.</li>
+</ul>
+<p>Now, let’s look at another example when we have <code>two prerequisites</code> - <code>[[1, 0], [0, 1]]</code>
+
+    
+    <input type="checkbox" id="zoomCheck-fadbc" hidden>
+    <label for="zoomCheck-fadbc">
+        <img class="zoomCheck" loading="lazy" decoding="async" 
+            src="images/210-1.png#center" alt="alt image" 
+             />
+    </label>
+</p>
+<ul>
+<li>The first prerequisite tells us that in order to take course <code>1</code>, we need to take course <code>0</code>.</li>
+<li>The second prerequisite tells us that in order to take course <code>0</code>, we need to take course <code>1</code>.
+You can see that we can’t take those courses because there is no valid order, and our prerequisites form a <code>cycle</code>. So as a result, we will return an <code>empty</code> array.</li>
+</ul>
+<h3 id="topological-sort-solution">Topological Sort Solution<a hidden class="anchor" aria-hidden="true" href="#topological-sort-solution">#</a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">findOrder</span><span class="p">(</span><span class="kc">_</span> <span class="n">numCourses</span><span class="p">:</span> <span class="nb">Int</span><span class="p">,</span> <span class="kc">_</span> <span class="n">prerequisites</span><span class="p">:</span> <span class="p">[[</span><span class="nb">Int</span><span class="p">]])</span> <span class="p">-&gt;</span> <span class="p">[</span><span class="nb">Int</span><span class="p">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">prereq</span><span class="p">:</span> <span class="p">[</span><span class="nb">Int</span><span class="p">:</span> <span class="p">[</span><span class="nb">Int</span><span class="p">]]</span> <span class="p">=</span> <span class="p">[:]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">element</span> <span class="k">in</span> <span class="n">prerequisites</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">let</span> <span class="nv">crs</span> <span class="p">=</span> <span class="n">element</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">let</span> <span class="nv">pre</span> <span class="p">=</span> <span class="n">element</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">prereq</span><span class="p">[</span><span class="n">crs</span><span class="p">,</span> <span class="k">default</span><span class="p">:</span> <span class="p">[]].</span><span class="n">append</span><span class="p">(</span><span class="n">pre</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">output</span><span class="p">:</span> <span class="p">[</span><span class="nb">Int</span><span class="p">]</span> <span class="p">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">visited</span><span class="p">:</span> <span class="n">Set</span><span class="p">&lt;</span><span class="nb">Int</span><span class="p">&gt;</span> <span class="p">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">cycle</span><span class="p">:</span> <span class="n">Set</span><span class="p">&lt;</span><span class="nb">Int</span><span class="p">&gt;</span> <span class="p">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">dfs</span><span class="p">(</span><span class="kc">_</span> <span class="n">crs</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Bool</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">cycle</span><span class="p">.</span><span class="bp">contains</span><span class="p">(</span><span class="n">crs</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">visited</span><span class="p">.</span><span class="bp">contains</span><span class="p">(</span><span class="n">crs</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">cycle</span><span class="p">.</span><span class="bp">insert</span><span class="p">(</span><span class="n">crs</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">pre</span> <span class="k">in</span> <span class="n">prereq</span><span class="p">[</span><span class="n">crs</span><span class="p">,</span> <span class="k">default</span><span class="p">:</span> <span class="p">[])</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">dfs</span><span class="p">(</span><span class="n">pre</span><span class="p">)</span> <span class="p">==</span> <span class="kc">false</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">cycle</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="n">crs</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">visited</span><span class="p">.</span><span class="bp">insert</span><span class="p">(</span><span class="n">crs</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">output</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">crs</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">c</span> <span class="k">in</span> <span class="mi">0</span> <span class="p">..</span><span class="o">&lt;</span> <span class="n">numCourses</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">dfs</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="p">==</span> <span class="kc">false</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">output</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h4 id="explanation-1">Explanation<a hidden class="anchor" aria-hidden="true" href="#explanation-1">#</a></h4>
+<p>We are going to solve this problem by using the topological sort algorithm.
+Let’s look at the example:
+
+    
+    <input type="checkbox" id="zoomCheck-a5930" hidden>
+    <label for="zoomCheck-a5930">
+        <img class="zoomCheck" loading="lazy" decoding="async" 
+            src="images/210-2.png#center" alt="alt image" 
+             />
+    </label>
+</p>
+<ul>
+<li>The first step that we are going to do is to build an adjacency list that will tell us what prerequisites we have for each node.
+Next, we are going to build the output using the depth-first search algorithm, visiting every single node:
+
+    
+    <input type="checkbox" id="zoomCheck-938ff" hidden>
+    <label for="zoomCheck-938ff">
+        <img class="zoomCheck" loading="lazy" decoding="async" 
+            src="images/210-3.png#center" alt="alt image" 
+             />
+    </label>
+</li>
+<li>We are going to start our DFS from node <code>0</code> and visit our prerequisite <code>1</code> that we have in our adjacency list.</li>
+<li>Next, we are going to visit the prerequisite of <code>1</code>, which is the single node <code>3</code>.</li>
+<li>Next, we are going to visit the prerequisite of <code>3</code>, which is node <code>2</code> that has no prerequisites. Since node <code>2</code> has no prerequisites, we are allowed to take course <code>2</code>, and now we can add it to our output. We are also going to mark node <code>2</code> as visited so we don’t end up visiting it twice.
+
+    
+    <input type="checkbox" id="zoomCheck-6442b" hidden>
+    <label for="zoomCheck-6442b">
+        <img class="zoomCheck" loading="lazy" decoding="async" 
+            src="images/210-4.png#center" alt="alt image" 
+             />
+    </label>
+</li>
+<li>Next, in our DFS, we are going to go back to node <code>3</code>, and since it does not have more prerequisites, we are going to mark it as visited and add it to our output.</li>
+<li>Next, we are going back to node <code>1</code>, and you can see that it does not have more prerequisites; therefore, we are going to mark it as visited and add it to our output.
+
+    
+    <input type="checkbox" id="zoomCheck-593f4" hidden>
+    <label for="zoomCheck-593f4">
+        <img class="zoomCheck" loading="lazy" decoding="async" 
+            src="images/210-5.png#center" alt="alt image" 
+             />
+    </label>
+</li>
+<li>Next, we are going to node <code>0</code>. Node <code>0</code> has prerequisite <code>1</code>, which we already visited, and it also has a prerequisite with node <code>2</code> that we can ignore because we have already visited it earlier in our DFS. After that, we can mark node <code>0</code> as visited and add it to our result.
+
+    
+    <input type="checkbox" id="zoomCheck-cbcbd" hidden>
+    <label for="zoomCheck-cbcbd">
+        <img class="zoomCheck" loading="lazy" decoding="async" 
+            src="images/210-6.png#center" alt="alt image" 
+             />
+    </label>
+</li>
+<li>Next, we are going to visit node <code>4</code>, mark it as visited, and add it to our output since it only has one prerequisite <code>0</code> that we already visited.</li>
+<li>Lastly, we are going to do the same for node <code>5</code>, mark it as visited, and add it to our output.</li>
+</ul>
+<blockquote>
+<p>In case we detect a cycle, we will return an empty array.</p>
+</blockquote>
+<p>Let’s look at an example with a cycle
+
+    
+    <input type="checkbox" id="zoomCheck-b8705" hidden>
+    <label for="zoomCheck-b8705">
+        <img class="zoomCheck" loading="lazy" decoding="async" 
+            src="images/210-7.png#center" alt="alt image" 
+             />
+    </label>
+
+We are going to follow the same steps as we did above, except now we have node <code>2</code> that points to node <code>0</code> and forms a cycle:</p>
+<ul>
+<li>We are going to start at node <code>0</code>, next we are going to go to <code>1</code>, then we are going to go to <code>3</code>, then to node <code>2</code>, and lastly, we are going to go to node <code>0</code>. This will tell us that we found a cycle, and we are going to stop our algorithm and return <code>[]</code>.</li>
+</ul>
+<p>To detect a cycle, we will be using a hash set where we will store the current path, and it will help us recognize the cycle.</p>
+<h4 id="timespace-complexity">Time/Space complexity<a hidden class="anchor" aria-hidden="true" href="#timespace-complexity">#</a></h4>
+<ul>
+<li>Time complexity: O(V + E)</li>
+<li>Space complexity: O(V + E)</li>
+<li>Where <code>V</code> is the number of courses and <code>E</code> is the number of prerequisites</li>
+</ul>
+<h4 id="thank-you-for-reading-">Thank you for reading! 😊<a hidden class="anchor" aria-hidden="true" href="#thank-you-for-reading-">#</a></h4>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/leetcode/">LeetCode</a></li>
+      <li><a href="http://localhost:1313/tags/150/">150</a></li>
+      <li><a href="http://localhost:1313/tags/course-schedule-ii/">Course Schedule II</a></li>
+      <li><a href="http://localhost:1313/tags/swift/">Swift</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/posts/leetcode-150-surrounded-regions/">
+    <span class="title">Next »</span>
+    <br>
+    <span>LeetCode - 150 - Surrounded Regions</span>
+  </a>
+</nav>
+
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share LeetCode - 150 - Course Schedule II on x"
+            href="https://x.com/intent/tweet/?text=LeetCode%20-%20150%20-%20Course%20Schedule%20II&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fleetcode-150-course-schedule-ii%2f&amp;hashtags=LeetCode%2c150%2cCourseScheduleII%2cSwift">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share LeetCode - 150 - Course Schedule II on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fleetcode-150-course-schedule-ii%2f&amp;title=LeetCode%20-%20150%20-%20Course%20Schedule%20II&amp;summary=LeetCode%20-%20150%20-%20Course%20Schedule%20II&amp;source=http%3a%2f%2flocalhost%3a1313%2fposts%2fleetcode-150-course-schedule-ii%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share LeetCode - 150 - Course Schedule II on reddit"
+            href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fleetcode-150-course-schedule-ii%2f&title=LeetCode%20-%20150%20-%20Course%20Schedule%20II">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share LeetCode - 150 - Course Schedule II on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fleetcode-150-course-schedule-ii%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share LeetCode - 150 - Course Schedule II on whatsapp"
+            href="https://api.whatsapp.com/send?text=LeetCode%20-%20150%20-%20Course%20Schedule%20II%20-%20http%3a%2f%2flocalhost%3a1313%2fposts%2fleetcode-150-course-schedule-ii%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share LeetCode - 150 - Course Schedule II on telegram"
+            href="https://telegram.me/share/url?text=LeetCode%20-%20150%20-%20Course%20Schedule%20II&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2fleetcode-150-course-schedule-ii%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share LeetCode - 150 - Course Schedule II on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=LeetCode%20-%20150%20-%20Course%20Schedule%20II&u=http%3a%2f%2flocalhost%3a1313%2fposts%2fleetcode-150-course-schedule-ii%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer><div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'dmytros-blog';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Dmytro&#39;s Blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><script>
+    
+    
+    let b = document.querySelector("#menu-trigger")
+    let m = document.querySelector(".menu")
+    b.addEventListener("click", function () {
+        m.classList.toggle("hidden")
+    });
+    
+    document.body.addEventListener('click', function (event) {
+        if (!b.contains(event.target)) {
+            m.classList.add("hidden")
+        }
+    });
+    
+</script>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
