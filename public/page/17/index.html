@@ -189,6 +189,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Implement Trie (Prefix Tree)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem A trie (pronounced as “try”) or prefix tree is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete and spellchecker.
+Implement the Trie class:
+Trie() Initializes the trie object. void insert(String word) Inserts the string word into the trie. boolean search(String word) Returns true if the string word is in the trie (i.e., was inserted before), and false otherwise. boolean startsWith(String prefix) Returns true if there is a previously inserted string word that has the prefix prefix, and false otherwise. Examples Input [&#34;Trie&#34;, &#34;insert&#34;, &#34;search&#34;, &#34;search&#34;, &#34;startsWith&#34;, &#34;insert&#34;, &#34;search&#34;] [[], [&#34;apple&#34;], [&#34;apple&#34;], [&#34;app&#34;], [&#34;app&#34;], [&#34;app&#34;], [&#34;app&#34;]] Output [null, null, true, false, true, null, true] Explanation Trie trie = new Trie(); trie.insert(&#34;apple&#34;); trie.search(&#34;apple&#34;); // return True trie.search(&#34;app&#34;); // return False trie.startsWith(&#34;app&#34;); // return True trie.insert(&#34;app&#34;); trie.search(&#34;app&#34;); // return True Constraints 1 &lt;= word.length, prefix.length &lt;= 2000 word and prefix consist only of lowercase English letters. At most 3 * 10⁴ calls in total will be made to insert, search, and startsWith. Prefix Tree Array solution final class TrieNode { var children: [TrieNode?] var endOfWord: Bool init() { self.children = Array(repeating: nil, count: 26) self.endOfWord = false } } class Trie { private let root: TrieNode private let aAsciiValue: Int = Int(Character(&#34;a&#34;).asciiValue!) init() { self.root = TrieNode() } func insert(_ word: String) { var curr = self.root for c in word { let i = Int(c.asciiValue!) - aAsciiValue if curr.children[i] == nil { curr.children[i] = TrieNode() } curr = curr.children[i]! } curr.endOfWord = true } func search(_ word: String) -&gt; Bool { var curr = self.root for c in word { let i = Int(c.asciiValue!) - aAsciiValue if curr.children[i] == nil { return false } curr = curr.children[i]! } return curr.endOfWord } func startsWith(_ prefix: String) -&gt; Bool { var curr = self.root for c in prefix { let i = Int(c.asciiValue!) - aAsciiValue if curr.children[i] == nil { return false } curr = curr.children[i]! } return true } } Explanation Before we start implementing Trie, let’s take a look at what we are going to do.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-10 13:32:09 +0300 +0300'>February 10, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Implement Trie (Prefix Tree)" href="http://localhost:1313/posts/leetcode-blind-75-implement-trie-prefix-tree/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Word Search
     </h2>
   </header>
@@ -243,21 +258,6 @@ Design an algorithm to serialize and deserialize a binary tree. There is no rest
   </div>
   <footer class="entry-footer"><span title='2025-01-28 12:30:52 +0300 +0300'>January 28, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Serialize and Deserialize Binary Tree" href="http://localhost:1313/posts/leetcode-blind-75-serialize-and-deserialize-binary-tree/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Binary Tree Maximum Path Sum
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge connecting them. A node can only appear in the sequence at most once. Note that the path does not need to pass through the root.
-The path sum of a path is the sum of the node’s values in the path.
-Given the root of a binary tree, return the maximum path sum of any non-empty path.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-01-27 10:24:47 +0300 +0300'>January 27, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Binary Tree Maximum Path Sum" href="http://localhost:1313/posts/leetcode-blind-75-binary-tree-maximum-path-sum/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

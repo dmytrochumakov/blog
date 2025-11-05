@@ -3,27 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/150/</loc>
-    <lastmod>2025-10-30T07:52:44+03:00</lastmod>
+    <lastmod>2025-11-05T08:01:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-05T08:01:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/leetcode/</loc>
+    <lastmod>2025-11-05T08:01:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/leetcode-150-redundant-connection/</loc>
+    <lastmod>2025-11-05T08:01:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-11-05T08:01:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/redundant-connection/</loc>
+    <lastmod>2025-11-05T08:01:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swift/</loc>
+    <lastmod>2025-11-05T08:01:51+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-11-05T08:01:51+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/course-schedule-ii/</loc>
     <lastmod>2025-10-30T07:52:44+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-10-30T07:52:44+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/leetcode/</loc>
-    <lastmod>2025-10-30T07:52:44+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/leetcode-150-course-schedule-ii/</loc>
-    <lastmod>2025-10-30T07:52:44+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-10-30T07:52:44+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2025-10-30T07:52:44+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-10-30T07:52:44+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/leetcode-150-surrounded-regions/</loc>

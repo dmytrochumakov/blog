@@ -189,6 +189,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Building Video Streaming Widget for iOS App
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction I was exploring the idea of creating a YouTube-like widget for the lock screen on iOS devices. It wasn’t easy because most articles on the Internet discussed general implementations, such as for a coffee shop or a to-do list. Even when I found some similar versions, the project wouldn’t compile. I made the decision to approach it my way, so here’s what I found out:
+Caveats After being stuck for two or more hours without understanding why, after tapping on a button, I wasn&#39;t able to receive a callback from it and the widget always opened the main iOS app, I realized that I forgot to add AppIntent - without it, you can’t handle actions for iOS 17. import AppIntents struct ButtonIntent: AppIntent { static let title: LocalizedStringResource = &#34;ButtonIntent&#34; @Parameter(title: &#34;id&#34;) var id: String func perform() async throws -&gt; some IntentResult { if id == Command.playPause.rawValue { DataModel.shared.isPlaying.toggle() } return .result() } } Another crucial point is not to forget to add an explicit init. If you don’t implement it explicitly, it will not work. import AppIntents struct ButtonIntent: AppIntent { static let title: LocalizedStringResource = &#34;ButtonIntent&#34; @Parameter(title: &#34;id&#34;) var id: String init(id: String) { self.id = id } init() {} func perform() async throws -&gt; some IntentResult { if id == Command.playPause.rawValue { DataModel.shared.isPlaying.toggle() } return .result() } } Lastly, I attempted to add a Slider, but I found that it’s not supported by the widget. My solution was to choose a ProgressView instead. Implementation struct YouTubeLockScreenWidget: View { var body: some View { VStack { Spacer() ProgressView(value: DataModel.shared.currentTime, total: DataModel.shared.totalTime) .progressViewStyle(.linear) Spacer() HStack { ForEach(Command.allCases) { command in Button(intent: ButtonIntent(id: command.id)) { Image(systemName: imageSystemName(isPlaying: DataModel.shared.isPlaying, command: command)) } } } } } } final class DataModel { static let shared = DataModel() var isPlaying: Bool = false var currentTime: TimeInterval = 34 var totalTime: TimeInterval = 304 } enum Command: String, CaseIterable { case previous case playPause case next } extension Command: Identifiable { var id: String { rawValue } } func imageSystemName(isPlaying: Bool, command: Command) -&gt; String { switch command { case .playPause: if isPlaying { return &#34;pause.fill&#34; } else { return &#34;play.fill&#34; } case .next: return &#34;forward.fill&#34; case .previous: return &#34;backward.fill&#34; } } I had not replaced default generated code when I was adding widget to the project. I just added YouTubeLockScreenWidget to generated VideoStreamingWidgetEntryView.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-05 07:20:29 +0300 EEST'>May 5, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to Building Video Streaming Widget for iOS App" href="http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Building Video Streaming iOS App
     </h2>
   </header>
@@ -244,21 +258,6 @@ Second Step After that, you need to visit https://developer.apple.com/augmented-
   </div>
   <footer class="entry-footer"><span title='2024-05-01 15:57:54 +0300 EEST'>May 1, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to iOS AR App: Experience 3D Guitar" href="http://localhost:1313/posts/ios-ar-app-experience-3d-guitar/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Building movie recommendations using ML
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was wondering about how to create movie recommendations, so I decided to take a closer look and find out more about this topic. This is what I found:
-First step: You need to create a JSON file with the data that you will use to train the model and define the parameters for training the model.
-[ { &#34;title&#34;: &#34;Avatar&#34;, &#34;year&#34;: &#34;2009&#34;, &#34;rated&#34;: &#34;PG-13&#34;, &#34;released&#34;: &#34;18 Dec 2009&#34;, &#34;runtime&#34;: &#34;162 min&#34;, &#34;genre&#34;: &#34;Action, Adventure, Fantasy&#34;, &#34;director&#34;: &#34;James Cameron&#34;, &#34;writer&#34;: &#34;James Cameron&#34;, &#34;actors&#34;: &#34;Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang&#34;, &#34;plot&#34;: &#34;A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.&#34;, &#34;language&#34;: &#34;English, Spanish&#34;, &#34;country&#34;: &#34;USA, UK&#34;, &#34;awards&#34;: &#34;Won 3 Oscars. Another 80 wins &amp; 121 nominations.&#34;, &#34;poster&#34;: &#34;https://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg&#34;, &#34;metascore&#34;: &#34;83&#34;, &#34;imdbrating&#34;: &#34;7.9&#34;, &#34;imdbvotes&#34;: &#34;890,617&#34;, &#34;imdbid&#34;: &#34;tt0499549&#34;, &#34;type&#34;: &#34;movie&#34;, &#34;response&#34;: &#34;True&#34;, &#34;keywords&#34;: [&#34;alien&#34;, &#34;avatar&#34;, &#34;fantasy world&#34;, &#34;soldier&#34;, &#34;battle&#34;] }, ] When you have created the data, you can proceed to the next step.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-01 10:29:44 +0300 EEST'>May 1, 2024</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to Building movie recommendations using ML" href="http://localhost:1313/posts/building-movie-recommendations-using-ml/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
