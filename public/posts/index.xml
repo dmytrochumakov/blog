@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- 0.151.2</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 05 Nov 2025 08:01:51 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 17 Nov 2025 07:48:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Word Ladder</title>
+      <link>http://localhost:1313/posts/leetcode-150-word-ladder/</link>
+      <pubDate>Mon, 17 Nov 2025 07:48:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-word-ladder/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;A transformation sequence from word &lt;code&gt;beginWord&lt;/code&gt; to word &lt;code&gt;endWord&lt;/code&gt; using a dictionary &lt;code&gt;wordList&lt;/code&gt; is a sequence of words &lt;code&gt;beginWord -&amp;gt; s1 -&amp;gt; s2 -&amp;gt; ... -&amp;gt; sk&lt;/code&gt; such that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Every adjacent pair of words differs by a single letter.&lt;/li&gt;
+&lt;li&gt;Every &lt;code&gt;si&lt;/code&gt; for &lt;code&gt;1 &amp;lt;= i &amp;lt;= k&lt;/code&gt; is in &lt;code&gt;wordList&lt;/code&gt;. Note that &lt;code&gt;beginWord&lt;/code&gt; does not need to be in &lt;code&gt;wordList&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sk&lt;/code&gt; == &lt;code&gt;endWord&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Given two words, &lt;code&gt;beginWord&lt;/code&gt; and &lt;code&gt;endWord&lt;/code&gt;, and a dictionary &lt;code&gt;wordList&lt;/code&gt;, return the number of words in the shortest transformation sequence from &lt;code&gt;beginWord&lt;/code&gt; to &lt;code&gt;endWord&lt;/code&gt;, or &lt;code&gt;0&lt;/code&gt; if no such sequence exists.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Redundant Connection</title>
       <link>http://localhost:1313/posts/leetcode-150-redundant-connection/</link>

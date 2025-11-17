@@ -189,6 +189,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Serialize and Deserialize Binary Tree
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer or transmitted across a network connection link to be reconstructed later in the same or another computer environment.
+Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-28 12:30:52 +0300 +0300'>January 28, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Serialize and Deserialize Binary Tree" href="http://localhost:1313/posts/leetcode-blind-75-serialize-and-deserialize-binary-tree/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Binary Tree Maximum Path Sum
     </h2>
   </header>
@@ -243,20 +257,6 @@ The left subtree of a node contains only nodes with keys less than the node’s 
   </div>
   <footer class="entry-footer"><span title='2025-01-16 13:07:12 +0300 +0300'>January 16, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Validate Binary Search Tree" href="http://localhost:1313/posts/leetcode-blind-75-validate-binary-search-tree/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Binary Tree Level Order Traversal
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Given the root of a binary tree, return the level order traversal of its nodes’ values (i.e., from left to right, level by level).
-Examples Input: root = [3,9,20,null,null,15,7] Output: [[3],[9,20],[15,7]] Input: root = [1] Output: [[1]] Input: root = [] Output: [] Constraints The number of nodes in the tree is in the range [0, 2000]. -1000 &lt;= Node.val &lt;= 1000 BFS Solution func levelOrder(_ root: TreeNode?) -&gt; [[Int]] { if root == nil { return [] } var queue: [TreeNode?] = [] queue.append(root) var res: [[Int]] = [] while !queue.isEmpty { var level: [Int] = [] for _ in 0 ..&lt; queue.count { let node = queue.removeFirst() if let node = node { level.append(node.val) queue.append(node.left) queue.append(node.right) } } if !level.isEmpty { res.append(level) } } return res } Explanation When you see that a binary tree problem involves level order traversal, it means the solution usually implies the breadth-first search (BFS) algorithm. BFS is a common solution to this problem because, according to Wikipedia, breadth-first search is also called “level-order search.” The core idea behind BFS is to iterate level by level from top to bottom, and from left to right.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-01-08 13:23:04 +0300 +0300'>January 8, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Binary Tree Level Order Traversal" href="http://localhost:1313/posts/leetcode-blind-75-binary-tree-level-order-traversal/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

@@ -179,6 +179,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - 150 - Design Twitter
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem Design a simplified version of Twitter where users can post tweets, follow/unfollow another user, and are able to see the 10 most recent tweets in the user’s news feed.
+Implement the Twitter class:
+Twitter() Initializes your Twitter object. void postTweet(int userId, int tweetId) Composes a new tweet with ID tweetId by the user userId. Each call to this function will be made with a unique tweetId. List&lt;Integer&gt; getNewsFeed(int userId) Retrieves the 10 most recent tweet IDs in the user’s news feed. Each item in the news feed must be posted by users who the user followed or by the user themselves. Tweets must be ordered from most recent to least recent. void follow(int followerId, int followeeId) The user with ID followerId starts following the user with ID followeeId. void unfollow(int followerId, int followeeId) The user with ID followerId stops following the user with ID followeeId. Examples Input [&#34;Twitter&#34;, &#34;postTweet&#34;, &#34;getNewsFeed&#34;, &#34;follow&#34;, &#34;postTweet&#34;, &#34;getNewsFeed&#34;, &#34;unfollow&#34;, &#34;getNewsFeed&#34;] [[], [1, 5], [1], [1, 2], [2, 6], [1], [1, 2], [1]] Output [null, null, [5], null, null, [6, 5], null, [5]] Explanation Twitter twitter = new Twitter(); twitter.postTweet(1, 5); // User 1 posts a new tweet (id = 5). twitter.getNewsFeed(1); // User 1&#39;s news feed should return a list with 1 tweet id -&gt; [5]. return [5] twitter.follow(1, 2); // User 1 follows user 2. twitter.postTweet(2, 6); // User 2 posts a new tweet (id = 6). twitter.getNewsFeed(1); // User 1&#39;s news feed should return a list with 2 tweet ids -&gt; [6, 5]. Tweet id 6 should precede tweet id 5 because it is posted after tweet id 5. twitter.unfollow(1, 2); // User 1 unfollows user 2. twitter.getNewsFeed(1); // User 1&#39;s news feed should return a list with 1 tweet id -&gt; [5], since user 1 is no longer following user 2. Constraints 1 &lt;= userId, followerId, followeeId &lt;= 500 0 &lt;= tweetId &lt;= 10^4 All the tweets have unique IDs. At most 3 * 10^4 calls will be made to postTweet, getNewsFeed, follow, and unfollow. A user cannot follow himself. Explanation Let’s start with the easy part of this problem that are follow and unfollow operations and move up as we go.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-08-25 07:54:06 +0300 EEST'>August 25, 2025</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode - 150 - Design Twitter" href="http://localhost:1313/posts/leetcode-150-design-twitter/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - 150 - Task Scheduler
     </h2>
   </header>
@@ -236,26 +251,12 @@ If x == y, both stones are destroyed, and If x != y, the stone of weight x is de
   <footer class="entry-footer"><span title='2025-08-11 07:25:28 +0300 EEST'>August 11, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Last Stone Weight" href="http://localhost:1313/posts/leetcode-150-last-stone-weight/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - 150 - Kth Largest Element in a Stream
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The problem You are part of a university admissions office and need to keep track of the kth highest test score from applicants in real-time. This helps to determine cut-off marks for interviews and admissions dynamically as new applicants submit their scores.
-You are tasked to implement a class which, for a given integer k, maintains a stream of test scores and continuously returns the kth highest test score after a new score has been submitted. More specifically, we are looking for the kth highest score in the sorted list of all scores.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-08-09 07:41:18 +0300 EEST'>August 9, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode - 150 - Kth Largest Element in a Stream" href="http://localhost:1313/posts/leetcode-150-kth-largest-element-in-a-stream/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/leetcode/page/3/">
-      «&nbsp;Prev&nbsp;3/24
+      «&nbsp;Prev&nbsp;3/25
     </a>
-    <a class="next" href="http://localhost:1313/tags/leetcode/page/5/">Next&nbsp;5/24&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/leetcode/page/5/">Next&nbsp;5/25&nbsp;»
     </a>
   </nav>
 </footer>
