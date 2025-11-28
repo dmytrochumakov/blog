@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- 0.151.2</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 17 Nov 2025 07:48:00 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 28 Nov 2025 09:02:09 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/150/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Network Delay Time</title>
+      <link>http://localhost:1313/posts/leetcode-150-network-delay-time/</link>
+      <pubDate>Fri, 28 Nov 2025 09:02:09 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-network-delay-time/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;You are given a network of &lt;code&gt;n&lt;/code&gt; nodes, labeled from &lt;code&gt;1&lt;/code&gt; to &lt;code&gt;n&lt;/code&gt;. You are also given &lt;code&gt;times&lt;/code&gt;, a list of travel times as directed edges &lt;code&gt;times[i] = (ui, vi, wi)&lt;/code&gt;, where &lt;code&gt;ui&lt;/code&gt; is the source node, &lt;code&gt;vi&lt;/code&gt; is the target node, and &lt;code&gt;wi&lt;/code&gt; is the time it takes for a signal to travel from source to target.&lt;/p&gt;
+&lt;p&gt;We will send a signal from a given node &lt;code&gt;k&lt;/code&gt;. Return the minimum time it takes for all the &lt;code&gt;n&lt;/code&gt; nodes to receive the signal. If it is impossible for all the &lt;code&gt;n&lt;/code&gt; nodes to receive the signal, return &lt;code&gt;-1&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Word Ladder</title>
       <link>http://localhost:1313/posts/leetcode-150-word-ladder/</link>

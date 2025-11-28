@@ -194,6 +194,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DispatchGroup in Swift
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is DispatchGroup? DispatchGroup provides a mechanism to track the completion group of tasks.
+How DispatchGroup works? DispatchGroup has three main methods, enter, leave and notify, that allow you to control the completion of a specific task.
+let dispatchGroup = DispatchGroup() dispatchGroup.enter() dispatchGroup.leave() dispatchGroup.notify(queue: .main) {} Let`s talk about each of these methods. enter — manually indicate a block has entered group. leave — manually indicate a block in the group has been completed. notify(queue: ) — schedule a block to be submitted to a queue when all the blocks associated with a group have been completed. The queue parameter is the queue to which the supplied block will be submitted when the group is complete.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-01-10 00:00:00 +0300 +0300'>January 10, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to DispatchGroup in Swift" href="http://localhost:1313/posts/dispatchgroup-in-swift/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Concurrency in Swift
     </h2>
   </header>
@@ -251,20 +266,6 @@ Choose Leaks option Select Simulator where you are going to test your applicatio
   </div>
   <footer class="entry-footer"><span title='2023-12-20 00:00:00 +0300 +0300'>December 20, 2023</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to How to find memory leaks?" href="http://localhost:1313/posts/how-to-find-memory-leaks/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">ARC in Swift
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is ARC? Swift uses Automatic Reference Counting (ARC) to track and manage your app’s memory usage. In most cases, this means that memory management “just works” in Swift, and you don’t need to think about memory management yourself. ARC automatically frees up the memory used by class instances when those instances are no longer needed. - Apple
-ARC In Action In this example, we assign an instance to the reference1 property.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-12-17 00:00:00 +0300 +0300'>December 17, 2023</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to ARC in Swift" href="http://localhost:1313/posts/arc-in-swift/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
