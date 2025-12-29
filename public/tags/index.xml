@@ -9,29 +9,43 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.151.2</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 12 Dec 2025 07:55:47 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 29 Dec 2025 08:06:06 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>150</title>
       <link>http://localhost:1313/tags/150/</link>
-      <pubDate>Fri, 12 Dec 2025 07:55:47 +0300</pubDate>
+      <pubDate>Mon, 29 Dec 2025 08:06:06 +0300</pubDate>
       <guid>http://localhost:1313/tags/150/</guid>
       <description></description>
     </item>
     <item>
       <title>Graph</title>
       <link>http://localhost:1313/tags/graph/</link>
-      <pubDate>Fri, 12 Dec 2025 07:55:47 +0300</pubDate>
+      <pubDate>Mon, 29 Dec 2025 08:06:06 +0300</pubDate>
       <guid>http://localhost:1313/tags/graph/</guid>
       <description></description>
     </item>
     <item>
       <title>LeetCode</title>
       <link>http://localhost:1313/tags/leetcode/</link>
-      <pubDate>Fri, 12 Dec 2025 07:55:47 +0300</pubDate>
+      <pubDate>Mon, 29 Dec 2025 08:06:06 +0300</pubDate>
       <guid>http://localhost:1313/tags/leetcode/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Min Cost to Connect All Points</title>
+      <link>http://localhost:1313/tags/min-cost-to-connect-all-points/</link>
+      <pubDate>Mon, 29 Dec 2025 08:06:06 +0300</pubDate>
+      <guid>http://localhost:1313/tags/min-cost-to-connect-all-points/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Swift</title>
+      <link>http://localhost:1313/tags/swift/</link>
+      <pubDate>Mon, 29 Dec 2025 08:06:06 +0300</pubDate>
+      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>
@@ -39,13 +53,6 @@
       <link>http://localhost:1313/tags/reconstruct-itinerary/</link>
       <pubDate>Fri, 12 Dec 2025 07:55:47 +0300</pubDate>
       <guid>http://localhost:1313/tags/reconstruct-itinerary/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Swift</title>
-      <link>http://localhost:1313/tags/swift/</link>
-      <pubDate>Fri, 12 Dec 2025 07:55:47 +0300</pubDate>
-      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>

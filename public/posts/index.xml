@@ -9,10 +9,20 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.151.2</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 12 Dec 2025 07:55:47 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 29 Dec 2025 08:06:06 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Min Cost to Connect All Points</title>
+      <link>http://localhost:1313/posts/leetcode-150-min-cost-to-connect-all-points/</link>
+      <pubDate>Mon, 29 Dec 2025 08:06:06 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-min-cost-to-connect-all-points/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;You are given an array &lt;code&gt;points&lt;/code&gt; representing integer coordinates of some points on a 2D plane, where &lt;code&gt;points[i] = [xi, yi]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The cost of connecting two points &lt;code&gt;[xi, yi]&lt;/code&gt; and &lt;code&gt;[xj, yj]&lt;/code&gt; is the Manhattan distance between them: &lt;code&gt;|xi - xj| + |yi - yj|&lt;/code&gt;, where &lt;code&gt;|val|&lt;/code&gt; denotes the absolute value of &lt;code&gt;val&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Return the minimum cost to make all points connected. All points are connected if there is exactly one simple path between any two points.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Reconstruct Itinerary</title>
       <link>http://localhost:1313/posts/leetcode-150-reconstruct-itinerary/</link>
