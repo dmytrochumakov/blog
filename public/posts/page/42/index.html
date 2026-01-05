@@ -209,6 +209,22 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">What are value types in Swift?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What are value types? Value types play a central role in programming languages by grouping data values.
+`Value type” is a type of data copied when assigned to a new variable.
+struct Storage { var data: String = &#34;some data&#34; } let originalStorage = Storage() var copiedStorage = originalStorage // `originalStorage` is copied to `copiedStorage` How can you pass value types? You can pass value type by copying value.
+struct Storage { var data: String = &#34;some data&#34; } let originalStorage = Storage() var copiedStorage = originalStorage // `originalStorage` is copied to `copiedStorage` copiedStorage.data = &#34;new data&#34; // Changes `copiedStorage`, not `originalStorage` print(&#34;\(originalStorage.data), \(copiedStorage.data)&#34;) // prints &#34;some data, new data&#34; The effect of assignment, initialization, and argument passing creates an independent instance with a unique copy of its data.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-12-28 00:00:00 +0300 +0300'>December 28, 2023</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to What are value types in Swift?" href="http://localhost:1313/posts/what-are-value-types-in-swift/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">How to prevent memory leaks?
     </h2>
   </header>
@@ -268,22 +284,6 @@ func response(_ completionHandler: @escaping(Result) -&gt; Void) { completionHan
   <footer class="entry-footer"><span title='2023-12-10 00:00:00 +0300 +0300'>December 10, 2023</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to What is closure in Swift language?" href="http://localhost:1313/posts/what-is-closure-in-swift-language/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">What is “reference type” in Swift?
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction In Swift, classes, closures, and actors all reference types.
-‘Reference type’ is instance that shares a single copy of data.
-Assigning a reference type to a constant or variable, or passing it into a function or method, it is always a reference to a shared instance that is assigned or passed in.
-Example You can pass your property value by sharing the same address in memory.
-// Reference type example class Storage { var data = “data-example” } var storage = Storage() print(&#34;\(storage.data)&#34;) // prints &#34;data-example&#34; print(&#34;storage address:&#34;, Unmanaged.passUnretained(storage).toOpaque()) var copiedStorage = storage copiedStorage.data = “new-data” print(&#34;\(storage.data), \(copiedStorage.data)&#34;) // prints &#34;new-data, new-data&#34; print(&#34;copiedStorage address:&#34;, Unmanaged.passUnretained(copiedStorage).toOpaque()) ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-12-03 00:00:00 +0300 +0300'>December 3, 2023</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to What is “reference type” in Swift?" href="http://localhost:1313/posts/what-is-reference-type-in-swift/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/posts/page/41/">
@@ -296,7 +296,7 @@ Example You can pass your property value by sharing the same address in memory.
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Dmytro&#39;s Blog</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">Dmytro&#39;s Blog</a></span> · 
 
     <span>
         Powered by

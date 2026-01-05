@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 29 Dec 2025 08:06:06 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jan 2026 14:13:59 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Swim in Rising Water</title>
+      <link>http://localhost:1313/posts/leetcode-150-swim-in-rising-water/</link>
+      <pubDate>Mon, 05 Jan 2026 14:13:59 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-swim-in-rising-water/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;You are given an &lt;code&gt;n x n&lt;/code&gt; integer matrix &lt;code&gt;grid&lt;/code&gt; where each value &lt;code&gt;grid[i][j]&lt;/code&gt; represents the elevation at that point &lt;code&gt;(i, j)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;It starts raining, and water gradually rises over time. At time &lt;code&gt;t&lt;/code&gt;, the water level is &lt;code&gt;t&lt;/code&gt;, meaning any cell with elevation less than or equal to &lt;code&gt;t&lt;/code&gt; is submerged or reachable.&lt;/p&gt;
+&lt;p&gt;You can swim from a square to another 4-directionally adjacent square if and only if the elevation of both squares individually is at most &lt;code&gt;t&lt;/code&gt;. You can swim infinite distances in zero time. Of course, you must stay within the boundaries of the grid during your swim.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Min Cost to Connect All Points</title>
       <link>http://localhost:1313/posts/leetcode-150-min-cost-to-connect-all-points/</link>

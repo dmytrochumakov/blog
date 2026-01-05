@@ -194,6 +194,20 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Reverse Linked List
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem Given the head of a singly linked list, reverse the list, and return the reversed list.
+Examples Input: head = [1,2,3,4,5] Output: [5,4,3,2,1] Input: head = [1,2] Output: [2,1] Input: head = [] Output: [] Constraints The number of nodes in the list is in the range [0, 5000]. -5000 &lt;= Node.val &lt;= 5000 Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-17 07:16:48 +0300 +0300'>December 17, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Reverse Linked List" href="http://localhost:1313/posts/leetcode-blind-75-reverse-linked-list/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Search in Rotated Sorted Array
     </h2>
   </header>
@@ -254,22 +268,6 @@ Examples Input: s = &#34;ADOBECODEBANC&#34;, t = &#34;ABC&#34; Output: &#34;BANC
   <footer class="entry-footer"><span title='2024-12-03 07:09:24 +0300 +0300'>December 3, 2024</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Minimum Window Substring" href="http://localhost:1313/posts/leetcode-blind-75-minimum-window-substring/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Longest Repeating Character Replacement
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The problem You are given a string s and an integer k. You can choose any character of the string and change it to any other uppercase English character. You can perform this operation at most k times.
-Return the length of the longest substring containing the same letter you can get after performing the above operations.
-Examples Input: s = &#34;ABAB&#34;, k = 2 Output: 4 Explanation: Replace the two &#39;A&#39;s with two &#39;B&#39;s or vice versa. Input: s = &#34;AABABBA&#34;, k = 1 Output: 4 Explanation: Replace the one &#39;A&#39; in the middle with &#39;B&#39; and form &#34;AABBBBA&#34;. The substring &#34;BBBB&#34; has the longest repeating letters, which is 4. There may exist other ways to achieve this answer too. Constraints 1 &lt;= s.length &lt;= 105 s consists of only uppercase English letters. 0 &lt;= k &lt;= s.length Brute force solution func characterReplacement(_ s: String, _ k: Int) -&gt; Int { let n = s.count let s = Array(s) var res = 0 for i in 0 ..&lt; n { var count: [Character: Int] = [:] var maxF = 0 for j in i ..&lt; n { count[s[j], default: 0] &#43;= 1 maxF = max(maxF, count[s[j]]!) let windowSize = (j - i &#43; 1) let numOfCharsToReplace = (windowSize - maxF) let canReplace = (numOfCharsToReplace &lt;= k) if canReplace { res = max(res, windowSize) } } } return res } Explanation First things first, we need to figure out which character we are going to replace. We can do this by using a dictionary. This way, we can calculate the most frequent character in the substring. After that, we will be able to calculate the number of characters to replace and check if we can replace the character.
-This algorithm is not very fast and takes O(n^2) time. We can improve it further and optimize it to achieve O(n) time complexity.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-11-29 07:27:59 +0300 +0300'>November 29, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Longest Repeating Character Replacement" href="http://localhost:1313/posts/leetcode-blind-75-longest-repeating-character-replacement/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/leetcode/page/21/">
@@ -282,7 +280,7 @@ This algorithm is not very fast and takes O(n^2) time. We can improve it further
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Dmytro&#39;s Blog</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">Dmytro&#39;s Blog</a></span> · 
 
     <span>
         Powered by

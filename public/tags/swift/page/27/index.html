@@ -194,6 +194,19 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - Hashmap
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is Hashmap (aka Hash Table)? A hashmap is a data structure that implements an associative array, also called a dictionary. An associative array maps keys to values. A hash table uses a hash function to compute an index, also called a hash code, into an array of buckets or slots, from which the desired value can be found. During a lookup, the key is hashed, and the resulting hash indicates where the corresponding value is stored.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-04 07:14:03 +0300 EEST'>October 4, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to DSA - Hashmap" href="http://localhost:1313/posts/dsa-hashmap/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">DSA - Red-Black Tree
     </h2>
   </header>
@@ -249,20 +262,6 @@ Recursively traverse the current node’s left subtree. Recursively traverse the
   <footer class="entry-footer"><span title='2024-09-27 06:55:55 +0300 EEST'>September 27, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to DSA - Binary Search Tree - Postorder" href="http://localhost:1313/posts/dsa-binary-search-tree-postorder/"></a>
 </article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Binary Search Tree - Traverse - Preorder
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is tree traversal? Tree traversal, also known as “tree search” or “walking the tree,” is the process of visiting each node in a tree data structure exactly once.
-What is the BST preorder algorithm? The preorder algorithm returns a list of values in the order they are visited. It makes a copy that preserves the structure and recursively traverses the BST.
-Code example func preorder(_ visited: inout [Value]) -&gt; [Value] { if self.val != nil { visited.append(self.val!) } if self.left != nil { self.left!.preorder(&amp;visited) } if self.right != nil { self.right!.preorder(&amp;visited) } return visited } Implementation The first step is to check if val exists. If it does, append val to the visited array. The second step is to check if the left node exists. If it does, recursively call the preorder method on the left node. The third step is similar to the second one but for the right node. Time/Space Complexity The time complexity of the preorder algorithm is O(N), where N is the total number of nodes. The space complexity: O(1) if no recursion stack space is considered. Otherwise, O(H), where H is the height of the tree. In the worst case, H can be the same as N (when the tree is skewed). In the best case, H can be the same as logN (when the tree is complete). Thank you for reading! 😊</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-26 07:01:30 +0300 EEST'>September 26, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to DSA - Binary Search Tree - Traverse - Preorder" href="http://localhost:1313/posts/dsa-binary-search-tree-traverse-preorder/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/swift/page/26/">
@@ -275,7 +274,7 @@ Code example func preorder(_ visited: inout [Value]) -&gt; [Value] { if self.val
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Dmytro&#39;s Blog</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">Dmytro&#39;s Blog</a></span> · 
 
     <span>
         Powered by
