@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cheapest Flights Within K Stops on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/cheapest-flights-within-k-stops/</link>
+    <description>Recent content in Cheapest Flights Within K Stops on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 Jan 2026 08:57:42 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/cheapest-flights-within-k-stops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Cheapest Flights Within K Stops</title>
+      <link>http://localhost:1313/posts/leetcode-150-cheapest-flights-within-k-stops/</link>
+      <pubDate>Sun, 11 Jan 2026 08:57:42 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-cheapest-flights-within-k-stops/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;There are &lt;code&gt;n&lt;/code&gt; cities connected by some number of flights. You are given an array &lt;code&gt;flights&lt;/code&gt; where &lt;code&gt;flights[i] = [from_i, to_i, price_i]&lt;/code&gt; indicates that there is a flight from city &lt;code&gt;from_i&lt;/code&gt; to city &lt;code&gt;to_i&lt;/code&gt; with cost &lt;code&gt;price_i&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You are also given three integers &lt;code&gt;src&lt;/code&gt;, &lt;code&gt;dst&lt;/code&gt;, and &lt;code&gt;k&lt;/code&gt;, return the &lt;strong&gt;cheapest price&lt;/strong&gt; from &lt;code&gt;src&lt;/code&gt; to &lt;code&gt;dst&lt;/code&gt; with at most &lt;code&gt;k&lt;/code&gt; stops. If there is no such route, return &lt;code&gt;-1&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
