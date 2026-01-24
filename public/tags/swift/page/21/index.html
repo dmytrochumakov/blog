@@ -194,6 +194,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Maximum Depth of Binary Tree
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Given the root of a binary tree, return its maximum depth.
+A binary tree’s maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+Examples Input: root = [3,9,20,null,null,15,7] Output: 3 Input: root = [1,null,2] Output: 2 Constraints The number of nodes in the tree is in the range [0, 10⁴]. -100 &lt;= Node.val &lt;= 100 Brute Force Solution func maxDepth(_ root: TreeNode?) -&gt; Int { if root == nil { return 0 } return 1 &#43; max(maxDepth(root?.left), maxDepth(root?.right)) } Explanation We can solve this problem using recursion by calling the maxDepth function on the left and right child nodes. This approach helps us find the longest path down the tree.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-01 10:09:24 +0300 +0300'>January 1, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Maximum Depth of Binary Tree" href="http://localhost:1313/posts/leetcode-blind-75-maximum-depth-of-binary-tree/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Invert Binary Tree
     </h2>
   </header>
@@ -249,23 +264,6 @@ Examples Input: head = [1,2,3,4,5], n = 2 Output: [1,2,3,5] Input: head = [1], n
   </div>
   <footer class="entry-footer"><span title='2024-12-25 09:22:40 +0300 +0300'>December 25, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Remove Nth Node From End of List" href="http://localhost:1313/posts/leetcode-blind-75-remove-nth-node-from-end-of-list/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Reorder List
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem You are given the head of a singly linked list. The list can be represented as:
-L0 → L1 → … → Ln - 1 → Ln
-Reorder the list to be in the following form:
-L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …
-You may not modify the values in the list’s nodes. Only the nodes themselves may be changed.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-12-23 09:58:35 +0300 +0300'>December 23, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Reorder List" href="http://localhost:1313/posts/leetcode-blind-75-reorder-list/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

@@ -11,8 +11,30 @@
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 Jan 2026 08:57:42 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 24 Jan 2026 09:59:57 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Partition Equal Subset Sum</title>
+      <link>http://localhost:1313/posts/leetcode-150-partition-equal-subset-sum/</link>
+      <pubDate>Sat, 24 Jan 2026 09:59:57 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-partition-equal-subset-sum/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given an integer array &lt;code&gt;nums&lt;/code&gt;, return &lt;code&gt;true&lt;/code&gt; if you can partition the array into two subsets such that the sum of the elements in both subsets is equal, or &lt;code&gt;false&lt;/code&gt; otherwise.&lt;/p&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [1,5,11,5]
+Output: true
+Explanation: The array can be partitioned as [1, 5, 5] and [11].
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [1,2,3,5]
+Output: false
+Explanation: The array cannot be partitioned into equal sum subsets.
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;1 &amp;lt;= nums.length &amp;lt;= 200&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;1 &amp;lt;= nums[i] &amp;lt;= 100&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;p&gt;From the description of the problem, we learn that we are given a non-empty array &lt;code&gt;nums&lt;/code&gt; that contains only positive integers, and we want to find out if we can partition the array into two different subsets such that the sum of each subset is equal.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Cheapest Flights Within K Stops</title>
       <link>http://localhost:1313/posts/leetcode-150-cheapest-flights-within-k-stops/</link>

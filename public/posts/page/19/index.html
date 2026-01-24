@@ -209,6 +209,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Find Median from Data Stream
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem The median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value, and the median is the mean of the two middle values.
+For example, for arr = [2,3,4], the median is 3. For example, for arr = [2,3], the median is (2 &#43; 3) / 2 = 2.5. Implement the MedianFinder class:
+MedianFinder() initializes the MedianFinder object. void addNum(int num) adds the integer num from the data stream to the data structure. double findMedian() returns the median of all elements so far. Answers within 10⁻⁵ of the actual answer will be accepted. Examples Input [&#34;MedianFinder&#34;, &#34;addNum&#34;, &#34;addNum&#34;, &#34;findMedian&#34;, &#34;addNum&#34;, &#34;findMedian&#34;] [[], [1], [2], [], [3], []] Output [null, null, null, 1.5, null, 2.0] Explanation MedianFinder medianFinder = new MedianFinder(); medianFinder.addNum(1); // arr = [1] medianFinder.addNum(2); // arr = [1, 2] medianFinder.findMedian(); // return 1.5 (i.e., (1 &#43; 2) / 2) medianFinder.addNum(3); // arr = [1, 2, 3] medianFinder.findMedian(); // return 2.0 Constraints -10⁵ &lt;= num &lt;= 10⁵ There will be at least one element in the data structure before calling findMedian(). At most 5 * 10⁴ calls will be made to addNum and findMedian(). Follow-up: If all integer numbers from the stream are in the range [0, 100], how would you optimize your solution? If 99% of all integer numbers from the stream are in the range [0, 100], how would you optimize your solution? Sorting Solution class MedianFinder { private var data: [Int] init() { self.data = [] } func addNum(_ num: Int) { data.append(num) } func findMedian() -&gt; Double { data.sort() let n = data.count if (n &amp; 1) != 0 { return Double(data[n / 2]) } else { return (Double(data[n / 2]) &#43; Double(data[n / 2 - 1])) / 2 } } } Explanation One approach to solving this problem is to apply a built-in sorting algorithm. To find the result, we use an array to collect all numbers added using the addNum method.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-02-03 11:28:36 +0300 +0300'>February 3, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Find Median from Data Stream" href="http://localhost:1313/posts/leetcode-blind-75-find-median-from-data-stream/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Serialize and Deserialize Binary Tree
     </h2>
   </header>
@@ -262,21 +277,6 @@ Examples Input: root = [3,1,4,null,2], k = 1 Output: 1 Input: root = [5,3,6,2,4,
   </div>
   <footer class="entry-footer"><span title='2025-01-20 08:49:50 +0300 +0300'>January 20, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Kth Smallest Element in a BST" href="http://localhost:1313/posts/leetcode-blind-75-kth-smallest-element-in-a-bst/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Validate Binary Search Tree
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Given the root of a binary tree, determine if it is a valid binary search tree (BST).
-A valid BST is defined as follows:
-The left subtree of a node contains only nodes with keys less than the node’s key. The right subtree of a node contains only nodes with keys greater than the node’s key. Both the left and right subtrees must also be binary search trees. A subtree of treeName is a tree consisting of a node in treeName and all of its descendants.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-01-16 13:07:12 +0300 +0300'>January 16, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Validate Binary Search Tree" href="http://localhost:1313/posts/leetcode-blind-75-validate-binary-search-tree/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
