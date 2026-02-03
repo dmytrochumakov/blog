@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Best Time to Buy and Sell Stock With Cooldown on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/best-time-to-buy-and-sell-stock-with-cooldown/</link>
+    <description>Recent content in Best Time to Buy and Sell Stock With Cooldown on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 03 Feb 2026 11:42:54 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/best-time-to-buy-and-sell-stock-with-cooldown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Best Time to Buy and Sell Stock with Cooldown</title>
+      <link>http://localhost:1313/posts/leetcode-150-best-time-to-buy-and-sell-stock-with-cooldown/</link>
+      <pubDate>Tue, 03 Feb 2026 11:42:54 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-best-time-to-buy-and-sell-stock-with-cooldown/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;You are given an array &lt;code&gt;prices&lt;/code&gt; where &lt;code&gt;prices[i]&lt;/code&gt; is the price of a given stock on the &lt;code&gt;i&lt;/code&gt;-th day.&lt;/p&gt;
+&lt;p&gt;Find the maximum profit you can achieve. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times) with the following restrictions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;After you sell your stock, you cannot buy stock on the next day (i.e., cooldown one day).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
