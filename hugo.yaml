@@ -55,6 +55,8 @@ params:
       url: "https://github.com/dmytrochumakov"    
     - name: leetcode
       url: "https://leetcode.com/u/dmytrochumakov0/"        
+    - name: x
+      url: "https://x.com/dmytro_chumakov"        
     - name: linkedin
       url: "https://www.linkedin.com/in/dmytro-chumakov/"    
     - name: email
