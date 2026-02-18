@@ -209,6 +209,22 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">DSA - Red-Black Tree
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is a Red-Black Tree? A Red-Black tree is a self-balancing binary search tree data structure. When the tree is modified, the new tree is rearranged and “repainted” to restore the coloring properties that constrain how unbalanced the tree can become in the worst case.
+source
+Properties A Red-Black tree has all binary search tree properties, with some additional properties:
+Every node is either red or black. All nil nodes are considered black. A red node does not have a red child. If a node is red, then both its children are black. Every path from a given node to any of its descendant nil nodes goes through the same number of black nodes. Time Complexity The (re-)balancing is not perfect, but guarantees searching in O(log n) time, where n is the number of entries in the tree. The insert and delete operations, along with tree rearrangement and recoloring, also execute in O(log n) time.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-09-30 07:17:10 +0300 EEST'>September 30, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to DSA - Red-Black Tree" href="http://localhost:1313/posts/dsa-red-black-tree/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">DSA - Binary Search Tree - Inorder
     </h2>
   </header>
@@ -262,26 +278,12 @@ Code example func preorder(_ visited: inout [Value]) -&gt; [Value] { if self.val
   <footer class="entry-footer"><span title='2024-09-26 07:01:30 +0300 EEST'>September 26, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to DSA - Binary Search Tree - Traverse - Preorder" href="http://localhost:1313/posts/dsa-binary-search-tree-traverse-preorder/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">DSA - Binary Search Tree - Delete
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction The delete algorithm is perhaps one of the hardest parts of managing a binary search tree (BST).
-Code Example final class BSTNode { var val: Int? var left: BSTNode? var right: BSTNode? init(val: Int? = nil) { self.val = val } func delete(_ val: Int) -&gt; BSTNode? { // 1 guard let selfVal = self.val else { return nil } // 2 if val &lt; selfVal { if self.left == nil { return self } self.left = self.left!.delete(val) } // 3 if val &gt; selfVal { if self.right == nil { return self } self.right = self.right!.delete(val) } // 4 if self.right == nil { return self.left } // 5 if self.left == nil { return self.right } // 6 var minLargerNode = self.right while minLargerNode?.left != nil { minLargerNode = minLargerNode?.left } guard let minLargerNode = minLargerNode else { return self } self.val = minLargerNode.val self.right = self.right?.delete(minLargerNode.val!) return self } } Implementation Let’s look at the details:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-09-24 06:53:52 +0300 EEST'>September 24, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to DSA - Binary Search Tree - Delete" href="http://localhost:1313/posts/dsa-binary-search-tree-delete/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/posts/page/27/">
-      «&nbsp;Prev&nbsp;27/43
+      «&nbsp;Prev&nbsp;27/44
     </a>
-    <a class="next" href="http://localhost:1313/posts/page/29/">Next&nbsp;29/43&nbsp;»
+    <a class="next" href="http://localhost:1313/posts/page/29/">Next&nbsp;29/44&nbsp;»
     </a>
   </nav>
 </footer>

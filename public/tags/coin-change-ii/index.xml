@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Coin Change II on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/coin-change-ii/</link>
+    <description>Recent content in Coin Change II on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 18 Feb 2026 09:09:47 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/coin-change-ii/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Coin Change II</title>
+      <link>http://localhost:1313/posts/leetcode-150-coin-change-ii/</link>
+      <pubDate>Wed, 18 Feb 2026 09:09:47 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-coin-change-ii/</guid>
+      <description>&lt;p&gt;LeetCode - 150 - Coin Change II&lt;/p&gt;
+&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;You are given an integer array &lt;code&gt;coins&lt;/code&gt; representing coins of different denominations and an integer &lt;code&gt;amount&lt;/code&gt; representing a total amount of money.&lt;/p&gt;
+&lt;p&gt;Return &lt;em&gt;the number of combinations that make up that amount&lt;/em&gt;. If that amount of money cannot be made up by any combination of the coins, return &lt;code&gt;0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You may assume that you have an infinite number of each kind of coin.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
