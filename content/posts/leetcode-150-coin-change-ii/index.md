@@ -5,8 +5,6 @@ tags = ["LeetCode", "150", "Coin Change II", "2D_Dynamic_Programming", "Swift"]
 draft = false
 +++
 
-LeetCode - 150 - Coin Change II
-
 ### The problem
 
 You are given an integer array `coins` representing coins of different denominations and an integer `amount` representing a total amount of money.
