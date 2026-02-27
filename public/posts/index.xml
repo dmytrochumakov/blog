@@ -11,8 +11,21 @@
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Feb 2026 09:09:47 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 07:53:51 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Target Sum</title>
+      <link>http://localhost:1313/posts/leetcode-150-target-sum/</link>
+      <pubDate>Fri, 27 Feb 2026 07:53:51 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-target-sum/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;You are given an integer array &lt;code&gt;nums&lt;/code&gt; and an integer &lt;code&gt;target&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You want to build an &lt;strong&gt;expression&lt;/strong&gt; out of &lt;code&gt;nums&lt;/code&gt; by adding one of the symbols &lt;code&gt;&#39;+&#39;&lt;/code&gt; and &lt;code&gt;&#39;-&#39;&lt;/code&gt; before each integer in &lt;code&gt;nums&lt;/code&gt; and then concatenate all the integers.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For example, if &lt;code&gt;nums = [2, 1]&lt;/code&gt;, you can add a &lt;code&gt;&#39;+&#39;&lt;/code&gt; before &lt;code&gt;2&lt;/code&gt; and a &lt;code&gt;&#39;-&#39;&lt;/code&gt; before &lt;code&gt;1&lt;/code&gt; and concatenate them to build the expression &lt;code&gt;&amp;quot;+2-1&amp;quot;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Return the number of different &lt;strong&gt;expressions&lt;/strong&gt; that you can build that evaluate to &lt;code&gt;target&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Coin Change II</title>
       <link>http://localhost:1313/posts/leetcode-150-coin-change-ii/</link>
