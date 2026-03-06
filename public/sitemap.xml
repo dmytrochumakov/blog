@@ -2,13 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/building/</loc>
+    <lastmod>2026-03-06T17:46:41+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/building-text-editor-from-scratch-in-c-part-i/</loc>
+    <lastmod>2026-03-06T17:46:41+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/c/</loc>
+    <lastmod>2026-03-06T17:46:41+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-06T17:46:41+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/from-scratch/</loc>
+    <lastmod>2026-03-06T17:46:41+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-03-06T17:46:41+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/system-design/</loc>
+    <lastmod>2026-03-06T17:46:41+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-03-06T17:46:41+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/text-editor/</loc>
+    <lastmod>2026-03-06T17:46:41+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/150/</loc>
     <lastmod>2026-02-27T07:53:51+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/2d_dynamic_programming/</loc>
-    <lastmod>2026-02-27T07:53:51+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2026-02-27T07:53:51+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/leetcode/</loc>
@@ -17,13 +41,7 @@
     <loc>http://localhost:1313/posts/leetcode-150-target-sum/</loc>
     <lastmod>2026-02-27T07:53:51+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-02-27T07:53:51+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2026-02-27T07:53:51+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-02-27T07:53:51+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/target-sum/</loc>
@@ -1264,9 +1282,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/xctest/</loc>
     <lastmod>2024-05-08T06:34:32+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/building/</loc>
-    <lastmod>2024-05-06T07:35:52+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/building-dynamic-island-for-video-streaming-app/</loc>
     <lastmod>2024-05-06T07:35:52+03:00</lastmod>

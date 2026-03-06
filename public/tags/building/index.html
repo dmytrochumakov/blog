@@ -194,6 +194,20 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Building Text Editor From Scratch in C - Part I
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Building a text editor from scratch in C What I learned so far I learned that I need to start with a simple read() operation that reads user input.
+while (read(STDIN_FILENO, &amp;c, 1) == 1); But there was a caveat: if you use the read() operation, the terminal starts in canonical mode. This mode sends keyboard input only after the user presses Enter, so it was not very useful because I want to process all keypresses.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-06 17:46:41 +0300 +0300'>March 6, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to Building Text Editor From Scratch in C - Part I" href="http://localhost:1313/posts/building-text-editor-from-scratch-in-c-part-i/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Building Dynamic Island for Video Streaming App
     </h2>
   </header>
@@ -248,20 +262,6 @@ First step: You need to create a JSON file with the data that you will use to tr
   </div>
   <footer class="entry-footer"><span title='2024-05-01 10:29:44 +0300 EEST'>May 1, 2024</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to Building movie recommendations using ML" href="http://localhost:1313/posts/building-movie-recommendations-using-ml/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Building Xcode project using Github Actions
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction If you’re wondering how to build an Xcode project using GitHub Actions, here are a few steps:
-First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15.3.app/Contents/Developer - name: Install xcpretty run: gem install xcpretty - name: Build project run: xcodebuild -project /Users/runner/work/YourProjectName/YourProjectName/YourProjectName/YourProjectName.xcodeproj -scheme YourSchemeName -sdk iphonesimulator -destination &#39;platform=iOS Simulator,name=iPhone 15 Pro&#39; clean build | xcpretty Caveats If you don’t specify the path to the Xcode project, you will receive an error like this: xcodebuild: error: ‘YourProjectName.xcodeproj&#39; does not exist.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-04-23 08:29:30 +0300 EEST'>April 23, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to Building Xcode project using Github Actions" href="http://localhost:1313/posts/building-xcode-project-using-github-actions/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

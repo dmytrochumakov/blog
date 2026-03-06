@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Text Editor on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/text-editor/</link>
+    <description>Recent content in Text Editor on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 06 Mar 2026 17:46:41 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/text-editor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building Text Editor From Scratch in C - Part I</title>
+      <link>http://localhost:1313/posts/building-text-editor-from-scratch-in-c-part-i/</link>
+      <pubDate>Fri, 06 Mar 2026 17:46:41 +0300</pubDate>
+      <guid>http://localhost:1313/posts/building-text-editor-from-scratch-in-c-part-i/</guid>
+      <description>&lt;h3 id=&#34;building-a-text-editor-from-scratch-in-c&#34;&gt;Building a text editor from scratch in C&lt;/h3&gt;
+&lt;h4 id=&#34;what-i-learned-so-far&#34;&gt;What I learned so far&lt;/h4&gt;
+&lt;p&gt;I learned that I need to start with a simple &lt;code&gt;read()&lt;/code&gt; operation that reads user input.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;read&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;STDIN_FILENO&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;But there was a caveat: if you use the &lt;code&gt;read()&lt;/code&gt; operation, the terminal starts in &lt;strong&gt;canonical mode&lt;/strong&gt;. This mode sends keyboard input only after the user presses &lt;code&gt;Enter&lt;/code&gt;, so it was not very useful because I want to process all keypresses.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

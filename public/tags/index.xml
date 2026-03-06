@@ -11,8 +11,43 @@
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Feb 2026 07:53:51 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2026 17:46:41 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building</title>
+      <link>http://localhost:1313/tags/building/</link>
+      <pubDate>Fri, 06 Mar 2026 17:46:41 +0300</pubDate>
+      <guid>http://localhost:1313/tags/building/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C</title>
+      <link>http://localhost:1313/tags/c/</link>
+      <pubDate>Fri, 06 Mar 2026 17:46:41 +0300</pubDate>
+      <guid>http://localhost:1313/tags/c/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>From Scratch</title>
+      <link>http://localhost:1313/tags/from-scratch/</link>
+      <pubDate>Fri, 06 Mar 2026 17:46:41 +0300</pubDate>
+      <guid>http://localhost:1313/tags/from-scratch/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>System Design</title>
+      <link>http://localhost:1313/tags/system-design/</link>
+      <pubDate>Fri, 06 Mar 2026 17:46:41 +0300</pubDate>
+      <guid>http://localhost:1313/tags/system-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Text Editor</title>
+      <link>http://localhost:1313/tags/text-editor/</link>
+      <pubDate>Fri, 06 Mar 2026 17:46:41 +0300</pubDate>
+      <guid>http://localhost:1313/tags/text-editor/</guid>
+      <description></description>
+    </item>
     <item>
       <title>150</title>
       <link>http://localhost:1313/tags/150/</link>
@@ -1649,13 +1684,6 @@
       <link>http://localhost:1313/tags/xctest/</link>
       <pubDate>Wed, 08 May 2024 06:34:32 +0300</pubDate>
       <guid>http://localhost:1313/tags/xctest/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Building</title>
-      <link>http://localhost:1313/tags/building/</link>
-      <pubDate>Mon, 06 May 2024 07:35:52 +0300</pubDate>
-      <guid>http://localhost:1313/tags/building/</guid>
       <description></description>
     </item>
     <item>
