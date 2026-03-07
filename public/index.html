@@ -263,8 +263,9 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>Building a text editor from scratch in C What I learned so far I learned that I need to start with a simple read() operation that reads user input.
+    <p>What I learned so far I learned that I need to start with a simple read() operation that reads user input.
 while (read(STDIN_FILENO, &amp;c, 1) == 1); But there was a caveat: if you use the read() operation, the terminal starts in canonical mode. This mode sends keyboard input only after the user presses Enter, so it was not very useful because I want to process all keypresses.
+The solution was to start the terminal in raw mode, but there was no built-in functionality, so I needed to write it myself by turning off some flags.
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2026-03-06 17:46:41 +0300 +0300'>March 6, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>

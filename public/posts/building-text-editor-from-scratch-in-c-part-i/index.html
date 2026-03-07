@@ -7,11 +7,11 @@
 <meta name="robots" content="index, follow">
 <title>Building Text Editor From Scratch in C - Part I | Dmytro&#39;s Blog</title>
 <meta name="keywords" content="Building, Text Editor, From Scratch, C, System Design">
-<meta name="description" content="Building a text editor from scratch in C
-What I learned so far
+<meta name="description" content="What I learned so far
 I learned that I need to start with a simple read() operation that reads user input.
 while (read(STDIN_FILENO, &amp;c, 1) == 1);
-But there was a caveat: if you use the read() operation, the terminal starts in canonical mode. This mode sends keyboard input only after the user presses Enter, so it was not very useful because I want to process all keypresses.">
+But there was a caveat: if you use the read() operation, the terminal starts in canonical mode. This mode sends keyboard input only after the user presses Enter, so it was not very useful because I want to process all keypresses.
+The solution was to start the terminal in raw mode, but there was no built-in functionality, so I needed to write it myself by turning off some flags.">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/building-text-editor-from-scratch-in-c-part-i/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
@@ -109,8 +109,9 @@ But there was a caveat: if you use the read() operation, the terminal starts in 
       </script><meta property="og:url" content="http://localhost:1313/posts/building-text-editor-from-scratch-in-c-part-i/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
   <meta property="og:title" content="Building Text Editor From Scratch in C - Part I">
-  <meta property="og:description" content="Building a text editor from scratch in C What I learned so far I learned that I need to start with a simple read() operation that reads user input.
-while (read(STDIN_FILENO, &amp;c, 1) == 1); But there was a caveat: if you use the read() operation, the terminal starts in canonical mode. This mode sends keyboard input only after the user presses Enter, so it was not very useful because I want to process all keypresses.">
+  <meta property="og:description" content="What I learned so far I learned that I need to start with a simple read() operation that reads user input.
+while (read(STDIN_FILENO, &amp;c, 1) == 1); But there was a caveat: if you use the read() operation, the terminal starts in canonical mode. This mode sends keyboard input only after the user presses Enter, so it was not very useful because I want to process all keypresses.
+The solution was to start the terminal in raw mode, but there was no built-in functionality, so I needed to write it myself by turning off some flags.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -125,11 +126,11 @@ while (read(STDIN_FILENO, &amp;c, 1) == 1); But there was a caveat: if you use t
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
 <meta name="twitter:title" content="Building Text Editor From Scratch in C - Part I">
-<meta name="twitter:description" content="Building a text editor from scratch in C
-What I learned so far
+<meta name="twitter:description" content="What I learned so far
 I learned that I need to start with a simple read() operation that reads user input.
 while (read(STDIN_FILENO, &amp;c, 1) == 1);
-But there was a caveat: if you use the read() operation, the terminal starts in canonical mode. This mode sends keyboard input only after the user presses Enter, so it was not very useful because I want to process all keypresses.">
+But there was a caveat: if you use the read() operation, the terminal starts in canonical mode. This mode sends keyboard input only after the user presses Enter, so it was not very useful because I want to process all keypresses.
+The solution was to start the terminal in raw mode, but there was no built-in functionality, so I needed to write it myself by turning off some flags.">
 
 
 <script type="application/ld+json">
@@ -158,12 +159,12 @@ But there was a caveat: if you use the read() operation, the terminal starts in 
   "@type": "BlogPosting",
   "headline": "Building Text Editor From Scratch in C - Part I",
   "name": "Building Text Editor From Scratch in C - Part I",
-  "description": "Building a text editor from scratch in C What I learned so far I learned that I need to start with a simple read() operation that reads user input.\nwhile (read(STDIN_FILENO, \u0026amp;c, 1) == 1); But there was a caveat: if you use the read() operation, the terminal starts in canonical mode. This mode sends keyboard input only after the user presses Enter, so it was not very useful because I want to process all keypresses.\n",
+  "description": "What I learned so far I learned that I need to start with a simple read() operation that reads user input.\nwhile (read(STDIN_FILENO, \u0026amp;c, 1) == 1); But there was a caveat: if you use the read() operation, the terminal starts in canonical mode. This mode sends keyboard input only after the user presses Enter, so it was not very useful because I want to process all keypresses.\nThe solution was to start the terminal in raw mode, but there was no built-in functionality, so I needed to write it myself by turning off some flags.\n",
   "keywords": [
     "Building", "Text Editor", "From Scratch", "C", "System Design"
   ],
-  "articleBody": "Building a text editor from scratch in C What I learned so far I learned that I need to start with a simple read() operation that reads user input.\nwhile (read(STDIN_FILENO, \u0026c, 1) == 1); But there was a caveat: if you use the read() operation, the terminal starts in canonical mode. This mode sends keyboard input only after the user presses Enter, so it was not very useful because I want to process all keypresses.\nThe solution was to start the terminal in raw mode, but there was no built-in functionality, so I needed to write it myself by turning off some flags.\nTo get raw mode to work, I needed to disable echoing so that I don’t see each key that I typed.\nraw.c_lflag \u0026= ~(ECHO); Next, after the user exits, I needed to restore all terminal original attributes to the initial state by disabling raw mode.\ntcsetattr(STDIN_FILENO, TCSAFLUSH, \u0026orig_termios); I needed to turn off canonical mode in order to read input byte-by-byte instead of line-by-line. It can be done by using the ICANON flag.\nraw.c_lflag \u0026= ~(ECHO | ICANON); As a result of all the steps described above and by using control characters iscntrl, I was able to print ASCII codes.\nif (iscntrl(c)) { printf(\"%d\\n\", c); } else { printf(\"%d ('%c')\\n\", c, c); } That’s it for this week. I will continue to share my learnings.\nThank you for reading! 😊 ",
-  "wordCount" : "234",
+  "articleBody": "What I learned so far I learned that I need to start with a simple read() operation that reads user input.\nwhile (read(STDIN_FILENO, \u0026c, 1) == 1); But there was a caveat: if you use the read() operation, the terminal starts in canonical mode. This mode sends keyboard input only after the user presses Enter, so it was not very useful because I want to process all keypresses.\nThe solution was to start the terminal in raw mode, but there was no built-in functionality, so I needed to write it myself by turning off some flags.\nTo get raw mode to work, I needed to disable echoing so that I don’t see each key that I typed.\nraw.c_lflag \u0026= ~(ECHO); Next, after the user exits, I needed to restore all terminal original attributes to the initial state by disabling raw mode.\ntcsetattr(STDIN_FILENO, TCSAFLUSH, \u0026orig_termios); I needed to turn off canonical mode in order to read input byte-by-byte instead of line-by-line. It can be done by using the ICANON flag.\nraw.c_lflag \u0026= ~(ECHO | ICANON); As a result of all the steps described above and by using control characters iscntrl, I was able to print ASCII codes.\nif (iscntrl(c)) { printf(\"%d\\n\", c); } else { printf(\"%d ('%c')\\n\", c, c); } That’s it for this week. I will continue to share my learnings.\nSources https://viewsourcecode.org/snaptoken/kilo/index.html https://austinhenley.com/blog/challengingprojects.html Thank you for reading! 😊 ",
+  "wordCount" : "229",
   "inLanguage": "en",
   "image": "http://localhost:1313/images/papermod-cover.png","datePublished": "2026-03-06T17:46:41+03:00",
   "dateModified": "2026-03-06T17:46:41+03:00",
@@ -275,10 +276,10 @@ But there was a caveat: if you use the read() operation, the terminal starts in 
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#building-a-text-editor-from-scratch-in-c" aria-label="Building a text editor from scratch in C">Building a text editor from scratch in C</a><ul>
+                    <a href="#what-i-learned-so-far" aria-label="What I learned so far">What I learned so far</a><ul>
                         
                 <li>
-                    <a href="#what-i-learned-so-far" aria-label="What I learned so far">What I learned so far</a></li>
+                    <a href="#sources" aria-label="Sources">Sources</a></li>
                 <li>
                     <a href="#thank-you-for-reading-" aria-label="Thank you for reading! 😊">Thank you for reading! 😊</a>
                 </li>
@@ -289,8 +290,7 @@ But there was a caveat: if you use the read() operation, the terminal starts in 
     </details>
 </div>
 
-  <div class="post-content"><h3 id="building-a-text-editor-from-scratch-in-c">Building a text editor from scratch in C<a hidden class="anchor" aria-hidden="true" href="#building-a-text-editor-from-scratch-in-c">#</a></h3>
-<h4 id="what-i-learned-so-far">What I learned so far<a hidden class="anchor" aria-hidden="true" href="#what-i-learned-so-far">#</a></h4>
+  <div class="post-content"><h3 id="what-i-learned-so-far">What I learned so far<a hidden class="anchor" aria-hidden="true" href="#what-i-learned-so-far">#</a></h3>
 <p>I learned that I need to start with a simple <code>read()</code> operation that reads user input.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="nf">read</span><span class="p">(</span><span class="n">STDIN_FILENO</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">c</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">);</span>
 </span></span></code></pre></div><p>But there was a caveat: if you use the <code>read()</code> operation, the terminal starts in <strong>canonical mode</strong>. This mode sends keyboard input only after the user presses <code>Enter</code>, so it was not very useful because I want to process all keypresses.</p>
@@ -308,6 +308,11 @@ But there was a caveat: if you use the read() operation, the terminal starts in 
 </span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%d (&#39;%c&#39;)</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">c</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>That&rsquo;s it for this week. I will continue to share my learnings.</p>
+<h4 id="sources">Sources<a hidden class="anchor" aria-hidden="true" href="#sources">#</a></h4>
+<ul>
+<li><a href="https://viewsourcecode.org/snaptoken/kilo/index.html">https://viewsourcecode.org/snaptoken/kilo/index.html</a></li>
+<li><a href="https://austinhenley.com/blog/challengingprojects.html">https://austinhenley.com/blog/challengingprojects.html</a></li>
+</ul>
 <h4 id="thank-you-for-reading-">Thank you for reading! 😊<a hidden class="anchor" aria-hidden="true" href="#thank-you-for-reading-">#</a></h4>
 
 

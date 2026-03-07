@@ -5,8 +5,7 @@ tags = ["Building", "Text Editor", "From Scratch", "C", "System Design"]
 draft = false
 +++
 
-### Building a text editor from scratch in C 
-#### What I learned so far
+### What I learned so far
 
 I learned that I need to start with a simple `read()` operation that reads user input.
 ```c
@@ -41,5 +40,9 @@ if (iscntrl(c)) {
 ```
 
 That's it for this week. I will continue to share my learnings. 
+
+#### Sources
+- https://viewsourcecode.org/snaptoken/kilo/index.html
+- https://austinhenley.com/blog/challengingprojects.html
 
 #### Thank you for reading! 😊
