@@ -11,8 +11,24 @@
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Feb 2026 07:53:51 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2026 08:21:45 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Interleaving String</title>
+      <link>http://localhost:1313/posts/leetcode-150-interleaving-string/</link>
+      <pubDate>Mon, 09 Mar 2026 08:21:45 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-interleaving-string/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given strings &lt;code&gt;s1&lt;/code&gt;, &lt;code&gt;s2&lt;/code&gt;, and &lt;code&gt;s3&lt;/code&gt;, find whether &lt;code&gt;s3&lt;/code&gt; is formed by an &lt;strong&gt;interleaving&lt;/strong&gt; of &lt;code&gt;s1&lt;/code&gt; and &lt;code&gt;s2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;An &lt;strong&gt;interleaving&lt;/strong&gt; of two strings &lt;code&gt;s&lt;/code&gt; and &lt;code&gt;t&lt;/code&gt; is a configuration where &lt;code&gt;s&lt;/code&gt; and &lt;code&gt;t&lt;/code&gt; are divided into &lt;code&gt;n&lt;/code&gt; and &lt;code&gt;m&lt;/code&gt; substrings respectively, such that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;s = s1 + s2 + ... + sn&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;t = t1 + t2 + ... + tm&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;|n - m| &amp;lt;= 1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;interleaving&lt;/strong&gt; is &lt;code&gt;s1 + t1 + s2 + t2 + s3 + t3 + ...&lt;/code&gt; or &lt;code&gt;t1 + s1 + t2 + s2 + t3 + s3 + ...&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;code&gt;a + b&lt;/code&gt; is the concatenation of strings &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Target Sum</title>
       <link>http://localhost:1313/posts/leetcode-150-target-sum/</link>
