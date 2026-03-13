@@ -259,6 +259,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Building Text Editor From Scratch in C - Part II
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The part 2 started with disabling Ctrl-C and Ctrl-Z signals. Instead of terminating current process by pressing Ctrl-C I was able to read byte code. For Ctrl-C it was 3 byte and for Ctrl-Z it was 26. I was able to do that by using ISIG flag:
+raw.c_lflag &amp;= ~(ECHO | ICANON | ISIG); Next step was disabling Ctrl-S and Ctrl-Q signals. It turned out that Ctrl-S and Ctrl-Q were needed for software flow control to transmit data to the terminal. Ctrl-S allows you to stop transmission and Ctrl-Q allows you to resume transmission.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-13 16:39:42 +0300 +0300'>March 13, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to Building Text Editor From Scratch in C - Part II" href="http://localhost:1313/posts/building-text-editor-from-scratch-in-c-part-ii/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - 150 - Interleaving String
     </h2>
   </header>
@@ -316,21 +330,6 @@ The answer is guaranteed to fit into a signed 32-bit integer.
   </div>
   <footer class="entry-footer"><span title='2026-02-18 09:09:47 +0300 +0300'>February 18, 2026</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Coin Change II" href="http://localhost:1313/posts/leetcode-150-coin-change-ii/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - 150 - Best Time to Buy and Sell Stock with Cooldown
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The problem You are given an array prices where prices[i] is the price of a given stock on the i-th day.
-Find the maximum profit you can achieve. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times) with the following restrictions:
-After you sell your stock, you cannot buy stock on the next day (i.e., cooldown one day). Note: You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-02-03 11:42:54 +0300 +0300'>February 3, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode - 150 - Best Time to Buy and Sell Stock with Cooldown" href="http://localhost:1313/posts/leetcode-150-best-time-to-buy-and-sell-stock-with-cooldown/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

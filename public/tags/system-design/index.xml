@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 06 Mar 2026 17:46:41 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 16:39:42 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/system-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building Text Editor From Scratch in C - Part II</title>
+      <link>http://localhost:1313/posts/building-text-editor-from-scratch-in-c-part-ii/</link>
+      <pubDate>Fri, 13 Mar 2026 16:39:42 +0300</pubDate>
+      <guid>http://localhost:1313/posts/building-text-editor-from-scratch-in-c-part-ii/</guid>
+      <description>&lt;p&gt;The part 2 started with disabling &lt;code&gt;Ctrl-C&lt;/code&gt; and &lt;code&gt;Ctrl-Z&lt;/code&gt; signals. Instead of terminating current process by pressing &lt;code&gt;Ctrl-C&lt;/code&gt; I was able to read byte code. For &lt;code&gt;Ctrl-C&lt;/code&gt; it was &lt;code&gt;3&lt;/code&gt; byte and for &lt;code&gt;Ctrl-Z&lt;/code&gt; it was &lt;code&gt;26&lt;/code&gt;. I was able to do that by using &lt;code&gt;ISIG&lt;/code&gt; flag:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;raw&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c_lflag&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ECHO&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ICANON&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ISIG&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Next step was disabling &lt;code&gt;Ctrl-S&lt;/code&gt; and &lt;code&gt;Ctrl-Q&lt;/code&gt; signals. It turned out that &lt;code&gt;Ctrl-S&lt;/code&gt; and &lt;code&gt;Ctrl-Q&lt;/code&gt; were needed for &lt;a href=&#34;https://en.wikipedia.org/wiki/Software_flow_control&#34;&gt;software flow control&lt;/a&gt; to transmit data to the terminal. &lt;code&gt;Ctrl-S&lt;/code&gt; allows you to stop transmission and &lt;code&gt;Ctrl-Q&lt;/code&gt; allows you to resume transmission.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Building Text Editor From Scratch in C - Part I</title>
       <link>http://localhost:1313/posts/building-text-editor-from-scratch-in-c-part-i/</link>

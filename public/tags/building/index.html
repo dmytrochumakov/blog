@@ -194,6 +194,20 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Building Text Editor From Scratch in C - Part II
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The part 2 started with disabling Ctrl-C and Ctrl-Z signals. Instead of terminating current process by pressing Ctrl-C I was able to read byte code. For Ctrl-C it was 3 byte and for Ctrl-Z it was 26. I was able to do that by using ISIG flag:
+raw.c_lflag &amp;= ~(ECHO | ICANON | ISIG); Next step was disabling Ctrl-S and Ctrl-Q signals. It turned out that Ctrl-S and Ctrl-Q were needed for software flow control to transmit data to the terminal. Ctrl-S allows you to stop transmission and Ctrl-Q allows you to resume transmission.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-13 16:39:42 +0300 +0300'>March 13, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to Building Text Editor From Scratch in C - Part II" href="http://localhost:1313/posts/building-text-editor-from-scratch-in-c-part-ii/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Building Text Editor From Scratch in C - Part I
     </h2>
   </header>
@@ -248,21 +262,6 @@ Solution My solution was to find another video that is not related to those plat
   </div>
   <footer class="entry-footer"><span title='2024-05-03 07:34:56 +0300 EEST'>May 3, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to Building Video Streaming iOS App" href="http://localhost:1313/posts/building-video-streaming-ios-app/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Building movie recommendations using ML
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was wondering about how to create movie recommendations, so I decided to take a closer look and find out more about this topic. This is what I found:
-First step: You need to create a JSON file with the data that you will use to train the model and define the parameters for training the model.
-[ { &#34;title&#34;: &#34;Avatar&#34;, &#34;year&#34;: &#34;2009&#34;, &#34;rated&#34;: &#34;PG-13&#34;, &#34;released&#34;: &#34;18 Dec 2009&#34;, &#34;runtime&#34;: &#34;162 min&#34;, &#34;genre&#34;: &#34;Action, Adventure, Fantasy&#34;, &#34;director&#34;: &#34;James Cameron&#34;, &#34;writer&#34;: &#34;James Cameron&#34;, &#34;actors&#34;: &#34;Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang&#34;, &#34;plot&#34;: &#34;A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.&#34;, &#34;language&#34;: &#34;English, Spanish&#34;, &#34;country&#34;: &#34;USA, UK&#34;, &#34;awards&#34;: &#34;Won 3 Oscars. Another 80 wins &amp; 121 nominations.&#34;, &#34;poster&#34;: &#34;https://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg&#34;, &#34;metascore&#34;: &#34;83&#34;, &#34;imdbrating&#34;: &#34;7.9&#34;, &#34;imdbvotes&#34;: &#34;890,617&#34;, &#34;imdbid&#34;: &#34;tt0499549&#34;, &#34;type&#34;: &#34;movie&#34;, &#34;response&#34;: &#34;True&#34;, &#34;keywords&#34;: [&#34;alien&#34;, &#34;avatar&#34;, &#34;fantasy world&#34;, &#34;soldier&#34;, &#34;battle&#34;] }, ] When you have created the data, you can proceed to the next step.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-01 10:29:44 +0300 EEST'>May 1, 2024</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to Building movie recommendations using ML" href="http://localhost:1313/posts/building-movie-recommendations-using-ml/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

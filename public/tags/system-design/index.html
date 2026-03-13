@@ -194,6 +194,20 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Building Text Editor From Scratch in C - Part II
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The part 2 started with disabling Ctrl-C and Ctrl-Z signals. Instead of terminating current process by pressing Ctrl-C I was able to read byte code. For Ctrl-C it was 3 byte and for Ctrl-Z it was 26. I was able to do that by using ISIG flag:
+raw.c_lflag &amp;= ~(ECHO | ICANON | ISIG); Next step was disabling Ctrl-S and Ctrl-Q signals. It turned out that Ctrl-S and Ctrl-Q were needed for software flow control to transmit data to the terminal. Ctrl-S allows you to stop transmission and Ctrl-Q allows you to resume transmission.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-13 16:39:42 +0300 +0300'>March 13, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to Building Text Editor From Scratch in C - Part II" href="http://localhost:1313/posts/building-text-editor-from-scratch-in-c-part-ii/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Building Text Editor From Scratch in C - Part I
     </h2>
   </header>
