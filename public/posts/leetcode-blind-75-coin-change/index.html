@@ -170,61 +170,14 @@ Examples Input: coins = [1,2,5], amount = 11 Output: 3 Explanation: 11 = 5 &#43;
     <meta property="article:tag" content="Coin Change">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="LeetCode - Blind 75 - Coin Change">
-<meta name="twitter:description" content="The problem
-You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money.
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="LeetCode - Blind 75 - Coin Change">
+  <meta name="twitter:description" content="The problem You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money.
 Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
 You may assume that you have an infinite number of each kind of coin.
-Examples
-Input: coins = [1,2,5], amount = 11
-Output: 3
-Explanation: 11 = 5 &#43; 5 &#43; 1
-Input: coins = [2], amount = 3
-Output: -1
-Input: coins = [1], amount = 0
-Output: 0
-Constraints
-
-1 &lt;= coins.length &lt;= 12
-1 &lt;= coins[i] &lt;= 2³¹ - 1
-0 &lt;= amount &lt;= 10⁴
-
-Dynamic programming top-down solution
-func coinChange(_ coins: [Int], _ amount: Int) -&gt; Int {
-    var memo: [Int: Int] = [:]
-    let int1e9 = Int(1e9)
-
-    func dfs(_ amount: Int) -&gt; Int {
-        if amount == 0 {
-            return 0
-        }
-
-        if let val = memo[amount] {
-            return val
-        }
-
-        var res = int1e9
-        for coin in coins {
-            if amount - coin &gt;= 0 {
-                res = min(res, 1 &#43; dfs(amount - coin))
-            }
-        }
-
-        memo[amount] = res
-        return res
-    }
-
-    let minCoins = dfs(amount)
-    if minCoins &gt;= int1e9 {
-        return -1
-    } else {
-        return minCoins
-    }
-}
-Explanation
-One of the ways that we can solve this problem is by using a depth-first search algorithm with memoization to optimize the overall time complexity.">
+Examples Input: coins = [1,2,5], amount = 11 Output: 3 Explanation: 11 = 5 &#43; 5 &#43; 1 Input: coins = [2], amount = 3 Output: -1 Input: coins = [1], amount = 0 Output: 0 Constraints 1 &lt;= coins.length &lt;= 12 1 &lt;= coins[i] &lt;= 2³¹ - 1 0 &lt;= amount &lt;= 10⁴ Dynamic programming top-down solution func coinChange(_ coins: [Int], _ amount: Int) -&gt; Int { var memo: [Int: Int] = [:] let int1e9 = Int(1e9) func dfs(_ amount: Int) -&gt; Int { if amount == 0 { return 0 } if let val = memo[amount] { return val } var res = int1e9 for coin in coins { if amount - coin &gt;= 0 { res = min(res, 1 &#43; dfs(amount - coin)) } } memo[amount] = res return res } let minCoins = dfs(amount) if minCoins &gt;= int1e9 { return -1 } else { return minCoins } } Explanation One of the ways that we can solve this problem is by using a depth-first search algorithm with memoization to optimize the overall time complexity.">
 
 
 <script type="application/ld+json">

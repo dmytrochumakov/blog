@@ -164,53 +164,14 @@ We can solve this problem in a more optimal way.">
     <meta property="article:tag" content="Maximum Product Subarray">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="LeetCode - Blind 75 - Maximum Product Subarray">
-<meta name="twitter:description" content="The problem
-Given an integer array nums, find a subarray that has the largest product and return the product.
 
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="LeetCode - Blind 75 - Maximum Product Subarray">
+  <meta name="twitter:description" content="The problem Given an integer array nums, find a subarray that has the largest product and return the product.
 A subarray is a contiguous, non-empty sequence of elements within an array.
-
 The test cases are generated so that the answer will fit in a 32-bit integer.
-Examples
-Input: nums = [2,3,-2,4]  
-Output: 6  
-Explanation: [2,3] has the largest product 6.  
-Input: nums = [-2,0,-1]  
-Output: 0  
-Explanation: The result cannot be 2 because [-2,-1] is not a subarray.  
-Constraints
-
-1 &lt;= nums.length &lt;= 2 * 10⁴
--10 &lt;= nums[i] &lt;= 10
-The product of any subarray of nums is guaranteed to fit in a 32-bit integer.
-
-Brute force solution
-func maxProduct(_ nums: [Int]) -&gt; Int {  
-    var res = nums[0]  
-    let n = nums.count  
-
-    for i in 0 ..&lt; n {  
-        var curr = nums[i]  
-        res = max(res, curr)  
-        for j in i &#43; 1 ..&lt; n {  
-            curr *= nums[j]  
-            res = max(res, curr)  
-        }  
-    }  
-
-    return res  
-}  
-Explanation
-The brute-force way to solve this problem is to try every single subarray and calculate the product for each. This is not very efficient, and the time complexity will be O(n²).
-
-    
-    
-    
-        
-    
-
+Examples Input: nums = [2,3,-2,4] Output: 6 Explanation: [2,3] has the largest product 6. Input: nums = [-2,0,-1] Output: 0 Explanation: The result cannot be 2 because [-2,-1] is not a subarray. Constraints 1 &lt;= nums.length &lt;= 2 * 10⁴ -10 &lt;= nums[i] &lt;= 10 The product of any subarray of nums is guaranteed to fit in a 32-bit integer. Brute force solution func maxProduct(_ nums: [Int]) -&gt; Int { var res = nums[0] let n = nums.count for i in 0 ..&lt; n { var curr = nums[i] res = max(res, curr) for j in i &#43; 1 ..&lt; n { curr *= nums[j] res = max(res, curr) } } return res } Explanation The brute-force way to solve this problem is to try every single subarray and calculate the product for each. This is not very efficient, and the time complexity will be O(n²).
 We can solve this problem in a more optimal way.">
 
 

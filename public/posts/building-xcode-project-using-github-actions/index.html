@@ -147,40 +147,12 @@ First, you need to create a .github/workflows folder with a CI.yml file inside y
     <meta property="article:tag" content="GitHub Actions">
     <meta property="article:tag" content="CI">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="Building Xcode project using Github Actions">
-<meta name="twitter:description" content="Introduction
-If you&rsquo;re wondering how to build an Xcode project using GitHub Actions, here are a few steps:
 
-First, you need to create a .github/workflows folder with a CI.yml file inside your project directory.
-Next, you need to add configuration to the CI.yml file.
-
-name: CI
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  build:
-    runs-on: macos-14
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-
-    - name: Set up Xcode version
-      run: sudo xcode-select -s /Applications/Xcode_15.3.app/Contents/Developer
-
-    - name: Install xcpretty
-      run: gem install xcpretty
-
-    - name: Build project
-      run: xcodebuild -project /Users/runner/work/YourProjectName/YourProjectName/YourProjectName/YourProjectName.xcodeproj -scheme YourSchemeName -sdk iphonesimulator -destination &#39;platform=iOS Simulator,name=iPhone 15 Pro&#39; clean build | xcpretty
-Caveats
-If you don&rsquo;t specify the path to the Xcode project, you will receive an error like this: xcodebuild: error: ‘YourProjectName.xcodeproj&#39; does not exist.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="Building Xcode project using Github Actions">
+  <meta name="twitter:description" content="Introduction If you’re wondering how to build an Xcode project using GitHub Actions, here are a few steps:
+First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15.3.app/Contents/Developer - name: Install xcpretty run: gem install xcpretty - name: Build project run: xcodebuild -project /Users/runner/work/YourProjectName/YourProjectName/YourProjectName/YourProjectName.xcodeproj -scheme YourSchemeName -sdk iphonesimulator -destination &#39;platform=iOS Simulator,name=iPhone 15 Pro&#39; clean build | xcpretty Caveats If you don’t specify the path to the Xcode project, you will receive an error like this: xcodebuild: error: ‘YourProjectName.xcodeproj&#39; does not exist.">
 
 
 <script type="application/ld+json">

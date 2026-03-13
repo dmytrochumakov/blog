@@ -123,13 +123,12 @@ The solution was to start the terminal in raw mode, but there was no built-in fu
     <meta property="article:tag" content="C">
     <meta property="article:tag" content="System Design">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="Building Text Editor From Scratch in C - Part I">
-<meta name="twitter:description" content="What I learned so far
-I learned that I need to start with a simple read() operation that reads user input.
-while (read(STDIN_FILENO, &amp;c, 1) == 1);
-But there was a caveat: if you use the read() operation, the terminal starts in canonical mode. This mode sends keyboard input only after the user presses Enter, so it was not very useful because I want to process all keypresses.
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="Building Text Editor From Scratch in C - Part I">
+  <meta name="twitter:description" content="What I learned so far I learned that I need to start with a simple read() operation that reads user input.
+while (read(STDIN_FILENO, &amp;c, 1) == 1); But there was a caveat: if you use the read() operation, the terminal starts in canonical mode. This mode sends keyboard input only after the user presses Enter, so it was not very useful because I want to process all keypresses.
 The solution was to start the terminal in raw mode, but there was no built-in functionality, so I needed to write it myself by turning off some flags.">
 
 

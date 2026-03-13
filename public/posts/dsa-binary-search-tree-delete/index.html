@@ -177,68 +177,12 @@ Code Example final class BSTNode { var val: Int? var left: BSTNode? var right: B
     <meta property="article:tag" content="BST">
     <meta property="article:tag" content="Delete">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="DSA - Binary Search Tree - Delete">
-<meta name="twitter:description" content="Introduction
-The delete algorithm is perhaps one of the hardest parts of managing a binary search tree (BST).
-Code Example
-final class BSTNode {
 
-    var val: Int?
-    var left: BSTNode?
-    var right: BSTNode?
-
-    init(val: Int? = nil) {
-        self.val = val
-    }
-
-    func delete(_ val: Int) -&gt; BSTNode? {
-        // 1
-        guard let selfVal = self.val else {
-            return nil
-        }
-        // 2
-        if val &lt; selfVal {
-            if self.left == nil {
-                return self
-            }
-            self.left = self.left!.delete(val)
-        }
-        // 3
-        if val &gt; selfVal {
-            if self.right == nil {
-                return self
-            }
-            self.right = self.right!.delete(val)
-        }
-        // 4
-        if self.right == nil {
-            return self.left
-        }
-        // 5
-        if self.left == nil {
-            return self.right
-        }
-
-        // 6
-        var minLargerNode = self.right
-        while minLargerNode?.left != nil {
-            minLargerNode = minLargerNode?.left
-        }
-
-        guard let minLargerNode = minLargerNode else {
-            return self
-        }
-        self.val = minLargerNode.val
-        self.right = self.right?.delete(minLargerNode.val!)
-
-        return self
-    }
-
-}
-Implementation
-Let’s look at the details:">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="DSA - Binary Search Tree - Delete">
+  <meta name="twitter:description" content="Introduction The delete algorithm is perhaps one of the hardest parts of managing a binary search tree (BST).
+Code Example final class BSTNode { var val: Int? var left: BSTNode? var right: BSTNode? init(val: Int? = nil) { self.val = val } func delete(_ val: Int) -&gt; BSTNode? { // 1 guard let selfVal = self.val else { return nil } // 2 if val &lt; selfVal { if self.left == nil { return self } self.left = self.left!.delete(val) } // 3 if val &gt; selfVal { if self.right == nil { return self } self.right = self.right!.delete(val) } // 4 if self.right == nil { return self.left } // 5 if self.left == nil { return self.right } // 6 var minLargerNode = self.right while minLargerNode?.left != nil { minLargerNode = minLargerNode?.left } guard let minLargerNode = minLargerNode else { return self } self.val = minLargerNode.val self.right = self.right?.delete(minLargerNode.val!) return self } } Implementation Let’s look at the details:">
 
 
 <script type="application/ld+json">

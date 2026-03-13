@@ -183,7 +183,7 @@ Explanation
   <meta property="og:description" content="The problem Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0s.
 You must do it in place.
 Examples Input: matrix = [[1,1,1],[1,0,1],[1,1,1]] Output: [[1,0,1],[0,0,0],[1,0,1]] Input: matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]] Output: [[0,0,0,0],[0,4,5,0],[0,3,1,0]] Constraints m == matrix.length n == matrix[0].length 1 &lt;= m, n &lt;= 200 -2³¹ &lt;= matrix[i][j] &lt;= 2³¹ - 1 Follow up:
-A straightforward solution using O(m*n) space is probably a bad idea. A simple improvement uses O(m &#43; n) space, but still not the best solution. Could you devise a constant space solution? Brute Force Solution func setZeroes(_ matrix: inout [[Int]]) { let rows = matrix.count let cols = matrix[0].count var mark: [[Int]] = [] for r in 0 ..&lt; rows { var row: [Int] = [] for c in 0 ..&lt; cols { row.append(matrix[r][c]) } mark.append(row) } for r in 0 ..&lt; rows { for c in 0 ..&lt; cols { if matrix[r][c] == 0 { for col in 0 ..&lt; cols { mark[r][col] = 0 } for row in 0 ..&lt; rows { mark[row][c] = 0 } } } } for r in 0 ..&lt; rows { for c in 0 ..&lt; cols { matrix[r][c] = mark[r][c] } } } Explanation ">
+A straightforward solution using O(m*n) space is probably a bad idea. A simple improvement uses O(m &#43; n) space, but still not the best solution. Could you devise a constant space solution? Brute Force Solution func setZeroes(_ matrix: inout [[Int]]) { let rows = matrix.count let cols = matrix[0].count var mark: [[Int]] = [] for r in 0 ..&lt; rows { var row: [Int] = [] for c in 0 ..&lt; cols { row.append(matrix[r][c]) } mark.append(row) } for r in 0 ..&lt; rows { for c in 0 ..&lt; cols { if matrix[r][c] == 0 { for col in 0 ..&lt; cols { mark[r][col] = 0 } for row in 0 ..&lt; rows { mark[row][c] = 0 } } } } for r in 0 ..&lt; rows { for c in 0 ..&lt; cols { matrix[r][c] = mark[r][c] } } } Explanation">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -194,85 +194,14 @@ A straightforward solution using O(m*n) space is probably a bad idea. A simple i
     <meta property="article:tag" content="Set Matrix Zeroes">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="LeetCode - Blind 75 - Set Matrix Zeroes">
-<meta name="twitter:description" content="The problem
-Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0s.
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="LeetCode - Blind 75 - Set Matrix Zeroes">
+  <meta name="twitter:description" content="The problem Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0s.
 You must do it in place.
-Examples
-
-    
-    
-    
-        
-    
-
-Input: matrix = [[1,1,1],[1,0,1],[1,1,1]]  
-Output: [[1,0,1],[0,0,0],[1,0,1]]  
-
-    
-    
-    
-        
-    
-
-Input: matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]  
-Output: [[0,0,0,0],[0,4,5,0],[0,3,1,0]]  
-Constraints
-
-m == matrix.length
-n == matrix[0].length
-1 &lt;= m, n &lt;= 200
--2³¹ &lt;= matrix[i][j] &lt;= 2³¹ - 1
-
-Follow up:
-
-A straightforward solution using O(m*n) space is probably a bad idea.
-A simple improvement uses O(m &#43; n) space, but still not the best solution.
-Could you devise a constant space solution?
-
-Brute Force Solution
-func setZeroes(_ matrix: inout [[Int]]) {
-    let rows = matrix.count
-    let cols = matrix[0].count
-    var mark: [[Int]] = []
-
-    for r in 0 ..&lt; rows {
-        var row: [Int] = []
-        for c in 0 ..&lt; cols {
-            row.append(matrix[r][c])
-        }
-        mark.append(row)
-    }
-
-    for r in 0 ..&lt; rows {
-        for c in 0 ..&lt; cols {
-            if matrix[r][c] == 0 {
-                for col in 0 ..&lt; cols {
-                    mark[r][col] = 0
-                }
-                for row in 0 ..&lt; rows {
-                    mark[row][c] = 0
-                }
-            }
-        }
-    }
-
-    for r in 0 ..&lt; rows {
-        for c in 0 ..&lt; cols {
-            matrix[r][c] = mark[r][c]
-        }
-    }
-}
-Explanation
-
-    
-    
-    
-        
-    
-">
+Examples Input: matrix = [[1,1,1],[1,0,1],[1,1,1]] Output: [[1,0,1],[0,0,0],[1,0,1]] Input: matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]] Output: [[0,0,0,0],[0,4,5,0],[0,3,1,0]] Constraints m == matrix.length n == matrix[0].length 1 &lt;= m, n &lt;= 200 -2³¹ &lt;= matrix[i][j] &lt;= 2³¹ - 1 Follow up:
+A straightforward solution using O(m*n) space is probably a bad idea. A simple improvement uses O(m &#43; n) space, but still not the best solution. Could you devise a constant space solution? Brute Force Solution func setZeroes(_ matrix: inout [[Int]]) { let rows = matrix.count let cols = matrix[0].count var mark: [[Int]] = [] for r in 0 ..&lt; rows { var row: [Int] = [] for c in 0 ..&lt; cols { row.append(matrix[r][c]) } mark.append(row) } for r in 0 ..&lt; rows { for c in 0 ..&lt; cols { if matrix[r][c] == 0 { for col in 0 ..&lt; cols { mark[r][col] = 0 } for row in 0 ..&lt; rows { mark[row][c] = 0 } } } } for r in 0 ..&lt; rows { for c in 0 ..&lt; cols { matrix[r][c] = mark[r][c] } } } Explanation">
 
 
 <script type="application/ld+json">

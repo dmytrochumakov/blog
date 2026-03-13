@@ -165,57 +165,13 @@ Examples Input: s = &#34;leetcode&#34;, wordDict = [&#34;leet&#34;,&#34;code&#34
     <meta property="article:tag" content="Word Break">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="LeetCode - Blind 75 - Word Break">
-<meta name="twitter:description" content="The problem
-Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words.
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="LeetCode - Blind 75 - Word Break">
+  <meta name="twitter:description" content="The problem Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words.
 Note that the same word in the dictionary may be reused multiple times in the segmentation.
-Examples
-Input: s = &#34;leetcode&#34;, wordDict = [&#34;leet&#34;,&#34;code&#34;]
-Output: true
-Explanation: Return true because &#34;leetcode&#34; can be segmented as &#34;leet code&#34;.
-Input: s = &#34;applepenapple&#34;, wordDict = [&#34;apple&#34;,&#34;pen&#34;]
-Output: true
-Explanation: Return true because &#34;applepenapple&#34; can be segmented as &#34;apple pen apple&#34;.
-Note that you are allowed to reuse a dictionary word.
-Input: s = &#34;catsandog&#34;, wordDict = [&#34;cats&#34;,&#34;dog&#34;,&#34;sand&#34;,&#34;and&#34;,&#34;cat&#34;]
-Output: false
-Constraints
-
-1 &lt;= s.length &lt;= 300
-1 &lt;= wordDict.length &lt;= 1000
-1 &lt;= wordDict[i].length &lt;= 20
-s and wordDict[i] consist of only lowercase English letters.
-All the strings of wordDict are unique.
-
-Recursion solution
-func wordBreak(_ s: String, _ wordDict: [String]) -&gt; Bool {
-    let sCount = s.count
-    let sArray = Array(s)
-
-    func dfs(_ i: Int) -&gt; Bool {
-        if i == sCount {
-            return true
-        }
-
-        for w in wordDict {
-            let wCount = w.count
-            if ((i &#43; wCount) &lt;= sCount &amp;&amp;
-                String(sArray[i ..&lt; i &#43; wCount]) == w
-            ) {
-                if dfs(i &#43; wCount) {
-                    return true
-                }
-            }
-        }
-        return false
-    }
-
-    return dfs(0)
-}
-Explanation
-There are multiple ways to solve this problem. For example, we can check every character in input s and compare it with characters in wordDict, but this approach is inefficient from a time complexity perspective. Instead:">
+Examples Input: s = &#34;leetcode&#34;, wordDict = [&#34;leet&#34;,&#34;code&#34;] Output: true Explanation: Return true because &#34;leetcode&#34; can be segmented as &#34;leet code&#34;. Input: s = &#34;applepenapple&#34;, wordDict = [&#34;apple&#34;,&#34;pen&#34;] Output: true Explanation: Return true because &#34;applepenapple&#34; can be segmented as &#34;apple pen apple&#34;. Note that you are allowed to reuse a dictionary word. Input: s = &#34;catsandog&#34;, wordDict = [&#34;cats&#34;,&#34;dog&#34;,&#34;sand&#34;,&#34;and&#34;,&#34;cat&#34;] Output: false Constraints 1 &lt;= s.length &lt;= 300 1 &lt;= wordDict.length &lt;= 1000 1 &lt;= wordDict[i].length &lt;= 20 s and wordDict[i] consist of only lowercase English letters. All the strings of wordDict are unique. Recursion solution func wordBreak(_ s: String, _ wordDict: [String]) -&gt; Bool { let sCount = s.count let sArray = Array(s) func dfs(_ i: Int) -&gt; Bool { if i == sCount { return true } for w in wordDict { let wCount = w.count if ((i &#43; wCount) &lt;= sCount &amp;&amp; String(sArray[i ..&lt; i &#43; wCount]) == w ) { if dfs(i &#43; wCount) { return true } } } return false } return dfs(0) } Explanation There are multiple ways to solve this problem. For example, we can check every character in input s and compare it with characters in wordDict, but this approach is inefficient from a time complexity perspective. Instead:">
 
 
 <script type="application/ld+json">

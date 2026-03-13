@@ -131,24 +131,14 @@ private var utterance: AVSpeechUtterance { let inputMessage = &#34;Hello world!&
     <meta property="article:tag" content="Text to Speech">
     <meta property="article:tag" content="IOS">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="Text To Speech iOS">
-<meta name="twitter:description" content="Introduction
-I was eager to learn how converting Text To Speech works in iOS. Here is what I discovered:
-First Step
-The first step is to add AVSpeechSynthesizer, an object that produces synthesized speech from text utterances.
-@State private var speechSynthesizer = AVSpeechSynthesizer()
-Second Step
-The second step is to add AVSpeechUtterance, an object that encapsulates the text for speech synthesis.
-private var utterance: AVSpeechUtterance {
-    let inputMessage = &#34;Hello world!&#34;
-    let utterance = AVSpeechUtterance(string: inputMessage)
-    utterance.voice = AVSpeechSynthesisVoice(language: &#34;en-US&#34;)
-    return utterance
-}
-Optional
-You can configure pitch, rate, and voice parameters.">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="Text To Speech iOS">
+  <meta name="twitter:description" content="Introduction I was eager to learn how converting Text To Speech works in iOS. Here is what I discovered:
+First Step The first step is to add AVSpeechSynthesizer, an object that produces synthesized speech from text utterances.
+@State private var speechSynthesizer = AVSpeechSynthesizer() Second Step The second step is to add AVSpeechUtterance, an object that encapsulates the text for speech synthesis.
+private var utterance: AVSpeechUtterance { let inputMessage = &#34;Hello world!&#34; let utterance = AVSpeechUtterance(string: inputMessage) utterance.voice = AVSpeechSynthesisVoice(language: &#34;en-US&#34;) return utterance } Optional You can configure pitch, rate, and voice parameters.">
 
 
 <script type="application/ld+json">

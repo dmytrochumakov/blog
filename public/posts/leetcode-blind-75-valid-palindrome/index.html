@@ -152,44 +152,13 @@ Examples Input: s = &#34;A man, a plan, a canal: Panama&#34; Output: true Explan
     <meta property="article:tag" content="Valid Palindrome">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="LeetCode - Blind 75 - Valid Palindrome">
-<meta name="twitter:description" content="The Problem
-Given a string s, return true if it is a palindrome, or false otherwise.
 
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="LeetCode - Blind 75 - Valid Palindrome">
+  <meta name="twitter:description" content="The Problem Given a string s, return true if it is a palindrome, or false otherwise.
 A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
-
-Examples
-Input: s = &#34;A man, a plan, a canal: Panama&#34;
-Output: true
-Explanation: &#34;amanaplanacanalpanama&#34; is a palindrome.
-Input: s = &#34;race a car&#34;
-Output: false
-Explanation: &#34;raceacar&#34; is not a palindrome.
-Input: s = &#34; &#34;
-Output: true
-Explanation: s is an empty string &#34;&#34; after removing non-alphanumeric characters.
-Since an empty string reads the same forward and backward, it is a palindrome.
-Constraints
-
-1 &lt;= s.length &lt;= 2 * 10^5
-s consists only of printable ASCII characters.
-
-Brute Force Solution
-func isPalindrome(_ s: String) -&gt; Bool {
-    var newStr = &#34;&#34;
-
-    for c in s {
-        if c.isLetter || c.isNumber {
-            newStr &#43;= c.lowercased()
-        }
-    }
-
-    return newStr == String(newStr.reversed())
-}
-Explanation
-Let&rsquo;s start with the brute force solution. According to the description, we need to check if the string contains only lowercase, alphanumeric characters and reads the same forward and backward. In Swift, you can check this using the built-in isLetter and isNumber properties. Based on this information, we iterate through all characters in the s string, verify that each character is a letter or number, update newStr with the current lowercased character, and compare the result with its reversed version.">
+Examples Input: s = &#34;A man, a plan, a canal: Panama&#34; Output: true Explanation: &#34;amanaplanacanalpanama&#34; is a palindrome. Input: s = &#34;race a car&#34; Output: false Explanation: &#34;raceacar&#34; is not a palindrome. Input: s = &#34; &#34; Output: true Explanation: s is an empty string &#34;&#34; after removing non-alphanumeric characters. Since an empty string reads the same forward and backward, it is a palindrome. Constraints 1 &lt;= s.length &lt;= 2 * 10^5 s consists only of printable ASCII characters. Brute Force Solution func isPalindrome(_ s: String) -&gt; Bool { var newStr = &#34;&#34; for c in s { if c.isLetter || c.isNumber { newStr &#43;= c.lowercased() } } return newStr == String(newStr.reversed()) } Explanation Let’s start with the brute force solution. According to the description, we need to check if the string contains only lowercase, alphanumeric characters and reads the same forward and backward. In Swift, you can check this using the built-in isLetter and isNumber properties. Based on this information, we iterate through all characters in the s string, verify that each character is a letter or number, update newStr with the current lowercased character, and compare the result with its reversed version.">
 
 
 <script type="application/ld+json">

@@ -161,53 +161,13 @@ Examples Input: s = &#34;babad&#34; Output: &#34;bab&#34; Explanation: &#34;aba&
     <meta property="article:tag" content="HLongest Palindromic Substring">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="LeetCode - Blind 75 - Longest Palindromic Substring">
-<meta name="twitter:description" content="The Problem
-Given a string s, return the longest palindromic substring in s.
 
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="LeetCode - Blind 75 - Longest Palindromic Substring">
+  <meta name="twitter:description" content="The Problem Given a string s, return the longest palindromic substring in s.
 A string is palindromic if it reads the same forward and backward.
-
-Examples
-Input: s = &#34;babad&#34;
-Output: &#34;bab&#34;
-Explanation: &#34;aba&#34; is also a valid answer.
-Input: s = &#34;cbbd&#34;
-Output: &#34;bb&#34;
-Constraints
-
-1 &lt;= s.length &lt;= 1000
-s consists of only digits and English letters.
-
-Brute Force Solution
-func longestPalindrome(_ s: String) -&gt; String {
-    let sArray = Array(s)
-    var res = &#34;&#34;
-    var resLen = 0
-    let n = s.count
-
-    for i in 0 ..&lt; n {
-        for j in i ..&lt; n {
-            var l = i
-            var r = j
-
-            while l &lt; r &amp;&amp; sArray[l] == sArray[r] {
-                l &#43;= 1
-                r -= 1
-            }
-
-            if l &gt;= r &amp;&amp; resLen &lt; (j - i &#43; 1) {
-                res = String(sArray[i ..&lt; j &#43; 1])
-                resLen = j - i &#43; 1
-            }
-        }
-    }
-
-    return res
-}
-Explanation
-In the first example, we are given the input &quot;babad&quot;. Let’s visualize it and try to find the longest palindromic substring.">
+Examples Input: s = &#34;babad&#34; Output: &#34;bab&#34; Explanation: &#34;aba&#34; is also a valid answer. Input: s = &#34;cbbd&#34; Output: &#34;bb&#34; Constraints 1 &lt;= s.length &lt;= 1000 s consists of only digits and English letters. Brute Force Solution func longestPalindrome(_ s: String) -&gt; String { let sArray = Array(s) var res = &#34;&#34; var resLen = 0 let n = s.count for i in 0 ..&lt; n { for j in i ..&lt; n { var l = i var r = j while l &lt; r &amp;&amp; sArray[l] == sArray[r] { l &#43;= 1 r -= 1 } if l &gt;= r &amp;&amp; resLen &lt; (j - i &#43; 1) { res = String(sArray[i ..&lt; j &#43; 1]) resLen = j - i &#43; 1 } } } return res } Explanation In the first example, we are given the input &#34;babad&#34;. Let’s visualize it and try to find the longest palindromic substring.">
 
 
 <script type="application/ld+json">

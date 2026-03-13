@@ -185,77 +185,13 @@ MedianFinder() initializes the MedianFinder object. void addNum(int num) adds th
     <meta property="article:tag" content="Find Median From Data Stream">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="LeetCode - Blind 75 - Find Median from Data Stream">
-<meta name="twitter:description" content="The Problem
 
-The median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value, and the median is the mean of the two middle values.
-
-
-For example, for arr = [2,3,4], the median is 3.
-For example, for arr = [2,3], the median is (2 &#43; 3) / 2 = 2.5.
-
-Implement the MedianFinder class:
-
-MedianFinder() initializes the MedianFinder object.
-void addNum(int num) adds the integer num from the data stream to the data structure.
-double findMedian() returns the median of all elements so far. Answers within 10⁻⁵ of the actual answer will be accepted.
-
-Examples
-Input
-[&#34;MedianFinder&#34;, &#34;addNum&#34;, &#34;addNum&#34;, &#34;findMedian&#34;, &#34;addNum&#34;, &#34;findMedian&#34;]
-[[], [1], [2], [], [3], []]
-
-Output
-[null, null, null, 1.5, null, 2.0]
-
-Explanation
-MedianFinder medianFinder = new MedianFinder();
-medianFinder.addNum(1);    // arr = [1]
-medianFinder.addNum(2);    // arr = [1, 2]
-medianFinder.findMedian(); // return 1.5 (i.e., (1 &#43; 2) / 2)
-medianFinder.addNum(3);    // arr = [1, 2, 3]
-medianFinder.findMedian(); // return 2.0
-Constraints
-
--10⁵ &lt;= num &lt;= 10⁵
-There will be at least one element in the data structure before calling findMedian().
-At most 5 * 10⁴ calls will be made to addNum and findMedian().
-
-Follow-up:
-
-If all integer numbers from the stream are in the range [0, 100], how would you optimize your solution?
-If 99% of all integer numbers from the stream are in the range [0, 100], how would you optimize your solution?
-
-
-Sorting Solution
-class MedianFinder {
-
-    private var data: [Int]
-
-    init() {
-        self.data = []
-    }
-
-    func addNum(_ num: Int) {
-        data.append(num)
-    }
-
-    func findMedian() -&gt; Double {
-        data.sort()
-        let n = data.count
-
-        if (n &amp; 1) != 0 {
-            return Double(data[n / 2])
-        } else {
-            return (Double(data[n / 2]) &#43; Double(data[n / 2 - 1])) / 2
-        }
-    }
-
-}
-Explanation
-One approach to solving this problem is to apply a built-in sorting algorithm. To find the result, we use an array to collect all numbers added using the addNum method.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="LeetCode - Blind 75 - Find Median from Data Stream">
+  <meta name="twitter:description" content="The Problem The median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value, and the median is the mean of the two middle values.
+For example, for arr = [2,3,4], the median is 3. For example, for arr = [2,3], the median is (2 &#43; 3) / 2 = 2.5. Implement the MedianFinder class:
+MedianFinder() initializes the MedianFinder object. void addNum(int num) adds the integer num from the data stream to the data structure. double findMedian() returns the median of all elements so far. Answers within 10⁻⁵ of the actual answer will be accepted. Examples Input [&#34;MedianFinder&#34;, &#34;addNum&#34;, &#34;addNum&#34;, &#34;findMedian&#34;, &#34;addNum&#34;, &#34;findMedian&#34;] [[], [1], [2], [], [3], []] Output [null, null, null, 1.5, null, 2.0] Explanation MedianFinder medianFinder = new MedianFinder(); medianFinder.addNum(1); // arr = [1] medianFinder.addNum(2); // arr = [1, 2] medianFinder.findMedian(); // return 1.5 (i.e., (1 &#43; 2) / 2) medianFinder.addNum(3); // arr = [1, 2, 3] medianFinder.findMedian(); // return 2.0 Constraints -10⁵ &lt;= num &lt;= 10⁵ There will be at least one element in the data structure before calling findMedian(). At most 5 * 10⁴ calls will be made to addNum and findMedian(). Follow-up: If all integer numbers from the stream are in the range [0, 100], how would you optimize your solution? If 99% of all integer numbers from the stream are in the range [0, 100], how would you optimize your solution? Sorting Solution class MedianFinder { private var data: [Int] init() { self.data = [] } func addNum(_ num: Int) { data.append(num) } func findMedian() -&gt; Double { data.sort() let n = data.count if (n &amp; 1) != 0 { return Double(data[n / 2]) } else { return (Double(data[n / 2]) &#43; Double(data[n / 2 - 1])) / 2 } } } Explanation One approach to solving this problem is to apply a built-in sorting algorithm. To find the result, we use an array to collect all numbers added using the addNum method.">
 
 
 <script type="application/ld+json">

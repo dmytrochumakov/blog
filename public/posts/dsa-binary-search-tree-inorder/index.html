@@ -158,48 +158,13 @@ Recursively traverse the left subtree. Visit the current node. Recursively trave
     <meta property="article:tag" content="BST">
     <meta property="article:tag" content="Traverse">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="DSA - Binary Search Tree - Inorder">
-<meta name="twitter:description" content="What is the BST inorder algorithm?
-The inorder algorithm returns values in ascending order (sorted from smallest to the largest value).
-Code example
-final class BSTNode&lt;Value: Comparable&gt; {
 
-    var val: Value?
-    var left: BSTNode?
-    var right: BSTNode?
-
-    init(val: Value? = nil) {
-        self.val = val
-    }
-
-    func inorder(_ visited: inout [Value]) -&gt; [Value] {
-        if self.left != nil {
-            self.left!.inorder(&amp;visited)
-        }
-
-        if self.val != nil {
-            visited.append(self.val!)
-        }
-
-        if self.right != nil {
-            self.right!.inorder(&amp;visited)
-        }
-
-        return visited
-    }
-}
-Implementation
-The inorder algorithm:
-
-Recursively traverse the left subtree.
-Visit the current node.
-Recursively traverse the right subtree.
-
-Time/Space complexity
-The time complexity of the inorder algorithm is O(N), where N is the total number of nodes.
-The space complexity:">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="DSA - Binary Search Tree - Inorder">
+  <meta name="twitter:description" content="What is the BST inorder algorithm? The inorder algorithm returns values in ascending order (sorted from smallest to the largest value).
+Code example final class BSTNode&lt;Value: Comparable&gt; { var val: Value? var left: BSTNode? var right: BSTNode? init(val: Value? = nil) { self.val = val } func inorder(_ visited: inout [Value]) -&gt; [Value] { if self.left != nil { self.left!.inorder(&amp;visited) } if self.val != nil { visited.append(self.val!) } if self.right != nil { self.right!.inorder(&amp;visited) } return visited } } Implementation The inorder algorithm:
+Recursively traverse the left subtree. Visit the current node. Recursively traverse the right subtree. Time/Space complexity The time complexity of the inorder algorithm is O(N), where N is the total number of nodes. The space complexity:">
 
 
 <script type="application/ld+json">

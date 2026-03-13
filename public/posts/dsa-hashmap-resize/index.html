@@ -161,51 +161,13 @@ Code Example private func loadFactor() -&gt; Double? { if self.hashMap.isEmpty {
     <meta property="article:tag" content="Resize">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="DSA - Hashmap - Resize">
-<meta name="twitter:description" content="Introduction
-Previously, we discussed a custom hashmap implementation. That implementation has a lot of collisions because we are using a fixed-size array.
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="DSA - Hashmap - Resize">
+  <meta name="twitter:description" content="Introduction Previously, we discussed a custom hashmap implementation. That implementation has a lot of collisions because we are using a fixed-size array.
 If we want to reduce the chances of collisions, we can increase the number of slots in the hashmap, or in other words, resize our hashmap. Resizing cannot guarantee that collisions will be entirely eliminated, but it will help reduce the likelihood of one happening.
-Code Example
-private func loadFactor() -&gt; Double? {
-    if self.hashMap.isEmpty {
-        return nil
-    } else {
-        var filledSlots = 0
-        for slot in self.hashMap {
-            if slot != nil {
-                filledSlots &#43;= 1
-            }
-        }
-        return Double(filledSlots / self.hashMap.count)
-    }
-}
-private func resize() {
-    if self.hashMap.isEmpty {
-        self.hashMap = [nil]
-        return
-    }
-
-    guard
-        let load = self.loadFactor()
-    else { return }
-        
-    if load &lt; 0.05 {
-        return
-    }
-
-    let oldHashMap = self.hashMap
-    self.hashMap = Array(repeating: nil, count: oldHashMap.count * 10)
-
-    for kvp in oldHashMap {
-        if let kvp = kvp {
-            self.insert(key: kvp.key, value: kvp.value)
-        }
-    }
-}
-Implementation
-When resizing, we create a new hashmap with a larger number of slots. Then, we re-insert all the key-value pairs from the old hashmap into the new one.">
+Code Example private func loadFactor() -&gt; Double? { if self.hashMap.isEmpty { return nil } else { var filledSlots = 0 for slot in self.hashMap { if slot != nil { filledSlots &#43;= 1 } } return Double(filledSlots / self.hashMap.count) } } private func resize() { if self.hashMap.isEmpty { self.hashMap = [nil] return } guard let load = self.loadFactor() else { return } if load &lt; 0.05 { return } let oldHashMap = self.hashMap self.hashMap = Array(repeating: nil, count: oldHashMap.count * 10) for kvp in oldHashMap { if let kvp = kvp { self.insert(key: kvp.key, value: kvp.value) } } } Implementation When resizing, we create a new hashmap with a larger number of slots. Then, we re-insert all the key-value pairs from the old hashmap into the new one.">
 
 
 <script type="application/ld+json">

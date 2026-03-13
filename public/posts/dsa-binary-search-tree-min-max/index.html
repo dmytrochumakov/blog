@@ -210,101 +210,12 @@ Code Example - Min func findMin() -&gt; Int? { var min: Int? var curr: BSTNode? 
     <meta property="article:tag" content="BST">
     <meta property="article:tag" content="Min">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="DSA - Binary Search Tree Min/Max">
-<meta name="twitter:description" content="Introduction
-Finding the min and max elements is one of the simplest algorithms regarding BST (Binary Search Tree). The findMin method loops through the left child nodes and returns the value from the last node. The findMax method does the same but traverses the right child nodes.
-Code Example - Min
-func findMin() -&gt; Int? {
-    var min: Int?
-    var curr: BSTNode? = self
 
-    while curr != nil {
-        min = curr?.val
-        curr = curr?.left
-    }
-
-    return min
-}
-Code Example - Max
-func findMax() -&gt; Int? {
-    var max: Int?
-    var curr: BSTNode? = self
-
-    while curr != nil {
-        max = curr?.val
-        curr = curr?.right
-    }
-
-    return max
-}
-Complete Code Example
-final class BSTNode {
-
-    var val: Int?
-    var left: BSTNode?
-    var right: BSTNode?
-
-    init(val: Int? = nil) {
-        self.val = val
-    }
-
-    func insert(_ val: Value) {
-        if self.val == nil {
-            self.val = val
-            return
-        }
-
-        if self.val == val {
-            return
-        }
-
-        if val &lt; self.val! {
-            if self.left != nil {
-                self.left!.insert(val)
-                return
-            } else {
-                self.left = BSTNode(val: val)
-                return
-            }
-        }
-
-        if self.right != nil {
-            self.right!.insert(val)
-            return
-        }
-
-        self.right = BSTNode(val: val)
-    }
-
-    func findMin() -&gt; Int? {
-        var min: Int?
-        var curr: BSTNode? = self
-
-        while curr != nil {
-            min = curr?.val
-            curr = curr?.left
-        }
-
-        return min
-    }
-
-    func findMax() -&gt; Int? {
-        var max: Int?
-        var curr: BSTNode? = self
-
-        while curr != nil {
-            max = curr?.val
-            curr = curr?.right
-        }
-
-        return max
-    }
-
-}
-Time/Space Complexity
-For both findMin and findMax:">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="DSA - Binary Search Tree Min/Max">
+  <meta name="twitter:description" content="Introduction Finding the min and max elements is one of the simplest algorithms regarding BST (Binary Search Tree). The findMin method loops through the left child nodes and returns the value from the last node. The findMax method does the same but traverses the right child nodes.
+Code Example - Min func findMin() -&gt; Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } Code Example - Max func findMax() -&gt; Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } Complete Code Example final class BSTNode { var val: Int? var left: BSTNode? var right: BSTNode? init(val: Int? = nil) { self.val = val } func insert(_ val: Value) { if self.val == nil { self.val = val return } if self.val == val { return } if val &lt; self.val! { if self.left != nil { self.left!.insert(val) return } else { self.left = BSTNode(val: val) return } } if self.right != nil { self.right!.insert(val) return } self.right = BSTNode(val: val) } func findMin() -&gt; Int? { var min: Int? var curr: BSTNode? = self while curr != nil { min = curr?.val curr = curr?.left } return min } func findMax() -&gt; Int? { var max: Int? var curr: BSTNode? = self while curr != nil { max = curr?.val curr = curr?.right } return max } } Time/Space Complexity For both findMin and findMax:">
 
 
 <script type="application/ld+json">

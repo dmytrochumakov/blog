@@ -148,40 +148,13 @@ Brute Force Solution func containsDuplicate(_ nums: [Int]) -&gt; Bool { var nums
     <meta property="article:tag" content="Contains Duplicate">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="LeetCode - Blind 75 - Contains Duplicate">
-<meta name="twitter:description" content="The Problem
-Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
-Example
-Input: nums = [1,2,3,1]
-Output: true
-Explanation:
-The element 1 occurs at indices 0 and 3.
-Follow-up: Can you come up with an algorithm that has less than O(NlogN) time complexity?
-Brute Force Solution
-func containsDuplicate(_ nums: [Int]) -&gt; Bool {
-    var nums = nums
-    let N = nums.count
-    if N == 0 {
-        return false
-    }
-    nums.sort()
-    var prev = nums[0]
 
-    for i in 1 ..&lt; N {
-        let num = nums[i]
-        if num == prev {
-            return true
-        } else {
-            prev = num
-        }
-    }
-
-    return false
-}
-Explanation
-The brute force solution for this problem uses sorting to allow us to quickly detect duplicates since identical elements will be adjacent. After sorting, it iterates through all elements, checking if the current element is equal to the previous one; if it is, it returns true immediately. If not, it updates prev. If no duplicates are detected, it returns false.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="LeetCode - Blind 75 - Contains Duplicate">
+  <meta name="twitter:description" content="The Problem Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+Example Input: nums = [1,2,3,1] Output: true Explanation: The element 1 occurs at indices 0 and 3. Follow-up: Can you come up with an algorithm that has less than O(NlogN) time complexity?
+Brute Force Solution func containsDuplicate(_ nums: [Int]) -&gt; Bool { var nums = nums let N = nums.count if N == 0 { return false } nums.sort() var prev = nums[0] for i in 1 ..&lt; N { let num = nums[i] if num == prev { return true } else { prev = num } } return false } Explanation The brute force solution for this problem uses sorting to allow us to quickly detect duplicates since identical elements will be adjacent. After sorting, it iterates through all elements, checking if the current element is equal to the previous one; if it is, it returns true immediately. If not, it updates prev. If no duplicates are detected, it returns false.">
 
 
 <script type="application/ld+json">

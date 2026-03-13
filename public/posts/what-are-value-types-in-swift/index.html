@@ -136,29 +136,14 @@ struct Storage { var data: String = &#34;some data&#34; } let originalStorage = 
     <meta property="article:tag" content="Swift">
     <meta property="article:tag" content="Value Type">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="What are value types in Swift?">
-<meta name="twitter:description" content="What are value types?
-Value types play a central role in programming languages by grouping data values.
 
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="What are value types in Swift?">
+  <meta name="twitter:description" content="What are value types? Value types play a central role in programming languages by grouping data values.
 `Value type” is a type of data copied when assigned to a new variable.
-
-struct Storage {
-    var data: String = &#34;some data&#34;
-}
-let originalStorage = Storage()
-var copiedStorage = originalStorage  // `originalStorage` is copied to `copiedStorage`
-How can you pass value types?
-You can pass value type by copying value.
-struct Storage {
-    var data: String = &#34;some data&#34;
-}
-let originalStorage = Storage()
-var copiedStorage = originalStorage                        // `originalStorage` is copied to `copiedStorage`
-copiedStorage.data = &#34;new data&#34;                            // Changes `copiedStorage`, not `originalStorage`
-print(&#34;\(originalStorage.data), \(copiedStorage.data)&#34;)    // prints &#34;some data, new data&#34;
-The effect of assignment, initialization, and argument passing creates an independent instance with a unique copy of its data.">
+struct Storage { var data: String = &#34;some data&#34; } let originalStorage = Storage() var copiedStorage = originalStorage // `originalStorage` is copied to `copiedStorage` How can you pass value types? You can pass value type by copying value.
+struct Storage { var data: String = &#34;some data&#34; } let originalStorage = Storage() var copiedStorage = originalStorage // `originalStorage` is copied to `copiedStorage` copiedStorage.data = &#34;new data&#34; // Changes `copiedStorage`, not `originalStorage` print(&#34;\(originalStorage.data), \(copiedStorage.data)&#34;) // prints &#34;some data, new data&#34; The effect of assignment, initialization, and argument passing creates an independent instance with a unique copy of its data.">
 
 
 <script type="application/ld+json">

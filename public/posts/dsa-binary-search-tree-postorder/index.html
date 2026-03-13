@@ -169,59 +169,13 @@ Recursively traverse the current node’s left subtree. Recursively traverse the
     <meta property="article:tag" content="BST">
     <meta property="article:tag" content="Traverse">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="DSA - Binary Search Tree - Postorder">
-<meta name="twitter:description" content="What is the postorder algorithm?
-The postorder algorithm, similar to the preorder algorithm, returns a list of values in the order they are visited.
-Code Example
-final class BSTNode&lt;Value: Comparable&gt; {
 
-    var val: Value?
-    var left: BSTNode?
-    var right: BSTNode?
-
-    init(val: Value? = nil) {
-        self.val = val
-    }
-
-    func postorder(_ visited: inout [Value]) -&gt; [Value] {
-        if self.left != nil {
-            self.left!.postorder(&amp;visited)
-        }
-
-        if self.right != nil {
-            self.right!.postorder(&amp;visited)
-        }
-
-        if self.val != nil {
-            visited.append(self.val!)
-        }
-
-        return visited
-    }
-
-}
-Implementation
-The postorder algorithm:
-
-Recursively traverse the current node&rsquo;s left subtree.
-Recursively traverse the current node&rsquo;s right subtree.
-Visit the current node.
-
-Time/Space Complexity
-
-The time complexity of the postorder algorithm is O(N), where N is the total number of nodes.
-The space complexity:
-
-O(1) if recursion stack space is not considered.
-Otherwise, O(H), where H is the height of the tree.
-In the worst case, H can be the same as N (when the tree is skewed).
-In the best case, H can be the same as logN (when the tree is complete).
-
-
-
-Thank you for reading! 😊">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="DSA - Binary Search Tree - Postorder">
+  <meta name="twitter:description" content="What is the postorder algorithm? The postorder algorithm, similar to the preorder algorithm, returns a list of values in the order they are visited.
+Code Example final class BSTNode&lt;Value: Comparable&gt; { var val: Value? var left: BSTNode? var right: BSTNode? init(val: Value? = nil) { self.val = val } func postorder(_ visited: inout [Value]) -&gt; [Value] { if self.left != nil { self.left!.postorder(&amp;visited) } if self.right != nil { self.right!.postorder(&amp;visited) } if self.val != nil { visited.append(self.val!) } return visited } } Implementation The postorder algorithm:
+Recursively traverse the current node’s left subtree. Recursively traverse the current node’s right subtree. Visit the current node. Time/Space Complexity The time complexity of the postorder algorithm is O(N), where N is the total number of nodes. The space complexity: O(1) if recursion stack space is not considered. Otherwise, O(H), where H is the height of the tree. In the worst case, H can be the same as N (when the tree is skewed). In the best case, H can be the same as logN (when the tree is complete). Thank you for reading! 😊">
 
 
 <script type="application/ld+json">

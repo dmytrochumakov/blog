@@ -158,48 +158,13 @@ You can see that we can take two single steps or we can take one double step at 
     <meta property="article:tag" content="Climbing Stairs">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="LeetCode - Blind 75 - Climbing Stairs">
-<meta name="twitter:description" content="The problem
-You are climbing a staircase. It takes n steps to reach the top.
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="LeetCode - Blind 75 - Climbing Stairs">
+  <meta name="twitter:description" content="The problem You are climbing a staircase. It takes n steps to reach the top.
 Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
-Examples
-Input: n = 2
-Output: 2
-Explanation: There are two ways to climb to the top.
-1. 1 step &#43; 1 step
-2. 2 steps
-Input: n = 3
-Output: 3
-Explanation: There are three ways to climb to the top.
-1. 1 step &#43; 1 step &#43; 1 step
-2. 1 step &#43; 2 steps
-3. 2 steps &#43; 1 step
-Constraints
-
-1 &lt;= n &lt;= 45
-
-Brute Force Solution
-func climbStairs(_ n: Int) -&gt; Int {
-    func dfs(_ i: Int) -&gt; Int {
-        if i &gt;= n {
-            return i == n ? 1 : 0
-        }
-        return dfs(i &#43; 1) &#43; dfs(i &#43; 2)
-    }
-
-    return dfs(0)
-}
-Explanation
-Let&rsquo;s visualize and look at the first example Input: n = 2,
-
-    
-    
-    
-        
-    
-
+Examples Input: n = 2 Output: 2 Explanation: There are two ways to climb to the top. 1. 1 step &#43; 1 step 2. 2 steps Input: n = 3 Output: 3 Explanation: There are three ways to climb to the top. 1. 1 step &#43; 1 step &#43; 1 step 2. 1 step &#43; 2 steps 3. 2 steps &#43; 1 step Constraints 1 &lt;= n &lt;= 45 Brute Force Solution func climbStairs(_ n: Int) -&gt; Int { func dfs(_ i: Int) -&gt; Int { if i &gt;= n { return i == n ? 1 : 0 } return dfs(i &#43; 1) &#43; dfs(i &#43; 2) } return dfs(0) } Explanation Let’s visualize and look at the first example Input: n = 2,
 You can see that we can take two single steps or we can take one double step at once and find out that we have two different ways to solve this problem.">
 
 

@@ -132,24 +132,13 @@ query AllFilmsQuery { allFilms { films { title director created producers releas
     <meta property="article:tag" content="IOS">
     <meta property="article:tag" content="Application">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="Implementing GraphQL in an iOS application">
-<meta name="twitter:description" content="Introduction
-I previously never had a chance to work with GraphQL. I was excited to learn when to apply this technology, what tools I can use, and how I can implement it. Here’s what I found:
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="Implementing GraphQL in an iOS application">
+  <meta name="twitter:description" content="Introduction I previously never had a chance to work with GraphQL. I was excited to learn when to apply this technology, what tools I can use, and how I can implement it. Here’s what I found:
 For testing, I used the Star Wars GraphQL API with AllFilmsQuery:
-query AllFilmsQuery {
-  allFilms {
-    films {
-      title
-      director
-      created
-      producers
-      releaseDate
-    }
-  }
-}
-I requested allFilms with title, director, created, producers, and releaseDate information.">
+query AllFilmsQuery { allFilms { films { title director created producers releaseDate } } } I requested allFilms with title, director, created, producers, and releaseDate information.">
 
 
 <script type="application/ld+json">

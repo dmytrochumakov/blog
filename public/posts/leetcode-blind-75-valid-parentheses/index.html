@@ -151,43 +151,13 @@ Open brackets must be closed by the same type of brackets. Open brackets must be
     <meta property="article:tag" content="Valid Parentheses">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="LeetCode - Blind 75 - Valid Parentheses">
-<meta name="twitter:description" content="The Problem
-Given a string s containing just the characters &#39;(&#39;, &#39;)&#39;, &#39;{&#39;, &#39;}&#39;, &#39;[&#39;, and &#39;]&#39;, determine if the input string is valid.
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="LeetCode - Blind 75 - Valid Parentheses">
+  <meta name="twitter:description" content="The Problem Given a string s containing just the characters &#39;(&#39;, &#39;)&#39;, &#39;{&#39;, &#39;}&#39;, &#39;[&#39;, and &#39;]&#39;, determine if the input string is valid.
 An input string is valid if:
-
-Open brackets must be closed by the same type of brackets.
-Open brackets must be closed in the correct order.
-Every closing bracket has a corresponding open bracket of the same type.
-
-Examples
-Input: s = &#34;()&#34;  
-Output: true  
-Input: s = &#34;()[]{}&#34;  
-Output: true  
-Input: s = &#34;(]&#34;  
-Output: false  
-Input: s = &#34;([])&#34;  
-Output: true  
-Constraints
-
-1 &lt;= s.length &lt;= 10⁴
-s consists of parentheses only &#39;()[]{}&#39;.
-
-Brute Force Solution
-func isValid(_ s: String) -&gt; Bool {  
-    var s = s  
-    while s.contains(&#34;()&#34;) || s.contains(&#34;{}&#34;) || s.contains(&#34;[]&#34;) {  
-        s = s.replacingOccurrences(of: &#34;()&#34;, with: &#34;&#34;)  
-        s = s.replacingOccurrences(of: &#34;{}&#34;, with: &#34;&#34;)  
-        s = s.replacingOccurrences(of: &#34;[]&#34;, with: &#34;&#34;)  
-    }  
-    return s.isEmpty  
-}  
-Explanation
-The brute force way to solve this problem is to check if the string contains &quot;()&quot;, &quot;{}&quot;, &quot;[]&quot; and replace them with an empty string. It&rsquo;s not a very efficient algorithm and takes O(n²) time because of the while loop and the replacing operation on the entire string. We can optimize it by using a stack data structure.">
+Open brackets must be closed by the same type of brackets. Open brackets must be closed in the correct order. Every closing bracket has a corresponding open bracket of the same type. Examples Input: s = &#34;()&#34; Output: true Input: s = &#34;()[]{}&#34; Output: true Input: s = &#34;(]&#34; Output: false Input: s = &#34;([])&#34; Output: true Constraints 1 &lt;= s.length &lt;= 10⁴ s consists of parentheses only &#39;()[]{}&#39;. Brute Force Solution func isValid(_ s: String) -&gt; Bool { var s = s while s.contains(&#34;()&#34;) || s.contains(&#34;{}&#34;) || s.contains(&#34;[]&#34;) { s = s.replacingOccurrences(of: &#34;()&#34;, with: &#34;&#34;) s = s.replacingOccurrences(of: &#34;{}&#34;, with: &#34;&#34;) s = s.replacingOccurrences(of: &#34;[]&#34;, with: &#34;&#34;) } return s.isEmpty } Explanation The brute force way to solve this problem is to check if the string contains &#34;()&#34;, &#34;{}&#34;, &#34;[]&#34; and replace them with an empty string. It’s not a very efficient algorithm and takes O(n²) time because of the while loop and the replacing operation on the entire string. We can optimize it by using a stack data structure.">
 
 
 <script type="application/ld+json">

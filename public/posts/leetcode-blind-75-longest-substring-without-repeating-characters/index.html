@@ -166,58 +166,13 @@ Examples Input: s = &#34;abcabcbb&#34; Output: 3 Explanation: The answer is &#34
     <meta property="article:tag" content="Longest Substring Without Repeating Characters">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="LeetCode - Blind 75 - Longest Substring Without Repeating Characters">
-<meta name="twitter:description" content="The Problem
-Given a string s, find the length of the longest substring without repeating characters.
 
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="LeetCode - Blind 75 - Longest Substring Without Repeating Characters">
+  <meta name="twitter:description" content="The Problem Given a string s, find the length of the longest substring without repeating characters.
 A substring is a contiguous non-empty sequence of characters within a string.
-
-Examples
-Input: s = &#34;abcabcbb&#34;
-Output: 3
-Explanation: The answer is &#34;abc&#34;, with the length of 3.
-Input: s = &#34;bbbbb&#34;
-Output: 1
-Explanation: The answer is &#34;b&#34;, with the length of 1.
-Input: s = &#34;pwwkew&#34;
-Output: 3
-Explanation: The answer is &#34;wke&#34;, with the length of 3.  
-Notice that the answer must be a substring. &#34;pwke&#34; is a subsequence and not a substring.
-Constraints
-
-0 &lt;= s.length &lt;= 5 * 10⁴
-s consists of English letters, digits, symbols, and spaces.
-
-
-Brute Force Solution
-func lengthOfLongestSubstring(_ s: String) -&gt; Int {
-    let n = s.count
-    var res = 0
-
-    for i in 0 ..&lt; n {
-        var chars: [Character] = []
-        for j in i ..&lt; n {
-            if chars.contains(s[j]) {
-                break
-            }
-            chars.append(s[j])
-        }
-        res = max(res, chars.count)
-    }
-
-    return res
-}
-Explanation
-Let’s start by visualizing the problem:
-
-    
-    
-    
-        
-    
-">
+Examples Input: s = &#34;abcabcbb&#34; Output: 3 Explanation: The answer is &#34;abc&#34;, with the length of 3. Input: s = &#34;bbbbb&#34; Output: 1 Explanation: The answer is &#34;b&#34;, with the length of 1. Input: s = &#34;pwwkew&#34; Output: 3 Explanation: The answer is &#34;wke&#34;, with the length of 3. Notice that the answer must be a substring. &#34;pwke&#34; is a subsequence and not a substring. Constraints 0 &lt;= s.length &lt;= 5 * 10⁴ s consists of English letters, digits, symbols, and spaces. Brute Force Solution func lengthOfLongestSubstring(_ s: String) -&gt; Int { let n = s.count var res = 0 for i in 0 ..&lt; n { var chars: [Character] = [] for j in i ..&lt; n { if chars.contains(s[j]) { break } chars.append(s[j]) } res = max(res, chars.count) } return res } Explanation Let’s start by visualizing the problem:">
 
 
 <script type="application/ld+json">

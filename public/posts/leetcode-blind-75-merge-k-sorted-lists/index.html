@@ -174,66 +174,13 @@ Examples Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] Explan
     <meta property="article:tag" content="Merge K Sorted Lists">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="LeetCode - Blind 75 - Merge k Sorted Lists">
-<meta name="twitter:description" content="The problem
-You are given an array of k linked lists lists, each linked list is sorted in ascending order.
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="LeetCode - Blind 75 - Merge k Sorted Lists">
+  <meta name="twitter:description" content="The problem You are given an array of k linked lists lists, each linked list is sorted in ascending order.
 Merge all the linked lists into one sorted linked list and return it.
-Examples
-Input: lists = [[1,4,5],[1,3,4],[2,6]]
-Output: [1,1,2,3,4,4,5,6]
-Explanation: The linked lists are:
-[
-  1-&gt;4-&gt;5,
-  1-&gt;3-&gt;4,
-  2-&gt;6
-]
-merging them into one sorted list:
-1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4-&gt;5-&gt;6
-Input: lists = []
-Output: []
-Input: lists = [[]]
-Output: []
-Constraints
-
-k == lists.length
-0 &lt;= k &lt;= 10^4
-0 &lt;= lists[i].length &lt;= 500
--10^4 &lt;= lists[i][j] &lt;= 10^4
-lists[i] is sorted in ascending order.
-The sum of lists[i].length will not exceed 10^4.
-
-
-Brute Force Solution
-func mergeKLists(_ lists: [ListNode?]) -&gt; ListNode? {
-    var nodes: [Int] = []
-	
-    // Step 1
-    for i in 0..&lt;lists.count {
-        var lst = lists[i]
-        while lst != nil {
-            nodes.append(lst!.val)
-            lst = lst?.next
-        }
-    }
-	
-    // Step 2
-    nodes.sort()
-	
-    // Step 3
-    var res = ListNode(0)
-    var curr: ListNode? = res
-
-    for node in nodes {
-        curr?.next = ListNode(node)
-        curr = curr?.next
-    }
-
-    return res.next
-}
-Explanation
-We can solve this problem by separating it into three steps:">
+Examples Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] Explanation: The linked lists are: [ 1-&gt;4-&gt;5, 1-&gt;3-&gt;4, 2-&gt;6 ] merging them into one sorted list: 1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4-&gt;5-&gt;6 Input: lists = [] Output: [] Input: lists = [[]] Output: [] Constraints k == lists.length 0 &lt;= k &lt;= 10^4 0 &lt;= lists[i].length &lt;= 500 -10^4 &lt;= lists[i][j] &lt;= 10^4 lists[i] is sorted in ascending order. The sum of lists[i].length will not exceed 10^4. Brute Force Solution func mergeKLists(_ lists: [ListNode?]) -&gt; ListNode? { var nodes: [Int] = [] // Step 1 for i in 0..&lt;lists.count { var lst = lists[i] while lst != nil { nodes.append(lst!.val) lst = lst?.next } } // Step 2 nodes.sort() // Step 3 var res = ListNode(0) var curr: ListNode? = res for node in nodes { curr?.next = ListNode(node) curr = curr?.next } return res.next } Explanation We can solve this problem by separating it into three steps:">
 
 
 <script type="application/ld+json">

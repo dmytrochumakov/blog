@@ -134,26 +134,15 @@ func response(_ completionHandler: @escaping(Result) -&gt; Void) { completionHan
     <meta property="article:tag" content="Swift">
     <meta property="article:tag" content="Closure">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:title" content="What is closure in Swift language?">
-<meta name="twitter:description" content="Introduction
-In this article, I’m going to briefly explain what closure is.
 
-Closures is self-conitained blocks of funcionality that can be passed around and used in your code.
-— Apple
-
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+  <meta name="twitter:title" content="What is closure in Swift language?">
+  <meta name="twitter:description" content="Introduction In this article, I’m going to briefly explain what closure is.
+Closures is self-conitained blocks of funcionality that can be passed around and used in your code. — Apple
 Expression:
-{ (params) -&gt; return value in
-  statements
-}
-@escaping
-When closure is marked as escaping, it will outlive or leave the scope you passed.
-func response(_ completionHandler: @escaping(Result) -&gt; Void) {
-   completionHandler(.success)
-}
-@nonescaping
-By default, closures are nonescaping, meaning closure will no longer exist in memory after complete execution in the scope you have passed it to.">
+{ (params) -&gt; return value in statements } @escaping When closure is marked as escaping, it will outlive or leave the scope you passed.
+func response(_ completionHandler: @escaping(Result) -&gt; Void) { completionHandler(.success) } @nonescaping By default, closures are nonescaping, meaning closure will no longer exist in memory after complete execution in the scope you have passed it to.">
 
 
 <script type="application/ld+json">
