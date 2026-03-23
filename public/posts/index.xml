@@ -11,8 +11,31 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Mar 2026 08:15:54 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 08:15:06 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Longest Increasing Path in a Matrix</title>
+      <link>http://localhost:1313/posts/leetcode-150-longest-increasing-path-in-a-matrix/</link>
+      <pubDate>Mon, 23 Mar 2026 08:15:06 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-longest-increasing-path-in-a-matrix/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given an &lt;code&gt;m x n&lt;/code&gt; integer &lt;code&gt;matrix&lt;/code&gt;, return &lt;em&gt;the length of the longest increasing path in&lt;/em&gt; &lt;code&gt;matrix&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;From each cell, you can either move in four directions: left, right, up, or down. You &lt;strong&gt;may not&lt;/strong&gt; move &lt;strong&gt;diagonally&lt;/strong&gt; or move &lt;strong&gt;outside the boundary&lt;/strong&gt; (i.e., wrap-around is not allowed).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-31789&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-31789&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/grid1.jpg#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: matrix = [[9,9,4],[6,6,8],[2,1,1]]
+Output: 4
+Explanation: The longest increasing path is [1, 2, 6, 9].
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Edit Distance</title>
       <link>http://localhost:1313/posts/leetcode-150-edit-distance/</link>
