@@ -209,6 +209,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Securing user data with Keychain, Touch ID, and Face ID
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction I was eager to learn about securing user data using Keychain and biometric authentication. Here are a few steps I found:
+Caveats You can test accessing Keychain data using Touch ID and Face ID only on a real device.
+First Step The first step is to add the Privacy - Face ID Usage Description key to your Info.plist. Without it, you would not be able to retrieve data from Keychain using Face ID.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-05-13 07:31:49 +0300 EEST'>May 13, 2024</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <a class="entry-link" aria-label="post link to Securing user data with Keychain, Touch ID, and Face ID" href="http://localhost:1313/posts/securing-user-data-with-keychain-touch-id-and-face-id/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Implementing In-App Purchases to SwiftUI app using StoreKit 2
     </h2>
   </header>
@@ -260,20 +275,6 @@ There are two ways of conducting integration testing: The first is by unit tests
   </div>
   <footer class="entry-footer"><span title='2024-05-08 06:34:32 +0300 EEST'>May 8, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to UI testing SwiftUI views using XCTest Framework" href="http://localhost:1313/posts/ui-testing-swiftui-views-using-xctest-framework/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Building Dynamic Island for Video Streaming App
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I was curious about how to add Dynamic Island and implement it into a Video Streaming App. Here are a few steps on how you can achieve this.
-Caveats Debugging Dynamic Island can be a bit tricky; it only works when the main app is running. If you try to run it separately, you will encounter the error SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 &#34;Failed to show Widget&#34;. The solution is to configure live activities and run them through the main app. Be aware that when you add a widget to the project, in some cases, it adds all main target files to Compile Sources. Implementation Dynamic Islands are divided into different sizes: minimal, compactTrailing, compactLeading, and expanded. Before proceeding, you need to add LiveActivityManager to be able to display Dynamic Islands.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-05-06 07:35:52 +0300 EEST'>May 6, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to Building Dynamic Island for Video Streaming App" href="http://localhost:1313/posts/building-dynamic-island-for-video-streaming-app/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
