@@ -3,30 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/150/</loc>
-    <lastmod>2026-05-09T09:16:39+03:00</lastmod>
+    <lastmod>2026-05-13T07:40:07+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-05-09T09:16:39+03:00</lastmod>
+    <lastmod>2026-05-13T07:40:07+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/greedy/</loc>
-    <lastmod>2026-05-09T09:16:39+03:00</lastmod>
+    <lastmod>2026-05-13T07:40:07+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/leetcode/</loc>
+    <lastmod>2026-05-13T07:40:07+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/leetcode-150-merge-triplets-to-form-target-triplet/</loc>
+    <lastmod>2026-05-13T07:40:07+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/merge-triplets-to-form-target-triplet/</loc>
+    <lastmod>2026-05-13T07:40:07+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-05-13T07:40:07+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swift/</loc>
+    <lastmod>2026-05-13T07:40:07+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-05-13T07:40:07+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/hand-of-straights/</loc>
     <lastmod>2026-05-09T09:16:39+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/leetcode/</loc>
-    <lastmod>2026-05-09T09:16:39+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/leetcode-150-hand-of-straights/</loc>
-    <lastmod>2026-05-09T09:16:39+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-05-09T09:16:39+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2026-05-09T09:16:39+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-05-09T09:16:39+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/gas-station/</loc>

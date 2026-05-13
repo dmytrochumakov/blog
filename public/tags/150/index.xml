@@ -11,8 +11,20 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 09 May 2026 09:16:39 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2026 07:40:07 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/150/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Merge Triplets to Form Target Triplet</title>
+      <link>http://localhost:1313/posts/leetcode-150-merge-triplets-to-form-target-triplet/</link>
+      <pubDate>Wed, 13 May 2026 07:40:07 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-merge-triplets-to-form-target-triplet/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;A &lt;strong&gt;triplet&lt;/strong&gt; is an array of three integers. You are given a 2D integer array &lt;code&gt;triplets&lt;/code&gt;, where &lt;code&gt;triplets[i] = [ai, bi, ci]&lt;/code&gt; describes the &lt;code&gt;i-th&lt;/code&gt; &lt;strong&gt;triplet&lt;/strong&gt;. You are also given an integer array &lt;code&gt;target = [x, y, z]&lt;/code&gt; that describes the &lt;strong&gt;triplet&lt;/strong&gt; you want to obtain.&lt;/p&gt;
+&lt;p&gt;To obtain &lt;code&gt;target&lt;/code&gt;, you may apply the following operation on &lt;code&gt;triplets&lt;/code&gt; &lt;strong&gt;any number&lt;/strong&gt; of times (possibly &lt;strong&gt;zero&lt;/strong&gt;):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Choose two indices (&lt;strong&gt;0-indexed&lt;/strong&gt;) &lt;code&gt;i&lt;/code&gt; and &lt;code&gt;j&lt;/code&gt; (&lt;code&gt;i != j&lt;/code&gt;) and &lt;strong&gt;update&lt;/strong&gt; &lt;code&gt;triplets[j]&lt;/code&gt; to become &lt;code&gt;[max(ai, aj), max(bi, bj), max(ci, cj)]&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Hand of Straights</title>
       <link>http://localhost:1313/posts/leetcode-150-hand-of-straights/</link>
