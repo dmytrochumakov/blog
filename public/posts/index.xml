@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 13 May 2026 07:40:07 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 07:51:15 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Partition Labels</title>
+      <link>http://localhost:1313/posts/leetcode-150-partition-labels/</link>
+      <pubDate>Mon, 18 May 2026 07:51:15 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-partition-labels/</guid>
+      <description>&lt;p&gt;LeetCode - 150 - Partition Labels&lt;/p&gt;
+&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;You are given a string &lt;code&gt;s&lt;/code&gt;. We want to partition the string into as many parts as possible so that each letter appears in at most one part. For example, the string &lt;code&gt;&amp;quot;ababcc&amp;quot;&lt;/code&gt; can be partitioned into &lt;code&gt;[&amp;quot;abab&amp;quot;, &amp;quot;cc&amp;quot;]&lt;/code&gt;, but partitions such as &lt;code&gt;[&amp;quot;aba&amp;quot;, &amp;quot;bcc&amp;quot;]&lt;/code&gt; or &lt;code&gt;[&amp;quot;ab&amp;quot;, &amp;quot;ab&amp;quot;, &amp;quot;cc&amp;quot;]&lt;/code&gt; are invalid.&lt;/p&gt;
+&lt;p&gt;Note that the partition is done so that after concatenating all the parts in order, the resultant string should be &lt;code&gt;s&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Merge Triplets to Form Target Triplet</title>
       <link>http://localhost:1313/posts/leetcode-150-merge-triplets-to-form-target-triplet/</link>
