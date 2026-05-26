@@ -11,8 +11,24 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 May 2026 07:51:15 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 08:05:31 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/greedy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - 150 - Valid Parenthesis String</title>
+      <link>http://localhost:1313/posts/leetcode-150-valid-parenthesis-string/</link>
+      <pubDate>Tue, 26 May 2026 08:05:31 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-150-valid-parenthesis-string/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given a string &lt;code&gt;s&lt;/code&gt; containing only three types of characters: &lt;code&gt;&#39;(&#39;&lt;/code&gt;, &lt;code&gt;&#39;)&#39;&lt;/code&gt;, and &lt;code&gt;&#39;*&#39;&lt;/code&gt;, return &lt;code&gt;true&lt;/code&gt; &lt;em&gt;if&lt;/em&gt; &lt;code&gt;s&lt;/code&gt; &lt;em&gt;is &lt;strong&gt;valid&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The following rules define a &lt;strong&gt;valid&lt;/strong&gt; string:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Any left parenthesis &lt;code&gt;&#39;(&#39;&lt;/code&gt; must have a corresponding right parenthesis &lt;code&gt;&#39;)&#39;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Any right parenthesis &lt;code&gt;&#39;)&#39;&lt;/code&gt; must have a corresponding left parenthesis &lt;code&gt;&#39;(&#39;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;A left parenthesis &lt;code&gt;&#39;(&#39;&lt;/code&gt; must go before the corresponding right parenthesis &lt;code&gt;&#39;)&#39;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&#39;*&#39;&lt;/code&gt; could be treated as a single right parenthesis &lt;code&gt;&#39;)&#39;&lt;/code&gt;, a single left parenthesis &lt;code&gt;&#39;(&#39;&lt;/code&gt;, or an empty string &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - 150 - Partition Labels</title>
       <link>http://localhost:1313/posts/leetcode-150-partition-labels/</link>
