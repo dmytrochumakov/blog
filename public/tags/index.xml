@@ -11,27 +11,41 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Jun 2026 10:51:19 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 08:13:55 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>150</title>
       <link>http://localhost:1313/tags/150/</link>
-      <pubDate>Sat, 13 Jun 2026 10:51:19 +0300</pubDate>
+      <pubDate>Wed, 17 Jun 2026 08:13:55 +0300</pubDate>
       <guid>http://localhost:1313/tags/150/</guid>
       <description></description>
     </item>
     <item>
       <title>LeetCode</title>
       <link>http://localhost:1313/tags/leetcode/</link>
-      <pubDate>Sat, 13 Jun 2026 10:51:19 +0300</pubDate>
+      <pubDate>Wed, 17 Jun 2026 08:13:55 +0300</pubDate>
       <guid>http://localhost:1313/tags/leetcode/</guid>
       <description></description>
     </item>
     <item>
       <title>Math_&amp;_Geometry</title>
       <link>http://localhost:1313/tags/math__geometry/</link>
-      <pubDate>Sat, 13 Jun 2026 10:51:19 +0300</pubDate>
+      <pubDate>Wed, 17 Jun 2026 08:13:55 +0300</pubDate>
       <guid>http://localhost:1313/tags/math__geometry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multiply Strings</title>
+      <link>http://localhost:1313/tags/multiply-strings/</link>
+      <pubDate>Wed, 17 Jun 2026 08:13:55 +0300</pubDate>
+      <guid>http://localhost:1313/tags/multiply-strings/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Swift</title>
+      <link>http://localhost:1313/tags/swift/</link>
+      <pubDate>Wed, 17 Jun 2026 08:13:55 +0300</pubDate>
+      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>
@@ -39,13 +53,6 @@
       <link>http://localhost:1313/tags/powx-n/</link>
       <pubDate>Sat, 13 Jun 2026 10:51:19 +0300</pubDate>
       <guid>http://localhost:1313/tags/powx-n/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Swift</title>
-      <link>http://localhost:1313/tags/swift/</link>
-      <pubDate>Sat, 13 Jun 2026 10:51:19 +0300</pubDate>
-      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>
