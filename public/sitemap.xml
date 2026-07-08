@@ -2,31 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/arrays__hashing/</loc>
+    <lastmod>2026-07-08T09:41:21+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/design-hashset/</loc>
+    <lastmod>2026-07-08T09:41:21+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-07-08T09:41:21+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/leetcode/</loc>
+    <lastmod>2026-07-08T09:41:21+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/leetcode-design-hashset/</loc>
+    <lastmod>2026-07-08T09:41:21+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-07-08T09:41:21+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swift/</loc>
+    <lastmod>2026-07-08T09:41:21+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-07-08T09:41:21+03:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/150/</loc>
     <lastmod>2026-07-01T08:37:18+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/bit_manipulation/</loc>
     <lastmod>2026-07-01T08:37:18+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-07-01T08:37:18+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/leetcode/</loc>
-    <lastmod>2026-07-01T08:37:18+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/leetcode-150-reverse-integer/</loc>
     <lastmod>2026-07-01T08:37:18+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-07-01T08:37:18+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/reverse-integer/</loc>
-    <lastmod>2026-07-01T08:37:18+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2026-07-01T08:37:18+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-07-01T08:37:18+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/detect-squares/</loc>
