@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dispatchgroup on Dmytro&#39;s Blog</title>
     <link>http://localhost:1313/tags/dispatchgroup/</link>
     <description>Recent content in Dispatchgroup on Dmytro&#39;s Blog</description>
-    <image>
-      <title>Dmytro&#39;s Blog</title>
-      <url>http://localhost:1313/images/papermod-cover.png</url>
-      <link>http://localhost:1313/images/papermod-cover.png</link>
-    </image>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0300</lastBuildDate>
@@ -18,18 +13,7 @@
       <link>http://localhost:1313/posts/dispatchgroup-in-swift/</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0300</pubDate>
       <guid>http://localhost:1313/posts/dispatchgroup-in-swift/</guid>
-      <description>&lt;h3 id=&#34;what-is-dispatchgroup&#34;&gt;What is DispatchGroup?&lt;/h3&gt;
-&lt;p&gt;DispatchGroup provides a mechanism to track the completion group of tasks.&lt;/p&gt;
-&lt;h3 id=&#34;how-dispatchgroup-works&#34;&gt;How DispatchGroup works?&lt;/h3&gt;
-&lt;p&gt;DispatchGroup has three main methods, &lt;code&gt;enter&lt;/code&gt;, &lt;code&gt;leave&lt;/code&gt; and &lt;code&gt;notify&lt;/code&gt;, that allow you to control the completion of a specific task.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;dispatchGroup&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;DispatchGroup&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dispatchGroup&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;enter&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dispatchGroup&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;leave&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dispatchGroup&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;notify&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;queue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;lets-talk-about-each-of-these-methods&#34;&gt;Let`s talk about each of these methods.&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;enter&lt;/code&gt; — manually indicate a block has entered group.
-&lt;code&gt;leave&lt;/code&gt; — manually indicate a block in the group has been completed.
-&lt;code&gt;notify(queue: )&lt;/code&gt; — schedule a block to be submitted to a queue when all the blocks associated with a group have been completed. The &lt;code&gt;queue&lt;/code&gt; parameter is the queue to which the supplied block will be submitted when the group is complete.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;what-is-dispatchgroup&#34;&gt;What is DispatchGroup?&lt;/h3&gt;&#xA;&lt;p&gt;DispatchGroup provides a mechanism to track the completion group of tasks.&lt;/p&gt;&#xA;&lt;h3 id=&#34;how-dispatchgroup-works&#34;&gt;How DispatchGroup works?&lt;/h3&gt;&#xA;&lt;p&gt;DispatchGroup has three main methods, &lt;code&gt;enter&lt;/code&gt;, &lt;code&gt;leave&lt;/code&gt; and &lt;code&gt;notify&lt;/code&gt;, that allow you to control the completion of a specific task.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;dispatchGroup&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;DispatchGroup&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dispatchGroup&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;enter&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dispatchGroup&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;leave&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;dispatchGroup&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;notify&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;queue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{}&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;lets-talk-about-each-of-these-methods&#34;&gt;Let`s talk about each of these methods.&lt;/h3&gt;&#xA;&lt;p&gt;&lt;code&gt;enter&lt;/code&gt; — manually indicate a block has entered group.&#xA;&lt;code&gt;leave&lt;/code&gt; — manually indicate a block in the group has been completed.&#xA;&lt;code&gt;notify(queue: )&lt;/code&gt; — schedule a block to be submitted to a queue when all the blocks associated with a group have been completed. The &lt;code&gt;queue&lt;/code&gt; parameter is the queue to which the supplied block will be submitted when the group is complete.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

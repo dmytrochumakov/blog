@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minimum Interval to Include Each Query on Dmytro&#39;s Blog</title>
     <link>http://localhost:1313/tags/minimum-interval-to-include-each-query/</link>
     <description>Recent content in Minimum Interval to Include Each Query on Dmytro&#39;s Blog</description>
-    <image>
-      <title>Dmytro&#39;s Blog</title>
-      <url>http://localhost:1313/images/papermod-cover.png</url>
-      <link>http://localhost:1313/images/papermod-cover.png</link>
-    </image>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 04 Jun 2026 09:37:51 +0300</lastBuildDate>
@@ -18,9 +13,7 @@
       <link>http://localhost:1313/posts/leetcode-150-minimum-interval-to-include-each-query/</link>
       <pubDate>Thu, 04 Jun 2026 09:37:51 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-150-minimum-interval-to-include-each-query/</guid>
-      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
-&lt;p&gt;You are given a 2D integer array &lt;code&gt;intervals&lt;/code&gt;, where &lt;code&gt;intervals[i] = [lefti, righti]&lt;/code&gt; describes the &lt;code&gt;ith&lt;/code&gt; interval starting at &lt;code&gt;lefti&lt;/code&gt; and ending at &lt;code&gt;righti&lt;/code&gt; &lt;strong&gt;(inclusive)&lt;/strong&gt;. The &lt;strong&gt;size&lt;/strong&gt; of an interval is defined as the number of integers it contains, or more formally &lt;code&gt;righti - lefti + 1&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;You are also given an integer array &lt;code&gt;queries&lt;/code&gt;. The answer to the &lt;code&gt;jth&lt;/code&gt; query is the &lt;strong&gt;size of the smallest interval&lt;/strong&gt; &lt;code&gt;i&lt;/code&gt; such that &lt;code&gt;lefti &amp;lt;= queries[j] &amp;lt;= righti&lt;/code&gt;. If no such interval exists, the answer is &lt;code&gt;-1&lt;/code&gt;.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;&#xA;&lt;p&gt;You are given a 2D integer array &lt;code&gt;intervals&lt;/code&gt;, where &lt;code&gt;intervals[i] = [lefti, righti]&lt;/code&gt; describes the &lt;code&gt;ith&lt;/code&gt; interval starting at &lt;code&gt;lefti&lt;/code&gt; and ending at &lt;code&gt;righti&lt;/code&gt; &lt;strong&gt;(inclusive)&lt;/strong&gt;. The &lt;strong&gt;size&lt;/strong&gt; of an interval is defined as the number of integers it contains, or more formally &lt;code&gt;righti - lefti + 1&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;You are also given an integer array &lt;code&gt;queries&lt;/code&gt;. The answer to the &lt;code&gt;jth&lt;/code&gt; query is the &lt;strong&gt;size of the smallest interval&lt;/strong&gt; &lt;code&gt;i&lt;/code&gt; such that &lt;code&gt;lefti &amp;lt;= queries[j] &amp;lt;= righti&lt;/code&gt;. If no such interval exists, the answer is &lt;code&gt;-1&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Binary Search on Dmytro&#39;s Blog</title>
     <link>http://localhost:1313/tags/binary-search/</link>
     <description>Recent content in Binary Search on Dmytro&#39;s Blog</description>
-    <image>
-      <title>Dmytro&#39;s Blog</title>
-      <url>http://localhost:1313/images/papermod-cover.png</url>
-      <link>http://localhost:1313/images/papermod-cover.png</link>
-    </image>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 27 Jun 2025 07:37:23 +0300</lastBuildDate>
@@ -18,45 +13,14 @@
       <link>http://localhost:1313/posts/leetcode-150-binary-search/</link>
       <pubDate>Fri, 27 Jun 2025 07:37:23 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-150-binary-search/</guid>
-      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
-&lt;p&gt;Given an array of integers &lt;code&gt;nums&lt;/code&gt; which is sorted in ascending order, and an integer &lt;code&gt;target&lt;/code&gt;, write a function to search &lt;code&gt;target&lt;/code&gt; in &lt;code&gt;nums&lt;/code&gt;. If &lt;code&gt;target&lt;/code&gt; exists, then return its index. Otherwise, return &lt;code&gt;-1&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;You must write an algorithm with &lt;code&gt;O(log n)&lt;/code&gt; runtime complexity.&lt;/p&gt;
-&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [-1,0,3,5,9,12], target = 9  
-Output: 4  
-Explanation: 9 exists in nums and its index is 4
-&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [-1,0,3,5,9,12], target = 2  
-Output: -1  
-Explanation: 2 does not exist in nums so return -1
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;1 &amp;lt;= nums.length &amp;lt;= 10^4&lt;/li&gt;
-&lt;li&gt;-10^4 &amp;lt; nums[i], target &amp;lt; 10^4&lt;/li&gt;
-&lt;li&gt;All the integers in nums are unique.&lt;/li&gt;
-&lt;li&gt;nums is sorted in ascending order.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
-&lt;p&gt;Before we jump into the solution, let’s figure out what the requirements for a binary search algorithm are and how it is going to work.
-
-    
-    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-0d4d4&#34; hidden&gt;
-    &lt;label for=&#34;zoomCheck-0d4d4&#34;&gt;
-        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
-            src=&#34;images/704.png#center&#34; alt=&#34;alt image&#34; 
-             /&gt;
-    &lt;/label&gt;
-
-The main requirement for binary search is that the input must be sorted.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;&#xA;&lt;p&gt;Given an array of integers &lt;code&gt;nums&lt;/code&gt; which is sorted in ascending order, and an integer &lt;code&gt;target&lt;/code&gt;, write a function to search &lt;code&gt;target&lt;/code&gt; in &lt;code&gt;nums&lt;/code&gt;. If &lt;code&gt;target&lt;/code&gt; exists, then return its index. Otherwise, return &lt;code&gt;-1&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;You must write an algorithm with &lt;code&gt;O(log n)&lt;/code&gt; runtime complexity.&lt;/p&gt;&#xA;&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [-1,0,3,5,9,12], target = 9  &#xA;Output: 4  &#xA;Explanation: 9 exists in nums and its index is 4&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [-1,0,3,5,9,12], target = 2  &#xA;Output: -1  &#xA;Explanation: 2 does not exist in nums so return -1&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;1 &amp;lt;= nums.length &amp;lt;= 10^4&lt;/li&gt;&#xA;&lt;li&gt;-10^4 &amp;lt; nums[i], target &amp;lt; 10^4&lt;/li&gt;&#xA;&lt;li&gt;All the integers in nums are unique.&lt;/li&gt;&#xA;&lt;li&gt;nums is sorted in ascending order.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;&#xA;&lt;p&gt;Before we jump into the solution, let’s figure out what the requirements for a binary search algorithm are and how it is going to work.&#xA;&#xA;    &#xA;    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-0d4d4&#34; hidden&gt;&#xA;    &lt;label for=&#34;zoomCheck-0d4d4&#34;&gt;&#xA;        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; &#xA;            src=&#34;images/704.png#center&#34; alt=&#34;alt image&#34; &#xA;             /&gt;&#xA;    &lt;/label&gt;&#xA;&#xA;The main requirement for binary search is that the input must be sorted.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DSA - Binary Search</title>
       <link>http://localhost:1313/posts/dsa-binary-search/</link>
       <pubDate>Mon, 26 Aug 2024 07:09:48 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-binary-search/</guid>
-      <description>&lt;h3 id=&#34;what-is-binary-search&#34;&gt;What is binary search?&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Binary_search&#34;&gt;Binary search&lt;/a&gt; is an algorithm that helps find an element in a sorted array in O(log n) time.&lt;/p&gt;
-&lt;h3 id=&#34;why-should-the-input-be-sorted-before-performing-binary-search&#34;&gt;Why should the input be sorted before performing binary search?&lt;/h3&gt;
-&lt;p&gt;The input array for binary search needs to be sorted because the algorithm eliminates half of the choices at each step. If the guessed value is greater than the target value, it knows that the right part can’t contain the target value.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;what-is-binary-search&#34;&gt;What is binary search?&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Binary_search&#34;&gt;Binary search&lt;/a&gt; is an algorithm that helps find an element in a sorted array in O(log n) time.&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-should-the-input-be-sorted-before-performing-binary-search&#34;&gt;Why should the input be sorted before performing binary search?&lt;/h3&gt;&#xA;&lt;p&gt;The input array for binary search needs to be sorted because the algorithm eliminates half of the choices at each step. If the guessed value is greater than the target value, it knows that the right part can’t contain the target value.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

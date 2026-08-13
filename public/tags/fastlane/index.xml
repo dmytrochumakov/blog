@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fastlane on Dmytro&#39;s Blog</title>
     <link>http://localhost:1313/tags/fastlane/</link>
     <description>Recent content in Fastlane on Dmytro&#39;s Blog</description>
-    <image>
-      <title>Dmytro&#39;s Blog</title>
-      <url>http://localhost:1313/images/papermod-cover.png</url>
-      <link>http://localhost:1313/images/papermod-cover.png</link>
-    </image>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 19 Apr 2024 06:49:13 +0300</lastBuildDate>
@@ -18,22 +13,7 @@
       <link>http://localhost:1313/posts/delivering-ios-app-using-fastlane/</link>
       <pubDate>Fri, 19 Apr 2024 06:49:13 +0300</pubDate>
       <guid>http://localhost:1313/posts/delivering-ios-app-using-fastlane/</guid>
-      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
-&lt;p&gt;You can easily deliver an iOS app in two ways: through &lt;code&gt;beta&lt;/code&gt; and &lt;code&gt;release&lt;/code&gt; lanes.&lt;/p&gt;
-&lt;h3 id=&#34;the-first-way---testflight&#34;&gt;The First Way - TestFlight&lt;/h3&gt;
-&lt;p&gt;By creating a &lt;code&gt;beta&lt;/code&gt; &lt;code&gt;lane&lt;/code&gt; inside the &lt;code&gt;Fastfile&lt;/code&gt;. It utilizes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;build_app&lt;/code&gt;: To easily build and sign your app (via &lt;code&gt;gym&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;pilot&lt;/code&gt;: Makes it easier to manage your app on Apple’s &lt;code&gt;TestFlight&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;lane&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;:beta&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;build_app&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;ss&#34;&gt;scheme&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;YourScheme&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;pilot&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;end&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To run Fastlane:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;fastlane beta
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;attention&#34;&gt;Attention&lt;/h3&gt;
-&lt;p&gt;Before proceeding, you need to have the &lt;code&gt;ipa&lt;/code&gt; or &lt;code&gt;pkg&lt;/code&gt; file generated.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;You can easily deliver an iOS app in two ways: through &lt;code&gt;beta&lt;/code&gt; and &lt;code&gt;release&lt;/code&gt; lanes.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-first-way---testflight&#34;&gt;The First Way - TestFlight&lt;/h3&gt;&#xA;&lt;p&gt;By creating a &lt;code&gt;beta&lt;/code&gt; &lt;code&gt;lane&lt;/code&gt; inside the &lt;code&gt;Fastfile&lt;/code&gt;. It utilizes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;build_app&lt;/code&gt;: To easily build and sign your app (via &lt;code&gt;gym&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;pilot&lt;/code&gt;: Makes it easier to manage your app on Apple’s &lt;code&gt;TestFlight&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;lane&lt;/span&gt; &lt;span class=&#34;ss&#34;&gt;:beta&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;build_app&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;ss&#34;&gt;scheme&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;YourScheme&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;pilot&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;end&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To run Fastlane:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;fastlane beta&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;attention&#34;&gt;Attention&lt;/h3&gt;&#xA;&lt;p&gt;Before proceeding, you need to have the &lt;code&gt;ipa&lt;/code&gt; or &lt;code&gt;pkg&lt;/code&gt; file generated.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

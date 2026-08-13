@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HealthKit on Dmytro&#39;s Blog</title>
     <link>http://localhost:1313/tags/healthkit/</link>
     <description>Recent content in HealthKit on Dmytro&#39;s Blog</description>
-    <image>
-      <title>Dmytro&#39;s Blog</title>
-      <url>http://localhost:1313/images/papermod-cover.png</url>
-      <link>http://localhost:1313/images/papermod-cover.png</link>
-    </image>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 26 Jul 2024 07:18:58 +0300</lastBuildDate>
@@ -18,11 +13,7 @@
       <link>http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/</link>
       <pubDate>Fri, 26 Jul 2024 07:18:58 +0300</pubDate>
       <guid>http://localhost:1313/posts/implementing-healthkit-in-an-ios-app/</guid>
-      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
-&lt;p&gt;Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.&lt;/p&gt;
-&lt;h3 id=&#34;preparation&#34;&gt;Preparation&lt;/h3&gt;
-&lt;p&gt;Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store.
-Let’s add:&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;Previously, I worked with a healthcare app that used the HealthKit framework, but I did not get the opportunity to implement it myself. I decided to look into it and share what I found. In this article, I will focus on the steps to integrate HealthKit, write, and access its data.&lt;/p&gt;&#xA;&lt;h3 id=&#34;preparation&#34;&gt;Preparation&lt;/h3&gt;&#xA;&lt;p&gt;Before we dive into implementation, I assume that you have an active Apple Developer account; without it, you will not be able to access the HealthKit Store.&#xA;Let’s add:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

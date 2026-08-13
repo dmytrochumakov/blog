@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2D_Dynamic_Programming on Dmytro&#39;s Blog</title>
     <link>http://localhost:1313/tags/2d_dynamic_programming/</link>
     <description>Recent content in 2D_Dynamic_Programming on Dmytro&#39;s Blog</description>
-    <image>
-      <title>Dmytro&#39;s Blog</title>
-      <url>http://localhost:1313/images/papermod-cover.png</url>
-      <link>http://localhost:1313/images/papermod-cover.png</link>
-    </image>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 19 Apr 2026 09:15:38 +0300</lastBuildDate>
@@ -18,160 +13,63 @@
       <link>http://localhost:1313/posts/leetcode-150-regular-expression-matching/</link>
       <pubDate>Sun, 19 Apr 2026 09:15:38 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-150-regular-expression-matching/</guid>
-      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
-&lt;p&gt;Given an input string &lt;code&gt;s&lt;/code&gt; and a pattern &lt;code&gt;p&lt;/code&gt;, implement regular expression matching with support for &lt;code&gt;&#39;.&#39;&lt;/code&gt; and &lt;code&gt;&#39;*&#39;&lt;/code&gt;, where:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;&#39;.&#39;&lt;/code&gt; matches any single character.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&#39;*&#39;&lt;/code&gt; matches zero or more of the preceding element.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Return a boolean indicating whether the matching covers the entire input string (not partial).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;aa&amp;#34;, p = &amp;#34;a&amp;#34;
-Output: false
-Explanation: &amp;#34;a&amp;#34; does not match the entire string &amp;#34;aa&amp;#34;.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;&#xA;&lt;p&gt;Given an input string &lt;code&gt;s&lt;/code&gt; and a pattern &lt;code&gt;p&lt;/code&gt;, implement regular expression matching with support for &lt;code&gt;&#39;.&#39;&lt;/code&gt; and &lt;code&gt;&#39;*&#39;&lt;/code&gt;, where:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;&#39;.&#39;&lt;/code&gt; matches any single character.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;&#39;*&#39;&lt;/code&gt; matches zero or more of the preceding element.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Return a boolean indicating whether the matching covers the entire input string (not partial).&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;aa&amp;#34;, p = &amp;#34;a&amp;#34;&#xA;Output: false&#xA;Explanation: &amp;#34;a&amp;#34; does not match the entire string &amp;#34;aa&amp;#34;.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode - 150 - Burst Balloons</title>
       <link>http://localhost:1313/posts/leetcode-150-burst-balloons/</link>
       <pubDate>Thu, 09 Apr 2026 08:10:49 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-150-burst-balloons/</guid>
-      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
-&lt;p&gt;You are given &lt;code&gt;n&lt;/code&gt; balloons, indexed from &lt;code&gt;0&lt;/code&gt; to &lt;code&gt;n - 1&lt;/code&gt;. Each balloon is painted with a number on it, represented by an array &lt;code&gt;nums&lt;/code&gt;. You are asked to burst all the balloons.&lt;/p&gt;
-&lt;p&gt;If you burst the &lt;code&gt;i&lt;/code&gt;th balloon, you will get &lt;code&gt;nums[i - 1] * nums[i] * nums[i + 1]&lt;/code&gt; coins. If &lt;code&gt;i - 1&lt;/code&gt; or &lt;code&gt;i + 1&lt;/code&gt; goes out of bounds of the array, then treat it as if there is a balloon with a &lt;code&gt;1&lt;/code&gt; painted on it.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;&#xA;&lt;p&gt;You are given &lt;code&gt;n&lt;/code&gt; balloons, indexed from &lt;code&gt;0&lt;/code&gt; to &lt;code&gt;n - 1&lt;/code&gt;. Each balloon is painted with a number on it, represented by an array &lt;code&gt;nums&lt;/code&gt;. You are asked to burst all the balloons.&lt;/p&gt;&#xA;&lt;p&gt;If you burst the &lt;code&gt;i&lt;/code&gt;th balloon, you will get &lt;code&gt;nums[i - 1] * nums[i] * nums[i + 1]&lt;/code&gt; coins. If &lt;code&gt;i - 1&lt;/code&gt; or &lt;code&gt;i + 1&lt;/code&gt; goes out of bounds of the array, then treat it as if there is a balloon with a &lt;code&gt;1&lt;/code&gt; painted on it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode - 150 - Distinct Subsequences</title>
       <link>http://localhost:1313/posts/leetcode-150-distinct-subsequences/</link>
       <pubDate>Wed, 01 Apr 2026 08:04:07 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-150-distinct-subsequences/</guid>
-      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
-&lt;p&gt;Given two strings &lt;code&gt;s&lt;/code&gt; and &lt;code&gt;t&lt;/code&gt;, return &lt;em&gt;the number of distinct&lt;/em&gt; &lt;strong&gt;&lt;em&gt;subsequences&lt;/em&gt; of&lt;/strong&gt; &lt;code&gt;s&lt;/code&gt; &lt;em&gt;which equals&lt;/em&gt; &lt;code&gt;t&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The test cases are generated so that the answer fits in a 32-bit signed integer.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;rabbbit&amp;#34;, t = &amp;#34;rabbit&amp;#34;
-Output: 3
-Explanation:
-As shown below, there are 3 ways you can generate &amp;#34;rabbit&amp;#34; from s.
-rabbbit
-rabbbit
-rabbbit
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;babgbag&amp;#34;, t = &amp;#34;bag&amp;#34;
-Output: 5
-Explanation:
-As shown below, there are 5 ways you can generate &amp;#34;bag&amp;#34; from s.
-babgbag
-babgbag
-babgbag
-babgbag
-babgbag
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Constraints:&lt;/strong&gt;&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;&#xA;&lt;p&gt;Given two strings &lt;code&gt;s&lt;/code&gt; and &lt;code&gt;t&lt;/code&gt;, return &lt;em&gt;the number of distinct&lt;/em&gt; &lt;strong&gt;&lt;em&gt;subsequences&lt;/em&gt; of&lt;/strong&gt; &lt;code&gt;s&lt;/code&gt; &lt;em&gt;which equals&lt;/em&gt; &lt;code&gt;t&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The test cases are generated so that the answer fits in a 32-bit signed integer.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;rabbbit&amp;#34;, t = &amp;#34;rabbit&amp;#34;&#xA;Output: 3&#xA;Explanation:&#xA;As shown below, there are 3 ways you can generate &amp;#34;rabbit&amp;#34; from s.&#xA;rabbbit&#xA;rabbbit&#xA;rabbbit&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;babgbag&amp;#34;, t = &amp;#34;bag&amp;#34;&#xA;Output: 5&#xA;Explanation:&#xA;As shown below, there are 5 ways you can generate &amp;#34;bag&amp;#34; from s.&#xA;babgbag&#xA;babgbag&#xA;babgbag&#xA;babgbag&#xA;babgbag&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Constraints:&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode - 150 - Longest Increasing Path in a Matrix</title>
       <link>http://localhost:1313/posts/leetcode-150-longest-increasing-path-in-a-matrix/</link>
       <pubDate>Mon, 23 Mar 2026 08:15:06 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-150-longest-increasing-path-in-a-matrix/</guid>
-      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
-&lt;p&gt;Given an &lt;code&gt;m x n&lt;/code&gt; integer &lt;code&gt;matrix&lt;/code&gt;, return &lt;em&gt;the length of the longest increasing path in&lt;/em&gt; &lt;code&gt;matrix&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;From each cell, you can either move in four directions: left, right, up, or down. You &lt;strong&gt;may not&lt;/strong&gt; move &lt;strong&gt;diagonally&lt;/strong&gt; or move &lt;strong&gt;outside the boundary&lt;/strong&gt; (i.e., wrap-around is not allowed).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;
-    
-    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-31789&#34; hidden&gt;
-    &lt;label for=&#34;zoomCheck-31789&#34;&gt;
-        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
-            src=&#34;images/grid1.jpg#center&#34; alt=&#34;alt image&#34; 
-             /&gt;
-    &lt;/label&gt;
-&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: matrix = [[9,9,4],[6,6,8],[2,1,1]]
-Output: 4
-Explanation: The longest increasing path is [1, 2, 6, 9].
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;&#xA;&lt;p&gt;Given an &lt;code&gt;m x n&lt;/code&gt; integer &lt;code&gt;matrix&lt;/code&gt;, return &lt;em&gt;the length of the longest increasing path in&lt;/em&gt; &lt;code&gt;matrix&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;From each cell, you can either move in four directions: left, right, up, or down. You &lt;strong&gt;may not&lt;/strong&gt; move &lt;strong&gt;diagonally&lt;/strong&gt; or move &lt;strong&gt;outside the boundary&lt;/strong&gt; (i.e., wrap-around is not allowed).&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;    &#xA;    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-31789&#34; hidden&gt;&#xA;    &lt;label for=&#34;zoomCheck-31789&#34;&gt;&#xA;        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; &#xA;            src=&#34;images/grid1.jpg#center&#34; alt=&#34;alt image&#34; &#xA;             /&gt;&#xA;    &lt;/label&gt;&#xA;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: matrix = [[9,9,4],[6,6,8],[2,1,1]]&#xA;Output: 4&#xA;Explanation: The longest increasing path is [1, 2, 6, 9].&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode - 150 - Edit Distance</title>
       <link>http://localhost:1313/posts/leetcode-150-edit-distance/</link>
       <pubDate>Wed, 18 Mar 2026 08:15:54 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-150-edit-distance/</guid>
-      <description>&lt;p&gt;LeetCode - 150 - Edit Distance&lt;/p&gt;
-&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
-&lt;p&gt;Given two strings &lt;code&gt;word1&lt;/code&gt; and &lt;code&gt;word2&lt;/code&gt;, return &lt;em&gt;the minimum number of operations required to convert &lt;code&gt;word1&lt;/code&gt; to &lt;code&gt;word2&lt;/code&gt;&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;You have the following three operations permitted on a word:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Insert a character&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Delete a character&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Replace a character&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: word1 = &amp;#34;horse&amp;#34;, word2 = &amp;#34;ros&amp;#34;
-Output: 3
-Explanation: 
-horse -&amp;gt; rorse (replace &amp;#39;h&amp;#39; with &amp;#39;r&amp;#39;)
-rorse -&amp;gt; rose (remove &amp;#39;r&amp;#39;)
-rose -&amp;gt; ros (remove &amp;#39;e&amp;#39;)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;LeetCode - 150 - Edit Distance&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;&#xA;&lt;p&gt;Given two strings &lt;code&gt;word1&lt;/code&gt; and &lt;code&gt;word2&lt;/code&gt;, return &lt;em&gt;the minimum number of operations required to convert &lt;code&gt;word1&lt;/code&gt; to &lt;code&gt;word2&lt;/code&gt;&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;You have the following three operations permitted on a word:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Insert a character&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Delete a character&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Replace a character&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: word1 = &amp;#34;horse&amp;#34;, word2 = &amp;#34;ros&amp;#34;&#xA;Output: 3&#xA;Explanation: &#xA;horse -&amp;gt; rorse (replace &amp;#39;h&amp;#39; with &amp;#39;r&amp;#39;)&#xA;rorse -&amp;gt; rose (remove &amp;#39;r&amp;#39;)&#xA;rose -&amp;gt; ros (remove &amp;#39;e&amp;#39;)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode - 150 - Interleaving String</title>
       <link>http://localhost:1313/posts/leetcode-150-interleaving-string/</link>
       <pubDate>Mon, 09 Mar 2026 08:21:45 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-150-interleaving-string/</guid>
-      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
-&lt;p&gt;Given strings &lt;code&gt;s1&lt;/code&gt;, &lt;code&gt;s2&lt;/code&gt;, and &lt;code&gt;s3&lt;/code&gt;, find whether &lt;code&gt;s3&lt;/code&gt; is formed by an &lt;strong&gt;interleaving&lt;/strong&gt; of &lt;code&gt;s1&lt;/code&gt; and &lt;code&gt;s2&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;An &lt;strong&gt;interleaving&lt;/strong&gt; of two strings &lt;code&gt;s&lt;/code&gt; and &lt;code&gt;t&lt;/code&gt; is a configuration where &lt;code&gt;s&lt;/code&gt; and &lt;code&gt;t&lt;/code&gt; are divided into &lt;code&gt;n&lt;/code&gt; and &lt;code&gt;m&lt;/code&gt; substrings respectively, such that:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;s = s1 + s2 + ... + sn&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;t = t1 + t2 + ... + tm&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;|n - m| &amp;lt;= 1&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;The &lt;strong&gt;interleaving&lt;/strong&gt; is &lt;code&gt;s1 + t1 + s2 + t2 + s3 + t3 + ...&lt;/code&gt; or &lt;code&gt;t1 + s1 + t2 + s2 + t3 + s3 + ...&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;code&gt;a + b&lt;/code&gt; is the concatenation of strings &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt;.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;&#xA;&lt;p&gt;Given strings &lt;code&gt;s1&lt;/code&gt;, &lt;code&gt;s2&lt;/code&gt;, and &lt;code&gt;s3&lt;/code&gt;, find whether &lt;code&gt;s3&lt;/code&gt; is formed by an &lt;strong&gt;interleaving&lt;/strong&gt; of &lt;code&gt;s1&lt;/code&gt; and &lt;code&gt;s2&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;An &lt;strong&gt;interleaving&lt;/strong&gt; of two strings &lt;code&gt;s&lt;/code&gt; and &lt;code&gt;t&lt;/code&gt; is a configuration where &lt;code&gt;s&lt;/code&gt; and &lt;code&gt;t&lt;/code&gt; are divided into &lt;code&gt;n&lt;/code&gt; and &lt;code&gt;m&lt;/code&gt; substrings respectively, such that:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;s = s1 + s2 + ... + sn&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;t = t1 + t2 + ... + tm&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;|n - m| &amp;lt;= 1&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;The &lt;strong&gt;interleaving&lt;/strong&gt; is &lt;code&gt;s1 + t1 + s2 + t2 + s3 + t3 + ...&lt;/code&gt; or &lt;code&gt;t1 + s1 + t2 + s2 + t3 + s3 + ...&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;code&gt;a + b&lt;/code&gt; is the concatenation of strings &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode - 150 - Target Sum</title>
       <link>http://localhost:1313/posts/leetcode-150-target-sum/</link>
       <pubDate>Fri, 27 Feb 2026 07:53:51 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-150-target-sum/</guid>
-      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
-&lt;p&gt;You are given an integer array &lt;code&gt;nums&lt;/code&gt; and an integer &lt;code&gt;target&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;You want to build an &lt;strong&gt;expression&lt;/strong&gt; out of &lt;code&gt;nums&lt;/code&gt; by adding one of the symbols &lt;code&gt;&#39;+&#39;&lt;/code&gt; and &lt;code&gt;&#39;-&#39;&lt;/code&gt; before each integer in &lt;code&gt;nums&lt;/code&gt; and then concatenate all the integers.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;For example, if &lt;code&gt;nums = [2, 1]&lt;/code&gt;, you can add a &lt;code&gt;&#39;+&#39;&lt;/code&gt; before &lt;code&gt;2&lt;/code&gt; and a &lt;code&gt;&#39;-&#39;&lt;/code&gt; before &lt;code&gt;1&lt;/code&gt; and concatenate them to build the expression &lt;code&gt;&amp;quot;+2-1&amp;quot;&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Return the number of different &lt;strong&gt;expressions&lt;/strong&gt; that you can build that evaluate to &lt;code&gt;target&lt;/code&gt;.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;&#xA;&lt;p&gt;You are given an integer array &lt;code&gt;nums&lt;/code&gt; and an integer &lt;code&gt;target&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;You want to build an &lt;strong&gt;expression&lt;/strong&gt; out of &lt;code&gt;nums&lt;/code&gt; by adding one of the symbols &lt;code&gt;&#39;+&#39;&lt;/code&gt; and &lt;code&gt;&#39;-&#39;&lt;/code&gt; before each integer in &lt;code&gt;nums&lt;/code&gt; and then concatenate all the integers.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;For example, if &lt;code&gt;nums = [2, 1]&lt;/code&gt;, you can add a &lt;code&gt;&#39;+&#39;&lt;/code&gt; before &lt;code&gt;2&lt;/code&gt; and a &lt;code&gt;&#39;-&#39;&lt;/code&gt; before &lt;code&gt;1&lt;/code&gt; and concatenate them to build the expression &lt;code&gt;&amp;quot;+2-1&amp;quot;&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Return the number of different &lt;strong&gt;expressions&lt;/strong&gt; that you can build that evaluate to &lt;code&gt;target&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode - 150 - Coin Change II</title>
       <link>http://localhost:1313/posts/leetcode-150-coin-change-ii/</link>
       <pubDate>Wed, 18 Feb 2026 09:09:47 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-150-coin-change-ii/</guid>
-      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
-&lt;p&gt;You are given an integer array &lt;code&gt;coins&lt;/code&gt; representing coins of different denominations and an integer &lt;code&gt;amount&lt;/code&gt; representing a total amount of money.&lt;/p&gt;
-&lt;p&gt;Return &lt;em&gt;the number of combinations that make up that amount&lt;/em&gt;. If that amount of money cannot be made up by any combination of the coins, return &lt;code&gt;0&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;You may assume that you have an infinite number of each kind of coin.&lt;/p&gt;
-&lt;p&gt;The answer is &lt;strong&gt;guaranteed&lt;/strong&gt; to fit into a signed &lt;strong&gt;32-bit&lt;/strong&gt; integer.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;&#xA;&lt;p&gt;You are given an integer array &lt;code&gt;coins&lt;/code&gt; representing coins of different denominations and an integer &lt;code&gt;amount&lt;/code&gt; representing a total amount of money.&lt;/p&gt;&#xA;&lt;p&gt;Return &lt;em&gt;the number of combinations that make up that amount&lt;/em&gt;. If that amount of money cannot be made up by any combination of the coins, return &lt;code&gt;0&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;You may assume that you have an infinite number of each kind of coin.&lt;/p&gt;&#xA;&lt;p&gt;The answer is &lt;strong&gt;guaranteed&lt;/strong&gt; to fit into a signed &lt;strong&gt;32-bit&lt;/strong&gt; integer.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode - 150 - Best Time to Buy and Sell Stock with Cooldown</title>
       <link>http://localhost:1313/posts/leetcode-150-best-time-to-buy-and-sell-stock-with-cooldown/</link>
       <pubDate>Tue, 03 Feb 2026 11:42:54 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-150-best-time-to-buy-and-sell-stock-with-cooldown/</guid>
-      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
-&lt;p&gt;You are given an array &lt;code&gt;prices&lt;/code&gt; where &lt;code&gt;prices[i]&lt;/code&gt; is the price of a given stock on the &lt;code&gt;i&lt;/code&gt;-th day.&lt;/p&gt;
-&lt;p&gt;Find the maximum profit you can achieve. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times) with the following restrictions:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;After you sell your stock, you cannot buy stock on the next day (i.e., cooldown one day).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;&#xA;&lt;p&gt;You are given an array &lt;code&gt;prices&lt;/code&gt; where &lt;code&gt;prices[i]&lt;/code&gt; is the price of a given stock on the &lt;code&gt;i&lt;/code&gt;-th day.&lt;/p&gt;&#xA;&lt;p&gt;Find the maximum profit you can achieve. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times) with the following restrictions:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;After you sell your stock, you cannot buy stock on the next day (i.e., cooldown one day).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
