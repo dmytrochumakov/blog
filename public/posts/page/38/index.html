@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85fb0af2aff7cd05c393b38b9aa1eec4278c2f2948eeadf67c490cd3feb36131.css" integrity="sha256-hfsK8q/3zQXDk7OLmqHuxCeMLylI7q32fEkM0/6zYTE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml" title="rss">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
 <noscript>
     <style>
@@ -41,38 +41,23 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
-                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .toc {
-                background: var(--entry);
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
             }
-        }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><style>
+</noscript><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -109,10 +94,10 @@
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-  <meta name="twitter:title" content="Posts">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="Posts">
+<meta name="twitter:description" content="">
 
 
 <script type="application/ld+json">
@@ -130,8 +115,8 @@
 }
 </script>
 </head>
+
 <body class="list" id="top">
-    
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -209,6 +194,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Implementing gRPC Swift
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction I’ve never had the chance to use this technology before. I’ve always wondered how gRPC operates. In this article, I will explore what gRPC is, how to install and use it, and when to use gRPC.
+What is gRPC? gRPC is an open-source, high-performance framework that facilitates efficient communication in distributed systems. gRPC is an implementation of the RPC (Remote Procedure Call) protocol, which enables services to call functions on other machines as if they were local software methods. gRPC was developed by Google in 2015, and it includes several features that enhance the way remote procedure calls are made. For instance, its use of Protocol Buffers (Protobuf) supports strongly typed service contracts, data serialization, and code generation in a variety of programming languages. It also uses HTTP/2 as its transport protocol, which facilitates bi-directional streaming and reduces latency.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-07-16 07:16:41 +0300 EEST'>July 16, 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Implementing gRPC Swift" href="http://localhost:1313/posts/implementing-grpc-swift/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Scanning NFC tags using CoreNFC in an iOS app
     </h2>
   </header>
@@ -218,7 +217,7 @@ Preparation Before we begin, let’s add the necessary objects:
 Near Field Communication Tag Reading capability to the project. Privacy - NFC Scan Usage Description key to Info.plist. Near Field Communication Tag Reader Session Formats to the entitlements file. First Step The first step before starting scanning is to check if the device supports NFC reading by using the NFCNDEFReaderSession.readingAvailable property.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-07-12 07:27:51 +0300 EEST'>July 12, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-07-12 07:27:51 +0300 EEST'>July 12, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Scanning NFC tags using CoreNFC in an iOS app" href="http://localhost:1313/posts/scanning-nfc-tags-using-corenfc-in-an-ios-app/"></a>
 </article>
 
@@ -233,7 +232,7 @@ Before adding any code to application, I always asked myself about two scenarios
 The first scenario is when the device acts as a central device while searching for and connecting to peripheral devices. The second scenario is when the device acts as a peripheral device by using CBCharacteristic and changes its value. In this article, I will focus on the first scenario and will show how to scan for peripheral devices.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-07-10 07:27:14 +0300 EEST'>July 10, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-07-10 07:27:14 +0300 EEST'>July 10, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Scanning for peripheral devices using BLE in an iOS app" href="http://localhost:1313/posts/scanning-for-peripheral-devices-using-ble-in-an-ios-app/"></a>
 </article>
 
@@ -247,7 +246,7 @@ The first scenario is when the device acts as a central device while searching f
 To find the issue, you need to open Xcode and go to the Debug Navigator.
 In the Debug Navigator, you will see the Energy Impact gauge. In the histogram, blue indicates good performance, while red indicates overhead. Based on this information, you can analyze the overhead and resolve potential issues by utilizing Instruments such as Network, Location, CPU Profile, etc. For each case, Xcode provides instruments that allow you to dive deeper and understand what is happening in detail. ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-07-07 07:25:40 +0300 EEST'>July 7, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-07-07 07:25:40 +0300 EEST'>July 7, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Battery Performance Testing for iOS App" href="http://localhost:1313/posts/battery-performance-testing-for-ios-app/"></a>
 </article>
 
@@ -263,21 +262,8 @@ First Step The first step is to initialize player using SKSpriteNode, set up pla
 SKSpriteNode - is an onscreen graphical element that can be initialized from an image or a solid color.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-07-03 06:39:04 +0300 EEST'>July 3, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-07-03 06:39:04 +0300 EEST'>July 3, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Creating a 2D Space Game for iOS Using SpriteKit - Part 2" href="http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-2/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Creating a 2D Space Game for iOS Using SpriteKit - Part 1
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction I have never tried creating a game before; it feels like magic to me. I know that games have an enormous amount of underlying layers of abstractions and tools such as game engines, rendering, and so on. I have always been eager to learn at least 1% of the game creation process. In this article, I’m going to explore step-by-step instructions for creating a game for the iOS platform using SpriteKit.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-06-28 07:18:59 +0300 EEST'>June 28, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to Creating a 2D Space Game for iOS Using SpriteKit - Part 1" href="http://localhost:1313/posts/creating-2d-space-game-for-ios-using-spritekit-part-1/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
@@ -321,14 +307,9 @@ SKSpriteNode - is an onscreen graphical element that can be initialized from an 
 </script>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -369,12 +350,11 @@ SKSpriteNode - is an onscreen graphical element that can be initialized from an 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

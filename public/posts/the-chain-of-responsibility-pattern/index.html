@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -91,7 +91,7 @@ Thank you for reading! 😊">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/the-chain-of-responsibility-pattern/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85fb0af2aff7cd05c393b38b9aa1eec4278c2f2948eeadf67c490cd3feb36131.css" integrity="sha256-hfsK8q/3zQXDk7OLmqHuxCeMLylI7q32fEkM0/6zYTE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -120,38 +120,23 @@ Thank you for reading! 😊">
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
-                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .toc {
-                background: var(--entry);
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
             }
-        }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><style>
+</noscript><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -199,14 +184,90 @@ Dynamic Request Handling: It enables dynamic assignment of responsibilities at r
     <meta property="article:tag" content="Swift">
     <meta property="article:tag" content="Oop">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="The Chain Of Responsibility Pattern">
+<meta name="twitter:description" content="What is a Chain Of Responsibility Pattern?
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-  <meta name="twitter:title" content="The Chain Of Responsibility Pattern">
-  <meta name="twitter:description" content="What is a Chain Of Responsibility Pattern? The Chain Of Responsibility Pattern helps create a chain of objects to examine requests. Each object in turn examines a request and either handles it or passes onto the next object in the chain.
+The Chain Of Responsibility Pattern helps create a chain of objects to examine requests. Each object in turn examines a request and either handles it or passes onto the next object in the chain.
+
+
+    
+    
+    
+        
+    
+
 Source
-What problems does it solve? The Chain Of Responsibility Pattern (CoR) helps solve following problems:
-Dynamic Request Handling: It enables dynamic assignment of responsibilities at runtime. Handlers can be added, removed, or reordered without affecting the client’s code. This flexibility allows for easier maintenance and extension of the system. Decoupling Sender and Receiver: In traditional systems, a sender often needs to know the exact receiver of a request, leading to tight coupling between them. The CoR pattern decouples senders from receivers by allowing multiple objects to handle a request without the sender knowing the specific handler. Real-world code example // Protocol defining the handler interface protocol PurchaseHandler { var next: PurchaseHandler? { get set } func handleRequest(amount: Double) } // Concrete handlers class SmallPurchaseHandler: PurchaseHandler { var next: PurchaseHandler? let maxAmount: Double = 100.0 func handleRequest(amount: Double) { if amount &lt;= maxAmount { print(&#34;SmallPurchaseHandler: Purchase approved for $\(amount)&#34;) } else if let nextHandler = next { print(&#34;SmallPurchaseHandler: Passing request to next handler&#34;) nextHandler.handleRequest(amount: amount) } else { print(&#34;SmallPurchaseHandler: No handler available, purchase rejected&#34;) } } } class MediumPurchaseHandler: PurchaseHandler { var next: PurchaseHandler? let maxAmount: Double = 500.0 func handleRequest(amount: Double) { if amount &lt;= maxAmount { print(&#34;MediumPurchaseHandler: Purchase approved for $\(amount)&#34;) } else if let nextHandler = next { print(&#34;MediumPurchaseHandler: Passing request to next handler&#34;) nextHandler.handleRequest(amount: amount) } else { print(&#34;MediumPurchaseHandler: No handler available, purchase rejected&#34;) } } } class LargePurchaseHandler: PurchaseHandler { var next: PurchaseHandler? func handleRequest(amount: Double) { print(&#34;LargePurchaseHandler: Purchase approved for $\(amount)&#34;) } } // Usage func main() { let smallHandler = SmallPurchaseHandler() let mediumHandler = MediumPurchaseHandler() let largeHandler = LargePurchaseHandler() // Connecting handlers into a chain smallHandler.next = mediumHandler mediumHandler.next = largeHandler smallHandler.handleRequest(amount: 50.0) smallHandler.handleRequest(amount: 200.0) smallHandler.handleRequest(amount: 1000.0) } Thank you for reading! 😊">
+What problems does it solve?
+The Chain Of Responsibility Pattern (CoR) helps solve following problems:
+
+Dynamic Request Handling: It enables dynamic assignment of responsibilities at runtime. Handlers can be added, removed, or reordered without affecting the client’s code. This flexibility allows for easier maintenance and extension of the system.
+Decoupling Sender and Receiver: In traditional systems, a sender often needs to know the exact receiver of a request, leading to tight coupling between them. The CoR pattern decouples senders from receivers by allowing multiple objects to handle a request without the sender knowing the specific handler.
+
+Real-world code example
+// Protocol defining the handler interface
+protocol PurchaseHandler {
+    var next: PurchaseHandler? { get set }
+    func handleRequest(amount: Double)
+}
+
+// Concrete handlers
+class SmallPurchaseHandler: PurchaseHandler {
+    var next: PurchaseHandler?
+    let maxAmount: Double = 100.0
+    
+    func handleRequest(amount: Double) {
+        if amount &lt;= maxAmount {
+            print(&#34;SmallPurchaseHandler: Purchase approved for $\(amount)&#34;)
+        } else if let nextHandler = next {
+            print(&#34;SmallPurchaseHandler: Passing request to next handler&#34;)
+            nextHandler.handleRequest(amount: amount)
+        } else {
+            print(&#34;SmallPurchaseHandler: No handler available, purchase rejected&#34;)
+        }
+    }
+}
+
+class MediumPurchaseHandler: PurchaseHandler {
+    var next: PurchaseHandler?
+    let maxAmount: Double = 500.0
+    
+    func handleRequest(amount: Double) {
+        if amount &lt;= maxAmount {
+            print(&#34;MediumPurchaseHandler: Purchase approved for $\(amount)&#34;)
+        } else if let nextHandler = next {
+            print(&#34;MediumPurchaseHandler: Passing request to next handler&#34;)
+            nextHandler.handleRequest(amount: amount)
+        } else {
+            print(&#34;MediumPurchaseHandler: No handler available, purchase rejected&#34;)
+        }
+    }
+}
+
+class LargePurchaseHandler: PurchaseHandler {
+    var next: PurchaseHandler?
+    
+    func handleRequest(amount: Double) {
+        print(&#34;LargePurchaseHandler: Purchase approved for $\(amount)&#34;)
+    }
+}
+
+// Usage
+func main() {
+    let smallHandler = SmallPurchaseHandler()
+    let mediumHandler = MediumPurchaseHandler()
+    let largeHandler = LargePurchaseHandler()
+    
+    // Connecting handlers into a chain
+    smallHandler.next = mediumHandler
+    mediumHandler.next = largeHandler
+    
+    smallHandler.handleRequest(amount: 50.0)
+    smallHandler.handleRequest(amount: 200.0)
+    smallHandler.handleRequest(amount: 1000.0) 
+}
+Thank you for reading! 😊">
 
 
 <script type="application/ld+json">
@@ -263,8 +324,8 @@ Dynamic Request Handling: It enables dynamic assignment of responsibilities at r
 }
 </script>
 </head>
-<body id="top">
-    
+
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -341,7 +402,7 @@ Dynamic Request Handling: It enables dynamic assignment of responsibilities at r
     <h1 class="post-title entry-hint-parent">
       The Chain Of Responsibility Pattern
     </h1>
-    <div class="post-meta"><span title='2024-03-15 08:29:30 +0300 +0300'>March 15, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span>
+    <div class="post-meta"><span title='2024-03-15 08:29:30 +0300 +0300'>March 15, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov
 
 </div>
   </header> <div class="toc">
@@ -594,14 +655,9 @@ Dynamic Request Handling: It enables dynamic assignment of responsibilities at r
 </script>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -642,12 +698,11 @@ Dynamic Request Handling: It enables dynamic assignment of responsibilities at r
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

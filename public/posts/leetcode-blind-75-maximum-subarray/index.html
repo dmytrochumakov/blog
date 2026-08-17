@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,7 +31,7 @@ Follow up: If you have figured out the O(n) solution, try coding another solutio
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/leetcode-blind-75-maximum-subarray/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85fb0af2aff7cd05c393b38b9aa1eec4278c2f2948eeadf67c490cd3feb36131.css" integrity="sha256-hfsK8q/3zQXDk7OLmqHuxCeMLylI7q32fEkM0/6zYTE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -60,38 +60,23 @@ Follow up: If you have figured out the O(n) solution, try coding another solutio
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
-                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .toc {
-                background: var(--entry);
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
             }
-        }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><style>
+</noscript><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -138,13 +123,30 @@ Examples Input: nums = [-2,1,-3,4,-1,2,1,-5,4] Output: 6 Explanation: The subarr
     <meta property="article:tag" content="Maximum Subarray">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="LeetCode - Blind 75 - Maximum Subarray">
+<meta name="twitter:description" content="The problem
+Given an integer array nums, find the subarray with the largest sum, and return its sum.
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-  <meta name="twitter:title" content="LeetCode - Blind 75 - Maximum Subarray">
-  <meta name="twitter:description" content="The problem Given an integer array nums, find the subarray with the largest sum, and return its sum.
 A subarray is a contiguous non-empty sequence of elements within an array.
-Examples Input: nums = [-2,1,-3,4,-1,2,1,-5,4] Output: 6 Explanation: The subarray [4,-1,2,1] has the largest sum 6. Input: nums = [1] Output: 1 Explanation: The subarray [1] has the largest sum 1. Input: nums = [5,4,-1,7,8] Output: 23 Explanation: The subarray [5,4,-1,7,8] has the largest sum 23. Constraints 1 &lt;= nums.length &lt;= 10⁵ -10⁴ &lt;= nums[i] &lt;= 10⁴ Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.">
+
+Examples
+Input: nums = [-2,1,-3,4,-1,2,1,-5,4]  
+Output: 6  
+Explanation: The subarray [4,-1,2,1] has the largest sum 6.
+Input: nums = [1]  
+Output: 1  
+Explanation: The subarray [1] has the largest sum 1.
+Input: nums = [5,4,-1,7,8]  
+Output: 23  
+Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.
+Constraints
+
+1 &lt;= nums.length &lt;= 10⁵
+-10⁴ &lt;= nums[i] &lt;= 10⁴
+
+Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.">
 
 
 <script type="application/ld+json">
@@ -201,8 +203,8 @@ Examples Input: nums = [-2,1,-3,4,-1,2,1,-5,4] Output: 6 Explanation: The subarr
 }
 </script>
 </head>
-<body id="top">
-    
+
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -279,7 +281,7 @@ Examples Input: nums = [-2,1,-3,4,-1,2,1,-5,4] Output: 6 Explanation: The subarr
     <h1 class="post-title entry-hint-parent">
       LeetCode - Blind 75 - Maximum Subarray
     </h1>
-    <div class="post-meta"><span title='2025-04-10 07:40:25 +0300 EEST'>April 10, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span>
+    <div class="post-meta"><span title='2025-04-10 07:40:25 +0300 EEST'>April 10, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov
 
 </div>
   </header> <div class="toc">
@@ -587,14 +589,9 @@ Let’s look at the example with input <code>nums = [-2,1,-3,4,-1,2,1,-5,4]</cod
 </script>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -635,12 +632,11 @@ Let’s look at the example with input <code>nums = [-2,1,-3,4,-1,2,1,-5,4]</cod
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

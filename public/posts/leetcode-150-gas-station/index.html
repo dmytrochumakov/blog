@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,7 @@ Given two integer arrays gas and cost, return the starting gas station&rsquo;s i
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/leetcode-150-gas-station/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85fb0af2aff7cd05c393b38b9aa1eec4278c2f2948eeadf67c490cd3feb36131.css" integrity="sha256-hfsK8q/3zQXDk7OLmqHuxCeMLylI7q32fEkM0/6zYTE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -43,38 +43,23 @@ Given two integer arrays gas and cost, return the starting gas station&rsquo;s i
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
-                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .toc {
-                background: var(--entry);
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
             }
-        }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><style>
+</noscript><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -122,13 +107,13 @@ Given two integer arrays gas and cost, return the starting gas station’s index
     <meta property="article:tag" content="Greedy">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-  <meta name="twitter:title" content="LeetCode - 150 - Gas Station">
-  <meta name="twitter:description" content="The problem There are n gas stations along a circular route, where the amount of gas at the ith station is gas[i].
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="LeetCode - 150 - Gas Station">
+<meta name="twitter:description" content="The problem
+There are n gas stations along a circular route, where the amount of gas at the ith station is gas[i].
 You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from the ith station to its next (i &#43; 1)th station. You begin the journey with an empty tank at one of the gas stations.
-Given two integer arrays gas and cost, return the starting gas station’s index if you can travel around the circuit once in the clockwise direction, otherwise return -1. If there exists a solution, it is guaranteed to be unique.">
+Given two integer arrays gas and cost, return the starting gas station&rsquo;s index if you can travel around the circuit once in the clockwise direction, otherwise return -1. If there exists a solution, it is guaranteed to be unique.">
 
 
 <script type="application/ld+json">
@@ -185,8 +170,8 @@ Given two integer arrays gas and cost, return the starting gas station’s index
 }
 </script>
 </head>
-<body id="top">
-    
+
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -263,7 +248,7 @@ Given two integer arrays gas and cost, return the starting gas station’s index
     <h1 class="post-title entry-hint-parent">
       LeetCode - 150 - Gas Station
     </h1>
-    <div class="post-meta"><span title='2026-05-02 10:02:45 +0300 EEST'>May 2, 2026</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span>
+    <div class="post-meta"><span title='2026-05-02 10:02:45 +0300 EEST'>May 2, 2026</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov
 
 </div>
   </header> <div class="toc">
@@ -577,14 +562,9 @@ The first <strong>three</strong> elements in <strong>diff</strong> are going to 
 </script>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -625,12 +605,11 @@ The first <strong>three</strong> elements in <strong>diff</strong> are going to 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

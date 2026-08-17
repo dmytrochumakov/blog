@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/leetcode/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85fb0af2aff7cd05c393b38b9aa1eec4278c2f2948eeadf67c490cd3feb36131.css" integrity="sha256-hfsK8q/3zQXDk7OLmqHuxCeMLylI7q32fEkM0/6zYTE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/leetcode/index.xml" title="rss">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/leetcode/index.xml">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/leetcode/">
 <noscript>
     <style>
@@ -41,38 +41,23 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
-                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .toc {
-                background: var(--entry);
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
             }
-        }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><style>
+</noscript><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -109,14 +94,14 @@
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-  <meta name="twitter:title" content="LeetCode">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="LeetCode">
+<meta name="twitter:description" content="">
 
 </head>
+
 <body class="list" id="top">
-    
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -194,6 +179,20 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - 150 - Cheapest Flights Within K Stops
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem There are n cities connected by some number of flights. You are given an array flights where flights[i] = [from_i, to_i, price_i] indicates that there is a flight from city from_i to city to_i with cost price_i.
+You are also given three integers src, dst, and k, return the cheapest price from src to dst with at most k stops. If there is no such route, return -1.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-01-11 08:57:42 +0300 +0300'>January 11, 2026</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - 150 - Cheapest Flights Within K Stops" href="http://localhost:1313/posts/leetcode-150-cheapest-flights-within-k-stops/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - 150 - Swim in Rising Water
     </h2>
   </header>
@@ -203,7 +202,7 @@ It starts raining, and water gradually rises over time. At time t, the water lev
 You can swim from a square to another 4-directionally adjacent square if and only if the elevation of both squares individually is at most t. You can swim infinite distances in zero time. Of course, you must stay within the boundaries of the grid during your swim.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-01-05 14:13:59 +0300 +0300'>January 5, 2026</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2026-01-05 14:13:59 +0300 +0300'>January 5, 2026</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Swim in Rising Water" href="http://localhost:1313/posts/leetcode-150-swim-in-rising-water/"></a>
 </article>
 
@@ -218,7 +217,7 @@ The cost of connecting two points [xi, yi] and [xj, yj] is the Manhattan distanc
 Return the minimum cost to make all points connected. All points are connected if there is exactly one simple path between any two points.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-12-29 08:06:06 +0300 +0300'>December 29, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-12-29 08:06:06 +0300 +0300'>December 29, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Min Cost to Connect All Points" href="http://localhost:1313/posts/leetcode-150-min-cost-to-connect-all-points/"></a>
 </article>
 
@@ -232,7 +231,7 @@ Return the minimum cost to make all points connected. All points are connected i
 All of the tickets belong to a man who departs from &#34;JFK&#34;, thus, the itinerary must begin with &#34;JFK&#34;. If there are multiple valid itineraries, you should return the itinerary that has the smallest lexical order when read as a single string.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-12-12 07:55:47 +0300 +0300'>December 12, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-12-12 07:55:47 +0300 +0300'>December 12, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Reconstruct Itinerary" href="http://localhost:1313/posts/leetcode-150-reconstruct-itinerary/"></a>
 </article>
 
@@ -246,29 +245,15 @@ All of the tickets belong to a man who departs from &#34;JFK&#34;, thus, the iti
 We will send a signal from a given node k. Return the minimum time it takes for all the n nodes to receive the signal. If it is impossible for all the n nodes to receive the signal, return -1.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-11-28 09:02:09 +0300 +0300'>November 28, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-11-28 09:02:09 +0300 +0300'>November 28, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Network Delay Time" href="http://localhost:1313/posts/leetcode-150-network-delay-time/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - 150 - Word Ladder
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The problem A transformation sequence from word beginWord to word endWord using a dictionary wordList is a sequence of words beginWord -&gt; s1 -&gt; s2 -&gt; ... -&gt; sk such that:
-Every adjacent pair of words differs by a single letter. Every si for 1 &lt;= i &lt;= k is in wordList. Note that beginWord does not need to be in wordList. sk == endWord Given two words, beginWord and endWord, and a dictionary wordList, return the number of words in the shortest transformation sequence from beginWord to endWord, or 0 if no such sequence exists.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-11-17 07:48:00 +0300 +0300'>November 17, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode - 150 - Word Ladder" href="http://localhost:1313/posts/leetcode-150-word-ladder/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/leetcode/page/5/">
-      «&nbsp;Prev&nbsp;5/30
+      «&nbsp;Prev&nbsp;5/31
     </a>
-    <a class="next" href="http://localhost:1313/tags/leetcode/page/7/">Next&nbsp;7/30&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/leetcode/page/7/">Next&nbsp;7/31&nbsp;»
     </a>
   </nav>
 </footer>
@@ -305,14 +290,9 @@ Every adjacent pair of words differs by a single letter. Every si for 1 &lt;= i 
 </script>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -353,12 +333,11 @@ Every adjacent pair of words differs by a single letter. Every si for 1 &lt;= i 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

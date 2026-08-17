@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/leetcode/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85fb0af2aff7cd05c393b38b9aa1eec4278c2f2948eeadf67c490cd3feb36131.css" integrity="sha256-hfsK8q/3zQXDk7OLmqHuxCeMLylI7q32fEkM0/6zYTE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/leetcode/index.xml" title="rss">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/leetcode/index.xml">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/leetcode/">
 <noscript>
     <style>
@@ -41,38 +41,23 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
-                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .toc {
-                background: var(--entry);
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
             }
-        }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><style>
+</noscript><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -109,14 +94,14 @@
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-  <meta name="twitter:title" content="LeetCode">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="LeetCode">
+<meta name="twitter:description" content="">
 
 </head>
+
 <body class="list" id="top">
-    
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -194,6 +179,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - 150 - Sliding Window Maximum
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem You are given an array of integers nums, and there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position.
+Return the max sliding window.
+Examples Input: nums = [1,3,-1,-3,5,3,6,7], k = 3 Output: [3,3,5,5,6,7] Explanation: Window position Max --------------- ----- [1 3 -1] -3 5 3 6 7 3 1 [3 -1 -3] 5 3 6 7 3 1 3 [-1 -3 5] 3 6 7 5 1 3 -1 [-3 5 3] 6 7 5 1 3 -1 -3 [5 3 6] 7 6 1 3 -1 -3 5 [3 6 7] 7 Input: nums = [1], k = 1 Output: [1] Constraints 1 &lt;= nums.length &lt;= 10^5 -10^4 &lt;= nums[i] &lt;= 10^4 1 &lt;= k &lt;= nums.length Explanation Before we jump into the solution, let’s look at our example with nums = [1,3,-1,-3,5,3,6,7], k = 3 We can see that at the first position we have max value 3, which we add to our output array.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-06-02 07:18:22 +0300 EEST'>June 2, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - 150 - Sliding Window Maximum" href="http://localhost:1313/posts/leetcode-150-sliding-window-maximum/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - 150 - Permutation in String
     </h2>
   </header>
@@ -206,7 +206,7 @@ We are looking for a permutation of s1 in s2 with the size of s1.
 In the example, we can see that we have a permutation of s1 = &#34;ab&#34; in s2 = &#34;eidbaooo&#34; but in a different order.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-05-28 07:53:36 +0300 EEST'>May 28, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-05-28 07:53:36 +0300 EEST'>May 28, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Permutation in String" href="http://localhost:1313/posts/leetcode-150-permutation-in-string/"></a>
 </article>
 
@@ -220,7 +220,7 @@ In the example, we can see that we have a permutation of s1 = &#34;ab&#34; in s2
 Examples Input: height = [0,1,0,2,1,0,1,3,2,1,2,1] Output: 6 Explanation: The above elevation map (black section) is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water (blue section) are being trapped. Input: height = [4,2,0,3,2,5] Output: 9 Constraints n == height.length 1 &lt;= n &lt;= 2 * 10^4 0 &lt;= height[i] &lt;= 10^5 Explanation Let’s look at our example and determine the algorithm of how much water each position could trap.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-05-23 07:18:50 +0300 EEST'>May 23, 2025</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-05-23 07:18:50 +0300 EEST'>May 23, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Trapping Rain Water" href="http://localhost:1313/posts/leetcode-150-trapping-rain-water/"></a>
 </article>
 
@@ -235,7 +235,7 @@ Return the indices of the two numbers, index1 and index2, added by one as 
 The tests are generated such that there is exactly one solution. You may not use the same element twice.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-05-19 07:17:39 +0300 EEST'>May 19, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-05-19 07:17:39 +0300 EEST'>May 19, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Two Sum II - Input Array Is Sorted" href="http://localhost:1313/posts/leetcode-150-two-sum-ii-input-array-is-sorted/"></a>
 </article>
 
@@ -249,30 +249,15 @@ The tests are generated such that there is exactly one solution. You may not 
 Each row must contain the digits 1-9 without repetition. Each column must contain the digits 1-9 without repetition. Each of the nine 3 x 3 sub-boxes of the grid must contain the digits 1-9 without repetition. Note:
 A Sudoku board (partially filled) could be valid but is not necessarily solvable. Only the filled cells need to be validated according to the mentioned rules. Examples ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-05-16 08:02:42 +0300 EEST'>May 16, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-05-16 08:02:42 +0300 EEST'>May 16, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Valid Sudoku" href="http://localhost:1313/posts/leetcode-150-valid-sudoku/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Sum of Two Integers
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The problem Given two integers a and b, return the sum of the two integers without using the operators &#43; and -.
-Examples Input: a = 1, b = 2 Output: 3 Input: a = 2, b = 3 Output: 5 Constraints -1000 &lt;= a, b &lt;= 1000 Explanation From the description of the problem, we learn that we need to figure out the way of adding two numbers without using &#43; or - operators.
-Let’s visualize this problem and find the way we can do it.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-05-14 07:56:51 +0300 EEST'>May 14, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Sum of Two Integers" href="http://localhost:1313/posts/leetcode-blind-75-sum-of-two-integers/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/leetcode/page/14/">
-      «&nbsp;Prev&nbsp;14/30
+      «&nbsp;Prev&nbsp;14/31
     </a>
-    <a class="next" href="http://localhost:1313/tags/leetcode/page/16/">Next&nbsp;16/30&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/leetcode/page/16/">Next&nbsp;16/31&nbsp;»
     </a>
   </nav>
 </footer>
@@ -309,14 +294,9 @@ Let’s visualize this problem and find the way we can do it.
 </script>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -357,12 +337,11 @@ Let’s visualize this problem and find the way we can do it.
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

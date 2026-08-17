@@ -1,33 +1,115 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Arrays_&amp;_Hashing on Dmytro&#39;s Blog</title>
     <link>http://localhost:1313/tags/arrays__hashing/</link>
     <description>Recent content in Arrays_&amp;_Hashing on Dmytro&#39;s Blog</description>
-    <generator>Hugo</generator>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.138.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Jul 2026 09:38:49 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 07:00:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/arrays__hashing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Sort an Array</title>
+      <link>http://localhost:1313/posts/leetcode-sort-an-array/</link>
+      <pubDate>Mon, 17 Aug 2026 07:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-sort-an-array/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given an array of integers &lt;code&gt;nums&lt;/code&gt;, sort the array in ascending order and return it.&lt;/p&gt;
+&lt;p&gt;You must solve the problem &lt;strong&gt;without using any built-in&lt;/strong&gt; functions in &lt;code&gt;O(nlog(n))&lt;/code&gt; time complexity and with the smallest space complexity possible.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [5,2,3,1]
+Output: [1,2,3,5]
+Explanation: After sorting the array, the positions of some numbers are not changed (for example, 2 and 3), while the positions of other numbers are changed (for example, 1 and 5).
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Majority Element</title>
       <link>http://localhost:1313/posts/leetcode-majority-element/</link>
       <pubDate>Fri, 24 Jul 2026 09:38:49 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-majority-element/</guid>
-      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;&#xA;&lt;p&gt;Given an array &lt;code&gt;nums&lt;/code&gt; of size &lt;code&gt;n&lt;/code&gt;, return &lt;em&gt;the majority element&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The majority element is the element that appears more than &lt;code&gt;⌊n / 2⌋&lt;/code&gt; times. You may assume that the majority element always exists in the array.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [3,2,3]&#xA;Output: 3&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [2,2,1,1,1,2,2]&#xA;Output: 2&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Constraints:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;n == nums.length&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;1 &amp;lt;= n &amp;lt;= 5 * 10^4&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;-10^9 &amp;lt;= nums[i] &amp;lt;= 10^9&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;The input is generated such that a majority element will exist in the array.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given an array &lt;code&gt;nums&lt;/code&gt; of size &lt;code&gt;n&lt;/code&gt;, return &lt;em&gt;the majority element&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The majority element is the element that appears more than &lt;code&gt;⌊n / 2⌋&lt;/code&gt; times. You may assume that the majority element always exists in the array.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [3,2,3]
+Output: 3
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [2,2,1,1,1,2,2]
+Output: 2
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Constraints:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;n == nums.length&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;1 &amp;lt;= n &amp;lt;= 5 * 10^4&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-10^9 &amp;lt;= nums[i] &amp;lt;= 10^9&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The input is generated such that a majority element will exist in the array.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode - Design HashMap</title>
       <link>http://localhost:1313/posts/leetcode-design-hashmap/</link>
       <pubDate>Sat, 18 Jul 2026 08:52:24 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-design-hashmap/</guid>
-      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;&#xA;&lt;p&gt;Design a HashMap without using any built-in hash table libraries.&lt;/p&gt;&#xA;&lt;p&gt;Implement the &lt;code&gt;MyHashMap&lt;/code&gt; class:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;MyHashMap()&lt;/code&gt; initializes the object with an empty map.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;void put(int key, int value)&lt;/code&gt; inserts a &lt;code&gt;(key, value)&lt;/code&gt; pair into the HashMap. If the &lt;code&gt;key&lt;/code&gt; already exists in the map, update the corresponding &lt;code&gt;value&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;int get(int key)&lt;/code&gt; returns the &lt;code&gt;value&lt;/code&gt; to which the specified &lt;code&gt;key&lt;/code&gt; is mapped, or &lt;code&gt;-1&lt;/code&gt; if this map contains no mapping for the &lt;code&gt;key&lt;/code&gt;.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Design a HashMap without using any built-in hash table libraries.&lt;/p&gt;
+&lt;p&gt;Implement the &lt;code&gt;MyHashMap&lt;/code&gt; class:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;MyHashMap()&lt;/code&gt; initializes the object with an empty map.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;void put(int key, int value)&lt;/code&gt; inserts a &lt;code&gt;(key, value)&lt;/code&gt; pair into the HashMap. If the &lt;code&gt;key&lt;/code&gt; already exists in the map, update the corresponding &lt;code&gt;value&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;int get(int key)&lt;/code&gt; returns the &lt;code&gt;value&lt;/code&gt; to which the specified &lt;code&gt;key&lt;/code&gt; is mapped, or &lt;code&gt;-1&lt;/code&gt; if this map contains no mapping for the &lt;code&gt;key&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode - Design HashSet</title>
       <link>http://localhost:1313/posts/leetcode-design-hashset/</link>
       <pubDate>Wed, 08 Jul 2026 09:41:21 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-design-hashset/</guid>
-      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;&#xA;&lt;p&gt;Design a HashSet without using any built-in hash table libraries.&lt;/p&gt;&#xA;&lt;p&gt;Implement &lt;code&gt;MyHashSet&lt;/code&gt; class:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;void add(key)&lt;/code&gt; Inserts the value &lt;code&gt;key&lt;/code&gt; into the HashSet.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;bool contains(key)&lt;/code&gt; Returns whether the value &lt;code&gt;key&lt;/code&gt; exists in the HashSet.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;void remove(key)&lt;/code&gt; Removes the value &lt;code&gt;key&lt;/code&gt; from the HashSet. If &lt;code&gt;key&lt;/code&gt; does not exist in the HashSet, do nothing.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input&#xA;[&amp;#34;MyHashSet&amp;#34;, &amp;#34;add&amp;#34;, &amp;#34;add&amp;#34;, &amp;#34;contains&amp;#34;, &amp;#34;contains&amp;#34;, &amp;#34;add&amp;#34;, &amp;#34;contains&amp;#34;, &amp;#34;remove&amp;#34;, &amp;#34;contains&amp;#34;]&#xA;[[], [1], [2], [1], [3], [2], [2], [2], [2]]&#xA;Output&#xA;[null, null, null, true, false, null, true, null, false]&#xA;&#xA;Explanation&#xA;MyHashSet myHashSet = new MyHashSet();&#xA;myHashSet.add(1);      // set = [1]&#xA;myHashSet.add(2);      // set = [1, 2]&#xA;myHashSet.contains(1); // return True&#xA;myHashSet.contains(3); // return False, (not found)&#xA;myHashSet.add(2);      // set = [1, 2]&#xA;myHashSet.contains(2); // return True&#xA;myHashSet.remove(2);   // set = [1]&#xA;myHashSet.contains(2); // return False, (already removed)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Constraints:&lt;/strong&gt;&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Design a HashSet without using any built-in hash table libraries.&lt;/p&gt;
+&lt;p&gt;Implement &lt;code&gt;MyHashSet&lt;/code&gt; class:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;void add(key)&lt;/code&gt; Inserts the value &lt;code&gt;key&lt;/code&gt; into the HashSet.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;bool contains(key)&lt;/code&gt; Returns whether the value &lt;code&gt;key&lt;/code&gt; exists in the HashSet.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;void remove(key)&lt;/code&gt; Removes the value &lt;code&gt;key&lt;/code&gt; from the HashSet. If &lt;code&gt;key&lt;/code&gt; does not exist in the HashSet, do nothing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input
+[&amp;#34;MyHashSet&amp;#34;, &amp;#34;add&amp;#34;, &amp;#34;add&amp;#34;, &amp;#34;contains&amp;#34;, &amp;#34;contains&amp;#34;, &amp;#34;add&amp;#34;, &amp;#34;contains&amp;#34;, &amp;#34;remove&amp;#34;, &amp;#34;contains&amp;#34;]
+[[], [1], [2], [1], [3], [2], [2], [2], [2]]
+Output
+[null, null, null, true, false, null, true, null, false]
+
+Explanation
+MyHashSet myHashSet = new MyHashSet();
+myHashSet.add(1);      // set = [1]
+myHashSet.add(2);      // set = [1, 2]
+myHashSet.contains(1); // return True
+myHashSet.contains(3); // return False, (not found)
+myHashSet.add(2);      // set = [1, 2]
+myHashSet.contains(2); // return True
+myHashSet.remove(2);   // set = [1]
+myHashSet.contains(2); // return False, (already removed)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Constraints:&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

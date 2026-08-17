@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85fb0af2aff7cd05c393b38b9aa1eec4278c2f2948eeadf67c490cd3feb36131.css" integrity="sha256-hfsK8q/3zQXDk7OLmqHuxCeMLylI7q32fEkM0/6zYTE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml" title="rss">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
 <noscript>
     <style>
@@ -41,38 +41,23 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
-                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .toc {
-                background: var(--entry);
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
             }
-        }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><style>
+</noscript><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -109,10 +94,10 @@
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-  <meta name="twitter:title" content="Posts">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="Posts">
+<meta name="twitter:description" content="">
 
 
 <script type="application/ld+json">
@@ -130,8 +115,8 @@
 }
 </script>
 </head>
+
 <body class="list" id="top">
-    
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -209,6 +194,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Same Tree
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Given the roots of two binary trees p and q, write a function to check if they are the same or not.
+Two binary trees are considered the same if they are structurally identical, and the nodes have the same values.
+Examples Input: p = [1,2,3], q = [1,2,3] Output: true Input: p = [1,2], q = [1,null,2] Output: false ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-02 12:30:42 +0300 +0300'>January 2, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Same Tree" href="http://localhost:1313/posts/leetcode-blind-75-same-tree/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Maximum Depth of Binary Tree
     </h2>
   </header>
@@ -218,7 +217,7 @@ A binary tree’s maximum depth is the number of nodes along the longest path fr
 Examples Input: root = [3,9,20,null,null,15,7] Output: 3 Input: root = [1,null,2] Output: 2 Constraints The number of nodes in the tree is in the range [0, 10⁴]. -100 &lt;= Node.val &lt;= 100 Brute Force Solution func maxDepth(_ root: TreeNode?) -&gt; Int { if root == nil { return 0 } return 1 &#43; max(maxDepth(root?.left), maxDepth(root?.right)) } Explanation We can solve this problem using recursion by calling the maxDepth function on the left and right child nodes. This approach helps us find the longest path down the tree.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-01-01 10:09:24 +0300 +0300'>January 1, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-01-01 10:09:24 +0300 +0300'>January 1, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Maximum Depth of Binary Tree" href="http://localhost:1313/posts/leetcode-blind-75-maximum-depth-of-binary-tree/"></a>
 </article>
 
@@ -233,7 +232,7 @@ Examples Input: root = [4,2,7,1,3,6,9] Output: [4,7,2,9,6,3,1] Input: root = [2,
 In this case, we use the DFS algorithm, where we swap the left subtree with the right subtree and recursively call invertTree on the left and right nodes.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-12-30 09:54:49 +0300 +0300'>December 30, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-12-30 09:54:49 +0300 +0300'>December 30, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Invert Binary Tree" href="http://localhost:1313/posts/leetcode-blind-75-invert-binary-tree/"></a>
 </article>
 
@@ -248,7 +247,7 @@ Merge all the linked lists into one sorted linked list and return it.
 Examples Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] Explanation: The linked lists are: [ 1-&gt;4-&gt;5, 1-&gt;3-&gt;4, 2-&gt;6 ] merging them into one sorted list: 1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4-&gt;5-&gt;6 Input: lists = [] Output: [] Input: lists = [[]] Output: [] Constraints k == lists.length 0 &lt;= k &lt;= 10^4 0 &lt;= lists[i].length &lt;= 500 -10^4 &lt;= lists[i][j] &lt;= 10^4 lists[i] is sorted in ascending order. The sum of lists[i].length will not exceed 10^4. Brute Force Solution func mergeKLists(_ lists: [ListNode?]) -&gt; ListNode? { var nodes: [Int] = [] // Step 1 for i in 0..&lt;lists.count { var lst = lists[i] while lst != nil { nodes.append(lst!.val) lst = lst?.next } } // Step 2 nodes.sort() // Step 3 var res = ListNode(0) var curr: ListNode? = res for node in nodes { curr?.next = ListNode(node) curr = curr?.next } return res.next } Explanation We can solve this problem by separating it into three steps:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-12-29 12:33:03 +0300 +0300'>December 29, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-12-29 12:33:03 +0300 +0300'>December 29, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Merge k Sorted Lists" href="http://localhost:1313/posts/leetcode-blind-75-merge-k-sorted-lists/"></a>
 </article>
 
@@ -263,22 +262,8 @@ There is a cycle in a linked list if there is some node in the list that can be 
 Return true if there is a cycle in the linked list. Otherwise, return false.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-12-26 11:21:15 +0300 +0300'>December 26, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-12-26 11:21:15 +0300 +0300'>December 26, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Linked List Cycle" href="http://localhost:1313/posts/leetcode-blind-75-linked-list-cycle/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Remove Nth Node From End of List
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Given the head of a linked list, remove the nth node from the end of the list and return its head.
-Examples Input: head = [1,2,3,4,5], n = 2 Output: [1,2,3,5] Input: head = [1], n = 1 Output: [] Input: head = [1,2], n = 1 Output: [1] Constraints The number of nodes in the list is sz. 1 &lt;= sz &lt;= 30 0 &lt;= Node.val &lt;= 100 1 &lt;= n &lt;= sz Brute Force Solution func removeNthFromEnd(_ head: ListNode?, _ n: Int) -&gt; ListNode? { var nodes: [ListNode] = [] var curr = head while curr != nil { nodes.append(curr!) curr = curr!.next } let removeIndex = nodes.count - n if removeIndex == 0 { return head?.next } nodes[removeIndex - 1].next = nodes[removeIndex].next return head } Explanation One way to solve this problem is to use extra memory by iterating over all elements in head and storing them in an array. The brute force solution allows us to know the index of each element and delete the node.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-12-25 09:22:40 +0300 +0300'>December 25, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Remove Nth Node From End of List" href="http://localhost:1313/posts/leetcode-blind-75-remove-nth-node-from-end-of-list/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
@@ -322,14 +307,9 @@ Examples Input: head = [1,2,3,4,5], n = 2 Output: [1,2,3,5] Input: head = [1], n
 </script>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -370,12 +350,11 @@ Examples Input: head = [1,2,3,4,5], n = 2 Output: [1,2,3,5] Input: head = [1], n
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

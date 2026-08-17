@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/data-structures/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85fb0af2aff7cd05c393b38b9aa1eec4278c2f2948eeadf67c490cd3feb36131.css" integrity="sha256-hfsK8q/3zQXDk7OLmqHuxCeMLylI7q32fEkM0/6zYTE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/data-structures/index.xml" title="rss">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/data-structures/index.xml">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/data-structures/">
 <noscript>
     <style>
@@ -41,38 +41,23 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
-                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .toc {
-                background: var(--entry);
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
             }
-        }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><style>
+</noscript><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -109,14 +94,14 @@
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-  <meta name="twitter:title" content="Data Structures">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="Data Structures">
+<meta name="twitter:description" content="">
 
 </head>
+
 <body class="list" id="top">
-    
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -205,7 +190,7 @@ Set jMin index to the current index For each index from i &#43; 1 to the end of 
 Space complexity: O(1) auxiliary
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-10-23 07:19:52 +0300 EEST'>October 23, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-10-23 07:19:52 +0300 EEST'>October 23, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Sorting - Selection Sort" href="http://localhost:1313/posts/dsa-sorting-selection-sort/"></a>
 </article>
 
@@ -223,7 +208,7 @@ Code example // Sorts a (portion of an) array, divides it into partitions, then 
 Space complexity: O(N)
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-10-19 06:51:04 +0300 EEST'>October 19, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-10-19 06:51:04 +0300 EEST'>October 19, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Sorting - Quick Sort" href="http://localhost:1313/posts/dsa-sorting-quick-sort/"></a>
 </article>
 
@@ -238,7 +223,7 @@ source
 source
 Code Example func insertionSort(_ array: [Int]) -&gt; [Int] { var A = array for i in 0 ..&lt; A.count { var j = i while j &gt; 0 &amp;&amp; A[j - 1] &gt; A[j] { let tmp = A[j] A[j] = A[j - 1] A[j - 1] = tmp j -= 1 } } return A } Implementation For each index in the input array: Set the j variable to i. Loop while j is greater than 0 and the element at index j - 1 is greater than the element at index j: Swap the elements at index j and j - 1. Decrement j by 1. Why use Insertion Sort? Fast for small data sets. More efficient in practice than most other algorithms, such as selection sort or bubble sort. Adaptive: Efficient for datasets that are already substantially sorted; the time complexity is O(kn) when each element in the input is no more than k places away from its sorted position. Stable: Does not change the relative order of elements with equal keys. In-place: Only requires O(1) of additional memory space. Online: Can sort a list as it receives it. Time/Space Complexity Time: O(N^2) Space: O(1) (in-place) Thank you for reading! 😊</p>
   </div>
-  <footer class="entry-footer"><span title='2024-10-15 07:16:04 +0300 EEST'>October 15, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-10-15 07:16:04 +0300 EEST'>October 15, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Sorting - Insertion Sort" href="http://localhost:1313/posts/dsa-sorting-insertion-sort/"></a>
 </article>
 
@@ -254,7 +239,7 @@ The merge sort conceptually consists of two separate functions: mergeSort and me
 Divide the unsorted list into two equal halves. Recursively sort the two halves. Merge the two halves to form a sorted array. There are multiple implementations of merge sort. I will be focusing on the top-down implementation using lists.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-10-14 07:15:07 +0300 EEST'>October 14, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-10-14 07:15:07 +0300 EEST'>October 14, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Sorting - Merge Sort" href="http://localhost:1313/posts/dsa-sorting-merge-sort/"></a>
 </article>
 
@@ -269,7 +254,7 @@ source
 Code Example func bubbleSort(_ array: [Int]) -&gt; [Int] { var A = array var N = array.count var swapping = true while swapping { swapping = false for i in 1 ..&lt; N { if A[i - 1] &gt; A[i] { let tmp = A[i - 1] A[i - 1] = A[i] A[i] = tmp swapping = true } } N -= 1 } return A } Implementation The bubble sort uses an loop and swapping property to control it behaviour. Inside the loop, it iterates over all elements, comparing the current and next elements. If the current element is greater than the next, it swaps them.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-10-11 07:02:51 +0300 EEST'>October 11, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-10-11 07:02:51 +0300 EEST'>October 11, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to DSA - Sorting - Bubble Sort" href="http://localhost:1313/posts/dsa-sorting-bubble-sort/"></a>
 </article>
 <footer class="page-footer">
@@ -311,14 +296,9 @@ Code Example func bubbleSort(_ array: [Int]) -&gt; [Int] { var A = array var N =
 </script>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -359,12 +339,11 @@ Code Example func bubbleSort(_ array: [Int]) -&gt; [Int] { var A = array var N =
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

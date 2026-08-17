@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Majority Element on Dmytro&#39;s Blog</title>
     <link>http://localhost:1313/tags/majority-element/</link>
     <description>Recent content in Majority Element on Dmytro&#39;s Blog</description>
-    <generator>Hugo</generator>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.138.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 24 Jul 2026 09:38:49 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/majority-element/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,28 @@
       <link>http://localhost:1313/posts/leetcode-majority-element/</link>
       <pubDate>Fri, 24 Jul 2026 09:38:49 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-majority-element/</guid>
-      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;&#xA;&lt;p&gt;Given an array &lt;code&gt;nums&lt;/code&gt; of size &lt;code&gt;n&lt;/code&gt;, return &lt;em&gt;the majority element&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The majority element is the element that appears more than &lt;code&gt;⌊n / 2⌋&lt;/code&gt; times. You may assume that the majority element always exists in the array.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [3,2,3]&#xA;Output: 3&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [2,2,1,1,1,2,2]&#xA;Output: 2&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Constraints:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;n == nums.length&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;1 &amp;lt;= n &amp;lt;= 5 * 10^4&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;-10^9 &amp;lt;= nums[i] &amp;lt;= 10^9&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;The input is generated such that a majority element will exist in the array.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given an array &lt;code&gt;nums&lt;/code&gt; of size &lt;code&gt;n&lt;/code&gt;, return &lt;em&gt;the majority element&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The majority element is the element that appears more than &lt;code&gt;⌊n / 2⌋&lt;/code&gt; times. You may assume that the majority element always exists in the array.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [3,2,3]
+Output: 3
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [2,2,1,1,1,2,2]
+Output: 2
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Constraints:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;n == nums.length&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;1 &amp;lt;= n &amp;lt;= 5 * 10^4&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-10^9 &amp;lt;= nums[i] &amp;lt;= 10^9&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The input is generated such that a majority element will exist in the array.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

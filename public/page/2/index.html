@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.152.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.138.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -12,7 +12,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85fb0af2aff7cd05c393b38b9aa1eec4278c2f2948eeadf67c490cd3feb36131.css" integrity="sha256-hfsK8q/3zQXDk7OLmqHuxCeMLylI7q32fEkM0/6zYTE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -20,8 +20,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="rss">
-<link rel="alternate" type="application/json" href="http://localhost:1313/index.json" title="json">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/">
 <noscript>
     <style>
@@ -43,38 +43,23 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
-                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .toc {
-                background: var(--entry);
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
             }
-        }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><style>
+</noscript><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -111,10 +96,10 @@
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-  <meta name="twitter:title" content="Dmytro&#39;s Blog">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="Dmytro&#39;s Blog">
+<meta name="twitter:description" content="">
 
 <script type="application/ld+json">
 {
@@ -130,8 +115,8 @@
 }
 </script>
 </head>
+
 <body class="list" id="top">
-    
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -204,6 +189,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - 150 - Detect Squares
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem You are given a stream of points on the X-Y plane. Design an algorithm that:
+Adds new points from the stream into a data structure. Duplicate points are allowed and should be treated as different points. Given a query point, counts the number of ways to choose three points from the data structure such that the three points and the query point form an axis-aligned square with positive area. An axis-aligned square is a square whose edges are all the same length and are either parallel or perpendicular to the x-axis and y-axis.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-06-23 08:04:51 +0300 EEST'>June 23, 2026</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - 150 - Detect Squares" href="http://localhost:1313/posts/leetcode-150-detect-squares/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - 150 - Multiply Strings
     </h2>
   </header>
@@ -216,7 +215,7 @@ Input: num1 = &#34;123&#34;, num2 = &#34;456&#34; Output: &#34;56088&#34; Constr
 1 &lt;= num1.length, num2.length &lt;= 200 num1 and num2 consist of digits only. Both num1 and num2 do not contain any leading zeros, except the number 0 itself. Multiplication Solution Explanation We can multiply two numbers using the stacked method. We are going to start iterating from right to left in reverse order, multiplying each value in num1 with a value in num2. If the result is greater than or equal to 10, we are going to carry an additional value. For example, with num1 = 123 and num2 = 45:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-06-17 08:13:55 +0300 EEST'>June 17, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2026-06-17 08:13:55 +0300 EEST'>June 17, 2026</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Multiply Strings" href="http://localhost:1313/posts/leetcode-150-multiply-strings/"></a>
 </article>
 
@@ -234,7 +233,7 @@ Input: x = 2.00000, n = -2 Output: 0.25000 Explanation: 2^-2 = 1/2^2 = 1/4 = 0.2
 -100.0 &lt; x &lt; 100.0 -2^31 &lt;= n &lt;= 2^31 - 1 n is an integer. Either x is not zero or n &gt; 0. -10^4 &lt;= x^n &lt;= 10^4 Brute Force Solution Explanation The brute force way to solve this problem without using built-in functions is to use a while loop and multiply the x value n times. The problem with this solution is that it will not pass on LeetCode because it takes O(n) time.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-06-13 10:51:19 +0300 EEST'>June 13, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2026-06-13 10:51:19 +0300 EEST'>June 13, 2026</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Pow(x, n)" href="http://localhost:1313/posts/leetcode-150-pow-x-n/"></a>
 </article>
 
@@ -248,7 +247,7 @@ Input: x = 2.00000, n = -2 Output: 0.25000 Explanation: 2^-2 = 1/2^2 = 1/4 = 0.2
 You are also given an integer array queries. The answer to the jth query is the size of the smallest interval i such that lefti &lt;= queries[j] &lt;= righti. If no such interval exists, the answer is -1.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-06-04 09:37:51 +0300 EEST'>June 4, 2026</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2026-06-04 09:37:51 +0300 EEST'>June 4, 2026</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Minimum Interval to Include Each Query" href="http://localhost:1313/posts/leetcode-150-minimum-interval-to-include-each-query/"></a>
 </article>
 
@@ -263,23 +262,8 @@ The following rules define a valid string:
 Any left parenthesis &#39;(&#39; must have a corresponding right parenthesis &#39;)&#39;. Any right parenthesis &#39;)&#39; must have a corresponding left parenthesis &#39;(&#39;. A left parenthesis &#39;(&#39; must go before the corresponding right parenthesis &#39;)&#39;. &#39;*&#39; could be treated as a single right parenthesis &#39;)&#39;, a single left parenthesis &#39;(&#39;, or an empty string &#34;&#34;. Example 1:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-05-26 08:05:31 +0300 EEST'>May 26, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2026-05-26 08:05:31 +0300 EEST'>May 26, 2026</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Valid Parenthesis String" href="http://localhost:1313/posts/leetcode-150-valid-parenthesis-string/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - 150 - Partition Labels
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>LeetCode - 150 - Partition Labels
-The problem You are given a string s. We want to partition the string into as many parts as possible so that each letter appears in at most one part. For example, the string &#34;ababcc&#34; can be partitioned into [&#34;abab&#34;, &#34;cc&#34;], but partitions such as [&#34;aba&#34;, &#34;bcc&#34;] or [&#34;ab&#34;, &#34;ab&#34;, &#34;cc&#34;] are invalid.
-Note that the partition is done so that after concatenating all the parts in order, the resultant string should be s.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-05-18 07:51:15 +0300 EEST'>May 18, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode - 150 - Partition Labels" href="http://localhost:1313/posts/leetcode-150-partition-labels/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
@@ -323,14 +307,9 @@ Note that the partition is done so that after concatenating all the parts in ord
 </script>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -371,12 +350,11 @@ Note that the partition is done so that after concatenating all the parts in ord
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/leetcode/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85fb0af2aff7cd05c393b38b9aa1eec4278c2f2948eeadf67c490cd3feb36131.css" integrity="sha256-hfsK8q/3zQXDk7OLmqHuxCeMLylI7q32fEkM0/6zYTE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/leetcode/index.xml" title="rss">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/leetcode/index.xml">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/leetcode/">
 <noscript>
     <style>
@@ -41,38 +41,23 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
-                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .toc {
-                background: var(--entry);
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
             }
-        }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><style>
+</noscript><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -109,14 +94,14 @@
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-  <meta name="twitter:title" content="LeetCode">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="LeetCode">
+<meta name="twitter:description" content="">
 
 </head>
+
 <body class="list" id="top">
-    
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -194,6 +179,20 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Binary Tree Level Order Traversal
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Given the root of a binary tree, return the level order traversal of its nodes’ values (i.e., from left to right, level by level).
+Examples Input: root = [3,9,20,null,null,15,7] Output: [[3],[9,20],[15,7]] Input: root = [1] Output: [[1]] Input: root = [] Output: [] Constraints The number of nodes in the tree is in the range [0, 2000]. -1000 &lt;= Node.val &lt;= 1000 BFS Solution func levelOrder(_ root: TreeNode?) -&gt; [[Int]] { if root == nil { return [] } var queue: [TreeNode?] = [] queue.append(root) var res: [[Int]] = [] while !queue.isEmpty { var level: [Int] = [] for _ in 0 ..&lt; queue.count { let node = queue.removeFirst() if let node = node { level.append(node.val) queue.append(node.left) queue.append(node.right) } } if !level.isEmpty { res.append(level) } } return res } Explanation When you see that a binary tree problem involves level order traversal, it means the solution usually implies the breadth-first search (BFS) algorithm. BFS is a common solution to this problem because, according to Wikipedia, breadth-first search is also called “level-order search.” The core idea behind BFS is to iterate level by level from top to bottom, and from left to right.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-08 13:23:04 +0300 +0300'>January 8, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Binary Tree Level Order Traversal" href="http://localhost:1313/posts/leetcode-blind-75-binary-tree-level-order-traversal/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Lowest Common Ancestor of a Binary Search Tree
     </h2>
   </header>
@@ -202,7 +201,7 @@
 According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).”
 Examples ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-01-07 12:19:23 +0300 +0300'>January 7, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-01-07 12:19:23 +0300 +0300'>January 7, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Lowest Common Ancestor of a Binary Search Tree" href="http://localhost:1313/posts/leetcode-blind-75-lowest-common-ancestor-of-a-binary-search-tree/"></a>
 </article>
 
@@ -216,7 +215,7 @@ Examples ...</p>
 A subtree of a binary tree tree is a tree that consists of a node in tree and all of this node’s descendants. The tree tree could also be considered as a subtree of itself.
 Examples ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-01-05 12:34:59 +0300 +0300'>January 5, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-01-05 12:34:59 +0300 +0300'>January 5, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Subtree of Another Tree" href="http://localhost:1313/posts/leetcode-blind-75-subtree-of-another-tree/"></a>
 </article>
 
@@ -230,7 +229,7 @@ Examples ...</p>
 Two binary trees are considered the same if they are structurally identical, and the nodes have the same values.
 Examples Input: p = [1,2,3], q = [1,2,3] Output: true Input: p = [1,2], q = [1,null,2] Output: false ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-01-02 12:30:42 +0300 +0300'>January 2, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-01-02 12:30:42 +0300 +0300'>January 2, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Same Tree" href="http://localhost:1313/posts/leetcode-blind-75-same-tree/"></a>
 </article>
 
@@ -245,30 +244,15 @@ A binary tree’s maximum depth is the number of nodes along the longest path fr
 Examples Input: root = [3,9,20,null,null,15,7] Output: 3 Input: root = [1,null,2] Output: 2 Constraints The number of nodes in the tree is in the range [0, 10⁴]. -100 &lt;= Node.val &lt;= 100 Brute Force Solution func maxDepth(_ root: TreeNode?) -&gt; Int { if root == nil { return 0 } return 1 &#43; max(maxDepth(root?.left), maxDepth(root?.right)) } Explanation We can solve this problem using recursion by calling the maxDepth function on the left and right child nodes. This approach helps us find the longest path down the tree.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-01-01 10:09:24 +0300 +0300'>January 1, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-01-01 10:09:24 +0300 +0300'>January 1, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Maximum Depth of Binary Tree" href="http://localhost:1313/posts/leetcode-blind-75-maximum-depth-of-binary-tree/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Invert Binary Tree
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Given the root of a binary tree, invert the tree, and return its root.
-Examples Input: root = [4,2,7,1,3,6,9] Output: [4,7,2,9,6,3,1] Input: root = [2,1,3] Output: [2,3,1] Input: root = [] Output: [] Constraints The number of nodes in the tree is in the range [0, 100]. -100 &lt;= Node.val &lt;= 100 Depth First Search Solution func invertTree(_ root: TreeNode?) -&gt; TreeNode? { if root == nil { return nil } let tmp = root?.left root?.left = root?.right root?.right = tmp invertTree(root?.left) invertTree(root?.right) return root } Explanation When working with trees, we often consider two general ways to solve these problems: depth-first search (DFS) and breadth-first search (BFS).
-In this case, we use the DFS algorithm, where we swap the left subtree with the right subtree and recursively call invertTree on the left and right nodes.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-12-30 09:54:49 +0300 +0300'>December 30, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Invert Binary Tree" href="http://localhost:1313/posts/leetcode-blind-75-invert-binary-tree/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/leetcode/page/24/">
-      «&nbsp;Prev&nbsp;24/30
+      «&nbsp;Prev&nbsp;24/31
     </a>
-    <a class="next" href="http://localhost:1313/tags/leetcode/page/26/">Next&nbsp;26/30&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/leetcode/page/26/">Next&nbsp;26/31&nbsp;»
     </a>
   </nav>
 </footer>
@@ -305,14 +289,9 @@ In this case, we use the DFS algorithm, where we swap the left subtree with the 
 </script>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -353,12 +332,11 @@ In this case, we use the DFS algorithm, where we swap the left subtree with the 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

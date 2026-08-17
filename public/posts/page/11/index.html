@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85fb0af2aff7cd05c393b38b9aa1eec4278c2f2948eeadf67c490cd3feb36131.css" integrity="sha256-hfsK8q/3zQXDk7OLmqHuxCeMLylI7q32fEkM0/6zYTE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml" title="rss">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
 <noscript>
     <style>
@@ -41,38 +41,23 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
-                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .toc {
-                background: var(--entry);
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
             }
-        }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><style>
+</noscript><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -109,10 +94,10 @@
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-  <meta name="twitter:title" content="Posts">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="Posts">
+<meta name="twitter:description" content="">
 
 
 <script type="application/ld+json">
@@ -130,8 +115,8 @@
 }
 </script>
 </head>
+
 <body class="list" id="top">
-    
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -209,6 +194,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - 150 - K Closest Points to Origin
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane and an integer k, return the k closest points to the origin (0, 0).
+The distance between two points on the X-Y plane is the Euclidean distance (i.e., √(x1 - x2)^2 &#43; (y1 - y2)^2).
+You may return the answer in any order. The answer is guaranteed to be unique (except for the order that it is in).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-08-13 07:45:42 +0300 EEST'>August 13, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - 150 - K Closest Points to Origin" href="http://localhost:1313/posts/leetcode-150-k-closest-points-to-origin/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - 150 - Last Stone Weight
     </h2>
   </header>
@@ -218,7 +218,7 @@ We are playing a game with the stones. On each turn, we choose the heaviest two 
 If x == y, both stones are destroyed, and If x != y, the stone of weight x is destroyed, and the stone of weight y has new weight y - x. At the end of the game, there is at most one stone left.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-08-11 07:25:28 +0300 EEST'>August 11, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-08-11 07:25:28 +0300 EEST'>August 11, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Last Stone Weight" href="http://localhost:1313/posts/leetcode-150-last-stone-weight/"></a>
 </article>
 
@@ -232,7 +232,7 @@ If x == y, both stones are destroyed, and If x != y, the stone of weight x is de
 You are tasked to implement a class which, for a given integer k, maintains a stream of test scores and continuously returns the kth highest test score after a new score has been submitted. More specifically, we are looking for the kth highest score in the sorted list of all scores.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-08-09 07:41:18 +0300 EEST'>August 9, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-08-09 07:41:18 +0300 EEST'>August 9, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Kth Largest Element in a Stream" href="http://localhost:1313/posts/leetcode-150-kth-largest-element-in-a-stream/"></a>
 </article>
 
@@ -246,7 +246,7 @@ You are tasked to implement a class which, for a given integer k, maintains a st
 Return the number of good nodes in the binary tree.
 Examples Input: root = [3,1,4,3,null,1,5] Output: 4 Explanation: Nodes in blue are good. Root Node (3) is always a good node. Node 4 -&gt; (3,4) is the maximum value in the path starting from the root. Node 5 -&gt; (3,4,5) is the maximum value in the path Node 3 -&gt; (3,1,3) is the maximum value in the path. ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-08-07 07:55:32 +0300 EEST'>August 7, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-08-07 07:55:32 +0300 EEST'>August 7, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Count Good Nodes in Binary Tree" href="http://localhost:1313/posts/leetcode-150-count-good-nodes-in-binary-tree/"></a>
 </article>
 
@@ -259,23 +259,8 @@ Examples Input: root = [3,1,4,3,null,1,5] Output: 4 Explanation: Nodes in blue a
     <p>The problem Given the root of a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
 Examples Input: root = [1,2,3,null,5,null,4] Output: [1,3,4] Explanation: Input: root = [1,2,3,4,null,null,null,5] Output: [1,3,4,5] Explanation: Input: root = [1,null,3] Output: [1,3] Input: root = [] Output: [] Constraints The number of nodes in the tree is in the range [0, 100]. -100 &lt;= Node.val &lt;= 100 Explanation Let’s imagine that we have a person on the right side and if we look at the first example, we can see everything on the right side. ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-08-05 07:23:43 +0300 EEST'>August 5, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-08-05 07:23:43 +0300 EEST'>August 5, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Binary Tree Right Side View" href="http://localhost:1313/posts/leetcode-150-binary-tree-right-side-view/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - 150 - Balanced Binary Tree
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The problem Given a binary tree, determine if it is height-balanced.
-A height-balanced binary tree is a binary tree in which the depth of the two subtrees of every node never differs by more than one.
-Examples Input: root = [3,9,20,null,null,15,7] Output: true Input: root = [1,2,2,3,3,null,null,4,4] Output: false Input: root = [] Output: true Constraints The number of nodes in the tree is in the range [0, 5000]. -10^4 &lt;= Node.val &lt;= 10^4 Explanation From the description of the problem, we learn that we need to find if the tree is height-balanced, and that we can do it by determining if the difference between the height of every single node in the left and right subtrees is no more than 1.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-07-30 07:35:43 +0300 EEST'>July 30, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode - 150 - Balanced Binary Tree" href="http://localhost:1313/posts/leetcode-150-balanced-binary-tree/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
@@ -319,14 +304,9 @@ Examples Input: root = [3,9,20,null,null,15,7] Output: true Input: root = [1,2,2
 </script>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -367,12 +347,11 @@ Examples Input: root = [3,9,20,null,null,15,7] Output: true Input: root = [1,2,2
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

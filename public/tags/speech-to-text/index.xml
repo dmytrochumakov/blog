@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Speech to Text on Dmytro&#39;s Blog</title>
     <link>http://localhost:1313/tags/speech-to-text/</link>
     <description>Recent content in Speech to Text on Dmytro&#39;s Blog</description>
-    <generator>Hugo</generator>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.138.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 23 May 2024 08:37:45 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/speech-to-text/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,19 @@
       <link>http://localhost:1313/posts/speech-to-text-ios/</link>
       <pubDate>Thu, 23 May 2024 08:37:45 +0300</pubDate>
       <guid>http://localhost:1313/posts/speech-to-text-ios/</guid>
-      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;I always wanted an iOS app that would allow me to economize my time by converting speech to text.&#xA;I know this option is built into the keyboard, but you first need to click the text field, then tap on the microphone, and finally speak.&#xA;I wanted a one-click option with the possibility to integrate it into all my daily routines. Here is what I discovered:&lt;/p&gt;&#xA;&lt;p&gt;&#xA;    &#xA;    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-3215a&#34; hidden&gt;&#xA;    &lt;label for=&#34;zoomCheck-3215a&#34;&gt;&#xA;        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; &#xA;            src=&#34;images/0.gif#center&#34; alt=&#34;alt image&#34; &#xA;             /&gt;&#xA;    &lt;/label&gt;&#xA;&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;I always wanted an iOS app that would allow me to economize my time by converting speech to text.
+I know this option is built into the keyboard, but you first need to click the text field, then tap on the microphone, and finally speak.
+I wanted a one-click option with the possibility to integrate it into all my daily routines. Here is what I discovered:&lt;/p&gt;
+&lt;p&gt;
+    
+    &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-3215a&#34; hidden&gt;
+    &lt;label for=&#34;zoomCheck-3215a&#34;&gt;
+        &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34; 
+            src=&#34;images/0.gif#center&#34; alt=&#34;alt image&#34; 
+             /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

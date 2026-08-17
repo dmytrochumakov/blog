@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Math_&amp;_Geometry on Dmytro&#39;s Blog</title>
     <link>http://localhost:1313/tags/math__geometry/</link>
     <description>Recent content in Math_&amp;_Geometry on Dmytro&#39;s Blog</description>
-    <generator>Hugo</generator>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.138.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 23 Jun 2026 08:04:51 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/math__geometry/index.xml" rel="self" type="application/rss+xml" />
@@ -13,21 +18,66 @@
       <link>http://localhost:1313/posts/leetcode-150-detect-squares/</link>
       <pubDate>Tue, 23 Jun 2026 08:04:51 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-150-detect-squares/</guid>
-      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;&#xA;&lt;p&gt;You are given a stream of points on the X-Y plane. Design an algorithm that:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Adds&lt;/strong&gt; new points from the stream into a data structure. &lt;strong&gt;Duplicate&lt;/strong&gt; points are allowed and should be treated as different points.&lt;/li&gt;&#xA;&lt;li&gt;Given a query point, &lt;strong&gt;counts&lt;/strong&gt; the number of ways to choose three points from the data structure such that the three points and the query point form an &lt;strong&gt;axis-aligned square&lt;/strong&gt; with &lt;strong&gt;positive area&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;An &lt;strong&gt;axis-aligned square&lt;/strong&gt; is a square whose edges are all the same length and are either parallel or perpendicular to the x-axis and y-axis.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;You are given a stream of points on the X-Y plane. Design an algorithm that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Adds&lt;/strong&gt; new points from the stream into a data structure. &lt;strong&gt;Duplicate&lt;/strong&gt; points are allowed and should be treated as different points.&lt;/li&gt;
+&lt;li&gt;Given a query point, &lt;strong&gt;counts&lt;/strong&gt; the number of ways to choose three points from the data structure such that the three points and the query point form an &lt;strong&gt;axis-aligned square&lt;/strong&gt; with &lt;strong&gt;positive area&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;An &lt;strong&gt;axis-aligned square&lt;/strong&gt; is a square whose edges are all the same length and are either parallel or perpendicular to the x-axis and y-axis.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode - 150 - Multiply Strings</title>
       <link>http://localhost:1313/posts/leetcode-150-multiply-strings/</link>
       <pubDate>Wed, 17 Jun 2026 08:13:55 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-150-multiply-strings/</guid>
-      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;&#xA;&lt;p&gt;Given two non-negative integers &lt;code&gt;num1&lt;/code&gt; and &lt;code&gt;num2&lt;/code&gt; represented as strings, return the product of &lt;code&gt;num1&lt;/code&gt; and &lt;code&gt;num2&lt;/code&gt;, also represented as a string.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You must not use any built-in BigInteger library or convert the inputs to integers directly.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: num1 = &amp;#34;2&amp;#34;, num2 = &amp;#34;3&amp;#34;&#xA;Output: &amp;#34;6&amp;#34;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: num1 = &amp;#34;123&amp;#34;, num2 = &amp;#34;456&amp;#34;&#xA;Output: &amp;#34;56088&amp;#34;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Constraints:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;1 &amp;lt;= num1.length, num2.length &amp;lt;= 200&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;num1&lt;/code&gt; and &lt;code&gt;num2&lt;/code&gt; consist of digits only.&lt;/li&gt;&#xA;&lt;li&gt;Both &lt;code&gt;num1&lt;/code&gt; and &lt;code&gt;num2&lt;/code&gt; do not contain any leading zeros, except the number &lt;code&gt;0&lt;/code&gt; itself.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;multiplication-solution&#34;&gt;Multiplication Solution&lt;/h3&gt;&#xA;&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;&#xA;&lt;p&gt;We can multiply two numbers using the stacked method. We are going to start iterating from right to left in reverse order, multiplying each value in &lt;code&gt;num1&lt;/code&gt; with a value in &lt;code&gt;num2&lt;/code&gt;. If the result is greater than or equal to &lt;code&gt;10&lt;/code&gt;, we are going to carry an additional value. For example, with &lt;code&gt;num1 = 123&lt;/code&gt; and &lt;code&gt;num2 = 45&lt;/code&gt;:&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given two non-negative integers &lt;code&gt;num1&lt;/code&gt; and &lt;code&gt;num2&lt;/code&gt; represented as strings, return the product of &lt;code&gt;num1&lt;/code&gt; and &lt;code&gt;num2&lt;/code&gt;, also represented as a string.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You must not use any built-in BigInteger library or convert the inputs to integers directly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: num1 = &amp;#34;2&amp;#34;, num2 = &amp;#34;3&amp;#34;
+Output: &amp;#34;6&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: num1 = &amp;#34;123&amp;#34;, num2 = &amp;#34;456&amp;#34;
+Output: &amp;#34;56088&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Constraints:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;1 &amp;lt;= num1.length, num2.length &amp;lt;= 200&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;num1&lt;/code&gt; and &lt;code&gt;num2&lt;/code&gt; consist of digits only.&lt;/li&gt;
+&lt;li&gt;Both &lt;code&gt;num1&lt;/code&gt; and &lt;code&gt;num2&lt;/code&gt; do not contain any leading zeros, except the number &lt;code&gt;0&lt;/code&gt; itself.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;multiplication-solution&#34;&gt;Multiplication Solution&lt;/h3&gt;
+&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;p&gt;We can multiply two numbers using the stacked method. We are going to start iterating from right to left in reverse order, multiplying each value in &lt;code&gt;num1&lt;/code&gt; with a value in &lt;code&gt;num2&lt;/code&gt;. If the result is greater than or equal to &lt;code&gt;10&lt;/code&gt;, we are going to carry an additional value. For example, with &lt;code&gt;num1 = 123&lt;/code&gt; and &lt;code&gt;num2 = 45&lt;/code&gt;:&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode - 150 - Pow(x, n)</title>
       <link>http://localhost:1313/posts/leetcode-150-pow-x-n/</link>
       <pubDate>Sat, 13 Jun 2026 10:51:19 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-150-pow-x-n/</guid>
-      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;&#xA;&lt;p&gt;Implement &lt;a href=&#34;http://www.cplusplus.com/reference/valarray/pow/&#34;&gt;pow(x, n)&lt;/a&gt;, which calculates &lt;code&gt;x&lt;/code&gt; raised to the power &lt;code&gt;n&lt;/code&gt; (i.e., &lt;code&gt;xⁿ&lt;/code&gt;).&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: x = 2.00000, n = 10&#xA;Output: 1024.00000&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: x = 2.10000, n = 3&#xA;Output: 9.26100&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 3:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: x = 2.00000, n = -2&#xA;Output: 0.25000&#xA;Explanation: 2^-2 = 1/2^2 = 1/4 = 0.25&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Constraints:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;-100.0 &amp;lt; x &amp;lt; 100.0&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;-2^31 &amp;lt;= n &amp;lt;= 2^31 - 1&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;n&lt;/code&gt; is an integer.&lt;/li&gt;&#xA;&lt;li&gt;Either &lt;code&gt;x&lt;/code&gt; is not zero or &lt;code&gt;n &amp;gt; 0&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;-10^4 &amp;lt;= x^n &amp;lt;= 10^4&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;brute-force-solution&#34;&gt;Brute Force Solution&lt;/h3&gt;&#xA;&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;&#xA;&lt;p&gt;The brute force way to solve this problem without using built-in functions is to use a while loop and multiply the &lt;code&gt;x&lt;/code&gt; value &lt;code&gt;n&lt;/code&gt; times. The problem with this solution is that it will not pass on LeetCode because it takes &lt;code&gt;O(n)&lt;/code&gt; time.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
+&lt;p&gt;Implement &lt;a href=&#34;http://www.cplusplus.com/reference/valarray/pow/&#34;&gt;pow(x, n)&lt;/a&gt;, which calculates &lt;code&gt;x&lt;/code&gt; raised to the power &lt;code&gt;n&lt;/code&gt; (i.e., &lt;code&gt;xⁿ&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: x = 2.00000, n = 10
+Output: 1024.00000
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: x = 2.10000, n = 3
+Output: 9.26100
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: x = 2.00000, n = -2
+Output: 0.25000
+Explanation: 2^-2 = 1/2^2 = 1/4 = 0.25
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Constraints:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-100.0 &amp;lt; x &amp;lt; 100.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-2^31 &amp;lt;= n &amp;lt;= 2^31 - 1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;n&lt;/code&gt; is an integer.&lt;/li&gt;
+&lt;li&gt;Either &lt;code&gt;x&lt;/code&gt; is not zero or &lt;code&gt;n &amp;gt; 0&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-10^4 &amp;lt;= x^n &amp;lt;= 10^4&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;brute-force-solution&#34;&gt;Brute Force Solution&lt;/h3&gt;
+&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;p&gt;The brute force way to solve this problem without using built-in functions is to use a while loop and multiply the &lt;code&gt;x&lt;/code&gt; value &lt;code&gt;n&lt;/code&gt; times. The problem with this solution is that it will not pass on LeetCode because it takes &lt;code&gt;O(n)&lt;/code&gt; time.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

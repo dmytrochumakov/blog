@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/leetcode/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85fb0af2aff7cd05c393b38b9aa1eec4278c2f2948eeadf67c490cd3feb36131.css" integrity="sha256-hfsK8q/3zQXDk7OLmqHuxCeMLylI7q32fEkM0/6zYTE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/leetcode/index.xml" title="rss">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/leetcode/index.xml">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/leetcode/">
 <noscript>
     <style>
@@ -41,38 +41,23 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
-                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .toc {
-                background: var(--entry);
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
             }
-        }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><style>
+</noscript><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -109,14 +94,14 @@
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-  <meta name="twitter:title" content="LeetCode">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="LeetCode">
+<meta name="twitter:description" content="">
 
 </head>
+
 <body class="list" id="top">
-    
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -194,6 +179,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - 150 - Car Fleet
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The problem There are n cars at given miles away from the starting mile 0, traveling to reach the mile target.
+You are given two integer array position and speed, both of length n, where position[i] is the starting mile of the ith car and speed[i] is the speed of the ith car in miles per hour.
+A car cannot pass another car, but it can catch up and then travel next to it at the speed of the slower car.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-06-18 07:29:11 +0300 EEST'>June 18, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - 150 - Car Fleet" href="http://localhost:1313/posts/leetcode-150-car-fleet/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - 150 - Daily Temperatures
     </h2>
   </header>
@@ -202,7 +202,7 @@
 Examples Input: temperatures = [73,74,75,71,69,72,76,73] Output: [1,1,4,2,1,1,0,0] Input: temperatures = [30,40,50,60] Output: [1,1,1,0] Input: temperatures = [30,60,90] Output: [1,1,0] Constraints 1 &lt;= temperatures.length &lt;= 10^5 30 &lt;= temperatures[i] &lt;= 100 Explanation Before we jump to the solution, let’s figure out the way we can solve this problem. In the first example, we can see that we can calculate how many days in the input array it takes us to find a temperature that is greater than 73.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-06-12 07:47:38 +0300 EEST'>June 12, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-06-12 07:47:38 +0300 EEST'>June 12, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Daily Temperatures" href="http://localhost:1313/posts/leetcode-150-daily-temperatures/"></a>
 </article>
 
@@ -216,7 +216,7 @@ Examples Input: temperatures = [73,74,75,71,69,72,76,73] Output: [1,1,4,2,1,1,0,
 Examples Input: n = 3 Output: [&#34;((()))&#34;,&#34;(()())&#34;,&#34;(())()&#34;,&#34;()(())&#34;,&#34;()()()&#34;] Input: n = 1 Output: [&#34;()&#34;] Constraints 1 &lt;= n &lt;= 8 Explanation Before we jump to the solution, let’s figure out what well-formed parentheses mean. In this problem, this means when you’re writing the code using nested parentheses, you want them to be nested in a valid way, like (()()).
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-06-09 07:54:24 +0300 EEST'>June 9, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-06-09 07:54:24 +0300 EEST'>June 9, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Generate Parentheses" href="http://localhost:1313/posts/leetcode-150-generate-parentheses/"></a>
 </article>
 
@@ -231,7 +231,7 @@ Evaluate the expression. Return an integer that represents the value of the exp
 Note that:
 The valid operators are &#43;, -, * and /. Each operand may be an integer or another expression. The division between two integers always truncates toward zero. There will not be any division by zero. The input represents a valid arithmetic expression in reverse Polish notation. The answer and all the intermediate calculations can be represented in a 32-bit integer. Examples Input: tokens = [&#34;2&#34;,&#34;1&#34;,&#34;&#43;&#34;,&#34;3&#34;,&#34;*&#34;] Output: 9 Explanation: ((2 &#43; 1) * 3) = 9 Input: tokens = [&#34;4&#34;,&#34;13&#34;,&#34;5&#34;,&#34;/&#34;,&#34;&#43;&#34;] Output: 6 Explanation: (4 &#43; (13 / 5)) = 6 Input: tokens = [&#34;10&#34;,&#34;6&#34;,&#34;9&#34;,&#34;3&#34;,&#34;&#43;&#34;,&#34;-11&#34;,&#34;*&#34;,&#34;/&#34;,&#34;*&#34;,&#34;17&#34;,&#34;&#43;&#34;,&#34;5&#34;,&#34;&#43;&#34;] Output: 22 Explanation: ((10 * (6 / ((9 &#43; 3) * -11))) &#43; 17) &#43; 5 = ((10 * (6 / (12 * -11))) &#43; 17) &#43; 5 = ((10 * (6 / -132)) &#43; 17) &#43; 5 = ((10 * 0) &#43; 17) &#43; 5 = (0 &#43; 17) &#43; 5 = 17 &#43; 5 = 22 Constraints 1 &lt;= tokens.length &lt;= 10^4 tokens[i] is either an operator: &#43;, -, *, or /, or an integer in the range [-200, 200]. Explanation Let’s take a look at the example with input tokens = [&#34;2&#34;,&#34;1&#34;,&#34;&#43;&#34;,&#34;3&#34;,&#34;*&#34;], and try to figure out the way we can solve it. ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-06-05 07:51:16 +0300 EEST'>June 5, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-06-05 07:51:16 +0300 EEST'>June 5, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Evaluate Reverse Polish Notation" href="http://localhost:1313/posts/leetcode-150-evaluate-reverse-polish-notation/"></a>
 </article>
 
@@ -246,30 +246,15 @@ Implement the MinStack class:
 MinStack() initializes the stack object. void push(int val) pushes the element val onto the stack. void pop() removes the element on the top of the stack. int top() gets the top element of the stack. int getMin() retrieves the minimum element in the stack. You must implement a solution with O(1) time complexity for each function.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-06-03 07:29:07 +0300 EEST'>June 3, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2025-06-03 07:29:07 +0300 EEST'>June 3, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Min Stack" href="http://localhost:1313/posts/leetcode-150-min-stack/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - 150 - Sliding Window Maximum
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The problem You are given an array of integers nums, and there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position.
-Return the max sliding window.
-Examples Input: nums = [1,3,-1,-3,5,3,6,7], k = 3 Output: [3,3,5,5,6,7] Explanation: Window position Max --------------- ----- [1 3 -1] -3 5 3 6 7 3 1 [3 -1 -3] 5 3 6 7 3 1 3 [-1 -3 5] 3 6 7 5 1 3 -1 [-3 5 3] 6 7 5 1 3 -1 -3 [5 3 6] 7 6 1 3 -1 -3 5 [3 6 7] 7 Input: nums = [1], k = 1 Output: [1] Constraints 1 &lt;= nums.length &lt;= 10^5 -10^4 &lt;= nums[i] &lt;= 10^4 1 &lt;= k &lt;= nums.length Explanation Before we jump into the solution, let’s look at our example with nums = [1,3,-1,-3,5,3,6,7], k = 3 We can see that at the first position we have max value 3, which we add to our output array.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-06-02 07:18:22 +0300 EEST'>June 2, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode - 150 - Sliding Window Maximum" href="http://localhost:1313/posts/leetcode-150-sliding-window-maximum/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/tags/leetcode/page/13/">
-      «&nbsp;Prev&nbsp;13/30
+      «&nbsp;Prev&nbsp;13/31
     </a>
-    <a class="next" href="http://localhost:1313/tags/leetcode/page/15/">Next&nbsp;15/30&nbsp;»
+    <a class="next" href="http://localhost:1313/tags/leetcode/page/15/">Next&nbsp;15/31&nbsp;»
     </a>
   </nav>
 </footer>
@@ -306,14 +291,9 @@ Examples Input: nums = [1,3,-1,-3,5,3,6,7], k = 3 Output: [3,3,5,5,6,7] Explanat
 </script>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -354,12 +334,11 @@ Examples Input: nums = [1,3,-1,-3,5,3,6,7], k = 3 Output: [3,3,5,5,6,7] Explanat
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

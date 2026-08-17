@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,7 +57,7 @@ This algorithm is not very fast and takes O(n^2) time. We can improve it further
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/leetcode-blind-75-longest-repeating-character-replacement/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85fb0af2aff7cd05c393b38b9aa1eec4278c2f2948eeadf67c490cd3feb36131.css" integrity="sha256-hfsK8q/3zQXDk7OLmqHuxCeMLylI7q32fEkM0/6zYTE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -86,38 +86,23 @@ This algorithm is not very fast and takes O(n^2) time. We can improve it further
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
-                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .toc {
-                background: var(--entry);
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
             }
-        }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><style>
+</noscript><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -165,13 +150,55 @@ This algorithm is not very fast and takes O(n^2) time. We can improve it further
     <meta property="article:tag" content="Longest Repeating Character Replacement">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-  <meta name="twitter:title" content="LeetCode - Blind 75 - Longest Repeating Character Replacement">
-  <meta name="twitter:description" content="The problem You are given a string s and an integer k. You can choose any character of the string and change it to any other uppercase English character. You can perform this operation at most k times.
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="LeetCode - Blind 75 - Longest Repeating Character Replacement">
+<meta name="twitter:description" content="The problem
+You are given a string s and an integer k. You can choose any character of the string and change it to any other uppercase English character. You can perform this operation at most k times.
 Return the length of the longest substring containing the same letter you can get after performing the above operations.
-Examples Input: s = &#34;ABAB&#34;, k = 2 Output: 4 Explanation: Replace the two &#39;A&#39;s with two &#39;B&#39;s or vice versa. Input: s = &#34;AABABBA&#34;, k = 1 Output: 4 Explanation: Replace the one &#39;A&#39; in the middle with &#39;B&#39; and form &#34;AABBBBA&#34;. The substring &#34;BBBB&#34; has the longest repeating letters, which is 4. There may exist other ways to achieve this answer too. Constraints 1 &lt;= s.length &lt;= 105 s consists of only uppercase English letters. 0 &lt;= k &lt;= s.length Brute force solution func characterReplacement(_ s: String, _ k: Int) -&gt; Int { let n = s.count let s = Array(s) var res = 0 for i in 0 ..&lt; n { var count: [Character: Int] = [:] var maxF = 0 for j in i ..&lt; n { count[s[j], default: 0] &#43;= 1 maxF = max(maxF, count[s[j]]!) let windowSize = (j - i &#43; 1) let numOfCharsToReplace = (windowSize - maxF) let canReplace = (numOfCharsToReplace &lt;= k) if canReplace { res = max(res, windowSize) } } } return res } Explanation First things first, we need to figure out which character we are going to replace. We can do this by using a dictionary. This way, we can calculate the most frequent character in the substring. After that, we will be able to calculate the number of characters to replace and check if we can replace the character.
+Examples
+Input: s = &#34;ABAB&#34;, k = 2  
+Output: 4  
+Explanation: Replace the two &#39;A&#39;s with two &#39;B&#39;s or vice versa.  
+Input: s = &#34;AABABBA&#34;, k = 1  
+Output: 4  
+Explanation: Replace the one &#39;A&#39; in the middle with &#39;B&#39; and form &#34;AABBBBA&#34;.  
+The substring &#34;BBBB&#34; has the longest repeating letters, which is 4.  
+There may exist other ways to achieve this answer too.  
+Constraints
+
+1 &lt;= s.length &lt;= 105
+s consists of only uppercase English letters.
+0 &lt;= k &lt;= s.length
+
+Brute force solution
+func characterReplacement(_ s: String, _ k: Int) -&gt; Int {  
+    let n = s.count  
+    let s = Array(s)  
+    var res = 0  
+
+    for i in 0 ..&lt; n {  
+        var count: [Character: Int] = [:]  
+        var maxF = 0  
+
+        for j in i ..&lt; n {  
+            count[s[j], default: 0] &#43;= 1  
+            maxF = max(maxF, count[s[j]]!)  
+
+            let windowSize = (j - i &#43; 1)  
+            let numOfCharsToReplace = (windowSize - maxF)  
+            let canReplace = (numOfCharsToReplace &lt;= k)  
+
+            if canReplace {  
+                res = max(res, windowSize)  
+            }  
+        }  
+    }  
+
+    return res  
+}  
+Explanation
+First things first, we need to figure out which character we are going to replace. We can do this by using a dictionary. This way, we can calculate the most frequent character in the substring. After that, we will be able to calculate the number of characters to replace and check if we can replace the character.
 This algorithm is not very fast and takes O(n^2) time. We can improve it further and optimize it to achieve O(n) time complexity.">
 
 
@@ -229,8 +256,8 @@ This algorithm is not very fast and takes O(n^2) time. We can improve it further
 }
 </script>
 </head>
-<body id="top">
-    
+
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -307,7 +334,7 @@ This algorithm is not very fast and takes O(n^2) time. We can improve it further
     <h1 class="post-title entry-hint-parent">
       LeetCode - Blind 75 - Longest Repeating Character Replacement
     </h1>
-    <div class="post-meta"><span title='2024-11-29 07:27:59 +0300 +0300'>November 29, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span>
+    <div class="post-meta"><span title='2024-11-29 07:27:59 +0300 +0300'>November 29, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov
 
 </div>
   </header> <div class="toc">
@@ -587,14 +614,9 @@ This algorithm is not very fast and takes O(n^2) time. We can improve it further
 </script>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -635,12 +657,11 @@ This algorithm is not very fast and takes O(n^2) time. We can improve it further
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

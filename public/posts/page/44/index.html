@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85fb0af2aff7cd05c393b38b9aa1eec4278c2f2948eeadf67c490cd3feb36131.css" integrity="sha256-hfsK8q/3zQXDk7OLmqHuxCeMLylI7q32fEkM0/6zYTE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml" title="rss">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
 <noscript>
     <style>
@@ -41,38 +41,23 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
-                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .toc {
-                background: var(--entry);
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
             }
-        }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><style>
+</noscript><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -109,10 +94,10 @@
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-  <meta name="twitter:title" content="Posts">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="Posts">
+<meta name="twitter:description" content="">
 
 
 <script type="application/ld+json">
@@ -130,8 +115,8 @@
 }
 </script>
 </head>
+
 <body class="list" id="top">
-    
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -209,6 +194,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Building Xcode project using Github Actions
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction If you’re wondering how to build an Xcode project using GitHub Actions, here are a few steps:
+First, you need to create a .github/workflows folder with a CI.yml file inside your project directory. Next, you need to add configuration to the CI.yml file. name: CI on: push: branches: - main jobs: build: runs-on: macos-14 steps: - name: Checkout code uses: actions/checkout@v4 - name: Set up Xcode version run: sudo xcode-select -s /Applications/Xcode_15.3.app/Contents/Developer - name: Install xcpretty run: gem install xcpretty - name: Build project run: xcodebuild -project /Users/runner/work/YourProjectName/YourProjectName/YourProjectName/YourProjectName.xcodeproj -scheme YourSchemeName -sdk iphonesimulator -destination &#39;platform=iOS Simulator,name=iPhone 15 Pro&#39; clean build | xcpretty Caveats If you don’t specify the path to the Xcode project, you will receive an error like this: xcodebuild: error: ‘YourProjectName.xcodeproj&#39; does not exist.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-23 08:29:30 +0300 EEST'>April 23, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to Building Xcode project using Github Actions" href="http://localhost:1313/posts/building-xcode-project-using-github-actions/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Delivering iOS app using Fastlane
     </h2>
   </header>
@@ -219,7 +218,7 @@ build_app: To easily build and sign your app (via gym). pilot: Makes it easier t
 fastlane beta Attention Before proceeding, you need to have the ipa or pkg file generated.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-04-19 06:49:13 +0300 EEST'>April 19, 2024</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-04-19 06:49:13 +0300 EEST'>April 19, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Delivering iOS app using Fastlane" href="http://localhost:1313/posts/delivering-ios-app-using-fastlane/"></a>
 </article>
 
@@ -233,7 +232,7 @@ fastlane beta Attention Before proceeding, you need to have the ipa or pkg file 
 One of such ways is by using the xcodebuild archive command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild archive: Once you’re in the project directory, you can run xcodebuild archive with the appropriate parameters to build your project. Example: xcodebuild archive -scheme YourSchemeName -archivePath ~/Desktop/YourAppName.xcarchive Another way is by integrating fastlane into your workflow: Outline of the process Install Fastlane: If you haven’t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-04-16 13:46:03 +0300 EEST'>April 16, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-04-16 13:46:03 +0300 EEST'>April 16, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Archiving Xcode project using the CLI" href="http://localhost:1313/posts/archiving-xcode-project-using-the-cli/"></a>
 </article>
 
@@ -247,7 +246,7 @@ One of such ways is by using the xcodebuild archive command Basic outline of the
 One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you’re in the project directory, you can run xcodebuild with the appropriate parameters to build your project. Example: xcodebuild -project YourProject.xcodeproj -scheme YourSchemeName test Another way is by integrating fastlane into your workflow: Outline of the process Install Fastlane: If you haven’t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-04-12 03:20:34 +0300 EEST'>April 12, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-04-12 03:20:34 +0300 EEST'>April 12, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Testing Xcode project using the CLI" href="http://localhost:1313/posts/testing-xcode-project-using-the-cli/"></a>
 </article>
 
@@ -261,23 +260,8 @@ One of such ways is by using the xcodebuild command Basic outline of the process
 One of such ways is by using the xcodebuild command Basic outline of the process Open Terminal: Open the Terminal application on your Mac. Navigate to Project Directory: Use the cd command to navigate to the directory containing your Xcode project. Run xcodebuild: Once you’re in the project directory, you can run xcodebuild with the appropriate parameters to build your project. Example: xcodebuild -project YourProjectName.xcodeproj -scheme YourSchemeName Another way is by integrating fastlane into your workflow: Outline of the process Install Fastlane: If you haven’t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-04-05 04:59:38 +0300 EEST'>April 5, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-04-05 04:59:38 +0300 EEST'>April 5, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to Building Xcode project using the CLI" href="http://localhost:1313/posts/building-xcode-project-using-the-cli/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">The Visitor Pattern
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>What is a Visitor Pattern? The Visitor Pattern helps add new capabilities to a composite of objects.
-Source
-What problems does it solve? The Visitor Pattern helps solve following problems:
-Separation of Concerns: The Visitor Pattern separates algorithms from the objects on which they operate. This allows for clean code organization by keeping algorithms and operations separate from the data structures they operate on. Extensibility: It allows you to add new operations to existing object structures without modifying those structures. This is especially useful when dealing with complex object hierarchies where adding new functionality directly to the classes would lead to code bloat and tight coupling. Traversal of Object Structures: It provides a way to traverse complex object structures while performing some action on each element of the structure. This is particularly useful in scenarios where you need to process every element of a data structure in a specific order or with a specific algorithm. Real-world code example // Element protocol representing the items on the menu protocol MenuItem { func accept(visitor: OrderVisitor) } // Concrete item types class Coffee: MenuItem { let name: String let price: Double init(name: String, price: Double) { self.name = name self.price = price } func accept(visitor: OrderVisitor) { visitor.visit(self) } } class Tea: MenuItem { let name: String let price: Double init(name: String, price: Double) { self.name = name self.price = price } func accept(visitor: OrderVisitor) { visitor.visit(self) } } class Pastry: MenuItem { let name: String let price: Double init(name: String, price: Double) { self.name = name self.price = price } func accept(visitor: OrderVisitor) { visitor.visit(self) } } // Visitor protocol defining the operations to be performed on menu items protocol OrderVisitor { func visit(_ item: Coffee) func visit(_ item: Tea) func visit(_ item: Pastry) } // Concrete visitor implementing operations on menu items class TotalCostVisitor: OrderVisitor { var totalCost = 0.0 func visit(_ item: Coffee) { totalCost &#43;= item.price } func visit(_ item: Tea) { totalCost &#43;= item.price } func visit(_ item: Pastry) { totalCost &#43;= item.price } } class ItemDetailsVisitor: OrderVisitor { var details = &#34;&#34; func visit(_ item: Coffee) { details &#43;= &#34;Coffee: \(item.name), Price: $\(item.price)\n&#34; } func visit(_ item: Tea) { details &#43;= &#34;Tea: \(item.name), Price: $\(item.price)\n&#34; } func visit(_ item: Pastry) { details &#43;= &#34;Pastry: \(item.name), Price: $\(item.price)\n&#34; } } // Example usage let items: [MenuItem] = [Coffee(name: &#34;Espresso&#34;, price: 2.5), Tea(name: &#34;Green Tea&#34;, price: 2.0), Pastry(name: &#34;Croissant&#34;, price: 3.0)] let totalCostVisitor = TotalCostVisitor() for item in items { item.accept(visitor: totalCostVisitor) } print(&#34;Total cost of the order: $\(totalCostVisitor.totalCost)&#34;) let itemDetailsVisitor = ItemDetailsVisitor() for item in items { item.accept(visitor: itemDetailsVisitor) } print(&#34;Order details:&#34;) print(itemDetailsVisitor.details) </p>
-  </div>
-  <footer class="entry-footer"><span title='2024-04-01 08:01:22 +0300 EEST'>April 1, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to The Visitor Pattern" href="http://localhost:1313/posts/the-visitor-pattern/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
@@ -321,14 +305,9 @@ Separation of Concerns: The Visitor Pattern separates algorithms from the object
 </script>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -369,12 +348,11 @@ Separation of Concerns: The Visitor Pattern separates algorithms from the object
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

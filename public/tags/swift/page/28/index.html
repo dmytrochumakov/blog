@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/swift/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85fb0af2aff7cd05c393b38b9aa1eec4278c2f2948eeadf67c490cd3feb36131.css" integrity="sha256-hfsK8q/3zQXDk7OLmqHuxCeMLylI7q32fEkM0/6zYTE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/swift/index.xml" title="rss">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/swift/index.xml">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/swift/">
 <noscript>
     <style>
@@ -41,38 +41,23 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
-                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .toc {
-                background: var(--entry);
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
             }
-        }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><style>
+</noscript><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -109,14 +94,14 @@
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-  <meta name="twitter:title" content="Swift">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="Swift">
+<meta name="twitter:description" content="">
 
 </head>
+
 <body class="list" id="top">
-    
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -194,6 +179,22 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">LeetCode - Blind 75 - Minimum Window Substring
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Problem Given two strings s and t of lengths m and n, respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string &#34;&#34;.
+A substring is a contiguous, non-empty sequence of characters within a string.
+The test cases will be generated such that the answer is unique.
+Examples Input: s = &#34;ADOBECODEBANC&#34;, t = &#34;ABC&#34; Output: &#34;BANC&#34; Explanation: The minimum window substring &#34;BANC&#34; includes &#39;A&#39;, &#39;B&#39;, and &#39;C&#39; from string t. Input: s = &#34;a&#34;, t = &#34;a&#34; Output: &#34;a&#34; Explanation: The entire string s is the minimum window. Input: s = &#34;a&#34;, t = &#34;aa&#34; Output: &#34;&#34; Explanation: Both &#39;a&#39;s from t must be included in the window. Since the largest window of s only has one &#39;a&#39;, return an empty string. Constraints m == s.length n == t.length 1 &lt;= m, n &lt;= 10⁵ s and t consist of uppercase and lowercase English letters. Follow-up: Could you find an algorithm that runs in O(m &#43; n) time?
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-03 07:09:24 +0300 +0300'>December 3, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Minimum Window Substring" href="http://localhost:1313/posts/leetcode-blind-75-minimum-window-substring/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">LeetCode - Blind 75 - Longest Repeating Character Replacement
     </h2>
   </header>
@@ -204,7 +205,7 @@ Examples Input: s = &#34;ABAB&#34;, k = 2 Output: 4 Explanation: Replace the two
 This algorithm is not very fast and takes O(n^2) time. We can improve it further and optimize it to achieve O(n) time complexity.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-11-29 07:27:59 +0300 +0300'>November 29, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-11-29 07:27:59 +0300 +0300'>November 29, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Longest Repeating Character Replacement" href="http://localhost:1313/posts/leetcode-blind-75-longest-repeating-character-replacement/"></a>
 </article>
 
@@ -219,7 +220,7 @@ A substring is a contiguous non-empty sequence of characters within a string.
 Examples Input: s = &#34;abcabcbb&#34; Output: 3 Explanation: The answer is &#34;abc&#34;, with the length of 3. Input: s = &#34;bbbbb&#34; Output: 1 Explanation: The answer is &#34;b&#34;, with the length of 1. Input: s = &#34;pwwkew&#34; Output: 3 Explanation: The answer is &#34;wke&#34;, with the length of 3. Notice that the answer must be a substring. &#34;pwke&#34; is a subsequence and not a substring. Constraints 0 &lt;= s.length &lt;= 5 * 10⁴ s consists of English letters, digits, symbols, and spaces. Brute Force Solution func lengthOfLongestSubstring(_ s: String) -&gt; Int { let n = s.count var res = 0 for i in 0 ..&lt; n { var chars: [Character] = [] for j in i ..&lt; n { if chars.contains(s[j]) { break } chars.append(s[j]) } res = max(res, chars.count) } return res } Explanation Let’s start by visualizing the problem:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-11-26 07:12:59 +0300 +0300'>November 26, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-11-26 07:12:59 +0300 +0300'>November 26, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Longest Substring Without Repeating Characters" href="http://localhost:1313/posts/leetcode-blind-75-longest-substring-without-repeating-characters/"></a>
 </article>
 
@@ -236,7 +237,7 @@ Examples Input: prices = [7,1,5,3,6,4] Output: 5 Explanation: Buy on day 2 (pric
 By visualizing the problem using input from example 1 [7,1,5,3,6,4]:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-11-22 07:14:17 +0300 +0300'>November 22, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-11-22 07:14:17 +0300 +0300'>November 22, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Best Time to Buy and Sell Stock" href="http://localhost:1313/posts/leetcode-blind-75-best-time-to-buy-and-sell-stock/"></a>
 </article>
 
@@ -252,24 +253,8 @@ Return the maximum amount of water a container can store.
 Notice that you may not slant the container.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2024-11-20 06:57:55 +0300 +0300'>November 20, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
+  <footer class="entry-footer"><span title='2024-11-20 06:57:55 +0300 +0300'>November 20, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Container With Most Water" href="http://localhost:1313/posts/leetcode-blind-75-container-with-most-water/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">LeetCode - Blind 75 - 3Sum
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The Problem Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] &#43; nums[j] &#43; nums[k] == 0.
-Notice that the solution set must not contain duplicate triplets.
-Examples Input: nums = [-1,0,1,2,-1,-4] Output: [[-1,-1,2],[-1,0,1]] Explanation: nums[0] &#43; nums[1] &#43; nums[2] = (-1) &#43; 0 &#43; 1 = 0. nums[1] &#43; nums[2] &#43; nums[4] = 0 &#43; 1 &#43; (-1) = 0. nums[0] &#43; nums[3] &#43; nums[4] = (-1) &#43; 2 &#43; (-1) = 0. The distinct triplets are [-1,0,1] and [-1,-1,2]. Notice that the order of the output and the order of the triplets does not matter. Input: nums = [0,1,1] Output: [] Explanation: The only possible triplet does not sum up to 0. Input: nums = [0,0,0] Output: [[0,0,0]] Explanation: The only possible triplet sums up to 0. Constraints 3 &lt;= nums.length &lt;= 3000 -10⁵ &lt;= nums[i] &lt;= 10⁵ Brute Force Solution func threeSum(_ nums: [Int]) -&gt; [[Int]] { var nums = nums let n = nums.count var res: Set&lt;[Int]&gt; = [] nums.sort() for i in 0 ..&lt; n { for j in i &#43; 1 ..&lt; n { for k in j &#43; 1 ..&lt; n { if nums[i] &#43; nums[j] &#43; nums[k] == 0 { let val = [nums[i], nums[j], nums[k]] res.insert(val) } } } } return Array(res) } Explanation Let’s start with the brute force solution.
-According to the problem, we need to find triplet elements that, when added together, equal 0. By looking at examples, the first thing that comes to mind is to use three loops, add each of the elements, and compare the result with 0. If the result equals 0, we add the elements to the result.
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-11-16 07:20:13 +0300 +0300'>November 16, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
-  <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - 3Sum" href="http://localhost:1313/posts/leetcode-blind-75-3sum/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
@@ -313,14 +298,9 @@ According to the problem, we need to find triplet elements that, when added toge
 </script>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -361,12 +341,11 @@ According to the problem, we need to find triplet elements that, when added toge
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,7 +45,7 @@ Let&rsquo;s start with the brute force solution. According to the description, w
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/leetcode-blind-75-valid-palindrome/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85fb0af2aff7cd05c393b38b9aa1eec4278c2f2948eeadf67c490cd3feb36131.css" integrity="sha256-hfsK8q/3zQXDk7OLmqHuxCeMLylI7q32fEkM0/6zYTE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -74,38 +74,23 @@ Let&rsquo;s start with the brute force solution. According to the description, w
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
-                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .toc {
-                background: var(--entry);
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
             }
-        }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><style>
+</noscript><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -152,13 +137,44 @@ Examples Input: s = &#34;A man, a plan, a canal: Panama&#34; Output: true Explan
     <meta property="article:tag" content="Valid Palindrome">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="LeetCode - Blind 75 - Valid Palindrome">
+<meta name="twitter:description" content="The Problem
+Given a string s, return true if it is a palindrome, or false otherwise.
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-  <meta name="twitter:title" content="LeetCode - Blind 75 - Valid Palindrome">
-  <meta name="twitter:description" content="The Problem Given a string s, return true if it is a palindrome, or false otherwise.
 A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
-Examples Input: s = &#34;A man, a plan, a canal: Panama&#34; Output: true Explanation: &#34;amanaplanacanalpanama&#34; is a palindrome. Input: s = &#34;race a car&#34; Output: false Explanation: &#34;raceacar&#34; is not a palindrome. Input: s = &#34; &#34; Output: true Explanation: s is an empty string &#34;&#34; after removing non-alphanumeric characters. Since an empty string reads the same forward and backward, it is a palindrome. Constraints 1 &lt;= s.length &lt;= 2 * 10^5 s consists only of printable ASCII characters. Brute Force Solution func isPalindrome(_ s: String) -&gt; Bool { var newStr = &#34;&#34; for c in s { if c.isLetter || c.isNumber { newStr &#43;= c.lowercased() } } return newStr == String(newStr.reversed()) } Explanation Let’s start with the brute force solution. According to the description, we need to check if the string contains only lowercase, alphanumeric characters and reads the same forward and backward. In Swift, you can check this using the built-in isLetter and isNumber properties. Based on this information, we iterate through all characters in the s string, verify that each character is a letter or number, update newStr with the current lowercased character, and compare the result with its reversed version.">
+
+Examples
+Input: s = &#34;A man, a plan, a canal: Panama&#34;
+Output: true
+Explanation: &#34;amanaplanacanalpanama&#34; is a palindrome.
+Input: s = &#34;race a car&#34;
+Output: false
+Explanation: &#34;raceacar&#34; is not a palindrome.
+Input: s = &#34; &#34;
+Output: true
+Explanation: s is an empty string &#34;&#34; after removing non-alphanumeric characters.
+Since an empty string reads the same forward and backward, it is a palindrome.
+Constraints
+
+1 &lt;= s.length &lt;= 2 * 10^5
+s consists only of printable ASCII characters.
+
+Brute Force Solution
+func isPalindrome(_ s: String) -&gt; Bool {
+    var newStr = &#34;&#34;
+
+    for c in s {
+        if c.isLetter || c.isNumber {
+            newStr &#43;= c.lowercased()
+        }
+    }
+
+    return newStr == String(newStr.reversed())
+}
+Explanation
+Let&rsquo;s start with the brute force solution. According to the description, we need to check if the string contains only lowercase, alphanumeric characters and reads the same forward and backward. In Swift, you can check this using the built-in isLetter and isNumber properties. Based on this information, we iterate through all characters in the s string, verify that each character is a letter or number, update newStr with the current lowercased character, and compare the result with its reversed version.">
 
 
 <script type="application/ld+json">
@@ -215,8 +231,8 @@ Examples Input: s = &#34;A man, a plan, a canal: Panama&#34; Output: true Explan
 }
 </script>
 </head>
-<body id="top">
-    
+
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -293,7 +309,7 @@ Examples Input: s = &#34;A man, a plan, a canal: Panama&#34; Output: true Explan
     <h1 class="post-title entry-hint-parent">
       LeetCode - Blind 75 - Valid Palindrome
     </h1>
-    <div class="post-meta"><span title='2024-11-14 07:00:45 +0300 +0300'>November 14, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span>
+    <div class="post-meta"><span title='2024-11-14 07:00:45 +0300 +0300'>November 14, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov
 
 </div>
   </header> <div class="toc">
@@ -566,14 +582,9 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 </script>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -614,12 +625,11 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@ For simplicity, each node&rsquo;s value is the same as the node&rsquo;s index (1
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/leetcode-blind-75-clone-graph/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85fb0af2aff7cd05c393b38b9aa1eec4278c2f2948eeadf67c490cd3feb36131.css" integrity="sha256-hfsK8q/3zQXDk7OLmqHuxCeMLylI7q32fEkM0/6zYTE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -48,38 +48,23 @@ For simplicity, each node&rsquo;s value is the same as the node&rsquo;s index (1
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
-                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .toc {
-                background: var(--entry);
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
             }
-        }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><style>
+</noscript><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -126,13 +111,18 @@ class Node { public int val; public List&lt;Node&gt; neighbors; } Test Case Form
     <meta property="article:tag" content="Clone Graph">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-  <meta name="twitter:title" content="LeetCode - Blind 75 - Clone Graph">
-  <meta name="twitter:description" content="The Problem Given a reference to a node in a connected undirected graph, return a deep copy (clone) of the graph.
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="LeetCode - Blind 75 - Clone Graph">
+<meta name="twitter:description" content="The Problem
+Given a reference to a node in a connected undirected graph, return a deep copy (clone) of the graph.
 Each node in the graph contains a value (int) and a list (List[Node]) of its neighbors:
-class Node { public int val; public List&lt;Node&gt; neighbors; } Test Case Format For simplicity, each node’s value is the same as the node’s index (1-indexed). For example, the first node has val == 1, the second node has val == 2, and so on. The graph is represented in the test case using an adjacency list.">
+class Node {
+    public int val;
+    public List&lt;Node&gt; neighbors;
+}
+Test Case Format
+For simplicity, each node&rsquo;s value is the same as the node&rsquo;s index (1-indexed). For example, the first node has val == 1, the second node has val == 2, and so on. The graph is represented in the test case using an adjacency list.">
 
 
 <script type="application/ld+json">
@@ -189,8 +179,8 @@ class Node { public int val; public List&lt;Node&gt; neighbors; } Test Case Form
 }
 </script>
 </head>
-<body id="top">
-    
+
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -267,7 +257,7 @@ class Node { public int val; public List&lt;Node&gt; neighbors; } Test Case Form
     <h1 class="post-title entry-hint-parent">
       LeetCode - Blind 75 - Clone Graph
     </h1>
-    <div class="post-meta"><span title='2025-02-21 12:49:46 +0300 +0300'>February 21, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span>
+    <div class="post-meta"><span title='2025-02-21 12:49:46 +0300 +0300'>February 21, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov
 
 </div>
   </header> <div class="toc">
@@ -325,7 +315,7 @@ class Node { public int val; public List&lt;Node&gt; neighbors; } Test Case Form
 </div>
 
   <div class="post-content"><h3 id="the-problem">The Problem<a hidden class="anchor" aria-hidden="true" href="#the-problem">#</a></h3>
-<p>Given a reference to a node in a <a href="https://en.wikipedia.org/wiki/Connectivity_%28graph_theory%29#Connected_graph">connected</a> undirected graph, return a <a href="https://en.wikipedia.org/wiki/Object_copying#Deep_copy">deep copy</a> (clone) of the graph.</p>
+<p>Given a reference to a node in a <a href="https://en.wikipedia.org/wiki/Connectivity_(graph_theory)#Connected_graph">connected</a> undirected graph, return a <a href="https://en.wikipedia.org/wiki/Object_copying#Deep_copy">deep copy</a> (clone) of the graph.</p>
 <p>Each node in the graph contains a value (<code>int</code>) and a list (<code>List[Node]</code>) of its neighbors:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Node</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">int</span> <span class="n">val</span><span class="p">;</span>
@@ -613,14 +603,9 @@ Explanation: This is an empty graph; it does not have any nodes.
 </script>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -661,12 +646,11 @@ Explanation: This is an empty graph; it does not have any nodes.
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

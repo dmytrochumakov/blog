@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,7 +53,7 @@ By visualizing the problem using input from example 1 [7,1,5,3,6,4]:
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/leetcode-blind-75-best-time-to-buy-and-sell-stock/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85fb0af2aff7cd05c393b38b9aa1eec4278c2f2948eeadf67c490cd3feb36131.css" integrity="sha256-hfsK8q/3zQXDk7OLmqHuxCeMLylI7q32fEkM0/6zYTE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -82,38 +82,23 @@ By visualizing the problem using input from example 1 [7,1,5,3,6,4]:
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
-                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .toc {
-                background: var(--entry);
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
             }
-        }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><style>
+</noscript><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -162,15 +147,52 @@ By visualizing the problem using input from example 1 [7,1,5,3,6,4]:">
     <meta property="article:tag" content="Best Time to Buy and Sell Stock">
     <meta property="article:tag" content="Swift">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-  <meta name="twitter:title" content="LeetCode - Blind 75 - Best Time to Buy and Sell Stock">
-  <meta name="twitter:description" content="The problem You are given an array prices where prices[i] is the price of a given stock on the i-th day.
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="LeetCode - Blind 75 - Best Time to Buy and Sell Stock">
+<meta name="twitter:description" content="The problem
+You are given an array prices where prices[i] is the price of a given stock on the i-th day.
 You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
 Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
-Examples Input: prices = [7,1,5,3,6,4] Output: 5 Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5. Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell. Input: prices = [7,6,4,3,1] Output: 0 Explanation: In this case, no transactions are done and the max profit = 0. Constraints 1 &lt;= prices.length &lt;= 10⁵ 0 &lt;= prices[i] &lt;= 10⁴ Brute force solution func maxProfit(_ prices: [Int]) -&gt; Int { let n = prices.count var res = 0 for i in 0 ..&lt; n { for j in i &#43; 1 ..&lt; n { let profit = prices[j] - prices[i] if profit &gt; 0 { res = max(res, profit) } } } return res } Explanation We can start with a brute force solution and find a way to a more optimal solution as we go.
-By visualizing the problem using input from example 1 [7,1,5,3,6,4]:">
+Examples
+Input: prices = [7,1,5,3,6,4]  
+Output: 5  
+Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.  
+Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.  
+Input: prices = [7,6,4,3,1]  
+Output: 0  
+Explanation: In this case, no transactions are done and the max profit = 0.  
+Constraints
+
+1 &lt;= prices.length &lt;= 10⁵
+0 &lt;= prices[i] &lt;= 10⁴
+
+Brute force solution
+func maxProfit(_ prices: [Int]) -&gt; Int {  
+    let n = prices.count  
+    var res = 0  
+
+    for i in 0 ..&lt; n {  
+        for j in i &#43; 1 ..&lt; n {  
+            let profit = prices[j] - prices[i]  
+            if profit &gt; 0 {  
+                res = max(res, profit)  
+            }  
+        }  
+    }  
+
+    return res  
+}  
+Explanation
+We can start with a brute force solution and find a way to a more optimal solution as we go.
+By visualizing the problem using input from example 1 [7,1,5,3,6,4]:
+
+    
+    
+    
+        
+    
+">
 
 
 <script type="application/ld+json">
@@ -227,8 +249,8 @@ By visualizing the problem using input from example 1 [7,1,5,3,6,4]:">
 }
 </script>
 </head>
-<body id="top">
-    
+
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -305,7 +327,7 @@ By visualizing the problem using input from example 1 [7,1,5,3,6,4]:">
     <h1 class="post-title entry-hint-parent">
       LeetCode - Blind 75 - Best Time to Buy and Sell Stock
     </h1>
-    <div class="post-meta"><span title='2024-11-22 07:14:17 +0300 +0300'>November 22, 2024</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span>
+    <div class="post-meta"><span title='2024-11-22 07:14:17 +0300 +0300'>November 22, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov
 
 </div>
   </header> <div class="toc">
@@ -577,14 +599,9 @@ We can iterate over all prices, compare the current price with the next one, and
 </script>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -625,12 +642,11 @@ We can iterate over all prices, compare the current price with the next one, and
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })

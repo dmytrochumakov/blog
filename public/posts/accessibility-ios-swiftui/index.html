@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -160,7 +160,7 @@ Thank you for reading! 😊">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/accessibility-ios-swiftui/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85fb0af2aff7cd05c393b38b9aa1eec4278c2f2948eeadf67c490cd3feb36131.css" integrity="sha256-hfsK8q/3zQXDk7OLmqHuxCeMLylI7q32fEkM0/6zYTE=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -189,38 +189,23 @@ Thank you for reading! 😊">
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
-                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .toc {
-                background: var(--entry);
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
             }
-        }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
             }
         }
 
     </style>
-</noscript>
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else if (localStorage.getItem("pref-theme") === "light") {
-       document.querySelector("html").dataset.theme = 'light';
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.querySelector("html").dataset.theme = 'dark';
-    } else {
-        document.querySelector("html").dataset.theme = 'light';
-    }
-
-</script><style>
+</noscript><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -266,13 +251,159 @@ Differences: To use dynamic type for fonts, you need additional modifiers in Swi
     <meta property="article:tag" content="IOS">
     <meta property="article:tag" content="SwiftUI">
       <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="Accessibility iOS SwiftUI">
+<meta name="twitter:description" content="Introduction
+Previously, I posted about Accessibility for UIKit. The idea behind this post is to find differences between UIKit Accessibility and SwiftUI features.
+Similarities:
+Both UIKit and SwiftUI have accessibilityLabel and accessibilityHints APIs.
+Differences:
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
-  <meta name="twitter:title" content="Accessibility iOS SwiftUI">
-  <meta name="twitter:description" content="Introduction Previously, I posted about Accessibility for UIKit. The idea behind this post is to find differences between UIKit Accessibility and SwiftUI features.
-Similarities: Both UIKit and SwiftUI have accessibilityLabel and accessibilityHints APIs.
-Differences: To use dynamic type for fonts, you need additional modifiers in SwiftUI. struct ScaledFont: ViewModifier { @Environment(\.sizeCategory) var sizeCategory var name: String var size: Double func body(content: Content) -&gt; some View { let scaledSize = UIFontMetrics.default.scaledValue(for: size) return content.font(.custom(name, size: scaledSize)) } } extension View { func scaledFont(name: String, textSize size: Double) -&gt; some View { return self.modifier(ScaledFont(name: name, size: size)) } } To step over elements in a list, you need to add .accessibilityElement(children: .combine) to each row in SwiftUI. struct FruitCaloriesCounter: View { var body: some View { NavigationView { List(fruits) { fruit in FruitRow(fruit: fruit) .accessibilityElement(children: .combine) } .navigationTitle(&#34;Fruits Calories Counter&#34;) .accessibilityElement(children: .contain) .navigationBarTitleDisplayMode(.inline) } } } In UIKit, you can insert and remove accessibilityTraits depending on the button state: if button.isSelected { button.accessibilityTraits.insert(.header) } else { button.accessibilityTraits.remove(.header) } In SwiftUI, you need to pass .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton) to one modifier. Button(action: { selected.toggle() }) { Image(systemName: selected ? &#34;star.fill&#34; : &#34;star&#34;) .frame(width: 44, height: 44) .accessibilityLabel(&#34;favourite&#34;) .accessibilityHint(selected ? &#34;removes favourite&#34; : &#34;makes favourite&#34;) .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton) } .buttonStyle(.plain) Complete Sample import SwiftUI let fruits = [ Fruit(name: &#34;Apple&#34;, calories: 52), Fruit(name: &#34;Banana&#34;, calories: 89), Fruit(name: &#34;Orange&#34;, calories: 47), Fruit(name: &#34;Pineapple&#34;, calories: 50), Fruit(name: &#34;Strawberry&#34;, calories: 32) ] struct Fruit: Identifiable { var id: String { name } let name: String let calories: Int } struct FruitRow: View { @State private var selected = false let fruit: Fruit var body: some View { HStack(spacing: 8) { VStack(alignment: .leading, spacing: 8) { Text(fruit.name) .scaledFont(name: &#34;Helvetica&#34;, textSize: 20) .accessibilityLabel(fruit.name) Text(&#34;\(fruit.calories) per 100g&#34;) .scaledFont(name: &#34;Helvetica&#34;, textSize: 15) .accessibilityLabel(&#34;\(fruit.calories) calories per 100 grams&#34;) } Spacer() Button(action: { selected.toggle() }) { Image(systemName: selected ? &#34;star.fill&#34; : &#34;star&#34;) .frame(width: 44, height: 44) .accessibilityLabel(&#34;favourite&#34;) .accessibilityHint(selected ? &#34;removes favourite&#34; : &#34;makes favourite&#34;) .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton) } .buttonStyle(.plain) } } } struct FruitCaloriesCounter: View { var body: some View { NavigationView { List(fruits) { fruit in FruitRow(fruit: fruit) .accessibilityElement(children: .combine) } .navigationTitle(&#34;Fruits Calories Counter&#34;) .accessibilityElement(children: .contain) .navigationBarTitleDisplayMode(.inline) } } } struct ContentView: View { var body: some View { FruitCaloriesCounter() } } #Preview { ContentView() } struct ScaledFont: ViewModifier { @Environment(\.sizeCategory) var sizeCategory var name: String var size: Double func body(content: Content) -&gt; some View { let scaledSize = UIFontMetrics.default.scaledValue(for: size) return content.font(.custom(name, size: scaledSize)) } } extension View { func scaledFont(name: String, textSize size: Double) -&gt; some View { return self.modifier(ScaledFont(name: name, size: size)) } } Thank you for reading! 😊">
+To use dynamic type for fonts, you need additional modifiers in SwiftUI.
+struct ScaledFont: ViewModifier {
+      @Environment(\.sizeCategory) var sizeCategory
+      var name: String
+      var size: Double
+
+      func body(content: Content) -&gt; some View {
+          let scaledSize = UIFontMetrics.default.scaledValue(for: size)
+          return content.font(.custom(name, size: scaledSize))
+      }
+  }
+
+  extension View {
+      func scaledFont(name: String, textSize size: Double) -&gt; some View {
+          return self.modifier(ScaledFont(name: name, size: size))
+      }
+  }
+
+To step over elements in a list, you need to add .accessibilityElement(children: .combine) to each row in SwiftUI.
+struct FruitCaloriesCounter: View {
+      var body: some View {
+          NavigationView {
+              List(fruits) { fruit in
+                  FruitRow(fruit: fruit)
+                      .accessibilityElement(children: .combine)
+              }
+              .navigationTitle(&#34;Fruits Calories Counter&#34;)
+              .accessibilityElement(children: .contain)
+              .navigationBarTitleDisplayMode(.inline)
+          }
+      }
+  }
+
+In UIKit, you can insert and remove accessibilityTraits depending on the button state:
+if button.isSelected {
+    button.accessibilityTraits.insert(.header)
+} else {
+    button.accessibilityTraits.remove(.header)
+}
+
+In SwiftUI, you need to pass .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton) to one modifier.
+Button(action: {
+  selected.toggle()
+}) {
+  Image(systemName: selected ? &#34;star.fill&#34; : &#34;star&#34;)
+      .frame(width: 44, height: 44)
+      .accessibilityLabel(&#34;favourite&#34;)
+      .accessibilityHint(selected ? &#34;removes favourite&#34; : &#34;makes favourite&#34;)
+      .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton)
+}
+.buttonStyle(.plain)
+
+
+Complete Sample
+import SwiftUI
+
+let fruits = [
+    Fruit(name: &#34;Apple&#34;, calories: 52),
+    Fruit(name: &#34;Banana&#34;, calories: 89),
+    Fruit(name: &#34;Orange&#34;, calories: 47),
+    Fruit(name: &#34;Pineapple&#34;, calories: 50),
+    Fruit(name: &#34;Strawberry&#34;, calories: 32)
+]
+
+struct Fruit: Identifiable {
+    var id: String { name }
+    let name: String
+    let calories: Int
+}
+
+struct FruitRow: View {
+
+    @State private var selected = false
+    let fruit: Fruit
+
+    var body: some View {
+        HStack(spacing: 8) {
+            VStack(alignment: .leading, spacing: 8) {
+                Text(fruit.name)
+                    .scaledFont(name: &#34;Helvetica&#34;, textSize: 20)
+                    .accessibilityLabel(fruit.name)
+                Text(&#34;\(fruit.calories) per 100g&#34;)
+                    .scaledFont(name: &#34;Helvetica&#34;, textSize: 15)
+                    .accessibilityLabel(&#34;\(fruit.calories) calories per 100 grams&#34;)
+            }
+            Spacer()
+            Button(action: {
+                selected.toggle()
+            }) {
+                Image(systemName: selected ? &#34;star.fill&#34; : &#34;star&#34;)
+                    .frame(width: 44, height: 44)
+                    .accessibilityLabel(&#34;favourite&#34;)
+                    .accessibilityHint(selected ? &#34;removes favourite&#34; : &#34;makes favourite&#34;)
+                    .accessibilityAddTraits(selected ? [.isSelected, .isButton] : .isButton)
+            }
+            .buttonStyle(.plain)
+        }
+    }
+
+}
+
+struct FruitCaloriesCounter: View {
+
+    var body: some View {
+        NavigationView {
+            List(fruits) { fruit in
+                FruitRow(fruit: fruit)
+                    .accessibilityElement(children: .combine)
+            }
+            .navigationTitle(&#34;Fruits Calories Counter&#34;)
+            .accessibilityElement(children: .contain)
+            .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+
+}
+
+struct ContentView: View {
+    var body: some View {
+        FruitCaloriesCounter()
+    }
+}
+
+#Preview {
+    ContentView()
+}
+
+struct ScaledFont: ViewModifier {
+    @Environment(\.sizeCategory) var sizeCategory
+    var name: String
+    var size: Double
+
+    func body(content: Content) -&gt; some View {
+        let scaledSize = UIFontMetrics.default.scaledValue(for: size)
+        return content.font(.custom(name, size: scaledSize))
+    }
+}
+
+extension View {
+    func scaledFont(name: String, textSize size: Double) -&gt; some View {
+        return self.modifier(ScaledFont(name: name, size: size))
+    }
+}
+Thank you for reading! 😊">
 
 
 <script type="application/ld+json">
@@ -329,8 +460,8 @@ Differences: To use dynamic type for fonts, you need additional modifiers in Swi
 }
 </script>
 </head>
-<body id="top">
-    
+
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -407,7 +538,7 @@ Differences: To use dynamic type for fonts, you need additional modifiers in Swi
     <h1 class="post-title entry-hint-parent">
       Accessibility iOS SwiftUI
     </h1>
-    <div class="post-meta"><span title='2024-06-02 09:04:06 +0300 EEST'>June 2, 2024</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span>
+    <div class="post-meta"><span title='2024-06-02 09:04:06 +0300 EEST'>June 2, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov
 
 </div>
   </header> <div class="toc">
@@ -728,14 +859,9 @@ Differences: To use dynamic type for fonts, you need additional modifiers in Swi
 </script>
 
 <script>
-    let menu = document.getElementById('menu');
+    let menu = document.getElementById('menu')
     if (menu) {
-        
-        const scrollPosition = localStorage.getItem("menu-scroll-position");
-        if (scrollPosition) {
-            menu.scrollLeft = parseInt(scrollPosition, 10);
-        }
-        
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -776,12 +902,11 @@ Differences: To use dynamic type for fonts, you need additional modifiers in Swi
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        const html = document.querySelector("html");
-        if (html.dataset.theme === "dark") {
-            html.dataset.theme = 'light';
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            html.dataset.theme = 'dark';
+            document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })
