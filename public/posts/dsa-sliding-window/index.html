@@ -14,7 +14,7 @@ The sliding window algorithm is a method for finding a subset of elements that s
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/dsa-sliding-window/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.28d74077ed27cb336336efcb32105483ecda831f442e28917680e41e63b70e40.css" integrity="sha256-KNdAd&#43;0nyzNjNu/LMhBUg&#43;zagx9ELiiRdoDkHmO3DkA=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -76,21 +76,7 @@ The sliding window algorithm is a method for finding a subset of elements that s
         }
     }
     </style>
-    
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-HZZ4JTFGDP');
-        }
-      </script><meta property="og:url" content="http://localhost:1313/posts/dsa-sliding-window/">
+    <meta property="og:url" content="http://localhost:1313/posts/dsa-sliding-window/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
   <meta property="og:title" content="DSA - Sliding Window">
   <meta property="og:description" content="What is the sliding window technique? The sliding window technique is a common algorithmic approach used to create a fixed-sized window that moves through the data one step at a time, typically from left to right, to perform specific operations or computations on the elements within the window.
@@ -283,8 +269,7 @@ The sliding window algorithm is a method for finding a subset of elements that s
 <h3 id="how-does-the-sliding-window-algorithm-work">How does the sliding window algorithm work?<a hidden class="anchor" aria-hidden="true" href="#how-does-the-sliding-window-algorithm-work">#</a></h3>
 <p>Let’s look at the &ldquo;maximum sum of a subarray&rdquo; problem to better understand how it works:</p>
 <blockquote>
-<p><strong>Problem:</strong> Given an array of integers, find the maximum sum of a subarray with a fixed window size.</p>
-</blockquote>
+<p><strong>Problem:</strong> Given an array of integers, find the maximum sum of a subarray with a fixed window size.</p></blockquote>
 <p>In this case, the sliding window algorithm uses a fixed size window that the user can pass to a function as a parameter. It iterates through all the elements inside that window by accessing the <code>current value</code>(nums[i]) and <code>previous value</code>(nums[i - k]) and calculates the <code>window sum</code>, which is needed to determine the <code>max sum</code> result.</p>
 <h3 id="code-example">Code Example<a hidden class="anchor" aria-hidden="true" href="#code-example">#</a></h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">maxSubArraySum</span><span class="p">(</span><span class="kc">_</span> <span class="n">nums</span><span class="p">:</span> <span class="p">[</span><span class="nb">Int</span><span class="p">],</span> <span class="kc">_</span> <span class="n">k</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span> <span class="p">{</span>

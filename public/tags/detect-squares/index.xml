@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.138.0</generator>
+    <generator>Hugo -- 0.148.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 23 Jun 2026 08:04:51 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/detect-squares/index.xml" rel="self" type="application/rss+xml" />

@@ -42,7 +42,7 @@ Constraints:">
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/leetcode-design-hashset/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.28d74077ed27cb336336efcb32105483ecda831f442e28917680e41e63b70e40.css" integrity="sha256-KNdAd&#43;0nyzNjNu/LMhBUg&#43;zagx9ELiiRdoDkHmO3DkA=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -104,21 +104,7 @@ Constraints:">
         }
     }
     </style>
-    
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-HZZ4JTFGDP');
-        }
-      </script><meta property="og:url" content="http://localhost:1313/posts/leetcode-design-hashset/">
+    <meta property="og:url" content="http://localhost:1313/posts/leetcode-design-hashset/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
   <meta property="og:title" content="LeetCode - Design HashSet">
   <meta property="og:description" content="The problem Design a HashSet without using any built-in hash table libraries.
@@ -390,8 +376,7 @@ For example:
             src="images/705.png#center" alt="alt image" 
              />
     </label>
-</p>
-</blockquote>
+</p></blockquote>
 <p>The last part that we need to figure out is how to handle collisions (duplicates). There are multiple ways to do that. One of them is called <code>open addressing</code>, but in our case, we are going to focus on <code>chaining</code>.</p>
 <p>The chaining technique uses a linked list to handle collisions. To do so, we check if the value is already in the linked list, and if it is, we skip it. For example:
 

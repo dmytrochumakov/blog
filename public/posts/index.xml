@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.138.0</generator>
+    <generator>Hugo -- 0.148.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 17 Aug 2026 07:00:00 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -679,11 +679,9 @@ Output: [&amp;#34;a&amp;#34;,&amp;#34;b&amp;#34;,&amp;#34;c&amp;#34;]
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
 &lt;p&gt;Given a string &lt;code&gt;s&lt;/code&gt;, partition &lt;code&gt;s&lt;/code&gt; such that every substring of the partition is a palindrome. Return all possible palindrome partitionings of &lt;code&gt;s&lt;/code&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A substring is a contiguous non-empty sequence of characters within a string.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A substring is a contiguous non-empty sequence of characters within a string.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A palindrome is a string that reads the same forward and backward.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A palindrome is a string that reads the same forward and backward.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;aab&amp;#34;
 Output: [[&amp;#34;a&amp;#34;,&amp;#34;a&amp;#34;,&amp;#34;b&amp;#34;],[&amp;#34;aa&amp;#34;,&amp;#34;b&amp;#34;]]
@@ -705,8 +703,7 @@ Output: [[&amp;#34;a&amp;#34;]]
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
 &lt;p&gt;Given an integer array &lt;code&gt;nums&lt;/code&gt; that may contain duplicates, return all possible subsets (the power set).&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A subset of an array is a selection of elements (possibly none) of the array.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A subset of an array is a selection of elements (possibly none) of the array.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;The solution set must not contain duplicate subsets. Return the solution in any order.&lt;/p&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [1,2,2]
@@ -740,8 +737,7 @@ From the given input:&lt;/p&gt;</description>
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
 &lt;p&gt;Given an array &lt;code&gt;nums&lt;/code&gt; of distinct integers, return all the possible permutations. You can return the answer in any order.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A permutation is a rearrangement of all the elements of an array.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A permutation is a rearrangement of all the elements of an array.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [1,2,3]
 Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
@@ -767,8 +763,7 @@ Output: [[1]]
 &lt;p&gt;Given a collection of candidate numbers (&lt;code&gt;candidates&lt;/code&gt;) and a target number (&lt;code&gt;target&lt;/code&gt;), find all unique combinations in &lt;code&gt;candidates&lt;/code&gt; where the candidate numbers sum to &lt;code&gt;target&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Each number in &lt;code&gt;candidates&lt;/code&gt; may only be used once in the combination.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The solution set must not contain duplicate combinations.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The solution set must not contain duplicate combinations.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: candidates = [10,1,2,7,6,1,5], target = 8
 Output: 
@@ -801,8 +796,7 @@ Output:
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
 &lt;p&gt;Given an integer array &lt;code&gt;nums&lt;/code&gt; of unique elements, return all possible subsets (the power set).&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A subset of an array is a selection of elements (possibly none) of the array.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A subset of an array is a selection of elements (possibly none) of the array.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;The solution set must not contain duplicate subsets. Return the solution in any order.&lt;/p&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [1,2,3]
@@ -877,8 +871,7 @@ twitter.getNewsFeed(1);  // User 1&amp;#39;s news feed should return a list with
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
 &lt;p&gt;Given an integer array &lt;code&gt;nums&lt;/code&gt; and an integer &lt;code&gt;k&lt;/code&gt;, return the &lt;code&gt;kth&lt;/code&gt; largest element in the array.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Note that it is the &lt;code&gt;kth&lt;/code&gt; largest element in the sorted order, not the &lt;code&gt;kth&lt;/code&gt; distinct element.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Note that it is the &lt;code&gt;kth&lt;/code&gt; largest element in the sorted order, not the &lt;code&gt;kth&lt;/code&gt; distinct element.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Can you solve it without sorting?&lt;/p&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [3,2,1,5,6,4], k = 2
@@ -1022,8 +1015,7 @@ Output: []
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
 &lt;p&gt;Given a binary tree, determine if it is height-balanced.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A height-balanced binary tree is a binary tree in which the depth of the two subtrees of every node never differs by more than one.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A height-balanced binary tree is a binary tree in which the depth of the two subtrees of every node never differs by more than one.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;p&gt;
     
@@ -1065,11 +1057,9 @@ Output: true
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
 &lt;p&gt;Given the &lt;code&gt;root&lt;/code&gt; of a binary tree, return the length of the diameter of the tree.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The diameter of a binary tree is the length of the longest path between any two nodes in a tree. This path may or may not pass through the &lt;code&gt;root&lt;/code&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The diameter of a binary tree is the length of the longest path between any two nodes in a tree. This path may or may not pass through the &lt;code&gt;root&lt;/code&gt;.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The length of a path between two nodes is represented by the number of edges between them.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The length of a path between two nodes is represented by the number of edges between them.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;p&gt;
     
@@ -1079,19 +1069,7 @@ Output: true
             src=&#34;images/diamtree.jpg#center&#34; alt=&#34;alt image&#34; 
              /&gt;
     &lt;/label&gt;
-&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: root = [1,2,3,4,5]
-Output: 3
-Explanation: 3 is the length of the path [4,2,1,3] or [5,2,1,3].
-&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: root = [1,2]
-Output: 1
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;The number of nodes in the tree is in the range [1, 10^4].&lt;/li&gt;
-&lt;li&gt;-100 &amp;lt;= Node.val &amp;lt;= 100&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
-&lt;p&gt;From the problem statement, we learn that we are given the &lt;code&gt;root&lt;/code&gt; of a binary tree and we need to find the diameter of the binary tree. The diameter is defined as the longest path from a particular node.&lt;/p&gt;</description>
+&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode - 150 - LRU Cache</title>
@@ -1544,8 +1522,7 @@ We can see that at the first position we have &lt;strong&gt;max&lt;/strong&gt; v
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
 &lt;p&gt;Given two strings &lt;code&gt;s1&lt;/code&gt; and &lt;code&gt;s2&lt;/code&gt;, return &lt;code&gt;true&lt;/code&gt; if &lt;code&gt;s2&lt;/code&gt; contains a permutation of &lt;code&gt;s1&lt;/code&gt;, or &lt;code&gt;false&lt;/code&gt; otherwise.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A permutation is a rearrangement of all the characters of a string.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A permutation is a rearrangement of all the characters of a string.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;In other words, return &lt;code&gt;true&lt;/code&gt; if one of &lt;code&gt;s1&lt;/code&gt;’s permutations is a substring of &lt;code&gt;s2&lt;/code&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s1 = &amp;#34;ab&amp;#34;, s2 = &amp;#34;eidbaooo&amp;#34;
@@ -1761,8 +1738,7 @@ Explanation:
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
 &lt;p&gt;Given a positive integer &lt;code&gt;n&lt;/code&gt;, write a function that returns the number of set bits in its binary representation (also known as the &lt;a href=&#34;https://en.wikipedia.org/wiki/Hamming_weight&#34;&gt;Hamming weight&lt;/a&gt;).&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A set bit refers to a bit in the binary representation of a number that has a value of 1.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A set bit refers to a bit in the binary representation of a number that has a value of 1.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: n = 11  
 Output: 3  
@@ -2161,8 +2137,7 @@ Basically, this means for input with &lt;code&gt;nums = [2,3,1,1,4]&lt;/code&gt;
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
 &lt;p&gt;Given an integer array &lt;code&gt;nums&lt;/code&gt;, find the subarray with the largest sum, and return its sum.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A subarray is a contiguous non-empty sequence of elements within an array.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A subarray is a contiguous non-empty sequence of elements within an array.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [-2,1,-3,4,-1,2,1,-5,4]  
 Output: 6  
@@ -2210,8 +2185,7 @@ Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
 &lt;p&gt;Given an integer array &lt;code&gt;nums&lt;/code&gt;, return the length of the longest strictly increasing subsequence.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A subsequence is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A subsequence is an array that can be derived from another array by deleting some or no elements without changing the order of the remaining elements.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [10,9,2,5,3,7,101,18]
 Output: 4
@@ -2289,8 +2263,7 @@ Output: false
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
 &lt;p&gt;Given an integer array &lt;code&gt;nums&lt;/code&gt;, find a subarray that has the largest product and return the product.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A subarray is a contiguous, non-empty sequence of elements within an array.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A subarray is a contiguous, non-empty sequence of elements within an array.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;The test cases are generated so that the answer will fit in a 32-bit integer.&lt;/p&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [2,3,-2,4]  
@@ -2463,8 +2436,7 @@ Explanation: Six palindromic strings: &amp;#34;a&amp;#34;, &amp;#34;a&amp;#34;, 
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
 &lt;p&gt;Given a string &lt;code&gt;s&lt;/code&gt;, return the longest palindromic substring in &lt;code&gt;s&lt;/code&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A string is palindromic if it reads the same forward and backward.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A string is palindromic if it reads the same forward and backward.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;babad&amp;#34;
 Output: &amp;#34;bab&amp;#34;
@@ -2716,7 +2688,7 @@ Output: true
       <pubDate>Fri, 21 Feb 2025 12:49:46 +0300</pubDate>
       <guid>http://localhost:1313/posts/leetcode-blind-75-clone-graph/</guid>
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
-&lt;p&gt;Given a reference to a node in a &lt;a href=&#34;https://en.wikipedia.org/wiki/Connectivity_(graph_theory)#Connected_graph&#34;&gt;connected&lt;/a&gt; undirected graph, return a &lt;a href=&#34;https://en.wikipedia.org/wiki/Object_copying#Deep_copy&#34;&gt;deep copy&lt;/a&gt; (clone) of the graph.&lt;/p&gt;
+&lt;p&gt;Given a reference to a node in a &lt;a href=&#34;https://en.wikipedia.org/wiki/Connectivity_%28graph_theory%29#Connected_graph&#34;&gt;connected&lt;/a&gt; undirected graph, return a &lt;a href=&#34;https://en.wikipedia.org/wiki/Object_copying#Deep_copy&#34;&gt;deep copy&lt;/a&gt; (clone) of the graph.&lt;/p&gt;
 &lt;p&gt;Each node in the graph contains a value (&lt;code&gt;int&lt;/code&gt;) and a list (&lt;code&gt;List[Node]&lt;/code&gt;) of its neighbors:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Node&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;val&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
@@ -2912,8 +2884,7 @@ It is not the most efficient solution because the &lt;code&gt;search&lt;/code&gt
       <guid>http://localhost:1313/posts/leetcode-blind-75-implement-trie-prefix-tree/</guid>
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Trie&#34;&gt;trie&lt;/a&gt; (pronounced as &amp;ldquo;try&amp;rdquo;) or prefix tree is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete and spellchecker.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Trie&#34;&gt;trie&lt;/a&gt; (pronounced as &amp;ldquo;try&amp;rdquo;) or prefix tree is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete and spellchecker.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Implement the &lt;code&gt;Trie&lt;/code&gt; class:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Trie()&lt;/code&gt; Initializes the trie object.&lt;/li&gt;
@@ -3072,8 +3043,7 @@ Output: true
       <guid>http://localhost:1313/posts/leetcode-blind-75-find-median-from-data-stream/</guid>
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The &lt;strong&gt;median&lt;/strong&gt; is the middle value in an ordered integer list. If the size of the list is even, there is no middle value, and the median is the mean of the two middle values.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The &lt;strong&gt;median&lt;/strong&gt; is the middle value in an ordered integer list. If the size of the list is even, there is no middle value, and the median is the mean of the two middle values.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;For example, for &lt;code&gt;arr = [2,3,4]&lt;/code&gt;, the median is &lt;code&gt;3&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;For example, for &lt;code&gt;arr = [2,3]&lt;/code&gt;, the median is &lt;code&gt;(2 + 3) / 2 = 2.5&lt;/code&gt;.&lt;/li&gt;
@@ -3146,8 +3116,7 @@ Output: true
       <guid>http://localhost:1313/posts/leetcode-blind-75-serialize-and-deserialize-binary-tree/</guid>
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer or transmitted across a network connection link to be reconstructed later in the same or another computer environment.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer or transmitted across a network connection link to be reconstructed later in the same or another computer environment.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.&lt;/p&gt;</description>
     </item>
     <item>
@@ -3157,11 +3126,9 @@ Output: true
       <guid>http://localhost:1313/posts/leetcode-blind-75-binary-tree-maximum-path-sum/</guid>
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge connecting them. A node can only appear in the sequence at most once. Note that the path does not need to pass through the root.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge connecting them. A node can only appear in the sequence at most once. Note that the path does not need to pass through the root.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The path sum of a path is the sum of the node&amp;rsquo;s values in the path.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The path sum of a path is the sum of the node&amp;rsquo;s values in the path.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Given the &lt;code&gt;root&lt;/code&gt; of a binary tree, return the maximum path sum of any non-empty path.&lt;/p&gt;</description>
     </item>
     <item>
@@ -3346,8 +3313,7 @@ Output: []
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
 &lt;p&gt;Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes &lt;code&gt;p&lt;/code&gt; and &lt;code&gt;q&lt;/code&gt; as the lowest node in &lt;code&gt;T&lt;/code&gt; that has both &lt;code&gt;p&lt;/code&gt; and &lt;code&gt;q&lt;/code&gt; as descendants (where we allow a node to be a descendant of itself).”&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes &lt;code&gt;p&lt;/code&gt; and &lt;code&gt;q&lt;/code&gt; as the lowest node in &lt;code&gt;T&lt;/code&gt; that has both &lt;code&gt;p&lt;/code&gt; and &lt;code&gt;q&lt;/code&gt; as descendants (where we allow a node to be a descendant of itself).”&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;p&gt;
     
@@ -3367,8 +3333,7 @@ Output: []
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
 &lt;p&gt;Given the roots of two binary trees &lt;code&gt;root&lt;/code&gt; and &lt;code&gt;subRoot&lt;/code&gt;, return &lt;code&gt;true&lt;/code&gt; if there is a subtree of &lt;code&gt;root&lt;/code&gt; with the same structure and node values as &lt;code&gt;subRoot&lt;/code&gt;, and &lt;code&gt;false&lt;/code&gt; otherwise.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A subtree of a binary tree &lt;code&gt;tree&lt;/code&gt; is a tree that consists of a node in &lt;code&gt;tree&lt;/code&gt; and all of this node&amp;rsquo;s descendants. The tree &lt;code&gt;tree&lt;/code&gt; could also be considered as a subtree of itself.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A subtree of a binary tree &lt;code&gt;tree&lt;/code&gt; is a tree that consists of a node in &lt;code&gt;tree&lt;/code&gt; and all of this node&amp;rsquo;s descendants. The tree &lt;code&gt;tree&lt;/code&gt; could also be considered as a subtree of itself.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;p&gt;
     
@@ -3388,8 +3353,7 @@ Output: []
       <description>&lt;h4 id=&#34;the-problem&#34;&gt;The Problem&lt;/h4&gt;
 &lt;p&gt;Given the roots of two binary trees &lt;code&gt;p&lt;/code&gt; and &lt;code&gt;q&lt;/code&gt;, write a function to check if they are the same or not.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Two binary trees are considered the same if they are structurally identical, and the nodes have the same values.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Two binary trees are considered the same if they are structurally identical, and the nodes have the same values.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;p&gt;
     
@@ -3431,8 +3395,7 @@ Output: false
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
 &lt;p&gt;Given the &lt;code&gt;root&lt;/code&gt; of a binary tree, return its maximum depth.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A binary tree&amp;rsquo;s &lt;strong&gt;maximum depth&lt;/strong&gt; is the number of nodes along the longest path from the root node down to the farthest leaf node.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A binary tree&amp;rsquo;s &lt;strong&gt;maximum depth&lt;/strong&gt; is the number of nodes along the longest path from the root node down to the farthest leaf node.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;p&gt;
     
@@ -3654,12 +3617,10 @@ Output: [1]
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
 &lt;p&gt;You are given the head of a singly linked list. The list can be represented as:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;L0 → L1 → … → Ln - 1 → Ln&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;L0 → L1 → … → Ln - 1 → Ln&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Reorder the list to be in the following form:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;You may not modify the values in the list&amp;rsquo;s nodes. Only the nodes themselves may be changed.&lt;/p&gt;</description>
     </item>
     <item>
@@ -3826,28 +3787,8 @@ Output: true
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
 &lt;p&gt;Given two strings &lt;code&gt;s&lt;/code&gt; and &lt;code&gt;t&lt;/code&gt; of lengths &lt;code&gt;m&lt;/code&gt; and &lt;code&gt;n&lt;/code&gt;, respectively, return the minimum window substring of &lt;code&gt;s&lt;/code&gt; such that every character in &lt;code&gt;t&lt;/code&gt; (including duplicates) is included in the window. If there is no such substring, return the empty string &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A substring is a contiguous, non-empty sequence of characters within a string.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;The test cases will be generated such that the answer is unique.&lt;/p&gt;
-&lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;ADOBECODEBANC&amp;#34;, t = &amp;#34;ABC&amp;#34;
-Output: &amp;#34;BANC&amp;#34;
-Explanation: The minimum window substring &amp;#34;BANC&amp;#34; includes &amp;#39;A&amp;#39;, &amp;#39;B&amp;#39;, and &amp;#39;C&amp;#39; from string t.
-&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;a&amp;#34;, t = &amp;#34;a&amp;#34;
-Output: &amp;#34;a&amp;#34;
-Explanation: The entire string s is the minimum window.
-&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;a&amp;#34;, t = &amp;#34;aa&amp;#34;
-Output: &amp;#34;&amp;#34;
-Explanation: Both &amp;#39;a&amp;#39;s from t must be included in the window.
-Since the largest window of s only has one &amp;#39;a&amp;#39;, return an empty string.
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;constraints&#34;&gt;Constraints&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;m == s.length&lt;/li&gt;
-&lt;li&gt;n == t.length&lt;/li&gt;
-&lt;li&gt;1 &amp;lt;= m, n &amp;lt;= 10⁵&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;s&lt;/code&gt; and &lt;code&gt;t&lt;/code&gt; consist of uppercase and lowercase English letters.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Follow-up:&lt;/strong&gt; Could you find an algorithm that runs in &lt;code&gt;O(m + n)&lt;/code&gt; time?&lt;/p&gt;</description>
+&lt;p&gt;A substring is a contiguous, non-empty sequence of characters within a string.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The test cases will be generated such that the answer is unique.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode - Blind 75 - Longest Repeating Character Replacement</title>
@@ -3910,8 +3851,7 @@ This algorithm is not very fast and takes O(n^2) time. We can improve it further
       <description>&lt;h4 id=&#34;the-problem&#34;&gt;The Problem&lt;/h4&gt;
 &lt;p&gt;Given a string &lt;code&gt;s&lt;/code&gt;, find the length of the longest substring without repeating characters.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A substring is a contiguous non-empty sequence of characters within a string.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A substring is a contiguous non-empty sequence of characters within a string.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;abcabcbb&amp;#34;
 Output: 3
@@ -4083,8 +4023,7 @@ According to the problem, we need to find triplet elements that, when added toge
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
 &lt;p&gt;Given a string &lt;code&gt;s&lt;/code&gt;, return &lt;code&gt;true&lt;/code&gt; if it is a palindrome, or &lt;code&gt;false&lt;/code&gt; otherwise.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;A man, a plan, a canal: Panama&amp;#34;
 Output: true
@@ -4125,8 +4064,7 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 &lt;p&gt;Given an unsorted array of integers &lt;code&gt;nums&lt;/code&gt;, return the length of the longest consecutive elements sequence.
 You must write an algorithm that runs in &lt;code&gt;O(n)&lt;/code&gt; time.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A &lt;strong&gt;consecutive sequence&lt;/strong&gt; is a sequence of elements in which each element is exactly 1 greater than the previous element.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A &lt;strong&gt;consecutive sequence&lt;/strong&gt; is a sequence of elements in which each element is exactly 1 greater than the previous element.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Input&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nums&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Output&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;
@@ -4212,8 +4150,7 @@ Output: [1]
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
 &lt;p&gt;Given an array of strings &lt;code&gt;strs&lt;/code&gt;, group the anagrams together. You can return the answer in any order.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, using all the original letters exactly once.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, using all the original letters exactly once.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: strs = [&amp;#34;eat&amp;#34;,&amp;#34;tea&amp;#34;,&amp;#34;tan&amp;#34;,&amp;#34;ate&amp;#34;,&amp;#34;nat&amp;#34;,&amp;#34;bat&amp;#34;]
 Output: [[&amp;#34;bat&amp;#34;],[&amp;#34;nat&amp;#34;,&amp;#34;tan&amp;#34;],[&amp;#34;ate&amp;#34;,&amp;#34;eat&amp;#34;,&amp;#34;tea&amp;#34;]]
@@ -4251,8 +4188,7 @@ Output: [[&amp;#34;a&amp;#34;]]
       <description>&lt;h3 id=&#34;the-problem&#34;&gt;The Problem&lt;/h3&gt;
 &lt;p&gt;Given two strings &lt;code&gt;s&lt;/code&gt; and &lt;code&gt;t&lt;/code&gt;, return &lt;code&gt;true&lt;/code&gt; if &lt;code&gt;t&lt;/code&gt; is an anagram of &lt;code&gt;s&lt;/code&gt;, and &lt;code&gt;false&lt;/code&gt; otherwise.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, using all the original letters exactly once.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, using all the original letters exactly once.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;examples&#34;&gt;Examples&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: s = &amp;#34;anagram&amp;#34;, t = &amp;#34;nagaram&amp;#34;
 Output: true
@@ -4586,7 +4522,7 @@ Space complexity: O(N)&lt;/p&gt;</description>
       <pubDate>Wed, 09 Oct 2024 07:20:29 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-hashmap-resize/</guid>
       <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
-&lt;p&gt;Previously, we discussed a &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-hashmap-custom-implementation?r=2fepxg&amp;utm_campaign=post&amp;utm_medium=web&amp;showWelcomeOnShare=true&#34;&gt;custom hashmap implementation&lt;/a&gt;. That implementation has a lot of &lt;a href=&#34;https://en.wikipedia.org/wiki/Hash_collision&#34;&gt;collisions&lt;/a&gt; because we are using a fixed-size array.&lt;/p&gt;
+&lt;p&gt;Previously, we discussed a &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-hashmap-custom-implementation?r=2fepxg&amp;amp;utm_campaign=post&amp;amp;utm_medium=web&amp;amp;showWelcomeOnShare=true&#34;&gt;custom hashmap implementation&lt;/a&gt;. That implementation has a lot of &lt;a href=&#34;https://en.wikipedia.org/wiki/Hash_collision&#34;&gt;collisions&lt;/a&gt; because we are using a fixed-size array.&lt;/p&gt;
 &lt;p&gt;If we want to reduce the chances of &lt;code&gt;collisions&lt;/code&gt;, we can increase the number of slots in the hashmap, or in other words, &lt;code&gt;resize&lt;/code&gt; our hashmap. Resizing cannot guarantee that collisions will be entirely eliminated, but it will help reduce the likelihood of one happening.&lt;/p&gt;
 &lt;h3 id=&#34;code-example&#34;&gt;Code Example&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;loadFactor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Double&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
@@ -4805,7 +4741,7 @@ The space complexity:&lt;/p&gt;</description>
       <pubDate>Fri, 27 Sep 2024 06:55:55 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-binary-search-tree-postorder/</guid>
       <description>&lt;h3 id=&#34;what-is-the-postorder-algorithm&#34;&gt;What is the postorder algorithm?&lt;/h3&gt;
-&lt;p&gt;The postorder algorithm, similar to the &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-binary-search-tree-traverse-preorder?r=2fepxg&amp;utm_campaign=post&amp;utm_medium=web&amp;showWelcomeOnShare=true&#34;&gt;preorder&lt;/a&gt; algorithm, returns a list of values in the order they are visited.&lt;/p&gt;
+&lt;p&gt;The postorder algorithm, similar to the &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-binary-search-tree-traverse-preorder?r=2fepxg&amp;amp;utm_campaign=post&amp;amp;utm_medium=web&amp;amp;showWelcomeOnShare=true&#34;&gt;preorder&lt;/a&gt; algorithm, returns a list of values in the order they are visited.&lt;/p&gt;
 &lt;h3 id=&#34;code-example&#34;&gt;Code Example&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kr&#34;&gt;final&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;BSTNode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Value&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Comparable&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -5069,7 +5005,7 @@ The space complexity:&lt;/p&gt;</description>
       <pubDate>Fri, 20 Sep 2024 07:15:17 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-queue/</guid>
       <description>&lt;h3 id=&#34;what-is-a-queue&#34;&gt;What is a Queue?&lt;/h3&gt;
-&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Queue_(abstract_data_type)&#34;&gt;Queue&lt;/a&gt; is an abstract data type that serves as an ordered collection of elements.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Queue_%28abstract_data_type%29&#34;&gt;Queue&lt;/a&gt; is an abstract data type that serves as an ordered collection of elements.&lt;/p&gt;
 &lt;p&gt;A simple queue typically has several operations:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;push(item)&lt;/code&gt; - adds an item to the &lt;code&gt;tail&lt;/code&gt;&lt;/li&gt;
@@ -5086,7 +5022,7 @@ The space complexity:&lt;/p&gt;</description>
       <pubDate>Tue, 17 Sep 2024 07:06:52 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-adjacency-list/</guid>
       <description>&lt;h3 id=&#34;what-is-an-adjacency-list&#34;&gt;What is an Adjacency List?&lt;/h3&gt;
-&lt;p&gt;An &lt;a href=&#34;https://en.wikipedia.org/wiki/Adjacency_list&#34;&gt;Adjacency List&lt;/a&gt; helps store a list of connections between each vertex in a finite &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-graph?r=2fepxg&amp;utm_campaign=post&amp;utm_medium=web&amp;showWelcomeOnShare=true&#34;&gt;graph&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An &lt;a href=&#34;https://en.wikipedia.org/wiki/Adjacency_list&#34;&gt;Adjacency List&lt;/a&gt; helps store a list of connections between each vertex in a finite &lt;a href=&#34;https://open.substack.com/pub/dmytrosblog/p/dsa-graph?r=2fepxg&amp;amp;utm_campaign=post&amp;amp;utm_medium=web&amp;amp;showWelcomeOnShare=true&#34;&gt;graph&lt;/a&gt;.&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -5122,7 +5058,7 @@ The space complexity:&lt;/p&gt;</description>
       <pubDate>Sat, 14 Sep 2024 06:57:03 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-graph/</guid>
       <description>&lt;h3 id=&#34;what-is-a-graph&#34;&gt;What is a graph?&lt;/h3&gt;
-&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Graph_(abstract_data_type)&#34;&gt;graph&lt;/a&gt; is an abstract data type that represents vertices and edges that connect those vertices.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Graph_%28abstract_data_type%29&#34;&gt;graph&lt;/a&gt; is an abstract data type that represents vertices and edges that connect those vertices.&lt;/p&gt;
 &lt;p&gt;
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-cafc5&#34; hidden&gt;
@@ -5250,7 +5186,7 @@ The space complexity:&lt;/p&gt;</description>
       <pubDate>Mon, 09 Sep 2024 07:19:46 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-backtracking/</guid>
       <description>&lt;h3 id=&#34;what-is-backtracking&#34;&gt;What is Backtracking?&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Backtracking&#34;&gt;Backtracking&lt;/a&gt; is a class of algorithms for finding solutions to complex problems. A backtracking algorithm uses &lt;a href=&#34;https://en.wikipedia.org/wiki/Recursion_(computer_science)&#34;&gt;recursion&lt;/a&gt; and is based on &lt;a href=&#34;https://en.wikipedia.org/wiki/Depth-first_search&#34;&gt;depth-first search&lt;/a&gt; (DFS).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Backtracking&#34;&gt;Backtracking&lt;/a&gt; is a class of algorithms for finding solutions to complex problems. A backtracking algorithm uses &lt;a href=&#34;https://en.wikipedia.org/wiki/Recursion_%28computer_science%29&#34;&gt;recursion&lt;/a&gt; and is based on &lt;a href=&#34;https://en.wikipedia.org/wiki/Depth-first_search&#34;&gt;depth-first search&lt;/a&gt; (DFS).&lt;/p&gt;
 &lt;h3 id=&#34;depth-first-search-dfs&#34;&gt;Depth First Search (DFS)&lt;/h3&gt;
 &lt;p&gt;Depth First Search (DFS) is an essential part of backtracking. DFS is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (or an arbitrary node in the case of a graph) and explores as far as possible along each branch before backtracking.&lt;/p&gt;</description>
     </item>
@@ -5288,7 +5224,7 @@ The space complexity:&lt;/p&gt;</description>
       <pubDate>Mon, 02 Sep 2024 07:12:55 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-binary-search-tree/</guid>
       <description>&lt;h3 id=&#34;what-is-a-tree&#34;&gt;What is a Tree?&lt;/h3&gt;
-&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Tree_(data_structure)&#34;&gt;&lt;code&gt;Tree&lt;/code&gt;&lt;/a&gt; is a data structure that has a root and subtrees of children, representing a set of linked nodes. &lt;code&gt;Trees&lt;/code&gt; behave similarly to a &lt;a href=&#34;https://dmytrosblog.substack.com/p/dsa-linked-list?r=2fepxg&#34;&gt;&lt;code&gt;LinkedList&lt;/code&gt;&lt;/a&gt; in that they have a collection of nodes starting with a &lt;code&gt;head (root)&lt;/code&gt;. The main difference is that &lt;code&gt;Trees&lt;/code&gt; can have multiple children, whereas a &lt;code&gt;LinkedList&lt;/code&gt;, on the other hand, can have only one &lt;code&gt;next&lt;/code&gt; child.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Tree_%28data_structure%29&#34;&gt;&lt;code&gt;Tree&lt;/code&gt;&lt;/a&gt; is a data structure that has a root and subtrees of children, representing a set of linked nodes. &lt;code&gt;Trees&lt;/code&gt; behave similarly to a &lt;a href=&#34;https://dmytrosblog.substack.com/p/dsa-linked-list?r=2fepxg&#34;&gt;&lt;code&gt;LinkedList&lt;/code&gt;&lt;/a&gt; in that they have a collection of nodes starting with a &lt;code&gt;head (root)&lt;/code&gt;. The main difference is that &lt;code&gt;Trees&lt;/code&gt; can have multiple children, whereas a &lt;code&gt;LinkedList&lt;/code&gt;, on the other hand, can have only one &lt;code&gt;next&lt;/code&gt; child.&lt;/p&gt;
 &lt;p&gt;I’m going to focus on a commonly used type of tree, the Binary Search Tree.&lt;/p&gt;</description>
     </item>
     <item>
@@ -5337,7 +5273,7 @@ The space complexity:&lt;/p&gt;</description>
       <pubDate>Tue, 20 Aug 2024 07:17:01 +0300</pubDate>
       <guid>http://localhost:1313/posts/dsa-stack/</guid>
       <description>&lt;h3 id=&#34;what-is-a-stack&#34;&gt;What is a Stack?&lt;/h3&gt;
-&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Stack_(abstract_data_type)&#34;&gt;stack&lt;/a&gt; is an abstract data type that serves as a collection of elements and implements operations like &lt;code&gt;push&lt;/code&gt;, &lt;code&gt;pop&lt;/code&gt;, and &lt;code&gt;peek&lt;/code&gt; at the end in O(1) time. It uses the LIFO (&lt;strong&gt;last in&lt;/strong&gt;, &lt;strong&gt;first out&lt;/strong&gt;) order. For example, a stack can be a collection of items where adding or removing is practical at the top.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;https://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29&#34;&gt;stack&lt;/a&gt; is an abstract data type that serves as a collection of elements and implements operations like &lt;code&gt;push&lt;/code&gt;, &lt;code&gt;pop&lt;/code&gt;, and &lt;code&gt;peek&lt;/code&gt; at the end in O(1) time. It uses the LIFO (&lt;strong&gt;last in&lt;/strong&gt;, &lt;strong&gt;first out&lt;/strong&gt;) order. For example, a stack can be a collection of items where adding or removing is practical at the top.&lt;/p&gt;
 &lt;h4 id=&#34;code-example&#34;&gt;Code Example&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Stack&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Element&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -5385,7 +5321,7 @@ The space complexity:&lt;/p&gt;</description>
       <guid>http://localhost:1313/posts/dsa-merge-sorted-array-problem/</guid>
       <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;In the &lt;a href=&#34;https://dmytros.blog/posts/data-structures-and-algorithms-arrays-swift/&#34;&gt;previous chapter&lt;/a&gt;, we discussed Data Structures and Algorithms, delved into an overview of Dynamic Arrays, and solved the &amp;ldquo;Remove Element&amp;rdquo; problem.&lt;/p&gt;
-&lt;p&gt;In this article, I&amp;rsquo;m going to show one of the ways to solve the &lt;a href=&#34;https://leetcode.com/problems/merge-sorted-array/description/?envType=study-plan-v2&amp;envId=top-interview-150&#34;&gt;88. Merge Sorted Array&lt;/a&gt; problem.&lt;/p&gt;
+&lt;p&gt;In this article, I&amp;rsquo;m going to show one of the ways to solve the &lt;a href=&#34;https://leetcode.com/problems/merge-sorted-array/description/?envType=study-plan-v2&amp;amp;envId=top-interview-150&#34;&gt;88. Merge Sorted Array&lt;/a&gt; problem.&lt;/p&gt;
 &lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;
 &lt;p&gt;You are given two integer arrays, &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt;, sorted in non-decreasing order, and two integers, &lt;code&gt;m&lt;/code&gt; and &lt;code&gt;n&lt;/code&gt;, representing the number of elements in &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt;, respectively. Merge &lt;code&gt;nums1&lt;/code&gt; and &lt;code&gt;nums2&lt;/code&gt; into a single array sorted in non-decreasing order. The final sorted array should not be returned by the function but should instead be stored inside the array &lt;code&gt;nums1&lt;/code&gt;. To accommodate this, &lt;code&gt;nums1&lt;/code&gt; has a length of &lt;code&gt;m + n&lt;/code&gt;, where the first &lt;code&gt;m&lt;/code&gt; elements denote the elements that should be merged, and the last &lt;code&gt;n&lt;/code&gt; elements are set to &lt;code&gt;0&lt;/code&gt; and should be ignored. &lt;code&gt;nums2&lt;/code&gt; has a length of &lt;code&gt;n&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
@@ -6019,8 +5955,7 @@ I wanted a one-click option with the possibility to integrate it into all my dai
 I found a lot of information, but it was theoretical and all information looked the same.
 I did not find a meaningful example, so I tried to come up with my own definition and sample.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Integration testing means testing the behavior between modules or views to ensure they work as expected after user actions.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Integration testing means testing the behavior between modules or views to ensure they work as expected after user actions.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;there-are-two-ways-of-conducting-integration-testing&#34;&gt;There are two ways of conducting integration testing:&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;The first is by unit tests, where you try to test the flowing data between view models.&lt;/li&gt;
@@ -6404,7 +6339,7 @@ In my case, I chose the &lt;a href=&#34;https://developer.apple.com/augmented-re
 &lt;/ul&gt;
 &lt;h4 id=&#34;example&#34;&gt;Example:&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;xcodebuild archive -scheme YourSchemeName -archivePath ~/Desktop/YourAppName.xcarchive
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;another-way-is-by-integrating-fastlanehttpsfastlanetools-into-your-workflow&#34;&gt;Another way is by integrating &lt;a href=&#34;https://fastlane.tools/&#34;&gt;fastlane&lt;/a&gt; into your workflow:&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;another-way-is-by-integrating-fastlane-into-your-workflow&#34;&gt;Another way is by integrating &lt;a href=&#34;https://fastlane.tools/&#34;&gt;fastlane&lt;/a&gt; into your workflow:&lt;/h3&gt;
 &lt;h4 id=&#34;outline-of-the-process&#34;&gt;Outline of the process&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Install Fastlane&lt;/strong&gt;: If you haven&amp;rsquo;t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:&lt;/p&gt;</description>
     </item>
@@ -6424,7 +6359,7 @@ In my case, I chose the &lt;a href=&#34;https://developer.apple.com/augmented-re
 &lt;/ul&gt;
 &lt;h4 id=&#34;example&#34;&gt;Example:&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;xcodebuild -project YourProject.xcodeproj -scheme YourSchemeName &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;another-way-is-by-integrating-fastlanehttpsfastlanetools-into-your-workflow&#34;&gt;Another way is by integrating &lt;a href=&#34;https://fastlane.tools/&#34;&gt;fastlane&lt;/a&gt; into your workflow:&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;another-way-is-by-integrating-fastlane-into-your-workflow&#34;&gt;Another way is by integrating &lt;a href=&#34;https://fastlane.tools/&#34;&gt;fastlane&lt;/a&gt; into your workflow:&lt;/h3&gt;
 &lt;h4 id=&#34;outline-of-the-process&#34;&gt;Outline of the process&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Install Fastlane&lt;/strong&gt;: If you haven&amp;rsquo;t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:&lt;/p&gt;</description>
     </item>
@@ -6444,7 +6379,7 @@ In my case, I chose the &lt;a href=&#34;https://developer.apple.com/augmented-re
 &lt;/ul&gt;
 &lt;h4 id=&#34;example&#34;&gt;Example:&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;xcodebuild -project YourProjectName.xcodeproj -scheme YourSchemeName
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;another-way-is-by-integrating-fastlanehttpsfastlanetools-into-your-workflow&#34;&gt;Another way is by integrating &lt;a href=&#34;https://fastlane.tools/&#34;&gt;fastlane&lt;/a&gt; into your workflow:&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;another-way-is-by-integrating-fastlane-into-your-workflow&#34;&gt;Another way is by integrating &lt;a href=&#34;https://fastlane.tools/&#34;&gt;fastlane&lt;/a&gt; into your workflow:&lt;/h3&gt;
 &lt;h4 id=&#34;outline-of-the-process&#34;&gt;Outline of the process&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Install Fastlane&lt;/strong&gt;: If you haven&amp;rsquo;t already installed Fastlane, you can do so using RubyGems, which is the Ruby package manager:&lt;/p&gt;</description>
     </item>
@@ -6455,8 +6390,7 @@ In my case, I chose the &lt;a href=&#34;https://developer.apple.com/augmented-re
       <guid>http://localhost:1313/posts/the-visitor-pattern/</guid>
       <description>&lt;h3 id=&#34;what-is-a-visitor-pattern&#34;&gt;What is a Visitor Pattern?&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The Visitor Pattern helps add new capabilities to a composite of objects.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The Visitor Pattern helps add new capabilities to a composite of objects.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-3a9c2&#34; hidden&gt;
@@ -6587,8 +6521,7 @@ In my case, I chose the &lt;a href=&#34;https://developer.apple.com/augmented-re
       <guid>http://localhost:1313/posts/the-memento-pattern/</guid>
       <description>&lt;h3 id=&#34;what-is-a-memento-pattern&#34;&gt;What is a Memento Pattern?&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The Memento Pattern helps return an object to one of its previous states; for instance, if the user requests an “undo” operation.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The Memento Pattern helps return an object to one of its previous states; for instance, if the user requests an “undo” operation.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-35972&#34; hidden&gt;
@@ -6691,8 +6624,7 @@ In my case, I chose the &lt;a href=&#34;https://developer.apple.com/augmented-re
       <guid>http://localhost:1313/posts/the-interpreter-pattern/</guid>
       <description>&lt;h3 id=&#34;what-is-an-interpreter-pattern&#34;&gt;What is an Interpreter Pattern?&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The Interpreter Pattern helps implement a simple language and defines a class based representation for its grammar along with an interpreter to interpret its sentences.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The Interpreter Pattern helps implement a simple language and defines a class based representation for its grammar along with an interpreter to interpret its sentences.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-35972&#34; hidden&gt;
@@ -6813,8 +6745,7 @@ In my case, I chose the &lt;a href=&#34;https://developer.apple.com/augmented-re
       <guid>http://localhost:1313/posts/the-flyweight-pattern/</guid>
       <description>&lt;h3 id=&#34;what-is-a-flyweight-pattern&#34;&gt;What is a Flyweight Pattern?&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The Flyweight Pattern refers to an object that minimizes memory usage by sharing some of its data with other similar objects.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The Flyweight Pattern refers to an object that minimizes memory usage by sharing some of its data with other similar objects.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-35972&#34; hidden&gt;
@@ -6891,8 +6822,7 @@ In my case, I chose the &lt;a href=&#34;https://developer.apple.com/augmented-re
       <guid>http://localhost:1313/posts/the-chain-of-responsibility-pattern/</guid>
       <description>&lt;h3 id=&#34;what-is-a-chain-of-responsibility-pattern&#34;&gt;What is a Chain Of Responsibility Pattern?&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The Chain Of Responsibility Pattern helps create a chain of objects to examine requests. Each object in turn examines a request and either handles it or passes onto the next object in the chain.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The Chain Of Responsibility Pattern helps create a chain of objects to examine requests. Each object in turn examines a request and either handles it or passes onto the next object in the chain.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-35972&#34; hidden&gt;
@@ -6980,8 +6910,7 @@ In my case, I chose the &lt;a href=&#34;https://developer.apple.com/augmented-re
       <guid>http://localhost:1313/posts/the-state-pattern/</guid>
       <description>&lt;h3 id=&#34;what-is-a-state-pattern&#34;&gt;What is a State Pattern?&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The State Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The State Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-35972&#34; hidden&gt;
@@ -7093,8 +7022,7 @@ In my case, I chose the &lt;a href=&#34;https://developer.apple.com/augmented-re
       <guid>http://localhost:1313/posts/the-dependency-inversion-principle/</guid>
       <description>&lt;h3 id=&#34;what-is-a-dependency-inversion-principle&#34;&gt;What is a Dependency Inversion Principle?&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The Dependency Inversion Principle means that high-level modules should not depend on low-level modules.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;The Dependency Inversion Principle means that high-level modules should not depend on low-level modules.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-35972&#34; hidden&gt;
@@ -7342,8 +7270,7 @@ I will focus on implementation.&lt;/p&gt;</description>
       <description>&lt;h3 id=&#34;what-are-value-types&#34;&gt;What are value types?&lt;/h3&gt;
 &lt;p&gt;Value types play a central role in programming languages by grouping data values.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;`Value type” is a type of data copied when assigned to a new variable.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;`Value type” is a type of data copied when assigned to a new variable.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Storage&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;String&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;some data&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
@@ -7428,8 +7355,7 @@ All you need is the following:&lt;/p&gt;
       <guid>http://localhost:1313/posts/arc-in-swift/</guid>
       <description>&lt;h3 id=&#34;what-is-arc&#34;&gt;What is ARC?&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Swift uses Automatic Reference Counting (ARC) to track and manage your app’s memory usage. In most cases, this means that memory management “just works” in Swift, and you don’t need to think about memory management yourself. ARC automatically frees up the memory used by class instances when those instances are no longer needed. - Apple&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Swift uses Automatic Reference Counting (ARC) to track and manage your app’s memory usage. In most cases, this means that memory management “just works” in Swift, and you don’t need to think about memory management yourself. ARC automatically frees up the memory used by class instances when those instances are no longer needed. - Apple&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;arc-in-action&#34;&gt;ARC In Action&lt;/h3&gt;
 &lt;p&gt;In this example, we assign an instance to the &lt;code&gt;reference1&lt;/code&gt; property.&lt;/p&gt;</description>
     </item>
@@ -7442,8 +7368,7 @@ All you need is the following:&lt;/p&gt;
 &lt;p&gt;In this article, I’m going to briefly explain what closure is.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Closures is self-conitained blocks of funcionality that can be passed around and used in your code.
-— Apple&lt;/p&gt;
-&lt;/blockquote&gt;
+— Apple&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Expression:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;statements&lt;/span&gt;
@@ -7464,8 +7389,7 @@ All you need is the following:&lt;/p&gt;
       <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;In Swift, classes, closures, and actors all reference types.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&amp;lsquo;Reference type’ is instance that shares a single copy of data.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&amp;lsquo;Reference type’ is instance that shares a single copy of data.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Assigning a reference type to a constant or variable, or passing it into a function or method, it is always a reference to a shared instance that is assigned or passed in.&lt;/p&gt;
 &lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;
 &lt;p&gt;You can pass your property value by sharing the same address in memory.&lt;/p&gt;

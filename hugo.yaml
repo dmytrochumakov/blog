@@ -14,7 +14,15 @@ enableEmoji: true
 pygmentsUseClasses: true
 mainsections: ["posts", "papermod"]
 
-googleAnalytics: G-HZZ4JTFGDP
+services:
+  googleAnalytics:
+    id: G-HZZ4JTFGDP
+  instagram:
+    disableInlineCSS: true
+  x:
+    disableInlineCSS: true
+  disqus:
+    shortname: dmytros-blog
 
 minify:
   disableXML: true
@@ -108,11 +116,3 @@ markup:
       unsafe: true
   highlight:
     noClasses: false
-
-services:
-  instagram:
-    disableInlineCSS: true
-  twitter:
-    disableInlineCSS: true
-  disqus:
-    shortname: dmytros-blog

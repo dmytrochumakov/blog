@@ -13,7 +13,7 @@ You are also given three integers src, dst, and k, return the cheapest price fro
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/leetcode-150-cheapest-flights-within-k-stops/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.8d4df4fe329d2372424d28ce76581b7279a2220496c292d225bde1c201d0518c.css" integrity="sha256-jU30/jKdI3JCTSjOdlgbcnmiIgSWwpLSJb3hwgHQUYw=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.28d74077ed27cb336336efcb32105483ecda831f442e28917680e41e63b70e40.css" integrity="sha256-KNdAd&#43;0nyzNjNu/LMhBUg&#43;zagx9ELiiRdoDkHmO3DkA=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -75,21 +75,7 @@ You are also given three integers src, dst, and k, return the cheapest price fro
         }
     }
     </style>
-    
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-HZZ4JTFGDP');
-        }
-      </script><meta property="og:url" content="http://localhost:1313/posts/leetcode-150-cheapest-flights-within-k-stops/">
+    <meta property="og:url" content="http://localhost:1313/posts/leetcode-150-cheapest-flights-within-k-stops/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
   <meta property="og:title" content="LeetCode - 150 - Cheapest Flights Within K Stops">
   <meta property="og:description" content="The problem There are n cities connected by some number of flights. You are given an array flights where flights[i] = [from_i, to_i, price_i] indicates that there is a flight from city from_i to city to_i with cost price_i.
@@ -426,8 +412,7 @@ From the description of the problem, we learn that this is a graph problem where
 Let&rsquo;s look at the first edge that connects nodes <code>A</code> and <code>B</code>.
 The cost to reach node <code>B</code> equals the cost to reach node <code>A</code> plus the weight of the edge; as a result, it equals <code>0 + 100 = 100</code>. After that, we are going to put the calculated cost into the <strong>temporary</strong> prices array, and when it&rsquo;s filled with all prices, it will be used to update the <strong>original</strong> prices array.</p>
 <blockquote>
-<p>We are going to use a <strong>temporary</strong> array because it is going to help us avoid using an extra node in our path. We are not allowed to do so because we can only make <code>k</code> stops.</p>
-</blockquote>
+<p>We are going to use a <strong>temporary</strong> array because it is going to help us avoid using an extra node in our path. We are not allowed to do so because we can only make <code>k</code> stops.</p></blockquote>
 <p>
     
     <input type="checkbox" id="zoomCheck-05b74" hidden>
@@ -450,8 +435,7 @@ The calculation for the cost to reach node <code>C</code> is the same as we did 
 
 Next, since we have completed the first layer of BFS, we are going to update our <strong>original</strong> prices array with <strong>temporary</strong> prices values and move to the second layer of BFS.</p>
 <blockquote>
-<p>We are always going to have <code>k + 1</code> layers in our BFS because the problem is defined in a way that we can only do <code>k</code> stops between the <code>src</code> and <code>dst</code> nodes; therefore, we can only have <code>1</code> stop between those two nodes.</p>
-</blockquote>
+<p>We are always going to have <code>k + 1</code> layers in our BFS because the problem is defined in a way that we can only do <code>k</code> stops between the <code>src</code> and <code>dst</code> nodes; therefore, we can only have <code>1</code> stop between those two nodes.</p></blockquote>
 <p>
     
     <input type="checkbox" id="zoomCheck-a8403" hidden>
