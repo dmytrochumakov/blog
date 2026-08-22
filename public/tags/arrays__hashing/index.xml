@@ -11,8 +11,33 @@
     </image>
     <generator>Hugo -- 0.148.0</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 17 Aug 2026 07:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2026 19:10:53 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/arrays__hashing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Longest Common Prefix</title>
+      <link>http://localhost:1313/posts/leetcode-longest-common-prefix/</link>
+      <pubDate>Sat, 22 Aug 2026 19:10:53 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-longest-common-prefix/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Write a function to find the longest common prefix string amongst an array of strings.&lt;/p&gt;
+&lt;p&gt;If there is no common prefix, return an empty string &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: strs = [&amp;#34;flower&amp;#34;,&amp;#34;flow&amp;#34;,&amp;#34;flight&amp;#34;]
+Output: &amp;#34;fl&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: strs = [&amp;#34;dog&amp;#34;,&amp;#34;racecar&amp;#34;,&amp;#34;car&amp;#34;]
+Output: &amp;#34;&amp;#34;
+Explanation: There is no common prefix among the input strings.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Constraints:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;1 &amp;lt;= strs.length &amp;lt;= 200&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;0 &amp;lt;= strs[i].length &amp;lt;= 200&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;strs[i]&lt;/code&gt; consists of only lowercase English letters if it is non-empty.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;explanation&#34;&gt;Explanation&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I&amp;rsquo;m trying to add a little bit of life to my posts, so I decided to lay down some thought process behind the solution. Please go easy on me.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Sort an Array</title>
       <link>http://localhost:1313/posts/leetcode-sort-an-array/</link>
