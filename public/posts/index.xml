@@ -11,8 +11,26 @@
     </image>
     <generator>Hugo -- 0.148.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 25 Aug 2026 20:17:45 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 17:57:45 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - First Missing Positive</title>
+      <link>http://localhost:1313/posts/leetcode-first-missing-positive/</link>
+      <pubDate>Sat, 29 Aug 2026 17:57:45 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-first-missing-positive/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given an unsorted integer array &lt;code&gt;nums&lt;/code&gt;. Return the &lt;em&gt;smallest positive integer&lt;/em&gt; that is &lt;em&gt;not present&lt;/em&gt; in &lt;code&gt;nums&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You must implement an algorithm that runs in &lt;code&gt;O(n)&lt;/code&gt; time and uses &lt;code&gt;O(1)&lt;/code&gt; auxiliary space.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [1,2,0]
+Output: 3
+Explanation: The numbers in the range [1,2] are all in the array.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [3,4,-1,1]
+Output: 2
+Explanation: 1 is in the array but 2 is missing.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example 3:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Subarray Sum Equals K</title>
       <link>http://localhost:1313/posts/leetcode-subarray-sum-equals-k/</link>
