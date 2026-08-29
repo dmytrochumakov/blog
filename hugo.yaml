@@ -41,7 +41,7 @@ params:
   author: Dmytro Chumakov
   homeInfoParams:
     Title: Hi there 👋
-    Content: This blog is intended to share my knowledge about software architecture, system design, tools, and techniques for producing high-quality products.
+    Content: This blog is intended to share my knowledge about software architecture, system design, tools, and techniques for producing high-quality software.
 
   defaultTheme: auto
   ShowShareButtons: true
