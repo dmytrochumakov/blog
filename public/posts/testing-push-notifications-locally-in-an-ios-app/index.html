@@ -75,7 +75,21 @@ Before I was first introduced to the RocketSim app, I used an APNS file for test
         }
     }
     </style>
-    <meta property="og:url" content="http://localhost:1313/posts/testing-push-notifications-locally-in-an-ios-app/">
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/testing-push-notifications-locally-in-an-ios-app/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
   <meta property="og:title" content="Testing push notifications locally in an iOS app">
   <meta property="og:description" content="Introduction I always wondered how I could automate testing the push notification process. Even when Apple introduced the possibility of dragging a configured file to the simulator to display a notification, it is still a manual process. I’ll skip testing via the terminal because I think it takes more time than using an APNS file or the RocketSim app.

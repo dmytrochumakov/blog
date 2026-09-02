@@ -94,7 +94,21 @@ The insert operation uses the index provided by the hashFunction and sets the va
         }
     }
     </style>
-    <meta property="og:url" content="http://localhost:1313/posts/dsa-hashmap-custom-implementation/">
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/dsa-hashmap-custom-implementation/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
   <meta property="og:title" content="DSA - HashMap - Custom Implementation">
   <meta property="og:description" content="Introduction Let’s take a closer look at a HashMap implementation by building it without using the built-in dictionary in Swift. The HashMap will use a fixed-size array underneath the hash function that will transform the key into an index. In this example, the hash function is based on taking the modulo of the sum of all key.unicodeScalars integer values with the size of the array.

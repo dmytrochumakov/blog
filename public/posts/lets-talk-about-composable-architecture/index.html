@@ -77,7 +77,21 @@ UDF can reduce data inconsistencies because of the single source of truth for th
         }
     }
     </style>
-    <meta property="og:url" content="http://localhost:1313/posts/lets-talk-about-composable-architecture/">
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/lets-talk-about-composable-architecture/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
   <meta property="og:title" content="Let’s talk about Composable Architecture">
   <meta property="og:description" content="Introduction The Composable Architecture (TCA) uses a unidirectional data flow (UDF). UDF is a design pattern where data and events move consistently and predictably. In UDF, data can only be transferred to other application parts in one way.

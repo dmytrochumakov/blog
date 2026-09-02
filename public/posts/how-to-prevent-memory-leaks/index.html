@@ -77,7 +77,21 @@ trackLifetime method to init of instance that you are going to verify, and lifet
         }
     }
     </style>
-    <meta property="og:url" content="http://localhost:1313/posts/how-to-prevent-memory-leaks/">
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/how-to-prevent-memory-leaks/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
   <meta property="og:title" content="How to prevent memory leaks?">
   <meta property="og:description" content="I was searching for tools that could help me find memory leaks faster and would be simple in implementation without affecting performance and memory size of application.

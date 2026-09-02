@@ -83,7 +83,21 @@ Before diving into implementation details, I want to highlight some information 
         }
     }
     </style>
-    <meta property="og:url" content="http://localhost:1313/posts/accessibility-ios-uikit/">
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/accessibility-ios-uikit/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
   <meta property="og:title" content="Accessibility iOS UIKit">
   <meta property="og:description" content="Introduction I was curious to find out how to make an application more accessible. You can look at popular applications like YouTube or Netflix; they all have accessibility features like VoiceOver and dynamic fonts. I decided to create this example for a fruit calorie counter. It contains a list of fruits with the fruit name, fruit calories, and a favorite button.

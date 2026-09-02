@@ -75,7 +75,21 @@ Next step was disabling Ctrl-S and Ctrl-Q signals. It turned out that Ctrl-S and
         }
     }
     </style>
-    <meta property="og:url" content="http://localhost:1313/posts/building-text-editor-from-scratch-in-c-part-ii/">
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/building-text-editor-from-scratch-in-c-part-ii/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
   <meta property="og:title" content="Building Text Editor From Scratch in C - Part II">
   <meta property="og:description" content="The part 2 started with disabling Ctrl-C and Ctrl-Z signals. Instead of terminating current process by pressing Ctrl-C I was able to read byte code. For Ctrl-C it was 3 byte and for Ctrl-Z it was 26. I was able to do that by using ISIG flag:

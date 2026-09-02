@@ -80,7 +80,21 @@ I will focus on implementation.">
         }
     }
     </style>
-    <meta property="og:url" content="http://localhost:1313/posts/concurrency-in-swift/">
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/concurrency-in-swift/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
   <meta property="og:title" content="Concurrency in Swift">
   <meta property="og:description" content="What is concurrency? The system can perform multiple tasks simultaneously. By tasks, I mean code or instructions. Modern computer chips have multiple cores that allow developers to create and run various tasks on multiple cores. Even if your chip has one core operating system it will provide context switching mechanism by enabling it to execute multiple tasks concurrently.

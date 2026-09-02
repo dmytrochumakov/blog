@@ -189,7 +189,21 @@ I just added YouTubeLockScreenWidget to generated VideoStreamingWidgetEntryView.
         }
     }
     </style>
-    <meta property="og:url" content="http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/">
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/building-video-streaming-widget-for-ios-app/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
   <meta property="og:title" content="Building Video Streaming Widget for iOS App">
   <meta property="og:description" content="Introduction I was exploring the idea of creating a YouTube-like widget for the lock screen on iOS devices. It wasn’t easy because most articles on the Internet discussed general implementations, such as for a coffee shop or a to-do list. Even when I found some similar versions, the project wouldn’t compile. I made the decision to approach it my way, so here’s what I found out:

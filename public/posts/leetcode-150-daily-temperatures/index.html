@@ -96,7 +96,21 @@ In the first example, we can see that we can calculate how many days in the inpu
         }
     }
     </style>
-    <meta property="og:url" content="http://localhost:1313/posts/leetcode-150-daily-temperatures/">
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/leetcode-150-daily-temperatures/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
   <meta property="og:title" content="LeetCode - 150 - Daily Temperatures">
   <meta property="og:description" content="The problem Given an array of integers temperatures represents the daily temperatures, return an array answer such that answer[i] is the number of days you have to wait after the ith day to get a warmer temperature. If there is no future day for which this is possible, keep answer[i] == 0 instead.

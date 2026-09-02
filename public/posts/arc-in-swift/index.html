@@ -77,7 +77,21 @@ In this example, we assign an instance to the reference1 property.">
         }
     }
     </style>
-    <meta property="og:url" content="http://localhost:1313/posts/arc-in-swift/">
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/arc-in-swift/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
   <meta property="og:title" content="ARC in Swift">
   <meta property="og:description" content="What is ARC? Swift uses Automatic Reference Counting (ARC) to track and manage your app’s memory usage. In most cases, this means that memory management “just works” in Swift, and you don’t need to think about memory management yourself. ARC automatically frees up the memory used by class instances when those instances are no longer needed. - Apple

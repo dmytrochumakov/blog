@@ -167,7 +167,21 @@ Thank you for reading! 😊">
         }
     }
     </style>
-    <meta property="og:url" content="http://localhost:1313/posts/the-memento-pattern/">
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/the-memento-pattern/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
   <meta property="og:title" content="The Memento Pattern">
   <meta property="og:description" content="What is a Memento Pattern? The Memento Pattern helps return an object to one of its previous states; for instance, if the user requests an “undo” operation.

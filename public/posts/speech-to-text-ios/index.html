@@ -83,7 +83,21 @@ I wanted a one-click option with the possibility to integrate it into all my dai
         }
     }
     </style>
-    <meta property="og:url" content="http://localhost:1313/posts/speech-to-text-ios/">
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/speech-to-text-ios/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
   <meta property="og:title" content="Speech To Text iOS">
   <meta property="og:description" content="Introduction I always wanted an iOS app that would allow me to economize my time by converting speech to text. I know this option is built into the keyboard, but you first need to click the text field, then tap on the microphone, and finally speak. I wanted a one-click option with the possibility to integrate it into all my daily routines. Here is what I discovered:">

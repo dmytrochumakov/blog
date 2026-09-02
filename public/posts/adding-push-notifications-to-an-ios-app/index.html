@@ -76,7 +76,21 @@ The first step is to add the Push Notifications capability to your project. Go t
         }
     }
     </style>
-    <meta property="og:url" content="http://localhost:1313/posts/adding-push-notifications-to-an-ios-app/">
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/adding-push-notifications-to-an-ios-app/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
   <meta property="og:title" content="Adding Push Notifications to an iOS App">
   <meta property="og:description" content="Introduction If you start a project from scratch, you need to always create some kind of service like PushNotificationService that will be responsible for handling push notification events. In this article, I want to explore a simple implementation of PushNotificationService to be able to reuse and customize it in future projects.

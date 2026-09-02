@@ -127,7 +127,21 @@ Thank you for reading! 😊">
         }
     }
     </style>
-    <meta property="og:url" content="http://localhost:1313/posts/dsa-binary-search-tree-exists/">
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/dsa-binary-search-tree-exists/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
   <meta property="og:title" content="DSA - Binary Search Tree - Exists">
   <meta property="og:description" content="Code Example final class BSTNode&lt;Value: Comparable&gt; { var val: Value? var left: BSTNode? var right: BSTNode? init(val: Value? = nil) { self.val = val } func exists(_ val: Value) -&gt; Bool { // 1 guard let selfVal = self.val else { return false } // 2 if self.val == val { return true } // 3 if val &lt; self.val! { if self.left == nil { return false } return self.left!.exists(val) } // 4 if self.right == nil { return false } // 5 return self.right!.exists(val) } } Implementation The exists algorithm:

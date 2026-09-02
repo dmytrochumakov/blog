@@ -80,7 +80,21 @@ In my case, I chose the 3D guitar.">
         }
     }
     </style>
-    <meta property="og:url" content="http://localhost:1313/posts/ios-ar-app-experience-3d-guitar/">
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZZ4JTFGDP"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HZZ4JTFGDP');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/ios-ar-app-experience-3d-guitar/">
   <meta property="og:site_name" content="Dmytro&#39;s Blog">
   <meta property="og:title" content="iOS AR App: Experience 3D Guitar">
   <meta property="og:description" content="Introduction I was searching for an AR implementation of a 3D guitar inside an iOS app. Here’s what I discovered:
