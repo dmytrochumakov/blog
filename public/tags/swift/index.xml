@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- 0.148.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 29 Aug 2026 17:57:45 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 11:40:49 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Boats to Save People</title>
+      <link>http://localhost:1313/posts/leetcode-boats-to-save-people/</link>
+      <pubDate>Thu, 03 Sep 2026 11:40:49 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-boats-to-save-people/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;You are given an array &lt;code&gt;people&lt;/code&gt; where &lt;code&gt;people[i]&lt;/code&gt; is the weight of the &lt;code&gt;ith&lt;/code&gt; person, and an &lt;strong&gt;infinite number of boats&lt;/strong&gt; where each boat can carry a maximum weight of &lt;code&gt;limit&lt;/code&gt;. Each boat carries at most two people at the same time, provided the sum of the weight of those people is at most &lt;code&gt;limit&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Return &lt;em&gt;the minimum number of boats to carry every given person&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - First Missing Positive</title>
       <link>http://localhost:1313/posts/leetcode-first-missing-positive/</link>

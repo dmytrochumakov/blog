@@ -2,10 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/arrays__hashing/</loc>
-    <lastmod>2026-08-29T17:57:45+03:00</lastmod>
+    <loc>http://localhost:1313/tags/boats-to-save-people/</loc>
+    <lastmod>2026-09-03T11:40:49+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-03T11:40:49+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/leetcode/</loc>
+    <lastmod>2026-09-03T11:40:49+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/leetcode-boats-to-save-people/</loc>
+    <lastmod>2026-09-03T11:40:49+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/medium/</loc>
+    <lastmod>2026-09-03T11:40:49+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-09-03T11:40:49+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/swift/</loc>
+    <lastmod>2026-09-03T11:40:49+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-09-03T11:40:49+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/two_pointers/</loc>
+    <lastmod>2026-09-03T11:40:49+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/arrays__hashing/</loc>
     <lastmod>2026-08-29T17:57:45+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/first-missing-positive/</loc>
@@ -14,25 +38,10 @@
     <loc>http://localhost:1313/tags/hard/</loc>
     <lastmod>2026-08-29T17:57:45+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/leetcode/</loc>
-    <lastmod>2026-08-29T17:57:45+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/leetcode-first-missing-positive/</loc>
     <lastmod>2026-08-29T17:57:45+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-08-29T17:57:45+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/swift/</loc>
-    <lastmod>2026-08-29T17:57:45+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-08-29T17:57:45+03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/leetcode-subarray-sum-equals-k/</loc>
-    <lastmod>2026-08-25T20:17:45+03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/medium/</loc>
     <lastmod>2026-08-25T20:17:45+03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/subarray-sum-equals-k/</loc>
