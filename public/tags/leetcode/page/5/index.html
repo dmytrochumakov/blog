@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/leetcode/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.28d74077ed27cb336336efcb32105483ecda831f442e28917680e41e63b70e40.css" integrity="sha256-KNdAd&#43;0nyzNjNu/LMhBUg&#43;zagx9ELiiRdoDkHmO3DkA=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b7bbee81bd2284108f2872ef1ba79979857e073ad838aa6df741d4fb60ef101d.css" integrity="sha256-t7vugb0ihBCPKHLvG6eZeYV&#43;BzrYOKpt90HU&#43;2DvEB0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/leetcode/index.xml">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/leetcode/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/leetcode/">
 <noscript>
     <style>
@@ -41,23 +41,32 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+            .toc {
+                background: var(--entry);
             }
         }
 
     </style>
-</noscript><style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -100,31 +109,19 @@
 <meta name="twitter:description" content="">
 
 </head>
-
 <body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
+    <header class="header">
+    <nav class="header-nav">
         <div class="logo">
             <a href="http://localhost:1313/" accesskey="h" title="Dmytro&#39;s Blog (Alt + H)">Dmytro&#39;s Blog</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -138,20 +135,9 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
-                <ul class="lang-switch"><li>|</li>
-                </ul>
             </div>
         </div>
-
-        
-        <button id="menu-trigger" aria-haspopup="menu" aria-label="Menu Button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-        </button>
-        <ul class="menu hidden">
+        <ul id="menu" class="menu">
             <li>
                 <a href="http://localhost:1313/archives/" title="Archive">
                     <span>Archive</span>
@@ -171,7 +157,18 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
+<header class="page-header"><nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/tags/">Tags</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
   <h1>
     LeetCode
   </h1>
@@ -187,7 +184,9 @@
 If you burst the ith balloon, you will get nums[i - 1] * nums[i] * nums[i &#43; 1] coins. If i - 1 or i &#43; 1 goes out of bounds of the array, then treat it as if there is a balloon with a 1 painted on it.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-04-09 08:10:49 +0300 EEST'>April 9, 2026</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer">
+
+<span title='2026-04-09 08:10:49 +0300 EEST'>April 9, 2026</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Burst Balloons" href="http://localhost:1313/posts/leetcode-150-burst-balloons/"></a>
 </article>
 
@@ -204,7 +203,9 @@ Input: s = &#34;rabbbit&#34;, t = &#34;rabbit&#34; Output: 3 Explanation: As sho
 Input: s = &#34;babgbag&#34;, t = &#34;bag&#34; Output: 5 Explanation: As shown below, there are 5 ways you can generate &#34;bag&#34; from s. babgbag babgbag babgbag babgbag babgbag Constraints:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-04-01 08:04:07 +0300 EEST'>April 1, 2026</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer">
+
+<span title='2026-04-01 08:04:07 +0300 EEST'>April 1, 2026</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Distinct Subsequences" href="http://localhost:1313/posts/leetcode-150-distinct-subsequences/"></a>
 </article>
 
@@ -220,7 +221,9 @@ Example 1:
 Input: matrix = [[9,9,4],[6,6,8],[2,1,1]] Output: 4 Explanation: The longest increasing path is [1, 2, 6, 9]. Example 2:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-03-23 08:15:06 +0300 +0300'>March 23, 2026</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer">
+
+<span title='2026-03-23 08:15:06 +0300 +0300'>March 23, 2026</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Longest Increasing Path in a Matrix" href="http://localhost:1313/posts/leetcode-150-longest-increasing-path-in-a-matrix/"></a>
 </article>
 
@@ -240,7 +243,9 @@ Example 1:
 Input: word1 = &#34;horse&#34;, word2 = &#34;ros&#34; Output: 3 Explanation: horse -&gt; rorse (replace &#39;h&#39; with &#39;r&#39;) rorse -&gt; rose (remove &#39;r&#39;) rose -&gt; ros (remove &#39;e&#39;) Example 2:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-03-18 08:15:54 +0300 +0300'>March 18, 2026</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer">
+
+<span title='2026-03-18 08:15:54 +0300 +0300'>March 18, 2026</span>&nbsp;·&nbsp;<span>7 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Edit Distance" href="http://localhost:1313/posts/leetcode-150-edit-distance/"></a>
 </article>
 
@@ -255,7 +260,9 @@ An interleaving of two strings s and t is a configuration where s and t are divi
 s = s1 &#43; s2 &#43; ... &#43; sn t = t1 &#43; t2 &#43; ... &#43; tm |n - m| &lt;= 1 The interleaving is s1 &#43; t1 &#43; s2 &#43; t2 &#43; s3 &#43; t3 &#43; ... or t1 &#43; s1 &#43; t2 &#43; s2 &#43; t3 &#43; s3 &#43; ... Note: a &#43; b is the concatenation of strings a and b.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-03-09 08:21:45 +0300 +0300'>March 9, 2026</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer">
+
+<span title='2026-03-09 08:21:45 +0300 +0300'>March 9, 2026</span>&nbsp;·&nbsp;<span>7 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - 150 - Interleaving String" href="http://localhost:1313/posts/leetcode-150-interleaving-string/"></a>
 </article>
 <footer class="page-footer">
@@ -272,37 +279,31 @@ s = s1 &#43; s2 &#43; ... &#43; sn t = t1 &#43; t2 &#43; ... &#43; tm |n - m| &l
 <footer class="footer">
         <span>&copy; 2026 <a href="http://localhost:1313/">Dmytro&#39;s Blog</a></span> · 
 
+    
+    
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
-</a><script>
-    
-    
-    let b = document.querySelector("#menu-trigger")
-    let m = document.querySelector(".menu")
-    b.addEventListener("click", function () {
-        m.classList.toggle("hidden")
-    });
-    
-    document.body.addEventListener('click', function (event) {
-        if (!b.contains(event.target)) {
-            m.classList.add("hidden")
-        }
-    });
-    
-</script>
+</a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -329,25 +330,25 @@ s = s1 &#43; s2 &#43; ... &#43; sn t = t1 &#43; t2 &#43; ... &#43; tm |n - m| &l
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

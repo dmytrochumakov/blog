@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.28d74077ed27cb336336efcb32105483ecda831f442e28917680e41e63b70e40.css" integrity="sha256-KNdAd&#43;0nyzNjNu/LMhBUg&#43;zagx9ELiiRdoDkHmO3DkA=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b7bbee81bd2284108f2872ef1ba79979857e073ad838aa6df741d4fb60ef101d.css" integrity="sha256-t7vugb0ihBCPKHLvG6eZeYV&#43;BzrYOKpt90HU&#43;2DvEB0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
 <noscript>
     <style>
@@ -41,23 +41,32 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+            .toc {
+                background: var(--entry);
             }
         }
 
     </style>
-</noscript><style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -115,31 +124,19 @@
 }
 </script>
 </head>
-
 <body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
+    <header class="header">
+    <nav class="header-nav">
         <div class="logo">
             <a href="http://localhost:1313/" accesskey="h" title="Dmytro&#39;s Blog (Alt + H)">Dmytro&#39;s Blog</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -153,20 +150,9 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
-                <ul class="lang-switch"><li>|</li>
-                </ul>
             </div>
         </div>
-
-        
-        <button id="menu-trigger" aria-haspopup="menu" aria-label="Menu Button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-        </button>
-        <ul class="menu hidden">
+        <ul id="menu" class="menu">
             <li>
                 <a href="http://localhost:1313/archives/" title="Archive">
                     <span>Archive</span>
@@ -186,7 +172,13 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
+<header class="page-header"><nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
   <h1>
     Posts
   </h1>
@@ -203,7 +195,9 @@ For example, for arr = [2,3,4], the median is 3. For example, for arr = [2,3], t
 MedianFinder() initializes the MedianFinder object. void addNum(int num) adds the integer num from the data stream to the data structure. double findMedian() returns the median of all elements so far. Answers within 10⁻⁵ of the actual answer will be accepted. Examples Input [&#34;MedianFinder&#34;, &#34;addNum&#34;, &#34;addNum&#34;, &#34;findMedian&#34;, &#34;addNum&#34;, &#34;findMedian&#34;] [[], [1], [2], [], [3], []] Output [null, null, null, 1.5, null, 2.0] Explanation MedianFinder medianFinder = new MedianFinder(); medianFinder.addNum(1); // arr = [1] medianFinder.addNum(2); // arr = [1, 2] medianFinder.findMedian(); // return 1.5 (i.e., (1 &#43; 2) / 2) medianFinder.addNum(3); // arr = [1, 2, 3] medianFinder.findMedian(); // return 2.0 Constraints -10⁵ &lt;= num &lt;= 10⁵ There will be at least one element in the data structure before calling findMedian(). At most 5 * 10⁴ calls will be made to addNum and findMedian(). Follow-up: If all integer numbers from the stream are in the range [0, 100], how would you optimize your solution? If 99% of all integer numbers from the stream are in the range [0, 100], how would you optimize your solution? Sorting Solution class MedianFinder { private var data: [Int] init() { self.data = [] } func addNum(_ num: Int) { data.append(num) } func findMedian() -&gt; Double { data.sort() let n = data.count if (n &amp; 1) != 0 { return Double(data[n / 2]) } else { return (Double(data[n / 2]) &#43; Double(data[n / 2 - 1])) / 2 } } } Explanation One approach to solving this problem is to apply a built-in sorting algorithm. To find the result, we use an array to collect all numbers added using the addNum method.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-02-03 11:28:36 +0300 +0300'>February 3, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer">
+
+<span title='2025-02-03 11:28:36 +0300 +0300'>February 3, 2025</span>&nbsp;·&nbsp;<span>4 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Find Median from Data Stream" href="http://localhost:1313/posts/leetcode-blind-75-find-median-from-data-stream/"></a>
 </article>
 
@@ -217,7 +211,9 @@ MedianFinder() initializes the MedianFinder object. void addNum(int num) adds th
 Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-01-28 12:30:52 +0300 +0300'>January 28, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer">
+
+<span title='2025-01-28 12:30:52 +0300 +0300'>January 28, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Serialize and Deserialize Binary Tree" href="http://localhost:1313/posts/leetcode-blind-75-serialize-and-deserialize-binary-tree/"></a>
 </article>
 
@@ -232,7 +228,9 @@ The path sum of a path is the sum of the node’s values in the path.
 Given the root of a binary tree, return the maximum path sum of any non-empty path.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-01-27 10:24:47 +0300 +0300'>January 27, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer">
+
+<span title='2025-01-27 10:24:47 +0300 +0300'>January 27, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Binary Tree Maximum Path Sum" href="http://localhost:1313/posts/leetcode-blind-75-binary-tree-maximum-path-sum/"></a>
 </article>
 
@@ -246,7 +244,9 @@ Given the root of a binary tree, return the maximum path sum of any non-em
 Examples Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7] Output: [3,9,20,null,null,15,7] Input: preorder = [-1], inorder = [-1] Output: [-1] Constraints 1 &lt;= preorder.length &lt;= 3000 inorder.length == preorder.length -3000 &lt;= preorder[i], inorder[i] &lt;= 3000 preorder and inorder consist of unique values. Each value of inorder also appears in preorder. preorder is guaranteed to be the preorder traversal of the tree. inorder is guaranteed to be the inorder traversal of the tree. Depth First Search Solution func buildTree(_ preorder: [Int], _ inorder: [Int]) -&gt; TreeNode? { if preorder.isEmpty || inorder.isEmpty { return nil } let rootVal = preorder[0] let root = TreeNode(rootVal) guard let mid = inorder.firstIndex(of: rootVal) else { return nil } if mid &gt; 0 { root.left = buildTree(Array(preorder[1...mid]), Array(inorder[0..&lt;mid])) } if mid &lt; inorder.count - 1 { root.right = buildTree(Array(preorder[mid &#43; 1..&lt;preorder.count]), Array(inorder[mid &#43; 1..&lt;inorder.count])) } return root } Explanation We can solve this problem by understanding how preorder and inorder traversal work.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-01-23 15:17:04 +0300 +0300'>January 23, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer">
+
+<span title='2025-01-23 15:17:04 +0300 +0300'>January 23, 2025</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Construct Binary Tree from Preorder and Inorder Traversal" href="http://localhost:1313/posts/leetcode-blind-75-construct-binary-tree-from-preorder-and-inorder-traversal/"></a>
 </article>
 
@@ -260,7 +260,9 @@ Examples Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7] Output: [3,9,2
 Examples Input: root = [3,1,4,null,2], k = 1 Output: 1 Input: root = [5,3,6,2,4,null,null,1], k = 3 Output: 3 Constraints The number of nodes in the tree is n. 1 &lt;= k &lt;= n &lt;= 10⁴ 0 &lt;= Node.val &lt;= 10⁴ Follow-up: If the BST is modified often (i.e., we can perform insert and delete operations) and you need to find the kth smallest element frequently, how would you optimize?
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-01-20 08:49:50 +0300 +0300'>January 20, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dmytro Chumakov</footer>
+  <footer class="entry-footer">
+
+<span title='2025-01-20 08:49:50 +0300 +0300'>January 20, 2025</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Dmytro Chumakov</span></footer>
   <a class="entry-link" aria-label="post link to LeetCode - Blind 75 - Kth Smallest Element in a BST" href="http://localhost:1313/posts/leetcode-blind-75-kth-smallest-element-in-a-bst/"></a>
 </article>
 <footer class="page-footer">
@@ -277,37 +279,31 @@ Examples Input: root = [3,1,4,null,2], k = 1 Output: 1 Input: root = [5,3,6,2,4,
 <footer class="footer">
         <span>&copy; 2026 <a href="http://localhost:1313/">Dmytro&#39;s Blog</a></span> · 
 
+    
+    
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
-</a><script>
-    
-    
-    let b = document.querySelector("#menu-trigger")
-    let m = document.querySelector(".menu")
-    b.addEventListener("click", function () {
-        m.classList.toggle("hidden")
-    });
-    
-    document.body.addEventListener('click', function (event) {
-        if (!b.contains(event.target)) {
-            m.classList.add("hidden")
-        }
-    });
-    
-</script>
+</a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -334,25 +330,25 @@ Examples Input: root = [3,1,4,null,2], k = 1 Output: 1 Input: root = [5,3,6,2,4,
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })

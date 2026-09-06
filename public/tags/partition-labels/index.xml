@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/papermod-cover.png</url>
       <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.148.0</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 18 May 2026 07:51:15 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/partition-labels/index.xml" rel="self" type="application/rss+xml" />

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/tags/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.28d74077ed27cb336336efcb32105483ecda831f442e28917680e41e63b70e40.css" integrity="sha256-KNdAd&#43;0nyzNjNu/LMhBUg&#43;zagx9ELiiRdoDkHmO3DkA=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b7bbee81bd2284108f2872ef1ba79979857e073ad838aa6df741d4fb60ef101d.css" integrity="sha256-t7vugb0ihBCPKHLvG6eZeYV&#43;BzrYOKpt90HU&#43;2DvEB0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/index.xml">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/tags/">
 <noscript>
     <style>
@@ -41,23 +41,32 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+            .toc {
+                background: var(--entry);
             }
         }
 
     </style>
-</noscript><style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
     @media screen and (min-width: 769px) {
          
         .post-content input[type="checkbox"]:checked ~ label > img {
@@ -100,31 +109,19 @@
 <meta name="twitter:description" content="">
 
 </head>
-
 <body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
+    <header class="header">
+    <nav class="header-nav">
         <div class="logo">
             <a href="http://localhost:1313/" accesskey="h" title="Dmytro&#39;s Blog (Alt + H)">Dmytro&#39;s Blog</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -138,20 +135,9 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
-                <ul class="lang-switch"><li>|</li>
-                </ul>
             </div>
         </div>
-
-        
-        <button id="menu-trigger" aria-haspopup="menu" aria-label="Menu Button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-        </button>
-        <ul class="menu hidden">
+        <ul id="menu" class="menu">
             <li>
                 <a href="http://localhost:1313/archives/" title="Archive">
                     <span>Archive</span>
@@ -176,994 +162,988 @@
 </header>
 
 <ul class="terms-tags">
-    <li>
-        <a href="http://localhost:1313/tags/150/">150 <sup><strong><sup>71</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/1d_dynamic_programming/">1D_Dynamic_Programming <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/2d/">2D <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/2d_dynamic_programming/">2D_Dynamic_Programming <sup><strong><sup>9</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/3d/">3d <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/3sum/">3Sum <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/accessibility/">Accessibility <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/add-two-numbers/">Add Two Numbers <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/adding/">Adding <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/adjacency-list/">Adjacency List <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/algorithm-complexity/">algorithm complexity <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/algorithms/">Algorithms <sup><strong><sup>28</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/alien-dictionary/">Alien Dictionary <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/animation/">Animation <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/apns/">APNS <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/app/">App <sup><strong><sup>18</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/apple-pay/">Apple Pay <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/apple-sign-in/">Apple Sign-In <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/application/">application <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/ar/">ar <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/archiving/">archiving <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/array/">Array <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/arrays__hashing/">Arrays_&amp;_Hashing <sup><strong><sup>7</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/authentication-services/">Authentication Services <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/automatic-reference-count/">Automatic Reference Count <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/backtracking/">Backtracking <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/balanced-binary-tree/">Balanced Binary Tree <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/battery/">Battery <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/best-time-to-buy-and-sell-stock/">Best Time to Buy and Sell Stock <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/best-time-to-buy-and-sell-stock-with-cooldown/">Best Time to Buy and Sell Stock with Cooldown <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/bfs/">BFS <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/big-o/">Big O <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/binary-search/">Binary Search <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/binary-search-tree/">Binary Search Tree <sup><strong><sup>7</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/binary-tree-level-order-traversal/">Binary Tree Level Order Traversal <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/binary-tree-maximum-path-sum/">Binary Tree Maximum Path Sum <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/binary-tree-right-side-view/">Binary Tree Right Side View <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/bit_manipulation/">Bit_Manipulation <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/ble/">BLE <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/blind-75/">Blind 75 <sup><strong><sup>74</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/boats-to-save-people/">Boats to Save People <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/breadth-first-search/">Breadth First Search <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/bst/">BST <sup><strong><sup>6</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/bubble-sort/">Bubble Sort <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/building/">Building <sup><strong><sup>8</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/burst-balloons/">Burst Balloons <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/c/">C <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/caaction/">CAAction <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/cabasicanimation/">CABasicAnimation <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/caching/">Caching <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/caching-data/">Caching data <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/car-fleet/">Car Fleet <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/cashapelayer/">CAShapeLayer <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/chain-of-responsibility-pattern/">chain of responsibility pattern <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/chat/">Chat <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/chatgpt/">ChatGPT <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/cheapest-flights-within-k-stops/">Cheapest Flights Within K Stops <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/ci/">CI <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/cli/">CLI <sup><strong><sup>4</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/climbing-stairs/">Climbing Stairs <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/clone-graph/">Clone Graph <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/closure/">Closure <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/coin-change/">Coin Change <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/coin-change-ii/">Coin Change II <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/combination-sum/">Combination Sum <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/combination-sum-ii/">Combination Sum II <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/combine/">Combine <sup><strong><sup>3</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/concurrency/">Concurrency <sup><strong><sup>4</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/construct-binary-tree-from-preorder-and-inorder-traversal/">Construct Binary Tree from Preorder and Inorder Traversal <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/container-with-most-water/">Container With Most Water <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/contains-duplicate/">Contains Duplicate <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/copy-list-with-random-pointer/">Copy List with Random Pointer <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/core-animation/">Core Animation <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/corelocation/">CoreLocation <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/corenfc/">CoreNFC <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/count-good-nodes-in-binary-tree/">Count Good Nodes in Binary Tree <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/counting-bits/">Counting Bits <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/course-schedule/">Course Schedule <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/course-schedule-ii/">Course Schedule II <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/creating/">Creating <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/daily-temperatures/">Daily Temperatures <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/data-structures/">Data Structures <sup><strong><sup>28</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/data-structures-and-algorithms/">Data Structures and Algorithms <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/decode-ways/">Decode Ways <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/delete/">Delete <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/delivering/">Delivering <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/dependency-inversion-principle/">dependency inversion principle <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/design-add-and-search-words-data-structure/">Design Add and Search Words Data Structure <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/design-hashmap/">Design HashMap <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/design-hashset/">Design HashSet <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/design-patterns/">design patterns <sup><strong><sup>6</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/design-principles/">design principles <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/design-twitter/">Design Twitter <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/detect-squares/">Detect Squares <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/devices/">devices <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/dfs/">DFS <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/diameter-of-binary-tree/">Diameter of Binary Tree <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/dispatchgroup/">Dispatchgroup <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/distinct-subsequences/">Distinct Subsequences <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/dsa/">DSA <sup><strong><sup>29</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/dynamic-island/">Dynamic Island <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/easy/">Easy <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/edit-distance/">Edit Distance <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/evaluate-reverse-polish-notation/">Evaluate Reverse Polish Notation <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/exists/">Exists <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/face-id/">Face ID <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/fastlane/">Fastlane <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/find-median-from-data-stream/">Find Median from Data Stream <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/find-minimum-in-rotated-sorted-array/">Find Minimum in Rotated Sorted Array <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/find-the-duplicate-number/">Find the Duplicate Number <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/first-missing-positive/">First Missing Positive <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/flyweight-pattern/">flyweight pattern <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/from-scratch/">From Scratch <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/game/">Game <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/gas-station/">Gas Station <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/generate-parentheses/">Generate Parentheses <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/github-actions/">Github Actions <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/graph/">Graph <sup><strong><sup>7</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/graph-valid-tree/">Graph Valid Tree <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/graphql/">GraphQL <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/greedy/">Greedy <sup><strong><sup>6</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/group-anagrams/">Group Anagrams <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/grpc/">gRPC <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/hand-of-straights/">Hand of Straights <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/hard/">Hard <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/hashmap/">Hashmap <sup><strong><sup>3</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/healthkit/">HealthKit <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/hlongest-palindromic-substring/">HLongest Palindromic Substring <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/house-robber/">House Robber <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/house-robber-ii/">House Robber II <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/implement-trie-prefix-tree/">Implement Trie (Prefix Tree) <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/implementing/">Implementing <sup><strong><sup>8</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/in-app-purchases/">In-App Purchases <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/inorder/">Inorder <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/insert-interval/">Insert Interval <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/insertion-sort/">Insertion Sort <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/integration-testing/">Integration testing <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/interleaving-string/">Interleaving String <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/interpreter-pattern/">interpreter pattern <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/intervals/">Intervals <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/invert-binary-tree/">Invert Binary Tree <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/ios/">iOS <sup><strong><sup>22</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/jump-game/">Jump Game <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/jump-game-ii/">Jump Game II <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/k-closest-points-to-origin/">K Closest Points to Origin <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/keychain/">Keychain <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/koko-eating-bananas/">Koko Eating Bananas <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/kth-largest-element-in-a-stream/">Kth Largest Element in a Stream <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/kth-largest-element-in-an-array/">Kth Largest Element in an Array <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/kth-smallest-element-in-a-bst/">Kth Smallest Element in a BST <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/largest-rectangle-in-histogram/">Largest Rectangle in Histogram <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/last-stone-weight/">Last Stone Weight <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/leetcode/">LeetCode <sup><strong><sup>155</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/letter-combinations-of-a-phone-number/">Letter Combinations of a Phone Number <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/linked-list/">Linked List <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/linked-list-cycle/">Linked List Cycle <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/linked-list-queue/">Linked List Queue <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/locally/">locally <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/location-service/">Location Service <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/longest-common-prefix/">Longest Common Prefix <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/longest-common-subsequence/">Longest Common Subsequence <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/longest-consecutive-sequence/">Longest Consecutive Sequence <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/longest-increasing-path-in-a-matrix/">Longest Increasing Path in a Matrix <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/longest-increasing-subsequence/">Longest Increasing Subsequence <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/longest-repeating-character-replacement/">Longest Repeating Character Replacement <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/longest-substring-without-repeating-characters/">Longest Substring Without Repeating Characters <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/lowest-common-ancestor-of-a-binary-search-tree/">Lowest Common Ancestor of a Binary Search Tree <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/lru-cache/">LRU Cache <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/majority-element/">Majority Element <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/math__geometry/">Math_&amp;_Geometry <sup><strong><sup>3</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/max/">Max <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/max-area-of-island/">Max Area of Island <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/maximum-depth-of-binary-tree/">Maximum Depth of Binary Tree <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/maximum-product-subarray/">Maximum Product Subarray <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/maximum-subarray/">Maximum Subarray <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/median-of-two-sorted-arrays/">Median of Two Sorted Arrays <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/medium/">Medium <sup><strong><sup>3</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/meeting-rooms/">Meeting Rooms <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/meeting-rooms-ii/">Meeting Rooms II <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/memento-pattern/">memento pattern <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/memory-leak/">Memory Leak <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/merge-intervals/">Merge Intervals <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/merge-k-sorted-lists/">Merge k Sorted Lists <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/merge-sort/">Merge Sort <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/merge-triplets-to-form-target-triplet/">Merge Triplets to Form Target Triplet <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/merge-two-sorted-lists/">Merge Two Sorted Lists <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/min/">Min <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/min-cost-to-connect-all-points/">Min Cost to Connect All Points <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/min-stack/">Min Stack <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/minimum-interval-to-include-each-query/">Minimum Interval to Include Each Query <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/minimum-window-substring/">Minimum Window Substring <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/missing-number/">Missing Number <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/ml/">ML <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/modern-concurrency/">Modern Concurrency <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/movie/">movie <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/multiply-strings/">Multiply Strings <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/mvvm/">MVVM <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/n-queens/">N-Queens <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/network-delay-time/">Network Delay Time <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/nfc/">NFC <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/non-consumable/">non-consumable <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/non-overlapping-intervals/">Non-overlapping Intervals <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/nscache/">NSCache <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/number-of-1-bits/">Number of 1 Bits <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/number-of-connected-components-in-an-undirected-graph/">Number of Connected Components in an Undirected Graph <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/number-of-islands/">Number of Islands <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/oop/">oop <sup><strong><sup>6</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/optimizing/">Optimizing <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/pacific-atlantic-water-flow/">Pacific Atlantic Water Flow <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/palindrome-partitioning/">Palindrome Partitioning <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/palindromic-substrings/">Palindromic Substrings <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/partition-equal-subset-sum/">Partition Equal Subset Sum <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/partition-labels/">Partition Labels <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/performance/">Performance <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/peripheral/">peripheral <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/permutation-in-string/">Permutation in String <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/permutations/">Permutations <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/postorder/">Postorder <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/powx-n/">Pow(x, n) <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/preorder/">Preorder <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/product-of-array-except-self/">Product of Array Except Self <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/programming/">Programming <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/project/">project <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/push-notifications/">Push Notifications <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/queue/">Queue <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/quick-sort/">Quick Sort <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/reality-composer-pro/">Reality Composer Pro <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/realitykit/">RealityKit <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/recommendations/">recommendations <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/reconstruct-itinerary/">Reconstruct Itinerary <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/red-black-tree/">Red-Black Tree <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/redundant-connection/">Redundant Connection <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/reference-type/">Reference Type <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/regular-expression-matching/">Regular Expression Matching <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/remove-nth-node-from-end-of-list/">Remove Nth Node From End of List <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/reorder-list/">Reorder List <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/resize/">Resize <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/reverse-bits/">Reverse Bits <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/reverse-integer/">Reverse Integer <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/reverse-linked-list/">Reverse Linked List <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/reverse-nodes-in-k-group/">Reverse Nodes in k-Group <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/rocketsim/">RocketSim <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/rotate-image/">Rotate Image <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/rotting-oranges/">Rotting Oranges <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/same-tree/">Same Tree <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/scanning/">Scanning <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/search-a-2d-matrix/">Search a 2D Matrix <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/search-in-rotated-sorted-array/">Search in Rotated Sorted Array <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/securing/">Securing <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/security/">security <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/selection-sort/">Selection Sort <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/serialize-and-deserialize-binary-tree/">Serialize and Deserialize Binary Tree <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/set-matrix-zeroes/">Set Matrix Zeroes <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/sliding-window/">Sliding Window <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/sliding-window-maximum/">Sliding Window Maximum <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/software-architecture/">Software Architecture <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/sort-an-array/">Sort an Array <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/sorting/">Sorting <sup><strong><sup>5</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/speech-to-text/">speech to text <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/spiral-matrix/">Spiral Matrix <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/spritekit/">SpriteKit <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/stack/">Stack <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/state-pattern/">state pattern <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/storekit/">StoreKit <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/storekit-2/">StoreKit 2 <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/streaming/">Streaming <sup><strong><sup>3</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/subarray-sum-equals-k/">Subarray Sum Equals K <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/subsets/">Subsets <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/subsets-ii/">Subsets II <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/subtree-of-another-tree/">Subtree of Another Tree <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/sum-of-two-integers/">Sum of Two Integers <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/surrounded-regions/">Surrounded Regions <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/swift/">Swift <sup><strong><sup>208</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/swiftui/">SwiftUI <sup><strong><sup>15</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/swim-in-rising-water/">Swim in Rising Water <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/system-design/">System Design <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/tags/">tags <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/target-sum/">Target Sum <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/task-scheduler/">Task Scheduler <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/testing/">Testing <sup><strong><sup>4</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/text-editor/">Text Editor <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/text-to-speech/">Text To Speech <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/threads/">Threads <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/time-based-key-value-store/">Time Based Key-Value Store <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/to-do/">To-Do <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/tools/">tools <sup><strong><sup>4</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/top-k-frequent-elements/">Top K Frequent Elements <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/touch-id/">Touch ID <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/trapping-rain-water/">Trapping Rain Water <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/traverse/">Traverse <sup><strong><sup>3</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/trie/">Trie <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/two-pointers/">Two Pointers <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/two-sum/">Two Sum <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/two-sum-ii---input-array-is-sorted/">Two Sum II - Input Array Is Sorted <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/two_pointers/">Two_Pointers <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/ui-testing/">UI testing <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/uikit/">UIKit <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/unique-paths/">Unique Paths <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/user-data/">user data <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/valid-anagram/">Valid Anagram <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/valid-palindrome/">Valid Palindrome <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/valid-parentheses/">Valid Parentheses <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/valid-parenthesis-string/">Valid Parenthesis String <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/valid-sudoku/">Valid Sudoku <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/validate-binary-search-tree/">Validate Binary Search Tree <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/value-type/">Value Type <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/video/">Video <sup><strong><sup>3</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/visionos/">visionOS <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/walls-and-gates/">Walls and Gates <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/websockets/">WebSockets <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/widget/">Widget <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/word-break/">Word Break <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/word-ladder/">Word Ladder <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/word-search/">Word Search <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/word-search-ii/">Word Search II <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/xcode/">Xcode <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/tags/xctest/">XCTest <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
+            <li>
+                <a href="http://localhost:1313/tags/150/">150 <sup><strong><sup>71</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/1d_dynamic_programming/">1D_Dynamic_Programming <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/2d/">2D <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/2d_dynamic_programming/">2D_Dynamic_Programming <sup><strong><sup>9</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/3d/">3d <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/3sum/">3Sum <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/accessibility/">Accessibility <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/add-two-numbers/">Add Two Numbers <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/adding/">Adding <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/adjacency-list/">Adjacency List <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/algorithm-complexity/">Algorithm Complexity <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/algorithms/">Algorithms <sup><strong><sup>28</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/alien-dictionary/">Alien Dictionary <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/animation/">Animation <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/apns/">APNS <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/app/">App <sup><strong><sup>18</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/apple-pay/">Apple Pay <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/apple-sign-in/">Apple Sign-In <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/application/">Application <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/ar/">Ar <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/archiving/">Archiving <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/array/">Array <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/arrays__hashing/">Arrays_&amp;_Hashing <sup><strong><sup>7</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/authentication-services/">Authentication Services <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/automatic-reference-count/">Automatic Reference Count <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/backtracking/">Backtracking <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/balanced-binary-tree/">Balanced Binary Tree <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/battery/">Battery <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/best-time-to-buy-and-sell-stock/">Best Time to Buy and Sell Stock <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/best-time-to-buy-and-sell-stock-with-cooldown/">Best Time to Buy and Sell Stock With Cooldown <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/bfs/">BFS <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/big-o/">Big O <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/binary-search/">Binary Search <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/binary-search-tree/">Binary Search Tree <sup><strong><sup>7</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/binary-tree-level-order-traversal/">Binary Tree Level Order Traversal <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/binary-tree-maximum-path-sum/">Binary Tree Maximum Path Sum <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/binary-tree-right-side-view/">Binary Tree Right Side View <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/bit_manipulation/">Bit_Manipulation <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/ble/">BLE <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/blind-75/">Blind 75 <sup><strong><sup>74</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/boats-to-save-people/">Boats to Save People <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/breadth-first-search/">Breadth First Search <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/bst/">BST <sup><strong><sup>6</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/bubble-sort/">Bubble Sort <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/building/">Building <sup><strong><sup>8</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/burst-balloons/">Burst Balloons <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/c/">C <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/caaction/">CAAction <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/cabasicanimation/">CABasicAnimation <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/caching/">Caching <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/caching-data/">Caching Data <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/car-fleet/">Car Fleet <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/cashapelayer/">CAShapeLayer <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/chain-of-responsibility-pattern/">Chain of Responsibility Pattern <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/chat/">Chat <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/chatgpt/">ChatGPT <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/cheapest-flights-within-k-stops/">Cheapest Flights Within K Stops <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/ci/">CI <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/cli/">CLI <sup><strong><sup>4</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/climbing-stairs/">Climbing Stairs <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/clone-graph/">Clone Graph <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/closure/">Closure <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/coin-change/">Coin Change <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/coin-change-ii/">Coin Change II <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/combination-sum/">Combination Sum <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/combination-sum-ii/">Combination Sum II <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/combine/">Combine <sup><strong><sup>3</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/concurrency/">Concurrency <sup><strong><sup>4</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/construct-binary-tree-from-preorder-and-inorder-traversal/">Construct Binary Tree From Preorder and Inorder Traversal <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/container-with-most-water/">Container With Most Water <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/contains-duplicate/">Contains Duplicate <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/copy-list-with-random-pointer/">Copy List With Random Pointer <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/core-animation/">Core Animation <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/corelocation/">CoreLocation <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/corenfc/">CoreNFC <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/count-good-nodes-in-binary-tree/">Count Good Nodes in Binary Tree <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/counting-bits/">Counting Bits <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/course-schedule/">Course Schedule <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/course-schedule-ii/">Course Schedule II <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/creating/">Creating <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/daily-temperatures/">Daily Temperatures <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/data-structures/">Data Structures <sup><strong><sup>28</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/data-structures-and-algorithms/">Data Structures and Algorithms <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/decode-ways/">Decode Ways <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/delete/">Delete <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/delivering/">Delivering <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/dependency-inversion-principle/">Dependency Inversion Principle <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/design-add-and-search-words-data-structure/">Design Add and Search Words Data Structure <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/design-hashmap/">Design HashMap <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/design-hashset/">Design HashSet <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/design-patterns/">Design Patterns <sup><strong><sup>6</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/design-principles/">Design Principles <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/design-twitter/">Design Twitter <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/detect-squares/">Detect Squares <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/devices/">Devices <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/dfs/">DFS <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/diameter-of-binary-tree/">Diameter of Binary Tree <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/dispatchgroup/">Dispatchgroup <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/distinct-subsequences/">Distinct Subsequences <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/dsa/">DSA <sup><strong><sup>29</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/dynamic-island/">Dynamic Island <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/easy/">Easy <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/edit-distance/">Edit Distance <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/evaluate-reverse-polish-notation/">Evaluate Reverse Polish Notation <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/exists/">Exists <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/face-id/">Face ID <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/fastlane/">Fastlane <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/find-median-from-data-stream/">Find Median From Data Stream <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/find-minimum-in-rotated-sorted-array/">Find Minimum in Rotated Sorted Array <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/find-the-duplicate-number/">Find the Duplicate Number <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/first-missing-positive/">First Missing Positive <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/flyweight-pattern/">Flyweight Pattern <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/from-scratch/">From Scratch <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/game/">Game <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/gas-station/">Gas Station <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/generate-parentheses/">Generate Parentheses <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/github-actions/">GitHub Actions <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/graph/">Graph <sup><strong><sup>7</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/graph-valid-tree/">Graph Valid Tree <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/graphql/">GraphQL <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/greedy/">Greedy <sup><strong><sup>6</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/group-anagrams/">Group Anagrams <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/grpc/">GRPC <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/hand-of-straights/">Hand of Straights <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/hard/">Hard <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/hashmap/">HashMap <sup><strong><sup>3</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/healthkit/">HealthKit <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/hlongest-palindromic-substring/">HLongest Palindromic Substring <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/house-robber/">House Robber <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/house-robber-ii/">House Robber II <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/implement-trie-prefix-tree/">Implement Trie (Prefix Tree) <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/implementing/">Implementing <sup><strong><sup>8</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/in-app-purchases/">In-App Purchases <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/inorder/">Inorder <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/insert-interval/">Insert Interval <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/insertion-sort/">Insertion Sort <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/integration-testing/">Integration Testing <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/interleaving-string/">Interleaving String <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/interpreter-pattern/">Interpreter Pattern <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/intervals/">Intervals <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/invert-binary-tree/">Invert Binary Tree <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/ios/">IOS <sup><strong><sup>22</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/jump-game/">Jump Game <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/jump-game-ii/">Jump Game II <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/k-closest-points-to-origin/">K Closest Points to Origin <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/keychain/">Keychain <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/koko-eating-bananas/">Koko Eating Bananas <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/kth-largest-element-in-a-stream/">Kth Largest Element in a Stream <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/kth-largest-element-in-an-array/">Kth Largest Element in an Array <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/kth-smallest-element-in-a-bst/">Kth Smallest Element in a BST <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/largest-rectangle-in-histogram/">Largest Rectangle in Histogram <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/last-stone-weight/">Last Stone Weight <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/leetcode/">LeetCode <sup><strong><sup>155</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/letter-combinations-of-a-phone-number/">Letter Combinations of a Phone Number <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/linked-list/">Linked List <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/linked-list-cycle/">Linked List Cycle <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/linked-list-queue/">Linked List Queue <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/locally/">Locally <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/location-service/">Location Service <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/longest-common-prefix/">Longest Common Prefix <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/longest-common-subsequence/">Longest Common Subsequence <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/longest-consecutive-sequence/">Longest Consecutive Sequence <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/longest-increasing-path-in-a-matrix/">Longest Increasing Path in a Matrix <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/longest-increasing-subsequence/">Longest Increasing Subsequence <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/longest-repeating-character-replacement/">Longest Repeating Character Replacement <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/longest-substring-without-repeating-characters/">Longest Substring Without Repeating Characters <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/lowest-common-ancestor-of-a-binary-search-tree/">Lowest Common Ancestor of a Binary Search Tree <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/lru-cache/">LRU Cache <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/majority-element/">Majority Element <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/math__geometry/">Math_&amp;_Geometry <sup><strong><sup>3</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/max/">Max <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/max-area-of-island/">Max Area of Island <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/maximum-depth-of-binary-tree/">Maximum Depth of Binary Tree <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/maximum-product-subarray/">Maximum Product Subarray <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/maximum-subarray/">Maximum Subarray <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/median-of-two-sorted-arrays/">Median of Two Sorted Arrays <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/medium/">Medium <sup><strong><sup>3</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/meeting-rooms/">Meeting Rooms <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/meeting-rooms-ii/">Meeting Rooms II <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/memento-pattern/">Memento Pattern <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/memory-leak/">Memory Leak <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/merge-intervals/">Merge Intervals <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/merge-k-sorted-lists/">Merge K Sorted Lists <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/merge-sort/">Merge Sort <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/merge-triplets-to-form-target-triplet/">Merge Triplets to Form Target Triplet <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/merge-two-sorted-lists/">Merge Two Sorted Lists <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/min/">Min <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/min-cost-to-connect-all-points/">Min Cost to Connect All Points <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/min-stack/">Min Stack <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/minimum-interval-to-include-each-query/">Minimum Interval to Include Each Query <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/minimum-window-substring/">Minimum Window Substring <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/missing-number/">Missing Number <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/ml/">ML <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/modern-concurrency/">Modern Concurrency <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/movie/">Movie <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/multiply-strings/">Multiply Strings <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/mvvm/">MVVM <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/n-queens/">N-Queens <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/network-delay-time/">Network Delay Time <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/nfc/">NFC <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/non-consumable/">Non-Consumable <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/non-overlapping-intervals/">Non-Overlapping Intervals <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/nscache/">NSCache <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/number-of-1-bits/">Number of 1 Bits <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/number-of-connected-components-in-an-undirected-graph/">Number of Connected Components in an Undirected Graph <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/number-of-islands/">Number of Islands <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/oop/">Oop <sup><strong><sup>6</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/optimizing/">Optimizing <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/pacific-atlantic-water-flow/">Pacific Atlantic Water Flow <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/palindrome-partitioning/">Palindrome Partitioning <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/palindromic-substrings/">Palindromic Substrings <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/partition-equal-subset-sum/">Partition Equal Subset Sum <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/partition-labels/">Partition Labels <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/performance/">Performance <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/peripheral/">Peripheral <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/permutation-in-string/">Permutation in String <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/permutations/">Permutations <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/postorder/">Postorder <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/powx-n/">Pow(x, N) <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/preorder/">Preorder <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/product-of-array-except-self/">Product of Array Except Self <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/programming/">Programming <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/project/">Project <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/push-notifications/">Push Notifications <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/queue/">Queue <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/quick-sort/">Quick Sort <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/reality-composer-pro/">Reality Composer Pro <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/realitykit/">RealityKit <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/recommendations/">Recommendations <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/reconstruct-itinerary/">Reconstruct Itinerary <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/red-black-tree/">Red-Black Tree <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/redundant-connection/">Redundant Connection <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/reference-type/">Reference Type <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/regular-expression-matching/">Regular Expression Matching <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/remove-nth-node-from-end-of-list/">Remove Nth Node From End of List <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/reorder-list/">Reorder List <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/resize/">Resize <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/reverse-bits/">Reverse Bits <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/reverse-integer/">Reverse Integer <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/reverse-linked-list/">Reverse Linked List <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/reverse-nodes-in-k-group/">Reverse Nodes in K-Group <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/rocketsim/">RocketSim <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/rotate-image/">Rotate Image <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/rotting-oranges/">Rotting Oranges <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/same-tree/">Same Tree <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/scanning/">Scanning <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/search-a-2d-matrix/">Search a 2D Matrix <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/search-in-rotated-sorted-array/">Search in Rotated Sorted Array <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/securing/">Securing <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/security/">Security <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/selection-sort/">Selection Sort <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/serialize-and-deserialize-binary-tree/">Serialize and Deserialize Binary Tree <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/set-matrix-zeroes/">Set Matrix Zeroes <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/sliding-window/">Sliding Window <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/sliding-window-maximum/">Sliding Window Maximum <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/software-architecture/">Software Architecture <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/sort-an-array/">Sort an Array <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/sorting/">Sorting <sup><strong><sup>5</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/speech-to-text/">Speech to Text <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/spiral-matrix/">Spiral Matrix <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/spritekit/">SpriteKit <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/stack/">Stack <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/state-pattern/">State Pattern <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/storekit/">StoreKit <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/storekit-2/">StoreKit 2 <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/streaming/">Streaming <sup><strong><sup>3</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/subarray-sum-equals-k/">Subarray Sum Equals K <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/subsets/">Subsets <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/subsets-ii/">Subsets II <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/subtree-of-another-tree/">Subtree of Another Tree <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/sum-of-two-integers/">Sum of Two Integers <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/surrounded-regions/">Surrounded Regions <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/swift/">Swift <sup><strong><sup>208</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/swiftui/">SwiftUI <sup><strong><sup>15</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/swim-in-rising-water/">Swim in Rising Water <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/system-design/">System Design <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/tags/">Tags <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/target-sum/">Target Sum <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/task-scheduler/">Task Scheduler <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/testing/">Testing <sup><strong><sup>4</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/text-editor/">Text Editor <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/text-to-speech/">Text to Speech <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/threads/">Threads <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/time-based-key-value-store/">Time Based Key-Value Store <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/to-do/">To-Do <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/tools/">Tools <sup><strong><sup>4</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/top-k-frequent-elements/">Top K Frequent Elements <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/touch-id/">Touch ID <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/trapping-rain-water/">Trapping Rain Water <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/traverse/">Traverse <sup><strong><sup>3</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/trie/">Trie <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/two-pointers/">Two Pointers <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/two-sum/">Two Sum <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/two-sum-ii---input-array-is-sorted/">Two Sum II - Input Array Is Sorted <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/two_pointers/">Two_Pointers <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/ui-testing/">UI Testing <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/uikit/">UIKit <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/unique-paths/">Unique Paths <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/user-data/">User Data <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/valid-anagram/">Valid Anagram <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/valid-palindrome/">Valid Palindrome <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/valid-parentheses/">Valid Parentheses <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/valid-parenthesis-string/">Valid Parenthesis String <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/valid-sudoku/">Valid Sudoku <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/validate-binary-search-tree/">Validate Binary Search Tree <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/value-type/">Value Type <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/video/">Video <sup><strong><sup>3</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/visionos/">VisionOS <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/walls-and-gates/">Walls and Gates <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/websockets/">WebSockets <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/widget/">Widget <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/word-break/">Word Break <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/word-ladder/">Word Ladder <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/word-search/">Word Search <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/word-search-ii/">Word Search II <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/xcode/">Xcode <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/xctest/">XCTest <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
 </ul>
     </main>
     
 <footer class="footer">
         <span>&copy; 2026 <a href="http://localhost:1313/">Dmytro&#39;s Blog</a></span> · 
 
+    
+    
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
-</a><script>
-    
-    
-    let b = document.querySelector("#menu-trigger")
-    let m = document.querySelector(".menu")
-    b.addEventListener("click", function () {
-        m.classList.toggle("hidden")
-    });
-    
-    document.body.addEventListener('click', function (event) {
-        if (!b.contains(event.target)) {
-            m.classList.add("hidden")
-        }
-    });
-    
-</script>
+</a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
@@ -1190,25 +1170,25 @@
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            html.dataset.theme = 'dark';
             localStorage.setItem("pref-theme", 'dark');
         }
     })
