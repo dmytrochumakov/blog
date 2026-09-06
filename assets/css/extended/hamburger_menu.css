@@ -15,6 +15,11 @@
     white-space: nowrap;
 }
 
+.header-nav .menu.hidden {
+    visibility: visible;
+    opacity: 1;
+}
+
 .menu li+li {
     margin-inline-start: var(--gap);
 }
@@ -64,6 +69,8 @@
 
     .menu.hidden {
         display: none;
+        visibility: hidden;
+        opacity: 0;
     }
 }
 

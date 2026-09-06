@@ -1,3 +1,21 @@
 {{- /* Footer custom content area start */ -}}
 {{- /*     Insert any custom code web-analytics, resources, etc. here */ -}}
 {{- /* Footer custom content area end */ -}}
+
+<script>
+    const menuTrigger = document.querySelector("#menu-trigger");
+    const menu = document.querySelector(".menu");
+
+    if (menuTrigger && menu) {
+        menuTrigger.addEventListener("click", function (event) {
+            event.stopPropagation();
+            menu.classList.toggle("hidden");
+        });
+
+        document.body.addEventListener("click", function (event) {
+            if (!menu.contains(event.target) && !menuTrigger.contains(event.target)) {
+                menu.classList.add("hidden");
+            }
+        });
+    }
+</script>

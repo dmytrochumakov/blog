@@ -16,7 +16,7 @@ Choose two indices (0-indexed) i and j (i != j) and update triplets[j] to become
 <meta name="author" content="Dmytro Chumakov">
 <link rel="canonical" href="http://localhost:1313/posts/leetcode-150-merge-triplets-to-form-target-triplet/">
 <meta name="google-site-verification" content="G-HZZ4JTFGDP">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.b7bbee81bd2284108f2872ef1ba79979857e073ad838aa6df741d4fb60ef101d.css" integrity="sha256-t7vugb0ihBCPKHLvG6eZeYV&#43;BzrYOKpt90HU&#43;2DvEB0=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.20f9af44f590fa2c3961078cdb3cb0929716d07bcfa97dc26a457d5396985d3b.css" integrity="sha256-IPmvRPWQ&#43;iw5YQeM2zywkpcW0HvPqX3CakV9U5aYXTs=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -211,7 +211,15 @@ Choose two indices (0-indexed) i and j (i != j) and update triplets[j] to become
                 </button>
             </div>
         </div>
-        <ul id="menu" class="menu">
+
+        <button id="menu-trigger" aria-haspopup="menu" aria-label="Menu Button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+        <ul id="menu" class="menu hidden">
             <li>
                 <a href="http://localhost:1313/archives/" title="Archive">
                     <span>Archive</span>
@@ -496,7 +504,24 @@ Choose two indices (0-indexed) i and j (i != j) and update triplets[j] to become
         <polyline points="17 11 12 6 7 11"></polyline>
         <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
-</a>
+</a><script>
+    const menuTrigger = document.querySelector("#menu-trigger");
+    const menu = document.querySelector(".menu");
+
+    if (menuTrigger && menu) {
+        menuTrigger.addEventListener("click", function (event) {
+            event.stopPropagation();
+            menu.classList.toggle("hidden");
+        });
+
+        document.body.addEventListener("click", function (event) {
+            if (!menu.contains(event.target) && !menuTrigger.contains(event.target)) {
+                menu.classList.add("hidden");
+            }
+        });
+    }
+</script>
+
 
 <script>
     let menu = document.getElementById('menu');
