@@ -40,8 +40,9 @@ When I was thinking about brute force solution I firstly thought about two neste
 Next I thought that finding index where the value has the minimum distance could help.
 My idea was to use that index to calculate left and right boundaries that we can use in slice. But it did not work because in some cases you can go outside boundaries and still have a correct result.
 
-So the only valid option that I could think of was to use min heap. it worked but it was not the most efficient solution as it took O(n*logn) time, and O(n) space.
-the idea behind it was to find distances for all values and put them into min heap so that you can find `k` minimum values.
+So the only valid option that I could think of was to use Min Heap. It worked but it was not the most efficient solution as it took O(n*logn) time, and O(n) space.
+
+The idea behind it was to find distances for all values and put them into Min Heap so that you can find `k` minimum values.
 ![alt image](images/658.png)
 
 ```swift
@@ -85,10 +86,10 @@ func findClosestElements(_ arr: [Int], _ k: Int, _ x: Int) -> [Int] {
 
 I did not quite get it from the first try but it turns out that you can use sliding window technique to solve this problem.
 
-You can put left and right pointers at start and the end of the array, iterate over until window size is equal to `k` and only update left pointer if its distance is more than the right distance and vice versa. in the end pointers will give you a range with the right answer.
+You can put left and right pointers at start and the end of the array, iterate over until window size is equal to `k` and only update left pointer if its distance is more than the right distance and vice versa. In the end pointers will give you a range with the right answer.
 ![alt image](images/658-1.png)
 
-You can go even further and solve it in O(logn) time by using binary search but im not going to do that. if you are curious you can try it yourself.
+You can go even further and solve it in O(logn) time by using binary search but I'm not going to do that. If you are curious, feel free to give it a try yourself.
 
 #### Code
 
