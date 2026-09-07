@@ -11,8 +11,23 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 03 Sep 2026 11:40:49 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 16:04:28 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Find K Closest Elements</title>
+      <link>http://localhost:1313/posts/leetcode-find-k-closest-elements/</link>
+      <pubDate>Mon, 07 Sep 2026 16:04:28 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-find-k-closest-elements/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given a &lt;strong&gt;sorted&lt;/strong&gt; integer array &lt;code&gt;arr&lt;/code&gt;, two integers &lt;code&gt;k&lt;/code&gt; and &lt;code&gt;x&lt;/code&gt;, return the &lt;code&gt;k&lt;/code&gt; closest integers to &lt;code&gt;x&lt;/code&gt; in the array. The result should also be sorted in ascending order.&lt;/p&gt;
+&lt;p&gt;An integer &lt;code&gt;a&lt;/code&gt; is closer to &lt;code&gt;x&lt;/code&gt; than an integer &lt;code&gt;b&lt;/code&gt; if:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;|a - x| &amp;lt; |b - x|&lt;/code&gt;, or&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;|a - x| == |b - x|&lt;/code&gt; and &lt;code&gt;a &amp;lt; b&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Input:&lt;/strong&gt; arr = (1,2,3,4,5), k = 4, x = 3&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Boats to Save People</title>
       <link>http://localhost:1313/posts/leetcode-boats-to-save-people/</link>
