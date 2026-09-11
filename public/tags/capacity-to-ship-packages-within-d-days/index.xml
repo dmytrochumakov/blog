@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Capacity to Ship Packages Within D Days on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/capacity-to-ship-packages-within-d-days/</link>
+    <description>Recent content in Capacity to Ship Packages Within D Days on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 12 Sep 2026 00:57:14 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/capacity-to-ship-packages-within-d-days/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Capacity To Ship Packages Within D Days</title>
+      <link>http://localhost:1313/posts/leetcode-capacity-to-ship-packages-within-d-days/</link>
+      <pubDate>Sat, 12 Sep 2026 00:57:14 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-capacity-to-ship-packages-within-d-days/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;A conveyor belt has packages that must be shipped from one port to another within &lt;code&gt;days&lt;/code&gt; days.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;ith&lt;/code&gt; package on the conveyor belt has a weight of &lt;code&gt;weights[i]&lt;/code&gt;. Each day, we load the ship with packages on the conveyor belt (in the order given by &lt;code&gt;weights&lt;/code&gt;). We may not load more weight than the maximum weight capacity of the ship.&lt;/p&gt;
+&lt;p&gt;Return the least weight capacity of the ship that will result in all the packages on the conveyor belt being shipped within &lt;code&gt;days&lt;/code&gt; days.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
