@@ -11,8 +11,23 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 12 Sep 2026 00:57:14 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2026 23:10:02 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - LFU Cache</title>
+      <link>http://localhost:1313/posts/leetcode-lfu-cache/</link>
+      <pubDate>Fri, 18 Sep 2026 23:10:02 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-lfu-cache/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Design and implement a data structure for a &lt;a href=&#34;https://en.wikipedia.org/wiki/Least_frequently_used&#34;&gt;Least Frequently Used (LFU)&lt;/a&gt; cache.&lt;/p&gt;
+&lt;p&gt;Implement the &lt;code&gt;LFUCache&lt;/code&gt; class:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;LFUCache(int capacity)&lt;/code&gt; Initializes the object with the &lt;code&gt;capacity&lt;/code&gt; of the data structure.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;int get(int key)&lt;/code&gt; Gets the value of the &lt;code&gt;key&lt;/code&gt; if the &lt;code&gt;key&lt;/code&gt; exists in the cache. Otherwise, returns &lt;code&gt;-1&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;void put(int key, int value)&lt;/code&gt; Updates the value of the &lt;code&gt;key&lt;/code&gt; if present, or inserts the &lt;code&gt;key&lt;/code&gt; if not already present. When the cache reaches its &lt;code&gt;capacity&lt;/code&gt;, it should invalidate and remove the &lt;strong&gt;least frequently used&lt;/strong&gt; key before inserting a new item. For this problem, when there is a &lt;strong&gt;tie&lt;/strong&gt; (i.e., two or more keys with the same frequency), the &lt;strong&gt;least recently used&lt;/strong&gt; &lt;code&gt;key&lt;/code&gt; would be invalidated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To determine the least frequently used key, a &lt;strong&gt;use counter&lt;/strong&gt; is maintained for each key in the cache. The key with the smallest &lt;strong&gt;use counter&lt;/strong&gt; is the least frequently used key.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Capacity To Ship Packages Within D Days</title>
       <link>http://localhost:1313/posts/leetcode-capacity-to-ship-packages-within-d-days/</link>
