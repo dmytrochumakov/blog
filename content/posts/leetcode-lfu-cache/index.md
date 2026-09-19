@@ -82,7 +82,12 @@ If you have ever solved problems that had some tie-breaker in them, then you mig
 
 At this point, in order to go forward, we need to understand what [LRU](https://www.enjoyalgorithms.com/blog/implement-least-recently-used-cache) is.
 
-I won't go into details about LRU. I will just say that if you go and look at how an LRU cache is implemented, you will find that it's usually done with a Doubly Linked List and a hash map.
+I won't go into details about LRU. I will just say that if you go and look at how an LRU cache is implemented, you will find that it's usually done with a Doubly Linked List and a hash map. The `tail` represents the *MRU (most recently used element)* and the `head` - *LRU (least recently used element)*. When you are adding a new value, it's going to be pushed to the `tail`, and when you need to update the frequency, it will *remove* the node, *reconnect the previous and next* pointers, and move the node to the `tail`.
+
+Pushing a new node to the `tail`:
+![alt image](images/460-2.png)
+
+![alt image](images/460-3.png)
 
 But I thought, why can't we just use a singly linked list? When I visualized it, I understood that in order for `get/put` operations to be efficient *(O(1) time)*, we need to know the `previous` node and connect it with the `next` one. Having only one `next` node will push us to search for the `previous` node, which could take *O(n)* time. So it is better to stick with a Doubly Linked List.
 
