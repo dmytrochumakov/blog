@@ -11,20 +11,48 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 18 Sep 2026 23:10:02 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 21:18:26 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode</title>
+      <link>http://localhost:1313/tags/leetcode/</link>
+      <pubDate>Tue, 22 Sep 2026 21:18:26 +0300</pubDate>
+      <guid>http://localhost:1313/tags/leetcode/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Medium</title>
+      <link>http://localhost:1313/tags/medium/</link>
+      <pubDate>Tue, 22 Sep 2026 21:18:26 +0300</pubDate>
+      <guid>http://localhost:1313/tags/medium/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Online Stock Span</title>
+      <link>http://localhost:1313/tags/online-stock-span/</link>
+      <pubDate>Tue, 22 Sep 2026 21:18:26 +0300</pubDate>
+      <guid>http://localhost:1313/tags/online-stock-span/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stack</title>
+      <link>http://localhost:1313/tags/stack/</link>
+      <pubDate>Tue, 22 Sep 2026 21:18:26 +0300</pubDate>
+      <guid>http://localhost:1313/tags/stack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Swift</title>
+      <link>http://localhost:1313/tags/swift/</link>
+      <pubDate>Tue, 22 Sep 2026 21:18:26 +0300</pubDate>
+      <guid>http://localhost:1313/tags/swift/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Hard</title>
       <link>http://localhost:1313/tags/hard/</link>
       <pubDate>Fri, 18 Sep 2026 23:10:02 +0300</pubDate>
       <guid>http://localhost:1313/tags/hard/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>LeetCode</title>
-      <link>http://localhost:1313/tags/leetcode/</link>
-      <pubDate>Fri, 18 Sep 2026 23:10:02 +0300</pubDate>
-      <guid>http://localhost:1313/tags/leetcode/</guid>
       <description></description>
     </item>
     <item>
@@ -42,13 +70,6 @@
       <description></description>
     </item>
     <item>
-      <title>Swift</title>
-      <link>http://localhost:1313/tags/swift/</link>
-      <pubDate>Fri, 18 Sep 2026 23:10:02 +0300</pubDate>
-      <guid>http://localhost:1313/tags/swift/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Binary_Search</title>
       <link>http://localhost:1313/tags/binary_search/</link>
       <pubDate>Sat, 12 Sep 2026 00:57:14 +0300</pubDate>
@@ -60,13 +81,6 @@
       <link>http://localhost:1313/tags/capacity-to-ship-packages-within-d-days/</link>
       <pubDate>Sat, 12 Sep 2026 00:57:14 +0300</pubDate>
       <guid>http://localhost:1313/tags/capacity-to-ship-packages-within-d-days/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Medium</title>
-      <link>http://localhost:1313/tags/medium/</link>
-      <pubDate>Sat, 12 Sep 2026 00:57:14 +0300</pubDate>
-      <guid>http://localhost:1313/tags/medium/</guid>
       <description></description>
     </item>
     <item>
@@ -1495,13 +1509,6 @@
       <link>http://localhost:1313/tags/linked-list/</link>
       <pubDate>Tue, 27 Aug 2024 07:13:19 +0300</pubDate>
       <guid>http://localhost:1313/tags/linked-list/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Stack</title>
-      <link>http://localhost:1313/tags/stack/</link>
-      <pubDate>Tue, 20 Aug 2024 07:17:01 +0300</pubDate>
-      <guid>http://localhost:1313/tags/stack/</guid>
       <description></description>
     </item>
     <item>
