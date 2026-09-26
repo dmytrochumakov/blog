@@ -11,8 +11,31 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 22 Sep 2026 21:18:26 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2026 17:51:17 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Construct Quad Tree</title>
+      <link>http://localhost:1313/posts/leetcode-construct-quad-tree/</link>
+      <pubDate>Sat, 26 Sep 2026 17:51:17 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-construct-quad-tree/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Given an &lt;code&gt;n * n&lt;/code&gt; matrix &lt;code&gt;grid&lt;/code&gt; of &lt;code&gt;0&#39;s&lt;/code&gt; and &lt;code&gt;1&#39;s&lt;/code&gt; only. We want to represent &lt;code&gt;grid&lt;/code&gt; with a Quad-Tree.&lt;/p&gt;
+&lt;p&gt;Return &lt;em&gt;the root of the Quad-Tree representing&lt;/em&gt; &lt;code&gt;grid&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A Quad-Tree is a tree data structure in which each internal node has exactly four children. Besides, each node has two attributes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;val&lt;/code&gt;: True if the node represents a grid of 1&amp;rsquo;s or False if the node represents a grid of 0&amp;rsquo;s. Notice that you can assign the &lt;code&gt;val&lt;/code&gt; to True or False when &lt;code&gt;isLeaf&lt;/code&gt; is False, and both are accepted in the answer.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;isLeaf&lt;/code&gt;: True if the node is a leaf node on the tree or False if the node has four children.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;class Node {
+   public boolean val;
+   public boolean isLeaf;
+   public Node topLeft;
+   public Node topRight;
+   public Node bottomLeft;
+   public Node bottomRight;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We can construct a Quad-Tree from a two-dimensional area using the following steps:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Online Stock Span</title>
       <link>http://localhost:1313/posts/leetcode-online-stock-span/</link>
