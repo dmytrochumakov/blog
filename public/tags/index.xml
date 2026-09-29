@@ -11,34 +11,55 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 26 Sep 2026 17:51:17 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 17:41:19 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Construct Quad Tree</title>
-      <link>http://localhost:1313/tags/construct-quad-tree/</link>
-      <pubDate>Sat, 26 Sep 2026 17:51:17 +0300</pubDate>
-      <guid>http://localhost:1313/tags/construct-quad-tree/</guid>
+      <title>Car Pooling</title>
+      <link>http://localhost:1313/tags/car-pooling/</link>
+      <pubDate>Tue, 29 Sep 2026 17:41:19 +0300</pubDate>
+      <guid>http://localhost:1313/tags/car-pooling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Heap</title>
+      <link>http://localhost:1313/tags/heap/</link>
+      <pubDate>Tue, 29 Sep 2026 17:41:19 +0300</pubDate>
+      <guid>http://localhost:1313/tags/heap/</guid>
       <description></description>
     </item>
     <item>
       <title>LeetCode</title>
       <link>http://localhost:1313/tags/leetcode/</link>
-      <pubDate>Sat, 26 Sep 2026 17:51:17 +0300</pubDate>
+      <pubDate>Tue, 29 Sep 2026 17:41:19 +0300</pubDate>
       <guid>http://localhost:1313/tags/leetcode/</guid>
       <description></description>
     </item>
     <item>
       <title>Medium</title>
       <link>http://localhost:1313/tags/medium/</link>
-      <pubDate>Sat, 26 Sep 2026 17:51:17 +0300</pubDate>
+      <pubDate>Tue, 29 Sep 2026 17:41:19 +0300</pubDate>
       <guid>http://localhost:1313/tags/medium/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Priority_Queue</title>
+      <link>http://localhost:1313/tags/priority_queue/</link>
+      <pubDate>Tue, 29 Sep 2026 17:41:19 +0300</pubDate>
+      <guid>http://localhost:1313/tags/priority_queue/</guid>
       <description></description>
     </item>
     <item>
       <title>Swift</title>
       <link>http://localhost:1313/tags/swift/</link>
-      <pubDate>Sat, 26 Sep 2026 17:51:17 +0300</pubDate>
+      <pubDate>Tue, 29 Sep 2026 17:41:19 +0300</pubDate>
       <guid>http://localhost:1313/tags/swift/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Construct Quad Tree</title>
+      <link>http://localhost:1313/tags/construct-quad-tree/</link>
+      <pubDate>Sat, 26 Sep 2026 17:51:17 +0300</pubDate>
+      <guid>http://localhost:1313/tags/construct-quad-tree/</guid>
       <description></description>
     </item>
     <item>

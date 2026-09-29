@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Priority_Queue on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/priority_queue/</link>
+    <description>Recent content in Priority_Queue on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 29 Sep 2026 17:41:19 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/priority_queue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Car Pooling</title>
+      <link>http://localhost:1313/posts/leetcode-car-pooling/</link>
+      <pubDate>Tue, 29 Sep 2026 17:41:19 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-car-pooling/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;There is a car with &lt;code&gt;capacity&lt;/code&gt; empty seats. The vehicle only drives east (i.e., it cannot turn around and drive west).&lt;/p&gt;
+&lt;p&gt;You are given the integer &lt;code&gt;capacity&lt;/code&gt; and an array &lt;code&gt;trips&lt;/code&gt; where &lt;code&gt;trips[i] = [numPassengersi, fromi, toi]&lt;/code&gt; indicates that the &lt;code&gt;ith&lt;/code&gt; trip has &lt;code&gt;numPassengersi&lt;/code&gt; passengers and the locations to pick them up and drop them off are &lt;code&gt;fromi&lt;/code&gt; and &lt;code&gt;toi&lt;/code&gt;, respectively. The locations are given as the number of kilometers due east from the car&amp;rsquo;s initial location.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
