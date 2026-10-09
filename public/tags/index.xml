@@ -11,8 +11,43 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Oct 2026 18:31:09 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 18:24:59 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced_Graphs</title>
+      <link>http://localhost:1313/tags/advanced_graphs/</link>
+      <pubDate>Fri, 09 Oct 2026 18:24:59 +0300</pubDate>
+      <guid>http://localhost:1313/tags/advanced_graphs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LeetCode</title>
+      <link>http://localhost:1313/tags/leetcode/</link>
+      <pubDate>Fri, 09 Oct 2026 18:24:59 +0300</pubDate>
+      <guid>http://localhost:1313/tags/leetcode/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Medium</title>
+      <link>http://localhost:1313/tags/medium/</link>
+      <pubDate>Fri, 09 Oct 2026 18:24:59 +0300</pubDate>
+      <guid>http://localhost:1313/tags/medium/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Path With Minimum Effort</title>
+      <link>http://localhost:1313/tags/path-with-minimum-effort/</link>
+      <pubDate>Fri, 09 Oct 2026 18:24:59 +0300</pubDate>
+      <guid>http://localhost:1313/tags/path-with-minimum-effort/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Swift</title>
+      <link>http://localhost:1313/tags/swift/</link>
+      <pubDate>Fri, 09 Oct 2026 18:24:59 +0300</pubDate>
+      <guid>http://localhost:1313/tags/swift/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Graphs</title>
       <link>http://localhost:1313/tags/graphs/</link>
@@ -21,31 +56,10 @@
       <description></description>
     </item>
     <item>
-      <title>LeetCode</title>
-      <link>http://localhost:1313/tags/leetcode/</link>
-      <pubDate>Tue, 06 Oct 2026 18:31:09 +0300</pubDate>
-      <guid>http://localhost:1313/tags/leetcode/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Medium</title>
-      <link>http://localhost:1313/tags/medium/</link>
-      <pubDate>Tue, 06 Oct 2026 18:31:09 +0300</pubDate>
-      <guid>http://localhost:1313/tags/medium/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Open the Lock</title>
       <link>http://localhost:1313/tags/open-the-lock/</link>
       <pubDate>Tue, 06 Oct 2026 18:31:09 +0300</pubDate>
       <guid>http://localhost:1313/tags/open-the-lock/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Swift</title>
-      <link>http://localhost:1313/tags/swift/</link>
-      <pubDate>Tue, 06 Oct 2026 18:31:09 +0300</pubDate>
-      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>

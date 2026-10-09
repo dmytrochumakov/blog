@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Oct 2026 18:31:09 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 18:24:59 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Path With Minimum Effort</title>
+      <link>http://localhost:1313/posts/leetcode-path-with-minimum-effort/</link>
+      <pubDate>Fri, 09 Oct 2026 18:24:59 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-path-with-minimum-effort/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;You are a hiker preparing for an upcoming hike. You are given &lt;code&gt;heights&lt;/code&gt;, a 2D array of size &lt;code&gt;rows x columns&lt;/code&gt;, where &lt;code&gt;heights[row][col]&lt;/code&gt; represents the height of cell &lt;code&gt;(row, col)&lt;/code&gt;. You are situated in the top-left cell, &lt;code&gt;(0, 0)&lt;/code&gt;, and you hope to travel to the bottom-right cell, &lt;code&gt;(rows-1, columns-1)&lt;/code&gt; (i.e., 0-indexed). You can move up, down, left, or right, and you wish to find a route that requires the minimum effort.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Open the Lock</title>
       <link>http://localhost:1313/posts/leetcode-open-the-lock/</link>
