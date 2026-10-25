@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Candy on Dmytro&#39;s Blog</title>
+    <link>http://localhost:1313/tags/candy/</link>
+    <description>Recent content in Candy on Dmytro&#39;s Blog</description>
+    <image>
+      <title>Dmytro&#39;s Blog</title>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 25 Oct 2026 18:51:38 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/candy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Candy</title>
+      <link>http://localhost:1313/posts/leetcode-candy/</link>
+      <pubDate>Sun, 25 Oct 2026 18:51:38 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-candy/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;There are &lt;code&gt;n&lt;/code&gt; children standing in a line.&lt;/p&gt;
+&lt;p&gt;Each child is assigned a rating value given in the integer array &lt;code&gt;ratings&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You are giving candies to these children subjected to the following requirements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Each child must have &lt;strong&gt;at least&lt;/strong&gt; one candy.&lt;/li&gt;
+&lt;li&gt;Children with a &lt;strong&gt;higher&lt;/strong&gt; rating get more candies than their neighbors.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Return the &lt;strong&gt;minimum&lt;/strong&gt; number of candies you need to have to distribute the candies to the children.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
