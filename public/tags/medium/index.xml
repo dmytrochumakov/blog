@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 30 Oct 2026 17:01:02 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 22:58:51 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/medium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Walking Robot Simulation</title>
+      <link>http://localhost:1313/posts/leetcode-walking-robot-simulation/</link>
+      <pubDate>Thu, 05 Nov 2026 22:58:51 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-walking-robot-simulation/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;A robot on an infinite XY-plane starts at point &lt;code&gt;(0, 0)&lt;/code&gt; facing north. The robot receives an array of integers &lt;code&gt;commands&lt;/code&gt;, which represents a sequence of moves that it needs to execute. There are only three possible types of instructions the robot can receive:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-2&lt;/code&gt;: Turn left &lt;code&gt;90&lt;/code&gt; degrees.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-1&lt;/code&gt;: Turn right &lt;code&gt;90&lt;/code&gt; degrees.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;1 &amp;lt;= k &amp;lt;= 9&lt;/code&gt;: Move forward &lt;code&gt;k&lt;/code&gt; units, one unit at a time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some of the grid squares are &lt;code&gt;obstacles&lt;/code&gt;. The &lt;code&gt;ith&lt;/code&gt; obstacle is at grid point &lt;code&gt;obstacles[i] = (xi, yi)&lt;/code&gt;. If the robot runs into an obstacle, it will stay in its current location (on the block adjacent to the obstacle) and move on to the next command.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Bitwise AND of Numbers Range</title>
       <link>http://localhost:1313/posts/leetcode-bitwise-and-of-numbers-range/</link>
