@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Nov 2026 22:58:51 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 17:28:04 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - My Calendar I</title>
+      <link>http://localhost:1313/posts/leetcode-my-calendar-i/</link>
+      <pubDate>Mon, 09 Nov 2026 17:28:04 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-my-calendar-i/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;You are implementing a program to use as your calendar. We can add a new event if adding the event will not cause a &lt;strong&gt;double booking&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;double booking&lt;/strong&gt; happens when two events have some non-empty intersection (i.e., some moment is common to both events).&lt;/p&gt;
+&lt;p&gt;The event can be represented as a pair of integers &lt;code&gt;startTime&lt;/code&gt; and &lt;code&gt;endTime&lt;/code&gt; that represents a booking on the half-open interval &lt;code&gt;[startTime, endTime)&lt;/code&gt;, the range of real numbers &lt;code&gt;x&lt;/code&gt; such that &lt;code&gt;startTime &amp;lt;= x &amp;lt; endTime&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Walking Robot Simulation</title>
       <link>http://localhost:1313/posts/leetcode-walking-robot-simulation/</link>
