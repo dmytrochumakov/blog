@@ -11,8 +11,39 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 29 Aug 2026 17:57:45 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 20:52:14 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/arrays__hashing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Design Underground System</title>
+      <link>http://localhost:1313/posts/leetcode-design-underground-system/</link>
+      <pubDate>Thu, 12 Nov 2026 20:52:14 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-design-underground-system/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;An underground railway system is keeping track of customer travel times between different stations. They are using this data to calculate the average time it takes to travel from one station to another.&lt;/p&gt;
+&lt;p&gt;Implement the &lt;code&gt;UndergroundSystem&lt;/code&gt; class:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;void checkIn(int id, string stationName, int t)&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;A customer with a card ID equal to &lt;code&gt;id&lt;/code&gt; checks in at the station &lt;code&gt;stationName&lt;/code&gt; at time &lt;code&gt;t&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;A customer can only be checked into one place at a time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;void checkOut(int id, string stationName, int t)&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;A customer with a card ID equal to &lt;code&gt;id&lt;/code&gt; checks out from the station &lt;code&gt;stationName&lt;/code&gt; at time &lt;code&gt;t&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;double getAverageTime(string startStation, string endStation)&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;Returns the average time it takes to travel from &lt;code&gt;startStation&lt;/code&gt; to &lt;code&gt;endStation&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The average time is computed from all the previous traveling times from &lt;code&gt;startStation&lt;/code&gt; to &lt;code&gt;endStation&lt;/code&gt; that happened &lt;strong&gt;directly&lt;/strong&gt;, meaning a check-in at &lt;code&gt;startStation&lt;/code&gt; followed by a check-out from &lt;code&gt;endStation&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The time it takes to travel from &lt;code&gt;startStation&lt;/code&gt; to &lt;code&gt;endStation&lt;/code&gt; &lt;strong&gt;may be different&lt;/strong&gt; from the time it takes to travel from &lt;code&gt;endStation&lt;/code&gt; to &lt;code&gt;startStation&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;There will be at least one customer who has traveled from &lt;code&gt;startStation&lt;/code&gt; to &lt;code&gt;endStation&lt;/code&gt; before &lt;code&gt;getAverageTime&lt;/code&gt; is called.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You may assume all calls to the &lt;code&gt;checkIn&lt;/code&gt; and &lt;code&gt;checkOut&lt;/code&gt; methods are consistent. If a customer checks in at time &lt;code&gt;t1&lt;/code&gt; then checks out at time &lt;code&gt;t2&lt;/code&gt;, then &lt;code&gt;t1 &amp;lt; t2&lt;/code&gt;. All events happen in chronological order.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - First Missing Positive</title>
       <link>http://localhost:1313/posts/leetcode-first-missing-positive/</link>
