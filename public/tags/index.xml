@@ -11,13 +11,48 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Nov 2026 20:52:14 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 19:38:25 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arrays_&amp;_Hashing</title>
       <link>http://localhost:1313/tags/arrays__hashing/</link>
-      <pubDate>Thu, 12 Nov 2026 20:52:14 +0300</pubDate>
+      <pubDate>Thu, 19 Nov 2026 19:38:25 +0300</pubDate>
       <guid>http://localhost:1313/tags/arrays__hashing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Design a Food Rating System</title>
+      <link>http://localhost:1313/tags/design-a-food-rating-system/</link>
+      <pubDate>Thu, 19 Nov 2026 19:38:25 +0300</pubDate>
+      <guid>http://localhost:1313/tags/design-a-food-rating-system/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Heap</title>
+      <link>http://localhost:1313/tags/heap/</link>
+      <pubDate>Thu, 19 Nov 2026 19:38:25 +0300</pubDate>
+      <guid>http://localhost:1313/tags/heap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LeetCode</title>
+      <link>http://localhost:1313/tags/leetcode/</link>
+      <pubDate>Thu, 19 Nov 2026 19:38:25 +0300</pubDate>
+      <guid>http://localhost:1313/tags/leetcode/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Medium</title>
+      <link>http://localhost:1313/tags/medium/</link>
+      <pubDate>Thu, 19 Nov 2026 19:38:25 +0300</pubDate>
+      <guid>http://localhost:1313/tags/medium/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Swift</title>
+      <link>http://localhost:1313/tags/swift/</link>
+      <pubDate>Thu, 19 Nov 2026 19:38:25 +0300</pubDate>
+      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>
@@ -25,27 +60,6 @@
       <link>http://localhost:1313/tags/design-underground-system/</link>
       <pubDate>Thu, 12 Nov 2026 20:52:14 +0300</pubDate>
       <guid>http://localhost:1313/tags/design-underground-system/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>LeetCode</title>
-      <link>http://localhost:1313/tags/leetcode/</link>
-      <pubDate>Thu, 12 Nov 2026 20:52:14 +0300</pubDate>
-      <guid>http://localhost:1313/tags/leetcode/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Medium</title>
-      <link>http://localhost:1313/tags/medium/</link>
-      <pubDate>Thu, 12 Nov 2026 20:52:14 +0300</pubDate>
-      <guid>http://localhost:1313/tags/medium/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Swift</title>
-      <link>http://localhost:1313/tags/swift/</link>
-      <pubDate>Thu, 12 Nov 2026 20:52:14 +0300</pubDate>
-      <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
     </item>
     <item>
@@ -186,13 +200,6 @@
       <link>http://localhost:1313/tags/car-pooling/</link>
       <pubDate>Tue, 29 Sep 2026 17:41:19 +0300</pubDate>
       <guid>http://localhost:1313/tags/car-pooling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Heap</title>
-      <link>http://localhost:1313/tags/heap/</link>
-      <pubDate>Tue, 29 Sep 2026 17:41:19 +0300</pubDate>
-      <guid>http://localhost:1313/tags/heap/</guid>
       <description></description>
     </item>
     <item>

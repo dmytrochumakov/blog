@@ -11,8 +11,32 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Nov 2026 20:52:14 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 19:38:25 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/arrays__hashing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode - Design a Food Rating System</title>
+      <link>http://localhost:1313/posts/leetcode-design-a-food-rating-system/</link>
+      <pubDate>Thu, 19 Nov 2026 19:38:25 +0300</pubDate>
+      <guid>http://localhost:1313/posts/leetcode-design-a-food-rating-system/</guid>
+      <description>&lt;h3 id=&#34;the-problem&#34;&gt;The problem&lt;/h3&gt;
+&lt;p&gt;Design a food rating system that can do the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Modify&lt;/strong&gt; the rating of a food item listed in the system.&lt;/li&gt;
+&lt;li&gt;Return the highest-rated food item for a type of cuisine in the system.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Implement the &lt;code&gt;FoodRatings&lt;/code&gt; class:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;FoodRatings(String[] foods, String[] cuisines, int[] ratings)&lt;/code&gt; Initializes the system. The food items are described by &lt;code&gt;foods&lt;/code&gt;, &lt;code&gt;cuisines&lt;/code&gt; and &lt;code&gt;ratings&lt;/code&gt;, all of which have a length of &lt;code&gt;n&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;foods[i]&lt;/code&gt; is the name of the &lt;code&gt;ith&lt;/code&gt; food,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cuisines[i]&lt;/code&gt; is the type of cuisine of the &lt;code&gt;ith&lt;/code&gt; food, and&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ratings[i]&lt;/code&gt; is the initial rating of the &lt;code&gt;ith&lt;/code&gt; food.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;void changeRating(String food, int newRating)&lt;/code&gt; Changes the rating of the food item with the name &lt;code&gt;food&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LeetCode - Design Underground System</title>
       <link>http://localhost:1313/posts/leetcode-design-underground-system/</link>
