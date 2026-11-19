@@ -84,7 +84,7 @@ So we can use **Max Heap** and get the **highest rating in O(logn)** time. But f
 
 We need it because there is no efficient way to delete from a heap, because after deletion, it would need to update its underlying order, which costs O(n) time.
 
-Lazy deletion helps because it marks old records as ready to delete and deletes them only if marked elements exist and it is on **top** of the heap, so the algorithm eliminates O(n) heap restructuring and runs in O(logn) time.
+Lazy deletion helps because old records are verified only when they reached **top** of the heap (O(1) time), so the algorithm eliminates O(n) heap restructuring and runs in O(logn) time.
 
 #### Code
 ```swift
@@ -102,21 +102,14 @@ class FoodRatings {
         }
     }
     
-    struct ElementToRemove: Hashable {
-        let rating: Int
-        let food: String
-    }
-    
     private var foodToCuisine: [String: String]
     private var foodToRating: [String: Int]
     private var cuisineToFood: [String: Heap<Food>]
-    private var elementsToRemove: Set<ElementToRemove>
     
     init(_ foods: [String], _ cuisines: [String], _ ratings: [Int]) {
         self.foodToCuisine = [:]
         self.foodToRating = [:]
         self.cuisineToFood = [:]
-        self.elementsToRemove = []
         
         for i in 0 ..< foods.count {
             let food = foods[i]
@@ -131,7 +124,6 @@ class FoodRatings {
     
     func changeRating(_ food: String, _ newRating: Int) {
         let oldRating = self.foodToRating[food, default: 0]
-        self.elementsToRemove.insert(ElementToRemove(rating: oldRating, food: food))
         self.foodToRating[food] = newRating
         self.cuisineToFood[self.foodToCuisine[food, default: ""]]?.insert(Food(rating: newRating, food: food))
     }
