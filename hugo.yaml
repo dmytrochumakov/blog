@@ -21,8 +21,6 @@ services:
     disableInlineCSS: true
   x:
     disableInlineCSS: true
-  disqus:
-    shortname: dmytros-blog
 
 minify:
   disableXML: true
@@ -54,7 +52,6 @@ params:
   ShowAllPagesInArchive: true
   ShowPageNums: true
   ShowToc: true
-  comments: true
   images: ["images/papermod-cover.png"]
 
   socialIcons:
